@@ -153,3 +153,38 @@
 [2023-05-13 00:18:04] INFO root fetch - main [MainThread]: End processing [reixs]: success
 [2023-05-13 00:18:04] INFO root fetch - main [MainThread]: End processing [stogui]: success
 [2023-05-13 00:18:04] INFO root fetch - main [MainThread]: Store serial: [18084886]
+[2023-05-13 00:23:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18084886]
+[2023-05-13 00:23:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 00:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quantconnect-stubs
+[2023-05-13 00:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: askedith
+[2023-05-13 00:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nebari-workflow-controller
+[2023-05-13 00:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: railtownai
+[2023-05-13 00:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrequester
+[2023-05-13 00:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: coiled
+[2023-05-13 00:23:13] INFO root fetch - processPackages [askedith]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-13 00:23:13] INFO root fetch - processPackages [railtownai]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-13 00:23:13] INFO root fetch - processPackages [nebari-workflow-controller]: New version: [2023.5.5] Old Version: [2023.5.4]
+[2023-05-13 00:23:13] WARNING root fetch - processPackages [pyrequester]: Skipping, unable to determine old version
+[2023-05-13 00:23:13] INFO root fetch - main [MainThread]: End processing [pyrequester] error
+[2023-05-13 00:23:13] INFO root fetch - processPackages [coiled]: New version: [0.6.4.dev4] Old Version: [0.6.4.dev3]
+[2023-05-13 00:23:13] INFO root fetch - processPackages [quantconnect-stubs]: New version: [9998] Old Version: [9997]
+[2023-05-13 00:23:13] INFO root fetch - processPackages [railtownai]: Downloading https://files.pythonhosted.org/packages/46/47/7285d46e091b90ce6a2ec275f02e91477f1af8c9b8feb83bab705ec15e98/railtownai-0.0.4.tar.gz
+[2023-05-13 00:23:14] INFO root fetch - processPackages [nebari-workflow-controller]: Downloading https://files.pythonhosted.org/packages/aa/c1/55feef4ce94fef154974d3c88cde4e5170ab9fe394f3f9a4e5bbae1aa3da/nebari_workflow_controller-2023.5.5.tar.gz
+[2023-05-13 00:23:14] INFO root fetch - processPackages [askedith]: executing diffoscope
+[2023-05-13 00:23:14] INFO root fetch - processPackages [askedith]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/askedith-0.9.6-py3-none-any.whl.zip tmp/askedith-0.9.7-py3-none-any.whl.zip --markdown 20230513/a/askedith/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-13 00:23:14] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/82/0e/72f333e9c03853c7c8cfc3f9d4df50ca9db53b2bc24701542a7518182228/coiled-0.6.4.dev4.tar.gz
+[2023-05-13 00:23:14] INFO root fetch - processPackages [railtownai]: Downloading https://files.pythonhosted.org/packages/1e/83/d24d62f2187a2b5daf1295e481fb06f5a6e3a6d551db7f2049a8a05da765/railtownai-0.0.5.tar.gz
+[2023-05-13 00:23:14] INFO root fetch - processPackages [quantconnect-stubs]: executing diffoscope
+[2023-05-13 00:23:14] INFO root fetch - processPackages [quantconnect-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quantconnect-stubs-9997.tar.gz tmp/quantconnect-stubs-9998.tar.gz --markdown 20230513/q/quantconnect-stubs/9997-9998/diff.md --exclude *.pyd
+[2023-05-13 00:23:14] INFO root fetch - processPackages [nebari-workflow-controller]: executing diffoscope
+[2023-05-13 00:23:14] INFO root fetch - processPackages [nebari-workflow-controller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nebari_workflow_controller-2023.5.4.tar.gz tmp/nebari_workflow_controller-2023.5.5.tar.gz --markdown 20230513/n/nebari-workflow-controller/2023.5.4-2023.5.5/diff.md --exclude *.pyd
+[2023-05-13 00:23:14] INFO root fetch - processPackages [railtownai]: executing diffoscope
+[2023-05-13 00:23:14] INFO root fetch - processPackages [railtownai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/railtownai-0.0.4.tar.gz tmp/railtownai-0.0.5.tar.gz --markdown 20230513/r/railtownai/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-13 00:23:14] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-13 00:23:14] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.4.dev3.tar.gz tmp/coiled-0.6.4.dev4.tar.gz --markdown 20230513/c/coiled/0.6.4.dev3-0.6.4.dev4/diff.md --exclude *.pyd
+[2023-05-13 00:23:15] INFO root fetch - main [MainThread]: End processing [askedith]: success
+[2023-05-13 00:23:15] INFO root fetch - main [MainThread]: End processing [railtownai]: success
+[2023-05-13 00:23:16] INFO root fetch - main [MainThread]: End processing [nebari-workflow-controller]: success
+[2023-05-13 00:23:19] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
+[2023-05-13 00:23:52] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-13 00:23:52] INFO root fetch - main [MainThread]: Store serial: [18084909]
