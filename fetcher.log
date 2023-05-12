@@ -808,3 +808,36 @@
 [2023-05-13 01:48:21] INFO root fetch - processPackages [magneto-pyelastica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magneto_pyelastica-0.0.1.tar.gz tmp/magneto_pyelastica-0.0.1.post2.tar.gz --markdown 20230513/m/magneto-pyelastica/0.0.1-0.0.1.post2/diff.md --exclude *.pyd
 [2023-05-13 01:48:22] INFO root fetch - main [MainThread]: End processing [magneto-pyelastica]: success
 [2023-05-13 01:48:22] INFO root fetch - main [MainThread]: Store serial: [18085252]
+[2023-05-13 01:53:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085252]
+[2023-05-13 01:53:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 01:53:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: selenium-assist
+[2023-05-13 01:53:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlflow-skinny
+[2023-05-13 01:53:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lusid-notifications-sdk-preview
+[2023-05-13 01:53:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dm-reverb
+[2023-05-13 01:53:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mys-goods-tool
+[2023-05-13 01:53:30] WARNING root fetch - processPackages [selenium-assist]: Skipping, unable to determine old version
+[2023-05-13 01:53:30] INFO root fetch - main [MainThread]: End processing [selenium-assist] error
+[2023-05-13 01:53:30] INFO root fetch - processPackages [mlflow-skinny]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-13 01:53:30] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: New version: [0.1.679.post2] Old Version: [0.1.679]
+[2023-05-13 01:53:30] INFO root fetch - processPackages [dm-reverb]: New version: [0.9.0rc1] Old Version: [0.9.0rc0]
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mys-goods-tool]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mlflow-skinny]: Downloading https://files.pythonhosted.org/packages/2f/bd/7e2593bc8cce2152d68947347884569ebd9325776c12967ff0fea75bc95a/mlflow_skinny-2.3.1-py3-none-any.whl
+[2023-05-13 01:53:31] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Downloading https://files.pythonhosted.org/packages/8d/90/5e2afb186f3800f154ed62d3af62d7ba1d1e2336fc9c4af144a90956a1c5/lusid-notifications-sdk-preview-0.1.679.post2.tar.gz
+[2023-05-13 01:53:31] INFO root fetch - processPackages [dm-reverb]: Downloading https://files.pythonhosted.org/packages/0e/92/15c0cebd36e5cb6dd93d92bc4f100ccbc52e17116c3cfbb58c04d11ae7c0/dm_reverb-0.9.0rc0-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mys-goods-tool]: Downloading https://files.pythonhosted.org/packages/d7/f0/c5c5130d546e721a07f96a64a92151612f064d2b3d5e61cc82984cfd09b3/mys_goods_tool-2.0.2.tar.gz
+[2023-05-13 01:53:31] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: executing diffoscope
+[2023-05-13 01:53:31] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-notifications-sdk-preview-0.1.679.tar.gz tmp/lusid-notifications-sdk-preview-0.1.679.post2.tar.gz --markdown 20230513/l/lusid-notifications-sdk-preview/0.1.679-0.1.679.post2/diff.md --exclude *.pyd
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mlflow-skinny]: Downloading https://files.pythonhosted.org/packages/af/69/d0c429dff94e704cff13dae981431899425ba1fe99d2e4298cf2668e4928/mlflow_skinny-2.3.2-py3-none-any.whl
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mys-goods-tool]: Downloading https://files.pythonhosted.org/packages/ba/45/ea673b816b829bf88bc4fde1082d9b97b6ac9b8cfc1807de4be52f5922e2/mys_goods_tool-2.0.3.tar.gz
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mlflow-skinny]: executing diffoscope
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mlflow-skinny]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlflow_skinny-2.3.1-py3-none-any.whl.zip tmp/mlflow_skinny-2.3.2-py3-none-any.whl.zip --markdown 20230513/m/mlflow-skinny/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mys-goods-tool]: executing diffoscope
+[2023-05-13 01:53:31] INFO root fetch - processPackages [mys-goods-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mys_goods_tool-2.0.2.tar.gz tmp/mys_goods_tool-2.0.3.tar.gz --markdown 20230513/m/mys-goods-tool/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-13 01:53:32] INFO root fetch - main [MainThread]: End processing [mys-goods-tool]: success
+[2023-05-13 01:53:33] INFO root fetch - processPackages [dm-reverb]: Downloading https://files.pythonhosted.org/packages/ff/5f/da45f43eb00cb43e488c59b532ac826229ef3fa6b0383e753b8a65765a91/dm_reverb-0.9.0rc1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-13 01:53:34] INFO root fetch - processPackages [dm-reverb]: executing diffoscope
+[2023-05-13 01:53:34] INFO root fetch - processPackages [dm-reverb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb-0.9.0rc0-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb-0.9.0rc1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230513/d/dm-reverb/0.9.0rc0-0.9.0rc1/diff.md --exclude *.pyd
+[2023-05-13 01:53:34] INFO root fetch - main [MainThread]: End processing [lusid-notifications-sdk-preview]: success
+[2023-05-13 01:53:37] INFO root fetch - main [MainThread]: End processing [mlflow-skinny]: success
+[2023-05-13 01:54:43] INFO root fetch - main [MainThread]: End processing [dm-reverb]: success
+[2023-05-13 01:54:43] INFO root fetch - main [MainThread]: Store serial: [18085269]
