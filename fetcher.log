@@ -188,3 +188,42 @@
 [2023-05-13 00:23:19] INFO root fetch - main [MainThread]: End processing [quantconnect-stubs]: success
 [2023-05-13 00:23:52] INFO root fetch - main [MainThread]: End processing [coiled]: success
 [2023-05-13 00:23:52] INFO root fetch - main [MainThread]: Store serial: [18084909]
+[2023-05-13 00:28:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18084909]
+[2023-05-13 00:29:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 00:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyFlyt
+[2023-05-13 00:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: konfuzio-sdk
+[2023-05-13 00:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyelastica
+[2023-05-13 00:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythoncryptpkgsV2
+[2023-05-13 00:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: allitnil
+[2023-05-13 00:29:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythoncryptpkgsV2
+[2023-05-13 00:29:01] INFO root fetch - processPackages [PyFlyt]: New version: [0.7.0] Old Version: [0.6.8]
+[2023-05-13 00:29:01] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-05-13 00:29:01] WARNING root fetch - processPackages [allitnil]: Skipping, unable to determine old version
+[2023-05-13 00:29:01] INFO root fetch - main [MainThread]: End processing [allitnil] error
+[2023-05-13 00:29:01] INFO root fetch - processPackages [pyelastica]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-13 00:29:01] INFO root fetch - processPackages [pythoncryptpkgsV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-13 00:29:01] INFO root fetch - processPackages [pythoncryptpkgsV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-13 00:29:01] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-05-13 00:29:01] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230513/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-05-13 00:29:01] INFO root fetch - processPackages [PyFlyt]: Downloading https://files.pythonhosted.org/packages/fd/5f/ef43bd6200f3bf9025c87ad8744a6fc111b6cdf025bf24a082435d8173cb/PyFlyt-0.6.8.tar.gz
+[2023-05-13 00:29:01] INFO root fetch - processPackages [pyelastica]: Downloading https://files.pythonhosted.org/packages/c1/70/8587b84809b93aad514c458a5e77255f86597586205df47539352802c878/pyelastica-0.3.0.tar.gz
+[2023-05-13 00:29:01] INFO root fetch - processPackages [pythoncryptpkgsV2]: Downloading https://files.pythonhosted.org/packages/02/d2/025682ea86e6835d19e1694a382f086e81a85aa2b0bea541cda911279c5b/pythoncryptpkgsV2-1.0.0.tar.gz
+[2023-05-13 00:29:01] INFO root fetch - processPackages [pythoncryptpkgsV2]: Downloading https://files.pythonhosted.org/packages/02/d2/025682ea86e6835d19e1694a382f086e81a85aa2b0bea541cda911279c5b/pythoncryptpkgsV2-1.0.0.tar.gz
+[2023-05-13 00:29:01] INFO root fetch - processPackages [PyFlyt]: Downloading https://files.pythonhosted.org/packages/c4/17/6bae21993ecc7b84de6de747e0a1e3d1f33d92df9abfe0c4607e5b824578/PyFlyt-0.7.0.tar.gz
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pyelastica]: Downloading https://files.pythonhosted.org/packages/84/35/1f82ef45c795ad656bdc0b2e4021699ad92cde666dfa2a88130e3b7a9ea1/pyelastica-0.3.1.tar.gz
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pythoncryptpkgsV2]: Downloading https://files.pythonhosted.org/packages/96/e0/e73c5f72b6177ea457e85d5d882bbbb5b80d8e6db3c8adce349e0fdb5992/pythoncryptpkgsV2-1.1.0.tar.gz
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pythoncryptpkgsV2]: Downloading https://files.pythonhosted.org/packages/96/e0/e73c5f72b6177ea457e85d5d882bbbb5b80d8e6db3c8adce349e0fdb5992/pythoncryptpkgsV2-1.1.0.tar.gz
+[2023-05-13 00:29:02] INFO root fetch - processPackages [PyFlyt]: executing diffoscope
+[2023-05-13 00:29:02] INFO root fetch - processPackages [PyFlyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyFlyt-0.6.8.tar.gz tmp/PyFlyt-0.7.0.tar.gz --markdown 20230513/P/PyFlyt/0.6.8-0.7.0/diff.md --exclude *.pyd
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pyelastica]: executing diffoscope
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pyelastica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyelastica-0.3.0.tar.gz tmp/pyelastica-0.3.1.tar.gz --markdown 20230513/p/pyelastica/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pythoncryptpkgsV2]: executing diffoscope
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pythoncryptpkgsV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythoncryptpkgsV2-1.0.0.tar.gz tmp/pythoncryptpkgsV2-1.1.0.tar.gz --markdown 20230513/p/pythoncryptpkgsV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pythoncryptpkgsV2]: executing diffoscope
+[2023-05-13 00:29:02] INFO root fetch - processPackages [pythoncryptpkgsV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythoncryptpkgsV2-1.0.0.tar.gz tmp/pythoncryptpkgsV2-1.1.0.tar.gz --markdown 20230513/p/pythoncryptpkgsV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 00:29:03] INFO root fetch - main [MainThread]: End processing [pythoncryptpkgsV2]: success
+[2023-05-13 00:29:03] INFO root fetch - main [MainThread]: End processing [pythoncryptpkgsV2]: success
+[2023-05-13 00:29:03] INFO root fetch - main [MainThread]: End processing [PyFlyt]: success
+[2023-05-13 00:29:03] INFO root fetch - main [MainThread]: End processing [pyelastica]: success
+[2023-05-13 00:29:05] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-05-13 00:29:05] INFO root fetch - main [MainThread]: Store serial: [18084940]
