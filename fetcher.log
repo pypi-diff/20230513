@@ -767,3 +767,20 @@
 [2023-05-13 01:32:49] INFO root fetch - main [MainThread]: End processing [fern-belvo]: success
 [2023-05-13 01:32:50] INFO root fetch - main [MainThread]: End processing [CmonCrawl]: success
 [2023-05-13 01:32:50] INFO root fetch - main [MainThread]: Store serial: [18085225]
+[2023-05-13 01:37:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085225]
+[2023-05-13 01:37:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 01:37:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: JLTpdf
+[2023-05-13 01:37:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-confluentcloud
+[2023-05-13 01:37:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: validmind
+[2023-05-13 01:37:59] WARNING root fetch - processPackages [JLTpdf]: Skipping, unable to determine old version
+[2023-05-13 01:37:59] INFO root fetch - main [MainThread]: End processing [JLTpdf] error
+[2023-05-13 01:37:59] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2023-05-13 01:37:59] INFO root fetch - processPackages [validmind]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-13 01:38:00] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2023-05-13 01:38:00] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20230513/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/diff.md --exclude *.pyd
+[2023-05-13 01:38:00] INFO root fetch - processPackages [validmind]: Downloading https://files.pythonhosted.org/packages/06/f5/b806bdbfe03b00cece98ef03aedea6530076b6a92393e3322145ce4e9b79/validmind-1.9.1.tar.gz
+[2023-05-13 01:38:00] INFO root fetch - processPackages [validmind]: executing diffoscope
+[2023-05-13 01:38:00] INFO root fetch - processPackages [validmind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validmind-1.9.0.tar.gz tmp/validmind-1.9.1.tar.gz --markdown 20230513/v/validmind/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-13 01:38:01] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2023-05-13 01:38:02] INFO root fetch - main [MainThread]: End processing [validmind]: success
+[2023-05-13 01:38:02] INFO root fetch - main [MainThread]: Store serial: [18085236]
