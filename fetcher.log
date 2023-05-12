@@ -477,3 +477,69 @@
 [2023-05-13 00:55:10] INFO root fetch - main [MainThread]: End processing [chiapos]: success
 [2023-05-13 00:55:11] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
 [2023-05-13 00:55:11] INFO root fetch - main [MainThread]: Store serial: [18085071]
+[2023-05-13 01:00:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085071]
+[2023-05-13 01:00:21] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: coiled
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdm-rename
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocoder
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jvc-projector-remote-improved2
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-benkushigian-gambit-refactor
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chia-py-rpc
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: basedosdados
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-nightly-intel
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dask-bigquery
+[2023-05-13 01:00:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: caikit-tgis-backend
+[2023-05-13 01:00:21] INFO root fetch - processPackages [cocoder]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [chia-py-rpc]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [certora-cli-alpha-benkushigian-gambit-refactor]: New version: [20230512.22.56.63764] Old Version: [20230512.21.40.829629]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [caikit-tgis-backend]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [pdm-rename]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [dask-bigquery]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [jvc-projector-remote-improved2]: New version: [3.6.0] Old Version: [3.5.8]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [basedosdados]: New version: [2.0.0b1] Old Version: [1.7.0b3]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [coiled]: New version: [0.6.4.dev6] Old Version: [0.6.4.dev5]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.14.0.dev20230512] Old Version: [2.14.0.dev20230511]
+[2023-05-13 01:00:21] INFO root fetch - processPackages [jvc-projector-remote-improved2]: Downloading https://files.pythonhosted.org/packages/c1/24/d830d2eb250dcbf9d390280b318af94ff3591efc617f840d47d825770289/jvc_projector_remote_improved2-3.5.8.tar.gz
+[2023-05-13 01:00:21] INFO root fetch - processPackages [certora-cli-alpha-benkushigian-gambit-refactor]: Downloading https://files.pythonhosted.org/packages/1c/9b/3b98f8d211a7ab31bc77e8c31aff65b745a1060d1d0f74d964d39c0a2578/certora-cli-alpha-benkushigian-gambit-refactor-20230512.21.40.829629.tar.gz
+[2023-05-13 01:00:21] INFO root fetch - processPackages [chia-py-rpc]: Downloading https://files.pythonhosted.org/packages/65/18/61b6ba80cb924d18254fb56253dae86a1161e1a9cecd4b2c9d70a665d233/chia_py_rpc-0.0.5.tar.gz
+[2023-05-13 01:00:21] INFO root fetch - processPackages [cocoder]: Downloading https://files.pythonhosted.org/packages/40/b4/2dd030dd2f8345090372153e19e8d99a0a94c0286826075ce97bf66816fd/cocoder-0.1.2.tar.gz
+[2023-05-13 01:00:21] INFO root fetch - processPackages [pdm-rename]: Downloading https://files.pythonhosted.org/packages/86/fa/e496a0f76380fee890e1e5e53de04e296cbf96fd34cd19e3e05286803b04/pdm-rename-0.0.2.tar.gz
+[2023-05-13 01:00:21] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/d0/69/d17ab1181726a85269489ed30d7aa8a672907ad9c4a7c65f137dd9ab3140/coiled-0.6.4.dev5.tar.gz
+[2023-05-13 01:00:21] INFO root fetch - processPackages [basedosdados]: Downloading https://files.pythonhosted.org/packages/e4/79/12ee61488be6030d7de6222ce0fc8594bc83864f76a6c798af7ab2841a6c/basedosdados-1.7.0b3.tar.gz
+[2023-05-13 01:00:21] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/02/6a/99ba3639b68a8a462313f410b55714fba6ab743d42f62073f93325dc9566/tf_nightly_intel-2.14.0.dev20230511-cp39-cp39-win_amd64.whl
+[2023-05-13 01:00:21] WARNING root fetch - processPackages [certora-cli-alpha-benkushigian-gambit-refactor]: Skipping package: exceeds size limit 39447085>=10485760
+[2023-05-13 01:00:21] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-benkushigian-gambit-refactor] error
+[2023-05-13 01:00:21] INFO root fetch - processPackages [cocoder]: executing diffoscope
+[2023-05-13 01:00:21] INFO root fetch - processPackages [cocoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoder-0.1.1.tar.gz tmp/cocoder-0.1.2.tar.gz --markdown 20230513/c/cocoder/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 01:00:22] INFO root fetch - processPackages [caikit-tgis-backend]: Downloading https://files.pythonhosted.org/packages/7d/61/679b1343411cc329b03d168c11912f6844d1b6f814d17812f1c714b012ff/caikit-tgis-backend-0.1.3.tar.gz
+[2023-05-13 01:00:22] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 180391119>=10485760
+[2023-05-13 01:00:22] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-05-13 01:00:22] INFO root fetch - processPackages [dask-bigquery]: Downloading https://files.pythonhosted.org/packages/bd/e2/b422e392c4d42744e89c9ce4085e3ace031986495536401e381218114e54/dask-bigquery-2023.5.1.tar.gz
+[2023-05-13 01:00:22] INFO root fetch - processPackages [chia-py-rpc]: Downloading https://files.pythonhosted.org/packages/44/ad/b29ef9e9909b8c2cf277043bc86cf9b71837962b72c72f1491d5299dcbb7/chia_py_rpc-0.0.6.tar.gz
+[2023-05-13 01:00:22] INFO root fetch - processPackages [jvc-projector-remote-improved2]: Downloading https://files.pythonhosted.org/packages/3d/4b/4fbd85cadc13161d1bef2d459ebd3a3ae3546c4681dea763144e97fb7f93/jvc_projector_remote_improved2-3.6.0.tar.gz
+[2023-05-13 01:00:22] INFO root fetch - processPackages [caikit-tgis-backend]: executing diffoscope
+[2023-05-13 01:00:22] INFO root fetch - processPackages [caikit-tgis-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/caikit-tgis-backend-0.1.2.tar.gz tmp/caikit-tgis-backend-0.1.3.tar.gz --markdown 20230513/c/caikit-tgis-backend/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-13 01:00:22] INFO root fetch - processPackages [dask-bigquery]: executing diffoscope
+[2023-05-13 01:00:22] INFO root fetch - processPackages [dask-bigquery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-bigquery-2023.5.0.tar.gz tmp/dask-bigquery-2023.5.1.tar.gz --markdown 20230513/d/dask-bigquery/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 01:00:22] INFO root fetch - processPackages [pdm-rename]: Downloading https://files.pythonhosted.org/packages/c6/a6/4e458c00d824641a18ba2d9e582ff69dc9af79e9706603e74c4ef6ba085d/pdm-rename-0.0.3.tar.gz
+[2023-05-13 01:00:22] INFO root fetch - processPackages [pdm-rename]: executing diffoscope
+[2023-05-13 01:00:22] INFO root fetch - processPackages [pdm-rename]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdm-rename-0.0.2.tar.gz tmp/pdm-rename-0.0.3.tar.gz --markdown 20230513/p/pdm-rename/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 01:00:22] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/33/9d/2bdb044df8e1d9959f9308d97fb33c87f66964b992ef49ecb30c9bca1a73/coiled-0.6.4.dev6.tar.gz
+[2023-05-13 01:00:22] INFO root fetch - processPackages [chia-py-rpc]: executing diffoscope
+[2023-05-13 01:00:22] INFO root fetch - processPackages [chia-py-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chia_py_rpc-0.0.5.tar.gz tmp/chia_py_rpc-0.0.6.tar.gz --markdown 20230513/c/chia-py-rpc/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 01:00:22] INFO root fetch - processPackages [jvc-projector-remote-improved2]: executing diffoscope
+[2023-05-13 01:00:22] INFO root fetch - processPackages [jvc-projector-remote-improved2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jvc_projector_remote_improved2-3.5.8.tar.gz tmp/jvc_projector_remote_improved2-3.6.0.tar.gz --markdown 20230513/j/jvc-projector-remote-improved2/3.5.8-3.6.0/diff.md --exclude *.pyd
+[2023-05-13 01:00:22] INFO root fetch - processPackages [basedosdados]: Downloading https://files.pythonhosted.org/packages/6d/33/805a073b0d736666714ffc311802db881ff6624a5c18ec07916555143abf/basedosdados-2.0.0b1.tar.gz
+[2023-05-13 01:00:22] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2023-05-13 01:00:22] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-0.6.4.dev5.tar.gz tmp/coiled-0.6.4.dev6.tar.gz --markdown 20230513/c/coiled/0.6.4.dev5-0.6.4.dev6/diff.md --exclude *.pyd
+[2023-05-13 01:00:22] INFO root fetch - processPackages [basedosdados]: executing diffoscope
+[2023-05-13 01:00:22] INFO root fetch - processPackages [basedosdados]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/basedosdados-1.7.0b3.tar.gz tmp/basedosdados-2.0.0b1.tar.gz --markdown 20230513/b/basedosdados/1.7.0b3-2.0.0b1/diff.md --exclude *.pyd
+[2023-05-13 01:00:23] INFO root fetch - main [MainThread]: End processing [cocoder]: success
+[2023-05-13 01:00:23] INFO root fetch - main [MainThread]: End processing [dask-bigquery]: success
+[2023-05-13 01:00:23] INFO root fetch - main [MainThread]: End processing [pdm-rename]: success
+[2023-05-13 01:00:23] INFO root fetch - main [MainThread]: End processing [chia-py-rpc]: success
+[2023-05-13 01:00:23] INFO root fetch - main [MainThread]: End processing [caikit-tgis-backend]: success
+[2023-05-13 01:00:23] INFO root fetch - main [MainThread]: End processing [jvc-projector-remote-improved2]: success
+[2023-05-13 01:00:23] INFO root fetch - main [MainThread]: End processing [basedosdados]: success
+[2023-05-13 01:00:25] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2023-05-13 01:00:25] INFO root fetch - main [MainThread]: Store serial: [18085103]
