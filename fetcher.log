@@ -1,0 +1,54 @@
+[2023-05-13 00:02:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18084786]
+[2023-05-13 00:02:26] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: srsinst.uga
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PatryksAutoAI
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wallaroo
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: configparser2dtypes
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-eric-stack
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: generation-models
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lineagex
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hteetp
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: handycsv
+[2023-05-13 00:02:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: neon-skill-device-controls
+[2023-05-13 00:02:26] INFO root fetch - processPackages [wallaroo]: New version: [2023.2.0rc3] Old Version: [2023.2.0rc2]
+[2023-05-13 00:02:26] WARNING root fetch - processPackages [srsinst.uga]: Skipping, unable to determine old version
+[2023-05-13 00:02:26] INFO root fetch - main [MainThread]: End processing [srsinst.uga] error
+[2023-05-13 00:02:26] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-13 00:02:26] INFO root fetch - processPackages [generation-models]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-13 00:02:26] INFO root fetch - processPackages [certora-cli-alpha-eric-stack]: New version: [20230512.21.59.763902] Old Version: [20230512.16.27.823285]
+[2023-05-13 00:02:26] INFO root fetch - processPackages [handycsv]: New version: [4.4.0] Old Version: [4.3.0]
+[2023-05-13 00:02:26] WARNING root fetch - processPackages [hteetp]: Skipping, unable to determine old version
+[2023-05-13 00:02:26] WARNING root fetch - processPackages [lineagex]: Skipping, unable to determine old version
+[2023-05-13 00:02:26] INFO root fetch - main [MainThread]: End processing [hteetp] error
+[2023-05-13 00:02:26] INFO root fetch - main [MainThread]: End processing [lineagex] error
+[2023-05-13 00:02:26] INFO root fetch - processPackages [neon-skill-device-controls]: New version: [0.2.2a1] Old Version: [0.2.1a1]
+[2023-05-13 00:02:26] WARNING root fetch - processPackages [configparser2dtypes]: Skipping, unable to determine old version
+[2023-05-13 00:02:26] INFO root fetch - main [MainThread]: End processing [configparser2dtypes] error
+[2023-05-13 00:02:26] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/3a/f8/76c4f505f5944f93729d84a3a015701b05fc5f591c0d341f4ea0128aaf68/PatryksAutoAI-0.4.3.tar.gz
+[2023-05-13 00:02:26] INFO root fetch - processPackages [generation-models]: Downloading https://files.pythonhosted.org/packages/a6/8f/5ec30dff8b466ebf6806dacd0f2be35cc8e1d8aff2405ae9cf418723ab60/generation_models-0.1.0.tar.gz
+[2023-05-13 00:02:26] INFO root fetch - processPackages [neon-skill-device-controls]: Downloading https://files.pythonhosted.org/packages/ea/ff/1e29ef535b00892a958231b7bc4d1798533215c181e4483fe07c26465d8b/neon_skill_device_controls-0.2.1a1-py3-none-any.whl
+[2023-05-13 00:02:26] INFO root fetch - processPackages [handycsv]: Downloading https://files.pythonhosted.org/packages/29/9f/c426db3cf018795819d906b3b74e6a71e4c60265926a0acc0e65104d31e3/handycsv-4.3.0.tar.gz
+[2023-05-13 00:02:26] INFO root fetch - processPackages [certora-cli-alpha-eric-stack]: Downloading https://files.pythonhosted.org/packages/8c/3d/434de50f87c3e9f237e723575eac6fc87378acedd5bd061bea95896d2a82/certora-cli-alpha-eric-stack-20230512.16.27.823285.tar.gz
+[2023-05-13 00:02:26] INFO root fetch - processPackages [wallaroo]: Downloading https://files.pythonhosted.org/packages/8d/db/3d754c22b2c8f969449dc574402582c252de577acae31c8d9a9a6a322a5c/wallaroo-2023.2.0rc3-py3-none-any.whl
+[2023-05-13 00:02:26] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/e7/de/cfea527ca0d84d0143f72ce6f35eea6e35dafb729b543da87e12335a3075/PatryksAutoAI-0.4.4.tar.gz
+[2023-05-13 00:02:26] WARNING root fetch - processPackages [certora-cli-alpha-eric-stack]: Skipping package: exceeds size limit 39451049>=10485760
+[2023-05-13 00:02:26] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-stack] error
+[2023-05-13 00:02:26] INFO root fetch - processPackages [wallaroo]: executing diffoscope
+[2023-05-13 00:02:26] INFO root fetch - processPackages [wallaroo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wallaroo-2023.2.0rc2.tar.gz tmp/wallaroo-2023.2.0rc3-py3-none-any.whl.zip --markdown 20230513/w/wallaroo/2023.2.0rc2-2023.2.0rc3/diff.md --exclude *.pyd
+[2023-05-13 00:02:27] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-13 00:02:27] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.4.3.tar.gz tmp/PatryksAutoAI-0.4.4.tar.gz --markdown 20230513/P/PatryksAutoAI/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-13 00:02:27] INFO root fetch - processPackages [generation-models]: Downloading https://files.pythonhosted.org/packages/cb/6c/58a700749c499477cce2f2f9debd906fed820d38ad7b9826d0d7b6adc4db/generation_models-0.2.0.tar.gz
+[2023-05-13 00:02:27] INFO root fetch - processPackages [neon-skill-device-controls]: Downloading https://files.pythonhosted.org/packages/a2/50/ecd748b372979c7c4d1e3ba4550bf240d8c5f918a7df2d62bb5e7ec5771a/neon_skill_device_controls-0.2.2a1-py3-none-any.whl
+[2023-05-13 00:02:27] INFO root fetch - processPackages [handycsv]: Downloading https://files.pythonhosted.org/packages/8e/42/b2618f5e535cf3519a17d91ce27be872dbc68660badef8bd84cf6bbaf72b/handycsv-4.4.0.tar.gz
+[2023-05-13 00:02:27] INFO root fetch - processPackages [generation-models]: executing diffoscope
+[2023-05-13 00:02:27] INFO root fetch - processPackages [generation-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/generation_models-0.1.0.tar.gz tmp/generation_models-0.2.0.tar.gz --markdown 20230513/g/generation-models/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 00:02:27] INFO root fetch - processPackages [neon-skill-device-controls]: executing diffoscope
+[2023-05-13 00:02:27] INFO root fetch - processPackages [neon-skill-device-controls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_skill_device_controls-0.2.1a1-py3-none-any.whl.zip tmp/neon_skill_device_controls-0.2.2a1-py3-none-any.whl.zip --markdown 20230513/n/neon-skill-device-controls/0.2.1a1-0.2.2a1/diff.md --exclude *.pyd
+[2023-05-13 00:02:27] INFO root fetch - processPackages [handycsv]: executing diffoscope
+[2023-05-13 00:02:27] INFO root fetch - processPackages [handycsv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/handycsv-4.3.0.tar.gz tmp/handycsv-4.4.0.tar.gz --markdown 20230513/h/handycsv/4.3.0-4.4.0/diff.md --exclude *.pyd
+[2023-05-13 00:02:28] INFO root fetch - main [MainThread]: End processing [generation-models]: success
+[2023-05-13 00:02:28] INFO root fetch - main [MainThread]: End processing [handycsv]: success
+[2023-05-13 00:02:28] INFO root fetch - main [MainThread]: End processing [neon-skill-device-controls]: success
+[2023-05-13 00:02:29] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-13 00:02:30] INFO root fetch - main [MainThread]: End processing [wallaroo]: success
+[2023-05-13 00:02:30] INFO root fetch - main [MainThread]: Store serial: [18084826]
