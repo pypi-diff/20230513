@@ -324,3 +324,40 @@
 [2023-05-13 00:39:32] INFO root fetch - main [MainThread]: End processing [tyba-client]: success
 [2023-05-13 00:39:32] INFO root fetch - main [MainThread]: End processing [honeybee-ies]: success
 [2023-05-13 00:39:32] INFO root fetch - main [MainThread]: Store serial: [18084988]
+[2023-05-13 00:44:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18084988]
+[2023-05-13 00:44:40] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 00:44:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellmaps-utils
+[2023-05-13 00:44:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: OpenSRANE
+[2023-05-13 00:44:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocoder
+[2023-05-13 00:44:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modin
+[2023-05-13 00:44:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kraken-core
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cellmaps-utils]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-05-13 00:44:41] INFO root fetch - processPackages [OpenSRANE]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cocoder]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 00:44:41] INFO root fetch - processPackages [modin]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-13 00:44:41] INFO root fetch - processPackages [kraken-core]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-13 00:44:41] INFO root fetch - processPackages [OpenSRANE]: Downloading https://files.pythonhosted.org/packages/89/07/d798de74f6d10c0eaa08b668e16c5f34ae2d86f2f20c64d73bf8c55f5007/OpenSRANE-0.0.2.tar.gz
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cocoder]: Downloading https://files.pythonhosted.org/packages/b6/5f/995122668dea42168fc02fcadbe8dd9049cbc90d1e70e75255cb66ab7d07/cocoder-0.1.0.tar.gz
+[2023-05-13 00:44:41] INFO root fetch - processPackages [modin]: Downloading https://files.pythonhosted.org/packages/3c/46/8fe316b681c9807549983d54af91c865572e32f7d6c9d97a0af6f613402f/modin-0.9.0.tar.gz
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cellmaps-utils]: Downloading https://files.pythonhosted.org/packages/cf/df/fdfd764b1cf2ab712128c009da5f5071771a6dc51f1b741975a834810063/cellmaps_utils-0.1.0a8.tar.gz
+[2023-05-13 00:44:41] INFO root fetch - processPackages [kraken-core]: Downloading https://files.pythonhosted.org/packages/c6/4c/480e3d597162031534e0e300b1d98eeec0838406875f691703142326e36a/kraken-core-0.9.5.tar.gz
+[2023-05-13 00:44:41] INFO root fetch - processPackages [OpenSRANE]: Downloading https://files.pythonhosted.org/packages/fc/b7/4e0e05b97940cc36022cc2d9338cc883b7071c11693856d4b53a0211df0a/OpenSRANE-0.0.3.tar.gz
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cocoder]: Downloading https://files.pythonhosted.org/packages/08/58/4ebb347cfe56cf81c90a34a542d3d07a3581ab675b23c833c91d0da431bc/cocoder-0.1.1.tar.gz
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cellmaps-utils]: executing diffoscope
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cellmaps-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellmaps_utils-0.1.0a7.tar.gz tmp/cellmaps_utils-0.1.0a8.tar.gz --markdown 20230513/c/cellmaps-utils/0.1.0a7-0.1.0a8/diff.md --exclude *.pyd
+[2023-05-13 00:44:41] INFO root fetch - processPackages [OpenSRANE]: executing diffoscope
+[2023-05-13 00:44:41] INFO root fetch - processPackages [OpenSRANE]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OpenSRANE-0.0.2.tar.gz tmp/OpenSRANE-0.0.3.tar.gz --markdown 20230513/O/OpenSRANE/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cocoder]: executing diffoscope
+[2023-05-13 00:44:41] INFO root fetch - processPackages [cocoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoder-0.1.0.tar.gz tmp/cocoder-0.1.1.tar.gz --markdown 20230513/c/cocoder/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 00:44:41] INFO root fetch - processPackages [kraken-core]: Downloading https://files.pythonhosted.org/packages/b6/f4/2ddff1c25849833594115f69989cc831a594882af04a874bbb728e402668/kraken-core-0.9.6.tar.gz
+[2023-05-13 00:44:41] INFO root fetch - processPackages [kraken-core]: executing diffoscope
+[2023-05-13 00:44:41] INFO root fetch - processPackages [kraken-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kraken-core-0.9.5.tar.gz tmp/kraken-core-0.9.6.tar.gz --markdown 20230513/k/kraken-core/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-13 00:44:42] INFO root fetch - processPackages [modin]: Downloading https://files.pythonhosted.org/packages/c4/de/b6befe4f022553b09be9c92bf88128b2e391c580fe7ca4876acb77aec416/modin-0.9.1.tar.gz
+[2023-05-13 00:44:42] INFO root fetch - processPackages [modin]: executing diffoscope
+[2023-05-13 00:44:42] INFO root fetch - processPackages [modin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modin-0.9.0.tar.gz tmp/modin-0.9.1.tar.gz --markdown 20230513/m/modin/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-13 00:44:42] INFO root fetch - main [MainThread]: End processing [cellmaps-utils]: success
+[2023-05-13 00:44:42] INFO root fetch - main [MainThread]: End processing [cocoder]: success
+[2023-05-13 00:44:43] INFO root fetch - main [MainThread]: End processing [kraken-core]: success
+[2023-05-13 00:44:43] INFO root fetch - main [MainThread]: End processing [OpenSRANE]: success
+[2023-05-13 00:44:46] INFO root fetch - main [MainThread]: End processing [modin]: success
+[2023-05-13 00:44:46] INFO root fetch - main [MainThread]: Store serial: [18085004]
