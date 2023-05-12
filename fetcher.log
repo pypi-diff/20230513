@@ -714,3 +714,21 @@
 [2023-05-13 01:22:23] INFO root fetch - main [MainThread]: End processing [kraken-core]: success
 [2023-05-13 01:22:26] INFO root fetch - main [MainThread]: End processing [moptipy]: success
 [2023-05-13 01:22:26] INFO root fetch - main [MainThread]: Store serial: [18085195]
+[2023-05-13 01:27:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085195]
+[2023-05-13 01:27:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 01:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: throne
+[2023-05-13 01:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-ranks
+[2023-05-13 01:27:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-snowflake
+[2023-05-13 01:27:34] INFO root fetch - processPackages [throne]: New version: [0.6.1] Old Version: [0.5.1]
+[2023-05-13 01:27:34] INFO root fetch - processPackages [pulumi-snowflake]: New version: [0.9.1a1656367704] Old Version: [0.9.1a1654087017]
+[2023-05-13 01:27:34] WARNING root fetch - processPackages [django-ranks]: Skipping, unable to determine old version
+[2023-05-13 01:27:34] INFO root fetch - main [MainThread]: End processing [django-ranks] error
+[2023-05-13 01:27:34] INFO root fetch - processPackages [pulumi-snowflake]: executing diffoscope
+[2023-05-13 01:27:34] INFO root fetch - processPackages [pulumi-snowflake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_snowflake-0.9.1a1654087017.tar.gz tmp/pulumi_snowflake-0.9.1a1656367704.tar.gz --markdown 20230513/p/pulumi-snowflake/0.9.1a1654087017-0.9.1a1656367704/diff.md --exclude *.pyd
+[2023-05-13 01:27:34] INFO root fetch - processPackages [throne]: Downloading https://files.pythonhosted.org/packages/4b/26/b08cf09aec07f4a39548dc234f7555a117f8ebd4054bd8a361e9b638710e/throne-0.5.1.tar.gz
+[2023-05-13 01:27:35] INFO root fetch - processPackages [throne]: Downloading https://files.pythonhosted.org/packages/ff/2a/970ec6fced0fcadeebeb990a064191a4a3817646336cba4332867801b025/throne-0.6.1.tar.gz
+[2023-05-13 01:27:35] INFO root fetch - processPackages [throne]: executing diffoscope
+[2023-05-13 01:27:35] INFO root fetch - processPackages [throne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/throne-0.5.1.tar.gz tmp/throne-0.6.1.tar.gz --markdown 20230513/t/throne/0.5.1-0.6.1/diff.md --exclude *.pyd
+[2023-05-13 01:27:36] INFO root fetch - main [MainThread]: End processing [throne]: success
+[2023-05-13 01:27:36] INFO root fetch - main [MainThread]: End processing [pulumi-snowflake]: success
+[2023-05-13 01:27:36] INFO root fetch - main [MainThread]: Store serial: [18085204]
