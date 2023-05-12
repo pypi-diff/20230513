@@ -691,3 +691,11 @@
 [2023-05-13 01:12:00] INFO root fetch - main [MainThread]: End processing [pulumi-cloudflare]: success
 [2023-05-13 01:12:01] INFO root fetch - main [MainThread]: End processing [fern-belvo]: success
 [2023-05-13 01:12:01] INFO root fetch - main [MainThread]: Store serial: [18085181]
+[2023-05-13 01:17:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085181]
+[2023-05-13 01:17:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-13 01:17:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: plone.app.portlets
+[2023-05-13 01:17:11] INFO root fetch - processPackages [plone.app.portlets]: New version: [5.0.4] Old Version: [5.0.3]
+[2023-05-13 01:17:11] INFO root fetch - processPackages [plone.app.portlets]: executing diffoscope
+[2023-05-13 01:17:11] INFO root fetch - processPackages [plone.app.portlets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.portlets-5.0.3.tar.gz tmp/plone.app.portlets-5.0.4.tar.gz --markdown 20230513/p/plone.app.portlets/5.0.3-5.0.4/diff.md --exclude *.pyd
+[2023-05-13 01:17:13] INFO root fetch - main [MainThread]: End processing [plone.app.portlets]: success
+[2023-05-13 01:17:13] INFO root fetch - main [MainThread]: Store serial: [18085184]
