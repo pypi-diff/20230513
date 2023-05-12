@@ -52,3 +52,34 @@
 [2023-05-13 00:02:29] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
 [2023-05-13 00:02:30] INFO root fetch - main [MainThread]: End processing [wallaroo]: success
 [2023-05-13 00:02:30] INFO root fetch - main [MainThread]: Store serial: [18084826]
+[2023-05-13 00:07:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18084826]
+[2023-05-13 00:07:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 00:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: srsinst.rga
+[2023-05-13 00:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NikGapps-Helper
+[2023-05-13 00:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vollseg
+[2023-05-13 00:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: strongdm
+[2023-05-13 00:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cyberdrop-dl
+[2023-05-13 00:07:39] INFO root fetch - processPackages [srsinst.rga]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-13 00:07:39] WARNING root fetch - processPackages [NikGapps-Helper]: Skipping, unable to determine old version
+[2023-05-13 00:07:39] INFO root fetch - main [MainThread]: End processing [NikGapps-Helper] error
+[2023-05-13 00:07:39] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-05-13 00:07:39] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-05-13 00:07:39] INFO root fetch - processPackages [strongdm]: New version: [3.9.0] Old Version: [3.8.0]
+[2023-05-13 00:07:39] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.19] Old Version: [4.2.18]
+[2023-05-13 00:07:39] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-05-13 00:07:39] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-05-13 00:07:39] INFO root fetch - processPackages [srsinst.rga]: Downloading https://files.pythonhosted.org/packages/91/9e/55a4f241bdae472471fed313452bdfd047881daaeca568b8b7f0b5e63687/srsinst.rga-0.2.8.tar.gz
+[2023-05-13 00:07:39] INFO root fetch - processPackages [strongdm]: Downloading https://files.pythonhosted.org/packages/36/38/cf59ccf2258e3dd7b8d58f2bdfd7bbb45c61f016917d4d3a615d926810b5/strongdm-3.8.0.zip
+[2023-05-13 00:07:39] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/c2/d3/b40f0902da715a8ce4ad9e1c1829a692df10c4491a94145dc85dc3ae3bab/cyberdrop-dl-4.2.19.tar.gz
+[2023-05-13 00:07:39] INFO root fetch - processPackages [srsinst.rga]: Downloading https://files.pythonhosted.org/packages/f7/f5/094b5cb76693158a253f0b867c2c7e6aab62a91ff5a00eb138d36cad874d/srsinst.rga-0.2.9.tar.gz
+[2023-05-13 00:07:39] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-13 00:07:39] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.18.tar.gz tmp/cyberdrop-dl-4.2.19.tar.gz --markdown 20230513/c/cyberdrop-dl/4.2.18-4.2.19/diff.md --exclude *.pyd
+[2023-05-13 00:07:39] INFO root fetch - processPackages [strongdm]: Downloading https://files.pythonhosted.org/packages/de/3d/284dab2f26c0df8ebc1ebf789316bfabb62b6be330fb3d9f01c0ed4cc5d6/strongdm-3.9.0.zip
+[2023-05-13 00:07:39] INFO root fetch - processPackages [srsinst.rga]: executing diffoscope
+[2023-05-13 00:07:39] INFO root fetch - processPackages [srsinst.rga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srsinst.rga-0.2.8.tar.gz tmp/srsinst.rga-0.2.9.tar.gz --markdown 20230513/s/srsinst.rga/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-13 00:07:39] INFO root fetch - processPackages [strongdm]: executing diffoscope
+[2023-05-13 00:07:39] INFO root fetch - processPackages [strongdm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strongdm-3.8.0.zip tmp/strongdm-3.9.0.zip --markdown 20230513/s/strongdm/3.8.0-3.9.0/diff.md --exclude *.pyd
+[2023-05-13 00:07:41] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-13 00:07:41] INFO root fetch - main [MainThread]: End processing [srsinst.rga]: success
+[2023-05-13 00:07:41] INFO root fetch - main [MainThread]: End processing [strongdm]: success
+[2023-05-13 00:07:41] INFO root fetch - main [MainThread]: Store serial: [18084845]
