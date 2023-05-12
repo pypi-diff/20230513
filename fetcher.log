@@ -96,3 +96,60 @@
 [2023-05-13 00:12:51] INFO root fetch - main [MainThread]: End processing [ntheory]: success
 [2023-05-13 00:12:52] INFO root fetch - main [MainThread]: End processing [pepperize.cdk-serverless-cluster-from-snapshot]: success
 [2023-05-13 00:12:52] INFO root fetch - main [MainThread]: Store serial: [18084852]
+[2023-05-13 00:17:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18084852]
+[2023-05-13 00:18:01] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stogui
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hackerforms
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: base-convert-cli
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pz-rail-pipelines
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chia-py-rpc
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: v3wrapper
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: reixs
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ntheory
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nested-diff
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: railtownai
+[2023-05-13 00:18:01] INFO root fetch - processPackages [stogui]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 00:18:01] INFO root fetch - processPackages [chia-py-rpc]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 00:18:01] INFO root fetch - processPackages [base-convert-cli]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ntheory]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 00:18:01] INFO root fetch - processPackages [hackerforms]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-13 00:18:01] INFO root fetch - processPackages [base-convert-cli]: executing diffoscope
+[2023-05-13 00:18:01] INFO root fetch - processPackages [base-convert-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/base-convert-cli-1.0.1.tar.gz tmp/base-convert-cli-1.0.2.tar.gz --markdown 20230513/b/base-convert-cli/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 00:18:01] INFO root fetch - processPackages [pz-rail-pipelines]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 00:18:01] WARNING root fetch - processPackages [v3wrapper]: Skipping, unable to determine old version
+[2023-05-13 00:18:01] INFO root fetch - main [MainThread]: End processing [v3wrapper] error
+[2023-05-13 00:18:01] WARNING root fetch - processPackages [railtownai]: Skipping, unable to determine old version
+[2023-05-13 00:18:01] INFO root fetch - main [MainThread]: End processing [railtownai] error
+[2023-05-13 00:18:01] INFO root fetch - processPackages [chia-py-rpc]: executing diffoscope
+[2023-05-13 00:18:01] INFO root fetch - processPackages [chia-py-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chia_py_rpc-0.0.2.tar.gz tmp/chia_py_rpc-0.0.3.tar.gz --markdown 20230513/c/chia-py-rpc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 00:18:01] INFO root fetch - processPackages [nested-diff]: New version: [1.2] Old Version: [1.1]
+[2023-05-13 00:18:01] INFO root fetch - processPackages [reixs]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-13 00:18:01] INFO root fetch - processPackages [hackerforms]: Downloading https://files.pythonhosted.org/packages/c0/7d/8b0c53ee12784e0d9ac2c0da8f4122c5253c80321870c03f6510bd94ea64/hackerforms-0.8.0.tar.gz
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ntheory]: Downloading https://files.pythonhosted.org/packages/51/c1/0fe779dae912206025888cfd0667f54f1e5a4be7fec9f2a5d5efa23591d3/ntheory-0.0.4.tar.gz
+[2023-05-13 00:18:01] INFO root fetch - processPackages [pz-rail-pipelines]: Downloading https://files.pythonhosted.org/packages/c5/67/66384e844cfafd51e5e66efffb9baa9bc29e9355bfd4165759e090f34c88/pz-rail-pipelines-0.0.3.tar.gz
+[2023-05-13 00:18:01] INFO root fetch - processPackages [nested-diff]: Downloading https://files.pythonhosted.org/packages/08/88/62ec634eb4217c9420105dd5de0ddf16fa53a9acce74e2f08628fa2384c6/nested_diff-1.1.tar.gz
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ntheory]: executing diffoscope
+[2023-05-13 00:18:01] INFO root fetch - processPackages [ntheory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntheory-0.0.3.tar.gz tmp/ntheory-0.0.4.tar.gz --markdown 20230513/n/ntheory/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 00:18:01] INFO root fetch - processPackages [stogui]: executing diffoscope
+[2023-05-13 00:18:01] INFO root fetch - processPackages [stogui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stogui-0.1.8.tar.gz tmp/stogui-0.1.9.tar.gz --markdown 20230513/s/stogui/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 00:18:01] INFO root fetch - processPackages [reixs]: Downloading https://files.pythonhosted.org/packages/db/63/526d96c8a0501e6e0f5155bb76354dc2ea72087d8c8c62a19ecac22535af/reixs-0.5.9.tar.gz
+[2023-05-13 00:18:01] INFO root fetch - processPackages [hackerforms]: Downloading https://files.pythonhosted.org/packages/83/2d/9c4dc5d861b5503ecae0d2c169687b48a0d48ba634ee4557c7ea36028b35/hackerforms-0.9.0.tar.gz
+[2023-05-13 00:18:01] INFO root fetch - processPackages [pz-rail-pipelines]: Downloading https://files.pythonhosted.org/packages/db/e2/a4d17bcca8dc3ec654fb02dd90ee45470b1cbcef99067fe7b835473314d2/pz-rail-pipelines-0.0.4.tar.gz
+[2023-05-13 00:18:01] INFO root fetch - processPackages [hackerforms]: executing diffoscope
+[2023-05-13 00:18:01] INFO root fetch - processPackages [hackerforms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hackerforms-0.8.0.tar.gz tmp/hackerforms-0.9.0.tar.gz --markdown 20230513/h/hackerforms/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 00:18:01] INFO root fetch - processPackages [nested-diff]: Downloading https://files.pythonhosted.org/packages/8a/0c/e67c64328a355022e05262f39390ed1d55f7ab114e2b754136d870187637/nested_diff-1.2.tar.gz
+[2023-05-13 00:18:01] INFO root fetch - processPackages [pz-rail-pipelines]: executing diffoscope
+[2023-05-13 00:18:01] INFO root fetch - processPackages [pz-rail-pipelines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pz-rail-pipelines-0.0.3.tar.gz tmp/pz-rail-pipelines-0.0.4.tar.gz --markdown 20230513/p/pz-rail-pipelines/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 00:18:01] INFO root fetch - processPackages [reixs]: executing diffoscope
+[2023-05-13 00:18:01] INFO root fetch - processPackages [reixs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reixs-0.5.8.tar.gz tmp/reixs-0.5.9.tar.gz --markdown 20230513/r/reixs/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-13 00:18:01] INFO root fetch - processPackages [nested-diff]: executing diffoscope
+[2023-05-13 00:18:01] INFO root fetch - processPackages [nested-diff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nested_diff-1.1.tar.gz tmp/nested_diff-1.2.tar.gz --markdown 20230513/n/nested-diff/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-13 00:18:02] INFO root fetch - main [MainThread]: End processing [base-convert-cli]: success
+[2023-05-13 00:18:02] INFO root fetch - main [MainThread]: End processing [chia-py-rpc]: success
+[2023-05-13 00:18:02] INFO root fetch - main [MainThread]: End processing [ntheory]: success
+[2023-05-13 00:18:03] INFO root fetch - main [MainThread]: End processing [hackerforms]: success
+[2023-05-13 00:18:03] INFO root fetch - main [MainThread]: End processing [nested-diff]: success
+[2023-05-13 00:18:03] INFO root fetch - main [MainThread]: End processing [pz-rail-pipelines]: success
+[2023-05-13 00:18:04] INFO root fetch - main [MainThread]: End processing [reixs]: success
+[2023-05-13 00:18:04] INFO root fetch - main [MainThread]: End processing [stogui]: success
+[2023-05-13 00:18:04] INFO root fetch - main [MainThread]: Store serial: [18084886]
