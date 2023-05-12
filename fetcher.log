@@ -429,3 +429,51 @@
 [2023-05-13 00:49:58] INFO root fetch - main [MainThread]: End processing [reixs]: success
 [2023-05-13 00:49:58] INFO root fetch - main [MainThread]: End processing [kfp-server-api]: success
 [2023-05-13 00:49:58] INFO root fetch - main [MainThread]: Store serial: [18085037]
+[2023-05-13 00:55:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085037]
+[2023-05-13 00:55:06] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 00:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chiapos
+[2023-05-13 00:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fast-poibin
+[2023-05-13 00:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neon-skill-fallback-llm
+[2023-05-13 00:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-eric-perf
+[2023-05-13 00:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: simple-chatgpt-cli
+[2023-05-13 00:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: proxystore
+[2023-05-13 00:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-confluentcloud
+[2023-05-13 00:55:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: NikGapps-Helper
+[2023-05-13 00:55:06] INFO root fetch - processPackages [proxystore]: New version: [0.5.0] Old Version: [0.4.1a1]
+[2023-05-13 00:55:06] INFO root fetch - processPackages [neon-skill-fallback-llm]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2023-05-13 00:55:06] WARNING root fetch - processPackages [certora-cli-alpha-eric-perf]: Skipping, unable to determine old version
+[2023-05-13 00:55:06] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-perf] error
+[2023-05-13 00:55:06] INFO root fetch - processPackages [simple-chatgpt-cli]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-13 00:55:06] WARNING root fetch - processPackages [NikGapps-Helper]: Skipping, unable to determine old version
+[2023-05-13 00:55:06] INFO root fetch - main [MainThread]: End processing [NikGapps-Helper] error
+[2023-05-13 00:55:06] INFO root fetch - processPackages [fast-poibin]: New version: [0.3.0] Old Version: [0.2.6]
+[2023-05-13 00:55:06] INFO root fetch - processPackages [chiapos]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-13 00:55:07] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2023-05-13 00:55:07] INFO root fetch - processPackages [simple-chatgpt-cli]: Downloading https://files.pythonhosted.org/packages/99/d6/4f09cc79a8982002a98d128f9e53677d940f9d977ef247fb6f9e914ea89c/simple_chatgpt_cli-0.1.7.tar.gz
+[2023-05-13 00:55:07] INFO root fetch - processPackages [proxystore]: Downloading https://files.pythonhosted.org/packages/f8/69/27bacfbac1c187da77194d5d0f413e6b45ba560ecf802dec428bd6a2b685/proxystore-0.4.1a1.tar.gz
+[2023-05-13 00:55:07] INFO root fetch - processPackages [fast-poibin]: Downloading https://files.pythonhosted.org/packages/ba/8d/411f1e396ace9cd7bcb3ad9e4e0928eedfdb602bc6a454bb8ac1b6b1b8ed/fast_poibin-0.2.6.tar.gz
+[2023-05-13 00:55:07] INFO root fetch - processPackages [neon-skill-fallback-llm]: Downloading https://files.pythonhosted.org/packages/17/6c/b6691ce8397e8f0e2cc5b729d4566a89a40dcce38d93ed91e4a853eb780e/neon_skill_fallback_llm-0.0.1a1-py3-none-any.whl
+[2023-05-13 00:55:07] INFO root fetch - processPackages [chiapos]: Downloading https://files.pythonhosted.org/packages/3a/6b/829161105128be69efdce127be57aea1c28105d76c5c30a1c753caed0a4d/chiapos-1.0.8.tar.gz
+[2023-05-13 00:55:07] INFO root fetch - processPackages [simple-chatgpt-cli]: executing diffoscope
+[2023-05-13 00:55:07] INFO root fetch - processPackages [simple-chatgpt-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_chatgpt_cli-0.1.6.tar.gz tmp/simple_chatgpt_cli-0.1.7.tar.gz --markdown 20230513/s/simple-chatgpt-cli/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-13 00:55:07] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2023-05-13 00:55:07] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20230513/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/diff.md --exclude *.pyd
+[2023-05-13 00:55:07] INFO root fetch - processPackages [proxystore]: Downloading https://files.pythonhosted.org/packages/35/44/9a63b9b646dec3f2bd465dde238c51f43d1d5fc0d3494335c9073e6383c1/proxystore-0.5.0.tar.gz
+[2023-05-13 00:55:07] INFO root fetch - processPackages [neon-skill-fallback-llm]: Downloading https://files.pythonhosted.org/packages/79/f9/c83692cf3190b372554b50599034b08440644c8af429de491c3a3f5c2ea8/neon_skill_fallback_llm-0.0.1a2-py3-none-any.whl
+[2023-05-13 00:55:07] INFO root fetch - processPackages [neon-skill-fallback-llm]: executing diffoscope
+[2023-05-13 00:55:07] INFO root fetch - processPackages [neon-skill-fallback-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon_skill_fallback_llm-0.0.1a1-py3-none-any.whl.zip tmp/neon_skill_fallback_llm-0.0.1a2-py3-none-any.whl.zip --markdown 20230513/n/neon-skill-fallback-llm/0.0.1a1-0.0.1a2/diff.md --exclude *.pyd
+[2023-05-13 00:55:07] INFO root fetch - processPackages [fast-poibin]: Downloading https://files.pythonhosted.org/packages/56/e7/95196aa46f3aa9bb546c7978313fed30feb6fdf2f1550d29ed5a42df88a7/fast_poibin-0.3.0.tar.gz
+[2023-05-13 00:55:07] INFO root fetch - processPackages [chiapos]: Downloading https://files.pythonhosted.org/packages/27/b5/cfc684a398db3c4d671b2baf9749cd589978252a04749962e1f1b1fae313/chiapos-1.0.9.tar.gz
+[2023-05-13 00:55:07] INFO root fetch - processPackages [proxystore]: executing diffoscope
+[2023-05-13 00:55:07] INFO root fetch - processPackages [proxystore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxystore-0.4.1a1.tar.gz tmp/proxystore-0.5.0.tar.gz --markdown 20230513/p/proxystore/0.4.1a1-0.5.0/diff.md --exclude *.pyd
+[2023-05-13 00:55:07] INFO root fetch - processPackages [fast-poibin]: executing diffoscope
+[2023-05-13 00:55:07] INFO root fetch - processPackages [fast-poibin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_poibin-0.2.6.tar.gz tmp/fast_poibin-0.3.0.tar.gz --markdown 20230513/f/fast-poibin/0.2.6-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 00:55:07] INFO root fetch - processPackages [chiapos]: executing diffoscope
+[2023-05-13 00:55:07] INFO root fetch - processPackages [chiapos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chiapos-1.0.8.tar.gz tmp/chiapos-1.0.9.tar.gz --markdown 20230513/c/chiapos/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-13 00:55:08] INFO root fetch - main [MainThread]: End processing [simple-chatgpt-cli]: success
+[2023-05-13 00:55:08] INFO root fetch - main [MainThread]: End processing [neon-skill-fallback-llm]: success
+[2023-05-13 00:55:08] INFO root fetch - main [MainThread]: End processing [fast-poibin]: success
+[2023-05-13 00:55:10] INFO root fetch - main [MainThread]: End processing [proxystore]: success
+[2023-05-13 00:55:10] INFO root fetch - main [MainThread]: End processing [chiapos]: success
+[2023-05-13 00:55:11] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2023-05-13 00:55:11] INFO root fetch - main [MainThread]: Store serial: [18085071]
