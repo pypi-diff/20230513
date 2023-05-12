@@ -227,3 +227,53 @@
 [2023-05-13 00:29:03] INFO root fetch - main [MainThread]: End processing [pyelastica]: success
 [2023-05-13 00:29:05] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
 [2023-05-13 00:29:05] INFO root fetch - main [MainThread]: Store serial: [18084940]
+[2023-05-13 00:34:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18084940]
+[2023-05-13 00:34:15] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 00:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autotraders
+[2023-05-13 00:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oobabot
+[2023-05-13 00:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: getblocks
+[2023-05-13 00:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rbfly
+[2023-05-13 00:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: discovery-transition-ds
+[2023-05-13 00:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hana-scaffold
+[2023-05-13 00:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: adafruit-circuitpython-irremote
+[2023-05-13 00:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chia-py-rpc
+[2023-05-13 00:34:15] INFO root fetch - processPackages [autotraders]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-13 00:34:15] INFO root fetch - processPackages [chia-py-rpc]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 00:34:15] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-13 00:34:15] INFO root fetch - processPackages [rbfly]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-13 00:34:15] INFO root fetch - processPackages [getblocks]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-13 00:34:15] INFO root fetch - processPackages [oobabot]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-13 00:34:15] WARNING root fetch - processPackages [hana-scaffold]: Skipping, unable to determine old version
+[2023-05-13 00:34:15] INFO root fetch - main [MainThread]: End processing [hana-scaffold] error
+[2023-05-13 00:34:15] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: New version: [4.1.9] Old Version: [4.1.8]
+[2023-05-13 00:34:15] INFO root fetch - processPackages [autotraders]: Downloading https://files.pythonhosted.org/packages/54/73/adf800906b428d83d7e620d2302c27eb49f99b824d8750180f6864ca7841/autotraders-0.2.0.tar.gz
+[2023-05-13 00:34:15] INFO root fetch - processPackages [rbfly]: Downloading https://files.pythonhosted.org/packages/9a/01/bbc6e04d125760d2742276cf1d274e825539882353aa65b94d14dd0eed69/rbfly-0.6.1.tar.gz
+[2023-05-13 00:34:15] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/06/9d/643e75da6e58734fadf8c0d1b020aa7d108f2b168bc3ddbf4217f0e12aa1/getblocks-0.2.0.tar.gz
+[2023-05-13 00:34:15] INFO root fetch - processPackages [chia-py-rpc]: Downloading https://files.pythonhosted.org/packages/70/a0/5aa43bb75a99f782f6e2ffcb70f0b332dbd9156d9815ad8875356131da10/chia_py_rpc-0.0.4.tar.gz
+[2023-05-13 00:34:15] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Downloading https://files.pythonhosted.org/packages/e0/66/d229055b1d417dbc45ed3f445d92aabcd1adcaea39e672ecb86b46099833/adafruit-circuitpython-irremote-4.1.8.tar.gz
+[2023-05-13 00:34:15] INFO root fetch - processPackages [autotraders]: executing diffoscope
+[2023-05-13 00:34:15] INFO root fetch - processPackages [autotraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotraders-0.1.5.tar.gz tmp/autotraders-0.2.0.tar.gz --markdown 20230513/a/autotraders/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 00:34:15] INFO root fetch - processPackages [oobabot]: Downloading https://files.pythonhosted.org/packages/e6/7c/0a454972a9f7ccc54f4fda86df3643afd8d2580b5b07ec584b63b7a37a24/oobabot-0.1.5.tar.gz
+[2023-05-13 00:34:15] INFO root fetch - processPackages [chia-py-rpc]: executing diffoscope
+[2023-05-13 00:34:15] INFO root fetch - processPackages [chia-py-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chia_py_rpc-0.0.3.tar.gz tmp/chia_py_rpc-0.0.4.tar.gz --markdown 20230513/c/chia-py-rpc/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 00:34:15] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: Downloading https://files.pythonhosted.org/packages/d0/74/fd48f4b91ced3acc96c7db0abd44e630ba9352ad00cfbed435a9ad82e0e0/adafruit-circuitpython-irremote-4.1.9.tar.gz
+[2023-05-13 00:34:15] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-13 00:34:15] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230513/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-13 00:34:15] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: executing diffoscope
+[2023-05-13 00:34:15] INFO root fetch - processPackages [adafruit-circuitpython-irremote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-irremote-4.1.8.tar.gz tmp/adafruit-circuitpython-irremote-4.1.9.tar.gz --markdown 20230513/a/adafruit-circuitpython-irremote/4.1.8-4.1.9/diff.md --exclude *.pyd
+[2023-05-13 00:34:15] INFO root fetch - processPackages [getblocks]: Downloading https://files.pythonhosted.org/packages/6f/33/ac4236f68a7e9102af4b9bf98408df874171bd0f03f33c34b88b4e501edf/getblocks-0.2.1.tar.gz
+[2023-05-13 00:34:15] INFO root fetch - processPackages [oobabot]: executing diffoscope
+[2023-05-13 00:34:15] INFO root fetch - processPackages [oobabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oobabot-0.1.4.tar.gz tmp/oobabot-0.1.5.tar.gz --markdown 20230513/o/oobabot/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-13 00:34:16] INFO root fetch - processPackages [rbfly]: Downloading https://files.pythonhosted.org/packages/23/c5/71e581f6d1767c7d9ac89735f13302c2029d12313f055b368c85a4761019/rbfly-0.6.2.tar.gz
+[2023-05-13 00:34:16] INFO root fetch - processPackages [getblocks]: executing diffoscope
+[2023-05-13 00:34:16] INFO root fetch - processPackages [getblocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/getblocks-0.2.0.tar.gz tmp/getblocks-0.2.1.tar.gz --markdown 20230513/g/getblocks/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-13 00:34:16] INFO root fetch - processPackages [rbfly]: executing diffoscope
+[2023-05-13 00:34:16] INFO root fetch - processPackages [rbfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rbfly-0.6.1.tar.gz tmp/rbfly-0.6.2.tar.gz --markdown 20230513/r/rbfly/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-13 00:34:17] INFO root fetch - main [MainThread]: End processing [chia-py-rpc]: success
+[2023-05-13 00:34:17] INFO root fetch - main [MainThread]: End processing [autotraders]: success
+[2023-05-13 00:34:17] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-irremote]: success
+[2023-05-13 00:34:17] INFO root fetch - main [MainThread]: End processing [getblocks]: success
+[2023-05-13 00:34:17] INFO root fetch - main [MainThread]: End processing [oobabot]: success
+[2023-05-13 00:34:18] INFO root fetch - main [MainThread]: End processing [rbfly]: success
+[2023-05-13 00:34:21] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-13 00:34:21] INFO root fetch - main [MainThread]: Store serial: [18084964]
