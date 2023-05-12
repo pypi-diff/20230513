@@ -699,3 +699,18 @@
 [2023-05-13 01:17:11] INFO root fetch - processPackages [plone.app.portlets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.portlets-5.0.3.tar.gz tmp/plone.app.portlets-5.0.4.tar.gz --markdown 20230513/p/plone.app.portlets/5.0.3-5.0.4/diff.md --exclude *.pyd
 [2023-05-13 01:17:13] INFO root fetch - main [MainThread]: End processing [plone.app.portlets]: success
 [2023-05-13 01:17:13] INFO root fetch - main [MainThread]: Store serial: [18085184]
+[2023-05-13 01:22:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085184]
+[2023-05-13 01:22:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-13 01:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kraken-core
+[2023-05-13 01:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moptipy
+[2023-05-13 01:22:22] INFO root fetch - processPackages [kraken-core]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-13 01:22:22] INFO root fetch - processPackages [kraken-core]: executing diffoscope
+[2023-05-13 01:22:22] INFO root fetch - processPackages [kraken-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kraken-core-0.9.5.tar.gz tmp/kraken-core-0.9.6.tar.gz --markdown 20230513/k/kraken-core/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-13 01:22:22] INFO root fetch - processPackages [moptipy]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 01:22:22] INFO root fetch - processPackages [moptipy]: Downloading https://files.pythonhosted.org/packages/be/7f/5279c5a66253c3acc29a2b1baa2ae5e5c13f14d8ed5e613af26af0568f80/moptipy-0.9.8.tar.gz
+[2023-05-13 01:22:23] INFO root fetch - processPackages [moptipy]: Downloading https://files.pythonhosted.org/packages/86/d3/45297bbff0974d528e5da780bc1bf48f8418230162685da0ba8212246056/moptipy-0.9.9.tar.gz
+[2023-05-13 01:22:23] INFO root fetch - processPackages [moptipy]: executing diffoscope
+[2023-05-13 01:22:23] INFO root fetch - processPackages [moptipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moptipy-0.9.8.tar.gz tmp/moptipy-0.9.9.tar.gz --markdown 20230513/m/moptipy/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 01:22:23] INFO root fetch - main [MainThread]: End processing [kraken-core]: success
+[2023-05-13 01:22:26] INFO root fetch - main [MainThread]: End processing [moptipy]: success
+[2023-05-13 01:22:26] INFO root fetch - main [MainThread]: Store serial: [18085195]
