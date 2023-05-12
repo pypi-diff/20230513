@@ -277,3 +277,50 @@
 [2023-05-13 00:34:18] INFO root fetch - main [MainThread]: End processing [rbfly]: success
 [2023-05-13 00:34:21] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
 [2023-05-13 00:34:21] INFO root fetch - main [MainThread]: Store serial: [18084964]
+[2023-05-13 00:39:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18084964]
+[2023-05-13 00:39:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gsheet-player
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ntheory
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-eric-internalSummarizer
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: discord-pretty-help
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tyba-client
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: honeybee-ies
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: NikeCA
+[2023-05-13 00:39:30] INFO root fetch - processPackages [gsheet-player]: New version: [0.2.0] Old Version: [0.0.16]
+[2023-05-13 00:39:30] WARNING root fetch - processPackages [certora-cli-alpha-eric-internalSummarizer]: Skipping, unable to determine old version
+[2023-05-13 00:39:30] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-eric-internalSummarizer] error
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ntheory]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 00:39:30] INFO root fetch - processPackages [tyba-client]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-13 00:39:30] INFO root fetch - processPackages [NikeCA]: New version: [0.2.7b0] Old Version: [0.2.7a0]
+[2023-05-13 00:39:30] INFO root fetch - processPackages [discord-pretty-help]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-13 00:39:30] INFO root fetch - processPackages [honeybee-ies]: New version: [0.7.0] Old Version: [0.6.2]
+[2023-05-13 00:39:30] INFO root fetch - processPackages [gsheet-player]: Downloading https://files.pythonhosted.org/packages/15/3d/1a23a67676cda382e8180f14f63f8b47a8a33397acee7c5a66813384bb8c/gsheet-player-0.0.16.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ntheory]: Downloading https://files.pythonhosted.org/packages/fe/2b/86e4b702b248a13961c6476bd753d8c7300aedf1582876011cb1e56b83a0/ntheory-0.0.5.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [discord-pretty-help]: Downloading https://files.pythonhosted.org/packages/60/94/3f7ed4e166e4e9d65501aef4007ca5e76efc9a488b33830215f4b7fe1cd2/discord_pretty_help-2.0.2.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [tyba-client]: Downloading https://files.pythonhosted.org/packages/40/50/494bb315aa13ecb426a7489d509abec56a4acf3d95f4a3c900d2f58eb8c9/tyba_client-0.2.2.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [honeybee-ies]: Downloading https://files.pythonhosted.org/packages/55/b5/9fa07b36e469af6a1e9c73f82ddbb8f7694b73522f5833996395e95d91b1/honeybee-ies-0.6.2.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [gsheet-player]: Downloading https://files.pythonhosted.org/packages/4b/2d/676c2dacbf26de05922da409629d1d4194585351a7ca4782b581bb901a4a/gsheet-player-0.2.0.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [NikeCA]: Downloading https://files.pythonhosted.org/packages/87/b1/dd03edeec4b14c7a706e981585054fe39622b51eaefde1c33f2df7f10465/NikeCA-0.2.7b0.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ntheory]: Downloading https://files.pythonhosted.org/packages/77/c1/9423a037088fb8c8b55a160a086eee33fea2d32c60ffd540e9ee07bfc4f6/ntheory-0.0.6.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [tyba-client]: Downloading https://files.pythonhosted.org/packages/a2/6c/58f69240c6c0e648100a4b22f4fece1f5e298e8b7afb20b49cf9673c51eb/tyba_client-0.2.3.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [gsheet-player]: executing diffoscope
+[2023-05-13 00:39:30] INFO root fetch - processPackages [gsheet-player]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gsheet-player-0.0.16.tar.gz tmp/gsheet-player-0.2.0.tar.gz --markdown 20230513/g/gsheet-player/0.0.16-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 00:39:30] INFO root fetch - processPackages [NikeCA]: executing diffoscope
+[2023-05-13 00:39:30] INFO root fetch - processPackages [NikeCA]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NikeCA-0.2.7a0.tar.gz tmp/NikeCA-0.2.7b0.tar.gz --markdown 20230513/N/NikeCA/0.2.7a0-0.2.7b0/diff.md --exclude *.pyd
+[2023-05-13 00:39:30] INFO root fetch - processPackages [discord-pretty-help]: Downloading https://files.pythonhosted.org/packages/58/9b/c489c67c76b62ed30857afb80e33efb003f7edaf9e0d71adba58449f2d76/discord_pretty_help-2.0.3.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ntheory]: executing diffoscope
+[2023-05-13 00:39:30] INFO root fetch - processPackages [ntheory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntheory-0.0.5.tar.gz tmp/ntheory-0.0.6.tar.gz --markdown 20230513/n/ntheory/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 00:39:30] INFO root fetch - processPackages [honeybee-ies]: Downloading https://files.pythonhosted.org/packages/59/e6/8c8c23cde71d50f3f39bee9d51a1bc3c634389d70109045a0cd698a67682/honeybee-ies-0.7.0.tar.gz
+[2023-05-13 00:39:30] INFO root fetch - processPackages [tyba-client]: executing diffoscope
+[2023-05-13 00:39:30] INFO root fetch - processPackages [tyba-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tyba_client-0.2.2.tar.gz tmp/tyba_client-0.2.3.tar.gz --markdown 20230513/t/tyba-client/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-13 00:39:30] INFO root fetch - processPackages [discord-pretty-help]: executing diffoscope
+[2023-05-13 00:39:30] INFO root fetch - processPackages [discord-pretty-help]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord_pretty_help-2.0.2.tar.gz tmp/discord_pretty_help-2.0.3.tar.gz --markdown 20230513/d/discord-pretty-help/2.0.2-2.0.3/diff.md --exclude *.pyd
+[2023-05-13 00:39:30] INFO root fetch - processPackages [honeybee-ies]: executing diffoscope
+[2023-05-13 00:39:30] INFO root fetch - processPackages [honeybee-ies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/honeybee-ies-0.6.2.tar.gz tmp/honeybee-ies-0.7.0.tar.gz --markdown 20230513/h/honeybee-ies/0.6.2-0.7.0/diff.md --exclude *.pyd
+[2023-05-13 00:39:32] INFO root fetch - main [MainThread]: End processing [NikeCA]: success
+[2023-05-13 00:39:32] INFO root fetch - main [MainThread]: End processing [ntheory]: success
+[2023-05-13 00:39:32] INFO root fetch - main [MainThread]: End processing [discord-pretty-help]: success
+[2023-05-13 00:39:32] INFO root fetch - main [MainThread]: End processing [gsheet-player]: success
+[2023-05-13 00:39:32] INFO root fetch - main [MainThread]: End processing [tyba-client]: success
+[2023-05-13 00:39:32] INFO root fetch - main [MainThread]: End processing [honeybee-ies]: success
+[2023-05-13 00:39:32] INFO root fetch - main [MainThread]: Store serial: [18084988]
