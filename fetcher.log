@@ -790,3 +790,21 @@
 [2023-05-13 01:43:12] WARNING root fetch - processPackages [housekeeping]: Skipping, unable to determine old version
 [2023-05-13 01:43:12] INFO root fetch - main [MainThread]: End processing [housekeeping] error
 [2023-05-13 01:43:12] INFO root fetch - main [MainThread]: Store serial: [18085241]
+[2023-05-13 01:48:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085241]
+[2023-05-13 01:48:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 01:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pht
+[2023-05-13 01:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magneto-pyelastica
+[2023-05-13 01:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlflow
+[2023-05-13 01:48:20] INFO root fetch - processPackages [magneto-pyelastica]: New version: [0.0.1.post2] Old Version: [0.0.1]
+[2023-05-13 01:48:20] WARNING root fetch - processPackages [pht]: Skipping, unable to determine old version
+[2023-05-13 01:48:20] INFO root fetch - main [MainThread]: End processing [pht] error
+[2023-05-13 01:48:21] INFO root fetch - processPackages [magneto-pyelastica]: Downloading https://files.pythonhosted.org/packages/57/f2/ab2c46a06efe1104c544f9cfe6bc36a2f36b8ec8077048b4b911fc10ee45/magneto_pyelastica-0.0.1.tar.gz
+[2023-05-13 01:48:21] INFO root fetch - processPackages [mlflow]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-13 01:48:21] INFO root fetch - processPackages [magneto-pyelastica]: Downloading https://files.pythonhosted.org/packages/3c/9d/0948f1371826f4367975c8a83ff65493407d16049f504ff42742269f6b8e/magneto_pyelastica-0.0.1.post2.tar.gz
+[2023-05-13 01:48:21] INFO root fetch - processPackages [mlflow]: Downloading https://files.pythonhosted.org/packages/ba/19/eff71ad534076fcddd8011df704d1587503cbe0c761f125d27cbb4782e1e/mlflow-2.3.1.tar.gz
+[2023-05-13 01:48:21] WARNING root fetch - processPackages [mlflow]: Skipping package: exceeds size limit 17304993>=10485760
+[2023-05-13 01:48:21] INFO root fetch - main [MainThread]: End processing [mlflow] error
+[2023-05-13 01:48:21] INFO root fetch - processPackages [magneto-pyelastica]: executing diffoscope
+[2023-05-13 01:48:21] INFO root fetch - processPackages [magneto-pyelastica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magneto_pyelastica-0.0.1.tar.gz tmp/magneto_pyelastica-0.0.1.post2.tar.gz --markdown 20230513/m/magneto-pyelastica/0.0.1-0.0.1.post2/diff.md --exclude *.pyd
+[2023-05-13 01:48:22] INFO root fetch - main [MainThread]: End processing [magneto-pyelastica]: success
+[2023-05-13 01:48:22] INFO root fetch - main [MainThread]: Store serial: [18085252]
