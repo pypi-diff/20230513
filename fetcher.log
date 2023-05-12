@@ -732,3 +732,38 @@
 [2023-05-13 01:27:36] INFO root fetch - main [MainThread]: End processing [throne]: success
 [2023-05-13 01:27:36] INFO root fetch - main [MainThread]: End processing [pulumi-snowflake]: success
 [2023-05-13 01:27:36] INFO root fetch - main [MainThread]: Store serial: [18085204]
+[2023-05-13 01:32:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085204]
+[2023-05-13 01:32:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 01:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CmonCrawl
+[2023-05-13 01:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lazi
+[2023-05-13 01:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-account-financial-report
+[2023-05-13 01:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyelastica
+[2023-05-13 01:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fern-belvo
+[2023-05-13 01:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: click-aliasing
+[2023-05-13 01:32:45] INFO root fetch - processPackages [CmonCrawl]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 01:32:45] INFO root fetch - processPackages [pyelastica]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-13 01:32:45] INFO root fetch - processPackages [pyelastica]: executing diffoscope
+[2023-05-13 01:32:45] INFO root fetch - processPackages [pyelastica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyelastica-0.3.0.tar.gz tmp/pyelastica-0.3.1.tar.gz --markdown 20230513/p/pyelastica/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 01:32:45] INFO root fetch - processPackages [lazi]: New version: [1.4.0.32] Old Version: [1.2.0.15]
+[2023-05-13 01:32:45] WARNING root fetch - processPackages [click-aliasing]: Skipping, unable to determine old version
+[2023-05-13 01:32:45] INFO root fetch - processPackages [fern-belvo]: New version: [0.0.28] Old Version: [0.0.27]
+[2023-05-13 01:32:45] INFO root fetch - main [MainThread]: End processing [click-aliasing] error
+[2023-05-13 01:32:45] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: New version: [14.0.3.8.0] Old Version: [14.0.3.7.5.dev1]
+[2023-05-13 01:32:45] INFO root fetch - processPackages [CmonCrawl]: Downloading https://files.pythonhosted.org/packages/92/25/0b107be530ad23519e36d09453f3c07380c9707d04d0f631347a8c01bf0c/CmonCrawl-1.0.1.tar.gz
+[2023-05-13 01:32:45] INFO root fetch - processPackages [CmonCrawl]: executing diffoscope
+[2023-05-13 01:32:45] INFO root fetch - processPackages [CmonCrawl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CmonCrawl-1.0.0.tar.gz tmp/CmonCrawl-1.0.1.tar.gz --markdown 20230513/C/CmonCrawl/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 01:32:45] INFO root fetch - processPackages [fern-belvo]: Downloading https://files.pythonhosted.org/packages/fb/89/e24a957edecdeb877b358f2d0ea39933e16c109ea3b115c61a7df5f35d4d/fern_belvo-0.0.28.tar.gz
+[2023-05-13 01:32:45] INFO root fetch - processPackages [lazi]: Downloading https://files.pythonhosted.org/packages/49/a2/a8407b97ec40a4bf6a1824368db426b041e9b10e138001e93dd70cc6c8c7/lazi-1.4.0.32.tar.gz
+[2023-05-13 01:32:45] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: Downloading https://files.pythonhosted.org/packages/8e/d8/668269b1c1d35bebb6de6d58df53858bc9f0c4d713a7b22fc6a47ad9c963/odoo14_addon_account_financial_report-14.0.3.8.0-py3-none-any.whl
+[2023-05-13 01:32:45] INFO root fetch - processPackages [fern-belvo]: executing diffoscope
+[2023-05-13 01:32:45] INFO root fetch - processPackages [fern-belvo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fern_belvo-0.0.27.tar.gz tmp/fern_belvo-0.0.28.tar.gz --markdown 20230513/f/fern-belvo/0.0.27-0.0.28/diff.md --exclude *.pyd
+[2023-05-13 01:32:45] INFO root fetch - processPackages [lazi]: executing diffoscope
+[2023-05-13 01:32:45] INFO root fetch - processPackages [lazi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lazi-1.2.0.15.tar.gz tmp/lazi-1.4.0.32.tar.gz --markdown 20230513/l/lazi/1.2.0.15-1.4.0.32/diff.md --exclude *.pyd
+[2023-05-13 01:32:45] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: executing diffoscope
+[2023-05-13 01:32:45] INFO root fetch - processPackages [odoo14-addon-account-financial-report]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_financial_report-14.0.3.7.5.dev1-py3-none-any.whl.zip tmp/odoo14_addon_account_financial_report-14.0.3.8.0-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-account-financial-report/14.0.3.7.5.dev1-14.0.3.8.0/diff.md --exclude *.pyd
+[2023-05-13 01:32:46] INFO root fetch - main [MainThread]: End processing [lazi]: success
+[2023-05-13 01:32:47] INFO root fetch - main [MainThread]: End processing [pyelastica]: success
+[2023-05-13 01:32:47] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-financial-report]: success
+[2023-05-13 01:32:49] INFO root fetch - main [MainThread]: End processing [fern-belvo]: success
+[2023-05-13 01:32:50] INFO root fetch - main [MainThread]: End processing [CmonCrawl]: success
+[2023-05-13 01:32:50] INFO root fetch - main [MainThread]: Store serial: [18085225]
