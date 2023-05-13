@@ -8463,3 +8463,26 @@
 [2023-05-13 12:37:13] INFO root fetch - main [MainThread]: End processing [krx-rigger]: success
 [2023-05-13 12:37:14] INFO root fetch - main [MainThread]: End processing [RockyRoad]: success
 [2023-05-13 12:37:14] INFO root fetch - main [MainThread]: Store serial: [18089498]
+[2023-05-13 12:42:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089498]
+[2023-05-13 12:42:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 12:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qg-botsdk
+[2023-05-13 12:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imsholcal
+[2023-05-13 12:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: limeutils
+[2023-05-13 12:42:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: krx-rigger
+[2023-05-13 12:42:22] INFO root fetch - processPackages [limeutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-13 12:42:22] WARNING root fetch - processPackages [imsholcal]: Skipping, unable to determine old version
+[2023-05-13 12:42:22] INFO root fetch - processPackages [krx-rigger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 12:42:22] INFO root fetch - main [MainThread]: End processing [imsholcal] error
+[2023-05-13 12:42:22] INFO root fetch - processPackages [qg-botsdk]: New version: [2.7.0] Old Version: [2.6.3]
+[2023-05-13 12:42:22] INFO root fetch - processPackages [limeutils]: executing diffoscope
+[2023-05-13 12:42:22] INFO root fetch - processPackages [limeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limeutils-0.2.8.tar.gz tmp/limeutils-0.2.9.tar.gz --markdown 20230513/l/limeutils/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-13 12:42:22] INFO root fetch - processPackages [krx-rigger]: executing diffoscope
+[2023-05-13 12:42:22] INFO root fetch - processPackages [krx-rigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krx_rigger-0.0.8.tar.gz tmp/krx_rigger-0.0.9.tar.gz --markdown 20230513/k/krx-rigger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 12:42:23] INFO root fetch - processPackages [qg-botsdk]: Downloading https://files.pythonhosted.org/packages/84/d8/1da47dd9589b8e1e8b110a816f5e2883685ba15bc4e15af32d433ba20dae/qg-botsdk-2.6.3.tar.gz
+[2023-05-13 12:42:23] INFO root fetch - processPackages [qg-botsdk]: Downloading https://files.pythonhosted.org/packages/30/30/1f232b74db27388fb52b99c3931948df53f74aeb410ef4e7958869762934/qg-botsdk-2.7.0.tar.gz
+[2023-05-13 12:42:23] INFO root fetch - processPackages [qg-botsdk]: executing diffoscope
+[2023-05-13 12:42:23] INFO root fetch - processPackages [qg-botsdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qg-botsdk-2.6.3.tar.gz tmp/qg-botsdk-2.7.0.tar.gz --markdown 20230513/q/qg-botsdk/2.6.3-2.7.0/diff.md --exclude *.pyd
+[2023-05-13 12:42:23] INFO root fetch - main [MainThread]: End processing [krx-rigger]: success
+[2023-05-13 12:42:24] INFO root fetch - main [MainThread]: End processing [limeutils]: success
+[2023-05-13 12:42:25] INFO root fetch - main [MainThread]: End processing [qg-botsdk]: success
+[2023-05-13 12:42:25] INFO root fetch - main [MainThread]: Store serial: [18089521]
