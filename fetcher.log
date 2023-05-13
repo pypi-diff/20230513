@@ -10497,3 +10497,53 @@ EOFError: EOF read where object expected
 [2023-05-13 16:16:34] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
 [2023-05-13 16:16:35] INFO root fetch - main [MainThread]: End processing [dali-rp2]: success
 [2023-05-13 16:16:35] INFO root fetch - main [MainThread]: Store serial: [18090762]
+[2023-05-13 16:21:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090762]
+[2023-05-13 16:21:45] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 16:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devsim
+[2023-05-13 16:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flapgui
+[2023-05-13 16:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypreql
+[2023-05-13 16:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: amake
+[2023-05-13 16:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: testcell
+[2023-05-13 16:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flapgui
+[2023-05-13 16:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spanishconjugator
+[2023-05-13 16:21:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-05-13 16:21:45] WARNING root fetch - processPackages [amake]: Skipping, unable to determine old version
+[2023-05-13 16:21:45] INFO root fetch - main [MainThread]: End processing [amake] error
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-13 16:21:45] INFO root fetch - processPackages [devsim]: New version: [2.5.0] Old Version: [2.4.0]
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-13 16:21:45] INFO root fetch - processPackages [testcell]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 16:21:45] INFO root fetch - processPackages [pypreql]: New version: [0.0.1rc9] Old Version: [0.0.1rc8]
+[2023-05-13 16:21:45] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-13 16:21:45] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-13 16:21:45] INFO root fetch - processPackages [devsim]: Downloading https://files.pythonhosted.org/packages/ca/3f/7e27f6d52b0a39ca6c24558cd5ae397a17602796e5d9306f3041c1a35260/devsim-2.4.0-cp36-abi3-win_amd64.whl
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: Downloading https://files.pythonhosted.org/packages/be/ab/8ae4b3e80b2f3357f83952b2e70432ba3b6886b25800e8caaa361d32a33a/flapgui-0.0.4.tar.gz
+[2023-05-13 16:21:45] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/43/b8/2abb29f2547d81aff3f05e6578226b18359897a8e67919d46a46231d0bed/pypreql-0.0.1rc8.tar.gz
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: Downloading https://files.pythonhosted.org/packages/be/ab/8ae4b3e80b2f3357f83952b2e70432ba3b6886b25800e8caaa361d32a33a/flapgui-0.0.4.tar.gz
+[2023-05-13 16:21:45] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-13 16:21:45] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230513/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-13 16:21:45] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-13 16:21:45] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230513/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-13 16:21:45] INFO root fetch - processPackages [testcell]: Downloading https://files.pythonhosted.org/packages/c0/8e/f647c03b31d7b330c1dc6a32c94272b725a5d51eb43da9031529b8ecb2e5/testcell-0.0.3.tar.gz
+[2023-05-13 16:21:45] INFO root fetch - processPackages [testcell]: executing diffoscope
+[2023-05-13 16:21:45] INFO root fetch - processPackages [testcell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testcell-0.0.2.tar.gz tmp/testcell-0.0.3.tar.gz --markdown 20230513/t/testcell/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: Downloading https://files.pythonhosted.org/packages/a4/39/f57a83446bf92374369e37cf2e3563a65b2cc8c3636368b76092b49d9a19/flapgui-0.1.0.tar.gz
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: Downloading https://files.pythonhosted.org/packages/a4/39/f57a83446bf92374369e37cf2e3563a65b2cc8c3636368b76092b49d9a19/flapgui-0.1.0.tar.gz
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: executing diffoscope
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flapgui-0.0.4.tar.gz tmp/flapgui-0.1.0.tar.gz --markdown 20230513/f/flapgui/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: executing diffoscope
+[2023-05-13 16:21:45] INFO root fetch - processPackages [flapgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flapgui-0.0.4.tar.gz tmp/flapgui-0.1.0.tar.gz --markdown 20230513/f/flapgui/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-13 16:21:45] INFO root fetch - processPackages [pypreql]: Downloading https://files.pythonhosted.org/packages/1a/ce/33794a7ef68067e22a883f6d200722a8ccfc530b6b40d7ba9956ed4ff8bf/pypreql-0.0.1rc9.tar.gz
+[2023-05-13 16:21:46] INFO root fetch - processPackages [pypreql]: executing diffoscope
+[2023-05-13 16:21:46] INFO root fetch - processPackages [pypreql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypreql-0.0.1rc8.tar.gz tmp/pypreql-0.0.1rc9.tar.gz --markdown 20230513/p/pypreql/0.0.1rc8-0.0.1rc9/diff.md --exclude *.pyd
+[2023-05-13 16:21:46] INFO root fetch - processPackages [devsim]: Downloading https://files.pythonhosted.org/packages/ea/a6/8804c36ad5d61ff34de0f9f2dac31f455562b04611aba312cde60da1ef90/devsim-2.5.0-cp36-abi3-win_amd64.whl
+[2023-05-13 16:21:46] INFO root fetch - processPackages [devsim]: executing diffoscope
+[2023-05-13 16:21:46] INFO root fetch - processPackages [devsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devsim-2.4.0-cp36-abi3-win_amd64.whl.zip tmp/devsim-2.5.0-cp36-abi3-win_amd64.whl.zip --markdown 20230513/d/devsim/2.4.0-2.5.0/diff.md --exclude *.pyd
+[2023-05-13 16:21:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-13 16:21:47] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-13 16:21:47] INFO root fetch - main [MainThread]: End processing [testcell]: success
+[2023-05-13 16:21:47] INFO root fetch - main [MainThread]: End processing [flapgui]: success
+[2023-05-13 16:21:47] INFO root fetch - main [MainThread]: End processing [pypreql]: success
+[2023-05-13 16:21:47] INFO root fetch - main [MainThread]: End processing [flapgui]: success
+[2023-05-13 16:21:52] INFO root fetch - main [MainThread]: End processing [devsim]: success
+[2023-05-13 16:21:52] INFO root fetch - main [MainThread]: Store serial: [18090792]
