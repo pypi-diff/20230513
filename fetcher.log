@@ -11779,3 +11779,35 @@ EOFError: EOF read where object expected
 [2023-05-13 18:40:29] INFO root fetch - main [MainThread]: End processing [ksconf]: success
 [2023-05-13 18:40:36] INFO root fetch - main [MainThread]: End processing [cwltool]: success
 [2023-05-13 18:40:36] INFO root fetch - main [MainThread]: Store serial: [18091671]
+[2023-05-13 18:45:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091671]
+[2023-05-13 18:45:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 18:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stocktracer
+[2023-05-13 18:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dpsa4fl-bindings
+[2023-05-13 18:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zyncify
+[2023-05-13 18:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-hoshino-sign
+[2023-05-13 18:45:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SuperDuperEasyAuth
+[2023-05-13 18:45:46] INFO root fetch - processPackages [zyncify]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 18:45:46] INFO root fetch - processPackages [stocktracer]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-13 18:45:46] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-13 18:45:46] INFO root fetch - processPackages [dpsa4fl-bindings]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 18:45:46] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: Downloading https://files.pythonhosted.org/packages/a4/75/c427eb516ee2fc8f00e7abf921feb4e6cccf7f883b3b8a663fc782dd6cef/nonebot_plugin_hoshino_sign-2.0.5.tar.gz
+[2023-05-13 18:45:46] WARNING root fetch - processPackages [SuperDuperEasyAuth]: Skipping, unable to determine old version
+[2023-05-13 18:45:46] INFO root fetch - main [MainThread]: End processing [SuperDuperEasyAuth] error
+[2023-05-13 18:45:46] WARNING root fetch - processPackages [nonebot-plugin-hoshino-sign]: Skipping package: exceeds size limit 40530104>=10485760
+[2023-05-13 18:45:46] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hoshino-sign] error
+[2023-05-13 18:45:46] INFO root fetch - processPackages [zyncify]: Downloading https://files.pythonhosted.org/packages/72/ea/ae4b490be055f04545dcf37fb26d32f711bd1c448a149747d8e76297c042/zyncify-0.1.1-py2.py3-none-any.whl
+[2023-05-13 18:45:46] INFO root fetch - processPackages [stocktracer]: Downloading https://files.pythonhosted.org/packages/d5/e2/d4520f255aec8fb62a240c70b3153e7daa1ea7653fc6fdf6bc564771f259/stocktracer-0.1.5.tar.gz
+[2023-05-13 18:45:46] INFO root fetch - processPackages [dpsa4fl-bindings]: Downloading https://files.pythonhosted.org/packages/5c/ec/69c9ede1dc4f5e748dc4ee6b6dc2510cbafbba5651d635debd40c78e7838/dpsa4fl_bindings-0.1.8.tar.gz
+[2023-05-13 18:45:47] INFO root fetch - processPackages [zyncify]: Downloading https://files.pythonhosted.org/packages/fe/c3/d5293a26ef3140461f4381d339e931c5a1b4efef5f4ea733f5e982796491/zyncify-0.1.2-py2.py3-none-any.whl
+[2023-05-13 18:45:47] INFO root fetch - processPackages [stocktracer]: Downloading https://files.pythonhosted.org/packages/cc/f0/aee6620ac33bd7dfe1fdbb171b078a13d14b8c17aa0efc3e621749ea088c/stocktracer-0.2.0.tar.gz
+[2023-05-13 18:45:47] INFO root fetch - processPackages [dpsa4fl-bindings]: Downloading https://files.pythonhosted.org/packages/bf/c7/747fdf5ce2d59eba7681692fd82b1b154723740c65f8ff02eeb980391b2a/dpsa4fl_bindings-0.1.9.tar.gz
+[2023-05-13 18:45:47] INFO root fetch - processPackages [stocktracer]: executing diffoscope
+[2023-05-13 18:45:47] INFO root fetch - processPackages [stocktracer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stocktracer-0.1.5.tar.gz tmp/stocktracer-0.2.0.tar.gz --markdown 20230513/s/stocktracer/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 18:45:47] INFO root fetch - processPackages [zyncify]: executing diffoscope
+[2023-05-13 18:45:47] INFO root fetch - processPackages [zyncify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zyncify-0.1.1-py2.py3-none-any.whl.zip tmp/zyncify-0.1.2-py2.py3-none-any.whl.zip --markdown 20230513/z/zyncify/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 18:45:47] INFO root fetch - processPackages [dpsa4fl-bindings]: executing diffoscope
+[2023-05-13 18:45:47] INFO root fetch - processPackages [dpsa4fl-bindings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dpsa4fl_bindings-0.1.8.tar.gz tmp/dpsa4fl_bindings-0.1.9.tar.gz --markdown 20230513/d/dpsa4fl-bindings/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 18:45:48] INFO root fetch - main [MainThread]: End processing [zyncify]: success
+[2023-05-13 18:45:48] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
+[2023-05-13 18:45:48] INFO root fetch - main [MainThread]: End processing [stocktracer]: success
+[2023-05-13 18:45:48] INFO root fetch - main [MainThread]: Store serial: [18091693]
