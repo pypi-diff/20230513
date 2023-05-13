@@ -6421,3 +6421,46 @@
 [2023-05-13 08:48:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-spark-gpt]: success
 [2023-05-13 08:48:25] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
 [2023-05-13 08:48:25] INFO root fetch - main [MainThread]: Store serial: [18088434]
+[2023-05-13 08:53:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088434]
+[2023-05-13 08:53:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 08:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo11-addon-base-report-to-printer
+[2023-05-13 08:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: griptape-tools
+[2023-05-13 08:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pentalyale
+[2023-05-13 08:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: talisman-dm
+[2023-05-13 08:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: badi-users
+[2023-05-13 08:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addons-oca-reporting-engine
+[2023-05-13 08:53:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kboxx
+[2023-05-13 08:53:34] INFO root fetch - processPackages [talisman-dm]: New version: [1.0.0a7] Old Version: [1.0.0a6]
+[2023-05-13 08:53:34] INFO root fetch - processPackages [odoo11-addon-base-report-to-printer]: New version: [11.0.2.3.1.99.dev4] Old Version: [11.0.2.3.1.99.dev3]
+[2023-05-13 08:53:34] INFO root fetch - processPackages [griptape-tools]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-13 08:53:34] INFO root fetch - processPackages [odoo-addons-oca-reporting-engine]: New version: [16.0.20230511.1] Old Version: [16.0.20230404.0]
+[2023-05-13 08:53:34] WARNING root fetch - processPackages [pentalyale]: Skipping, unable to determine old version
+[2023-05-13 08:53:34] INFO root fetch - processPackages [badi-users]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 08:53:34] INFO root fetch - main [MainThread]: End processing [pentalyale] error
+[2023-05-13 08:53:34] INFO root fetch - processPackages [kboxx]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 08:53:35] INFO root fetch - processPackages [odoo11-addon-base-report-to-printer]: Downloading https://files.pythonhosted.org/packages/4d/7f/4a77108f31ce94e8ee5795e1519e6e53795395b0f3893fb48ccc0cb57899/odoo11_addon_base_report_to_printer-11.0.2.3.1.99.dev3-py2.py3-none-any.whl
+[2023-05-13 08:53:35] INFO root fetch - processPackages [odoo-addons-oca-reporting-engine]: Downloading https://files.pythonhosted.org/packages/63/94/083084a53bd93eeed4a84cdd0eb86c213588c1e1509f1175d27211406ca9/odoo_addons_oca_reporting_engine-16.0.20230404.0-py3-none-any.whl
+[2023-05-13 08:53:35] INFO root fetch - processPackages [kboxx]: Downloading https://files.pythonhosted.org/packages/f4/17/1efbe0dc0d340308acd47a3e540eb610eebdb5c9d7984e3aba021e972d7b/kboxx-1.0.0.tar.gz
+[2023-05-13 08:53:35] INFO root fetch - processPackages [badi-users]: Downloading https://files.pythonhosted.org/packages/d5/fa/d8e4ea24d4180a039f310f03a3360f848f3d7a06c03bee82c67f8f33b3f7/badi_users-1.0.2.tar.gz
+[2023-05-13 08:53:35] INFO root fetch - processPackages [griptape-tools]: executing diffoscope
+[2023-05-13 08:53:35] INFO root fetch - processPackages [talisman-dm]: executing diffoscope
+[2023-05-13 08:53:35] INFO root fetch - processPackages [griptape-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griptape_tools-0.9.1.tar.gz tmp/griptape_tools-0.9.2.tar.gz --markdown 20230513/g/griptape-tools/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-13 08:53:35] INFO root fetch - processPackages [talisman-dm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/talisman-dm-1.0.0a6.tar.gz tmp/talisman-dm-1.0.0a7.tar.gz --markdown 20230513/t/talisman-dm/1.0.0a6-1.0.0a7/diff.md --exclude *.pyd
+[2023-05-13 08:53:35] INFO root fetch - processPackages [odoo-addons-oca-reporting-engine]: Downloading https://files.pythonhosted.org/packages/b4/eb/44786b03f2cc03f56b17938a4d44b2ca80be69fb522ace8fea24a86da4bb/odoo_addons_oca_reporting_engine-16.0.20230511.1-py3-none-any.whl
+[2023-05-13 08:53:35] INFO root fetch - processPackages [odoo11-addon-base-report-to-printer]: Downloading https://files.pythonhosted.org/packages/d6/f9/a6d3e34b1d78a56b558059d34c35bb680862f78d32f23964427d3d560dd0/odoo11_addon_base_report_to_printer-11.0.2.3.1.99.dev4-py2.py3-none-any.whl
+[2023-05-13 08:53:35] INFO root fetch - processPackages [badi-users]: executing diffoscope
+[2023-05-13 08:53:35] INFO root fetch - processPackages [badi-users]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badi_users-1.0.1.tar.gz tmp/badi_users-1.0.2.tar.gz --markdown 20230513/b/badi-users/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 08:53:35] INFO root fetch - processPackages [odoo-addons-oca-reporting-engine]: executing diffoscope
+[2023-05-13 08:53:35] INFO root fetch - processPackages [odoo-addons-oca-reporting-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_reporting_engine-16.0.20230404.0-py3-none-any.whl.zip tmp/odoo_addons_oca_reporting_engine-16.0.20230511.1-py3-none-any.whl.zip --markdown 20230513/o/odoo-addons-oca-reporting-engine/16.0.20230404.0-16.0.20230511.1/diff.md --exclude *.pyd
+[2023-05-13 08:53:35] INFO root fetch - processPackages [odoo11-addon-base-report-to-printer]: executing diffoscope
+[2023-05-13 08:53:35] INFO root fetch - processPackages [odoo11-addon-base-report-to-printer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo11_addon_base_report_to_printer-11.0.2.3.1.99.dev3-py2.py3-none-any.whl.zip tmp/odoo11_addon_base_report_to_printer-11.0.2.3.1.99.dev4-py2.py3-none-any.whl.zip --markdown 20230513/o/odoo11-addon-base-report-to-printer/11.0.2.3.1.99.dev3-11.0.2.3.1.99.dev4/diff.md --exclude *.pyd
+[2023-05-13 08:53:35] INFO root fetch - processPackages [kboxx]: Downloading https://files.pythonhosted.org/packages/3c/a8/8b06a767273f9ec9d9cebe54d63419af998630649464e74dbf7867e08946/kboxx-1.0.1.tar.gz
+[2023-05-13 08:53:35] INFO root fetch - processPackages [kboxx]: executing diffoscope
+[2023-05-13 08:53:35] INFO root fetch - processPackages [kboxx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kboxx-1.0.0.tar.gz tmp/kboxx-1.0.1.tar.gz --markdown 20230513/k/kboxx/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 08:53:36] INFO root fetch - main [MainThread]: End processing [griptape-tools]: success
+[2023-05-13 08:53:36] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-reporting-engine]: success
+[2023-05-13 08:53:36] INFO root fetch - main [MainThread]: End processing [talisman-dm]: success
+[2023-05-13 08:53:37] INFO root fetch - main [MainThread]: End processing [odoo11-addon-base-report-to-printer]: success
+[2023-05-13 08:53:37] INFO root fetch - main [MainThread]: End processing [kboxx]: success
+[2023-05-13 08:53:38] INFO root fetch - main [MainThread]: End processing [badi-users]: success
+[2023-05-13 08:53:38] INFO root fetch - main [MainThread]: Store serial: [18088455]
