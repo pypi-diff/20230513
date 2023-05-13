@@ -8247,3 +8247,37 @@
 [2023-05-13 12:05:07] INFO root fetch - main [MainThread]: End processing [lietorch] error
 [2023-05-13 12:05:10] INFO root fetch - main [MainThread]: End processing [kolibri-ml]: success
 [2023-05-13 12:05:10] INFO root fetch - main [MainThread]: Store serial: [18089369]
+[2023-05-13 12:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089369]
+[2023-05-13 12:10:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 12:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rmmbr
+[2023-05-13 12:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyapproxmc
+[2023-05-13 12:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kolibri-ml
+[2023-05-13 12:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: homoglyphs-testpypi
+[2023-05-13 12:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sunpeek
+[2023-05-13 12:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dm-reverb-nightly
+[2023-05-13 12:10:19] INFO root fetch - processPackages [pyapproxmc]: New version: [4.1.9] Old Version: [4.1.8]
+[2023-05-13 12:10:19] INFO root fetch - processPackages [kolibri-ml]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-13 12:10:19] WARNING root fetch - processPackages [homoglyphs-testpypi]: Skipping, unable to determine old version
+[2023-05-13 12:10:19] INFO root fetch - main [MainThread]: End processing [homoglyphs-testpypi] error
+[2023-05-13 12:10:19] INFO root fetch - processPackages [rmmbr]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 12:10:19] INFO root fetch - processPackages [sunpeek]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-13 12:10:19] INFO root fetch - processPackages [dm-reverb-nightly]: New version: [0.9.0.dev20221207] Old Version: [0.9.0.dev20221206]
+[2023-05-13 12:10:19] INFO root fetch - processPackages [kolibri-ml]: executing diffoscope
+[2023-05-13 12:10:19] INFO root fetch - processPackages [kolibri-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kolibri_ml-1.1.7-py3-none-any.whl.zip tmp/kolibri_ml-1.1.8-py3-none-any.whl.zip --markdown 20230513/k/kolibri-ml/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-13 12:10:19] INFO root fetch - processPackages [pyapproxmc]: Downloading https://files.pythonhosted.org/packages/7b/8c/6c9b070166294bc228f5d523e8ff65d4d447df304fa6b6b9c3df425adc8e/pyapproxmc-4.1.8.tar.gz
+[2023-05-13 12:10:19] INFO root fetch - processPackages [dm-reverb-nightly]: executing diffoscope
+[2023-05-13 12:10:19] INFO root fetch - processPackages [dm-reverb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dm_reverb_nightly-0.9.0.dev20221206-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/dm_reverb_nightly-0.9.0.dev20221207-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230513/d/dm-reverb-nightly/0.9.0.dev20221206-0.9.0.dev20221207/diff.md --exclude *.pyd
+[2023-05-13 12:10:19] INFO root fetch - processPackages [rmmbr]: Downloading https://files.pythonhosted.org/packages/ee/c7/c802a78e2aeeb3bf971073dc8473b66d9044406b200093b352ad6de10327/rmmbr-0.0.6.tar.gz
+[2023-05-13 12:10:20] INFO root fetch - processPackages [rmmbr]: executing diffoscope
+[2023-05-13 12:10:20] INFO root fetch - processPackages [rmmbr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rmmbr-0.0.5.tar.gz tmp/rmmbr-0.0.6.tar.gz --markdown 20230513/r/rmmbr/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 12:10:20] INFO root fetch - processPackages [sunpeek]: executing diffoscope
+[2023-05-13 12:10:20] INFO root fetch - processPackages [sunpeek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sunpeek-0.2.8-py3-none-any.whl.zip tmp/sunpeek-0.2.9-py3-none-any.whl.zip --markdown 20230513/s/sunpeek/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-13 12:10:20] INFO root fetch - processPackages [pyapproxmc]: Downloading https://files.pythonhosted.org/packages/40/c0/72723e4e9ef01f243cf5f97f0ddd758b379b39bf12cefb5000bdfe19ac8e/pyapproxmc-4.1.9.tar.gz
+[2023-05-13 12:10:20] INFO root fetch - processPackages [pyapproxmc]: executing diffoscope
+[2023-05-13 12:10:20] INFO root fetch - processPackages [pyapproxmc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyapproxmc-4.1.8.tar.gz tmp/pyapproxmc-4.1.9.tar.gz --markdown 20230513/p/pyapproxmc/4.1.8-4.1.9/diff.md --exclude *.pyd
+[2023-05-13 12:10:21] INFO root fetch - main [MainThread]: End processing [rmmbr]: success
+[2023-05-13 12:10:21] INFO root fetch - main [MainThread]: End processing [sunpeek]: success
+[2023-05-13 12:10:23] INFO root fetch - main [MainThread]: End processing [pyapproxmc]: success
+[2023-05-13 12:10:26] INFO root fetch - main [MainThread]: End processing [kolibri-ml]: success
+[2023-05-13 12:11:12] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
+[2023-05-13 12:11:12] INFO root fetch - main [MainThread]: Store serial: [18089389]
