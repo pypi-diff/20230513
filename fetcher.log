@@ -11928,3 +11928,78 @@ EOFError: EOF read where object expected
 [2023-05-13 19:01:23] INFO root fetch - main [MainThread]: End processing [tikapi]: success
 [2023-05-13 19:01:26] INFO root fetch - main [MainThread]: End processing [netilion-lab-tab-api]: success
 [2023-05-13 19:01:26] INFO root fetch - main [MainThread]: Store serial: [18091754]
+[2023-05-13 19:06:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091754]
+[2023-05-13 19:06:35] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-gscode
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chromophile
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dasosdemo
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: slap-cli
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autosrt
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: OctoBot-Tulipy
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yerbamate
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: importer-local
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: omemo-dr
+[2023-05-13 19:06:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sampleproject-dhchenx
+[2023-05-13 19:06:35] INFO root fetch - processPackages [dasosdemo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [chromophile]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [importer-local]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [omemo-dr]: New version: [0.99.2] Old Version: [0.99.1]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [autosrt]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [yerbamate]: New version: [0.9.237] Old Version: [0.9.236]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [OctoBot-Tulipy]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [nonebot-plugin-gscode]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [slap-cli]: New version: [1.8.0] Old Version: [1.7.6]
+[2023-05-13 19:06:35] WARNING root fetch - processPackages [sampleproject-dhchenx]: Skipping, unable to determine old version
+[2023-05-13 19:06:35] INFO root fetch - processPackages [sampleproject-dhchenx]: Start processing: SoloPy
+[2023-05-13 19:06:35] INFO root fetch - main [MainThread]: End processing [sampleproject-dhchenx] error
+[2023-05-13 19:06:35] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.8.tar.gz tmp/autosrt-1.2.9.tar.gz --markdown 20230513/a/autosrt/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [dasosdemo]: Downloading https://files.pythonhosted.org/packages/b0/3c/664a72cd1f718bcaeefea0af54799efe2edb281409043341d4564b3bd63c/dasosdemo-0.0.1.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/96/06/01a3b662c37afc405e452f81c68d5810dc0593013b6588c0a02845212fdc/importer-local-0.0.1.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [omemo-dr]: Downloading https://files.pythonhosted.org/packages/3a/6f/71e575d9a84527af4c4f7968b0aa464ed61d12635a29f6701ba102cd0625/omemo-dr-0.99.1.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [yerbamate]: Downloading https://files.pythonhosted.org/packages/88/87/911d05ce7bbcf3b4237e79d64e2230d88b6aa9d23fcd0fcf9de88c6acd11/yerbamate-0.9.236.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [SoloPy]: New version: [v1.0] Old Version: [3.1.0]
+[2023-05-13 19:06:35] INFO root fetch - processPackages [nonebot-plugin-gscode]: Downloading https://files.pythonhosted.org/packages/7c/e4/e509e8ccbb03615f6efa8ec91723bd77b1f9053b20b7bb0909cd01e714ee/nonebot_plugin_gscode-0.1.6.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [slap-cli]: Downloading https://files.pythonhosted.org/packages/28/c6/992524b60d07918bcf97dcb30a1a6c61387cddfa2a2c232f393ca105fd17/slap_cli-1.7.6.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [chromophile]: Downloading https://files.pythonhosted.org/packages/3b/48/0ee28b3065440e5e3bb3fd3bd47717fdc3de454577dcf9a812bcdb2359bc/chromophile-1.0.1.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [SoloPy]: Downloading https://files.pythonhosted.org/packages/6a/2d/4b99ea744e4aeb34f02a892e1fe0e807b728d0c6aadb0c24b036792a367d/SoloPy-3.1.0.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [OctoBot-Tulipy]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [OctoBot-Tulipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Tulipy-0.4.8.tar.gz tmp/OctoBot-Tulipy-0.4.9.tar.gz --markdown 20230513/O/OctoBot-Tulipy/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/80/9e/4c7b2d0eb4f0eee051aef8bf8f1f1e566480236dfffc9ce2b1786f6df331/importer-local-0.0.2.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [omemo-dr]: Downloading https://files.pythonhosted.org/packages/f1/75/6169f5d4da384f26b1eabb9651dd79741dc4bcd84b7344758afbf6f555d0/omemo-dr-0.99.2.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [chromophile]: Downloading https://files.pythonhosted.org/packages/75/91/5befcee9dd2a87e79951b1a044d94aa6b6eade26d904344fc771b215ed87/chromophile-1.0.2.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [yerbamate]: Downloading https://files.pythonhosted.org/packages/2a/9e/afd48ce6ec98333b1ab863a93c5265fc0113d1aa8e4bc2be0c93b1fefbc8/yerbamate-0.9.237.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [dasosdemo]: Downloading https://files.pythonhosted.org/packages/2a/34/da9a9b11db32e0e12f79249d5c71be6ca49de342fa56edb2b3fe629f05b1/dasosdemo-0.0.2.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [chromophile]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [chromophile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromophile-1.0.1.tar.gz tmp/chromophile-1.0.2.tar.gz --markdown 20230513/c/chromophile/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [dasosdemo]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [dasosdemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dasosdemo-0.0.1.tar.gz tmp/dasosdemo-0.0.2.tar.gz --markdown 20230513/d/dasosdemo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [nonebot-plugin-gscode]: Downloading https://files.pythonhosted.org/packages/54/ed/34051b1c3c2673e3dd9fbc3e94fb1f0b7aff1c4218cab2337febcca940c2/nonebot_plugin_gscode-0.1.7.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [slap-cli]: Downloading https://files.pythonhosted.org/packages/d9/55/f9931fef39d2f49dc77d323cee13ee02f968eb3e67a1c09e06b2e9c43460/slap_cli-1.8.0.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [importer-local]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [importer-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importer-local-0.0.1.tar.gz tmp/importer-local-0.0.2.tar.gz --markdown 20230513/i/importer-local/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [nonebot-plugin-gscode]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [nonebot-plugin-gscode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_gscode-0.1.6.tar.gz tmp/nonebot_plugin_gscode-0.1.7.tar.gz --markdown 20230513/n/nonebot-plugin-gscode/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [slap-cli]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [slap-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slap_cli-1.7.6.tar.gz tmp/slap_cli-1.8.0.tar.gz --markdown 20230513/s/slap-cli/1.7.6-1.8.0/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [omemo-dr]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [omemo-dr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omemo-dr-0.99.1.tar.gz tmp/omemo-dr-0.99.2.tar.gz --markdown 20230513/o/omemo-dr/0.99.1-0.99.2/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [yerbamate]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [yerbamate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yerbamate-0.9.236.tar.gz tmp/yerbamate-0.9.237.tar.gz --markdown 20230513/y/yerbamate/0.9.236-0.9.237/diff.md --exclude *.pyd
+[2023-05-13 19:06:35] INFO root fetch - processPackages [SoloPy]: Downloading https://files.pythonhosted.org/packages/d6/ad/294aa2eec428a6773acbd83992197440c4c3a01c1f69e0fa486f8ed1522d/SoloPy-v1.0.tar.gz
+[2023-05-13 19:06:35] INFO root fetch - processPackages [SoloPy]: executing diffoscope
+[2023-05-13 19:06:35] INFO root fetch - processPackages [SoloPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SoloPy-3.1.0.tar.gz tmp/SoloPy-v1.0.tar.gz --markdown 20230513/S/SoloPy/3.1.0-v1.0/diff.md --exclude *.pyd
+[2023-05-13 19:06:36] INFO root fetch - processPackages [autosrt]: Start processing: runkit
+[2023-05-13 19:06:36] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-05-13 19:06:36] WARNING root fetch - processPackages [runkit]: Skipping, unable to determine old version
+[2023-05-13 19:06:36] INFO root fetch - main [MainThread]: End processing [runkit] error
+[2023-05-13 19:06:36] INFO root fetch - main [MainThread]: End processing [OctoBot-Tulipy]: success
+[2023-05-13 19:06:37] INFO root fetch - main [MainThread]: End processing [importer-local]: success
+[2023-05-13 19:06:37] INFO root fetch - main [MainThread]: End processing [dasosdemo]: success
+[2023-05-13 19:06:37] INFO root fetch - main [MainThread]: End processing [chromophile]: success
+[2023-05-13 19:06:37] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-gscode]: success
+[2023-05-13 19:06:37] INFO root fetch - main [MainThread]: End processing [slap-cli]: success
+[2023-05-13 19:06:37] INFO root fetch - main [MainThread]: End processing [SoloPy]: success
+[2023-05-13 19:06:38] INFO root fetch - main [MainThread]: End processing [omemo-dr]: success
+[2023-05-13 19:06:38] INFO root fetch - main [MainThread]: End processing [yerbamate]: success
+[2023-05-13 19:06:38] INFO root fetch - main [MainThread]: Store serial: [18091795]
