@@ -4204,3 +4204,42 @@
 [2023-05-13 04:51:06] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-move-template]: success
 [2023-05-13 04:51:07] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
 [2023-05-13 04:51:07] INFO root fetch - main [MainThread]: Store serial: [18087307]
+[2023-05-13 04:56:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087307]
+[2023-05-13 04:56:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 04:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-account-move-template
+[2023-05-13 04:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-account-move-template
+[2023-05-13 04:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rcp-colors
+[2023-05-13 04:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: realtouch
+[2023-05-13 04:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: casagui
+[2023-05-13 04:56:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sanpy-ephys
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo-addon-account-move-template]: New version: [15.0.1.0.0.9] Old Version: [15.0.1.0.0.8]
+[2023-05-13 04:56:17] INFO root fetch - processPackages [rcp-colors]: New version: [0.11] Old Version: [0.1]
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo14-addon-account-move-template]: New version: [14.0.1.1.3.dev5] Old Version: [14.0.1.1.3.dev4]
+[2023-05-13 04:56:17] INFO root fetch - processPackages [realtouch]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 04:56:17] INFO root fetch - processPackages [sanpy-ephys]: New version: [0.1.6] Old Version: [0.1.25]
+[2023-05-13 04:56:17] INFO root fetch - processPackages [casagui]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-13 04:56:17] INFO root fetch - processPackages [rcp-colors]: Downloading https://files.pythonhosted.org/packages/cb/d4/2c85b431f445a669376eb31e98eaf9c7f677ca1fb974737f2e3cd05c09d6/rcp-colors-0.1.tar.gz
+[2023-05-13 04:56:17] INFO root fetch - processPackages [sanpy-ephys]: Downloading https://files.pythonhosted.org/packages/3a/a3/02d868fd7027d478eb3c3df4a2cafd16fb2c61227f6463e6698f9fe659a3/sanpy-ephys-0.1.25.tar.gz
+[2023-05-13 04:56:17] WARNING root fetch - processPackages [sanpy-ephys]: Skipping package: exceeds size limit 62598696>=10485760
+[2023-05-13 04:56:17] INFO root fetch - main [MainThread]: End processing [sanpy-ephys] error
+[2023-05-13 04:56:17] INFO root fetch - processPackages [realtouch]: Downloading https://files.pythonhosted.org/packages/6a/1d/3287ce1440bbf66291daa2581f8afc2168ca32554ec5df6bf1c262998089/realtouch-0.1.2.tar.gz
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo-addon-account-move-template]: Downloading https://files.pythonhosted.org/packages/12/9b/197c157017b72a8725c7f57634515a763bf5794f18cb48ca170e696c0116/odoo_addon_account_move_template-15.0.1.0.0.8-py3-none-any.whl
+[2023-05-13 04:56:17] INFO root fetch - processPackages [realtouch]: executing diffoscope
+[2023-05-13 04:56:17] INFO root fetch - processPackages [realtouch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realtouch-0.1.1.tar.gz tmp/realtouch-0.1.2.tar.gz --markdown 20230513/r/realtouch/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo14-addon-account-move-template]: Downloading https://files.pythonhosted.org/packages/e2/f1/a6c0d1dc72cc092281d57446615c5377c39977d6ff4d3645580df639e262/odoo14_addon_account_move_template-14.0.1.1.3.dev5-py3-none-any.whl
+[2023-05-13 04:56:17] INFO root fetch - processPackages [rcp-colors]: Downloading https://files.pythonhosted.org/packages/71/cd/0ca8ebae2b26a890fcd743ab3afeef4632ac49a92bf8eadb7316eec96768/rcp-colors-0.11.tar.gz
+[2023-05-13 04:56:17] INFO root fetch - processPackages [casagui]: executing diffoscope
+[2023-05-13 04:56:17] INFO root fetch - processPackages [casagui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casagui-0.2.8.tar.gz tmp/casagui-0.2.9.tar.gz --markdown 20230513/c/casagui/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-13 04:56:17] INFO root fetch - processPackages [rcp-colors]: executing diffoscope
+[2023-05-13 04:56:17] INFO root fetch - processPackages [rcp-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcp-colors-0.1.tar.gz tmp/rcp-colors-0.11.tar.gz --markdown 20230513/r/rcp-colors/0.1-0.11/diff.md --exclude *.pyd
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo-addon-account-move-template]: Downloading https://files.pythonhosted.org/packages/a0/52/8ae8432db7de138430dfa3b04aaccf91d30c36128103548c0a0305945e14/odoo_addon_account_move_template-15.0.1.0.0.9-py3-none-any.whl
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo14-addon-account-move-template]: executing diffoscope
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo14-addon-account-move-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_move_template-14.0.1.1.3.dev4-py3-none-any.whl.zip tmp/odoo14_addon_account_move_template-14.0.1.1.3.dev5-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-account-move-template/14.0.1.1.3.dev4-14.0.1.1.3.dev5/diff.md --exclude *.pyd
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo-addon-account-move-template]: executing diffoscope
+[2023-05-13 04:56:17] INFO root fetch - processPackages [odoo-addon-account-move-template]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_account_move_template-15.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_account_move_template-15.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-account-move-template/15.0.1.0.0.8-15.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-05-13 04:56:18] INFO root fetch - main [MainThread]: End processing [realtouch]: success
+[2023-05-13 04:56:18] INFO root fetch - main [MainThread]: End processing [rcp-colors]: success
+[2023-05-13 04:56:19] INFO root fetch - main [MainThread]: End processing [casagui]: success
+[2023-05-13 04:56:19] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-move-template]: success
+[2023-05-13 04:56:19] INFO root fetch - main [MainThread]: End processing [odoo-addon-account-move-template]: success
+[2023-05-13 04:56:19] INFO root fetch - main [MainThread]: Store serial: [18087323]
