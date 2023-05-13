@@ -12661,3 +12661,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 20:14:45] INFO root fetch - main [MainThread]: End processing [pythoncolouringpkgV1]: success
 [2023-05-13 20:14:46] INFO root fetch - main [MainThread]: End processing [pythoncolouringpkgV1]: success
 [2023-05-13 20:14:46] INFO root fetch - main [MainThread]: Store serial: [18092189]
+[2023-05-13 20:19:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092189]
+[2023-05-13 20:19:55] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: varwizard
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PatryksAutoAI
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crelm
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: a-pandas-ex-read-sql
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: finite-difference
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ctdd
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: publish-to-zhihu
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mleko
+[2023-05-13 20:19:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: amazon-ec2-best-instance
+[2023-05-13 20:19:56] WARNING root fetch - processPackages [varwizard]: Skipping, unable to determine old version
+[2023-05-13 20:19:56] INFO root fetch - main [MainThread]: End processing [varwizard] error
+[2023-05-13 20:19:56] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.5.0] Old Version: [0.4.9]
+[2023-05-13 20:19:56] INFO root fetch - processPackages [crelm]: New version: [0.0.33a1] Old Version: [0.0.33a0]
+[2023-05-13 20:19:56] INFO root fetch - processPackages [a-pandas-ex-read-sql]: New version: [0.11] Old Version: [0.10]
+[2023-05-13 20:19:56] WARNING root fetch - processPackages [finite-difference]: Skipping, unable to determine old version
+[2023-05-13 20:19:56] INFO root fetch - processPackages [mleko]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-13 20:19:56] INFO root fetch - main [MainThread]: End processing [finite-difference] error
+[2023-05-13 20:19:56] INFO root fetch - processPackages [ctdd]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2023-05-13 20:19:56] INFO root fetch - processPackages [publish-to-zhihu]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 20:19:56] INFO root fetch - processPackages [amazon-ec2-best-instance]: New version: [2.4.2] Old Version: [2.4.1]
+[2023-05-13 20:19:56] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/a5/be/e89eea1326943fd208948f1a3df8bb892ce9430d5ba3e77af6a670e695a9/mleko-0.1.0.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/04/5a/bcfbd3b736da8cae45cfa69be461a269d916fb5caa7b7e6244b28953b3a2/PatryksAutoAI-0.4.9.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [publish-to-zhihu]: Downloading https://files.pythonhosted.org/packages/83/05/fa3dbb19dce42392f759e030ee36442a49c45bbe901f4b5525d2f35aeaf6/publish_to_zhihu-0.1.0.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [a-pandas-ex-read-sql]: Downloading https://files.pythonhosted.org/packages/36/72/1568c5060fb1d1e35043a96c58f6e469ad1fe65a747410e307352b34bac3/a_pandas_ex_read_sql-0.10.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [amazon-ec2-best-instance]: Downloading https://files.pythonhosted.org/packages/9d/54/2b9a55e813240d443a7520db5e379ef9bc1658abb324ad19f40a02aed13f/amazon-ec2-best-instance-2.4.1.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [ctdd]: Downloading https://files.pythonhosted.org/packages/bc/0e/d47d5abe263c03fd0748c20723d57a93e945a0a16435bf0a5e217fd44a87/ctdd-0.0.2a3.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [crelm]: Downloading https://files.pythonhosted.org/packages/f9/1d/7f2024a370a8c88b6e0de771a43e6104791eeab58852e0044481358daea2/crelm-0.0.33a1.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/8c/e2/2a9117292b8eee8efc632afe06c50b9173e4b8229df119244d4bbbe61791/mleko-0.1.2.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [a-pandas-ex-read-sql]: Downloading https://files.pythonhosted.org/packages/20/e5/1184505e7a714b3642e5fe0783afeef0f6f1868fe6b79e7a59e25457b636/a_pandas_ex_read_sql-0.11.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [crelm]: executing diffoscope
+[2023-05-13 20:19:56] INFO root fetch - processPackages [crelm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crelm-0.0.33a0.tar.gz tmp/crelm-0.0.33a1.tar.gz --markdown 20230513/c/crelm/0.0.33a0-0.0.33a1/diff.md --exclude *.pyd
+[2023-05-13 20:19:56] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/b4/ab/c4474fb0c001e1d63a6ab5155141aa2b06ddcad5380c46ee480d519bfea7/PatryksAutoAI-0.5.0.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [ctdd]: executing diffoscope
+[2023-05-13 20:19:56] INFO root fetch - processPackages [ctdd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdd-0.0.2a2.tar.gz tmp/ctdd-0.0.2a3.tar.gz --markdown 20230513/c/ctdd/0.0.2a2-0.0.2a3/diff.md --exclude *.pyd
+[2023-05-13 20:19:56] INFO root fetch - processPackages [publish-to-zhihu]: Downloading https://files.pythonhosted.org/packages/ae/02/31c0074797ace981d841d33a2005370a22286e849fdc7cb37736c4935cb4/publish_to_zhihu-0.1.1.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [mleko]: executing diffoscope
+[2023-05-13 20:19:56] INFO root fetch - processPackages [mleko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mleko-0.1.0.tar.gz tmp/mleko-0.1.2.tar.gz --markdown 20230513/m/mleko/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 20:19:56] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-13 20:19:56] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.4.9.tar.gz tmp/PatryksAutoAI-0.5.0.tar.gz --markdown 20230513/P/PatryksAutoAI/0.4.9-0.5.0/diff.md --exclude *.pyd
+[2023-05-13 20:19:56] INFO root fetch - processPackages [a-pandas-ex-read-sql]: executing diffoscope
+[2023-05-13 20:19:56] INFO root fetch - processPackages [a-pandas-ex-read-sql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a_pandas_ex_read_sql-0.10.tar.gz tmp/a_pandas_ex_read_sql-0.11.tar.gz --markdown 20230513/a/a-pandas-ex-read-sql/0.10-0.11/diff.md --exclude *.pyd
+[2023-05-13 20:19:56] INFO root fetch - processPackages [amazon-ec2-best-instance]: Downloading https://files.pythonhosted.org/packages/92/78/e7304e0b0f807baa888f402b6cde3d5f801ce1268e5bba6f7b034cea59f6/amazon-ec2-best-instance-2.4.2.tar.gz
+[2023-05-13 20:19:56] INFO root fetch - processPackages [publish-to-zhihu]: executing diffoscope
+[2023-05-13 20:19:56] INFO root fetch - processPackages [publish-to-zhihu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/publish_to_zhihu-0.1.0.tar.gz tmp/publish_to_zhihu-0.1.1.tar.gz --markdown 20230513/p/publish-to-zhihu/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 20:19:56] INFO root fetch - processPackages [amazon-ec2-best-instance]: executing diffoscope
+[2023-05-13 20:19:56] INFO root fetch - processPackages [amazon-ec2-best-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-ec2-best-instance-2.4.1.tar.gz tmp/amazon-ec2-best-instance-2.4.2.tar.gz --markdown 20230513/a/amazon-ec2-best-instance/2.4.1-2.4.2/diff.md --exclude *.pyd
+[2023-05-13 20:19:57] INFO root fetch - main [MainThread]: End processing [crelm]: success
+[2023-05-13 20:19:58] INFO root fetch - main [MainThread]: End processing [ctdd]: success
+[2023-05-13 20:19:58] INFO root fetch - main [MainThread]: End processing [mleko]: success
+[2023-05-13 20:19:58] INFO root fetch - main [MainThread]: End processing [a-pandas-ex-read-sql]: success
+[2023-05-13 20:19:58] INFO root fetch - main [MainThread]: End processing [publish-to-zhihu]: success
+[2023-05-13 20:19:58] INFO root fetch - main [MainThread]: End processing [amazon-ec2-best-instance]: success
+[2023-05-13 20:19:59] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-13 20:19:59] INFO root fetch - main [MainThread]: Store serial: [18092220]
