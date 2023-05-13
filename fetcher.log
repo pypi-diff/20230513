@@ -1494,3 +1494,42 @@
 [2023-05-13 02:47:25] INFO root fetch - main [MainThread]: End processing [stackdiac]: success
 [2023-05-13 02:47:30] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-13 02:47:30] INFO root fetch - main [MainThread]: Store serial: [18085693]
+[2023-05-13 02:52:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085693]
+[2023-05-13 02:52:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ksconf
+[2023-05-13 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kintyre-splunk-conf
+[2023-05-13 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cliconfig
+[2023-05-13 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bioversions
+[2023-05-13 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-sns-notify
+[2023-05-13 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-lambda-layer-wget
+[2023-05-13 02:52:39] INFO root fetch - processPackages [ksconf]: New version: [0.10.2a1] Old Version: [0.10.1]
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cliconfig]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-13 02:52:39] INFO root fetch - processPackages [kintyre-splunk-conf]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-13 02:52:39] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cdk-sns-notify]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 02:52:39] INFO root fetch - processPackages [ksconf]: Downloading https://files.pythonhosted.org/packages/1f/38/e74589037631f37cc81c84c6ebdd63bd014c04d9206f998dbcab776c95e8/ksconf-0.10.1.tar.gz
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/dd/f9/fa962c101482a8834ddabd45fd5cd1183d26e519f5ff345cc4792b62a4e2/cliconfig-0.5.0.tar.gz
+[2023-05-13 02:52:39] INFO root fetch - processPackages [kintyre-splunk-conf]: Downloading https://files.pythonhosted.org/packages/b8/0e/7f3a2a3e474828d04c49b15b90e9cbcb7da098680838599b5a4a2f390162/kintyre-splunk-conf-0.9.2.tar.gz
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cdk-sns-notify]: executing diffoscope
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cdk-sns-notify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sns-notify-0.0.98.tar.gz tmp/cdk-sns-notify-0.0.99.tar.gz --markdown 20230513/c/cdk-sns-notify/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 02:52:39] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-05-13 02:52:39] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230513/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-13 02:52:39] INFO root fetch - processPackages [ksconf]: Downloading https://files.pythonhosted.org/packages/92/8f/f0a44a9a0289bb0f22853259cfe5ce07e2a27511eece5ff093cd4ecadd70/ksconf-0.10.2a1.tar.gz
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/ec/01/f0ca3f26eb81b98e4d7c0f9b58126e954a6c6d1a49a50ea9937c290b62f3/cliconfig-0.5.1.tar.gz
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.5.0.tar.gz tmp/cliconfig-0.5.1.tar.gz --markdown 20230513/c/cliconfig/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-13 02:52:39] INFO root fetch - processPackages [kintyre-splunk-conf]: Downloading https://files.pythonhosted.org/packages/ff/50/83d795fcf4e619a01a0359f751a90e713163be1c4353939994ccd6743602/kintyre-splunk-conf-0.9.3.tar.gz
+[2023-05-13 02:52:39] INFO root fetch - processPackages [ksconf]: executing diffoscope
+[2023-05-13 02:52:39] INFO root fetch - processPackages [ksconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ksconf-0.10.1.tar.gz tmp/ksconf-0.10.2a1.tar.gz --markdown 20230513/k/ksconf/0.10.1-0.10.2a1/diff.md --exclude *.pyd
+[2023-05-13 02:52:39] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-13 02:52:39] INFO root fetch - processPackages [kintyre-splunk-conf]: executing diffoscope
+[2023-05-13 02:52:39] INFO root fetch - processPackages [kintyre-splunk-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kintyre-splunk-conf-0.9.2.tar.gz tmp/kintyre-splunk-conf-0.9.3.tar.gz --markdown 20230513/k/kintyre-splunk-conf/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-13 02:52:40] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-13 02:52:40] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230513/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-13 02:52:40] INFO root fetch - main [MainThread]: End processing [cdk-sns-notify]: success
+[2023-05-13 02:52:41] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
+[2023-05-13 02:52:41] INFO root fetch - main [MainThread]: End processing [kintyre-splunk-conf]: success
+[2023-05-13 02:52:41] INFO root fetch - main [MainThread]: End processing [ksconf]: success
+[2023-05-13 02:52:41] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-13 02:52:59] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-05-13 02:52:59] INFO root fetch - main [MainThread]: Store serial: [18085711]
