@@ -12820,3 +12820,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 20:35:36] INFO root fetch - main [MainThread]: End processing [django-crypto-fields]: success
 [2023-05-13 20:35:36] INFO root fetch - main [MainThread]: End processing [edc-visit-schedule]: success
 [2023-05-13 20:35:36] INFO root fetch - main [MainThread]: Store serial: [18092277]
+[2023-05-13 20:40:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092277]
+[2023-05-13 20:40:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 20:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oslex
+[2023-05-13 20:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dedlin
+[2023-05-13 20:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: duck-orm
+[2023-05-13 20:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tap-totango
+[2023-05-13 20:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: txp
+[2023-05-13 20:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gracy
+[2023-05-13 20:40:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sphinxext-altair
+[2023-05-13 20:40:46] INFO root fetch - processPackages [oslex]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 20:40:46] INFO root fetch - processPackages [gracy]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-13 20:40:46] INFO root fetch - processPackages [txp]: New version: [0.3.dev270420231342] Old Version: [0.3.dev270420231226]
+[2023-05-13 20:40:46] INFO root fetch - processPackages [dedlin]: New version: [1.13.0] Old Version: [1.12.0]
+[2023-05-13 20:40:46] INFO root fetch - processPackages [txp]: Downloading https://files.pythonhosted.org/packages/74/3f/342e551c881114fc31cb84e2327a6b48000d0285d85bcfb65c265d9817dd/txp-0.3.dev270420231226.tar.gz
+[2023-05-13 20:40:46] WARNING root fetch - processPackages [tap-totango]: Skipping, unable to determine old version
+[2023-05-13 20:40:46] INFO root fetch - main [MainThread]: End processing [tap-totango] error
+[2023-05-13 20:40:46] INFO root fetch - processPackages [duck-orm]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 20:40:46] WARNING root fetch - processPackages [sphinxext-altair]: Skipping, unable to determine old version
+[2023-05-13 20:40:46] INFO root fetch - main [MainThread]: End processing [sphinxext-altair] error
+[2023-05-13 20:40:46] INFO root fetch - processPackages [oslex]: Downloading https://files.pythonhosted.org/packages/59/3b/8a2c37733634640027f3580fbcc02820a4602a312fa97c0dc67af37cc7ca/oslex-0.1.0.tar.gz
+[2023-05-13 20:40:46] INFO root fetch - processPackages [gracy]: executing diffoscope
+[2023-05-13 20:40:46] INFO root fetch - processPackages [gracy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gracy-1.9.0.tar.gz tmp/gracy-1.9.1.tar.gz --markdown 20230513/g/gracy/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-13 20:40:46] WARNING root fetch - processPackages [txp]: Skipping package: exceeds size limit 12105945>=10485760
+[2023-05-13 20:40:46] INFO root fetch - main [MainThread]: End processing [txp] error
+[2023-05-13 20:40:46] INFO root fetch - processPackages [dedlin]: Downloading https://files.pythonhosted.org/packages/e5/c4/3be36c052e5e073e2f2774998e10caf98d2be3356491449130630549aea5/dedlin-1.12.0.tar.gz
+[2023-05-13 20:40:46] INFO root fetch - processPackages [duck-orm]: Downloading https://files.pythonhosted.org/packages/1d/f2/bf1f5b7a17473c9eb35c97b908d4119bd4e94bc2fe8b8a90ba606e351ec0/duck-orm-1.0.1.tar.gz
+[2023-05-13 20:40:46] INFO root fetch - processPackages [oslex]: Downloading https://files.pythonhosted.org/packages/1c/b7/7c237530821025ef7684329bb154cff2c904c632b77b1d1fa7894109d755/oslex-0.1.1.tar.gz
+[2023-05-13 20:40:46] INFO root fetch - processPackages [oslex]: executing diffoscope
+[2023-05-13 20:40:46] INFO root fetch - processPackages [oslex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oslex-0.1.0.tar.gz tmp/oslex-0.1.1.tar.gz --markdown 20230513/o/oslex/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 20:40:46] INFO root fetch - processPackages [duck-orm]: Downloading https://files.pythonhosted.org/packages/72/6a/d9a7fff184e01270d3120cfab6ccfc68ec134292b286228544b03f3dcf0a/duck_orm-1.0.2.tar.gz
+[2023-05-13 20:40:46] INFO root fetch - processPackages [dedlin]: Downloading https://files.pythonhosted.org/packages/74/3d/4b33d637be00ff501e7b66f53acd8a5c45811f71587337333380e80f6e44/dedlin-1.13.0.tar.gz
+[2023-05-13 20:40:46] INFO root fetch - processPackages [duck-orm]: executing diffoscope
+[2023-05-13 20:40:46] INFO root fetch - processPackages [duck-orm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duck-orm-1.0.1.tar.gz tmp/duck_orm-1.0.2.tar.gz --markdown 20230513/d/duck-orm/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 20:40:47] INFO root fetch - processPackages [dedlin]: executing diffoscope
+[2023-05-13 20:40:47] INFO root fetch - processPackages [dedlin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dedlin-1.12.0.tar.gz tmp/dedlin-1.13.0.tar.gz --markdown 20230513/d/dedlin/1.12.0-1.13.0/diff.md --exclude *.pyd
+[2023-05-13 20:40:47] INFO root fetch - main [MainThread]: End processing [gracy]: success
+[2023-05-13 20:40:47] INFO root fetch - main [MainThread]: End processing [oslex]: success
+[2023-05-13 20:40:48] INFO root fetch - main [MainThread]: End processing [dedlin]: success
+[2023-05-13 20:40:48] INFO root fetch - main [MainThread]: End processing [duck-orm]: success
+[2023-05-13 20:40:48] INFO root fetch - main [MainThread]: Store serial: [18092306]
