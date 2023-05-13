@@ -13109,3 +13109,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:28:05] INFO root fetch - main [MainThread]: End processing [pySRSLockin]: success
 [2023-05-13 21:28:40] INFO root fetch - main [MainThread]: End processing [finite-difference]: success
 [2023-05-13 21:28:40] INFO root fetch - main [MainThread]: Store serial: [18092458]
+[2023-05-13 21:33:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092458]
+[2023-05-13 21:33:49] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: t-python-markdown
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vanna
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: twitter-api-py
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tg-botting
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dxsp
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: QuNet
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: canomaly
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: waterline
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bluesteam
+[2023-05-13 21:33:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bluetti-mqtt
+[2023-05-13 21:33:49] WARNING root fetch - processPackages [vanna]: Skipping, unable to determine old version
+[2023-05-13 21:33:49] INFO root fetch - processPackages [vanna]: Start processing: twitter-api-py
+[2023-05-13 21:33:49] INFO root fetch - main [MainThread]: End processing [vanna] error
+[2023-05-13 21:33:49] INFO root fetch - processPackages [t-python-markdown]: New version: [1.4.0] Old Version: [1.3.2]
+[2023-05-13 21:33:49] INFO root fetch - processPackages [dxsp]: New version: [2.2.7] Old Version: [2.2.6]
+[2023-05-13 21:33:49] INFO root fetch - processPackages [twitter-api-py]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-13 21:33:49] WARNING root fetch - processPackages [bluesteam]: Skipping, unable to determine old version
+[2023-05-13 21:33:49] WARNING root fetch - processPackages [canomaly]: Skipping, unable to determine old version
+[2023-05-13 21:33:49] INFO root fetch - processPackages [bluesteam]: Start processing: eth-writer
+[2023-05-13 21:33:49] INFO root fetch - main [MainThread]: End processing [bluesteam] error
+[2023-05-13 21:33:49] INFO root fetch - processPackages [waterline]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 21:33:49] INFO root fetch - main [MainThread]: End processing [canomaly] error
+[2023-05-13 21:33:49] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 21:33:49] INFO root fetch - processPackages [tg-botting]: New version: [1.6.2.2] Old Version: [1.6.2.1]
+[2023-05-13 21:33:49] INFO root fetch - processPackages [twitter-api-py]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-13 21:33:49] INFO root fetch - processPackages [bluetti-mqtt]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-13 21:33:49] WARNING root fetch - processPackages [eth-writer]: Skipping, unable to determine old version
+[2023-05-13 21:33:49] INFO root fetch - main [MainThread]: End processing [eth-writer] error
+[2023-05-13 21:33:49] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-05-13 21:33:49] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230513/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 21:33:49] INFO root fetch - processPackages [t-python-markdown]: Downloading https://files.pythonhosted.org/packages/5d/87/3fba7a49c99161b7d8be25baed9356db884b5de51a2e11d4e56141966cfb/t_python_markdown-1.4.0.tar.gz
+[2023-05-13 21:33:49] INFO root fetch - processPackages [tg-botting]: Downloading https://files.pythonhosted.org/packages/b7/7b/5d03f0ba6979129da39978420d0df11df6fd40f6aa98a0d870d588474964/tg-botting-1.6.2.2.tar.gz
+[2023-05-13 21:33:49] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/be/2f/0671010d1e291641d36d798793c8c901e4e4e43bd97d646ca8cf927bc7e3/twitter_api_py-0.6.0.tar.gz
+[2023-05-13 21:33:49] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/f0/a4/302da51de6856453df885c55f8bc0ac7ae58644a5dda286c8b5447acf249/dxsp-2.2.6.tar.gz
+[2023-05-13 21:33:49] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/be/2f/0671010d1e291641d36d798793c8c901e4e4e43bd97d646ca8cf927bc7e3/twitter_api_py-0.6.0.tar.gz
+[2023-05-13 21:33:49] INFO root fetch - processPackages [bluetti-mqtt]: Downloading https://files.pythonhosted.org/packages/16/5f/3a6ec665dbf0bff9c5d462ec51e748bf27eae87410085a7ae9b896d7f9cb/bluetti_mqtt-0.9.1.tar.gz
+[2023-05-13 21:33:49] INFO root fetch - processPackages [t-python-markdown]: executing diffoscope
+[2023-05-13 21:33:49] INFO root fetch - processPackages [t-python-markdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t_python_markdown-1.3.2.tar.gz tmp/t_python_markdown-1.4.0.tar.gz --markdown 20230513/t/t-python-markdown/1.3.2-1.4.0/diff.md --exclude *.pyd
+[2023-05-13 21:33:49] INFO root fetch - processPackages [waterline]: executing diffoscope
+[2023-05-13 21:33:49] INFO root fetch - processPackages [waterline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/waterline-0.1.8-py3-none-any.whl.zip tmp/waterline-0.1.9-py3-none-any.whl.zip --markdown 20230513/w/waterline/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 21:33:49] INFO root fetch - processPackages [tg-botting]: executing diffoscope
+[2023-05-13 21:33:49] INFO root fetch - processPackages [tg-botting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tg-botting-1.6.2.1.tar.gz tmp/tg-botting-1.6.2.2.tar.gz --markdown 20230513/t/tg-botting/1.6.2.1-1.6.2.2/diff.md --exclude *.pyd
+[2023-05-13 21:33:49] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-13 21:33:49] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.5.1.tar.gz tmp/twitter_api_py-0.6.0.tar.gz --markdown 20230513/t/twitter-api-py/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-13 21:33:49] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-13 21:33:49] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.5.1.tar.gz tmp/twitter_api_py-0.6.0.tar.gz --markdown 20230513/t/twitter-api-py/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-13 21:33:49] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/79/18/6fa5c820c06d2e4a5406b9280fbc0c503630ad4cfae0d06f9a6f67d27239/dxsp-2.2.7.tar.gz
+[2023-05-13 21:33:49] INFO root fetch - processPackages [bluetti-mqtt]: Downloading https://files.pythonhosted.org/packages/89/9f/9cd483fc6286fd3eebd33d8b5d90a62f9c23240135679f94d3701d9bc430/bluetti_mqtt-0.9.2.tar.gz
+[2023-05-13 21:33:50] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-13 21:33:50] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.2.6.tar.gz tmp/dxsp-2.2.7.tar.gz --markdown 20230513/d/dxsp/2.2.6-2.2.7/diff.md --exclude *.pyd
+[2023-05-13 21:33:50] INFO root fetch - processPackages [bluetti-mqtt]: executing diffoscope
+[2023-05-13 21:33:50] INFO root fetch - processPackages [bluetti-mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluetti_mqtt-0.9.1.tar.gz tmp/bluetti_mqtt-0.9.2.tar.gz --markdown 20230513/b/bluetti-mqtt/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-13 21:33:50] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-05-13 21:33:50] INFO root fetch - main [MainThread]: End processing [t-python-markdown]: success
+[2023-05-13 21:33:51] INFO root fetch - main [MainThread]: End processing [tg-botting]: success
+[2023-05-13 21:33:51] INFO root fetch - main [MainThread]: End processing [waterline]: success
+[2023-05-13 21:33:51] INFO root fetch - main [MainThread]: End processing [bluetti-mqtt]: success
+[2023-05-13 21:33:51] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-13 21:33:52] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-13 21:33:55] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-13 21:33:55] INFO root fetch - main [MainThread]: Store serial: [18092500]
