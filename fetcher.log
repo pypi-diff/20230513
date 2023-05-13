@@ -5943,3 +5943,76 @@
 [2023-05-13 08:08:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
 [2023-05-13 08:10:11] INFO root fetch - main [MainThread]: End processing [cornac]: success
 [2023-05-13 08:10:11] INFO root fetch - main [MainThread]: Store serial: [18088200]
+[2023-05-13 08:15:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088200]
+[2023-05-13 08:15:20] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-mongodbatlas
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbterd
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo9-addon-partner-identification
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-onelogin
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-nomad
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: twitter-api-py
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-f5bigip
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: irails
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulumi-okta
+[2023-05-13 08:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-docker
+[2023-05-13 08:15:20] INFO root fetch - processPackages [odoo9-addon-partner-identification]: New version: [9.0.1.0.0.99.dev51] Old Version: [9.0.1.0.0.99.dev50]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [dbterd]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-nomad]: New version: [0.4.2a1683956500] Old Version: [0.4.2a1683785303]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [twitter-api-py]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-mongodbatlas]: New version: [3.9.0a1683956369] Old Version: [3.9.0a1683784922]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-onelogin]: New version: [0.6.1a1683956796] Old Version: [0.6.1a1683785625]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-f5bigip]: New version: [3.9.0a1661535806] Old Version: [3.9.0a1654086391]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-okta]: New version: [3.9.0a1652715097] Old Version: [3.9.0a1650909822]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-docker]: New version: [4.3.0a1683956242] Old Version: [4.3.0a1683784263]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [irails]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-13 08:15:20] INFO root fetch - processPackages [odoo9-addon-partner-identification]: Downloading https://files.pythonhosted.org/packages/df/03/0337f1327774d653680e3c0c7dfa2b7a14ce02c7b6505b92adee7db5690c/odoo9_addon_partner_identification-9.0.1.0.0.99.dev50-py2-none-any.whl
+[2023-05-13 08:15:20] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/bb/df/87f54c2e7db83613b11831ea14e4b786db69dc0fd3a698e43dcb514eca30/twitter_api_py-0.5.0.tar.gz
+[2023-05-13 08:15:20] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/c4/41/4b82db26884840f3149977205372c8fdc7bc07197cc992d65f26ebfc63bb/irails-1.3.5.tar.gz
+[2023-05-13 08:15:20] INFO root fetch - processPackages [dbterd]: Downloading https://files.pythonhosted.org/packages/d7/5d/1ed65e88cf6cc315727ab9755a9495813255fc8eea7bdecb7c87733f26bb/dbterd-1.2.2.tar.gz
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-mongodbatlas]: Downloading https://files.pythonhosted.org/packages/c2/39/e4dc8f821de58494157526993191661acddd03f8a89282aa07c892bfb82f/pulumi_mongodbatlas-3.9.0a1683956369.tar.gz
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/d1/7a/ad27c59dd13cf122e298defa23edaee68674c7d85591efa7fe9c1a7d6588/pulumi_docker-4.3.0a1683956242.tar.gz
+[2023-05-13 08:15:20] INFO root fetch - processPackages [pulumi-onelogin]: Downloading https://files.pythonhosted.org/packages/1c/aa/1ef6e5579ba5f36690a3b7fdae1c25d9fb6cf60507e448f78cdf575d231b/pulumi_onelogin-0.6.1a1683956796.tar.gz
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-nomad]: Downloading https://files.pythonhosted.org/packages/2b/a4/8ee87d7ae25d25903c0c1458a223ba3a49a485b2491c4b83085666740caa/pulumi_nomad-0.4.2a1683956500.tar.gz
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-f5bigip]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-f5bigip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_f5bigip-3.9.0a1654086391.tar.gz tmp/pulumi_f5bigip-3.9.0a1661535806.tar.gz --markdown 20230513/p/pulumi-f5bigip/3.9.0a1654086391-3.9.0a1661535806/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-okta]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-okta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_okta-3.9.0a1650909822.tar.gz tmp/pulumi_okta-3.9.0a1652715097.tar.gz --markdown 20230513/p/pulumi-okta/3.9.0a1650909822-3.9.0a1652715097/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [dbterd]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [dbterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbterd-1.2.1.tar.gz tmp/dbterd-1.2.2.tar.gz --markdown 20230513/d/dbterd/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/cd/4a/e199ac47d30de3ed1cac9fd0afae63084b6963b2b5e12fce975fb1102422/twitter_api_py-0.5.1.tar.gz
+[2023-05-13 08:15:21] INFO root fetch - processPackages [odoo9-addon-partner-identification]: Downloading https://files.pythonhosted.org/packages/a6/2d/a9adc67892c36be44eb2e2bb68bd3c0bb52afd46f608b1152a73ebe7123c/odoo9_addon_partner_identification-9.0.1.0.0.99.dev51-py2-none-any.whl
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-mongodbatlas]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-mongodbatlas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mongodbatlas-3.9.0a1683784922.tar.gz tmp/pulumi_mongodbatlas-3.9.0a1683956369.tar.gz --markdown 20230513/p/pulumi-mongodbatlas/3.9.0a1683784922-3.9.0a1683956369/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-nomad]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-nomad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_nomad-0.4.2a1683785303.tar.gz tmp/pulumi_nomad-0.4.2a1683956500.tar.gz --markdown 20230513/p/pulumi-nomad/0.4.2a1683785303-0.4.2a1683956500/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-onelogin]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-onelogin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_onelogin-0.6.1a1683785625.tar.gz tmp/pulumi_onelogin-0.6.1a1683956796.tar.gz --markdown 20230513/p/pulumi-onelogin/0.6.1a1683785625-0.6.1a1683956796/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/44/6e/ef9ac83bd3cea38649bbdf703b1ccec4d375e23a344e67ab3869bcedd4c0/irails-1.3.6.tar.gz
+[2023-05-13 08:15:21] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.5.0.tar.gz tmp/twitter_api_py-0.5.1.tar.gz --markdown 20230513/t/twitter-api-py/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [odoo9-addon-partner-identification]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [odoo9-addon-partner-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_partner_identification-9.0.1.0.0.99.dev50-py2-none-any.whl.zip tmp/odoo9_addon_partner_identification-9.0.1.0.0.99.dev51-py2-none-any.whl.zip --markdown 20230513/o/odoo9-addon-partner-identification/9.0.1.0.0.99.dev50-9.0.1.0.0.99.dev51/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.3.0a1683784263.tar.gz tmp/pulumi_docker-4.3.0a1683956242.tar.gz --markdown 20230513/p/pulumi-docker/4.3.0a1683784263-4.3.0a1683956242/diff.md --exclude *.pyd
+[2023-05-13 08:15:21] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-13 08:15:21] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.5.tar.gz tmp/irails-1.3.6.tar.gz --markdown 20230513/i/irails/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-05-13 08:15:22] INFO root fetch - processPackages [dbterd]: Start processing: text-chunker
+[2023-05-13 08:15:22] INFO root fetch - main [MainThread]: End processing [dbterd]: success
+[2023-05-13 08:15:22] INFO root fetch - processPackages [text-chunker]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 08:15:23] INFO root fetch - processPackages [text-chunker]: Downloading https://files.pythonhosted.org/packages/b8/87/345aa794a34028fd6513fac540116fde60daa48be9392736785d2ec4f03c/text_chunker-0.2.2.tar.gz
+[2023-05-13 08:15:23] INFO root fetch - processPackages [pulumi-nomad]: Start processing: faster-whisper-cli
+[2023-05-13 08:15:23] INFO root fetch - main [MainThread]: End processing [pulumi-nomad]: success
+[2023-05-13 08:15:23] WARNING root fetch - processPackages [faster-whisper-cli]: Skipping, unable to determine old version
+[2023-05-13 08:15:23] INFO root fetch - main [MainThread]: End processing [faster-whisper-cli] error
+[2023-05-13 08:15:23] INFO root fetch - processPackages [text-chunker]: executing diffoscope
+[2023-05-13 08:15:23] INFO root fetch - processPackages [text-chunker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text_chunker-0.2.1.tar.gz tmp/text_chunker-0.2.2.tar.gz --markdown 20230513/t/text-chunker/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-13 08:15:23] INFO root fetch - main [MainThread]: End processing [pulumi-onelogin]: success
+[2023-05-13 08:15:23] INFO root fetch - main [MainThread]: End processing [odoo9-addon-partner-identification]: success
+[2023-05-13 08:15:24] INFO root fetch - main [MainThread]: End processing [pulumi-mongodbatlas]: success
+[2023-05-13 08:15:24] INFO root fetch - main [MainThread]: End processing [text-chunker]: success
+[2023-05-13 08:15:24] INFO root fetch - main [MainThread]: End processing [pulumi-f5bigip]: success
+[2023-05-13 08:15:24] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2023-05-13 08:15:25] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-13 08:15:25] INFO root fetch - main [MainThread]: End processing [pulumi-okta]: success
+[2023-05-13 08:15:26] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-13 08:15:26] INFO root fetch - main [MainThread]: Store serial: [18088234]
