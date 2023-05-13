@@ -9337,3 +9337,58 @@
 [2023-05-13 14:23:21] INFO root fetch - main [MainThread]: End processing [squander]: success
 [2023-05-13 14:23:55] INFO root fetch - main [MainThread]: End processing [num7]: success
 [2023-05-13 14:23:55] INFO root fetch - main [MainThread]: Store serial: [18090053]
+[2023-05-13 14:28:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090053]
+[2023-05-13 14:29:04] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hiyobot
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: material-zui
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: n0struct
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylyzer
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: astrotraders
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: noise2read
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: hapdoc
+[2023-05-13 14:29:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: arknights-toolkit
+[2023-05-13 14:29:04] INFO root fetch - processPackages [noise2read]: New version: [0.0.76] Old Version: [0.0.75]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [hiyobot]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize]: New version: [20230513.12.25.91709] Old Version: [20230511.12.11.471734]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [astrotraders]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [pylyzer]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [n0struct]: New version: [0.2.96] Old Version: [0.2.95]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [material-zui]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [arknights-toolkit]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-13 14:29:04] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 14:29:04] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 14:29:04] INFO root fetch - processPackages [astrotraders]: Downloading https://files.pythonhosted.org/packages/5c/8b/ece120d9e574cc2052b2e2be0107644faaf18fb53b9a20d8f22f8d9a61c4/astrotraders-1.0.0.tar.gz
+[2023-05-13 14:29:04] INFO root fetch - processPackages [noise2read]: Downloading https://files.pythonhosted.org/packages/ba/44/751195751152acd2b14f24f17289b5152df5e7fdae720317fc87c0b6eba9/noise2read-0.0.75.tar.gz
+[2023-05-13 14:29:04] INFO root fetch - processPackages [arknights-toolkit]: Downloading https://files.pythonhosted.org/packages/04/10/196db902171b966ea9f9f75054ec62e8b799177b0a72d492ddb12c972d72/arknights_toolkit-0.5.3.tar.gz
+[2023-05-13 14:29:04] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/df/09/e21ff2225afd787cd360eda51560bb2e2fd1dfc38c5b366f8346da8c32da/n0struct-0.2.96.tar.gz
+[2023-05-13 14:29:04] WARNING root fetch - processPackages [arknights-toolkit]: Skipping package: exceeds size limit 17443891>=10485760
+[2023-05-13 14:29:04] INFO root fetch - main [MainThread]: End processing [arknights-toolkit] error
+[2023-05-13 14:29:04] INFO root fetch - processPackages [certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize]: Downloading https://files.pythonhosted.org/packages/69/90/1e0c0c55071b05f7404fb8f4f3e80dddd3abf451793912cf6e4fbfe8278e/certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize-20230511.12.11.471734.tar.gz
+[2023-05-13 14:29:04] INFO root fetch - processPackages [n0struct]: executing diffoscope
+[2023-05-13 14:29:04] WARNING root fetch - processPackages [certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize]: Skipping package: exceeds size limit 39425090>=10485760
+[2023-05-13 14:29:04] INFO root fetch - processPackages [n0struct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/n0struct-0.2.95.tar.gz tmp/n0struct-0.2.96.tar.gz --markdown 20230513/n/n0struct/0.2.95-0.2.96/diff.md --exclude *.pyd
+[2023-05-13 14:29:04] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-assaf-TACSummaryAndAnnotationSerialize] error
+[2023-05-13 14:29:04] INFO root fetch - processPackages [material-zui]: Downloading https://files.pythonhosted.org/packages/18/f0/bbae2b9c5da11368467093b675956a3be0f44cf22037c3faea6c3ab356d3/material_zui-0.0.9.tar.gz
+[2023-05-13 14:29:04] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/9b/94/fdadc8c0017a33483d5106451f4f5e8683b3aa4dd8deb130fc104ff7b329/hiyobot-0.1.7.tar.gz
+[2023-05-13 14:29:04] INFO root fetch - processPackages [astrotraders]: Downloading https://files.pythonhosted.org/packages/e0/c4/12f5e8da10b40e06f8bdda5b9f4c272a17c6ac09268f39980040df694028/astrotraders-1.0.1.tar.gz
+[2023-05-13 14:29:04] INFO root fetch - processPackages [astrotraders]: executing diffoscope
+[2023-05-13 14:29:04] INFO root fetch - processPackages [astrotraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astrotraders-1.0.0.tar.gz tmp/astrotraders-1.0.1.tar.gz --markdown 20230513/a/astrotraders/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 14:29:04] INFO root fetch - processPackages [noise2read]: Downloading https://files.pythonhosted.org/packages/80/ac/2b0059c7fc68a3806724323849b356083a11cde9ec555d661ef62f568c83/noise2read-0.0.76.tar.gz
+[2023-05-13 14:29:04] INFO root fetch - processPackages [pylyzer]: executing diffoscope
+[2023-05-13 14:29:04] INFO root fetch - processPackages [pylyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylyzer-0.0.8-py3-none-win_amd64.whl.zip tmp/pylyzer-0.0.9-py3-none-win_amd64.whl.zip --markdown 20230513/p/pylyzer/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 14:29:04] INFO root fetch - processPackages [material-zui]: executing diffoscope
+[2023-05-13 14:29:04] INFO root fetch - processPackages [material-zui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/material_zui-0.0.8.tar.gz tmp/material_zui-0.0.9.tar.gz --markdown 20230513/m/material-zui/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 14:29:04] INFO root fetch - processPackages [noise2read]: executing diffoscope
+[2023-05-13 14:29:04] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-13 14:29:04] INFO root fetch - processPackages [noise2read]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noise2read-0.0.75.tar.gz tmp/noise2read-0.0.76.tar.gz --markdown 20230513/n/noise2read/0.0.75-0.0.76/diff.md --exclude *.pyd
+[2023-05-13 14:29:04] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.1.6.tar.gz tmp/hiyobot-0.1.7.tar.gz --markdown 20230513/h/hiyobot/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-13 14:29:06] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 14:29:06] INFO root fetch - main [MainThread]: End processing [n0struct]: success
+[2023-05-13 14:29:06] INFO root fetch - main [MainThread]: End processing [astrotraders]: success
+[2023-05-13 14:29:06] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-13 14:29:06] INFO root fetch - main [MainThread]: End processing [material-zui]: success
+[2023-05-13 14:29:06] INFO root fetch - main [MainThread]: End processing [noise2read]: success
+[2023-05-13 14:30:04] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
+[2023-05-13 14:30:04] INFO root fetch - main [MainThread]: Store serial: [18090082]
