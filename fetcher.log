@@ -10993,3 +10993,84 @@ EOFError: EOF read where object expected
 [2023-05-13 17:09:29] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
 [2023-05-13 17:10:06] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
 [2023-05-13 17:10:06] INFO root fetch - main [MainThread]: Store serial: [18091060]
+[2023-05-13 17:15:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091060]
+[2023-05-13 17:15:19] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: countrynames
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynufft
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cybrid-api-id-python
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cybrid-api-bank-python
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cybrid-api-organization-python
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wagtail-code-blog
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: giup
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: locus
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: core-python
+[2023-05-13 17:15:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cwsearch-utils
+[2023-05-13 17:15:19] INFO root fetch - processPackages [pynufft]: New version: [2023.1.2] Old Version: [2023.1.1]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [countrynames]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [giup]: New version: [1.1.4] Old Version: [1.1.3]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [locus]: New version: [9.0.0] Old Version: [8.2.0]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [wagtail-code-blog]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-05-13 17:15:19] WARNING root fetch - processPackages [core-python]: Skipping, unable to determine old version
+[2023-05-13 17:15:19] INFO root fetch - processPackages [core-python]: Start processing: magicsoup
+[2023-05-13 17:15:19] INFO root fetch - main [MainThread]: End processing [core-python] error
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [magicsoup]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [pynufft]: Downloading https://files.pythonhosted.org/packages/48/c0/ff3feba029fb567f0ba463a7869555dcd7fb0e9cad60866e02fa91130ca9/pynufft-2023.1.1.tar.gz
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cwsearch-utils]: Downloading https://files.pythonhosted.org/packages/65/c9/a64d8fa6079ebae541219a0943480b41cc0d44a3d51c33ff8e4e1c1360fc/cwsearch_utils-0.1.8-py3-none-any.whl
+[2023-05-13 17:15:19] INFO root fetch - processPackages [locus]: Downloading https://files.pythonhosted.org/packages/ed/62/be4146a1eb743dcc292062f9cda7f983c5caf1a2e6d0b89e64b352df4a59/locus-8.2.0.tar.gz
+[2023-05-13 17:15:19] INFO root fetch - processPackages [wagtail-code-blog]: Downloading https://files.pythonhosted.org/packages/dc/dd/00c35a4fd5c2c4d14a4cb016868e710138e44b5239cb468557b586947d26/wagtail-code-blog-0.3.3.tar.gz
+[2023-05-13 17:15:19] INFO root fetch - processPackages [giup]: Downloading https://files.pythonhosted.org/packages/ac/f7/9474ac6b45f1b23dbcdde277f83123e20e371cea8a65bee26f564a1e673f/giup-1.1.4.tar.gz
+[2023-05-13 17:15:19] WARNING root fetch - processPackages [pynufft]: Skipping package: exceeds size limit 16144629>=10485760
+[2023-05-13 17:15:19] INFO root fetch - processPackages [pynufft]: Start processing: hotspotty-payment-email
+[2023-05-13 17:15:19] INFO root fetch - main [MainThread]: End processing [pynufft] error
+[2023-05-13 17:15:19] INFO root fetch - processPackages [hotspotty-payment-email]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-13 17:15:19] INFO root fetch - processPackages [countrynames]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [countrynames]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/countrynames-1.9.0.tar.gz tmp/countrynames-1.9.1.tar.gz --markdown 20230513/c/countrynames/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [giup]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [giup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giup-1.1.3.tar.gz tmp/giup-1.1.4.tar.gz --markdown 20230513/g/giup/1.1.3-1.1.4/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.9.8.tar.gz tmp/cybrid-api-bank-python-0.9.9.tar.gz --markdown 20230513/c/cybrid-api-bank-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [locus]: Downloading https://files.pythonhosted.org/packages/3c/c7/9ff6e8fec43184f135fe4acfccb9750d3783093a1037ddaa66e326c39d03/locus-9.0.0.tar.gz
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.9.8.tar.gz tmp/cybrid-api-organization-python-0.9.9.tar.gz --markdown 20230513/c/cybrid-api-organization-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cwsearch-utils]: Downloading https://files.pythonhosted.org/packages/05/1a/f47c6297c519e44b98abd002fb268d6ca714741bd948a13bd77290fa22f8/cwsearch_utils-0.1.9-py3-none-any.whl
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.9.8.tar.gz tmp/cybrid-api-id-python-0.9.9.tar.gz --markdown 20230513/c/cybrid-api-id-python/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [magicsoup]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [magicsoup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magicsoup-0.3.8.tar.gz tmp/magicsoup-0.3.9.tar.gz --markdown 20230513/m/magicsoup/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [wagtail-code-blog]: Downloading https://files.pythonhosted.org/packages/cf/ed/89eccd7e3f9efe46c2f24f2d1f025388133017800483c369284fa47307dd/wagtail_code_blog-0.4.0.tar.gz
+[2023-05-13 17:15:19] INFO root fetch - processPackages [hotspotty-payment-email]: Downloading https://files.pythonhosted.org/packages/fc/9e/58130863f30d03f2da2725bcd5bc718bde1dee787e31230fd4a27a6ac0d6/hotspotty_payment_email-0.3.4.tar.gz
+[2023-05-13 17:15:19] INFO root fetch - processPackages [hotspotty-payment-email]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [hotspotty-payment-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotspotty_payment_email-0.3.3.tar.gz tmp/hotspotty_payment_email-0.3.4.tar.gz --markdown 20230513/h/hotspotty-payment-email/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [wagtail-code-blog]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [wagtail-code-blog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-code-blog-0.3.3.tar.gz tmp/wagtail_code_blog-0.4.0.tar.gz --markdown 20230513/w/wagtail-code-blog/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [locus]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [locus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locus-8.2.0.tar.gz tmp/locus-9.0.0.tar.gz --markdown 20230513/l/locus/8.2.0-9.0.0/diff.md --exclude *.pyd
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-13 17:15:19] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230513/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 17:15:21] INFO root fetch - processPackages [giup]: Start processing: internetarchivesync
+[2023-05-13 17:15:21] INFO root fetch - main [MainThread]: End processing [giup]: success
+[2023-05-13 17:15:21] INFO root fetch - processPackages [internetarchivesync]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 17:15:21] INFO root fetch - processPackages [internetarchivesync]: Downloading https://files.pythonhosted.org/packages/c4/00/a1c6be55c907a39e4bd42adf3d371aa01724bc5a22d5a9d450da3443f2d4/internetarchivesync-1.0.0.tar.gz
+[2023-05-13 17:15:21] INFO root fetch - processPackages [countrynames]: Start processing: image-augs
+[2023-05-13 17:15:21] INFO root fetch - main [MainThread]: End processing [countrynames]: success
+[2023-05-13 17:15:21] INFO root fetch - processPackages [image-augs]: New version: [2.4.15] Old Version: [2.3.15]
+[2023-05-13 17:15:21] INFO root fetch - processPackages [image-augs]: executing diffoscope
+[2023-05-13 17:15:21] INFO root fetch - processPackages [image-augs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_augs-2.3.15.tar.gz tmp/image_augs-2.4.15.tar.gz --markdown 20230513/i/image-augs/2.3.15-2.4.15/diff.md --exclude *.pyd
+[2023-05-13 17:15:21] INFO root fetch - main [MainThread]: End processing [wagtail-code-blog]: success
+[2023-05-13 17:15:21] INFO root fetch - processPackages [internetarchivesync]: Downloading https://files.pythonhosted.org/packages/c3/55/dd542ccbdde6de828fe60fae5b4b7457f8a0352894a76ca5109e78d8e26c/internetarchivesync-1.0.1.tar.gz
+[2023-05-13 17:15:21] INFO root fetch - processPackages [internetarchivesync]: executing diffoscope
+[2023-05-13 17:15:21] INFO root fetch - processPackages [internetarchivesync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/internetarchivesync-1.0.0.tar.gz tmp/internetarchivesync-1.0.1.tar.gz --markdown 20230513/i/internetarchivesync/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 17:15:21] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2023-05-13 17:15:21] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-13 17:15:22] INFO root fetch - main [MainThread]: End processing [hotspotty-payment-email]: success
+[2023-05-13 17:15:22] INFO root fetch - main [MainThread]: End processing [locus]: success
+[2023-05-13 17:15:23] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2023-05-13 17:15:23] INFO root fetch - main [MainThread]: End processing [magicsoup]: success
+[2023-05-13 17:15:23] INFO root fetch - main [MainThread]: End processing [internetarchivesync]: success
+[2023-05-13 17:15:23] INFO root fetch - main [MainThread]: End processing [image-augs]: success
+[2023-05-13 17:15:24] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2023-05-13 17:15:24] INFO root fetch - main [MainThread]: Store serial: [18091109]
