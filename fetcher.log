@@ -916,3 +916,75 @@
 [2023-05-13 02:05:07] INFO root fetch - main [MainThread]: End processing [pyphetools]: success
 [2023-05-13 02:05:14] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-05-13 02:05:14] INFO root fetch - main [MainThread]: Store serial: [18085315]
+[2023-05-13 02:10:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085315]
+[2023-05-13 02:10:23] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxkern-nightly
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxutils-nightly
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bentley-ottmann
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchlayers-nightly
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jarvis-leaderboard
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: stackdiac
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk8s-redis
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: vesselapi
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: datoso-seed-vpinmame
+[2023-05-13 02:10:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: monero-usd-price
+[2023-05-13 02:10:23] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230512] Old Version: [0.0.8.dev20230511]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [jarvis-leaderboard]: New version: [2023.5.5] Old Version: [2023.5.3]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [bentley-ottmann]: New version: [8.0.0] Old Version: [7.3.0]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [vesselapi]: New version: [3.5.2] Old Version: [3.2.2]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [stackdiac]: New version: [0.0.1.dev8] Old Version: [0.0.1.dev7]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [monero-usd-price]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-13 02:10:23] WARNING root fetch - processPackages [datoso-seed-vpinmame]: Skipping, unable to determine old version
+[2023-05-13 02:10:23] INFO root fetch - processPackages [datoso-seed-vpinmame]: Start processing: openbb-nightly
+[2023-05-13 02:10:23] INFO root fetch - main [MainThread]: End processing [datoso-seed-vpinmame] error
+[2023-05-13 02:10:23] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1683850002] Old Version: [1683763623]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [openbb-nightly]: New version: [3.0.0rc2.dev20230426] Old Version: [3.0.0rc2.dev20230425]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-13 02:10:23] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-05-13 02:10:23] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230511.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230512.tar.gz --markdown 20230513/j/jaxutils-nightly/0.0.8.dev20230511-0.0.8.dev20230512/diff.md --exclude *.pyd
+[2023-05-13 02:10:23] INFO root fetch - processPackages [vesselapi]: executing diffoscope
+[2023-05-13 02:10:23] INFO root fetch - processPackages [vesselapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vesselapi-3.2.2.tar.gz tmp/vesselapi-3.5.2.tar.gz --markdown 20230513/v/vesselapi/3.2.2-3.5.2/diff.md --exclude *.pyd
+[2023-05-13 02:10:24] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2023-05-13 02:10:24] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-3.0.0rc2.dev20230425.tar.gz tmp/openbb_nightly-3.0.0rc2.dev20230426.tar.gz --markdown 20230513/o/openbb-nightly/3.0.0rc2.dev20230425-3.0.0rc2.dev20230426/diff.md --exclude *.pyd
+[2023-05-13 02:10:24] INFO root fetch - processPackages [bentley-ottmann]: Downloading https://files.pythonhosted.org/packages/16/f5/3b282db3f72cc7cba97d764ae8333ead71648c019ebac52110e010709e52/bentley_ottmann-7.3.0.tar.gz
+[2023-05-13 02:10:24] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-05-13 02:10:24] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1683763623.tar.gz tmp/torchlayers-nightly-1683850002.tar.gz --markdown 20230513/t/torchlayers-nightly/1683763623-1683850002/diff.md --exclude *.pyd
+[2023-05-13 02:10:24] ERROR root fetch - processPackages [stackdiac]: Unable to fetch info: No such project/version 'stackdiac' 0.0.1.dev7
+[2023-05-13 02:10:24] INFO root fetch - processPackages [stackdiac]: Start processing: cdk-aws-discord-notifiers
+[2023-05-13 02:10:24] INFO root fetch - main [MainThread]: End processing [stackdiac] error
+[2023-05-13 02:10:24] INFO root fetch - processPackages [jarvis-leaderboard]: Downloading https://files.pythonhosted.org/packages/02/a4/693672c299bc83d7d0e208e9e40936cccac7a73fc389a2f1a49e6e7a59ca/jarvis_leaderboard-2023.5.3.tar.gz
+[2023-05-13 02:10:24] INFO root fetch - processPackages [monero-usd-price]: Downloading https://files.pythonhosted.org/packages/02/5d/7b21e964edcda19e955223124769ee22c406d3b9e6b55c24683fe351340f/monero_usd_price-1.1.0.tar.gz
+[2023-05-13 02:10:24] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 02:10:24] WARNING root fetch - processPackages [jarvis-leaderboard]: Skipping package: exceeds size limit 87615480>=10485760
+[2023-05-13 02:10:24] INFO root fetch - processPackages [jarvis-leaderboard]: Start processing: sbt
+[2023-05-13 02:10:24] INFO root fetch - main [MainThread]: End processing [jarvis-leaderboard] error
+[2023-05-13 02:10:24] WARNING root fetch - processPackages [sbt]: Skipping, unable to determine old version
+[2023-05-13 02:10:24] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-05-13 02:10:24] INFO root fetch - processPackages [sbt]: Start processing: speakeasy-client-sdk-python
+[2023-05-13 02:10:24] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230513/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-13 02:10:24] INFO root fetch - main [MainThread]: End processing [sbt] error
+[2023-05-13 02:10:24] INFO root fetch - processPackages [speakeasy-client-sdk-python]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-13 02:10:24] INFO root fetch - processPackages [monero-usd-price]: Downloading https://files.pythonhosted.org/packages/3e/9c/f03d2135ca3b63295131cbb69cda3bdad24bdcefd5bfd125277cad0ea6d4/monero_usd_price-1.2.0.tar.gz
+[2023-05-13 02:10:24] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-13 02:10:24] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230513/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-13 02:10:24] INFO root fetch - processPackages [bentley-ottmann]: Downloading https://files.pythonhosted.org/packages/23/4b/f79b694ff08cb12f9f7c758bfaf3be6be90f44afdfbb40c59d4e8c46663f/bentley_ottmann-8.0.0.tar.gz
+[2023-05-13 02:10:24] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-05-13 02:10:24] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230513/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 02:10:24] INFO root fetch - processPackages [monero-usd-price]: executing diffoscope
+[2023-05-13 02:10:24] INFO root fetch - processPackages [monero-usd-price]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monero_usd_price-1.1.0.tar.gz tmp/monero_usd_price-1.2.0.tar.gz --markdown 20230513/m/monero-usd-price/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-13 02:10:24] INFO root fetch - processPackages [bentley-ottmann]: executing diffoscope
+[2023-05-13 02:10:24] INFO root fetch - processPackages [bentley-ottmann]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bentley_ottmann-7.3.0.tar.gz tmp/bentley_ottmann-8.0.0.tar.gz --markdown 20230513/b/bentley-ottmann/7.3.0-8.0.0/diff.md --exclude *.pyd
+[2023-05-13 02:10:24] INFO root fetch - processPackages [speakeasy-client-sdk-python]: executing diffoscope
+[2023-05-13 02:10:24] INFO root fetch - processPackages [speakeasy-client-sdk-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speakeasy-client-sdk-python-1.9.0.tar.gz tmp/speakeasy-client-sdk-python-1.9.1.tar.gz --markdown 20230513/s/speakeasy-client-sdk-python/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-13 02:10:25] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-05-13 02:10:25] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-05-13 02:10:25] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-13 02:10:26] INFO root fetch - main [MainThread]: End processing [monero-usd-price]: success
+[2023-05-13 02:10:26] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-05-13 02:10:26] INFO root fetch - main [MainThread]: End processing [bentley-ottmann]: success
+[2023-05-13 02:10:26] INFO root fetch - main [MainThread]: End processing [vesselapi]: success
+[2023-05-13 02:10:27] INFO root fetch - main [MainThread]: End processing [speakeasy-client-sdk-python]: success
+[2023-05-13 02:10:28] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-05-13 02:10:37] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2023-05-13 02:10:37] INFO root fetch - main [MainThread]: Store serial: [18085377]
