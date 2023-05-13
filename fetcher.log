@@ -14250,3 +14250,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 23:29:45] INFO root fetch - main [MainThread]: End processing [MyConnect-SQL]: success
 [2023-05-13 23:29:45] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
 [2023-05-13 23:29:45] INFO root fetch - main [MainThread]: Store serial: [18093215]
+[2023-05-13 23:34:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093215]
+[2023-05-13 23:34:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 23:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: berserk
+[2023-05-13 23:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MyConnect-SQL
+[2023-05-13 23:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: midjourney-api
+[2023-05-13 23:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jutility
+[2023-05-13 23:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: asyncio-task-logger
+[2023-05-13 23:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: larixtest
+[2023-05-13 23:34:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cognite-gql-pygen
+[2023-05-13 23:34:58] WARNING root fetch - processPackages [jutility]: Skipping, unable to determine old version
+[2023-05-13 23:34:58] INFO root fetch - main [MainThread]: End processing [jutility] error
+[2023-05-13 23:34:58] INFO root fetch - processPackages [MyConnect-SQL]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-13 23:34:58] INFO root fetch - processPackages [midjourney-api]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 23:34:58] INFO root fetch - processPackages [MyConnect-SQL]: executing diffoscope
+[2023-05-13 23:34:58] INFO root fetch - processPackages [MyConnect-SQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyConnect - SQL-1.0.4.tar.gz tmp/MyConnect - SQL-1.0.5.tar.gz --markdown 20230513/M/MyConnect-SQL/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-13 23:34:58] INFO root fetch - processPackages [berserk]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-13 23:34:58] WARNING root fetch - processPackages [asyncio-task-logger]: Skipping, unable to determine old version
+[2023-05-13 23:34:58] INFO root fetch - main [MainThread]: End processing [asyncio-task-logger] error
+[2023-05-13 23:34:58] WARNING root fetch - processPackages [larixtest]: Skipping, unable to determine old version
+[2023-05-13 23:34:58] INFO root fetch - main [MainThread]: End processing [larixtest] error
+[2023-05-13 23:34:58] INFO root fetch - processPackages [cognite-gql-pygen]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-13 23:34:58] INFO root fetch - processPackages [midjourney-api]: executing diffoscope
+[2023-05-13 23:34:58] INFO root fetch - processPackages [midjourney-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midjourney_api-1.0.1.tar.gz tmp/midjourney_api-1.0.2.tar.gz --markdown 20230513/m/midjourney-api/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 23:34:58] INFO root fetch - processPackages [cognite-gql-pygen]: Downloading https://files.pythonhosted.org/packages/6c/9f/e688766ded5dba5a20d706f60b841f7a407e90d2ac6dd17311d89ceeacf5/cognite_gql_pygen-0.5.0.tar.gz
+[2023-05-13 23:34:58] INFO root fetch - processPackages [berserk]: executing diffoscope
+[2023-05-13 23:34:58] INFO root fetch - processPackages [berserk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/berserk-0.8.0.tar.gz tmp/berserk-0.9.0.tar.gz --markdown 20230513/b/berserk/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 23:34:58] INFO root fetch - processPackages [cognite-gql-pygen]: Downloading https://files.pythonhosted.org/packages/67/3e/8830f816355571317447016023b25364afb1754a7fce826c1e57b242a88a/cognite_gql_pygen-0.6.0.tar.gz
+[2023-05-13 23:34:58] INFO root fetch - processPackages [cognite-gql-pygen]: executing diffoscope
+[2023-05-13 23:34:58] INFO root fetch - processPackages [cognite-gql-pygen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cognite_gql_pygen-0.5.0.tar.gz tmp/cognite_gql_pygen-0.6.0.tar.gz --markdown 20230513/c/cognite-gql-pygen/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-13 23:34:59] INFO root fetch - main [MainThread]: End processing [midjourney-api]: success
+[2023-05-13 23:34:59] INFO root fetch - main [MainThread]: End processing [MyConnect-SQL]: success
+[2023-05-13 23:34:59] INFO root fetch - main [MainThread]: End processing [berserk]: success
+[2023-05-13 23:35:00] INFO root fetch - main [MainThread]: End processing [cognite-gql-pygen]: success
+[2023-05-13 23:35:00] INFO root fetch - main [MainThread]: Store serial: [18093238]
