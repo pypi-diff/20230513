@@ -8596,3 +8596,48 @@
 [2023-05-13 13:05:06] INFO root fetch - main [MainThread]: End processing [orjson-ddb]: success
 [2023-05-13 13:05:06] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
 [2023-05-13 13:05:06] INFO root fetch - main [MainThread]: Store serial: [18089596]
+[2023-05-13 13:10:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089596]
+[2023-05-13 13:10:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ntheory
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: navalmartin-mir-vision-utils
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dj-search-highlight
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: addict-tracking-changes
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: devpytools
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyrew
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: Kekik
+[2023-05-13 13:10:15] INFO root fetch - processPackages [addict-tracking-changes]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 13:10:15] INFO root fetch - processPackages [devpytools]: New version: [0.1.0.dev6] Old Version: [0.1.0.dev5]
+[2023-05-13 13:10:15] INFO root fetch - processPackages [dj-search-highlight]: New version: [1.1] Old Version: [1.0]
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ntheory]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-13 13:10:15] INFO root fetch - processPackages [navalmartin-mir-vision-utils]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 13:10:15] INFO root fetch - processPackages [pyrew]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-13 13:10:15] INFO root fetch - processPackages [Kekik]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-05-13 13:10:15] INFO root fetch - processPackages [dj-search-highlight]: Downloading https://files.pythonhosted.org/packages/73/49/ea6ec2639b334a1f6d38c896079f126bfada176ce8e7298cda0d29e8a789/dj_search_highlight-1.0.tar.gz
+[2023-05-13 13:10:15] INFO root fetch - processPackages [devpytools]: Downloading https://files.pythonhosted.org/packages/75/b3/d0b873c7f51814a60c0cc46f327f17d0ca1f8220f929ca1caa69ac880709/devpytools-0.1.0.dev6.tar.gz
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ntheory]: Downloading https://files.pythonhosted.org/packages/a6/e7/abd2b86141676433ee9bac9d672e36d99ff3ae99ebfc110c838f8db2b261/ntheory-0.0.7.tar.gz
+[2023-05-13 13:10:15] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-05-13 13:10:15] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.9.2.tar.gz tmp/pyrew-0.9.3.tar.gz --markdown 20230513/p/pyrew/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-13 13:10:15] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/ca/4b/13327040fd3e3c41f95615263902ad459a14836801da8f94bf040d3ceb1b/Kekik-1.2.5.tar.gz
+[2023-05-13 13:10:15] INFO root fetch - processPackages [addict-tracking-changes]: Downloading https://files.pythonhosted.org/packages/5d/fa/704df049efa00ca5b495b70e19d4f25fdedfba6081055dcad2f0263743a6/addict-tracking-changes-1.0.2.tar.gz
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ntheory]: executing diffoscope
+[2023-05-13 13:10:15] INFO root fetch - processPackages [ntheory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ntheory-0.0.6.tar.gz tmp/ntheory-0.0.7.tar.gz --markdown 20230513/n/ntheory/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-13 13:10:16] INFO root fetch - processPackages [navalmartin-mir-vision-utils]: executing diffoscope
+[2023-05-13 13:10:16] INFO root fetch - processPackages [navalmartin-mir-vision-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/navalmartin_mir_vision_utils-0.0.8.tar.gz tmp/navalmartin_mir_vision_utils-0.0.9.tar.gz --markdown 20230513/n/navalmartin-mir-vision-utils/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 13:10:16] INFO root fetch - processPackages [devpytools]: executing diffoscope
+[2023-05-13 13:10:16] INFO root fetch - processPackages [devpytools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devpytools-0.1.0.dev5.tar.gz tmp/devpytools-0.1.0.dev6.tar.gz --markdown 20230513/d/devpytools/0.1.0.dev5-0.1.0.dev6/diff.md --exclude *.pyd
+[2023-05-13 13:10:16] INFO root fetch - processPackages [dj-search-highlight]: Downloading https://files.pythonhosted.org/packages/5c/3e/21e4ed2356bb1d35898b41fbab4938fe17500eea3a35aeb2e19d9524c3ad/dj_search_highlight-1.1.tar.gz
+[2023-05-13 13:10:16] INFO root fetch - processPackages [addict-tracking-changes]: executing diffoscope
+[2023-05-13 13:10:16] INFO root fetch - processPackages [addict-tracking-changes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/addict-tracking-changes-1.0.1.tar.gz tmp/addict-tracking-changes-1.0.2.tar.gz --markdown 20230513/a/addict-tracking-changes/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 13:10:16] INFO root fetch - processPackages [dj-search-highlight]: executing diffoscope
+[2023-05-13 13:10:16] INFO root fetch - processPackages [dj-search-highlight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dj_search_highlight-1.0.tar.gz tmp/dj_search_highlight-1.1.tar.gz --markdown 20230513/d/dj-search-highlight/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-13 13:10:16] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/ad/64/2cc33c808c3f72e5866b6b6400cb34fa4461fd3600179e3eb366c67a4ae6/Kekik-1.2.6.tar.gz
+[2023-05-13 13:10:16] INFO root fetch - processPackages [Kekik]: executing diffoscope
+[2023-05-13 13:10:16] INFO root fetch - processPackages [Kekik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kekik-1.2.5.tar.gz tmp/Kekik-1.2.6.tar.gz --markdown 20230513/K/Kekik/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-05-13 13:10:17] INFO root fetch - main [MainThread]: End processing [ntheory]: success
+[2023-05-13 13:10:17] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-05-13 13:10:17] INFO root fetch - main [MainThread]: End processing [navalmartin-mir-vision-utils]: success
+[2023-05-13 13:10:17] INFO root fetch - main [MainThread]: End processing [devpytools]: success
+[2023-05-13 13:10:17] INFO root fetch - main [MainThread]: End processing [addict-tracking-changes]: success
+[2023-05-13 13:10:17] INFO root fetch - main [MainThread]: End processing [dj-search-highlight]: success
+[2023-05-13 13:10:18] INFO root fetch - main [MainThread]: End processing [Kekik]: success
+[2023-05-13 13:10:18] INFO root fetch - main [MainThread]: Store serial: [18089630]
