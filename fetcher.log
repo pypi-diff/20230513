@@ -14139,3 +14139,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 23:14:06] INFO root fetch - main [MainThread]: End processing [martin-config]: success
 [2023-05-13 23:14:07] INFO root fetch - main [MainThread]: End processing [gctree]: success
 [2023-05-13 23:14:07] INFO root fetch - main [MainThread]: Store serial: [18093158]
+[2023-05-13 23:19:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093158]
+[2023-05-13 23:19:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 23:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syslog-ng-cfg-helper
+[2023-05-13 23:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rebuff
+[2023-05-13 23:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: localcider
+[2023-05-13 23:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asari-metabolomics
+[2023-05-13 23:19:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: numba-integrators
+[2023-05-13 23:19:16] INFO root fetch - processPackages [syslog-ng-cfg-helper]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-13 23:19:16] INFO root fetch - processPackages [asari-metabolomics]: New version: [1.9.8] Old Version: [1.9.7]
+[2023-05-13 23:19:16] INFO root fetch - processPackages [rebuff]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 23:19:16] INFO root fetch - processPackages [localcider]: New version: [0.1.9.post4] Old Version: [0.1.9.post3]
+[2023-05-13 23:19:16] INFO root fetch - processPackages [numba-integrators]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 23:19:16] INFO root fetch - processPackages [localcider]: Downloading https://files.pythonhosted.org/packages/52/3f/40388ab2851d7253996943d46c4c62783bf44dfa8d9940c8b6c6544763fd/localcider-0.1.9.post3.tar.gz
+[2023-05-13 23:19:17] INFO root fetch - processPackages [syslog-ng-cfg-helper]: Downloading https://files.pythonhosted.org/packages/c2/dc/e402f134f0ad4ba21c6fd3482104ef41b332e46f8b180d13fa8d14b72d5f/syslog_ng_cfg_helper-1.0.5.tar.gz
+[2023-05-13 23:19:17] INFO root fetch - processPackages [asari-metabolomics]: Downloading https://files.pythonhosted.org/packages/6c/0a/5a8ad010795f48017a8133744462ccc1429e3e0a20f8d99fbc6356045db9/asari-metabolomics-1.9.7.tar.gz
+[2023-05-13 23:19:17] INFO root fetch - processPackages [rebuff]: Downloading https://files.pythonhosted.org/packages/11/42/c85388aada1624209b3f347162c07e1180662fed725b634e57a14f891da2/rebuff-0.0.3.tar.gz
+[2023-05-13 23:19:17] INFO root fetch - processPackages [rebuff]: executing diffoscope
+[2023-05-13 23:19:17] INFO root fetch - processPackages [rebuff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rebuff-0.0.2.tar.gz tmp/rebuff-0.0.3.tar.gz --markdown 20230513/r/rebuff/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 23:19:17] INFO root fetch - processPackages [syslog-ng-cfg-helper]: executing diffoscope
+[2023-05-13 23:19:17] INFO root fetch - processPackages [syslog-ng-cfg-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syslog_ng_cfg_helper-1.0.4.tar.gz tmp/syslog_ng_cfg_helper-1.0.5.tar.gz --markdown 20230513/s/syslog-ng-cfg-helper/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-13 23:19:17] INFO root fetch - processPackages [numba-integrators]: Downloading https://files.pythonhosted.org/packages/ea/a6/bbb5be9957864c1f1b94e25e4f1be683b29e189950fae867f0b1f58c20b2/numba-integrators-0.0.3.tar.gz
+[2023-05-13 23:19:17] INFO root fetch - processPackages [localcider]: Downloading https://files.pythonhosted.org/packages/a5/d9/443053a38f832b7fb2f3b3360ce4b690a8c3ad5cd3fe49b9d5d86637720d/localcider-0.1.9.post4.tar.gz
+[2023-05-13 23:19:17] INFO root fetch - processPackages [localcider]: executing diffoscope
+[2023-05-13 23:19:17] INFO root fetch - processPackages [localcider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/localcider-0.1.9.post3.tar.gz tmp/localcider-0.1.9.post4.tar.gz --markdown 20230513/l/localcider/0.1.9.post3-0.1.9.post4/diff.md --exclude *.pyd
+[2023-05-13 23:19:17] INFO root fetch - processPackages [numba-integrators]: executing diffoscope
+[2023-05-13 23:19:17] INFO root fetch - processPackages [numba-integrators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numba-integrators-0.0.2.tar.gz tmp/numba-integrators-0.0.3.tar.gz --markdown 20230513/n/numba-integrators/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 23:19:18] INFO root fetch - main [MainThread]: End processing [rebuff]: success
+[2023-05-13 23:19:18] INFO root fetch - main [MainThread]: End processing [syslog-ng-cfg-helper]: success
+[2023-05-13 23:19:18] INFO root fetch - processPackages [asari-metabolomics]: Downloading https://files.pythonhosted.org/packages/0c/ec/31f7daaa8a016fba464e73e22784642a5130fa579870d9f5ee0c0d31028d/asari-metabolomics-1.9.8.tar.gz
+[2023-05-13 23:19:18] INFO root fetch - main [MainThread]: End processing [numba-integrators]: success
+[2023-05-13 23:19:19] INFO root fetch - main [MainThread]: End processing [localcider]: success
+[2023-05-13 23:19:20] INFO root fetch - processPackages [asari-metabolomics]: executing diffoscope
+[2023-05-13 23:19:20] INFO root fetch - processPackages [asari-metabolomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asari-metabolomics-1.9.7.tar.gz tmp/asari-metabolomics-1.9.8.tar.gz --markdown 20230513/a/asari-metabolomics/1.9.7-1.9.8/diff.md --exclude *.pyd
+[2023-05-13 23:19:23] INFO root fetch - main [MainThread]: End processing [asari-metabolomics]: success
+[2023-05-13 23:19:23] INFO root fetch - main [MainThread]: Store serial: [18093169]
