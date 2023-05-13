@@ -8486,3 +8486,19 @@
 [2023-05-13 12:42:24] INFO root fetch - main [MainThread]: End processing [limeutils]: success
 [2023-05-13 12:42:25] INFO root fetch - main [MainThread]: End processing [qg-botsdk]: success
 [2023-05-13 12:42:25] INFO root fetch - main [MainThread]: Store serial: [18089521]
+[2023-05-13 12:47:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089521]
+[2023-05-13 12:47:33] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-13 12:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: streaming-form-data
+[2023-05-13 12:47:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-fragments
+[2023-05-13 12:47:33] INFO root fetch - processPackages [django-fragments]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-13 12:47:33] INFO root fetch - processPackages [streaming-form-data]: New version: [1.9.0] Old Version: [1.8.1]
+[2023-05-13 12:47:34] INFO root fetch - processPackages [streaming-form-data]: Downloading https://files.pythonhosted.org/packages/a0/08/d7b9a11cbb17cbd8957d6cd827dd65b042823ba3d1c11320a70fdb3b807e/streaming-form-data-1.8.1.tar.gz
+[2023-05-13 12:47:34] INFO root fetch - processPackages [django-fragments]: Downloading https://files.pythonhosted.org/packages/96/c8/dabc7898f17b432d9aacdc9039f2f290b47427a27113c41604d3228e1ab2/django_fragments-0.1.6.tar.gz
+[2023-05-13 12:47:34] INFO root fetch - processPackages [django-fragments]: executing diffoscope
+[2023-05-13 12:47:34] INFO root fetch - processPackages [django-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_fragments-0.1.5.tar.gz tmp/django_fragments-0.1.6.tar.gz --markdown 20230513/d/django-fragments/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-13 12:47:34] INFO root fetch - processPackages [streaming-form-data]: Downloading https://files.pythonhosted.org/packages/8e/c9/35cd71c7b1afbea8a7132081cb32a44c476f3bf9936137afe17c01ab6daf/streaming-form-data-1.9.0.tar.gz
+[2023-05-13 12:47:34] INFO root fetch - processPackages [streaming-form-data]: executing diffoscope
+[2023-05-13 12:47:34] INFO root fetch - processPackages [streaming-form-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streaming-form-data-1.8.1.tar.gz tmp/streaming-form-data-1.9.0.tar.gz --markdown 20230513/s/streaming-form-data/1.8.1-1.9.0/diff.md --exclude *.pyd
+[2023-05-13 12:47:35] INFO root fetch - main [MainThread]: End processing [django-fragments]: success
+[2023-05-13 12:47:35] INFO root fetch - main [MainThread]: End processing [streaming-form-data]: success
+[2023-05-13 12:47:35] INFO root fetch - main [MainThread]: Store serial: [18089547]
