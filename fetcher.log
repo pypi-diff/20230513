@@ -13681,3 +13681,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:20:54] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2023-05-13 22:20:54] INFO root fetch - main [MainThread]: End processing [jpterm]: success
 [2023-05-13 22:20:54] INFO root fetch - main [MainThread]: Store serial: [18092822]
+[2023-05-13 22:25:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092822]
+[2023-05-13 22:26:03] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: limedev
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ChatDBG
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: logmaster
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: casanova
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rubik-cube
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: headless
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cbra
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gandai
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: syslog-ng-cfg-helper
+[2023-05-13 22:26:03] WARNING root fetch - processPackages [limedev]: Skipping, unable to determine old version
+[2023-05-13 22:26:03] INFO root fetch - main [MainThread]: End processing [limedev] error
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ChatDBG]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 22:26:03] WARNING root fetch - processPackages [logmaster]: Skipping, unable to determine old version
+[2023-05-13 22:26:03] INFO root fetch - main [MainThread]: End processing [logmaster] error
+[2023-05-13 22:26:03] WARNING root fetch - processPackages [syslog-ng-cfg-helper]: Skipping, unable to determine old version
+[2023-05-13 22:26:03] INFO root fetch - processPackages [rubik-cube]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 22:26:03] INFO root fetch - processPackages [headless]: New version: [2.0.0a9] Old Version: [2.0.0a8]
+[2023-05-13 22:26:03] INFO root fetch - main [MainThread]: End processing [syslog-ng-cfg-helper] error
+[2023-05-13 22:26:03] INFO root fetch - processPackages [gandai]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-13 22:26:03] INFO root fetch - processPackages [casanova]: New version: [1.9.0] Old Version: [1.8.0a2]
+[2023-05-13 22:26:03] INFO root fetch - processPackages [cbra]: New version: [3.0.0a7] Old Version: [2.0.0a99]
+[2023-05-13 22:26:03] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-13 22:26:03] INFO root fetch - processPackages [rubik-cube]: Downloading https://files.pythonhosted.org/packages/b8/63/3b8b04df7adc57182cccb67783e4a9cf637c12091908021aa63fb7ec248a/rubik-cube-0.0.1.tar.gz
+[2023-05-13 22:26:03] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-13 22:26:03] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230513/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-13 22:26:03] INFO root fetch - processPackages [ChatDBG]: Downloading https://files.pythonhosted.org/packages/0d/35/ba9cd26fc6e16a9dae74be714aa2930fa99384796cf0156a868976228b7d/ChatDBG-0.0.8.tar.gz
+[2023-05-13 22:26:03] INFO root fetch - processPackages [casanova]: Downloading https://files.pythonhosted.org/packages/fb/e8/c52fea40c67476e09546e63acb26b0213e2c617d6c502ecf2e42bae106e2/casanova-1.8.0a2.tar.gz
+[2023-05-13 22:26:03] INFO root fetch - processPackages [gandai]: Downloading https://files.pythonhosted.org/packages/d0/fe/4bb7d1f2fb0af67cfd8a01328780849c569749a3276df85830264fa43155/gandai-1.1.5.tar.gz
+[2023-05-13 22:26:03] INFO root fetch - processPackages [gandai]: executing diffoscope
+[2023-05-13 22:26:03] INFO root fetch - processPackages [gandai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gandai-1.1.4.tar.gz tmp/gandai-1.1.5.tar.gz --markdown 20230513/g/gandai/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-13 22:26:03] INFO root fetch - processPackages [cbra]: executing diffoscope
+[2023-05-13 22:26:03] INFO root fetch - processPackages [cbra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cbra-2.0.0a99.tar.gz tmp/cbra-3.0.0a7.tar.gz --markdown 20230513/c/cbra/2.0.0a99-3.0.0a7/diff.md --exclude *.pyd
+[2023-05-13 22:26:03] INFO root fetch - processPackages [headless]: executing diffoscope
+[2023-05-13 22:26:03] INFO root fetch - processPackages [headless]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/headless-2.0.0a8.tar.gz tmp/headless-2.0.0a9.tar.gz --markdown 20230513/h/headless/2.0.0a8-2.0.0a9/diff.md --exclude *.pyd
+[2023-05-13 22:26:03] INFO root fetch - processPackages [rubik-cube]: Downloading https://files.pythonhosted.org/packages/00/7d/1ebf605adcde336c4771188ee3f6082d52e34f968dc749013672d0c93e13/rubik-cube-0.0.2.tar.gz
+[2023-05-13 22:26:04] INFO root fetch - processPackages [ChatDBG]: Downloading https://files.pythonhosted.org/packages/b3/a2/dc074fa985998d1ca66f12b7f39d82dc1089e7942bfb9e5c6a6c71d7629e/ChatDBG-0.0.9.tar.gz
+[2023-05-13 22:26:04] INFO root fetch - processPackages [rubik-cube]: executing diffoscope
+[2023-05-13 22:26:04] INFO root fetch - processPackages [rubik-cube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rubik-cube-0.0.1.tar.gz tmp/rubik-cube-0.0.2.tar.gz --markdown 20230513/r/rubik-cube/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 22:26:04] INFO root fetch - processPackages [casanova]: Downloading https://files.pythonhosted.org/packages/7e/5f/e68464a254c011a4a22861be0db3b63c50a70a55b62605a92564c60bdc02/casanova-1.9.0.tar.gz
+[2023-05-13 22:26:04] INFO root fetch - processPackages [casanova]: executing diffoscope
+[2023-05-13 22:26:04] INFO root fetch - processPackages [casanova]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casanova-1.8.0a2.tar.gz tmp/casanova-1.9.0.tar.gz --markdown 20230513/c/casanova/1.8.0a2-1.9.0/diff.md --exclude *.pyd
+[2023-05-13 22:26:04] INFO root fetch - processPackages [ChatDBG]: executing diffoscope
+[2023-05-13 22:26:04] INFO root fetch - processPackages [ChatDBG]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ChatDBG-0.0.8.tar.gz tmp/ChatDBG-0.0.9.tar.gz --markdown 20230513/C/ChatDBG/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 22:26:05] INFO root fetch - main [MainThread]: End processing [gandai]: success
+[2023-05-13 22:26:05] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-13 22:26:05] INFO root fetch - main [MainThread]: End processing [rubik-cube]: success
+[2023-05-13 22:26:05] INFO root fetch - main [MainThread]: End processing [ChatDBG]: success
+[2023-05-13 22:26:05] INFO root fetch - main [MainThread]: End processing [headless]: success
+[2023-05-13 22:26:06] INFO root fetch - main [MainThread]: End processing [casanova]: success
+[2023-05-13 22:26:08] INFO root fetch - main [MainThread]: End processing [cbra]: success
+[2023-05-13 22:26:08] INFO root fetch - main [MainThread]: Store serial: [18092866]
