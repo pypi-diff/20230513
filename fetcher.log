@@ -12860,3 +12860,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 20:40:48] INFO root fetch - main [MainThread]: End processing [dedlin]: success
 [2023-05-13 20:40:48] INFO root fetch - main [MainThread]: End processing [duck-orm]: success
 [2023-05-13 20:40:48] INFO root fetch - main [MainThread]: Store serial: [18092306]
+[2023-05-13 20:45:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092306]
+[2023-05-13 20:45:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 20:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: torch-conduit
+[2023-05-13 20:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyfirebird
+[2023-05-13 20:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: constrained-lr
+[2023-05-13 20:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datazets
+[2023-05-13 20:45:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tryceratops
+[2023-05-13 20:45:58] INFO root fetch - processPackages [torch-conduit]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-13 20:45:58] WARNING root fetch - processPackages [constrained-lr]: Skipping, unable to determine old version
+[2023-05-13 20:45:58] WARNING root fetch - processPackages [datazets]: Skipping, unable to determine old version
+[2023-05-13 20:45:58] INFO root fetch - main [MainThread]: End processing [constrained-lr] error
+[2023-05-13 20:45:58] INFO root fetch - main [MainThread]: End processing [datazets] error
+[2023-05-13 20:45:58] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.46] Old Version: [0.0.45]
+[2023-05-13 20:45:58] INFO root fetch - processPackages [tryceratops]: New version: [2.1.0] Old Version: [2.0.0]
+[2023-05-13 20:45:58] INFO root fetch - processPackages [torch-conduit]: Downloading https://files.pythonhosted.org/packages/67/e1/f85fd43cb189f4facefc83369010d9f7dcb43d6e4c3236d551bce0bea4ab/torch_conduit-0.3.4.tar.gz
+[2023-05-13 20:45:58] INFO root fetch - processPackages [tryceratops]: Downloading https://files.pythonhosted.org/packages/0f/44/06781b5706ae3c685bc09fd63528151cf58ce36ee23a120153d07bc681ca/tryceratops-2.0.0.tar.gz
+[2023-05-13 20:45:58] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/55/25/770ddd9d3e93d5c89b5cf8d7e1c451b911d017a70a10aef1841e4ecc8423/pyfirebird-0.0.46.tar.gz
+[2023-05-13 20:45:59] INFO root fetch - processPackages [torch-conduit]: executing diffoscope
+[2023-05-13 20:45:59] INFO root fetch - processPackages [torch-conduit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_conduit-0.3.3.tar.gz tmp/torch_conduit-0.3.4.tar.gz --markdown 20230513/t/torch-conduit/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-13 20:45:59] INFO root fetch - processPackages [tryceratops]: Downloading https://files.pythonhosted.org/packages/eb/a0/18b3ce79ce0835c9b3f1d967f5b523633e1243cf2e9930cdadf8cd35895c/tryceratops-2.1.0.tar.gz
+[2023-05-13 20:45:59] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-13 20:45:59] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.45.tar.gz tmp/pyfirebird-0.0.46.tar.gz --markdown 20230513/p/pyfirebird/0.0.45-0.0.46/diff.md --exclude *.pyd
+[2023-05-13 20:45:59] INFO root fetch - processPackages [tryceratops]: executing diffoscope
+[2023-05-13 20:45:59] INFO root fetch - processPackages [tryceratops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tryceratops-2.0.0.tar.gz tmp/tryceratops-2.1.0.tar.gz --markdown 20230513/t/tryceratops/2.0.0-2.1.0/diff.md --exclude *.pyd
+[2023-05-13 20:46:00] INFO root fetch - main [MainThread]: End processing [tryceratops]: success
+[2023-05-13 20:46:00] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-13 20:46:00] INFO root fetch - main [MainThread]: End processing [torch-conduit]: success
+[2023-05-13 20:46:00] INFO root fetch - main [MainThread]: Store serial: [18092325]
