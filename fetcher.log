@@ -10221,3 +10221,42 @@ EOFError: EOF read where object expected
 [2023-05-13 15:50:30] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
 [2023-05-13 15:50:33] INFO root fetch - main [MainThread]: End processing [sqllineage]: success
 [2023-05-13 15:50:33] INFO root fetch - main [MainThread]: Store serial: [18090554]
+[2023-05-13 15:55:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090554]
+[2023-05-13 15:55:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 15:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fedbase
+[2023-05-13 15:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spreadsheetbot
+[2023-05-13 15:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: khash
+[2023-05-13 15:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipo-india
+[2023-05-13 15:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fixrobot
+[2023-05-13 15:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: BDXConverter
+[2023-05-13 15:55:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: uc-browser
+[2023-05-13 15:55:42] WARNING root fetch - processPackages [ipo-india]: Skipping, unable to determine old version
+[2023-05-13 15:55:42] INFO root fetch - main [MainThread]: End processing [ipo-india] error
+[2023-05-13 15:55:42] INFO root fetch - processPackages [spreadsheetbot]: New version: [2.1.0] Old Version: [2.0.2]
+[2023-05-13 15:55:42] INFO root fetch - processPackages [fedbase]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 15:55:42] WARNING root fetch - processPackages [fixrobot]: Skipping, unable to determine old version
+[2023-05-13 15:55:42] INFO root fetch - main [MainThread]: End processing [fixrobot] error
+[2023-05-13 15:55:42] WARNING root fetch - processPackages [khash]: Skipping, unable to determine old version
+[2023-05-13 15:55:42] INFO root fetch - processPackages [BDXConverter]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-13 15:55:42] INFO root fetch - main [MainThread]: End processing [khash] error
+[2023-05-13 15:55:42] INFO root fetch - processPackages [uc-browser]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-13 15:55:42] INFO root fetch - processPackages [spreadsheetbot]: Downloading https://files.pythonhosted.org/packages/6f/a6/3993ba6b3e836e965db91b50286c716aff528d891fca63dcd7812df813b4/spreadsheetbot-2.0.2.tar.gz
+[2023-05-13 15:55:42] INFO root fetch - processPackages [fedbase]: Downloading https://files.pythonhosted.org/packages/74/f1/e1ee5071696283aeecd70789e75583a873554bfdda3478fa1c0bf776e5ce/fedbase-0.9.8.tar.gz
+[2023-05-13 15:55:42] INFO root fetch - processPackages [BDXConverter]: Downloading https://files.pythonhosted.org/packages/95/e5/c2a568af048b474d9acfd03e8443148e1ddea2481e1d770b456131b86464/BDXConverter-1.1.2.tar.gz
+[2023-05-13 15:55:42] INFO root fetch - processPackages [BDXConverter]: executing diffoscope
+[2023-05-13 15:55:42] INFO root fetch - processPackages [BDXConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDXConverter-1.1.1.tar.gz tmp/BDXConverter-1.1.2.tar.gz --markdown 20230513/B/BDXConverter/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-13 15:55:42] INFO root fetch - processPackages [uc-browser]: Downloading https://files.pythonhosted.org/packages/7e/8e/e0ef7ea5c43d84829fdbf8e776e43128d348ee139c6254c5dc786b66837b/uc_browser-0.3.2.tar.gz
+[2023-05-13 15:55:42] INFO root fetch - processPackages [spreadsheetbot]: Downloading https://files.pythonhosted.org/packages/3e/f3/e2553323ff4b7a9a3b51ccbec2f95a97c1a98b8ff1158eb253c4b9530888/spreadsheetbot-2.1.0.tar.gz
+[2023-05-13 15:55:42] INFO root fetch - processPackages [spreadsheetbot]: executing diffoscope
+[2023-05-13 15:55:42] INFO root fetch - processPackages [spreadsheetbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spreadsheetbot-2.0.2.tar.gz tmp/spreadsheetbot-2.1.0.tar.gz --markdown 20230513/s/spreadsheetbot/2.0.2-2.1.0/diff.md --exclude *.pyd
+[2023-05-13 15:55:43] INFO root fetch - processPackages [fedbase]: Downloading https://files.pythonhosted.org/packages/ab/a1/92ba259603e43820ab0a315f4871d759113de02b219b25002faf8c777fb4/fedbase-0.9.9.tar.gz
+[2023-05-13 15:55:43] INFO root fetch - processPackages [uc-browser]: Downloading https://files.pythonhosted.org/packages/a3/ed/8586ddeabdc4cc19638f4c076ecbea6f21847506a57806dbfae7b087b5b3/uc_browser-0.3.3.tar.gz
+[2023-05-13 15:55:43] INFO root fetch - processPackages [fedbase]: executing diffoscope
+[2023-05-13 15:55:43] INFO root fetch - processPackages [fedbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fedbase-0.9.8.tar.gz tmp/fedbase-0.9.9.tar.gz --markdown 20230513/f/fedbase/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 15:55:43] INFO root fetch - processPackages [uc-browser]: executing diffoscope
+[2023-05-13 15:55:43] INFO root fetch - processPackages [uc-browser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uc_browser-0.3.2.tar.gz tmp/uc_browser-0.3.3.tar.gz --markdown 20230513/u/uc-browser/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-13 15:55:44] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
+[2023-05-13 15:55:44] INFO root fetch - main [MainThread]: End processing [fedbase]: success
+[2023-05-13 15:55:44] INFO root fetch - main [MainThread]: End processing [spreadsheetbot]: success
+[2023-05-13 15:55:44] INFO root fetch - main [MainThread]: End processing [uc-browser]: success
+[2023-05-13 15:55:44] INFO root fetch - main [MainThread]: Store serial: [18090626]
