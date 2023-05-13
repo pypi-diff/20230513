@@ -9634,3 +9634,98 @@
 [2023-05-13 14:56:53] INFO root fetch - main [MainThread]: End processing [unihan-db]: success
 [2023-05-13 14:56:54] INFO root fetch - main [MainThread]: End processing [django-formtools]: success
 [2023-05-13 14:56:54] INFO root fetch - main [MainThread]: Store serial: [18090234]
+[2023-05-13 15:01:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090234]
+[2023-05-13 15:02:04] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 15:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hiyobot
+[2023-05-13 15:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: LordMedia
+[2023-05-13 15:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: LordMedia
+[2023-05-13 15:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg-force-execute
+[2023-05-13 15:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cihai
+[2023-05-13 15:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: params-proto
+[2023-05-13 15:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fbgemm-gpu-nightly-cpu
+[2023-05-13 15:02:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: celerity
+[2023-05-13 15:02:04] INFO root fetch - processPackages [pg-force-execute]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 15:02:04] INFO root fetch - processPackages [hiyobot]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 15:02:04] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2023.5.12] Old Version: [2023.5.11]
+[2023-05-13 15:02:04] WARNING root fetch - processPackages [LordMedia]: Skipping, unable to determine old version
+[2023-05-13 15:02:04] INFO root fetch - main [MainThread]: End processing [LordMedia] error
+[2023-05-13 15:02:04] WARNING root fetch - processPackages [LordMedia]: Skipping, unable to determine old version
+[2023-05-13 15:02:04] INFO root fetch - main [MainThread]: End processing [LordMedia] error
+[2023-05-13 15:02:04] INFO root fetch - processPackages [celerity]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-13 15:02:04] INFO root fetch - processPackages [cihai]: New version: [0.9.0a5] Old Version: [0.9.0a4]
+[2023-05-13 15:02:04] INFO root fetch - processPackages [params-proto]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-05-13 15:02:04] INFO root fetch - processPackages [pg-force-execute]: executing diffoscope
+[2023-05-13 15:02:04] INFO root fetch - processPackages [pg-force-execute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_force_execute-0.0.8.tar.gz tmp/pg_force_execute-0.0.9.tar.gz --markdown 20230513/p/pg-force-execute/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 15:02:04] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-13 15:02:04] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.1.8.tar.gz tmp/hiyobot-0.1.9.tar.gz --markdown 20230513/h/hiyobot/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 15:02:04] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2023-05-13 15:02:04] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2023.5.11-cp39-cp39-manylinux1_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2023.5.12-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20230513/f/fbgemm-gpu-nightly-cpu/2023.5.11-2023.5.12/diff.md --exclude *.pyd
+[2023-05-13 15:02:04] INFO root fetch - processPackages [cihai]: Downloading https://files.pythonhosted.org/packages/8e/80/ab5ca1dbe6b53fdb51c67204d2c64db811c4999e09e2f92cd43c28c1d2b9/cihai-0.9.0a4.tar.gz
+[2023-05-13 15:02:05] INFO root fetch - processPackages [params-proto]: Downloading https://files.pythonhosted.org/packages/0a/20/7ffbcebdd86abce1864462ec4fcf39151f39d0f8e059210862e1f42b0ee3/params_proto-2.9.6-py3-none-any.whl
+[2023-05-13 15:02:05] INFO root fetch - processPackages [celerity]: executing diffoscope
+[2023-05-13 15:02:05] INFO root fetch - processPackages [celerity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/celerity-0.8.0.tar.gz tmp/celerity-0.9.0.tar.gz --markdown 20230513/c/celerity/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 15:02:05] INFO root fetch - processPackages [cihai]: Downloading https://files.pythonhosted.org/packages/7b/fd/271d57f890d74851f00896f337a4acb861dd7a2e41bf21ea64ea73fd1d82/cihai-0.9.0a5.tar.gz
+[2023-05-13 15:02:05] INFO root fetch - processPackages [cihai]: executing diffoscope
+[2023-05-13 15:02:05] INFO root fetch - processPackages [cihai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cihai-0.9.0a4.tar.gz tmp/cihai-0.9.0a5.tar.gz --markdown 20230513/c/cihai/0.9.0a4-0.9.0a5/diff.md --exclude *.pyd
+[2023-05-13 15:02:05] INFO root fetch - processPackages [params-proto]: Downloading https://files.pythonhosted.org/packages/d8/3c/4d8cc65883f3aae60d9d73972b9e344a55ce4c97d4130dd3848b106578ae/params_proto-2.9.7-py3-none-any.whl
+[2023-05-13 15:02:05] INFO root fetch - processPackages [params-proto]: executing diffoscope
+[2023-05-13 15:02:05] INFO root fetch - processPackages [params-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/params_proto-2.9.6-py3-none-any.whl.zip tmp/params_proto-2.9.7-py3-none-any.whl.zip --markdown 20230513/p/params-proto/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-05-13 15:02:06] INFO root fetch - main [MainThread]: End processing [pg-force-execute]: success
+[2023-05-13 15:02:06] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-13 15:02:06] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2023-05-13 15:02:06] INFO root fetch - main [MainThread]: End processing [celerity]: success
+[2023-05-13 15:02:06] ERROR root fetch - processPackages [cihai]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+EOFError: EOF read where object expected
+
+[2023-05-13 15:02:06] INFO root fetch - main [MainThread]: End processing [cihai] error
+[2023-05-13 15:02:06] INFO root fetch - main [MainThread]: End processing [params-proto]: success
+[2023-05-13 15:02:06] INFO root fetch - main [MainThread]: Store serial: [18090261]
