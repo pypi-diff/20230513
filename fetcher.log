@@ -9309,3 +9309,31 @@
 [2023-05-13 14:18:07] INFO root fetch - main [MainThread]: End processing [snapcast]: success
 [2023-05-13 14:18:08] INFO root fetch - main [MainThread]: End processing [D47crunch]: success
 [2023-05-13 14:18:08] INFO root fetch - main [MainThread]: Store serial: [18090032]
+[2023-05-13 14:23:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090032]
+[2023-05-13 14:23:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 14:23:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hapdoc
+[2023-05-13 14:23:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qiskit-symbolic
+[2023-05-13 14:23:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: squander
+[2023-05-13 14:23:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: importer-local
+[2023-05-13 14:23:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: num7
+[2023-05-13 14:23:18] INFO root fetch - processPackages [squander]: New version: [1.8.0] Old Version: [1.7.4]
+[2023-05-13 14:23:18] WARNING root fetch - processPackages [qiskit-symbolic]: Skipping, unable to determine old version
+[2023-05-13 14:23:18] WARNING root fetch - processPackages [importer-local]: Skipping, unable to determine old version
+[2023-05-13 14:23:18] INFO root fetch - main [MainThread]: End processing [qiskit-symbolic] error
+[2023-05-13 14:23:18] INFO root fetch - main [MainThread]: End processing [importer-local] error
+[2023-05-13 14:23:18] INFO root fetch - processPackages [num7]: New version: [1.0.28] Old Version: [1.0.27]
+[2023-05-13 14:23:18] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 14:23:18] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 14:23:18] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 14:23:18] INFO root fetch - processPackages [squander]: Downloading https://files.pythonhosted.org/packages/29/2e/529235204ae4cda85d83458a3f44279677254f30704fb7657a1357758f58/squander-1.7.4.tar.gz
+[2023-05-13 14:23:18] INFO root fetch - processPackages [num7]: Downloading https://files.pythonhosted.org/packages/b7/cf/5bdf43118280b2aa681f613376a2e1271587e34b6328050080f8cc9f0a4d/num7-1.0.27.tar.gz
+[2023-05-13 14:23:18] INFO root fetch - processPackages [squander]: Downloading https://files.pythonhosted.org/packages/cf/76/a5f2e00f7a159c52333e304f61f0961561e9f855f4e6ae61145c4c26ad77/squander-1.8.0.tar.gz
+[2023-05-13 14:23:18] INFO root fetch - processPackages [num7]: Downloading https://files.pythonhosted.org/packages/d5/3f/5627890a1d25123246a4a0b44bfcba7928083af3951d793f1058a6a02403/num7-1.0.28.tar.gz
+[2023-05-13 14:23:18] INFO root fetch - processPackages [squander]: executing diffoscope
+[2023-05-13 14:23:18] INFO root fetch - processPackages [squander]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squander-1.7.4.tar.gz tmp/squander-1.8.0.tar.gz --markdown 20230513/s/squander/1.7.4-1.8.0/diff.md --exclude *.pyd
+[2023-05-13 14:23:18] INFO root fetch - processPackages [num7]: executing diffoscope
+[2023-05-13 14:23:18] INFO root fetch - processPackages [num7]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/num7-1.0.27.tar.gz tmp/num7-1.0.28.tar.gz --markdown 20230513/n/num7/1.0.27-1.0.28/diff.md --exclude *.pyd
+[2023-05-13 14:23:19] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 14:23:21] INFO root fetch - main [MainThread]: End processing [squander]: success
+[2023-05-13 14:23:55] INFO root fetch - main [MainThread]: End processing [num7]: success
+[2023-05-13 14:23:55] INFO root fetch - main [MainThread]: Store serial: [18090053]
