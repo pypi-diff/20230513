@@ -3797,3 +3797,23 @@
 [2023-05-13 04:19:42] INFO root fetch - main [MainThread]: End processing [ucsd-cape]: success
 [2023-05-13 04:19:42] INFO root fetch - main [MainThread]: End processing [chatglm-llm]: success
 [2023-05-13 04:19:42] INFO root fetch - main [MainThread]: Store serial: [18087138]
+[2023-05-13 04:24:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087138]
+[2023-05-13 04:24:51] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 04:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dingding-sdk
+[2023-05-13 04:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xcpcio-board-spider
+[2023-05-13 04:24:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sans
+[2023-05-13 04:24:51] INFO root fetch - processPackages [dingding-sdk]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-13 04:24:51] INFO root fetch - processPackages [sans]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2023-05-13 04:24:51] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 04:24:51] INFO root fetch - processPackages [sans]: Downloading https://files.pythonhosted.org/packages/ad/9b/1995e60c77e4ba3b7d266a8cac74280a679faac3a337ae4d34767559813a/sans-1.0.0a3.tar.gz
+[2023-05-13 04:24:51] INFO root fetch - processPackages [dingding-sdk]: Downloading https://files.pythonhosted.org/packages/8a/7f/9613a1deacc0b15ae7970c1749f8a7cc7fba175ab125d892e16cb41f9cbd/dingding-sdk-0.0.7.tar.gz
+[2023-05-13 04:24:51] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-05-13 04:24:51] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230513/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 04:24:51] INFO root fetch - processPackages [dingding-sdk]: executing diffoscope
+[2023-05-13 04:24:51] INFO root fetch - processPackages [dingding-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingding-sdk-0.0.6.tar.gz tmp/dingding-sdk-0.0.7.tar.gz --markdown 20230513/d/dingding-sdk/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-13 04:24:51] INFO root fetch - processPackages [sans]: executing diffoscope
+[2023-05-13 04:24:51] INFO root fetch - processPackages [sans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sans-1.0.0a2.tar.gz tmp/sans-1.0.0a3.tar.gz --markdown 20230513/s/sans/1.0.0a2-1.0.0a3/diff.md --exclude *.pyd
+[2023-05-13 04:24:52] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-05-13 04:24:53] INFO root fetch - main [MainThread]: End processing [dingding-sdk]: success
+[2023-05-13 04:24:53] INFO root fetch - main [MainThread]: End processing [sans]: success
+[2023-05-13 04:24:53] INFO root fetch - main [MainThread]: Store serial: [18087148]
