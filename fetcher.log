@@ -13735,3 +13735,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:26:06] INFO root fetch - main [MainThread]: End processing [casanova]: success
 [2023-05-13 22:26:08] INFO root fetch - main [MainThread]: End processing [cbra]: success
 [2023-05-13 22:26:08] INFO root fetch - main [MainThread]: Store serial: [18092866]
+[2023-05-13 22:31:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092866]
+[2023-05-13 22:31:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 22:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pystrom
+[2023-05-13 22:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nexus-utilities
+[2023-05-13 22:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: syslog-ng-cfg-helper
+[2023-05-13 22:31:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PatryksAutoAI
+[2023-05-13 22:31:19] WARNING root fetch - processPackages [syslog-ng-cfg-helper]: Skipping, unable to determine old version
+[2023-05-13 22:31:19] INFO root fetch - main [MainThread]: End processing [syslog-ng-cfg-helper] error
+[2023-05-13 22:31:19] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.5.4] Old Version: [0.5.3]
+[2023-05-13 22:31:19] INFO root fetch - processPackages [nexus-utilities]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-13 22:31:19] INFO root fetch - processPackages [pystrom]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-13 22:31:19] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/8d/38/bcd22586b9383f5ca83f101e3db2b2dea8390998d5785dfe5fd8165e20ce/PatryksAutoAI-0.5.4.tar.gz
+[2023-05-13 22:31:19] INFO root fetch - processPackages [pystrom]: Downloading https://files.pythonhosted.org/packages/d4/5e/0de92163167166c0b3071ea8d8a8b8ef33671911e387a799cb76ad70604d/pystrom-1.0.4.tar.gz
+[2023-05-13 22:31:19] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-13 22:31:19] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.5.3.tar.gz tmp/PatryksAutoAI-0.5.4.tar.gz --markdown 20230513/P/PatryksAutoAI/0.5.3-0.5.4/diff.md --exclude *.pyd
+[2023-05-13 22:31:19] INFO root fetch - processPackages [nexus-utilities]: Downloading https://files.pythonhosted.org/packages/56/94/ad66a3ab55558aa6ef9c3f10ac12323bc41c0fe181dd331f4dd5a3e5b233/nexus-utilities-0.4.0.tar.gz
+[2023-05-13 22:31:20] INFO root fetch - processPackages [pystrom]: Downloading https://files.pythonhosted.org/packages/3d/c3/1781718f49065d887bd64a96470738f084ccc860aaa2dfd544789e4b15e5/pystrom-1.0.5.tar.gz
+[2023-05-13 22:31:20] INFO root fetch - processPackages [nexus-utilities]: executing diffoscope
+[2023-05-13 22:31:20] INFO root fetch - processPackages [nexus-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nexus-utilities-0.3.1.tar.gz tmp/nexus-utilities-0.4.0.tar.gz --markdown 20230513/n/nexus-utilities/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-13 22:31:20] INFO root fetch - processPackages [pystrom]: executing diffoscope
+[2023-05-13 22:31:20] INFO root fetch - processPackages [pystrom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystrom-1.0.4.tar.gz tmp/pystrom-1.0.5.tar.gz --markdown 20230513/p/pystrom/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-13 22:31:21] INFO root fetch - main [MainThread]: End processing [nexus-utilities]: success
+[2023-05-13 22:31:21] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-13 22:31:52] INFO root fetch - main [MainThread]: End processing [pystrom]: success
+[2023-05-13 22:31:52] INFO root fetch - main [MainThread]: Store serial: [18092878]
