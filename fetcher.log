@@ -12888,3 +12888,13 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 20:46:00] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
 [2023-05-13 20:46:00] INFO root fetch - main [MainThread]: End processing [torch-conduit]: success
 [2023-05-13 20:46:00] INFO root fetch - main [MainThread]: Store serial: [18092325]
+[2023-05-13 20:51:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092325]
+[2023-05-13 20:51:09] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-13 20:51:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: evoluzo
+[2023-05-13 20:51:09] INFO root fetch - processPackages [evoluzo]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 20:51:09] INFO root fetch - processPackages [evoluzo]: Downloading https://files.pythonhosted.org/packages/05/2c/52f002b9818499b1c99753ea0462f6496fe071d0e3c931d8ab2d34e27130/evoluzo-0.0.1.tar.gz
+[2023-05-13 20:51:10] INFO root fetch - processPackages [evoluzo]: Downloading https://files.pythonhosted.org/packages/1d/7e/5a512dc58eb01f0e9e02671319459eeb8a38f6df0f326389c90d4c0b5f33/evoluzo-0.0.2.tar.gz
+[2023-05-13 20:51:10] INFO root fetch - processPackages [evoluzo]: executing diffoscope
+[2023-05-13 20:51:10] INFO root fetch - processPackages [evoluzo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evoluzo-0.0.1.tar.gz tmp/evoluzo-0.0.2.tar.gz --markdown 20230513/e/evoluzo/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 20:51:11] INFO root fetch - main [MainThread]: End processing [evoluzo]: success
+[2023-05-13 20:51:11] INFO root fetch - main [MainThread]: Store serial: [18092329]
