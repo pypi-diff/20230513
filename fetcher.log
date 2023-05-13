@@ -10799,3 +10799,40 @@ EOFError: EOF read where object expected
 [2023-05-13 16:48:29] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
 [2023-05-13 16:48:31] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-05-13 16:48:31] INFO root fetch - main [MainThread]: Store serial: [18090927]
+[2023-05-13 16:53:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090927]
+[2023-05-13 16:53:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 16:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-hoshino-sign
+[2023-05-13 16:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dokuwikidumper
+[2023-05-13 16:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ichika
+[2023-05-13 16:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reus
+[2023-05-13 16:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymap
+[2023-05-13 16:53:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: image-augs
+[2023-05-13 16:53:40] INFO root fetch - processPackages [image-augs]: New version: [2.3.13] Old Version: [2.3.12]
+[2023-05-13 16:53:40] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-13 16:53:40] INFO root fetch - processPackages [image-augs]: executing diffoscope
+[2023-05-13 16:53:40] INFO root fetch - processPackages [image-augs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_augs-2.3.12.tar.gz tmp/image_augs-2.3.13.tar.gz --markdown 20230513/i/image-augs/2.3.12-2.3.13/diff.md --exclude *.pyd
+[2023-05-13 16:53:40] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: Downloading https://files.pythonhosted.org/packages/5f/e5/50ac57577c80a061e694a8a1fd23c6a0ea51d64bf9181d6eadc0f88d6204/nonebot_plugin_hoshino_sign-2.0.3.tar.gz
+[2023-05-13 16:53:40] INFO root fetch - processPackages [reus]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-13 16:53:40] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 16:53:40] INFO root fetch - processPackages [ichika]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 16:53:40] INFO root fetch - processPackages [pymap]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-13 16:53:40] WARNING root fetch - processPackages [nonebot-plugin-hoshino-sign]: Skipping package: exceeds size limit 40530107>=10485760
+[2023-05-13 16:53:40] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hoshino-sign] error
+[2023-05-13 16:53:40] INFO root fetch - processPackages [reus]: Downloading https://files.pythonhosted.org/packages/66/fe/38b35db0083b08bb7179019d821427c61d77f9f2864cb5882eeb228efe20/reus-1.1.0.tar.gz
+[2023-05-13 16:53:40] INFO root fetch - processPackages [ichika]: Downloading https://files.pythonhosted.org/packages/b2/6f/7c80021a4adf2e8caeee1eae044697a1bf22944c95e6c0ed5c30a97dade0/ichika-0.0.5.tar.gz
+[2023-05-13 16:53:40] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-13 16:53:40] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230513/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 16:53:40] INFO root fetch - processPackages [pymap]: executing diffoscope
+[2023-05-13 16:53:40] INFO root fetch - processPackages [pymap]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymap-0.9.6.tar.gz tmp/pymap-0.9.7.tar.gz --markdown 20230513/p/pymap/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-13 16:53:41] INFO root fetch - processPackages [reus]: Downloading https://files.pythonhosted.org/packages/db/db/d9990dc47f0a2458480cc7c1f0b34662ffa4d46888c870aecb6974096f81/reus-1.1.1.tar.gz
+[2023-05-13 16:53:41] INFO root fetch - processPackages [ichika]: Downloading https://files.pythonhosted.org/packages/63/74/a91eba42cc38b6a2bb9768138a09e0ea3ff45143abb2c2c997a069526038/ichika-0.0.6.tar.gz
+[2023-05-13 16:53:41] INFO root fetch - processPackages [reus]: executing diffoscope
+[2023-05-13 16:53:41] INFO root fetch - processPackages [reus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reus-1.1.0.tar.gz tmp/reus-1.1.1.tar.gz --markdown 20230513/r/reus/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-13 16:53:41] INFO root fetch - processPackages [ichika]: executing diffoscope
+[2023-05-13 16:53:41] INFO root fetch - processPackages [ichika]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ichika-0.0.5.tar.gz tmp/ichika-0.0.6.tar.gz --markdown 20230513/i/ichika/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 16:53:41] INFO root fetch - main [MainThread]: End processing [image-augs]: success
+[2023-05-13 16:53:42] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-13 16:53:42] INFO root fetch - main [MainThread]: End processing [pymap]: success
+[2023-05-13 16:53:42] INFO root fetch - main [MainThread]: End processing [ichika]: success
+[2023-05-13 16:53:42] INFO root fetch - main [MainThread]: End processing [reus]: success
+[2023-05-13 16:53:42] INFO root fetch - main [MainThread]: Store serial: [18090961]
