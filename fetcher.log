@@ -12751,3 +12751,31 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 20:25:10] INFO root fetch - main [MainThread]: End processing [irene-pro]: success
 [2023-05-13 20:25:13] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
 [2023-05-13 20:25:13] INFO root fetch - main [MainThread]: Store serial: [18092243]
+[2023-05-13 20:30:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092243]
+[2023-05-13 20:30:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crelm
+[2023-05-13 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-simple-backup
+[2023-05-13 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xklb
+[2023-05-13 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: varwizard
+[2023-05-13 20:30:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ctdd
+[2023-05-13 20:30:23] INFO root fetch - processPackages [django-simple-backup]: New version: [1.2] Old Version: [1.1]
+[2023-05-13 20:30:23] WARNING root fetch - processPackages [varwizard]: Skipping, unable to determine old version
+[2023-05-13 20:30:23] INFO root fetch - main [MainThread]: End processing [varwizard] error
+[2023-05-13 20:30:23] INFO root fetch - processPackages [ctdd]: New version: [0.0.2a3] Old Version: [0.0.2a2]
+[2023-05-13 20:30:23] INFO root fetch - processPackages [crelm]: New version: [0.0.33a1] Old Version: [0.0.33a0]
+[2023-05-13 20:30:23] INFO root fetch - processPackages [xklb]: New version: [1.26.30] Old Version: [1.26.29]
+[2023-05-13 20:30:23] INFO root fetch - processPackages [ctdd]: executing diffoscope
+[2023-05-13 20:30:23] INFO root fetch - processPackages [ctdd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdd-0.0.2a2.tar.gz tmp/ctdd-0.0.2a3.tar.gz --markdown 20230513/c/ctdd/0.0.2a2-0.0.2a3/diff.md --exclude *.pyd
+[2023-05-13 20:30:23] INFO root fetch - processPackages [crelm]: executing diffoscope
+[2023-05-13 20:30:23] INFO root fetch - processPackages [crelm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crelm-0.0.33a0.tar.gz tmp/crelm-0.0.33a1.tar.gz --markdown 20230513/c/crelm/0.0.33a0-0.0.33a1/diff.md --exclude *.pyd
+[2023-05-13 20:30:23] INFO root fetch - processPackages [django-simple-backup]: Downloading https://files.pythonhosted.org/packages/50/5d/083722fb4a0b26de78671dc44bdf6f4e84d5444f5f2e185cf35a6ee1c84d/django-simple-backup-1.2.tar.gz
+[2023-05-13 20:30:23] INFO root fetch - processPackages [django-simple-backup]: executing diffoscope
+[2023-05-13 20:30:23] INFO root fetch - processPackages [django-simple-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-simple-backup-1.1.tar.gz tmp/django-simple-backup-1.2.tar.gz --markdown 20230513/d/django-simple-backup/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-13 20:30:23] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/73/70/f77890aa4790ae1fad9e429d2d82150a821bde8dec2c2b7d34a6aef3f08d/xklb-1.26.30.tar.gz
+[2023-05-13 20:30:23] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-13 20:30:23] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.26.29.tar.gz tmp/xklb-1.26.30.tar.gz --markdown 20230513/x/xklb/1.26.29-1.26.30/diff.md --exclude *.pyd
+[2023-05-13 20:30:24] INFO root fetch - main [MainThread]: End processing [crelm]: success
+[2023-05-13 20:30:24] INFO root fetch - main [MainThread]: End processing [ctdd]: success
+[2023-05-13 20:30:24] INFO root fetch - main [MainThread]: End processing [django-simple-backup]: success
+[2023-05-13 20:30:25] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-13 20:30:25] INFO root fetch - main [MainThread]: Store serial: [18092258]
