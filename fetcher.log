@@ -7959,3 +7959,60 @@
 [2023-05-13 11:18:23] INFO root fetch - main [MainThread]: End processing [injective-py]: success
 [2023-05-13 11:18:26] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-05-13 11:18:26] INFO root fetch - main [MainThread]: Store serial: [18089209]
+[2023-05-13 11:23:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089209]
+[2023-05-13 11:23:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pii-extract-plg-presidio
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: faster-whisper-cli
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: yproject
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pii-transform
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tf-nightly-cpu-aws
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dagster-toolbox
+[2023-05-13 11:23:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fbi-api
+[2023-05-13 11:23:35] INFO root fetch - processPackages [dagster-toolbox]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [yproject]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [pii-extract-plg-presidio]: New version: [0.3.2] Old Version: [0.3.0]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [pii-transform]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [faster-whisper-cli]: New version: [1.0.0] Old Version: [0.1.1]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [fbi-api]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [tf-nightly-cpu-aws]: New version: [2.14.0.dev20230513] Old Version: [2.14.0.dev20230512]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [faster-whisper-cli]: Downloading https://files.pythonhosted.org/packages/ce/c9/5a7622f986c627db03fa9c4f13e51c6ca5b9163f74f894aa2ec87eba3b34/faster_whisper_cli-0.1.1.tar.gz
+[2023-05-13 11:23:35] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-13 11:23:35] INFO root fetch - processPackages [dagster-toolbox]: Downloading https://files.pythonhosted.org/packages/23/17/9bc8787993746468bdfe1b604445d9d5a6b957b88a9650ec266c31c0ca0c/dagster-toolbox-0.0.3.tar.gz
+[2023-05-13 11:23:35] INFO root fetch - processPackages [yproject]: Downloading https://files.pythonhosted.org/packages/75/06/0ee11721ccee91ce62b7f503e1a696a7aee8a86f92ae610c2700ce045997/yproject-1.0.2.tar.gz
+[2023-05-13 11:23:35] INFO root fetch - processPackages [fbi-api]: Downloading https://files.pythonhosted.org/packages/ba/a5/dd3a9694e0bf92cf4a27d360c5a4e8c68f360f8d84a7e04c5cb8683759be/fbi_api-1.0.0-py3-none-any.whl
+[2023-05-13 11:23:35] INFO root fetch - processPackages [tf-nightly-cpu-aws]: Downloading https://files.pythonhosted.org/packages/54/57/e255904ff45d9bd4d97f8d55a8ef8c959f0e2f015478462f58c12abe6621/tf_nightly_cpu_aws-2.14.0.dev20230512-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-13 11:23:35] INFO root fetch - processPackages [pii-transform]: Downloading https://files.pythonhosted.org/packages/a1/f8/93273821210859d881e23a2ce960f4b3f1b46c018daffe3d49183400c16a/pii-transform-0.5.1.tar.gz
+[2023-05-13 11:23:35] INFO root fetch - processPackages [pii-extract-plg-presidio]: Downloading https://files.pythonhosted.org/packages/a9/9c/0d876bd824598dcb87eae1fbcbff53a9e214a7ba63f4fa19207535406aba/pii-extract-plg-presidio-0.3.2.tar.gz
+[2023-05-13 11:23:35] INFO root fetch - processPackages [yproject]: executing diffoscope
+[2023-05-13 11:23:35] INFO root fetch - processPackages [yproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yproject-1.0.1.tar.gz tmp/yproject-1.0.2.tar.gz --markdown 20230513/y/yproject/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 11:23:35] WARNING root fetch - processPackages [tf-nightly-cpu-aws]: Skipping package: exceeds size limit 251902687>=10485760
+[2023-05-13 11:23:35] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu-aws] error
+[2023-05-13 11:23:35] INFO root fetch - processPackages [faster-whisper-cli]: Downloading https://files.pythonhosted.org/packages/e3/59/685acfa0038d95fcf679b3942f7ef38e6d8b6b41823ebd0fa5240bf54535/faster_whisper_cli-1.0.0.tar.gz
+[2023-05-13 11:23:35] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-13 11:23:35] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230513/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-13 11:23:35] INFO root fetch - processPackages [pii-extract-plg-presidio]: executing diffoscope
+[2023-05-13 11:23:35] INFO root fetch - processPackages [pii-extract-plg-presidio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pii-extract-plg-presidio-0.3.0.tar.gz tmp/pii-extract-plg-presidio-0.3.2.tar.gz --markdown 20230513/p/pii-extract-plg-presidio/0.3.0-0.3.2/diff.md --exclude *.pyd
+[2023-05-13 11:23:35] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-13 11:23:35] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230513/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-13 11:23:35] INFO root fetch - processPackages [pii-transform]: executing diffoscope
+[2023-05-13 11:23:35] INFO root fetch - processPackages [pii-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pii-transform-0.5.0.tar.gz tmp/pii-transform-0.5.1.tar.gz --markdown 20230513/p/pii-transform/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-13 11:23:36] INFO root fetch - processPackages [dagster-toolbox]: Downloading https://files.pythonhosted.org/packages/c7/f5/d81715564f98d80824b0f74c5e41a3309e1c71298ff5038ad41c218674b4/dagster-toolbox-0.0.4.tar.gz
+[2023-05-13 11:23:36] INFO root fetch - processPackages [fbi-api]: Downloading https://files.pythonhosted.org/packages/bb/74/2397815b2001070ff8a71fd6805a129ed02ff8e817bcce319f691b7680b7/fbi-api-1.1.0.tar.gz
+[2023-05-13 11:23:36] INFO root fetch - processPackages [dagster-toolbox]: executing diffoscope
+[2023-05-13 11:23:36] INFO root fetch - processPackages [dagster-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagster-toolbox-0.0.3.tar.gz tmp/dagster-toolbox-0.0.4.tar.gz --markdown 20230513/d/dagster-toolbox/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 11:23:36] INFO root fetch - processPackages [faster-whisper-cli]: executing diffoscope
+[2023-05-13 11:23:36] INFO root fetch - processPackages [faster-whisper-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster_whisper_cli-0.1.1.tar.gz tmp/faster_whisper_cli-1.0.0.tar.gz --markdown 20230513/f/faster-whisper-cli/0.1.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-13 11:23:36] INFO root fetch - processPackages [fbi-api]: executing diffoscope
+[2023-05-13 11:23:36] INFO root fetch - processPackages [fbi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbi_api-1.0.0-py3-none-any.whl.zip tmp/fbi-api-1.1.0.tar.gz --markdown 20230513/f/fbi-api/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 11:23:37] INFO root fetch - main [MainThread]: End processing [yproject]: success
+[2023-05-13 11:23:37] INFO root fetch - main [MainThread]: End processing [pii-extract-plg-presidio]: success
+[2023-05-13 11:23:37] INFO root fetch - main [MainThread]: End processing [pii-transform]: success
+[2023-05-13 11:23:37] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-13 11:23:37] INFO root fetch - main [MainThread]: End processing [faster-whisper-cli]: success
+[2023-05-13 11:23:37] INFO root fetch - main [MainThread]: End processing [fbi-api]: success
+[2023-05-13 11:23:38] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-13 11:23:38] INFO root fetch - main [MainThread]: End processing [dagster-toolbox]: success
+[2023-05-13 11:23:38] INFO root fetch - main [MainThread]: Store serial: [18089235]
