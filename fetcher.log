@@ -10836,3 +10836,60 @@ EOFError: EOF read where object expected
 [2023-05-13 16:53:42] INFO root fetch - main [MainThread]: End processing [ichika]: success
 [2023-05-13 16:53:42] INFO root fetch - main [MainThread]: End processing [reus]: success
 [2023-05-13 16:53:42] INFO root fetch - main [MainThread]: Store serial: [18090961]
+[2023-05-13 16:58:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090961]
+[2023-05-13 16:58:51] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dj-search-highlight
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: business-profile-yelp-local-python
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: internetarchivesync
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-spark-gpt
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hotspotty-payment-email
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: plot-antenna
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: youtuber-ai-chatbot
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: image-augs
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: websiteclassificationapi
+[2023-05-13 16:58:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rebasin
+[2023-05-13 16:58:52] INFO root fetch - processPackages [plot-antenna]: New version: [1.3] Old Version: [1.2]
+[2023-05-13 16:58:52] INFO root fetch - processPackages [rebasin]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 16:58:52] INFO root fetch - processPackages [business-profile-yelp-local-python]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 16:58:52] INFO root fetch - processPackages [image-augs]: New version: [2.3.15] Old Version: [2.3.14]
+[2023-05-13 16:58:52] WARNING root fetch - processPackages [dj-search-highlight]: Skipping, unable to determine old version
+[2023-05-13 16:58:52] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-13 16:58:52] INFO root fetch - main [MainThread]: End processing [dj-search-highlight] error
+[2023-05-13 16:58:52] WARNING root fetch - processPackages [internetarchivesync]: Skipping, unable to determine old version
+[2023-05-13 16:58:52] INFO root fetch - main [MainThread]: End processing [internetarchivesync] error
+[2023-05-13 16:58:52] WARNING root fetch - processPackages [youtuber-ai-chatbot]: Skipping, unable to determine old version
+[2023-05-13 16:58:52] INFO root fetch - main [MainThread]: End processing [youtuber-ai-chatbot] error
+[2023-05-13 16:58:52] INFO root fetch - processPackages [hotspotty-payment-email]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-13 16:58:52] INFO root fetch - processPackages [websiteclassificationapi]: New version: [2.2] Old Version: [2.1.9]
+[2023-05-13 16:58:52] INFO root fetch - processPackages [rebasin]: executing diffoscope
+[2023-05-13 16:58:52] INFO root fetch - processPackages [rebasin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rebasin-0.0.8.tar.gz tmp/rebasin-0.0.9.tar.gz --markdown 20230513/r/rebasin/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 16:58:52] INFO root fetch - processPackages [plot-antenna]: Downloading https://files.pythonhosted.org/packages/76/ed/0cdb72190dc112bac7814b786ea657eb651c10232b953858372d99cb607b/plot-antenna-1.2.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [image-augs]: Downloading https://files.pythonhosted.org/packages/d3/91/9f65e79d4e310cf729be6592086a69730ce9fc167a2f9651083316515575/image_augs-2.3.14.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [hotspotty-payment-email]: Downloading https://files.pythonhosted.org/packages/1a/d3/0973abab81333cbd9256df9ce4d7fdd1b4d1915b9ff2d596ca229fcaf2e6/hotspotty_payment_email-0.3.1.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [business-profile-yelp-local-python]: Downloading https://files.pythonhosted.org/packages/40/25/97d102160867a4ebdc76977375947937512347aea29ab3e2e5b84de7e6fe/business-profile-yelp-local-python-0.0.2.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Downloading https://files.pythonhosted.org/packages/9e/8b/4ea6651da6eace9d093a74dc36d1aaaa35292070ac59f653d8916061be32/nonebot_plugin_spark_gpt-0.1.7.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [websiteclassificationapi]: Downloading https://files.pythonhosted.org/packages/33/ab/335c2adda67175d60e35326e5e3c5897dc14c366a8a31c0d8e9d87e99c18/websiteclassificationapi-2.1.9.tar.gz
+[2023-05-13 16:58:52] WARNING root fetch - processPackages [nonebot-plugin-spark-gpt]: Skipping package: exceeds size limit 13712296>=10485760
+[2023-05-13 16:58:52] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-spark-gpt] error
+[2023-05-13 16:58:52] INFO root fetch - processPackages [plot-antenna]: Downloading https://files.pythonhosted.org/packages/32/2e/bc6d63e2bcb1c6bce330f7d104a6bb99b57eb1ce16f7308ee492afabb249/plot-antenna-1.3.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [hotspotty-payment-email]: Downloading https://files.pythonhosted.org/packages/1b/7b/c5fc03dad1ab9c24df61576f18493c9884fef88edd91d1fc742c796fca44/hotspotty_payment_email-0.3.2.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [image-augs]: Downloading https://files.pythonhosted.org/packages/82/cd/9df7f0b0a025bf730e9c5a90cc1acba3b4690147af391e4f6789be7689ab/image_augs-2.3.15.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [business-profile-yelp-local-python]: Downloading https://files.pythonhosted.org/packages/a1/f2/433f7924198bdbca89b1134e44ee3baa0f292b98bcfe29116e82ed7df007/business-profile-yelp-local-python-0.0.3.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [plot-antenna]: executing diffoscope
+[2023-05-13 16:58:52] INFO root fetch - processPackages [plot-antenna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plot-antenna-1.2.tar.gz tmp/plot-antenna-1.3.tar.gz --markdown 20230513/p/plot-antenna/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-13 16:58:52] INFO root fetch - processPackages [business-profile-yelp-local-python]: executing diffoscope
+[2023-05-13 16:58:52] INFO root fetch - processPackages [business-profile-yelp-local-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/business-profile-yelp-local-python-0.0.2.tar.gz tmp/business-profile-yelp-local-python-0.0.3.tar.gz --markdown 20230513/b/business-profile-yelp-local-python/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 16:58:52] INFO root fetch - processPackages [hotspotty-payment-email]: executing diffoscope
+[2023-05-13 16:58:52] INFO root fetch - processPackages [hotspotty-payment-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotspotty_payment_email-0.3.1.tar.gz tmp/hotspotty_payment_email-0.3.2.tar.gz --markdown 20230513/h/hotspotty-payment-email/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-13 16:58:52] INFO root fetch - processPackages [websiteclassificationapi]: Downloading https://files.pythonhosted.org/packages/83/c7/df572345a3a2cca3c2efe09e1fc531f423916bd9dd28a3372d307c7a6588/websiteclassificationapi-2.2.tar.gz
+[2023-05-13 16:58:52] INFO root fetch - processPackages [image-augs]: executing diffoscope
+[2023-05-13 16:58:52] INFO root fetch - processPackages [image-augs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_augs-2.3.14.tar.gz tmp/image_augs-2.3.15.tar.gz --markdown 20230513/i/image-augs/2.3.14-2.3.15/diff.md --exclude *.pyd
+[2023-05-13 16:58:52] INFO root fetch - processPackages [websiteclassificationapi]: executing diffoscope
+[2023-05-13 16:58:52] INFO root fetch - processPackages [websiteclassificationapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/websiteclassificationapi-2.1.9.tar.gz tmp/websiteclassificationapi-2.2.tar.gz --markdown 20230513/w/websiteclassificationapi/2.1.9-2.2/diff.md --exclude *.pyd
+[2023-05-13 16:58:53] INFO root fetch - main [MainThread]: End processing [plot-antenna]: success
+[2023-05-13 16:58:53] INFO root fetch - main [MainThread]: End processing [rebasin]: success
+[2023-05-13 16:58:53] INFO root fetch - main [MainThread]: End processing [image-augs]: success
+[2023-05-13 16:58:54] INFO root fetch - main [MainThread]: End processing [hotspotty-payment-email]: success
+[2023-05-13 16:58:54] INFO root fetch - main [MainThread]: End processing [business-profile-yelp-local-python]: success
+[2023-05-13 16:58:54] INFO root fetch - main [MainThread]: End processing [websiteclassificationapi]: success
+[2023-05-13 16:58:54] INFO root fetch - main [MainThread]: Store serial: [18090997]
