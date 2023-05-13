@@ -8803,3 +8803,56 @@
 [2023-05-13 13:25:55] INFO root fetch - main [MainThread]: End processing [geonum]: success
 [2023-05-13 13:25:56] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-13 13:25:56] INFO root fetch - main [MainThread]: Store serial: [18089731]
+[2023-05-13 13:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089731]
+[2023-05-13 13:31:05] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cosmopower-jax
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dataset-tools
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asa-tools
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tkfly
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: giup
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: krx-rigger
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torchx-nightly
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cosmopower-jax
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyPLNmodels
+[2023-05-13 13:31:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyPLNmodels
+[2023-05-13 13:31:05] INFO root fetch - processPackages [giup]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-13 13:31:05] INFO root fetch - processPackages [cosmopower-jax]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 13:31:05] INFO root fetch - processPackages [cosmopower-jax]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 13:31:05] INFO root fetch - processPackages [krx-rigger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 13:31:05] WARNING root fetch - processPackages [dataset-tools]: Skipping, unable to determine old version
+[2023-05-13 13:31:05] INFO root fetch - main [MainThread]: End processing [dataset-tools] error
+[2023-05-13 13:31:05] INFO root fetch - processPackages [asa-tools]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 13:31:05] INFO root fetch - processPackages [pyPLNmodels]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 13:31:05] INFO root fetch - processPackages [pyPLNmodels]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 13:31:05] INFO root fetch - processPackages [tkfly]: New version: [0.1.0a5] Old Version: [0.1.0a4]
+[2023-05-13 13:31:05] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-13 13:31:05] INFO root fetch - processPackages [giup]: executing diffoscope
+[2023-05-13 13:31:05] INFO root fetch - processPackages [giup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giup-1.1.0.tar.gz tmp/giup-1.1.1.tar.gz --markdown 20230513/g/giup/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-13 13:31:05] INFO root fetch - processPackages [cosmopower-jax]: Downloading https://files.pythonhosted.org/packages/fa/00/88f372f75d91103b15aaa91f0d2f333d24b44bc72f0c340d844391266beb/cosmopower_jax-0.2.1.tar.gz
+[2023-05-13 13:31:05] INFO root fetch - processPackages [cosmopower-jax]: Downloading https://files.pythonhosted.org/packages/fa/00/88f372f75d91103b15aaa91f0d2f333d24b44bc72f0c340d844391266beb/cosmopower_jax-0.2.1.tar.gz
+[2023-05-13 13:31:05] INFO root fetch - processPackages [krx-rigger]: executing diffoscope
+[2023-05-13 13:31:05] INFO root fetch - processPackages [krx-rigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krx_rigger-0.0.8.tar.gz tmp/krx_rigger-0.0.9.tar.gz --markdown 20230513/k/krx-rigger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 13:31:05] INFO root fetch - processPackages [tkfly]: Downloading https://files.pythonhosted.org/packages/12/99/c8edbf1beb12e3ed039f4034abfed108e0300d1e690612c43c759ecb0df9/tkfly-0.1.0a4.tar.gz
+[2023-05-13 13:31:05] WARNING root fetch - processPackages [cosmopower-jax]: Skipping package: exceeds size limit 41404365>=10485760
+[2023-05-13 13:31:05] WARNING root fetch - processPackages [cosmopower-jax]: Skipping package: exceeds size limit 41404365>=10485760
+[2023-05-13 13:31:05] INFO root fetch - main [MainThread]: End processing [cosmopower-jax] error
+[2023-05-13 13:31:05] INFO root fetch - main [MainThread]: End processing [cosmopower-jax] error
+[2023-05-13 13:31:05] INFO root fetch - processPackages [asa-tools]: Downloading https://files.pythonhosted.org/packages/f6/9a/0881a8bae9e2e8f592a5d73b92e91a763901b24ce65fedd4500184cc7541/asa-tools-0.1.2.tar.gz
+[2023-05-13 13:31:05] INFO root fetch - processPackages [pyPLNmodels]: executing diffoscope
+[2023-05-13 13:31:05] INFO root fetch - processPackages [pyPLNmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPLNmodels-0.0.8.tar.gz tmp/pyPLNmodels-0.0.9.tar.gz --markdown 20230513/p/pyPLNmodels/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 13:31:05] INFO root fetch - processPackages [pyPLNmodels]: executing diffoscope
+[2023-05-13 13:31:05] INFO root fetch - processPackages [pyPLNmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPLNmodels-0.0.8.tar.gz tmp/pyPLNmodels-0.0.9.tar.gz --markdown 20230513/p/pyPLNmodels/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 13:31:05] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-13 13:31:05] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230513/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-13 13:31:05] INFO root fetch - processPackages [asa-tools]: executing diffoscope
+[2023-05-13 13:31:05] INFO root fetch - processPackages [asa-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asa-tools-0.1.1.tar.gz tmp/asa-tools-0.1.2.tar.gz --markdown 20230513/a/asa-tools/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 13:31:06] INFO root fetch - processPackages [tkfly]: Downloading https://files.pythonhosted.org/packages/72/63/3645c8d9bed102432f16bdab5cc23fcd1472ef5b2c5668a00cf5e960429e/tkfly-0.1.0a5.tar.gz
+[2023-05-13 13:31:06] INFO root fetch - main [MainThread]: End processing [krx-rigger]: success
+[2023-05-13 13:31:06] INFO root fetch - main [MainThread]: End processing [giup]: success
+[2023-05-13 13:31:07] INFO root fetch - main [MainThread]: End processing [asa-tools]: success
+[2023-05-13 13:31:07] WARNING root fetch - processPackages [tkfly]: Skipping package: exceeds size limit 34644439>=10485760
+[2023-05-13 13:31:07] INFO root fetch - main [MainThread]: End processing [tkfly] error
+[2023-05-13 13:31:07] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-13 13:31:08] INFO root fetch - main [MainThread]: End processing [pyPLNmodels]: success
+[2023-05-13 13:31:08] INFO root fetch - main [MainThread]: End processing [pyPLNmodels]: success
+[2023-05-13 13:31:08] INFO root fetch - main [MainThread]: Store serial: [18089765]
