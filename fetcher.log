@@ -6889,3 +6889,54 @@
 [2023-05-13 09:27:45] INFO root fetch - main [MainThread]: End processing [odoo12-addon-date-range]: success
 [2023-05-13 09:28:20] INFO root fetch - main [MainThread]: End processing [odoo14-addon-date-range]: success
 [2023-05-13 09:28:20] INFO root fetch - main [MainThread]: Store serial: [18088650]
+[2023-05-13 09:33:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088650]
+[2023-05-13 09:33:29] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 09:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-poet
+[2023-05-13 09:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-alicloud
+[2023-05-13 09:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nepattern
+[2023-05-13 09:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: infer-subc
+[2023-05-13 09:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo12-addon-stock-barcodes
+[2023-05-13 09:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-stock-barcodes
+[2023-05-13 09:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: odoo-addon-stock-barcodes
+[2023-05-13 09:33:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: arknights-toolkit
+[2023-05-13 09:33:29] INFO root fetch - processPackages [poetry-poet]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-13 09:33:29] INFO root fetch - processPackages [pulumi-alicloud]: New version: [3.9.0a1637592974] Old Version: [3.9.0a1635778307]
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo12-addon-stock-barcodes]: New version: [12.0.2.3.0.99.dev8] Old Version: [12.0.2.3.0.99.dev6]
+[2023-05-13 09:33:29] INFO root fetch - processPackages [arknights-toolkit]: New version: [0.5.3] Old Version: [0.5.2]
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo14-addon-stock-barcodes]: New version: [14.0.2.2.2.dev4] Old Version: [14.0.2.2.2.dev2]
+[2023-05-13 09:33:29] INFO root fetch - processPackages [infer-subc]: New version: [0.0.post1] Old Version: [0.0.4b0]
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: New version: [15.0.1.2.2.6] Old Version: [15.0.1.2.2.5]
+[2023-05-13 09:33:29] INFO root fetch - processPackages [nepattern]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-05-13 09:33:29] INFO root fetch - processPackages [infer-subc]: Downloading https://files.pythonhosted.org/packages/c7/2f/d4b202a685363ca26d4e3fc8ce76d64a0992b761f3867009020e06eff760/infer-subc-0.0.4b0.tar.gz
+[2023-05-13 09:33:29] INFO root fetch - processPackages [nepattern]: Downloading https://files.pythonhosted.org/packages/04/24/02d2086a50be474779a4930b49018c90811efcafb48fd8a2d417b6f8936e/nepattern-0.5.6.tar.gz
+[2023-05-13 09:33:29] INFO root fetch - processPackages [arknights-toolkit]: Downloading https://files.pythonhosted.org/packages/93/ba/d7a04e78b47551570035c1be918d084540ea11402651a595bd73fdf92985/arknights-toolkit-0.5.2.tar.gz
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: Downloading https://files.pythonhosted.org/packages/9b/48/a02ebc27a476fd9019f159297f64ec158d30bf9ca31846afb9914f585f26/odoo_addon_stock_barcodes-15.0.1.2.2.6-py3-none-any.whl
+[2023-05-13 09:33:29] INFO root fetch - processPackages [poetry-poet]: Downloading https://files.pythonhosted.org/packages/28/41/98bfdbec53b72a7330f059940f61a641471f858f3a03e14b372499e681fd/poetry_poet-0.1.8.tar.gz
+[2023-05-13 09:33:29] WARNING root fetch - processPackages [arknights-toolkit]: Skipping package: exceeds size limit 17442330>=10485760
+[2023-05-13 09:33:29] INFO root fetch - main [MainThread]: End processing [arknights-toolkit] error
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo12-addon-stock-barcodes]: Downloading https://files.pythonhosted.org/packages/ea/60/dd787ab5fb856b209354a29fa7a8ca8e690de5def43a9727f349a53e2ce4/odoo12_addon_stock_barcodes-12.0.2.3.0.99.dev8-py3-none-any.whl
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: executing diffoscope
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo-addon-stock-barcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_barcodes-15.0.1.2.2.5-py3-none-any.whl.zip tmp/odoo_addon_stock_barcodes-15.0.1.2.2.6-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-stock-barcodes/15.0.1.2.2.5-15.0.1.2.2.6/diff.md --exclude *.pyd
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo14-addon-stock-barcodes]: Downloading https://files.pythonhosted.org/packages/2b/83/f4faac0980702d6253c905f257d64f6ef4623b493e69239c4f4c9e7a430e/odoo14_addon_stock_barcodes-14.0.2.2.2.dev4-py3-none-any.whl
+[2023-05-13 09:33:29] INFO root fetch - processPackages [pulumi-alicloud]: executing diffoscope
+[2023-05-13 09:33:29] INFO root fetch - processPackages [pulumi-alicloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_alicloud-3.9.0a1635778307.tar.gz tmp/pulumi_alicloud-3.9.0a1637592974.tar.gz --markdown 20230513/p/pulumi-alicloud/3.9.0a1635778307-3.9.0a1637592974/diff.md --exclude *.pyd
+[2023-05-13 09:33:29] INFO root fetch - processPackages [nepattern]: Downloading https://files.pythonhosted.org/packages/25/65/9fd146bb003dae642512ebb70e4aa39fa0083ea87d252a36a45177f4116d/nepattern-0.5.7.tar.gz
+[2023-05-13 09:33:29] INFO root fetch - processPackages [poetry-poet]: executing diffoscope
+[2023-05-13 09:33:29] INFO root fetch - processPackages [poetry-poet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_poet-0.1.7.tar.gz tmp/poetry_poet-0.1.8.tar.gz --markdown 20230513/p/poetry-poet/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo12-addon-stock-barcodes]: executing diffoscope
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo12-addon-stock-barcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_barcodes-12.0.2.3.0.99.dev6-py3-none-any.whl.zip tmp/odoo12_addon_stock_barcodes-12.0.2.3.0.99.dev8-py3-none-any.whl.zip --markdown 20230513/o/odoo12-addon-stock-barcodes/12.0.2.3.0.99.dev6-12.0.2.3.0.99.dev8/diff.md --exclude *.pyd
+[2023-05-13 09:33:29] INFO root fetch - processPackages [infer-subc]: Downloading https://files.pythonhosted.org/packages/68/2b/9c2911b9204e97e949d7c327a5c9f19e2565956acf9582d31b15f0640a2c/infer-subc-0.0.post1.tar.gz
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo14-addon-stock-barcodes]: executing diffoscope
+[2023-05-13 09:33:29] INFO root fetch - processPackages [odoo14-addon-stock-barcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_stock_barcodes-14.0.2.2.2.dev2-py3-none-any.whl.zip tmp/odoo14_addon_stock_barcodes-14.0.2.2.2.dev4-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-stock-barcodes/14.0.2.2.2.dev2-14.0.2.2.2.dev4/diff.md --exclude *.pyd
+[2023-05-13 09:33:29] INFO root fetch - processPackages [infer-subc]: executing diffoscope
+[2023-05-13 09:33:29] INFO root fetch - processPackages [nepattern]: executing diffoscope
+[2023-05-13 09:33:29] INFO root fetch - processPackages [infer-subc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infer-subc-0.0.4b0.tar.gz tmp/infer-subc-0.0.post1.tar.gz --markdown 20230513/i/infer-subc/0.0.4b0-0.0.post1/diff.md --exclude *.pyd
+[2023-05-13 09:33:29] INFO root fetch - processPackages [nepattern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nepattern-0.5.6.tar.gz tmp/nepattern-0.5.7.tar.gz --markdown 20230513/n/nepattern/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-05-13 09:33:31] INFO root fetch - main [MainThread]: End processing [poetry-poet]: success
+[2023-05-13 09:33:31] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-barcodes]: success
+[2023-05-13 09:33:31] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-barcodes]: success
+[2023-05-13 09:33:31] INFO root fetch - main [MainThread]: End processing [nepattern]: success
+[2023-05-13 09:33:31] INFO root fetch - main [MainThread]: End processing [odoo14-addon-stock-barcodes]: success
+[2023-05-13 09:33:32] INFO root fetch - main [MainThread]: End processing [infer-subc]: success
+[2023-05-13 09:33:56] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
+[2023-05-13 09:33:56] INFO root fetch - main [MainThread]: Store serial: [18088670]
