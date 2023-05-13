@@ -3674,3 +3674,44 @@
 [2023-05-13 03:53:44] INFO root fetch - main [MainThread]: End processing [qecp]: success
 [2023-05-13 03:53:44] INFO root fetch - main [MainThread]: End processing [ti842py]: success
 [2023-05-13 03:53:44] INFO root fetch - main [MainThread]: Store serial: [18087043]
+[2023-05-13 03:58:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087043]
+[2023-05-13 03:58:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 03:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lifx-cli
+[2023-05-13 03:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-alconna
+[2023-05-13 03:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cocoder
+[2023-05-13 03:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pxgrid-api
+[2023-05-13 03:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: naturalspeech2-pytorch
+[2023-05-13 03:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mpcontribs-client
+[2023-05-13 03:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oakvar
+[2023-05-13 03:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyqtcolor
+[2023-05-13 03:58:53] INFO root fetch - processPackages [nonebot-plugin-alconna]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-13 03:58:53] INFO root fetch - processPackages [cocoder]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-13 03:58:53] WARNING root fetch - processPackages [lifx-cli]: Skipping, unable to determine old version
+[2023-05-13 03:58:53] INFO root fetch - main [MainThread]: End processing [lifx-cli] error
+[2023-05-13 03:58:53] WARNING root fetch - processPackages [pxgrid-api]: Skipping, unable to determine old version
+[2023-05-13 03:58:53] INFO root fetch - main [MainThread]: End processing [pxgrid-api] error
+[2023-05-13 03:58:53] WARNING root fetch - processPackages [pyqtcolor]: Skipping, unable to determine old version
+[2023-05-13 03:58:53] INFO root fetch - main [MainThread]: End processing [pyqtcolor] error
+[2023-05-13 03:58:53] INFO root fetch - processPackages [naturalspeech2-pytorch]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 03:58:53] INFO root fetch - processPackages [oakvar]: New version: [2.9.9] Old Version: [2.9.7]
+[2023-05-13 03:58:53] INFO root fetch - processPackages [mpcontribs-client]: New version: [5.3.3] Old Version: [5.3.2]
+[2023-05-13 03:58:53] INFO root fetch - processPackages [oakvar]: executing diffoscope
+[2023-05-13 03:58:53] INFO root fetch - processPackages [oakvar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oakvar-2.9.7.tar.gz tmp/oakvar-2.9.9.tar.gz --markdown 20230513/o/oakvar/2.9.7-2.9.9/diff.md --exclude *.pyd
+[2023-05-13 03:58:53] INFO root fetch - processPackages [naturalspeech2-pytorch]: executing diffoscope
+[2023-05-13 03:58:53] INFO root fetch - processPackages [naturalspeech2-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/naturalspeech2-pytorch-0.0.8.tar.gz tmp/naturalspeech2-pytorch-0.0.9.tar.gz --markdown 20230513/n/naturalspeech2-pytorch/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 03:58:53] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/0a/fa/6d4a99427d7a3e0775a6cc815b9550a9cbd1af0d0fb411c3ef0ed70ab5c1/nonebot-plugin-alconna-0.4.1.tar.gz
+[2023-05-13 03:58:53] INFO root fetch - processPackages [cocoder]: Downloading https://files.pythonhosted.org/packages/07/78/5653c027e73d7b38f56137d9f1d3a895051a4da6c0ec994cfb759d7a342a/cocoder-0.1.4.tar.gz
+[2023-05-13 03:58:53] INFO root fetch - processPackages [mpcontribs-client]: Downloading https://files.pythonhosted.org/packages/80/26/c64e9acb71b3b914cbdc0f91e95b5650c68dc7e10f62020090ce1e602776/mpcontribs-client-5.3.3.tar.gz
+[2023-05-13 03:58:54] INFO root fetch - processPackages [cocoder]: executing diffoscope
+[2023-05-13 03:58:54] INFO root fetch - processPackages [cocoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoder-0.1.3.tar.gz tmp/cocoder-0.1.4.tar.gz --markdown 20230513/c/cocoder/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-13 03:58:54] INFO root fetch - processPackages [mpcontribs-client]: executing diffoscope
+[2023-05-13 03:58:54] INFO root fetch - processPackages [mpcontribs-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpcontribs-client-5.3.2.tar.gz tmp/mpcontribs-client-5.3.3.tar.gz --markdown 20230513/m/mpcontribs-client/5.3.2-5.3.3/diff.md --exclude *.pyd
+[2023-05-13 03:58:54] INFO root fetch - processPackages [nonebot-plugin-alconna]: Downloading https://files.pythonhosted.org/packages/ec/8c/613a7321808dd81eeb4416beef90a12fb33ada89d8632646a85fdb3627a0/nonebot-plugin-alconna-0.4.2.tar.gz
+[2023-05-13 03:58:54] INFO root fetch - processPackages [nonebot-plugin-alconna]: executing diffoscope
+[2023-05-13 03:58:54] INFO root fetch - processPackages [nonebot-plugin-alconna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-alconna-0.4.1.tar.gz tmp/nonebot-plugin-alconna-0.4.2.tar.gz --markdown 20230513/n/nonebot-plugin-alconna/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-13 03:58:54] INFO root fetch - main [MainThread]: End processing [naturalspeech2-pytorch]: success
+[2023-05-13 03:58:55] INFO root fetch - main [MainThread]: End processing [cocoder]: success
+[2023-05-13 03:58:55] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-alconna]: success
+[2023-05-13 03:58:56] INFO root fetch - main [MainThread]: End processing [mpcontribs-client]: success
+[2023-05-13 03:58:58] INFO root fetch - main [MainThread]: End processing [oakvar]: success
+[2023-05-13 03:58:58] INFO root fetch - main [MainThread]: Store serial: [18087068]
