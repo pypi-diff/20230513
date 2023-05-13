@@ -13320,3 +13320,35 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:54:43] INFO root fetch - main [MainThread]: End processing [gyver]: success
 [2023-05-13 21:54:49] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-13 21:54:49] INFO root fetch - main [MainThread]: Store serial: [18092586]
+[2023-05-13 21:59:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092586]
+[2023-05-13 21:59:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 21:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ansible-playbook-grapher
+[2023-05-13 21:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyvantage
+[2023-05-13 21:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SummarizeGPT
+[2023-05-13 21:59:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: khash
+[2023-05-13 21:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bluesteam
+[2023-05-13 21:59:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: MyConnect-SQL
+[2023-05-13 21:59:58] WARNING root fetch - processPackages [SummarizeGPT]: Skipping, unable to determine old version
+[2023-05-13 21:59:58] WARNING root fetch - processPackages [khash]: Skipping, unable to determine old version
+[2023-05-13 21:59:58] INFO root fetch - main [MainThread]: End processing [SummarizeGPT] error
+[2023-05-13 21:59:58] INFO root fetch - main [MainThread]: End processing [khash] error
+[2023-05-13 21:59:58] INFO root fetch - processPackages [pyvantage]: New version: [0.0.44] Old Version: [0.0.43]
+[2023-05-13 21:59:58] INFO root fetch - processPackages [ansible-playbook-grapher]: New version: [2.0.0.dev0] Old Version: [1.2.0]
+[2023-05-13 21:59:58] INFO root fetch - processPackages [bluesteam]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 21:59:58] WARNING root fetch - processPackages [MyConnect-SQL]: Skipping, unable to determine old version
+[2023-05-13 21:59:58] INFO root fetch - main [MainThread]: End processing [MyConnect-SQL] error
+[2023-05-13 21:59:58] INFO root fetch - processPackages [bluesteam]: Downloading https://files.pythonhosted.org/packages/be/9e/b380eb951b1f03d289b4e921f77975230464cc10ff2f088e84b544e1a7dc/bluesteam-0.0.1.tar.gz
+[2023-05-13 21:59:58] INFO root fetch - processPackages [ansible-playbook-grapher]: Downloading https://files.pythonhosted.org/packages/4d/93/2d1d97299840fe73b8cf6672d96fc5149212a0f2099757edea974ab5cdff/ansible_playbook_grapher-1.2.0-py2.py3-none-any.whl
+[2023-05-13 21:59:58] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/25/c6/b734062d1cb605ff40a5b26d4a5b72ad95c73f77d6c54d04e3cc957fbc1d/pyvantage-0.0.44.tar.gz
+[2023-05-13 21:59:58] INFO root fetch - processPackages [pyvantage]: executing diffoscope
+[2023-05-13 21:59:58] INFO root fetch - processPackages [pyvantage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvantage-0.0.43.tar.gz tmp/pyvantage-0.0.44.tar.gz --markdown 20230513/p/pyvantage/0.0.43-0.0.44/diff.md --exclude *.pyd
+[2023-05-13 21:59:58] INFO root fetch - processPackages [ansible-playbook-grapher]: Downloading https://files.pythonhosted.org/packages/43/b4/fb5f44688cc791bd9abcec15aedb783875d0af5d53fdc51acaf0fc561462/ansible_playbook_grapher-2.0.0.dev0-py2.py3-none-any.whl
+[2023-05-13 21:59:58] INFO root fetch - processPackages [bluesteam]: Downloading https://files.pythonhosted.org/packages/88/7c/5ea500e84ec683aab34cef049f2886d655906288f52b703a46e4841eb933/bluesteam-0.0.2.tar.gz
+[2023-05-13 21:59:58] INFO root fetch - processPackages [ansible-playbook-grapher]: executing diffoscope
+[2023-05-13 21:59:58] INFO root fetch - processPackages [ansible-playbook-grapher]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ansible_playbook_grapher-1.2.0-py2.py3-none-any.whl.zip tmp/ansible_playbook_grapher-2.0.0.dev0-py2.py3-none-any.whl.zip --markdown 20230513/a/ansible-playbook-grapher/1.2.0-2.0.0.dev0/diff.md --exclude *.pyd
+[2023-05-13 21:59:58] INFO root fetch - processPackages [bluesteam]: executing diffoscope
+[2023-05-13 21:59:58] INFO root fetch - processPackages [bluesteam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluesteam-0.0.1.tar.gz tmp/bluesteam-0.0.2.tar.gz --markdown 20230513/b/bluesteam/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 21:59:59] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
+[2023-05-13 21:59:59] INFO root fetch - main [MainThread]: End processing [bluesteam]: success
+[2023-05-13 21:59:59] INFO root fetch - main [MainThread]: End processing [ansible-playbook-grapher]: success
+[2023-05-13 21:59:59] INFO root fetch - main [MainThread]: Store serial: [18092659]
