@@ -8544,3 +8544,55 @@
 [2023-05-13 12:57:57] INFO root fetch - main [MainThread]: End processing [pydantic-db-backend]: success
 [2023-05-13 12:59:55] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2023-05-13 12:59:55] INFO root fetch - main [MainThread]: Store serial: [18089566]
+[2023-05-13 13:04:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089566]
+[2023-05-13 13:05:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 13:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flapgui
+[2023-05-13 13:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: users-db
+[2023-05-13 13:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bdating-common
+[2023-05-13 13:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: krx-rigger
+[2023-05-13 13:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: backendpy
+[2023-05-13 13:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hapdoc
+[2023-05-13 13:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autosrt
+[2023-05-13 13:05:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: orjson-ddb
+[2023-05-13 13:05:04] INFO root fetch - processPackages [flapgui]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 13:05:04] INFO root fetch - processPackages [users-db]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 13:05:04] INFO root fetch - processPackages [bdating-common]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 13:05:04] INFO root fetch - processPackages [autosrt]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-13 13:05:04] INFO root fetch - processPackages [krx-rigger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 13:05:04] INFO root fetch - processPackages [backendpy]: New version: [0.2.5a2] Old Version: [0.2.5a1]
+[2023-05-13 13:05:04] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 13:05:04] INFO root fetch - processPackages [orjson-ddb]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-13 13:05:04] INFO root fetch - processPackages [flapgui]: Downloading https://files.pythonhosted.org/packages/f9/1d/8c93b1525b39b309d792ece44eae9b9bbd17052bad0374e3ebb3cfbaa25a/flapgui-0.0.2.tar.gz
+[2023-05-13 13:05:04] INFO root fetch - processPackages [users-db]: Downloading https://files.pythonhosted.org/packages/20/a0/7c50794c523cf5995c0497cedf6c1a442e4139aec70c8897ae2efa29e02a/users_db-0.0.8.tar.gz
+[2023-05-13 13:05:04] INFO root fetch - processPackages [hapdoc]: Downloading https://files.pythonhosted.org/packages/b9/3d/ca127220bba9074071ac40af288ed395a5efd9442929361221f1d131586d/hapdoc-1.9.6.tar.gz
+[2023-05-13 13:05:04] INFO root fetch - processPackages [krx-rigger]: executing diffoscope
+[2023-05-13 13:05:04] INFO root fetch - processPackages [orjson-ddb]: Downloading https://files.pythonhosted.org/packages/c3/4d/ae6b32c1fbef3c5615b3ba28c9d3233c281f6c118cc30403311aa8756efd/orjson_ddb-0.2.0-cp39-none-win_amd64.whl
+[2023-05-13 13:05:04] INFO root fetch - processPackages [krx-rigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krx_rigger-0.0.8.tar.gz tmp/krx_rigger-0.0.9.tar.gz --markdown 20230513/k/krx-rigger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 13:05:04] INFO root fetch - processPackages [backendpy]: Downloading https://files.pythonhosted.org/packages/1f/02/9e74dc2c2688d074d7c5456a0a137f57c9c74802c296da4604eff6ba5050/backendpy-0.2.5a2.tar.gz
+[2023-05-13 13:05:04] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-05-13 13:05:04] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.8.tar.gz tmp/autosrt-1.2.9.tar.gz --markdown 20230513/a/autosrt/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-13 13:05:04] INFO root fetch - processPackages [bdating-common]: executing diffoscope
+[2023-05-13 13:05:04] INFO root fetch - processPackages [bdating-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bdating-common-0.9.8.tar.gz tmp/bdating-common-0.9.9.tar.gz --markdown 20230513/b/bdating-common/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 13:05:04] INFO root fetch - processPackages [backendpy]: executing diffoscope
+[2023-05-13 13:05:04] INFO root fetch - processPackages [backendpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backendpy-0.2.5a1.tar.gz tmp/backendpy-0.2.5a2.tar.gz --markdown 20230513/b/backendpy/0.2.5a1-0.2.5a2/diff.md --exclude *.pyd
+[2023-05-13 13:05:04] INFO root fetch - processPackages [flapgui]: Downloading https://files.pythonhosted.org/packages/3b/ab/57db9b8da5c7721cf4f4301585c66e09007e774fc2c6414f6a9e187e6b9c/flapgui-0.0.3.tar.gz
+[2023-05-13 13:05:04] INFO root fetch - processPackages [hapdoc]: Downloading https://files.pythonhosted.org/packages/cd/81/7616d46cf39e4148ada4453485d31f68043e2b1dc21862ce31e2dcfc968d/hapdoc-1.9.9.tar.gz
+[2023-05-13 13:05:04] INFO root fetch - processPackages [flapgui]: executing diffoscope
+[2023-05-13 13:05:04] INFO root fetch - processPackages [flapgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flapgui-0.0.2.tar.gz tmp/flapgui-0.0.3.tar.gz --markdown 20230513/f/flapgui/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 13:05:04] INFO root fetch - processPackages [orjson-ddb]: Downloading https://files.pythonhosted.org/packages/f1/4a/080e1b4b0a8de463dfbd14d47c34d3eb18305a293a2e74a0e33e42a8f14c/orjson_ddb-0.2.1-cp39-cp39-manylinux_2_28_x86_64.whl
+[2023-05-13 13:05:04] INFO root fetch - processPackages [users-db]: Downloading https://files.pythonhosted.org/packages/80/93/56ac001365333d5ff149cdc653b8d529ba533732ab92425030a48788902a/users_db-0.0.9.tar.gz
+[2023-05-13 13:05:04] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 13:05:04] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 13:05:04] INFO root fetch - processPackages [orjson-ddb]: executing diffoscope
+[2023-05-13 13:05:04] INFO root fetch - processPackages [orjson-ddb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orjson_ddb-0.2.0-cp39-none-win_amd64.whl.zip tmp/orjson_ddb-0.2.1-cp39-cp39-manylinux_2_28_x86_64.whl.zip --markdown 20230513/o/orjson-ddb/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-13 13:05:04] INFO root fetch - processPackages [users-db]: executing diffoscope
+[2023-05-13 13:05:04] INFO root fetch - processPackages [users-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/users_db-0.0.8.tar.gz tmp/users_db-0.0.9.tar.gz --markdown 20230513/u/users-db/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 13:05:05] INFO root fetch - main [MainThread]: End processing [krx-rigger]: success
+[2023-05-13 13:05:05] INFO root fetch - main [MainThread]: End processing [bdating-common]: success
+[2023-05-13 13:05:06] INFO root fetch - main [MainThread]: End processing [backendpy]: success
+[2023-05-13 13:05:06] INFO root fetch - main [MainThread]: End processing [flapgui]: success
+[2023-05-13 13:05:06] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-05-13 13:05:06] INFO root fetch - main [MainThread]: End processing [users-db]: success
+[2023-05-13 13:05:06] INFO root fetch - main [MainThread]: End processing [orjson-ddb]: success
+[2023-05-13 13:05:06] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 13:05:06] INFO root fetch - main [MainThread]: Store serial: [18089596]
