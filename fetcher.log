@@ -11693,3 +11693,51 @@ EOFError: EOF read where object expected
 [2023-05-13 18:30:00] INFO root fetch - main [MainThread]: End processing [mainnet]: success
 [2023-05-13 18:30:02] INFO root fetch - main [MainThread]: End processing [biotite]: success
 [2023-05-13 18:30:02] INFO root fetch - main [MainThread]: Store serial: [18091604]
+[2023-05-13 18:35:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091604]
+[2023-05-13 18:35:12] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 18:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyportfolioanalytics
+[2023-05-13 18:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-spark-gpt
+[2023-05-13 18:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: affine-transform
+[2023-05-13 18:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tsnorm
+[2023-05-13 18:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zyncify
+[2023-05-13 18:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: chateval
+[2023-05-13 18:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: read-rapidpe
+[2023-05-13 18:35:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyportfolioanalytics
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-13 18:35:12] INFO root fetch - processPackages [chateval]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 18:35:12] WARNING root fetch - processPackages [zyncify]: Skipping, unable to determine old version
+[2023-05-13 18:35:12] INFO root fetch - main [MainThread]: End processing [zyncify] error
+[2023-05-13 18:35:12] INFO root fetch - processPackages [affine-transform]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-13 18:35:12] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-13 18:35:12] WARNING root fetch - processPackages [tsnorm]: Skipping, unable to determine old version
+[2023-05-13 18:35:12] INFO root fetch - processPackages [read-rapidpe]: New version: [0.4.0] Old Version: [0.3.4]
+[2023-05-13 18:35:12] INFO root fetch - main [MainThread]: End processing [tsnorm] error
+[2023-05-13 18:35:12] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Downloading https://files.pythonhosted.org/packages/9e/8b/4ea6651da6eace9d093a74dc36d1aaaa35292070ac59f653d8916061be32/nonebot_plugin_spark_gpt-0.1.7.tar.gz
+[2023-05-13 18:35:12] WARNING root fetch - processPackages [nonebot-plugin-spark-gpt]: Skipping package: exceeds size limit 13712296>=10485760
+[2023-05-13 18:35:12] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-spark-gpt] error
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: Downloading https://files.pythonhosted.org/packages/07/93/7fe95ae1fded6eb7a84538dc4dc370f4a4e53c8fd87a17418185b624b8f5/pyportfolioanalytics-0.1.4.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: Downloading https://files.pythonhosted.org/packages/07/93/7fe95ae1fded6eb7a84538dc4dc370f4a4e53c8fd87a17418185b624b8f5/pyportfolioanalytics-0.1.4.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [chateval]: Downloading https://files.pythonhosted.org/packages/02/09/1586eb1f36ac7c7d61ec3066cec3ddab7f07d632c57de155c58f0516271f/chateval-0.0.8.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [affine-transform]: Downloading https://files.pythonhosted.org/packages/4a/3d/673e8cc339d9214a906334a8cb18a4e554a3831afbf87a5efbf549eb437a/affine_transform-0.3.2.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/09/0e/c68fc5fa43967912aa4d871477fe89efa638a674649b07159f122ce3defc/read_rapidpe-0.3.4.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [chateval]: Downloading https://files.pythonhosted.org/packages/8f/37/7f5f814f24741b95622b23bb7f41a55d96984c546145370a27e192b6d70e/chateval-0.0.9.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: Downloading https://files.pythonhosted.org/packages/97/88/3dae6346a3140b836c14c45047d70f6da3fb9a9bd8c9d275c68428cd5d6d/pyportfolioanalytics-0.1.5.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: Downloading https://files.pythonhosted.org/packages/97/88/3dae6346a3140b836c14c45047d70f6da3fb9a9bd8c9d275c68428cd5d6d/pyportfolioanalytics-0.1.5.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [read-rapidpe]: Downloading https://files.pythonhosted.org/packages/80/d8/4d91f98ac2309e0436ff3ad2dab5cc53274a07be8644998d8bd0ba96da56/read_rapidpe-0.4.0.tar.gz
+[2023-05-13 18:35:12] INFO root fetch - processPackages [affine-transform]: executing diffoscope
+[2023-05-13 18:35:12] INFO root fetch - processPackages [affine-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affine_transform-0.3.1.tar.gz tmp/affine_transform-0.3.2.tar.gz --markdown 20230513/a/affine-transform/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-13 18:35:12] INFO root fetch - processPackages [chateval]: executing diffoscope
+[2023-05-13 18:35:12] INFO root fetch - processPackages [chateval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chateval-0.0.8.tar.gz tmp/chateval-0.0.9.tar.gz --markdown 20230513/c/chateval/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: executing diffoscope
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyportfolioanalytics-0.1.4.tar.gz tmp/pyportfolioanalytics-0.1.5.tar.gz --markdown 20230513/p/pyportfolioanalytics/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-13 18:35:12] INFO root fetch - processPackages [read-rapidpe]: executing diffoscope
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: executing diffoscope
+[2023-05-13 18:35:12] INFO root fetch - processPackages [read-rapidpe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/read_rapidpe-0.3.4.tar.gz tmp/read_rapidpe-0.4.0.tar.gz --markdown 20230513/r/read-rapidpe/0.3.4-0.4.0/diff.md --exclude *.pyd
+[2023-05-13 18:35:12] INFO root fetch - processPackages [pyportfolioanalytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyportfolioanalytics-0.1.4.tar.gz tmp/pyportfolioanalytics-0.1.5.tar.gz --markdown 20230513/p/pyportfolioanalytics/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-13 18:35:13] INFO root fetch - main [MainThread]: End processing [chateval]: success
+[2023-05-13 18:35:14] INFO root fetch - main [MainThread]: End processing [pyportfolioanalytics]: success
+[2023-05-13 18:35:14] INFO root fetch - main [MainThread]: End processing [pyportfolioanalytics]: success
+[2023-05-13 18:35:14] INFO root fetch - main [MainThread]: End processing [read-rapidpe]: success
+[2023-05-13 18:35:16] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
+[2023-05-13 18:35:16] INFO root fetch - main [MainThread]: Store serial: [18091635]
