@@ -5155,3 +5155,49 @@
 [2023-05-13 06:46:29] INFO root fetch - main [MainThread]: End processing [commandsgpt]: success
 [2023-05-13 06:46:29] INFO root fetch - main [MainThread]: End processing [odoo12-addon-iot-output]: success
 [2023-05-13 06:46:29] INFO root fetch - main [MainThread]: Store serial: [18087843]
+[2023-05-13 06:51:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087843]
+[2023-05-13 06:51:38] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 06:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: attune-project-api
+[2023-05-13 06:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-document-page-approval
+[2023-05-13 06:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-document-page
+[2023-05-13 06:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-document-page
+[2023-05-13 06:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: heaserver-files-aws-s3
+[2023-05-13 06:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: confik
+[2023-05-13 06:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: carefree-drawboard
+[2023-05-13 06:51:38] INFO root fetch - processPackages [attune-project-api]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 06:51:38] INFO root fetch - processPackages [odoo-addon-document-page-approval]: New version: [16.0.1.1.0.5] Old Version: [16.0.1.1.0.2]
+[2023-05-13 06:51:38] INFO root fetch - processPackages [odoo-addon-document-page]: New version: [16.0.1.1.0.8] Old Version: [16.0.1.1.0.7]
+[2023-05-13 06:51:38] INFO root fetch - processPackages [odoo-addon-document-page]: New version: [16.0.1.1.0.8] Old Version: [16.0.1.1.0.7]
+[2023-05-13 06:51:38] INFO root fetch - processPackages [confik]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-13 06:51:38] INFO root fetch - processPackages [heaserver-files-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-13 06:51:38] INFO root fetch - processPackages [carefree-drawboard]: New version: [0.0.1a1] Old Version: [0.0.1a0]
+[2023-05-13 06:51:38] INFO root fetch - processPackages [odoo-addon-document-page-approval]: Downloading https://files.pythonhosted.org/packages/61/c7/fff141d729ef747b20442c35fb411371e18f558f07985bb3de6ab770f57f/odoo_addon_document_page_approval-16.0.1.1.0.2-py3-none-any.whl
+[2023-05-13 06:51:38] INFO root fetch - processPackages [odoo-addon-document-page]: Downloading https://files.pythonhosted.org/packages/2f/d1/e563c7492448f0a0762a3df564cc76509b4d595e9b9ee0254d8c18f310d6/odoo_addon_document_page-16.0.1.1.0.7-py3-none-any.whl
+[2023-05-13 06:51:38] INFO root fetch - processPackages [odoo-addon-document-page]: Downloading https://files.pythonhosted.org/packages/2f/d1/e563c7492448f0a0762a3df564cc76509b4d595e9b9ee0254d8c18f310d6/odoo_addon_document_page-16.0.1.1.0.7-py3-none-any.whl
+[2023-05-13 06:51:38] INFO root fetch - processPackages [heaserver-files-aws-s3]: Downloading https://files.pythonhosted.org/packages/4b/9b/73f33a94f4aff25bff8a0100e7c9f7d239d27c6bb47e91c553f03fccfde2/heaserver-files-aws-s3-1.0.0a8.tar.gz
+[2023-05-13 06:51:38] INFO root fetch - processPackages [attune-project-api]: executing diffoscope
+[2023-05-13 06:51:38] INFO root fetch - processPackages [attune-project-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attune-project-api-0.9.8.tar.gz tmp/attune-project-api-0.9.9.tar.gz --markdown 20230513/a/attune-project-api/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 06:51:38] WARNING root fetch - processPackages [heaserver-files-aws-s3]: Skipping package: exceeds size limit 18398734>=10485760
+[2023-05-13 06:51:38] INFO root fetch - main [MainThread]: End processing [heaserver-files-aws-s3] error
+[2023-05-13 06:51:38] INFO root fetch - processPackages [confik]: Downloading https://files.pythonhosted.org/packages/07/9c/5fded9d3fbe9b2658b0984257138bbc84eaff353ab1bf58d18135ce6fd05/confik-1.0.4.tar.gz
+[2023-05-13 06:51:38] INFO root fetch - processPackages [odoo-addon-document-page-approval]: Downloading https://files.pythonhosted.org/packages/25/16/b331327ebd5c1ba310cda502fe2f909b8abc9425b859c296d11d1d29b425/odoo_addon_document_page_approval-16.0.1.1.0.5-py3-none-any.whl
+[2023-05-13 06:51:39] INFO root fetch - processPackages [confik]: executing diffoscope
+[2023-05-13 06:51:39] INFO root fetch - processPackages [confik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/confik-1.0.3.tar.gz tmp/confik-1.0.4.tar.gz --markdown 20230513/c/confik/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-13 06:51:39] INFO root fetch - processPackages [carefree-drawboard]: Downloading https://files.pythonhosted.org/packages/88/d1/ab36f144b786cd1bc893cc552c8c6582cc039878dc71d28948039a693952/carefree-drawboard-0.0.1a1.tar.gz
+[2023-05-13 06:51:39] INFO root fetch - processPackages [odoo-addon-document-page]: Downloading https://files.pythonhosted.org/packages/58/76/9fbca08728bd9c34da76e88a217087c03890c5a1a3b12381575c6ca5a725/odoo_addon_document_page-16.0.1.1.0.8-py3-none-any.whl
+[2023-05-13 06:51:39] INFO root fetch - processPackages [odoo-addon-document-page]: Downloading https://files.pythonhosted.org/packages/58/76/9fbca08728bd9c34da76e88a217087c03890c5a1a3b12381575c6ca5a725/odoo_addon_document_page-16.0.1.1.0.8-py3-none-any.whl
+[2023-05-13 06:51:39] INFO root fetch - processPackages [odoo-addon-document-page-approval]: executing diffoscope
+[2023-05-13 06:51:39] INFO root fetch - processPackages [odoo-addon-document-page-approval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page_approval-16.0.1.1.0.2-py3-none-any.whl.zip tmp/odoo_addon_document_page_approval-16.0.1.1.0.5-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-document-page-approval/16.0.1.1.0.2-16.0.1.1.0.5/diff.md --exclude *.pyd
+[2023-05-13 06:51:39] INFO root fetch - processPackages [odoo-addon-document-page]: executing diffoscope
+[2023-05-13 06:51:39] INFO root fetch - processPackages [odoo-addon-document-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page-16.0.1.1.0.7-py3-none-any.whl.zip tmp/odoo_addon_document_page-16.0.1.1.0.8-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-document-page/16.0.1.1.0.7-16.0.1.1.0.8/diff.md --exclude *.pyd
+[2023-05-13 06:51:39] INFO root fetch - processPackages [odoo-addon-document-page]: executing diffoscope
+[2023-05-13 06:51:39] INFO root fetch - processPackages [odoo-addon-document-page]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_document_page-16.0.1.1.0.7-py3-none-any.whl.zip tmp/odoo_addon_document_page-16.0.1.1.0.8-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-document-page/16.0.1.1.0.7-16.0.1.1.0.8/diff.md --exclude *.pyd
+[2023-05-13 06:51:39] INFO root fetch - processPackages [carefree-drawboard]: executing diffoscope
+[2023-05-13 06:51:39] INFO root fetch - processPackages [carefree-drawboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carefree-drawboard-0.0.1a0.tar.gz tmp/carefree-drawboard-0.0.1a1.tar.gz --markdown 20230513/c/carefree-drawboard/0.0.1a0-0.0.1a1/diff.md --exclude *.pyd
+[2023-05-13 06:51:40] INFO root fetch - main [MainThread]: End processing [attune-project-api]: success
+[2023-05-13 06:51:40] INFO root fetch - main [MainThread]: End processing [confik]: success
+[2023-05-13 06:51:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-document-page]: success
+[2023-05-13 06:51:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-document-page]: success
+[2023-05-13 06:51:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-document-page-approval]: success
+[2023-05-13 06:51:41] INFO root fetch - main [MainThread]: End processing [carefree-drawboard]: success
+[2023-05-13 06:51:41] INFO root fetch - main [MainThread]: Store serial: [18087860]
