@@ -10080,3 +10080,32 @@ EOFError: EOF read where object expected
 [2023-05-13 15:29:25] INFO root fetch - main [MainThread]: End processing [pyTrendyol]: success
 [2023-05-13 15:29:26] INFO root fetch - main [MainThread]: End processing [vxquant]: success
 [2023-05-13 15:29:26] INFO root fetch - main [MainThread]: Store serial: [18090476]
+[2023-05-13 15:34:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090476]
+[2023-05-13 15:34:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 15:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-fragments
+[2023-05-13 15:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: es7s
+[2023-05-13 15:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NEMO-billing
+[2023-05-13 15:34:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: plone.app.standardtiles
+[2023-05-13 15:34:35] INFO root fetch - processPackages [django-fragments]: New version: [0.1.8] Old Version: [0.1.7]
+[2023-05-13 15:34:35] INFO root fetch - processPackages [NEMO-billing]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-13 15:34:35] INFO root fetch - processPackages [es7s]: New version: [3.6.0.dev0] Old Version: [3.5.0.dev0]
+[2023-05-13 15:34:35] INFO root fetch - processPackages [plone.app.standardtiles]: New version: [3.1.1] Old Version: [3.1.0]
+[2023-05-13 15:34:35] INFO root fetch - processPackages [es7s]: executing diffoscope
+[2023-05-13 15:34:35] INFO root fetch - processPackages [es7s]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/es7s-3.5.0.dev0.tar.gz tmp/es7s-3.6.0.dev0.tar.gz --markdown 20230513/e/es7s/3.5.0.dev0-3.6.0.dev0/diff.md --exclude *.pyd
+[2023-05-13 15:34:35] INFO root fetch - processPackages [django-fragments]: Downloading https://files.pythonhosted.org/packages/fb/89/8ba512a33448c50efd73137bef314c4d911226086ec8346e57faed4ee5ce/django_fragments-0.1.7.tar.gz
+[2023-05-13 15:34:35] INFO root fetch - processPackages [NEMO-billing]: Downloading https://files.pythonhosted.org/packages/e6/5a/d70f9b25c702d6c5f766e0816f47aa78d568a455ac7cd50125f6209c90d0/NEMO_billing-2.2.0-py3-none-any.whl
+[2023-05-13 15:34:35] INFO root fetch - processPackages [plone.app.standardtiles]: Downloading https://files.pythonhosted.org/packages/1f/e9/a28e8e50ea5ca63ec3a08e98b39a39079cb992fc5a11c79cdea5c73bdb74/plone.app.standardtiles-3.1.0.tar.gz
+[2023-05-13 15:34:35] INFO root fetch - processPackages [django-fragments]: Downloading https://files.pythonhosted.org/packages/e5/02/c93802d5f5927f81493e2af669d2c2ff45efc01650c3cd51369ae7ddeab3/django_fragments-0.1.8.tar.gz
+[2023-05-13 15:34:35] INFO root fetch - processPackages [plone.app.standardtiles]: Downloading https://files.pythonhosted.org/packages/44/2d/a843bb50158e414c277988cbb61f648d8e527085a1d203450401510ca7f5/plone.app.standardtiles-3.1.1.tar.gz
+[2023-05-13 15:34:35] INFO root fetch - processPackages [plone.app.standardtiles]: executing diffoscope
+[2023-05-13 15:34:35] INFO root fetch - processPackages [plone.app.standardtiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plone.app.standardtiles-3.1.0.tar.gz tmp/plone.app.standardtiles-3.1.1.tar.gz --markdown 20230513/p/plone.app.standardtiles/3.1.0-3.1.1/diff.md --exclude *.pyd
+[2023-05-13 15:34:35] INFO root fetch - processPackages [NEMO-billing]: Downloading https://files.pythonhosted.org/packages/ec/39/7913e3d4692b65f3e46b38b748e568254b534a9c6ae71e3a4859619cf065/NEMO_billing-2.2.1-py3-none-any.whl
+[2023-05-13 15:34:36] INFO root fetch - processPackages [django-fragments]: executing diffoscope
+[2023-05-13 15:34:36] INFO root fetch - processPackages [django-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_fragments-0.1.7.tar.gz tmp/django_fragments-0.1.8.tar.gz --markdown 20230513/d/django-fragments/0.1.7-0.1.8/diff.md --exclude *.pyd
+[2023-05-13 15:34:36] INFO root fetch - processPackages [NEMO-billing]: executing diffoscope
+[2023-05-13 15:34:36] INFO root fetch - processPackages [NEMO-billing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NEMO_billing-2.2.0-py3-none-any.whl.zip tmp/NEMO_billing-2.2.1-py3-none-any.whl.zip --markdown 20230513/N/NEMO-billing/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-13 15:34:37] INFO root fetch - main [MainThread]: End processing [es7s]: success
+[2023-05-13 15:34:37] INFO root fetch - main [MainThread]: End processing [NEMO-billing]: success
+[2023-05-13 15:34:39] INFO root fetch - main [MainThread]: End processing [django-fragments]: success
+[2023-05-13 15:34:39] INFO root fetch - main [MainThread]: End processing [plone.app.standardtiles]: success
+[2023-05-13 15:34:39] INFO root fetch - main [MainThread]: Store serial: [18090487]
