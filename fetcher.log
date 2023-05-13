@@ -12168,3 +12168,73 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 19:22:23] INFO root fetch - main [MainThread]: End processing [sampleproject-dhchenx]: success
 [2023-05-13 19:22:24] INFO root fetch - main [MainThread]: End processing [import-linter]: success
 [2023-05-13 19:22:24] INFO root fetch - main [MainThread]: Store serial: [18091877]
+[2023-05-13 19:27:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091877]
+[2023-05-13 19:27:32] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metpx-sr3
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alacorder
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: baserow-client
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spanishconjugator
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aicli
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: alacorder
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: alacorder
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ciscoconfparse
+[2023-05-13 19:27:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: py-Ayra
+[2023-05-13 19:27:33] INFO root fetch - processPackages [metpx-sr3]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [baserow-client]: New version: [0.6.0] Old Version: [0.5.1]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [aicli]: New version: [99.0.202305131723] Old Version: [99.0.202305041148]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [ciscoconfparse]: New version: [1.7.9] Old Version: [1.7.8]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: New version: [80.5.0] Old Version: [80.4.91]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: New version: [80.5.0] Old Version: [80.4.91]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: New version: [80.5.0] Old Version: [80.4.91]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [py-Ayra]: New version: [8.7.5] Old Version: [8.7.4]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [baserow-client]: Downloading https://files.pythonhosted.org/packages/f7/b4/520feb9d900d9b4da22efb9711f9736140242a268b9cdf84be6f2065c11f/baserow-client-0.5.1.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/f3/f1/f6ac19b472fb9e9a6e1400e4c816ddbd57e33b0597f9cf8258726bcd93a6/alacorder-80.4.91.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/f3/f1/f6ac19b472fb9e9a6e1400e4c816ddbd57e33b0597f9cf8258726bcd93a6/alacorder-80.4.91.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/f3/f1/f6ac19b472fb9e9a6e1400e4c816ddbd57e33b0597f9cf8258726bcd93a6/alacorder-80.4.91.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/12/4e/e3cbe19f8adaf34aa97fb14ef1e1cce37f9227fc0dc781c17c3911b607ae/aicli-99.0.202305041148-py3-none-any.whl
+[2023-05-13 19:27:33] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-13 19:27:33] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230513/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [metpx-sr3]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [metpx-sr3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metpx_sr3-3.0.8-py3-none-any.whl.zip tmp/metpx_sr3-3.0.9-py3-none-any.whl.zip --markdown 20230513/m/metpx-sr3/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [ciscoconfparse]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [ciscoconfparse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ciscoconfparse-1.7.8.tar.gz tmp/ciscoconfparse-1.7.9.tar.gz --markdown 20230513/c/ciscoconfparse/1.7.8-1.7.9/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230513/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [baserow-client]: Downloading https://files.pythonhosted.org/packages/8c/8c/0ac701b0c8565ab2eebd1f93df4c8783563bcc21ec0c5ea278a1be909f4c/baserow_client-0.6.0.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/67/6a/08721bdccd56b583fa8eaa01b8e52f1b77c49f644366c9ff0e89a8af172a/alacorder-80.5.0.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [py-Ayra]: Downloading https://files.pythonhosted.org/packages/b7/51/d8e26775814e0055f5108e6f9de6719142b9ab38a53b059c9ca3eb616e85/py-Ayra-8.7.5.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/67/6a/08721bdccd56b583fa8eaa01b8e52f1b77c49f644366c9ff0e89a8af172a/alacorder-80.5.0.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/6f/af/f848041f0ea0564fb1c1ec60668845df8a599927d7596c332d0b7d5446b1/aicli-99.0.202305131723-py3-none-any.whl
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/67/6a/08721bdccd56b583fa8eaa01b8e52f1b77c49f644366c9ff0e89a8af172a/alacorder-80.5.0.tar.gz
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.4.91.tar.gz tmp/alacorder-80.5.0.tar.gz --markdown 20230513/a/alacorder/80.4.91-80.5.0/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.4.91.tar.gz tmp/alacorder-80.5.0.tar.gz --markdown 20230513/a/alacorder/80.4.91-80.5.0/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.4.91.tar.gz tmp/alacorder-80.5.0.tar.gz --markdown 20230513/a/alacorder/80.4.91-80.5.0/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [py-Ayra]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [baserow-client]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [py-Ayra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-Ayra-8.7.4.tar.gz tmp/py-Ayra-8.7.5.tar.gz --markdown 20230513/p/py-Ayra/8.7.4-8.7.5/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [baserow-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/baserow-client-0.5.1.tar.gz tmp/baserow_client-0.6.0.tar.gz --markdown 20230513/b/baserow-client/0.5.1-0.6.0/diff.md --exclude *.pyd
+[2023-05-13 19:27:33] INFO root fetch - processPackages [aicli]: executing diffoscope
+[2023-05-13 19:27:33] INFO root fetch - processPackages [aicli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aicli-99.0.202305041148-py3-none-any.whl.zip tmp/aicli-99.0.202305131723-py3-none-any.whl.zip --markdown 20230513/a/aicli/99.0.202305041148-99.0.202305131723/diff.md --exclude *.pyd
+[2023-05-13 19:27:34] INFO root fetch - processPackages [spanishconjugator]: Start processing: kcli
+[2023-05-13 19:27:34] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-13 19:27:35] INFO root fetch - processPackages [kcli]: New version: [99.0.202305122140] Old Version: [99.0.202305122114]
+[2023-05-13 19:27:35] INFO root fetch - main [MainThread]: End processing [ciscoconfparse]: success
+[2023-05-13 19:27:35] INFO root fetch - processPackages [kcli]: Downloading https://files.pythonhosted.org/packages/76/00/45cd7f86f763ed0e2e52f66cba5bbe214dbbb3a5a15873c38f61a010372b/kcli-99.0.202305122140-py3-none-any.whl
+[2023-05-13 19:27:35] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-13 19:27:35] INFO root fetch - processPackages [kcli]: executing diffoscope
+[2023-05-13 19:27:35] INFO root fetch - processPackages [kcli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kcli-99.0.202305122114-py3-none-any.whl.zip tmp/kcli-99.0.202305122140-py3-none-any.whl.zip --markdown 20230513/k/kcli/99.0.202305122114-99.0.202305122140/diff.md --exclude *.pyd
+[2023-05-13 19:27:35] INFO root fetch - main [MainThread]: End processing [baserow-client]: success
+[2023-05-13 19:27:35] INFO root fetch - main [MainThread]: End processing [aicli]: success
+[2023-05-13 19:27:36] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-13 19:27:36] INFO root fetch - main [MainThread]: End processing [metpx-sr3]: success
+[2023-05-13 19:27:37] INFO root fetch - main [MainThread]: End processing [py-Ayra]: success
+[2023-05-13 19:27:37] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-13 19:27:37] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-13 19:27:45] INFO root fetch - main [MainThread]: End processing [kcli]: success
+[2023-05-13 19:27:45] INFO root fetch - main [MainThread]: Store serial: [18091907]
