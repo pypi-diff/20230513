@@ -13197,3 +13197,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:39:07] INFO root fetch - main [MainThread]: End processing [opsvis]: success
 [2023-05-13 21:39:07] INFO root fetch - main [MainThread]: End processing [cracker]: success
 [2023-05-13 21:39:07] INFO root fetch - main [MainThread]: Store serial: [18092514]
+[2023-05-13 21:44:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092514]
+[2023-05-13 21:44:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logmaster
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ypywidgets-textual
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-webapp-skeleton
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qcontext
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyvrp
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flaretool
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bluesteam
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ypywidgets-textual]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 21:44:16] WARNING root fetch - processPackages [bluesteam]: Skipping, unable to determine old version
+[2023-05-13 21:44:16] INFO root fetch - main [MainThread]: End processing [bluesteam] error
+[2023-05-13 21:44:16] INFO root fetch - processPackages [qcontext]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-13 21:44:16] INFO root fetch - processPackages [logmaster]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-13 21:44:16] INFO root fetch - processPackages [cdk-webapp-skeleton]: New version: [0.4.1.dev4] Old Version: [0.4.1.dev3]
+[2023-05-13 21:44:16] INFO root fetch - processPackages [pyvrp]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-05-13 21:44:16] INFO root fetch - processPackages [flaretool]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 21:44:16] INFO root fetch - processPackages [logmaster]: Downloading https://files.pythonhosted.org/packages/d5/f8/25c24d6d5a5496251515e826380970523526ff00d382546a763d4b63a6aa/logmaster-1.0.3.tar.gz
+[2023-05-13 21:44:16] INFO root fetch - processPackages [ypywidgets-textual]: Downloading https://files.pythonhosted.org/packages/a8/7f/0233f18f7fbaa8c5477ce26a4941f7cdb424ba094018f89d0e9f4ca9c593/ypywidgets_textual-0.1.1.tar.gz
+[2023-05-13 21:44:16] INFO root fetch - processPackages [pyvrp]: Downloading https://files.pythonhosted.org/packages/ac/e1/1bf1d73ad7b5927af90e289d4c8553acecfffe1ace2a61a19b766cc8f1e6/pyvrp-0.1.0.tar.gz
+[2023-05-13 21:44:16] INFO root fetch - processPackages [cdk-webapp-skeleton]: Downloading https://files.pythonhosted.org/packages/14/63/e94faaaa045331ec1e0f6ee50f6b0a2dea0d1f2a1dda87a6984197d06bba/cdk_webapp_skeleton-0.4.1.dev4.tar.gz
+[2023-05-13 21:44:17] INFO root fetch - processPackages [qcontext]: Downloading https://files.pythonhosted.org/packages/ba/a3/c64da71bd7354c8500e1f97748aced8b246b131853aeed8156b558bd1a21/qcontext-1.0.8.tar.gz
+[2023-05-13 21:44:17] INFO root fetch - processPackages [cdk-webapp-skeleton]: executing diffoscope
+[2023-05-13 21:44:17] INFO root fetch - processPackages [cdk-webapp-skeleton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_webapp_skeleton-0.4.1.dev3.tar.gz tmp/cdk_webapp_skeleton-0.4.1.dev4.tar.gz --markdown 20230513/c/cdk-webapp-skeleton/0.4.1.dev3-0.4.1.dev4/diff.md --exclude *.pyd
+[2023-05-13 21:44:17] INFO root fetch - processPackages [qcontext]: executing diffoscope
+[2023-05-13 21:44:17] INFO root fetch - processPackages [qcontext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcontext-1.0.7.tar.gz tmp/qcontext-1.0.8.tar.gz --markdown 20230513/q/qcontext/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-13 21:44:17] INFO root fetch - processPackages [logmaster]: Downloading https://files.pythonhosted.org/packages/ca/50/f8af5961a1190d0fb78987802fe154fddc6fa48d02d72dceddf7c0bf46f8/logmaster-1.0.4.tar.gz
+[2023-05-13 21:44:17] INFO root fetch - processPackages [ypywidgets-textual]: Downloading https://files.pythonhosted.org/packages/89/c3/cd45e9182a6cd1ef3b61985c3cae427ada770b45c334a4c7e78221943877/ypywidgets_textual-0.1.2.tar.gz
+[2023-05-13 21:44:17] INFO root fetch - processPackages [logmaster]: executing diffoscope
+[2023-05-13 21:44:17] INFO root fetch - processPackages [logmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logmaster-1.0.3.tar.gz tmp/logmaster-1.0.4.tar.gz --markdown 20230513/l/logmaster/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-13 21:44:17] INFO root fetch - processPackages [flaretool]: Downloading https://files.pythonhosted.org/packages/86/77/89f9cec7e675d626fb627d23843af83d4be8e5f47b557848033f0beb5efe/flaretool-0.1.9-py3-none-any.whl
+[2023-05-13 21:44:17] INFO root fetch - processPackages [ypywidgets-textual]: executing diffoscope
+[2023-05-13 21:44:17] INFO root fetch - processPackages [ypywidgets-textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ypywidgets_textual-0.1.1.tar.gz tmp/ypywidgets_textual-0.1.2.tar.gz --markdown 20230513/y/ypywidgets-textual/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 21:44:17] INFO root fetch - processPackages [pyvrp]: Downloading https://files.pythonhosted.org/packages/a9/79/72e3e3e80db0b3388ef29ec6c591c0fafe59fcc32a4949f4050bc5686b0f/pyvrp-0.2.1.tar.gz
+[2023-05-13 21:44:17] INFO root fetch - processPackages [flaretool]: executing diffoscope
+[2023-05-13 21:44:17] INFO root fetch - processPackages [flaretool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaretool-0.1.8.tar.gz tmp/flaretool-0.1.9-py3-none-any.whl.zip --markdown 20230513/f/flaretool/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 21:44:17] INFO root fetch - processPackages [pyvrp]: executing diffoscope
+[2023-05-13 21:44:17] INFO root fetch - processPackages [pyvrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvrp-0.1.0.tar.gz tmp/pyvrp-0.2.1.tar.gz --markdown 20230513/p/pyvrp/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-13 21:44:18] INFO root fetch - main [MainThread]: End processing [cdk-webapp-skeleton]: success
+[2023-05-13 21:44:18] INFO root fetch - main [MainThread]: End processing [flaretool]: success
+[2023-05-13 21:44:18] INFO root fetch - main [MainThread]: End processing [logmaster]: success
+[2023-05-13 21:44:18] INFO root fetch - main [MainThread]: End processing [ypywidgets-textual]: success
+[2023-05-13 21:44:19] INFO root fetch - main [MainThread]: End processing [qcontext]: success
+[2023-05-13 21:44:19] INFO root fetch - main [MainThread]: End processing [pyvrp]: success
+[2023-05-13 21:44:19] INFO root fetch - main [MainThread]: Store serial: [18092550]
