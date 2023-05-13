@@ -5496,3 +5496,19 @@
 [2023-05-13 07:23:38] INFO root fetch - main [MainThread]: End processing [neuko-device-sdk]: success
 [2023-05-13 07:23:39] INFO root fetch - main [MainThread]: End processing [houdini-package-manager]: success
 [2023-05-13 07:23:39] INFO root fetch - main [MainThread]: Store serial: [18088003]
+[2023-05-13 07:28:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088003]
+[2023-05-13 07:28:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-13 07:28:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netron
+[2023-05-13 07:28:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-05-13 07:28:48] INFO root fetch - processPackages [netron]: New version: [6.8.9] Old Version: [6.8.8]
+[2023-05-13 07:28:48] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-13 07:28:48] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-13 07:28:48] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230513/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-13 07:28:48] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/9c/47/4b3ac1cfb8b441ea5f046128d5d3f23403128bd0fda895e648d225a5ec4e/netron-6.8.8-py3-none-any.whl
+[2023-05-13 07:28:49] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/9f/1b/6df5b8e281392efd2443deed8c9f40a0a447a16a1444946ceb31e03bda7c/netron-6.8.9-py3-none-any.whl
+[2023-05-13 07:28:49] INFO root fetch - processPackages [netron]: executing diffoscope
+[2023-05-13 07:28:49] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-6.8.8-py3-none-any.whl.zip tmp/netron-6.8.9-py3-none-any.whl.zip --markdown 20230513/n/netron/6.8.8-6.8.9/diff.md --exclude *.pyd
+[2023-05-13 07:28:49] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-13 07:31:49] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2023-05-13 07:31:49] INFO root fetch - main [MainThread]: End processing [netron] error
+[2023-05-13 07:31:49] INFO root fetch - main [MainThread]: Store serial: [18088008]
