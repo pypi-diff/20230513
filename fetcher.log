@@ -4692,3 +4692,28 @@
 [2023-05-13 05:59:34] INFO root fetch - main [MainThread]: End processing [odoo12-addon-sale-financial-risk]: success
 [2023-05-13 05:59:34] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-financial-risk]: success
 [2023-05-13 05:59:34] INFO root fetch - main [MainThread]: Store serial: [18087572]
+[2023-05-13 06:04:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087572]
+[2023-05-13 06:04:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 06:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyportfolioanalytics
+[2023-05-13 06:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: garatool
+[2023-05-13 06:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fyers-token-manager-v2
+[2023-05-13 06:04:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: worktoy
+[2023-05-13 06:04:43] INFO root fetch - processPackages [garatool]: New version: [0.1683950588.0] Old Version: [0.1683684558.0]
+[2023-05-13 06:04:43] INFO root fetch - processPackages [worktoy]: New version: [0.25] Old Version: [0.0.0]
+[2023-05-13 06:04:43] WARNING root fetch - processPackages [pyportfolioanalytics]: Skipping, unable to determine old version
+[2023-05-13 06:04:43] INFO root fetch - processPackages [fyers-token-manager-v2]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-13 06:04:43] INFO root fetch - main [MainThread]: End processing [pyportfolioanalytics] error
+[2023-05-13 06:04:43] INFO root fetch - processPackages [worktoy]: Downloading https://files.pythonhosted.org/packages/08/05/2986a8051e70f0bf218353b4cf9b22c5cd7f0995603ad9530e394b245abf/worktoy-0.0.0.tar.gz
+[2023-05-13 06:04:43] INFO root fetch - processPackages [garatool]: Downloading https://files.pythonhosted.org/packages/49/7f/c28fe0852d079c0c9ac162cf887ef5db9d4b3a73f3cc78e15063f39be1f3/garatool-0.1683950588.0.tar.gz
+[2023-05-13 06:04:43] INFO root fetch - processPackages [fyers-token-manager-v2]: Downloading https://files.pythonhosted.org/packages/d9/30/81e7b2995fe64b06403fb668637745f643b23fcd8e6618102a582ec1b386/fyers_token_manager_v2-0.0.8.tar.gz
+[2023-05-13 06:04:43] INFO root fetch - processPackages [garatool]: executing diffoscope
+[2023-05-13 06:04:43] INFO root fetch - processPackages [garatool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garatool-0.1683684558.0.tar.gz tmp/garatool-0.1683950588.0.tar.gz --markdown 20230513/g/garatool/0.1683684558.0-0.1683950588.0/diff.md --exclude *.pyd
+[2023-05-13 06:04:44] INFO root fetch - processPackages [worktoy]: Downloading https://files.pythonhosted.org/packages/f7/7b/c20f4a6b80043d965af74fb7c2b178f13c9c21509aff1cfb8657a4dd6119/worktoy-0.25.tar.gz
+[2023-05-13 06:04:44] INFO root fetch - processPackages [fyers-token-manager-v2]: executing diffoscope
+[2023-05-13 06:04:44] INFO root fetch - processPackages [fyers-token-manager-v2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fyers_token_manager_v2-0.0.7.tar.gz tmp/fyers_token_manager_v2-0.0.8.tar.gz --markdown 20230513/f/fyers-token-manager-v2/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-13 06:04:44] INFO root fetch - processPackages [worktoy]: executing diffoscope
+[2023-05-13 06:04:44] INFO root fetch - processPackages [worktoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/worktoy-0.0.0.tar.gz tmp/worktoy-0.25.tar.gz --markdown 20230513/w/worktoy/0.0.0-0.25/diff.md --exclude *.pyd
+[2023-05-13 06:04:44] INFO root fetch - main [MainThread]: End processing [garatool]: success
+[2023-05-13 06:04:45] INFO root fetch - main [MainThread]: End processing [fyers-token-manager-v2]: success
+[2023-05-13 06:04:45] INFO root fetch - main [MainThread]: End processing [worktoy]: success
+[2023-05-13 06:04:45] INFO root fetch - main [MainThread]: Store serial: [18087585]
