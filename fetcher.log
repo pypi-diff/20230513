@@ -9392,3 +9392,50 @@
 [2023-05-13 14:29:06] INFO root fetch - main [MainThread]: End processing [noise2read]: success
 [2023-05-13 14:30:04] INFO root fetch - main [MainThread]: End processing [pylyzer]: success
 [2023-05-13 14:30:04] INFO root fetch - main [MainThread]: Store serial: [18090082]
+[2023-05-13 14:35:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090082]
+[2023-05-13 14:35:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 14:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chyp
+[2023-05-13 14:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: saic-ismart-client
+[2023-05-13 14:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cat-win
+[2023-05-13 14:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nonebot-plugin-group-link-guild
+[2023-05-13 14:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: BlueBrain
+[2023-05-13 14:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hiyobot
+[2023-05-13 14:35:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-arkgacha
+[2023-05-13 14:35:27] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-13 14:35:27] INFO root fetch - processPackages [chyp]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-13 14:35:27] INFO root fetch - processPackages [hiyobot]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-13 14:35:27] INFO root fetch - processPackages [saic-ismart-client]: New version: [1.2.0] Old Version: [1.1.7]
+[2023-05-13 14:35:27] INFO root fetch - processPackages [cat-win]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-13 14:35:27] INFO root fetch - processPackages [BlueBrain]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 14:35:27] INFO root fetch - processPackages [nonebot-plugin-group-link-guild]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 14:35:27] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: executing diffoscope
+[2023-05-13 14:35:27] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_arkgacha-0.1.5.tar.gz tmp/nonebot_plugin_arkgacha-0.2.0.tar.gz --markdown 20230513/n/nonebot-plugin-arkgacha/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 14:35:27] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-13 14:35:27] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.1.6.tar.gz tmp/hiyobot-0.1.7.tar.gz --markdown 20230513/h/hiyobot/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-13 14:35:28] INFO root fetch - processPackages [saic-ismart-client]: Downloading https://files.pythonhosted.org/packages/2f/ef/66589df49ea420688b22dfd8f2c1d8eff586b93b649bfa3db84930e735eb/saic_ismart_client-1.1.7.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [cat-win]: Downloading https://files.pythonhosted.org/packages/b9/d5/883475498237d3c76090c036313cbe681919ad26b9194668edc28d983e18/cat_win-1.4.1.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [chyp]: Downloading https://files.pythonhosted.org/packages/f4/63/cf0022472691f6c3724813d953820f94515078a348b31440a3e37debaa95/chyp-0.3.2.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [nonebot-plugin-group-link-guild]: Downloading https://files.pythonhosted.org/packages/55/58/7f135d2066b04dca4dd5fdbe8213b9567d3c4eed1ad5651ad1c5b757a1fe/nonebot-plugin-group-link-guild-0.0.3.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [BlueBrain]: Downloading https://files.pythonhosted.org/packages/8e/eb/538989082a778d1af84166f34d88aa457410b5bfcacdff2d5b35fe728e5c/BlueBrain-0.1.1.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [chyp]: executing diffoscope
+[2023-05-13 14:35:28] INFO root fetch - processPackages [chyp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chyp-0.3.1.tar.gz tmp/chyp-0.3.2.tar.gz --markdown 20230513/c/chyp/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-13 14:35:28] INFO root fetch - processPackages [saic-ismart-client]: Downloading https://files.pythonhosted.org/packages/ea/c8/0657a0ded8924e100f6d515b6739fd85bafec5610c1a79208c8a1095ade4/saic_ismart_client-1.2.0.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [cat-win]: Downloading https://files.pythonhosted.org/packages/2d/d1/c82364347004305c3ac0f137c6992789065468d24c9ab8dc7152a86256b6/cat_win-1.4.2.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [BlueBrain]: Downloading https://files.pythonhosted.org/packages/fe/98/f5a264b8d3996f7f770adc2520ebdadd2f1dc2bdb8832f0d69333088d21e/BlueBrain-0.1.2.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [nonebot-plugin-group-link-guild]: Downloading https://files.pythonhosted.org/packages/29/71/a1f143578eede8b234f22bd99e15c82560e1f2eb40ca9448fb263b51f1c6/nonebot-plugin-group-link-guild-0.0.4.tar.gz
+[2023-05-13 14:35:28] INFO root fetch - processPackages [cat-win]: executing diffoscope
+[2023-05-13 14:35:28] INFO root fetch - processPackages [cat-win]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cat_win-1.4.1.tar.gz tmp/cat_win-1.4.2.tar.gz --markdown 20230513/c/cat-win/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-13 14:35:28] INFO root fetch - processPackages [saic-ismart-client]: executing diffoscope
+[2023-05-13 14:35:28] INFO root fetch - processPackages [saic-ismart-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saic_ismart_client-1.1.7.tar.gz tmp/saic_ismart_client-1.2.0.tar.gz --markdown 20230513/s/saic-ismart-client/1.1.7-1.2.0/diff.md --exclude *.pyd
+[2023-05-13 14:35:28] INFO root fetch - processPackages [nonebot-plugin-group-link-guild]: executing diffoscope
+[2023-05-13 14:35:28] INFO root fetch - processPackages [nonebot-plugin-group-link-guild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-group-link-guild-0.0.3.tar.gz tmp/nonebot-plugin-group-link-guild-0.0.4.tar.gz --markdown 20230513/n/nonebot-plugin-group-link-guild/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 14:35:28] INFO root fetch - processPackages [BlueBrain]: executing diffoscope
+[2023-05-13 14:35:28] INFO root fetch - processPackages [BlueBrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BlueBrain-0.1.1.tar.gz tmp/BlueBrain-0.1.2.tar.gz --markdown 20230513/B/BlueBrain/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 14:35:29] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-13 14:35:29] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-arkgacha]: success
+[2023-05-13 14:35:29] INFO root fetch - main [MainThread]: End processing [saic-ismart-client]: success
+[2023-05-13 14:35:29] INFO root fetch - main [MainThread]: End processing [BlueBrain]: success
+[2023-05-13 14:35:30] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-group-link-guild]: success
+[2023-05-13 14:35:31] INFO root fetch - main [MainThread]: End processing [cat-win]: success
+[2023-05-13 14:36:05] INFO root fetch - main [MainThread]: End processing [chyp]: success
+[2023-05-13 14:36:05] INFO root fetch - main [MainThread]: Store serial: [18090112]
