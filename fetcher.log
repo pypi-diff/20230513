@@ -3595,3 +3595,42 @@
 [2023-05-13 03:43:22] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
 [2023-05-13 03:43:22] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
 [2023-05-13 03:43:22] INFO root fetch - main [MainThread]: Store serial: [18086989]
+[2023-05-13 03:48:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18086989]
+[2023-05-13 03:48:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 03:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-apl
+[2023-05-13 03:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: math0
+[2023-05-13 03:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zensvi
+[2023-05-13 03:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thelemic-date
+[2023-05-13 03:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stronglytypedproperty
+[2023-05-13 03:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: griddle
+[2023-05-13 03:48:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autotraders
+[2023-05-13 03:48:32] INFO root fetch - processPackages [math0]: New version: [1.1] Old Version: [1.0]
+[2023-05-13 03:48:32] INFO root fetch - processPackages [zensvi]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 03:48:32] WARNING root fetch - processPackages [thelemic-date]: Skipping, unable to determine old version
+[2023-05-13 03:48:32] INFO root fetch - main [MainThread]: End processing [thelemic-date] error
+[2023-05-13 03:48:32] INFO root fetch - processPackages [autotraders]: New version: [0.3.1] Old Version: [0.2.0]
+[2023-05-13 03:48:32] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.769] Old Version: [0.0.768]
+[2023-05-13 03:48:32] WARNING root fetch - processPackages [stronglytypedproperty]: Skipping, unable to determine old version
+[2023-05-13 03:48:32] INFO root fetch - main [MainThread]: End processing [stronglytypedproperty] error
+[2023-05-13 03:48:32] WARNING root fetch - processPackages [griddle]: Skipping, unable to determine old version
+[2023-05-13 03:48:32] INFO root fetch - main [MainThread]: End processing [griddle] error
+[2023-05-13 03:48:32] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/89/0e/ac5f72ed093568dd69d3ee03f15c836ea8a00baffad43189b21eda94b008/nbdev-apl-0.0.768.tar.gz
+[2023-05-13 03:48:32] INFO root fetch - processPackages [math0]: Downloading https://files.pythonhosted.org/packages/2f/76/a91fd54c76f974d1d4d0b3dc751f39ae32b89549526a0d2015fbdbf7cf22/math0-1.0.tar.gz
+[2023-05-13 03:48:32] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/9b/6d/42fe9866b47c031ae34d62f758967d9a100c53dabb0fac5fdc176b16416f/zensvi-0.1.0.tar.gz
+[2023-05-13 03:48:32] INFO root fetch - processPackages [autotraders]: Downloading https://files.pythonhosted.org/packages/54/a8/a70beff3f8d86a18a603dc6d19b44d1fc028d77e0cef6beb2a2a72fa0158/autotraders-0.3.1.tar.gz
+[2023-05-13 03:48:33] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/0a/2f/0684802cf5d44c8223c7a8c7199fc26d3404cb869a6ff1f11bec32dc5d85/nbdev-apl-0.0.769.tar.gz
+[2023-05-13 03:48:33] INFO root fetch - processPackages [autotraders]: executing diffoscope
+[2023-05-13 03:48:33] INFO root fetch - processPackages [math0]: Downloading https://files.pythonhosted.org/packages/d5/27/9dc9c6ca8f16703c2dfd56966a602796ac758d6c7430f8061115625361f1/math0-1.1.tar.gz
+[2023-05-13 03:48:33] INFO root fetch - processPackages [autotraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotraders-0.2.0.tar.gz tmp/autotraders-0.3.1.tar.gz --markdown 20230513/a/autotraders/0.2.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 03:48:33] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/2e/d3/ce74f2adfa1165826d88fbbec2458d549b5cc0e5e1a7690172b7d2e8dfea/zensvi-0.1.1.tar.gz
+[2023-05-13 03:48:33] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-13 03:48:33] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.768.tar.gz tmp/nbdev-apl-0.0.769.tar.gz --markdown 20230513/n/nbdev-apl/0.0.768-0.0.769/diff.md --exclude *.pyd
+[2023-05-13 03:48:33] INFO root fetch - processPackages [math0]: executing diffoscope
+[2023-05-13 03:48:33] INFO root fetch - processPackages [math0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/math0-1.0.tar.gz tmp/math0-1.1.tar.gz --markdown 20230513/m/math0/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-13 03:48:33] INFO root fetch - processPackages [zensvi]: executing diffoscope
+[2023-05-13 03:48:33] INFO root fetch - processPackages [zensvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensvi-0.1.0.tar.gz tmp/zensvi-0.1.1.tar.gz --markdown 20230513/z/zensvi/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 03:48:34] INFO root fetch - main [MainThread]: End processing [autotraders]: success
+[2023-05-13 03:48:34] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-13 03:48:34] INFO root fetch - main [MainThread]: End processing [math0]: success
+[2023-05-13 03:48:34] INFO root fetch - main [MainThread]: End processing [zensvi]: success
+[2023-05-13 03:48:34] INFO root fetch - main [MainThread]: Store serial: [18087015]
