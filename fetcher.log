@@ -7893,3 +7893,69 @@
 [2023-05-13 11:13:09] INFO root fetch - main [MainThread]: End processing [mttf]: success
 [2023-05-13 11:13:09] INFO root fetch - main [MainThread]: End processing [ebbe]: success
 [2023-05-13 11:13:09] INFO root fetch - main [MainThread]: Store serial: [18089169]
+[2023-05-13 11:18:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089169]
+[2023-05-13 11:18:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: halig
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-nightly
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pii-extract-base
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: signalation
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tbp-nightly
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pii-extract-plg-regex
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyPLNmodels
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyPLNmodels
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: injective-py
+[2023-05-13 11:18:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: eegsynth
+[2023-05-13 11:18:18] INFO root fetch - processPackages [halig]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [pii-extract-base]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [signalation]: New version: [1.0.0] Old Version: [0.0.0]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [pii-extract-plg-regex]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [pyPLNmodels]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [pyPLNmodels]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [eegsynth]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [injective-py]: New version: [0.6.2.2] Old Version: [0.6.2.1]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [tbp-nightly]: New version: [2.9.0a20221130] Old Version: [2.9.0a20221129]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [tf-nightly]: New version: [2.14.0.dev20230513] Old Version: [2.14.0.dev20230512]
+[2023-05-13 11:18:18] INFO root fetch - processPackages [tbp-nightly]: executing diffoscope
+[2023-05-13 11:18:18] INFO root fetch - processPackages [tbp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tbp-nightly-2.9.0a20221129.tar.gz tmp/tbp-nightly-2.9.0a20221130.tar.gz --markdown 20230513/t/tbp-nightly/2.9.0a20221129-2.9.0a20221130/diff.md --exclude *.pyd
+[2023-05-13 11:18:18] INFO root fetch - processPackages [signalation]: Downloading https://files.pythonhosted.org/packages/af/52/c0c4d200c7e4e9fd8c1bbd52c21ee57b5849cbefb3b43e1473e6582f3417/signalation-0.0.0.tar.gz
+[2023-05-13 11:18:18] INFO root fetch - processPackages [eegsynth]: Downloading https://files.pythonhosted.org/packages/52/60/523223f44bfa3d5ce01b3f952f48401b409c09aabf6bd8ec9817b5f0e837/eegsynth-0.7.1.tar.gz
+[2023-05-13 11:18:18] INFO root fetch - processPackages [injective-py]: Downloading https://files.pythonhosted.org/packages/81/de/ac098c2e4e013c7a4f946e76c64da191debd19287290c1269be25352781c/injective-py-0.6.2.2.tar.gz
+[2023-05-13 11:18:18] INFO root fetch - processPackages [pyPLNmodels]: Downloading https://files.pythonhosted.org/packages/51/b0/7d9557b8945170adab935eafed81fb717ab0a6849909f142dfcf9ab78264/pyPLNmodels-0.0.8.tar.gz
+[2023-05-13 11:18:18] INFO root fetch - processPackages [pyPLNmodels]: Downloading https://files.pythonhosted.org/packages/51/b0/7d9557b8945170adab935eafed81fb717ab0a6849909f142dfcf9ab78264/pyPLNmodels-0.0.8.tar.gz
+[2023-05-13 11:18:19] INFO root fetch - processPackages [halig]: Downloading https://files.pythonhosted.org/packages/8b/d4/3d5e303fbf1a4a9bee1b19716a806631d7885cd2a62e7aeb887f34d4c26a/halig-0.3.1.tar.gz
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pii-extract-plg-regex]: Downloading https://files.pythonhosted.org/packages/ae/b9/b4723a5ec6e16ce4cb3fb235d7f172ceeab6545e68fac579444d9b146ade/pii-extract-plg-regex-0.4.1.tar.gz
+[2023-05-13 11:18:19] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/95/78/ec4fea564e71df82e79162e8123911b3cc7ad66609c6e56cf4e2d9d43a50/tf_nightly-2.14.0.dev20230512-cp39-cp39-win_amd64.whl
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pii-extract-base]: Downloading https://files.pythonhosted.org/packages/f4/43/53254b26c0f3679e6238c20b00266439c70c3efb995a53a2997c05ff5a20/pii-extract-base-0.5.0.tar.gz
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pii-extract-plg-regex]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pii-extract-plg-regex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pii-extract-plg-regex-0.4.0.tar.gz tmp/pii-extract-plg-regex-0.4.1.tar.gz --markdown 20230513/p/pii-extract-plg-regex/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-13 11:18:19] INFO root fetch - processPackages [halig]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [halig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/halig-0.3.0.tar.gz tmp/halig-0.3.1.tar.gz --markdown 20230513/h/halig/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 11:18:19] INFO root fetch - processPackages [eegsynth]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [eegsynth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eegsynth-0.7.0.tar.gz tmp/eegsynth-0.7.1.tar.gz --markdown 20230513/e/eegsynth/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-13 11:18:19] INFO root fetch - processPackages [injective-py]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [injective-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/injective-py-0.6.2.1.tar.gz tmp/injective-py-0.6.2.2.tar.gz --markdown 20230513/i/injective-py/0.6.2.1-0.6.2.2/diff.md --exclude *.pyd
+[2023-05-13 11:18:19] INFO root fetch - processPackages [signalation]: Downloading https://files.pythonhosted.org/packages/68/f3/743eadb217735fc562b16b0d69015d2938884f64ac672ec9e6dbe92dc483/signalation-1.0.0.tar.gz
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pii-extract-base]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pii-extract-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pii-extract-base-0.4.0.tar.gz tmp/pii-extract-base-0.5.0.tar.gz --markdown 20230513/p/pii-extract-base/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pyPLNmodels]: Downloading https://files.pythonhosted.org/packages/d9/ee/b1ce119365c9ee2f1e8f012450c38c4ebaa0ba7795d2a008d8fcde4dfd07/pyPLNmodels-0.0.9.tar.gz
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pyPLNmodels]: Downloading https://files.pythonhosted.org/packages/d9/ee/b1ce119365c9ee2f1e8f012450c38c4ebaa0ba7795d2a008d8fcde4dfd07/pyPLNmodels-0.0.9.tar.gz
+[2023-05-13 11:18:19] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/48/7e/ed8aa6a9d90d45bebb8983cc97d98ae40b69e6757854026f10227a07b072/tf_nightly-2.14.0.dev20230513-cp39-cp39-win_amd64.whl
+[2023-05-13 11:18:19] INFO root fetch - processPackages [signalation]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [signalation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/signalation-0.0.0.tar.gz tmp/signalation-1.0.0.tar.gz --markdown 20230513/s/signalation/0.0.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pyPLNmodels]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pyPLNmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPLNmodels-0.0.8.tar.gz tmp/pyPLNmodels-0.0.9.tar.gz --markdown 20230513/p/pyPLNmodels/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pyPLNmodels]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [pyPLNmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyPLNmodels-0.0.8.tar.gz tmp/pyPLNmodels-0.0.9.tar.gz --markdown 20230513/p/pyPLNmodels/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 11:18:19] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2023-05-13 11:18:19] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.14.0.dev20230512-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.14.0.dev20230513-cp39-cp39-win_amd64.whl.zip --markdown 20230513/t/tf-nightly/2.14.0.dev20230512-2.14.0.dev20230513/diff.md --exclude *.pyd
+[2023-05-13 11:18:21] INFO root fetch - main [MainThread]: End processing [pii-extract-base]: success
+[2023-05-13 11:18:21] INFO root fetch - main [MainThread]: End processing [halig]: success
+[2023-05-13 11:18:21] INFO root fetch - main [MainThread]: End processing [signalation]: success
+[2023-05-13 11:18:21] INFO root fetch - main [MainThread]: End processing [pyPLNmodels]: success
+[2023-05-13 11:18:21] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2023-05-13 11:18:21] INFO root fetch - main [MainThread]: End processing [pii-extract-plg-regex]: success
+[2023-05-13 11:18:21] INFO root fetch - main [MainThread]: End processing [eegsynth]: success
+[2023-05-13 11:18:22] INFO root fetch - main [MainThread]: End processing [pyPLNmodels]: success
+[2023-05-13 11:18:23] INFO root fetch - main [MainThread]: End processing [injective-py]: success
+[2023-05-13 11:18:26] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
+[2023-05-13 11:18:26] INFO root fetch - main [MainThread]: Store serial: [18089209]
