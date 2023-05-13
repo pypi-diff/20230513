@@ -5512,3 +5512,33 @@
 [2023-05-13 07:31:49] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2023-05-13 07:31:49] INFO root fetch - main [MainThread]: End processing [netron] error
 [2023-05-13 07:31:49] INFO root fetch - main [MainThread]: Store serial: [18088008]
+[2023-05-13 07:36:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088008]
+[2023-05-13 07:36:59] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 07:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tybase
+[2023-05-13 07:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: git-machete
+[2023-05-13 07:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: electricpy
+[2023-05-13 07:36:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lotrpy
+[2023-05-13 07:36:59] INFO root fetch - processPackages [git-machete]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-13 07:36:59] INFO root fetch - processPackages [tybase]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-13 07:36:59] INFO root fetch - processPackages [electricpy]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-13 07:36:59] INFO root fetch - processPackages [lotrpy]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 07:36:59] INFO root fetch - processPackages [electricpy]: Downloading https://files.pythonhosted.org/packages/93/cb/f5995230fc9de9dd631ce4e645f94ad2bcdd4dd382414184b77bf8541e4a/electricpy-0.2.2.tar.gz
+[2023-05-13 07:36:59] INFO root fetch - processPackages [git-machete]: Downloading https://files.pythonhosted.org/packages/00/41/ea9df2709ca5d1f69fef14e74d8c77f7c8575eeb2ba426a3d3ff4691095c/git-machete-3.9.0.tar.gz
+[2023-05-13 07:36:59] INFO root fetch - processPackages [lotrpy]: Downloading https://files.pythonhosted.org/packages/c6/40/be166c44081cf0f266e6f7a9ce65b1f93f5aa13562f46fd31020e4ac74da/lotrpy-1.0.0.tar.gz
+[2023-05-13 07:36:59] INFO root fetch - processPackages [tybase]: Downloading https://files.pythonhosted.org/packages/e5/6a/2ccbca363cd008c511b8f72d6742f15f2c7be93227a4d514691881498279/tybase-0.0.8.tar.gz
+[2023-05-13 07:36:59] INFO root fetch - processPackages [tybase]: executing diffoscope
+[2023-05-13 07:36:59] INFO root fetch - processPackages [tybase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tybase-0.0.7.tar.gz tmp/tybase-0.0.8.tar.gz --markdown 20230513/t/tybase/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-13 07:36:59] INFO root fetch - processPackages [lotrpy]: Downloading https://files.pythonhosted.org/packages/7f/1b/1f00bef0b61ba40ce1127d499a10d209870fb7135e395a6c9fa72ba6948c/lotrpy-1.0.1.tar.gz
+[2023-05-13 07:36:59] INFO root fetch - processPackages [lotrpy]: executing diffoscope
+[2023-05-13 07:36:59] INFO root fetch - processPackages [lotrpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lotrpy-1.0.0.tar.gz tmp/lotrpy-1.0.1.tar.gz --markdown 20230513/l/lotrpy/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 07:36:59] INFO root fetch - processPackages [electricpy]: Downloading https://files.pythonhosted.org/packages/97/b5/006245b73c8efdc121c9fe2c004e5c6224e28703aa7939fe75d9dfdcad9a/electricpy-0.3.0.tar.gz
+[2023-05-13 07:36:59] INFO root fetch - processPackages [git-machete]: Downloading https://files.pythonhosted.org/packages/c7/58/a2beb1e31a481442ac88f436b83c2277a5a58484492ca445e76b0c229e1f/git-machete-3.9.1.tar.gz
+[2023-05-13 07:36:59] INFO root fetch - processPackages [electricpy]: executing diffoscope
+[2023-05-13 07:36:59] INFO root fetch - processPackages [electricpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/electricpy-0.2.2.tar.gz tmp/electricpy-0.3.0.tar.gz --markdown 20230513/e/electricpy/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 07:36:59] INFO root fetch - processPackages [git-machete]: executing diffoscope
+[2023-05-13 07:36:59] INFO root fetch - processPackages [git-machete]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git-machete-3.9.0.tar.gz tmp/git-machete-3.9.1.tar.gz --markdown 20230513/g/git-machete/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-13 07:37:00] INFO root fetch - main [MainThread]: End processing [tybase]: success
+[2023-05-13 07:37:00] INFO root fetch - main [MainThread]: End processing [lotrpy]: success
+[2023-05-13 07:37:01] INFO root fetch - main [MainThread]: End processing [electricpy]: success
+[2023-05-13 07:37:01] INFO root fetch - main [MainThread]: End processing [git-machete]: success
+[2023-05-13 07:37:01] INFO root fetch - main [MainThread]: Store serial: [18088028]
