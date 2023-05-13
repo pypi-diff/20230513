@@ -7611,3 +7611,52 @@
 [2023-05-13 10:36:34] INFO root fetch - main [MainThread]: End processing [AICreatorPack]: success
 [2023-05-13 10:36:34] INFO root fetch - main [MainThread]: End processing [python-amazon-ad-api]: success
 [2023-05-13 10:36:34] INFO root fetch - main [MainThread]: Store serial: [18088984]
+[2023-05-13 10:41:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088984]
+[2023-05-13 10:41:43] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lesscode-tool
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-og
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ut-date
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-estimator-nightly
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AICreatorPack
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bambooai
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: applyx
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tff-nightly
+[2023-05-13 10:41:43] INFO root fetch - processPackages [lesscode-tool]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 10:41:43] INFO root fetch - processPackages [nonebot-plugin-og]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-13 10:41:43] INFO root fetch - processPackages [bambooai]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-13 10:41:43] INFO root fetch - processPackages [tf-estimator-nightly]: New version: [2.9.0.dev2022033108] Old Version: [2.9.0.dev2022033008]
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ut-date]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-13 10:41:43] INFO root fetch - processPackages [AICreatorPack]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 10:41:43] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230512] Old Version: [0.0.1.dev20230511]
+[2023-05-13 10:41:43] INFO root fetch - processPackages [applyx]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-13 10:41:43] INFO root fetch - processPackages [lesscode-tool]: executing diffoscope
+[2023-05-13 10:41:43] INFO root fetch - processPackages [lesscode-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_tool-0.0.8.tar.gz tmp/lesscode_tool-0.0.9.tar.gz --markdown 20230513/l/lesscode-tool/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 10:41:43] INFO root fetch - processPackages [tf-estimator-nightly]: executing diffoscope
+[2023-05-13 10:41:43] INFO root fetch - processPackages [tf-estimator-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_estimator_nightly-2.9.0.dev2022033008-py2.py3-none-any.whl.zip tmp/tf_estimator_nightly-2.9.0.dev2022033108-py2.py3-none-any.whl.zip --markdown 20230513/t/tf-estimator-nightly/2.9.0.dev2022033008-2.9.0.dev2022033108/diff.md --exclude *.pyd
+[2023-05-13 10:41:43] INFO root fetch - processPackages [nonebot-plugin-og]: Downloading https://files.pythonhosted.org/packages/a5/46/59f81d3a2597bf0e3337e87964bf929fd650b0aafb8b3eb2989e0856d72f/nonebot_plugin_og-0.2.0.tar.gz
+[2023-05-13 10:41:43] INFO root fetch - processPackages [ut-date]: Downloading https://files.pythonhosted.org/packages/e8/7c/53ae51b6d37f7e9fb7d168ad207878d9fbe22d4f88e8a8d8b71d70fa4f7f/ut-date-1.4.0.tar.gz
+[2023-05-13 10:41:43] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/25/33/9001126e47c0bfb83189ba4f5768f94881e431c7fd96fd60f28282c0ee71/bambooai-0.1.6.tar.gz
+[2023-05-13 10:41:43] INFO root fetch - processPackages [AICreatorPack]: Downloading https://files.pythonhosted.org/packages/12/5d/68b127ef4a7b75e5c05bfd7a5ba41a42e6a671b0a658cc92b8cfc27efdb7/AICreatorPack-0.0.4.tar.gz
+[2023-05-13 10:41:43] WARNING root fetch - processPackages [ut-date]: Skipping package: exceeds size limit 12767142>=10485760
+[2023-05-13 10:41:43] INFO root fetch - main [MainThread]: End processing [ut-date] error
+[2023-05-13 10:41:43] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/d8/9b/e73272e88de299c9e7a4b922d9077561dc42f6351a0483952a46da519d82/tff_nightly-0.0.1.dev20230512-py2.py3-none-any.whl
+[2023-05-13 10:41:43] INFO root fetch - processPackages [AICreatorPack]: executing diffoscope
+[2023-05-13 10:41:43] INFO root fetch - processPackages [AICreatorPack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AICreatorPack-0.0.3.tar.gz tmp/AICreatorPack-0.0.4.tar.gz --markdown 20230513/A/AICreatorPack/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 10:41:43] INFO root fetch - processPackages [nonebot-plugin-og]: Downloading https://files.pythonhosted.org/packages/e0/72/de203c4d89ff5fb6b1ca36faeddea9c7605a6f6037b30633950ca2f8643f/nonebot_plugin_og-0.3.0.tar.gz
+[2023-05-13 10:41:43] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-13 10:41:43] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.1.5.tar.gz tmp/bambooai-0.1.6.tar.gz --markdown 20230513/b/bambooai/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-13 10:41:43] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/f8/ea/e0d14bae8a07480365c22ce8a13f1d71cd8c3768f9da03e9680d9b108775/applyx-0.2.5-py3-none-any.whl
+[2023-05-13 10:41:43] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-13 10:41:43] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230511-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230512-py2.py3-none-any.whl.zip --markdown 20230513/t/tff-nightly/0.0.1.dev20230511-0.0.1.dev20230512/diff.md --exclude *.pyd
+[2023-05-13 10:41:43] INFO root fetch - processPackages [nonebot-plugin-og]: executing diffoscope
+[2023-05-13 10:41:43] INFO root fetch - processPackages [nonebot-plugin-og]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_og-0.2.0.tar.gz tmp/nonebot_plugin_og-0.3.0.tar.gz --markdown 20230513/n/nonebot-plugin-og/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 10:41:44] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2023-05-13 10:41:44] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.4-py3-none-any.whl.zip tmp/applyx-0.2.5-py3-none-any.whl.zip --markdown 20230513/a/applyx/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-13 10:41:44] INFO root fetch - main [MainThread]: End processing [lesscode-tool]: success
+[2023-05-13 10:41:45] INFO root fetch - main [MainThread]: End processing [AICreatorPack]: success
+[2023-05-13 10:41:45] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-13 10:41:45] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-og]: success
+[2023-05-13 10:41:45] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
+[2023-05-13 10:41:45] INFO root fetch - main [MainThread]: End processing [applyx]: success
+[2023-05-13 10:41:47] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-13 10:41:47] INFO root fetch - main [MainThread]: Store serial: [18089004]
