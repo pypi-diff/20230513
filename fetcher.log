@@ -11277,3 +11277,49 @@ EOFError: EOF read where object expected
 [2023-05-13 17:41:25] INFO root fetch - main [MainThread]: End processing [flatgeobuf-pyrust] error
 [2023-05-13 17:41:25] INFO root fetch - main [MainThread]: End processing [pyportfolioanalytics] error
 [2023-05-13 17:41:25] INFO root fetch - main [MainThread]: Store serial: [18091312]
+[2023-05-13 17:46:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091312]
+[2023-05-13 17:46:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-bison-migang
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: diambra-engine
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aa-freight
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BlueBrain
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: seunggabi-core-python
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: affine-transform
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: neopolitan
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: flatgeobuf-pyrust
+[2023-05-13 17:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dpsa4flower
+[2023-05-13 17:46:35] INFO root fetch - processPackages [BlueBrain]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 17:46:35] WARNING root fetch - processPackages [flatgeobuf-pyrust]: Skipping, unable to determine old version
+[2023-05-13 17:46:35] INFO root fetch - main [MainThread]: End processing [flatgeobuf-pyrust] error
+[2023-05-13 17:46:35] WARNING root fetch - processPackages [nonebot-bison-migang]: Skipping, unable to determine old version
+[2023-05-13 17:46:35] INFO root fetch - main [MainThread]: End processing [nonebot-bison-migang] error
+[2023-05-13 17:46:35] WARNING root fetch - processPackages [seunggabi-core-python]: Skipping, unable to determine old version
+[2023-05-13 17:46:35] INFO root fetch - main [MainThread]: End processing [seunggabi-core-python] error
+[2023-05-13 17:46:35] INFO root fetch - processPackages [affine-transform]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-13 17:46:35] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 17:46:35] INFO root fetch - processPackages [diambra-engine]: New version: [2.1.0rc9] Old Version: [2.1.0rc8]
+[2023-05-13 17:46:35] WARNING root fetch - processPackages [dpsa4flower]: Skipping, unable to determine old version
+[2023-05-13 17:46:35] INFO root fetch - processPackages [BlueBrain]: executing diffoscope
+[2023-05-13 17:46:36] INFO root fetch - main [MainThread]: End processing [dpsa4flower] error
+[2023-05-13 17:46:36] INFO root fetch - processPackages [BlueBrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BlueBrain-0.1.1.tar.gz tmp/BlueBrain-0.1.2.tar.gz --markdown 20230513/B/BlueBrain/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 17:46:36] INFO root fetch - processPackages [aa-freight]: New version: [1.8.0] Old Version: [1.7.1]
+[2023-05-13 17:46:36] INFO root fetch - processPackages [diambra-engine]: Downloading https://files.pythonhosted.org/packages/bb/ba/b5ae2a99b8d1db307aec499c56c95eb4cfa5f76a7340cdbd49ed655d5fb2/diambra-engine-2.1.0rc8.tar.gz
+[2023-05-13 17:46:36] INFO root fetch - processPackages [affine-transform]: Downloading https://files.pythonhosted.org/packages/40/14/05f42a7351cf8e18a21dbea6503d6648a08f82f9e4e447e597f1bbfd39af/affine_transform-0.3.0.tar.gz
+[2023-05-13 17:46:36] INFO root fetch - processPackages [aa-freight]: Downloading https://files.pythonhosted.org/packages/11/ec/c0bc58213eedf3ef8ad82293fefbc6a11cd405b0a9d8f768155f7b39d773/aa-freight-1.7.1.tar.gz
+[2023-05-13 17:46:36] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-13 17:46:36] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230513/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 17:46:36] INFO root fetch - processPackages [aa-freight]: Downloading https://files.pythonhosted.org/packages/e5/5e/4d2cfeaf300a08735028bc34cce3c5d5561b1c975e0418f3328947b709b2/aa_freight-1.8.0.tar.gz
+[2023-05-13 17:46:36] INFO root fetch - processPackages [diambra-engine]: Downloading https://files.pythonhosted.org/packages/4b/33/1da34d2f2a44dd6ec8d777d9129a3744af4ae787eb69b9a118a82a7e3aea/diambra-engine-2.1.0rc9.tar.gz
+[2023-05-13 17:46:36] INFO root fetch - processPackages [affine-transform]: Downloading https://files.pythonhosted.org/packages/a8/e6/6028cd93c300f5beb4301da03e0f61e724781839855e96a7e9d28fb3654d/affine_transform-0.3.1.tar.gz
+[2023-05-13 17:46:36] INFO root fetch - processPackages [diambra-engine]: executing diffoscope
+[2023-05-13 17:46:36] INFO root fetch - processPackages [diambra-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diambra-engine-2.1.0rc8.tar.gz tmp/diambra-engine-2.1.0rc9.tar.gz --markdown 20230513/d/diambra-engine/2.1.0rc8-2.1.0rc9/diff.md --exclude *.pyd
+[2023-05-13 17:46:36] INFO root fetch - processPackages [aa-freight]: executing diffoscope
+[2023-05-13 17:46:36] INFO root fetch - processPackages [aa-freight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aa-freight-1.7.1.tar.gz tmp/aa_freight-1.8.0.tar.gz --markdown 20230513/a/aa-freight/1.7.1-1.8.0/diff.md --exclude *.pyd
+[2023-05-13 17:46:36] INFO root fetch - processPackages [affine-transform]: executing diffoscope
+[2023-05-13 17:46:36] INFO root fetch - processPackages [affine-transform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/affine_transform-0.3.0.tar.gz tmp/affine_transform-0.3.1.tar.gz --markdown 20230513/a/affine-transform/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 17:46:37] INFO root fetch - main [MainThread]: End processing [BlueBrain]: success
+[2023-05-13 17:46:37] INFO root fetch - main [MainThread]: End processing [diambra-engine]: success
+[2023-05-13 17:46:37] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-13 17:46:38] INFO root fetch - main [MainThread]: End processing [aa-freight]: success
+[2023-05-13 17:46:40] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
+[2023-05-13 17:46:40] INFO root fetch - main [MainThread]: Store serial: [18091343]
