@@ -3715,3 +3715,23 @@
 [2023-05-13 03:58:56] INFO root fetch - main [MainThread]: End processing [mpcontribs-client]: success
 [2023-05-13 03:58:58] INFO root fetch - main [MainThread]: End processing [oakvar]: success
 [2023-05-13 03:58:58] INFO root fetch - main [MainThread]: Store serial: [18087068]
+[2023-05-13 04:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087068]
+[2023-05-13 04:04:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 04:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqtcolor
+[2023-05-13 04:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lifx-cli
+[2023-05-13 04:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyserde
+[2023-05-13 04:04:06] WARNING root fetch - processPackages [pyqtcolor]: Skipping, unable to determine old version
+[2023-05-13 04:04:06] INFO root fetch - main [MainThread]: End processing [pyqtcolor] error
+[2023-05-13 04:04:06] INFO root fetch - processPackages [lifx-cli]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-13 04:04:06] INFO root fetch - processPackages [pyserde]: New version: [0.9.8] Old Version: [0.9.7]
+[2023-05-13 04:04:07] INFO root fetch - processPackages [lifx-cli]: Downloading https://files.pythonhosted.org/packages/12/14/9874e071b6cd1498859726f2c028e5e3ed625e8b0b940bd3f23bd6a19031/lifx_cli-0.1.0.tar.gz
+[2023-05-13 04:04:07] INFO root fetch - processPackages [pyserde]: Downloading https://files.pythonhosted.org/packages/c6/fd/8a6d9967aa1ca3450ce7bf8b1556359e7801a809e354b85682ed16481fb5/pyserde-0.9.7.tar.gz
+[2023-05-13 04:04:07] INFO root fetch - processPackages [lifx-cli]: Downloading https://files.pythonhosted.org/packages/6f/7c/30557f93749d9b4ad659cee0a95f9fab527398e0e25e9f108fbfa84f5685/lifx_cli-0.2.0.tar.gz
+[2023-05-13 04:04:07] INFO root fetch - processPackages [lifx-cli]: executing diffoscope
+[2023-05-13 04:04:07] INFO root fetch - processPackages [lifx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx_cli-0.1.0.tar.gz tmp/lifx_cli-0.2.0.tar.gz --markdown 20230513/l/lifx-cli/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 04:04:07] INFO root fetch - processPackages [pyserde]: Downloading https://files.pythonhosted.org/packages/08/1d/65f8f49d7df9b9326fb7de9ae0bb1dae880de85e2ae08ee6d850014f4b7d/pyserde-0.9.8.tar.gz
+[2023-05-13 04:04:07] INFO root fetch - processPackages [pyserde]: executing diffoscope
+[2023-05-13 04:04:07] INFO root fetch - processPackages [pyserde]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyserde-0.9.7.tar.gz tmp/pyserde-0.9.8.tar.gz --markdown 20230513/p/pyserde/0.9.7-0.9.8/diff.md --exclude *.pyd
+[2023-05-13 04:04:08] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
+[2023-05-13 04:04:08] INFO root fetch - main [MainThread]: End processing [pyserde]: success
+[2023-05-13 04:04:08] INFO root fetch - main [MainThread]: Store serial: [18087078]
