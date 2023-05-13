@@ -13006,3 +13006,26 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:07:13] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
 [2023-05-13 21:07:14] INFO root fetch - main [MainThread]: End processing [np-gui]: success
 [2023-05-13 21:07:14] INFO root fetch - main [MainThread]: Store serial: [18092393]
+[2023-05-13 21:12:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092393]
+[2023-05-13 21:12:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 21:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carto-reader
+[2023-05-13 21:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sessypy
+[2023-05-13 21:12:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simpleimageio
+[2023-05-13 21:12:23] INFO root fetch - processPackages [carto-reader]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 21:12:23] INFO root fetch - processPackages [simpleimageio]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-13 21:12:23] INFO root fetch - processPackages [sessypy]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-13 21:12:23] INFO root fetch - processPackages [carto-reader]: Downloading https://files.pythonhosted.org/packages/1b/52/d94bc3ed2bf04da08df25f6e66442e9b88f55cbc4f0d00672a465c0310fb/carto_reader-0.0.8.tar.gz
+[2023-05-13 21:12:24] INFO root fetch - processPackages [sessypy]: Downloading https://files.pythonhosted.org/packages/23/fe/5fd4493b0cad97a5197945840ebcbe243be91f4690e103f4295c0efb4a61/sessypy-0.0.7.tar.gz
+[2023-05-13 21:12:24] INFO root fetch - processPackages [simpleimageio]: Downloading https://files.pythonhosted.org/packages/92/29/dccbb60db772d455c7c59af887a05dabd536303d5a0fd2dd1afe4ebed443/simpleimageio-1.4.2.tar.gz
+[2023-05-13 21:12:24] INFO root fetch - processPackages [simpleimageio]: executing diffoscope
+[2023-05-13 21:12:24] INFO root fetch - processPackages [simpleimageio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleimageio-1.4.1.tar.gz tmp/simpleimageio-1.4.2.tar.gz --markdown 20230513/s/simpleimageio/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-13 21:12:24] INFO root fetch - processPackages [carto-reader]: Downloading https://files.pythonhosted.org/packages/e1/4a/015a0f5eca1d5b47f1f7dc0a9bc6710cc2b419f2f7940b280a57222c83b5/carto_reader-0.0.9.tar.gz
+[2023-05-13 21:12:24] INFO root fetch - processPackages [carto-reader]: executing diffoscope
+[2023-05-13 21:12:24] INFO root fetch - processPackages [carto-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carto_reader-0.0.8.tar.gz tmp/carto_reader-0.0.9.tar.gz --markdown 20230513/c/carto-reader/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 21:12:24] INFO root fetch - processPackages [sessypy]: Downloading https://files.pythonhosted.org/packages/bf/fe/0d425402ce1945b399ea5808fac0674f031a8613ad1c399a73f14e47ce11/sessypy-0.0.8.tar.gz
+[2023-05-13 21:12:24] INFO root fetch - processPackages [sessypy]: executing diffoscope
+[2023-05-13 21:12:24] INFO root fetch - processPackages [sessypy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sessypy-0.0.7.tar.gz tmp/sessypy-0.0.8.tar.gz --markdown 20230513/s/sessypy/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-13 21:12:25] INFO root fetch - main [MainThread]: End processing [carto-reader]: success
+[2023-05-13 21:12:25] INFO root fetch - main [MainThread]: End processing [sessypy]: success
+[2023-05-13 21:12:27] INFO root fetch - main [MainThread]: End processing [simpleimageio]: success
+[2023-05-13 21:12:27] INFO root fetch - main [MainThread]: Store serial: [18092402]
