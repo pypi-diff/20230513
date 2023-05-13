@@ -12003,3 +12003,47 @@ EOFError: EOF read where object expected
 [2023-05-13 19:06:38] INFO root fetch - main [MainThread]: End processing [omemo-dr]: success
 [2023-05-13 19:06:38] INFO root fetch - main [MainThread]: End processing [yerbamate]: success
 [2023-05-13 19:06:38] INFO root fetch - main [MainThread]: Store serial: [18091795]
+[2023-05-13 19:11:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091795]
+[2023-05-13 19:11:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 19:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SuperDuperEasyAuth
+[2023-05-13 19:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alacorder
+[2023-05-13 19:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discord-ext-prometheus
+[2023-05-13 19:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cliconfig
+[2023-05-13 19:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: upk2esphome
+[2023-05-13 19:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pipsqlite3liberyV2
+[2023-05-13 19:11:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aionotion
+[2023-05-13 19:11:48] INFO root fetch - processPackages [discord-ext-prometheus]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-13 19:11:48] INFO root fetch - processPackages [cliconfig]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-13 19:11:48] ERROR root fetch - processPackages [pipsqlite3liberyV2]: Unable to get metadata: No such project 'pipsqlite3liberyV2'
+[2023-05-13 19:11:48] INFO root fetch - main [MainThread]: End processing [pipsqlite3liberyV2] error
+[2023-05-13 19:11:48] INFO root fetch - processPackages [SuperDuperEasyAuth]: New version: [0.1.1] Old Version: [0.0.1]
+[2023-05-13 19:11:48] INFO root fetch - processPackages [upk2esphome]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 19:11:48] INFO root fetch - processPackages [aionotion]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-05-13 19:11:48] INFO root fetch - processPackages [alacorder]: New version: [80.4.8] Old Version: [80.4.7]
+[2023-05-13 19:11:49] INFO root fetch - processPackages [SuperDuperEasyAuth]: Downloading https://files.pythonhosted.org/packages/13/dd/7c0be0f14ae600d8544c88b2eb8364c64bf0a844a476978b45f2afff9135/SuperDuperEasyAuth-0.0.1.tar.gz
+[2023-05-13 19:11:49] INFO root fetch - processPackages [discord-ext-prometheus]: Downloading https://files.pythonhosted.org/packages/d6/58/192f8f35c4065f7d0e379d3876e01abdd5d8036425bb2f92ebd4aa11856e/discord_ext_prometheus-0.1.2.tar.gz
+[2023-05-13 19:11:49] INFO root fetch - processPackages [upk2esphome]: Downloading https://files.pythonhosted.org/packages/27/1a/2dd9ecb6d66ce6064bf218909e1d9c50bfa23071a2f27a3f590d6b63ff15/upk2esphome-1.0.0.tar.gz
+[2023-05-13 19:11:49] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/2f/da/de596059725b1c716bb293e213f38c4a1c740bd37e51a29dece51244e62c/cliconfig-0.5.6.tar.gz
+[2023-05-13 19:11:49] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/6d/e7/8cc6ebf36b5b6b0e82e6804632616ce5b930d17d12baa1a42069eff7a349/alacorder-80.4.8.tar.gz
+[2023-05-13 19:11:49] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-13 19:11:49] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.5.5.tar.gz tmp/cliconfig-0.5.6.tar.gz --markdown 20230513/c/cliconfig/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-13 19:11:49] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-13 19:11:49] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.4.7.tar.gz tmp/alacorder-80.4.8.tar.gz --markdown 20230513/a/alacorder/80.4.7-80.4.8/diff.md --exclude *.pyd
+[2023-05-13 19:11:49] INFO root fetch - processPackages [aionotion]: executing diffoscope
+[2023-05-13 19:11:49] INFO root fetch - processPackages [aionotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aionotion-3.0.1.tar.gz tmp/aionotion-3.0.2.tar.gz --markdown 20230513/a/aionotion/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-05-13 19:11:49] INFO root fetch - processPackages [upk2esphome]: Downloading https://files.pythonhosted.org/packages/fc/e6/5d3fd764df504788916b6716dd8a06944fd95137946cdde3a0546b4b897c/upk2esphome-1.0.1.tar.gz
+[2023-05-13 19:11:49] INFO root fetch - processPackages [SuperDuperEasyAuth]: Downloading https://files.pythonhosted.org/packages/60/6b/5d10415701cc610828d933bed879145fa8826733b614835edebe7dfc2805/SuperDuperEasyAuth-0.1.1.tar.gz
+[2023-05-13 19:11:49] INFO root fetch - processPackages [discord-ext-prometheus]: Downloading https://files.pythonhosted.org/packages/2a/46/ecf6a4fffe6e6d8d78f6b67d5daf1eb48f317bc6235ddf5f4196edef0466/discord_ext_prometheus-0.1.3.tar.gz
+[2023-05-13 19:11:49] INFO root fetch - processPackages [upk2esphome]: executing diffoscope
+[2023-05-13 19:11:49] INFO root fetch - processPackages [upk2esphome]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upk2esphome-1.0.0.tar.gz tmp/upk2esphome-1.0.1.tar.gz --markdown 20230513/u/upk2esphome/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 19:11:49] INFO root fetch - processPackages [SuperDuperEasyAuth]: executing diffoscope
+[2023-05-13 19:11:49] INFO root fetch - processPackages [SuperDuperEasyAuth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SuperDuperEasyAuth-0.0.1.tar.gz tmp/SuperDuperEasyAuth-0.1.1.tar.gz --markdown 20230513/S/SuperDuperEasyAuth/0.0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 19:11:49] INFO root fetch - processPackages [discord-ext-prometheus]: executing diffoscope
+[2023-05-13 19:11:49] INFO root fetch - processPackages [discord-ext-prometheus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord_ext_prometheus-0.1.2.tar.gz tmp/discord_ext_prometheus-0.1.3.tar.gz --markdown 20230513/d/discord-ext-prometheus/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-13 19:11:50] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-13 19:11:50] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
+[2023-05-13 19:11:50] INFO root fetch - main [MainThread]: End processing [aionotion]: success
+[2023-05-13 19:11:50] INFO root fetch - main [MainThread]: End processing [SuperDuperEasyAuth]: success
+[2023-05-13 19:11:50] INFO root fetch - main [MainThread]: End processing [upk2esphome]: success
+[2023-05-13 19:11:51] INFO root fetch - main [MainThread]: End processing [discord-ext-prometheus]: success
+[2023-05-13 19:11:51] INFO root fetch - main [MainThread]: Store serial: [18091824]
