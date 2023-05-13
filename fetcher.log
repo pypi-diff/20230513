@@ -5263,3 +5263,55 @@
 [2023-05-13 07:02:02] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfe-spec]: success
 [2023-05-13 07:02:05] INFO root fetch - main [MainThread]: End processing [metpx-sr3]: success
 [2023-05-13 07:02:05] INFO root fetch - main [MainThread]: Store serial: [18087902]
+[2023-05-13 07:07:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087902]
+[2023-05-13 07:07:14] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tflite-runtime-nightly
+[2023-05-13 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dask-cuda
+[2023-05-13 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo8-addon-l10n-fr-intrastat-service
+[2023-05-13 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo8-addon-l10n-fr-ecotaxe
+[2023-05-13 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo8-addon-l10n-fr-intrastat-product
+[2023-05-13 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-l10n-fr-ecotaxe
+[2023-05-13 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rapid-pe
+[2023-05-13 07:07:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Bigsansar
+[2023-05-13 07:07:14] INFO root fetch - processPackages [odoo8-addon-l10n-fr-intrastat-service]: New version: [8.0.2.0.0.99.dev9] Old Version: [8.0.2.0.0.99.dev8]
+[2023-05-13 07:07:14] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: New version: [15.0.1.0.0.9] Old Version: [15.0.1.0.0.8]
+[2023-05-13 07:07:14] INFO root fetch - processPackages [odoo8-addon-l10n-fr-ecotaxe]: New version: [8.0.0.1.0.99.dev9] Old Version: [8.0.0.1.0.99.dev8]
+[2023-05-13 07:07:14] INFO root fetch - processPackages [odoo8-addon-l10n-fr-intrastat-product]: New version: [8.0.2.0.0.99.dev9] Old Version: [8.0.2.0.0.99.dev8]
+[2023-05-13 07:07:14] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230513] Old Version: [0.1.1.dev20230511]
+[2023-05-13 07:07:14] INFO root fetch - processPackages [Bigsansar]: New version: [1.4.0] Old Version: [1.3.9]
+[2023-05-13 07:07:14] INFO root fetch - processPackages [dask-cuda]: New version: [23.6.0a230513] Old Version: [23.6.0a230512]
+[2023-05-13 07:07:14] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-13 07:07:14] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.3.9.tar.gz tmp/Bigsansar-1.4.0.tar.gz --markdown 20230513/B/Bigsansar/1.3.9-1.4.0/diff.md --exclude *.pyd
+[2023-05-13 07:07:14] INFO root fetch - processPackages [odoo8-addon-l10n-fr-ecotaxe]: Downloading https://files.pythonhosted.org/packages/17/23/e8e04b31f95fcbfc5dff1b0856ed815fc133a84d13c679042dec20523a7e/odoo8_addon_l10n_fr_ecotaxe-8.0.0.1.0.99.dev8-py2-none-any.whl
+[2023-05-13 07:07:14] INFO root fetch - processPackages [odoo8-addon-l10n-fr-intrastat-service]: Downloading https://files.pythonhosted.org/packages/65/75/23f041054778f372496a98b19edb0d5595a24afb92f7d9e9cb7eb154c960/odoo8_addon_l10n_fr_intrastat_service-8.0.2.0.0.99.dev8-py2-none-any.whl
+[2023-05-13 07:07:14] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: Downloading https://files.pythonhosted.org/packages/b1/0a/46837fa1fe2a0547045430f43669d5f65b452868630ff3f0643d7eda6d43/odoo_addon_l10n_fr_ecotaxe-15.0.1.0.0.8-py3-none-any.whl
+[2023-05-13 07:07:14] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230512] Old Version: [2.14.0.dev20230510]
+[2023-05-13 07:07:14] INFO root fetch - processPackages [dask-cuda]: Downloading https://files.pythonhosted.org/packages/72/d6/d48c7db1545f666fdd1a0ead5af7df75d3c3920976bce75514a2c458d01e/dask-cuda-23.6.0a230513.tar.gz
+[2023-05-13 07:07:14] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/c1/6a/55ee046a80b9ddd93360367680cfe1cdf256f05bf4efca0f2d4dd0f4c06c/rapid_pe-0.1.1.dev20230513.tar.gz
+[2023-05-13 07:07:14] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-13 07:07:14] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.6.0a230512.tar.gz tmp/dask-cuda-23.6.0a230513.tar.gz --markdown 20230513/d/dask-cuda/23.6.0a230512-23.6.0a230513/diff.md --exclude *.pyd
+[2023-05-13 07:07:15] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo8-addon-l10n-fr-intrastat-product]: executing diffoscope
+[2023-05-13 07:07:15] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230511.tar.gz tmp/rapid_pe-0.1.1.dev20230513.tar.gz --markdown 20230513/r/rapid-pe/0.1.1.dev20230511-0.1.1.dev20230513/diff.md --exclude *.pyd
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo8-addon-l10n-fr-intrastat-product]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_l10n_fr_intrastat_product-8.0.2.0.0.99.dev8-py2-none-any.whl.zip tmp/odoo8_addon_l10n_fr_intrastat_product-8.0.2.0.0.99.dev9-py2-none-any.whl.zip --markdown 20230513/o/odoo8-addon-l10n-fr-intrastat-product/8.0.2.0.0.99.dev8-8.0.2.0.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: Downloading https://files.pythonhosted.org/packages/0b/e4/5f522e94c6f51960cdeaa6255c79bc12db3f6893b1d47c58a82186e4b5d6/odoo_addon_l10n_fr_ecotaxe-15.0.1.0.0.9-py3-none-any.whl
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo8-addon-l10n-fr-intrastat-service]: Downloading https://files.pythonhosted.org/packages/33/72/dacfdda5f88d064c2158b403106468aa2a675fab9c9f256d5d4988fc0058/odoo8_addon_l10n_fr_intrastat_service-8.0.2.0.0.99.dev9-py2-none-any.whl
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo8-addon-l10n-fr-ecotaxe]: Downloading https://files.pythonhosted.org/packages/26/fa/a2676a3f8337adec55f347482564885afb6b38e6c8ece3f51c72027b49c9/odoo8_addon_l10n_fr_ecotaxe-8.0.0.1.0.99.dev9-py2-none-any.whl
+[2023-05-13 07:07:15] INFO root fetch - processPackages [tflite-runtime-nightly]: Downloading https://files.pythonhosted.org/packages/a3/54/531fb5a1604eedaec0b2b13a969ff69724b581c5b4dd999d109b6f464d0b/tflite_runtime_nightly-2.14.0.dev20230512-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: executing diffoscope
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo-addon-l10n-fr-ecotaxe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_fr_ecotaxe-15.0.1.0.0.8-py3-none-any.whl.zip tmp/odoo_addon_l10n_fr_ecotaxe-15.0.1.0.0.9-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-l10n-fr-ecotaxe/15.0.1.0.0.8-15.0.1.0.0.9/diff.md --exclude *.pyd
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo8-addon-l10n-fr-intrastat-service]: executing diffoscope
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo8-addon-l10n-fr-intrastat-service]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_l10n_fr_intrastat_service-8.0.2.0.0.99.dev8-py2-none-any.whl.zip tmp/odoo8_addon_l10n_fr_intrastat_service-8.0.2.0.0.99.dev9-py2-none-any.whl.zip --markdown 20230513/o/odoo8-addon-l10n-fr-intrastat-service/8.0.2.0.0.99.dev8-8.0.2.0.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo8-addon-l10n-fr-ecotaxe]: executing diffoscope
+[2023-05-13 07:07:15] INFO root fetch - processPackages [odoo8-addon-l10n-fr-ecotaxe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_l10n_fr_ecotaxe-8.0.0.1.0.99.dev8-py2-none-any.whl.zip tmp/odoo8_addon_l10n_fr_ecotaxe-8.0.0.1.0.99.dev9-py2-none-any.whl.zip --markdown 20230513/o/odoo8-addon-l10n-fr-ecotaxe/8.0.0.1.0.99.dev8-8.0.0.1.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-13 07:07:15] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-05-13 07:07:15] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230510-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230512-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230513/t/tflite-runtime-nightly/2.14.0.dev20230510-2.14.0.dev20230512/diff.md --exclude *.pyd
+[2023-05-13 07:07:16] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-13 07:07:16] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-fr-intrastat-product]: success
+[2023-05-13 07:07:17] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-fr-ecotaxe]: success
+[2023-05-13 07:07:17] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-13 07:07:17] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-fr-intrastat-service]: success
+[2023-05-13 07:07:17] INFO root fetch - main [MainThread]: End processing [odoo8-addon-l10n-fr-ecotaxe]: success
+[2023-05-13 07:07:47] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-13 07:07:48] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-05-13 07:07:48] INFO root fetch - main [MainThread]: Store serial: [18087932]
