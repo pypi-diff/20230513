@@ -14010,3 +14010,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:58:30] INFO root fetch - processPackages [syslog-ng-cfg-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syslog_ng_cfg_helper-1.0.2.tar.gz tmp/syslog_ng_cfg_helper-1.0.3.tar.gz --markdown 20230513/s/syslog-ng-cfg-helper/1.0.2-1.0.3/diff.md --exclude *.pyd
 [2023-05-13 22:58:31] INFO root fetch - main [MainThread]: End processing [syslog-ng-cfg-helper]: success
 [2023-05-13 22:58:31] INFO root fetch - main [MainThread]: Store serial: [18093089]
+[2023-05-13 23:03:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093089]
+[2023-05-13 23:03:40] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 23:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: syslog-ng-cfg-helper
+[2023-05-13 23:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dufuz
+[2023-05-13 23:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MyConnect-SQL
+[2023-05-13 23:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: elasticityproject
+[2023-05-13 23:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrecdp
+[2023-05-13 23:03:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-simple-backup
+[2023-05-13 23:03:40] INFO root fetch - processPackages [elasticityproject]: New version: [0.1.1.3] Old Version: [0.1.1.1]
+[2023-05-13 23:03:40] INFO root fetch - processPackages [django-simple-backup]: New version: [2.0] Old Version: [1.2]
+[2023-05-13 23:03:40] INFO root fetch - processPackages [dufuz]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-13 23:03:40] INFO root fetch - processPackages [syslog-ng-cfg-helper]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-13 23:03:40] INFO root fetch - processPackages [pyrecdp]: New version: [1.0.1b202305131] Old Version: [1.0.1b202304251]
+[2023-05-13 23:03:40] INFO root fetch - processPackages [MyConnect-SQL]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 23:03:40] INFO root fetch - processPackages [elasticityproject]: Downloading https://files.pythonhosted.org/packages/57/d5/c609cc22b679d418a14ed58d687fa65bbd89d62d82f5e4af19e9371ca930/elasticityproject-0.1.1.1.tar.gz
+[2023-05-13 23:03:40] INFO root fetch - processPackages [MyConnect-SQL]: Downloading https://files.pythonhosted.org/packages/9d/34/899aa5b0841b15b384893c440e260c45ba081d57460281bfa6d4e0e04313/MyConnect%20-%20SQL-1.0.1.tar.gz
+[2023-05-13 23:03:40] INFO root fetch - processPackages [dufuz]: Downloading https://files.pythonhosted.org/packages/e3/b7/9cc337122066a69920f4d6eb3d1acef279ce4eb79b0318c7c54863fdf5af/dufuz-0.1.3-py3-none-any.whl
+[2023-05-13 23:03:40] INFO root fetch - processPackages [syslog-ng-cfg-helper]: Downloading https://files.pythonhosted.org/packages/0e/3e/b0076f28ce6ed649914905822ef6396b72cd17964ae82b528672f0bec2c2/syslog_ng_cfg_helper-1.0.4.tar.gz
+[2023-05-13 23:03:40] INFO root fetch - processPackages [django-simple-backup]: executing diffoscope
+[2023-05-13 23:03:40] INFO root fetch - processPackages [django-simple-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-simple-backup-1.2.tar.gz tmp/django-simple-backup-2.0.tar.gz --markdown 20230513/d/django-simple-backup/1.2-2.0/diff.md --exclude *.pyd
+[2023-05-13 23:03:40] INFO root fetch - processPackages [pyrecdp]: executing diffoscope
+[2023-05-13 23:03:40] INFO root fetch - processPackages [pyrecdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrecdp-1.0.1b202304251.tar.gz tmp/pyrecdp-1.0.1b202305131.tar.gz --markdown 20230513/p/pyrecdp/1.0.1b202304251-1.0.1b202305131/diff.md --exclude *.pyd
+[2023-05-13 23:03:40] INFO root fetch - processPackages [syslog-ng-cfg-helper]: executing diffoscope
+[2023-05-13 23:03:40] INFO root fetch - processPackages [syslog-ng-cfg-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syslog_ng_cfg_helper-1.0.3.tar.gz tmp/syslog_ng_cfg_helper-1.0.4.tar.gz --markdown 20230513/s/syslog-ng-cfg-helper/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-13 23:03:40] INFO root fetch - processPackages [MyConnect-SQL]: Downloading https://files.pythonhosted.org/packages/7c/86/97e1316a2d8c49050a21c252ad99f9d77f9847a5212ce864d471b426e1e0/MyConnect%20-%20SQL-1.0.2.tar.gz
+[2023-05-13 23:03:40] INFO root fetch - processPackages [dufuz]: Downloading https://files.pythonhosted.org/packages/82/00/ad1082a057fcbd1d66c2707fd9e337d1f5a2899dbc677f7fef849881f67f/dufuz-0.1.4-py3-none-any.whl
+[2023-05-13 23:03:40] INFO root fetch - processPackages [MyConnect-SQL]: executing diffoscope
+[2023-05-13 23:03:40] INFO root fetch - processPackages [MyConnect-SQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyConnect - SQL-1.0.1.tar.gz tmp/MyConnect - SQL-1.0.2.tar.gz --markdown 20230513/M/MyConnect-SQL/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 23:03:40] INFO root fetch - processPackages [elasticityproject]: Downloading https://files.pythonhosted.org/packages/36/b7/e6947f67db35accbbe57e66543f2d715c1dfb53b661408394b51c1e6c873/elasticityproject-0.1.1.3.tar.gz
+[2023-05-13 23:03:40] INFO root fetch - processPackages [dufuz]: executing diffoscope
+[2023-05-13 23:03:40] INFO root fetch - processPackages [dufuz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dufuz-0.1.3-py3-none-any.whl.zip tmp/dufuz-0.1.4-py3-none-any.whl.zip --markdown 20230513/d/dufuz/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-13 23:03:41] INFO root fetch - processPackages [elasticityproject]: executing diffoscope
+[2023-05-13 23:03:41] INFO root fetch - processPackages [elasticityproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elasticityproject-0.1.1.1.tar.gz tmp/elasticityproject-0.1.1.3.tar.gz --markdown 20230513/e/elasticityproject/0.1.1.1-0.1.1.3/diff.md --exclude *.pyd
+[2023-05-13 23:03:42] INFO root fetch - main [MainThread]: End processing [django-simple-backup]: success
+[2023-05-13 23:03:42] INFO root fetch - main [MainThread]: End processing [MyConnect-SQL]: success
+[2023-05-13 23:03:42] INFO root fetch - main [MainThread]: End processing [elasticityproject]: success
+[2023-05-13 23:03:42] INFO root fetch - main [MainThread]: End processing [dufuz]: success
+[2023-05-13 23:03:43] INFO root fetch - main [MainThread]: End processing [syslog-ng-cfg-helper]: success
+[2023-05-13 23:03:43] INFO root fetch - main [MainThread]: End processing [pyrecdp]: success
+[2023-05-13 23:03:43] INFO root fetch - main [MainThread]: Store serial: [18093115]
