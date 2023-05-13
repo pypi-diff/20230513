@@ -13760,3 +13760,87 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:31:21] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
 [2023-05-13 22:31:52] INFO root fetch - main [MainThread]: End processing [pystrom]: success
 [2023-05-13 22:31:52] INFO root fetch - main [MainThread]: Store serial: [18092878]
+[2023-05-13 22:36:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092878]
+[2023-05-13 22:37:01] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prelude-sdk
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prelude-cli
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyHaier
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ffcount
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: apidevtools
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyvantage
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: syslog-ng-cfg-helper
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apidevtools
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: khipu-metabolomics
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tigerblog
+[2023-05-13 22:37:01] INFO root fetch - processPackages [prelude-sdk]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [PyHaier]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [apidevtools]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [tigerblog]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [syslog-ng-cfg-helper]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [pyvantage]: New version: [0.0.45] Old Version: [0.0.44]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [prelude-cli]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ffcount]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [khipu-metabolomics]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [apidevtools]: New version: [3.2.9] Old Version: [3.2.8]
+[2023-05-13 22:37:01] INFO root fetch - processPackages [tigerblog]: Downloading https://files.pythonhosted.org/packages/42/0e/1f2dde43da9c4c7973134466f8aa0cacad5d4ce2aaa2d7a8b54eac61c6a1/tigerblog-0.1.0.tar.gz
+[2023-05-13 22:37:01] INFO root fetch - processPackages [apidevtools]: Downloading https://files.pythonhosted.org/packages/51/7a/a5f1de80cca2f946cca781b54a909e1f2a148939c9b8a0cd681d5c01e795/apidevtools-3.2.8.tar.gz
+[2023-05-13 22:37:01] INFO root fetch - processPackages [apidevtools]: Downloading https://files.pythonhosted.org/packages/51/7a/a5f1de80cca2f946cca781b54a909e1f2a148939c9b8a0cd681d5c01e795/apidevtools-3.2.8.tar.gz
+[2023-05-13 22:37:01] INFO root fetch - processPackages [syslog-ng-cfg-helper]: Downloading https://files.pythonhosted.org/packages/ef/bb/1211cea42ac85145f063b94aa6bb3cd68a04e28e1b92e9476e5b652272fa/syslog_ng_cfg_helper-1.0.1.tar.gz
+[2023-05-13 22:37:01] INFO root fetch - processPackages [PyHaier]: Downloading https://files.pythonhosted.org/packages/3e/e2/78718601e492d9721a81521d609fa91682c9359a28db0afdf9ffb8886bd5/PyHaier-0.1.9.tar.gz
+[2023-05-13 22:37:01] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/e2/55/4dc6635a5f5723cb6d4c745a4e5943756eb97d4b1227c5e33e9fc2a5c2a0/pyvantage-0.0.45.tar.gz
+[2023-05-13 22:37:01] INFO root fetch - processPackages [ffcount]: Downloading https://files.pythonhosted.org/packages/3a/a9/d725482760e69807853729b1619c58f8aa7a41898b93d272de3a77de0e10/ffcount-0.2.1.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [khipu-metabolomics]: Downloading https://files.pythonhosted.org/packages/65/c3/8f8ba064217412a2f2e85a35c3b76e94866761b013ee47ac2f80f76b3870/khipu-metabolomics-0.6.0.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [prelude-sdk]: Downloading https://files.pythonhosted.org/packages/70/ee/e450768b665c4d0a949a206b2daf991be1f904992cf79f0ed5b04133b7bc/prelude-sdk-1.1.1.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [syslog-ng-cfg-helper]: Downloading https://files.pythonhosted.org/packages/93/7e/900a56d5612d66628fa476272e6488b6a44fcdcb2872f9d3ffdeb2601abb/syslog_ng_cfg_helper-1.0.2.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [pyvantage]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [pyvantage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvantage-0.0.44.tar.gz tmp/pyvantage-0.0.45.tar.gz --markdown 20230513/p/pyvantage/0.0.44-0.0.45/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [PyHaier]: Downloading https://files.pythonhosted.org/packages/ec/3d/25cc8337aa7e10129fe301bdf4059b0e83674f2ec00f04fb61c9c11801b0/PyHaier-0.2.0.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [prelude-cli]: Downloading https://files.pythonhosted.org/packages/1d/fe/15e42bd336646f2b7557fbd94278dab52e59faa9beb2e96af4faf49e6fad/prelude-cli-1.1.1.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [apidevtools]: Downloading https://files.pythonhosted.org/packages/a2/2c/ba03813c08912e31c814c1f6eed67287d290bb825bdb5f413e973c3a55fd/apidevtools-3.2.9.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [tigerblog]: Downloading https://files.pythonhosted.org/packages/e9/67/152738ba28df382078e4b6fb34f59107e89fa5c47902573164a5e1c92142/tigerblog-0.1.1.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [syslog-ng-cfg-helper]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [syslog-ng-cfg-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syslog_ng_cfg_helper-1.0.1.tar.gz tmp/syslog_ng_cfg_helper-1.0.2.tar.gz --markdown 20230513/s/syslog-ng-cfg-helper/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [apidevtools]: Downloading https://files.pythonhosted.org/packages/a2/2c/ba03813c08912e31c814c1f6eed67287d290bb825bdb5f413e973c3a55fd/apidevtools-3.2.9.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [apidevtools]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [apidevtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apidevtools-3.2.8.tar.gz tmp/apidevtools-3.2.9.tar.gz --markdown 20230513/a/apidevtools/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [tigerblog]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [tigerblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tigerblog-0.1.0.tar.gz tmp/tigerblog-0.1.1.tar.gz --markdown 20230513/t/tigerblog/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [prelude-sdk]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [prelude-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prelude-sdk-1.1.0.tar.gz tmp/prelude-sdk-1.1.1.tar.gz --markdown 20230513/p/prelude-sdk/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [apidevtools]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [apidevtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apidevtools-3.2.8.tar.gz tmp/apidevtools-3.2.9.tar.gz --markdown 20230513/a/apidevtools/3.2.8-3.2.9/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [PyHaier]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [PyHaier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyHaier-0.1.9.tar.gz tmp/PyHaier-0.2.0.tar.gz --markdown 20230513/P/PyHaier/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [prelude-cli]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [prelude-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prelude-cli-1.1.0.tar.gz tmp/prelude-cli-1.1.1.tar.gz --markdown 20230513/p/prelude-cli/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [khipu-metabolomics]: Downloading https://files.pythonhosted.org/packages/2a/7d/183f503cedd7db2a9c6d865aac4ca5590ccb18c6ccc2b80579051ca9f32b/khipu-metabolomics-0.7.0.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [ffcount]: Downloading https://files.pythonhosted.org/packages/7e/bf/7f8106a240ec7be1f127fcceb6f15286e5bce8c8eadc78bee0c138a83f6c/ffcount-0.2.2.tar.gz
+[2023-05-13 22:37:02] INFO root fetch - processPackages [ffcount]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [ffcount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ffcount-0.2.1.tar.gz tmp/ffcount-0.2.2.tar.gz --markdown 20230513/f/ffcount/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-13 22:37:02] INFO root fetch - processPackages [khipu-metabolomics]: executing diffoscope
+[2023-05-13 22:37:02] INFO root fetch - processPackages [khipu-metabolomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/khipu-metabolomics-0.6.0.tar.gz tmp/khipu-metabolomics-0.7.0.tar.gz --markdown 20230513/k/khipu-metabolomics/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-13 22:37:03] INFO root fetch - processPackages [tigerblog]: Start processing: pymultiastar
+[2023-05-13 22:37:03] INFO root fetch - main [MainThread]: End processing [tigerblog]: success
+[2023-05-13 22:37:04] INFO root fetch - processPackages [pymultiastar]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-13 22:37:04] INFO root fetch - processPackages [pymultiastar]: Downloading https://files.pythonhosted.org/packages/e7/5a/16ed5d12cf420f5cf8bb5721839db01b279d5a7a60e78bb2339fb3c93107/pymultiastar-0.0.6.tar.gz
+[2023-05-13 22:37:04] INFO root fetch - processPackages [PyHaier]: Start processing: xeauth
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [PyHaier]: success
+[2023-05-13 22:37:04] INFO root fetch - processPackages [xeauth]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [prelude-cli]: success
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [apidevtools]: success
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [prelude-sdk]: success
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [khipu-metabolomics]: success
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [ffcount]: success
+[2023-05-13 22:37:04] INFO root fetch - processPackages [xeauth]: Downloading https://files.pythonhosted.org/packages/39/36/8abc3afed71413e912870db56537f6ecc52ca64360945144f50625f5d042/xeauth-0.1.9.tar.gz
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [apidevtools]: success
+[2023-05-13 22:37:04] INFO root fetch - main [MainThread]: End processing [syslog-ng-cfg-helper]: success
+[2023-05-13 22:37:04] INFO root fetch - processPackages [xeauth]: Downloading https://files.pythonhosted.org/packages/48/27/04d91d12aaf445eaebf40172bd0064d5f0dbd3fb3dbf0fb3cc85c28655c6/xeauth-0.2.0.tar.gz
+[2023-05-13 22:37:05] INFO root fetch - processPackages [xeauth]: executing diffoscope
+[2023-05-13 22:37:05] INFO root fetch - processPackages [xeauth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xeauth-0.1.9.tar.gz tmp/xeauth-0.2.0.tar.gz --markdown 20230513/x/xeauth/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 22:37:05] INFO root fetch - processPackages [pymultiastar]: Downloading https://files.pythonhosted.org/packages/c9/1a/7dc207159fea7548714278676cf82abb8267b981748f6eaa958637daeb90/pymultiastar-0.0.7.tar.gz
+[2023-05-13 22:37:06] INFO root fetch - main [MainThread]: End processing [xeauth]: success
+[2023-05-13 22:37:07] INFO root fetch - processPackages [pymultiastar]: executing diffoscope
+[2023-05-13 22:37:07] INFO root fetch - processPackages [pymultiastar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymultiastar-0.0.6.tar.gz tmp/pymultiastar-0.0.7.tar.gz --markdown 20230513/p/pymultiastar/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-13 22:37:15] INFO root fetch - main [MainThread]: End processing [pymultiastar]: success
+[2023-05-13 22:37:15] INFO root fetch - main [MainThread]: Store serial: [18092971]
