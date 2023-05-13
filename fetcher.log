@@ -8690,3 +8690,62 @@
 [2023-05-13 13:15:30] INFO root fetch - main [MainThread]: End processing [n0struct]: success
 [2023-05-13 13:15:31] INFO root fetch - main [MainThread]: End processing [polymesh]: success
 [2023-05-13 13:15:31] INFO root fetch - main [MainThread]: Store serial: [18089669]
+[2023-05-13 13:20:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089669]
+[2023-05-13 13:20:40] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kittens-answers-core
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-tailwind-utils
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: price2bq-zfullio
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: giup
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PyTraffic
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mutwo.timeline
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bose
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: py-tailwind-utils
+[2023-05-13 13:20:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: imsholcal
+[2023-05-13 13:20:40] WARNING root fetch - processPackages [kittens-answers-core]: Skipping, unable to determine old version
+[2023-05-13 13:20:40] INFO root fetch - main [MainThread]: End processing [kittens-answers-core] error
+[2023-05-13 13:20:40] INFO root fetch - processPackages [giup]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-13 13:20:40] INFO root fetch - processPackages [py-tailwind-utils]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-13 13:20:40] INFO root fetch - processPackages [price2bq-zfullio]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-13 13:20:40] INFO root fetch - processPackages [mutwo.timeline]: New version: [0.4.0] Old Version: [0.1.0]
+[2023-05-13 13:20:40] INFO root fetch - processPackages [bose]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-13 13:20:40] INFO root fetch - processPackages [imsholcal]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-13 13:20:40] INFO root fetch - processPackages [PyTraffic]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-13 13:20:40] INFO root fetch - processPackages [py-tailwind-utils]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-13 13:20:40] INFO root fetch - processPackages [py-tailwind-utils]: Downloading https://files.pythonhosted.org/packages/9f/49/776a40bc35e7edb390ea8154bc70a5c391e41ab87d02c771d8563e2d068c/py-tailwind-utils-1.0.2.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [py-tailwind-utils]: Downloading https://files.pythonhosted.org/packages/9f/49/776a40bc35e7edb390ea8154bc70a5c391e41ab87d02c771d8563e2d068c/py-tailwind-utils-1.0.2.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [mutwo.timeline]: Downloading https://files.pythonhosted.org/packages/f0/b3/b430ab70c301052e010d1c03be3ea53b7e7b300e1b8f68828468f9556224/mutwo.timeline-0.1.0.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [imsholcal]: Downloading https://files.pythonhosted.org/packages/4b/07/2ecc0fb92f054dd0d380758d850b46721f2ae06bdf60cef97f986868e652/imsholcal-1.0.7.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [price2bq-zfullio]: Downloading https://files.pythonhosted.org/packages/49/89/314301a273b09e2fd5094210f872897febcbe2007a480fea5ac4b6440659/price2bq_zfullio-1.1.1.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [bose]: Downloading https://files.pythonhosted.org/packages/9b/06/ed25a58cf80fc31513956973ba6713cc9296dfefcb5e9e440d6c49abc1d1/bose-1.2.2.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/4b/c3/5cf4683f3255130163c6b3178890c22453fb14170a09860e0865d3cbb45b/PyTraffic-1.0.6.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [giup]: Downloading https://files.pythonhosted.org/packages/6c/94/dbcc5fa8d99aab8acc9ed26c1c438b4b1f50e881101947198ccb19e6a5ae/giup-1.1.1.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [giup]: executing diffoscope
+[2023-05-13 13:20:40] INFO root fetch - processPackages [giup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giup-1.1.0.tar.gz tmp/giup-1.1.1.tar.gz --markdown 20230513/g/giup/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-13 13:20:40] INFO root fetch - processPackages [bose]: executing diffoscope
+[2023-05-13 13:20:40] INFO root fetch - processPackages [bose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bose-1.2.1.tar.gz tmp/bose-1.2.2.tar.gz --markdown 20230513/b/bose/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-13 13:20:40] INFO root fetch - processPackages [PyTraffic]: executing diffoscope
+[2023-05-13 13:20:40] INFO root fetch - processPackages [PyTraffic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTraffic-1.0.5.tar.gz tmp/PyTraffic-1.0.6.tar.gz --markdown 20230513/P/PyTraffic/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-13 13:20:40] INFO root fetch - processPackages [py-tailwind-utils]: Downloading https://files.pythonhosted.org/packages/e4/9b/bef920d83034bcefc0124f64b0b4e13e1fa4e30019828a54d1afbee0277f/py-tailwind-utils-1.0.3.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [py-tailwind-utils]: Downloading https://files.pythonhosted.org/packages/e4/9b/bef920d83034bcefc0124f64b0b4e13e1fa4e30019828a54d1afbee0277f/py-tailwind-utils-1.0.3.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [imsholcal]: Downloading https://files.pythonhosted.org/packages/24/ad/8707a7af2660ab5eefaf1d6b3777906257d6ee45f7ffcb84c49791b82c03/imsholcal-1.0.8.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [price2bq-zfullio]: Downloading https://files.pythonhosted.org/packages/d2/ff/588acb097057e586e87fbb755126cf94d68911560e69691d070932ad41f1/price2bq_zfullio-1.2.0.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [mutwo.timeline]: Downloading https://files.pythonhosted.org/packages/39/a9/32a4b3f35731fdc4c16146ef76c8e54412ae81578e85bb517f23c65d1cf6/mutwo.timeline-0.4.0.tar.gz
+[2023-05-13 13:20:40] INFO root fetch - processPackages [imsholcal]: executing diffoscope
+[2023-05-13 13:20:40] INFO root fetch - processPackages [imsholcal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imsholcal-1.0.7.tar.gz tmp/imsholcal-1.0.8.tar.gz --markdown 20230513/i/imsholcal/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-13 13:20:41] INFO root fetch - processPackages [py-tailwind-utils]: executing diffoscope
+[2023-05-13 13:20:41] INFO root fetch - processPackages [py-tailwind-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-tailwind-utils-1.0.2.tar.gz tmp/py-tailwind-utils-1.0.3.tar.gz --markdown 20230513/p/py-tailwind-utils/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-13 13:20:41] INFO root fetch - processPackages [py-tailwind-utils]: executing diffoscope
+[2023-05-13 13:20:41] INFO root fetch - processPackages [py-tailwind-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-tailwind-utils-1.0.2.tar.gz tmp/py-tailwind-utils-1.0.3.tar.gz --markdown 20230513/p/py-tailwind-utils/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-13 13:20:41] INFO root fetch - processPackages [price2bq-zfullio]: executing diffoscope
+[2023-05-13 13:20:41] INFO root fetch - processPackages [price2bq-zfullio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/price2bq_zfullio-1.1.1.tar.gz tmp/price2bq_zfullio-1.2.0.tar.gz --markdown 20230513/p/price2bq-zfullio/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-13 13:20:41] INFO root fetch - processPackages [mutwo.timeline]: executing diffoscope
+[2023-05-13 13:20:41] INFO root fetch - processPackages [mutwo.timeline]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutwo.timeline-0.1.0.tar.gz tmp/mutwo.timeline-0.4.0.tar.gz --markdown 20230513/m/mutwo.timeline/0.1.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: End processing [giup]: success
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: End processing [PyTraffic]: success
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: End processing [bose]: success
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: End processing [imsholcal]: success
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: End processing [price2bq-zfullio]: success
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: End processing [py-tailwind-utils]: success
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: End processing [py-tailwind-utils]: success
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: End processing [mutwo.timeline]: success
+[2023-05-13 13:20:42] INFO root fetch - main [MainThread]: Store serial: [18089700]
