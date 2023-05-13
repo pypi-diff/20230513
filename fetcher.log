@@ -4717,3 +4717,44 @@
 [2023-05-13 06:04:45] INFO root fetch - main [MainThread]: End processing [fyers-token-manager-v2]: success
 [2023-05-13 06:04:45] INFO root fetch - main [MainThread]: End processing [worktoy]: success
 [2023-05-13 06:04:45] INFO root fetch - main [MainThread]: Store serial: [18087585]
+[2023-05-13 06:09:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087585]
+[2023-05-13 06:09:53] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 06:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo13-addon-ddmrp
+[2023-05-13 06:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo13-addon-ddmrp-history
+[2023-05-13 06:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: heaserver
+[2023-05-13 06:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gyver
+[2023-05-13 06:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odc-stac
+[2023-05-13 06:09:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: landingai
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odoo13-addon-ddmrp]: New version: [13.0.1.9.1.dev1] Old Version: [13.0.1.9.0]
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odoo13-addon-ddmrp-history]: New version: [13.0.1.3.0] Old Version: [13.0.1.2.0]
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odc-stac]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-13 06:09:53] INFO root fetch - processPackages [landingai]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-13 06:09:53] INFO root fetch - processPackages [gyver]: New version: [2.1.0] Old Version: [2.0.8]
+[2023-05-13 06:09:53] INFO root fetch - processPackages [heaserver]: New version: [1.0.0a99] Old Version: [1.0.0a98]
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odoo13-addon-ddmrp]: executing diffoscope
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odoo13-addon-ddmrp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_ddmrp-13.0.1.9.0-py3-none-any.whl.zip tmp/odoo13_addon_ddmrp-13.0.1.9.1.dev1-py3-none-any.whl.zip --markdown 20230513/o/odoo13-addon-ddmrp/13.0.1.9.0-13.0.1.9.1.dev1/diff.md --exclude *.pyd
+[2023-05-13 06:09:53] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2023-05-13 06:09:53] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.0.0a98.tar.gz tmp/heaserver-1.0.0a99.tar.gz --markdown 20230513/h/heaserver/1.0.0a98-1.0.0a99/diff.md --exclude *.pyd
+[2023-05-13 06:09:53] INFO root fetch - processPackages [gyver]: Downloading https://files.pythonhosted.org/packages/c9/03/32607fd227f5463beed5f93bb92a4cb0c3bb2a522f85e9a390f20bcd90e0/gyver-2.0.8.tar.gz
+[2023-05-13 06:09:53] INFO root fetch - processPackages [landingai]: Downloading https://files.pythonhosted.org/packages/91/e3/cac00a99aa3d10a86312f99cf89ec2583e26f46ee4b14738b49a410d3ead/landingai-0.0.6.tar.gz
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odc-stac]: Downloading https://files.pythonhosted.org/packages/bb/a4/bd9a6b6dde87d42bf689868a57342b1d2c4b14c59685716678bfc6c26f2f/odc-stac-0.3.5.tar.gz
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odoo13-addon-ddmrp-history]: Downloading https://files.pythonhosted.org/packages/5a/43/97910373326de417fd70ab6790b83fd814b35696af9a252a31c58c6f061b/odoo13_addon_ddmrp_history-13.0.1.2.0-py3-none-any.whl
+[2023-05-13 06:09:53] INFO root fetch - processPackages [landingai]: Downloading https://files.pythonhosted.org/packages/24/85/41de202cb57658583318c807ea79fedd058c090462f950346d7677af0cfb/landingai-0.0.7.tar.gz
+[2023-05-13 06:09:53] INFO root fetch - processPackages [gyver]: Downloading https://files.pythonhosted.org/packages/82/f4/e8e80a23d7666af2b90019fe2f6ca53ebc4d6eb9d0dd2e6e3f8f4158ace0/gyver-2.1.0.tar.gz
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odc-stac]: Downloading https://files.pythonhosted.org/packages/1b/e5/cfdee2a7174dd25f601391c1c492d6f3e045d46845118907b18eaddd57c7/odc-stac-0.3.6.tar.gz
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odoo13-addon-ddmrp-history]: Downloading https://files.pythonhosted.org/packages/b4/d5/8c5c5ae69cf02a86d86b44c9956be8bad088814924a11f863e6f7f9621dd/odoo13_addon_ddmrp_history-13.0.1.3.0-py3-none-any.whl
+[2023-05-13 06:09:53] INFO root fetch - processPackages [gyver]: executing diffoscope
+[2023-05-13 06:09:53] INFO root fetch - processPackages [gyver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gyver-2.0.8.tar.gz tmp/gyver-2.1.0.tar.gz --markdown 20230513/g/gyver/2.0.8-2.1.0/diff.md --exclude *.pyd
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odoo13-addon-ddmrp-history]: executing diffoscope
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odoo13-addon-ddmrp-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_ddmrp_history-13.0.1.2.0-py3-none-any.whl.zip tmp/odoo13_addon_ddmrp_history-13.0.1.3.0-py3-none-any.whl.zip --markdown 20230513/o/odoo13-addon-ddmrp-history/13.0.1.2.0-13.0.1.3.0/diff.md --exclude *.pyd
+[2023-05-13 06:09:53] INFO root fetch - processPackages [odc-stac]: executing diffoscope
+[2023-05-13 06:09:54] INFO root fetch - processPackages [odc-stac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odc-stac-0.3.5.tar.gz tmp/odc-stac-0.3.6.tar.gz --markdown 20230513/o/odc-stac/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-13 06:09:54] INFO root fetch - processPackages [landingai]: executing diffoscope
+[2023-05-13 06:09:54] INFO root fetch - processPackages [landingai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/landingai-0.0.6.tar.gz tmp/landingai-0.0.7.tar.gz --markdown 20230513/l/landingai/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-13 06:09:55] INFO root fetch - main [MainThread]: End processing [odoo13-addon-ddmrp-history]: success
+[2023-05-13 06:09:55] INFO root fetch - main [MainThread]: End processing [landingai]: success
+[2023-05-13 06:09:55] INFO root fetch - main [MainThread]: End processing [odoo13-addon-ddmrp]: success
+[2023-05-13 06:09:55] INFO root fetch - main [MainThread]: End processing [odc-stac]: success
+[2023-05-13 06:09:55] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2023-05-13 06:09:55] INFO root fetch - main [MainThread]: End processing [gyver]: success
+[2023-05-13 06:09:55] INFO root fetch - main [MainThread]: Store serial: [18087601]
