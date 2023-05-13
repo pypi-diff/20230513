@@ -13939,3 +13939,59 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:47:39] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
 [2023-05-13 22:48:09] INFO root fetch - main [MainThread]: End processing [tigerblog]: success
 [2023-05-13 22:48:09] INFO root fetch - main [MainThread]: Store serial: [18093034]
+[2023-05-13 22:53:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093034]
+[2023-05-13 22:53:18] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aionotion
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: svs-dataset-downloader
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asynczipstream
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jms-metabolite-services
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tigerblog
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rebuff
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: beewi-smartclim-ble
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: colortag
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: chia-dev-tools
+[2023-05-13 22:53:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hashedcolls
+[2023-05-13 22:53:18] INFO root fetch - processPackages [aionotion]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-05-13 22:53:18] INFO root fetch - processPackages [asynczipstream]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 22:53:18] WARNING root fetch - processPackages [beewi-smartclim-ble]: Skipping, unable to determine old version
+[2023-05-13 22:53:18] WARNING root fetch - processPackages [svs-dataset-downloader]: Skipping, unable to determine old version
+[2023-05-13 22:53:18] INFO root fetch - main [MainThread]: End processing [beewi-smartclim-ble] error
+[2023-05-13 22:53:18] INFO root fetch - main [MainThread]: End processing [svs-dataset-downloader] error
+[2023-05-13 22:53:18] INFO root fetch - processPackages [jms-metabolite-services]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-05-13 22:53:18] WARNING root fetch - processPackages [colortag]: Skipping, unable to determine old version
+[2023-05-13 22:53:18] INFO root fetch - main [MainThread]: End processing [colortag] error
+[2023-05-13 22:53:18] INFO root fetch - processPackages [rebuff]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 22:53:18] INFO root fetch - processPackages [tigerblog]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-13 22:53:18] INFO root fetch - processPackages [hashedcolls]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-13 22:53:18] INFO root fetch - processPackages [chia-dev-tools]: New version: [1.2.0] Old Version: [1.1.5]
+[2023-05-13 22:53:18] INFO root fetch - processPackages [asynczipstream]: Downloading https://files.pythonhosted.org/packages/1a/72/26225e7dcec13c8d7958bd481dab37e8b39f88f15c0d2c2dadfcc0a5e88c/asynczipstream-1.0.0.tar.gz
+[2023-05-13 22:53:18] INFO root fetch - processPackages [jms-metabolite-services]: Downloading https://files.pythonhosted.org/packages/4e/60/604dea311129b8d9f96df62362aa67ab919fd3f9577bad6a57aef8e493a0/jms-metabolite-services-0.5.6.tar.gz
+[2023-05-13 22:53:18] INFO root fetch - processPackages [tigerblog]: Downloading https://files.pythonhosted.org/packages/36/dc/1b68cacab840dfc712fae7e38f483f0cd7ab4efddcfc5b7538339c1d636f/tigerblog-0.1.3.tar.gz
+[2023-05-13 22:53:18] INFO root fetch - processPackages [rebuff]: Downloading https://files.pythonhosted.org/packages/fc/1b/2a5eb2dc9704d8527bb3e7c91e864468f16c958eb24db675a7301b2d088a/rebuff-0.0.1.tar.gz
+[2023-05-13 22:53:18] INFO root fetch - processPackages [tigerblog]: executing diffoscope
+[2023-05-13 22:53:18] INFO root fetch - processPackages [tigerblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tigerblog-0.1.2.tar.gz tmp/tigerblog-0.1.3.tar.gz --markdown 20230513/t/tigerblog/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-13 22:53:18] INFO root fetch - processPackages [hashedcolls]: Downloading https://files.pythonhosted.org/packages/31/e9/2e88d50aafe3d2a1b80144c976b331860854c2030f6ba89e7d93d14eec91/hashedcolls-1.1.0-py3-none-any.whl
+[2023-05-13 22:53:18] INFO root fetch - processPackages [chia-dev-tools]: Downloading https://files.pythonhosted.org/packages/74/3e/7af369bef59e329be05c4b8698cb023af427127b41dc0f0c37ff6ccf7c94/chia_dev_tools-1.1.5.tar.gz
+[2023-05-13 22:53:18] WARNING root fetch - processPackages [chia-dev-tools]: Skipping package: exceeds size limit 23476232>=10485760
+[2023-05-13 22:53:18] INFO root fetch - main [MainThread]: End processing [chia-dev-tools] error
+[2023-05-13 22:53:18] INFO root fetch - processPackages [aionotion]: executing diffoscope
+[2023-05-13 22:53:18] INFO root fetch - processPackages [aionotion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aionotion-3.0.1.tar.gz tmp/aionotion-3.0.2.tar.gz --markdown 20230513/a/aionotion/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-05-13 22:53:18] INFO root fetch - processPackages [asynczipstream]: Downloading https://files.pythonhosted.org/packages/df/c4/3d094bc654226c0a7eac6c519d75e819e8743458a8e7dbb4b1d00d932f4e/asynczipstream-1.0.1.tar.gz
+[2023-05-13 22:53:18] INFO root fetch - processPackages [rebuff]: Downloading https://files.pythonhosted.org/packages/72/53/b0fa2086490938c6ddccbc727f385a8878113a9bf92991e79896f36c4267/rebuff-0.0.2.tar.gz
+[2023-05-13 22:53:18] INFO root fetch - processPackages [asynczipstream]: executing diffoscope
+[2023-05-13 22:53:18] INFO root fetch - processPackages [asynczipstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asynczipstream-1.0.0.tar.gz tmp/asynczipstream-1.0.1.tar.gz --markdown 20230513/a/asynczipstream/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 22:53:18] INFO root fetch - processPackages [rebuff]: executing diffoscope
+[2023-05-13 22:53:18] INFO root fetch - processPackages [rebuff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rebuff-0.0.1.tar.gz tmp/rebuff-0.0.2.tar.gz --markdown 20230513/r/rebuff/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 22:53:18] INFO root fetch - processPackages [hashedcolls]: Downloading https://files.pythonhosted.org/packages/79/48/b0bc375bdbe9fe8896b950974f0dccc47c2dfa6deae66e150ff8ae3c9d71/hashedcolls-1.1.1-py3-none-any.whl
+[2023-05-13 22:53:18] INFO root fetch - processPackages [jms-metabolite-services]: Downloading https://files.pythonhosted.org/packages/5e/e1/7bc66db9aa083ba2c8e8bb26f91b0b3949846812c667b3647217884d7ead/jms-metabolite-services-0.5.7.tar.gz
+[2023-05-13 22:53:18] INFO root fetch - processPackages [hashedcolls]: executing diffoscope
+[2023-05-13 22:53:18] INFO root fetch - processPackages [hashedcolls]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hashedcolls-1.1.0-py3-none-any.whl.zip tmp/hashedcolls-1.1.1-py3-none-any.whl.zip --markdown 20230513/h/hashedcolls/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-13 22:53:18] INFO root fetch - processPackages [jms-metabolite-services]: executing diffoscope
+[2023-05-13 22:53:18] INFO root fetch - processPackages [jms-metabolite-services]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jms-metabolite-services-0.5.6.tar.gz tmp/jms-metabolite-services-0.5.7.tar.gz --markdown 20230513/j/jms-metabolite-services/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-05-13 22:53:19] INFO root fetch - main [MainThread]: End processing [tigerblog]: success
+[2023-05-13 22:53:19] INFO root fetch - main [MainThread]: End processing [aionotion]: success
+[2023-05-13 22:53:19] INFO root fetch - main [MainThread]: End processing [rebuff]: success
+[2023-05-13 22:53:20] INFO root fetch - main [MainThread]: End processing [hashedcolls]: success
+[2023-05-13 22:53:20] INFO root fetch - main [MainThread]: End processing [asynczipstream]: success
+[2023-05-13 22:53:21] INFO root fetch - main [MainThread]: End processing [jms-metabolite-services]: success
+[2023-05-13 22:53:21] INFO root fetch - main [MainThread]: Store serial: [18093075]
