@@ -5822,3 +5822,72 @@
 [2023-05-13 07:57:56] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
 [2023-05-13 07:57:59] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
 [2023-05-13 07:57:59] INFO root fetch - main [MainThread]: Store serial: [18088135]
+[2023-05-13 08:03:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088135]
+[2023-05-13 08:03:08] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-datadog
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-kong
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-mailgun
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulumi-libvirt
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pulumi-minio
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-equinix-metal
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-confluentcloud
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: text-chunker
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bettersleepy
+[2023-05-13 08:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pulumi-hcloud
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-mailgun]: New version: [3.5.0a1683956182] Old Version: [3.5.0a1683784775]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-minio]: New version: [0.9.1a1682440158] Old Version: [0.9.1a1681933919]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-kong]: New version: [4.6.0a1683956030] Old Version: [4.6.0a1683784668]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-equinix-metal]: New version: [3.3.0a1683955758] Old Version: [3.3.0a1683784128]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [text-chunker]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [bettersleepy]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-datadog]: New version: [4.9.0a1653604828] Old Version: [4.9.0a1650908051]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-confluentcloud]: New version: [1.9.0a1675887560] Old Version: [1.9.0]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-libvirt]: New version: [0.4.1a1683956090] Old Version: [0.4.1a1683788313]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-hcloud]: New version: [1.9.0a1657117726] Old Version: [1.9.0a1654086467]
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-confluentcloud]: executing diffoscope
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-confluentcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_confluentcloud-1.9.0.tar.gz tmp/pulumi_confluentcloud-1.9.0a1675887560.tar.gz --markdown 20230513/p/pulumi-confluentcloud/1.9.0-1.9.0a1675887560/diff.md --exclude *.pyd
+[2023-05-13 08:03:08] INFO root fetch - processPackages [text-chunker]: Downloading https://files.pythonhosted.org/packages/ba/17/fbbb5fe51c7fd9413fb74413fd3b23f486ef368766044350f7b97ce8b061/text_chunker-0.1.1.tar.gz
+[2023-05-13 08:03:08] INFO root fetch - processPackages [bettersleepy]: Downloading https://files.pythonhosted.org/packages/8d/56/15dd65f6b250389aa1374f114a74b9eeda276d566ec2da7f4d8fe4aef77a/bettersleepy-0.1.0-py3.11.egg
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-hcloud]: executing diffoscope
+[2023-05-13 08:03:08] INFO root fetch - processPackages [pulumi-hcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_hcloud-1.9.0a1654086467.tar.gz tmp/pulumi_hcloud-1.9.0a1657117726.tar.gz --markdown 20230513/p/pulumi-hcloud/1.9.0a1654086467-1.9.0a1657117726/diff.md --exclude *.pyd
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-equinix-metal]: Downloading https://files.pythonhosted.org/packages/a9/19/da56a352cf27496e63b38e34c3dbc7e5ca279336026d3936561534bddafb/pulumi_equinix_metal-3.3.0a1683955758.tar.gz
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-kong]: Downloading https://files.pythonhosted.org/packages/02/86/8a4e2b95798c673fd35407211d76958c4dd3dae8bd2ba6a70b6f39e97103/pulumi_kong-4.6.0a1683956030.tar.gz
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-libvirt]: Downloading https://files.pythonhosted.org/packages/54/89/1ad4ead6a3f61fe1fdbb17a6166c8b512ebbfc1e3e715c3438ad7a1df89f/pulumi_libvirt-0.4.1a1683956090.tar.gz
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-mailgun]: Downloading https://files.pythonhosted.org/packages/f3/48/47ab17c7fd2fffc34edcb2a463223536cc56905a323c45d4c950be0a4cad/pulumi_mailgun-3.5.0a1683956182.tar.gz
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-datadog]: executing diffoscope
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_datadog-4.9.0a1650908051.tar.gz tmp/pulumi_datadog-4.9.0a1653604828.tar.gz --markdown 20230513/p/pulumi-datadog/4.9.0a1650908051-4.9.0a1653604828/diff.md --exclude *.pyd
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-equinix-metal]: executing diffoscope
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-equinix-metal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_equinix_metal-3.3.0a1683784128.tar.gz tmp/pulumi_equinix_metal-3.3.0a1683955758.tar.gz --markdown 20230513/p/pulumi-equinix-metal/3.3.0a1683784128-3.3.0a1683955758/diff.md --exclude *.pyd
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-kong]: executing diffoscope
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-kong]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kong-4.6.0a1683784668.tar.gz tmp/pulumi_kong-4.6.0a1683956030.tar.gz --markdown 20230513/p/pulumi-kong/4.6.0a1683784668-4.6.0a1683956030/diff.md --exclude *.pyd
+[2023-05-13 08:03:09] INFO root fetch - processPackages [text-chunker]: Downloading https://files.pythonhosted.org/packages/a8/86/ea3af4656db31057bd77c5da55bccbe0be59be1583935b24217b534cf616/text_chunker-0.2.1.tar.gz
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-libvirt]: executing diffoscope
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-libvirt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_libvirt-0.4.1a1683788313.tar.gz tmp/pulumi_libvirt-0.4.1a1683956090.tar.gz --markdown 20230513/p/pulumi-libvirt/0.4.1a1683788313-0.4.1a1683956090/diff.md --exclude *.pyd
+[2023-05-13 08:03:09] INFO root fetch - processPackages [bettersleepy]: Downloading https://files.pythonhosted.org/packages/30/a8/ad76d53529fcbea0c993f817b5a1f0a2be523abf5780e0acfb2336866c7a/bettersleepy-0.1.1-py3.11.egg
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-minio]: executing diffoscope
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-minio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_minio-0.9.1a1681933919.tar.gz tmp/pulumi_minio-0.9.1a1682440158.tar.gz --markdown 20230513/p/pulumi-minio/0.9.1a1681933919-0.9.1a1682440158/diff.md --exclude *.pyd
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-mailgun]: executing diffoscope
+[2023-05-13 08:03:09] INFO root fetch - processPackages [pulumi-mailgun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_mailgun-3.5.0a1683784775.tar.gz tmp/pulumi_mailgun-3.5.0a1683956182.tar.gz --markdown 20230513/p/pulumi-mailgun/3.5.0a1683784775-3.5.0a1683956182/diff.md --exclude *.pyd
+[2023-05-13 08:03:09] INFO root fetch - processPackages [text-chunker]: executing diffoscope
+[2023-05-13 08:03:09] INFO root fetch - processPackages [text-chunker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text_chunker-0.1.1.tar.gz tmp/text_chunker-0.2.1.tar.gz --markdown 20230513/t/text-chunker/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-05-13 08:03:09] INFO root fetch - processPackages [bettersleepy]: executing diffoscope
+[2023-05-13 08:03:09] INFO root fetch - processPackages [bettersleepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettersleepy-0.1.0-py3.11.egg tmp/bettersleepy-0.1.1-py3.11.egg --markdown 20230513/b/bettersleepy/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 08:03:11] INFO root fetch - processPackages [pulumi-kong]: Start processing: pulumi-gitlab
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [pulumi-kong]: success
+[2023-05-13 08:03:11] INFO root fetch - processPackages [pulumi-hcloud]: Start processing: similari-trackers-rs
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [pulumi-hcloud]: success
+[2023-05-13 08:03:11] INFO root fetch - processPackages [pulumi-gitlab]: New version: [4.9.0a1666628674] Old Version: [4.9.0]
+[2023-05-13 08:03:11] WARNING root fetch - processPackages [similari-trackers-rs]: Skipping, unable to determine old version
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [similari-trackers-rs] error
+[2023-05-13 08:03:11] INFO root fetch - processPackages [pulumi-gitlab]: executing diffoscope
+[2023-05-13 08:03:11] INFO root fetch - processPackages [pulumi-gitlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_gitlab-4.9.0.tar.gz tmp/pulumi_gitlab-4.9.0a1666628674.tar.gz --markdown 20230513/p/pulumi-gitlab/4.9.0-4.9.0a1666628674/diff.md --exclude *.pyd
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [pulumi-mailgun]: success
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [pulumi-libvirt]: success
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [pulumi-minio]: success
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [bettersleepy]: success
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [pulumi-equinix-metal]: success
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [text-chunker]: success
+[2023-05-13 08:03:11] INFO root fetch - main [MainThread]: End processing [pulumi-confluentcloud]: success
+[2023-05-13 08:03:13] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
+[2023-05-13 08:03:13] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
+[2023-05-13 08:03:13] INFO root fetch - main [MainThread]: Store serial: [18088165]
