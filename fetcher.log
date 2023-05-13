@@ -13242,3 +13242,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:44:19] INFO root fetch - main [MainThread]: End processing [qcontext]: success
 [2023-05-13 21:44:19] INFO root fetch - main [MainThread]: End processing [pyvrp]: success
 [2023-05-13 21:44:19] INFO root fetch - main [MainThread]: Store serial: [18092550]
+[2023-05-13 21:49:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092550]
+[2023-05-13 21:49:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 21:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twitter-api-py
+[2023-05-13 21:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cli-command-parser
+[2023-05-13 21:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PatryksAutoAI
+[2023-05-13 21:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gyver-attrs
+[2023-05-13 21:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: logmaster
+[2023-05-13 21:49:28] INFO root fetch - processPackages [twitter-api-py]: New version: [0.6.2] Old Version: [0.6.1]
+[2023-05-13 21:49:28] INFO root fetch - processPackages [gyver-attrs]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-13 21:49:28] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-13 21:49:28] INFO root fetch - processPackages [logmaster]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-13 21:49:28] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.5.8] Old Version: [2023.5.2]
+[2023-05-13 21:49:28] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/32/c1/0957daedf22a5447b67e940769a25452d829d04984e136110259a1787f05/twitter_api_py-0.6.1.tar.gz
+[2023-05-13 21:49:28] INFO root fetch - processPackages [gyver-attrs]: Downloading https://files.pythonhosted.org/packages/b6/39/336e73ab863cd1108ea6341eae5e00bfc8da3998bdc945dfad5f2296c8bf/gyver_attrs-0.5.1.tar.gz
+[2023-05-13 21:49:28] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/be/c0/ebc5e12375f2823eec0c47f7ff0e047eb0aff8e49f55fe44f03903f130ed/PatryksAutoAI-0.5.1.tar.gz
+[2023-05-13 21:49:28] INFO root fetch - processPackages [logmaster]: Downloading https://files.pythonhosted.org/packages/ad/7a/aeee49b61fc14c1b75c8ee793d614e3804e6131385c885f772d92d4ad362/logmaster-1.0.5.tar.gz
+[2023-05-13 21:49:28] INFO root fetch - processPackages [logmaster]: executing diffoscope
+[2023-05-13 21:49:28] INFO root fetch - processPackages [logmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logmaster-1.0.4.tar.gz tmp/logmaster-1.0.5.tar.gz --markdown 20230513/l/logmaster/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-13 21:49:28] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-13 21:49:28] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.5.0.tar.gz tmp/PatryksAutoAI-0.5.1.tar.gz --markdown 20230513/P/PatryksAutoAI/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-13 21:49:28] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/f3/5b/e8c2f7089c4965a1cbfa0512712a8111d30e49cc58b404194aed17f63af6/twitter_api_py-0.6.2.tar.gz
+[2023-05-13 21:49:28] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-05-13 21:49:28] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.5.2.tar.gz tmp/cli_command_parser-2023.5.8.tar.gz --markdown 20230513/c/cli-command-parser/2023.5.2-2023.5.8/diff.md --exclude *.pyd
+[2023-05-13 21:49:29] INFO root fetch - processPackages [gyver-attrs]: Downloading https://files.pythonhosted.org/packages/07/c6/3139a205d17a08ab48d9cf56836eb75aa8f28e8e5a142c4ab6b3e7df1d04/gyver_attrs-0.5.2.tar.gz
+[2023-05-13 21:49:29] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-13 21:49:29] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.6.1.tar.gz tmp/twitter_api_py-0.6.2.tar.gz --markdown 20230513/t/twitter-api-py/0.6.1-0.6.2/diff.md --exclude *.pyd
+[2023-05-13 21:49:29] INFO root fetch - processPackages [gyver-attrs]: executing diffoscope
+[2023-05-13 21:49:29] INFO root fetch - processPackages [gyver-attrs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gyver_attrs-0.5.1.tar.gz tmp/gyver_attrs-0.5.2.tar.gz --markdown 20230513/g/gyver-attrs/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-13 21:49:29] INFO root fetch - main [MainThread]: End processing [logmaster]: success
+[2023-05-13 21:49:30] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-13 21:49:30] INFO root fetch - main [MainThread]: End processing [gyver-attrs]: success
+[2023-05-13 21:49:30] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-05-13 21:49:31] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-13 21:49:31] INFO root fetch - main [MainThread]: Store serial: [18092565]
