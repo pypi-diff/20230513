@@ -12609,3 +12609,32 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 20:04:21] INFO root fetch - main [MainThread]: End processing [qsolve]: success
 [2023-05-13 20:04:23] INFO root fetch - main [MainThread]: End processing [structlog-gcp]: success
 [2023-05-13 20:04:23] INFO root fetch - main [MainThread]: Store serial: [18092117]
+[2023-05-13 20:09:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092117]
+[2023-05-13 20:09:33] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 20:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pywool
+[2023-05-13 20:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: snakecan
+[2023-05-13 20:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: example-package-FabioScielzoOrtiz
+[2023-05-13 20:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psychonaut
+[2023-05-13 20:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: timec
+[2023-05-13 20:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ospylib
+[2023-05-13 20:09:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PatryksAutoAI
+[2023-05-13 20:09:33] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-05-13 20:09:33] INFO root fetch - processPackages [psychonaut]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 20:09:33] WARNING root fetch - processPackages [timec]: Skipping, unable to determine old version
+[2023-05-13 20:09:33] INFO root fetch - main [MainThread]: End processing [timec] error
+[2023-05-13 20:09:33] WARNING root fetch - processPackages [pywool]: Skipping, unable to determine old version
+[2023-05-13 20:09:33] INFO root fetch - main [MainThread]: End processing [pywool] error
+[2023-05-13 20:09:33] WARNING root fetch - processPackages [ospylib]: Skipping, unable to determine old version
+[2023-05-13 20:09:33] INFO root fetch - main [MainThread]: End processing [ospylib] error
+[2023-05-13 20:09:33] WARNING root fetch - processPackages [example-package-FabioScielzoOrtiz]: Skipping, unable to determine old version
+[2023-05-13 20:09:33] INFO root fetch - main [MainThread]: End processing [example-package-FabioScielzoOrtiz] error
+[2023-05-13 20:09:33] WARNING root fetch - processPackages [snakecan]: Skipping, unable to determine old version
+[2023-05-13 20:09:33] INFO root fetch - main [MainThread]: End processing [snakecan] error
+[2023-05-13 20:09:33] INFO root fetch - processPackages [psychonaut]: executing diffoscope
+[2023-05-13 20:09:33] INFO root fetch - processPackages [psychonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychonaut-0.0.8.tar.gz tmp/psychonaut-0.0.9.tar.gz --markdown 20230513/p/psychonaut/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 20:09:33] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/f0/5d/8b6f08a4807ac0cdbe7d957c76301bd942489bfdf47669d760c35732cbc8/PatryksAutoAI-0.4.8.tar.gz
+[2023-05-13 20:09:33] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-13 20:09:33] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.4.7.tar.gz tmp/PatryksAutoAI-0.4.8.tar.gz --markdown 20230513/P/PatryksAutoAI/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-05-13 20:09:35] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-13 20:09:35] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
+[2023-05-13 20:09:35] INFO root fetch - main [MainThread]: Store serial: [18092169]
