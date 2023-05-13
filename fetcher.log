@@ -10766,3 +10766,36 @@ EOFError: EOF read where object expected
 [2023-05-13 16:43:17] INFO root fetch - main [MainThread]: End processing [circuitpython-displayio-listselect]: success
 [2023-05-13 16:43:17] INFO root fetch - main [MainThread]: End processing [mhn]: success
 [2023-05-13 16:43:17] INFO root fetch - main [MainThread]: Store serial: [18090905]
+[2023-05-13 16:48:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090905]
+[2023-05-13 16:48:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 16:48:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: z4d-certified-devices
+[2023-05-13 16:48:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BDXConverter
+[2023-05-13 16:48:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkify
+[2023-05-13 16:48:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: doom-hello-henriq4
+[2023-05-13 16:48:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lab-serializer
+[2023-05-13 16:48:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: simple-simon
+[2023-05-13 16:48:27] WARNING root fetch - processPackages [lab-serializer]: Skipping, unable to determine old version
+[2023-05-13 16:48:27] INFO root fetch - main [MainThread]: End processing [lab-serializer] error
+[2023-05-13 16:48:27] INFO root fetch - processPackages [checkify]: New version: [0.5] Old Version: [0.4]
+[2023-05-13 16:48:27] WARNING root fetch - processPackages [doom-hello-henriq4]: Skipping, unable to determine old version
+[2023-05-13 16:48:27] INFO root fetch - processPackages [simple-simon]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 16:48:27] INFO root fetch - main [MainThread]: End processing [doom-hello-henriq4] error
+[2023-05-13 16:48:27] INFO root fetch - processPackages [BDXConverter]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-13 16:48:27] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.59] Old Version: [2.58]
+[2023-05-13 16:48:27] INFO root fetch - processPackages [simple-simon]: Downloading https://files.pythonhosted.org/packages/41/da/b8a3c8efd0a42235c672a605ff4bdf4f22c933491264b028650d42796e91/simple-simon-0.0.3.tar.gz
+[2023-05-13 16:48:27] INFO root fetch - processPackages [BDXConverter]: Downloading https://files.pythonhosted.org/packages/4f/de/fbfdef28cf3fbb1f4c5685175c313cd231bff26bb44f3ddcae5bf3728553/BDXConverter-1.1.6.tar.gz
+[2023-05-13 16:48:27] INFO root fetch - processPackages [checkify]: Downloading https://files.pythonhosted.org/packages/56/00/269f639b92410863cef2ee48f7859aa99f006aa2aab93713a29a8e5e1054/checkify-0.5.tar.gz
+[2023-05-13 16:48:27] INFO root fetch - processPackages [simple-simon]: executing diffoscope
+[2023-05-13 16:48:27] INFO root fetch - processPackages [simple-simon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-simon-0.0.2.tar.gz tmp/simple-simon-0.0.3.tar.gz --markdown 20230513/s/simple-simon/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 16:48:27] INFO root fetch - processPackages [checkify]: executing diffoscope
+[2023-05-13 16:48:27] INFO root fetch - processPackages [checkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkify-0.4.tar.gz tmp/checkify-0.5.tar.gz --markdown 20230513/c/checkify/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-13 16:48:28] INFO root fetch - processPackages [BDXConverter]: executing diffoscope
+[2023-05-13 16:48:28] INFO root fetch - processPackages [BDXConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDXConverter-1.1.5.tar.gz tmp/BDXConverter-1.1.6.tar.gz --markdown 20230513/B/BDXConverter/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-13 16:48:28] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/5f/7c/9041d5067ab5d8a3cff1d7ad116ca984d825523da1376db399afde388786/z4d-certified-devices-2.59.tar.gz
+[2023-05-13 16:48:28] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-05-13 16:48:28] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.58.tar.gz tmp/z4d-certified-devices-2.59.tar.gz --markdown 20230513/z/z4d-certified-devices/2.58-2.59/diff.md --exclude *.pyd
+[2023-05-13 16:48:29] INFO root fetch - main [MainThread]: End processing [checkify]: success
+[2023-05-13 16:48:29] INFO root fetch - main [MainThread]: End processing [simple-simon]: success
+[2023-05-13 16:48:29] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
+[2023-05-13 16:48:31] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-05-13 16:48:31] INFO root fetch - main [MainThread]: Store serial: [18090927]
