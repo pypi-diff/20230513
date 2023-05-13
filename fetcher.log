@@ -10187,3 +10187,37 @@ EOFError: EOF read where object expected
 [2023-05-13 15:45:08] INFO root fetch - main [MainThread]: End processing [reprotest]: success
 [2023-05-13 15:45:17] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-05-13 15:45:17] INFO root fetch - main [MainThread]: Store serial: [18090527]
+[2023-05-13 15:50:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090527]
+[2023-05-13 15:50:28] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 15:50:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-llm
+[2023-05-13 15:50:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqllineage
+[2023-05-13 15:50:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Fletxible
+[2023-05-13 15:50:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nlptoolssna
+[2023-05-13 15:50:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-hoshino-sign
+[2023-05-13 15:50:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: libideee
+[2023-05-13 15:50:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: datamultiproc
+[2023-05-13 15:50:28] WARNING root fetch - processPackages [python-llm]: Skipping, unable to determine old version
+[2023-05-13 15:50:28] INFO root fetch - main [MainThread]: End processing [python-llm] error
+[2023-05-13 15:50:28] INFO root fetch - processPackages [Fletxible]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-13 15:50:28] WARNING root fetch - processPackages [nonebot-plugin-hoshino-sign]: Skipping, unable to determine old version
+[2023-05-13 15:50:28] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hoshino-sign] error
+[2023-05-13 15:50:28] INFO root fetch - processPackages [sqllineage]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-13 15:50:28] INFO root fetch - processPackages [nlptoolssna]: New version: [0.8.8] Old Version: [0.8.6]
+[2023-05-13 15:50:28] WARNING root fetch - processPackages [libideee]: Skipping, unable to determine old version
+[2023-05-13 15:50:28] INFO root fetch - main [MainThread]: End processing [libideee] error
+[2023-05-13 15:50:28] WARNING root fetch - processPackages [datamultiproc]: Skipping, unable to determine old version
+[2023-05-13 15:50:28] INFO root fetch - main [MainThread]: End processing [datamultiproc] error
+[2023-05-13 15:50:28] INFO root fetch - processPackages [sqllineage]: Downloading https://files.pythonhosted.org/packages/f7/0f/7c38b36c34a3a550e4f3c3509a2679b66a2dbb73e5344a38f4ca6753b617/sqllineage-1.4.2.tar.gz
+[2023-05-13 15:50:28] INFO root fetch - processPackages [Fletxible]: Downloading https://files.pythonhosted.org/packages/e1/a4/006330f7067e276842fcadc50d5925bc3904635a1b04858e689824ddbe01/Fletxible-0.4.0.tar.gz
+[2023-05-13 15:50:28] INFO root fetch - processPackages [nlptoolssna]: Downloading https://files.pythonhosted.org/packages/3d/47/e7b4bb9fb98d91f256869f7b9b5406548c50e7d18fe6cf62dd2023378d7e/nlptoolssna-0.8.8.tar.gz
+[2023-05-13 15:50:28] INFO root fetch - processPackages [nlptoolssna]: executing diffoscope
+[2023-05-13 15:50:28] INFO root fetch - processPackages [nlptoolssna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nlptoolssna-0.8.6.tar.gz tmp/nlptoolssna-0.8.8.tar.gz --markdown 20230513/n/nlptoolssna/0.8.6-0.8.8/diff.md --exclude *.pyd
+[2023-05-13 15:50:28] INFO root fetch - processPackages [Fletxible]: executing diffoscope
+[2023-05-13 15:50:28] INFO root fetch - processPackages [Fletxible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fletxible-0.3.1.tar.gz tmp/Fletxible-0.4.0.tar.gz --markdown 20230513/F/Fletxible/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-13 15:50:29] INFO root fetch - processPackages [sqllineage]: Downloading https://files.pythonhosted.org/packages/59/2f/21a60a11974c41bc017f2c5b8fe884b0ce03b8fcc95aa8f1d64a87db1768/sqllineage-1.4.3.tar.gz
+[2023-05-13 15:50:29] INFO root fetch - processPackages [sqllineage]: executing diffoscope
+[2023-05-13 15:50:29] INFO root fetch - processPackages [sqllineage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqllineage-1.4.2.tar.gz tmp/sqllineage-1.4.3.tar.gz --markdown 20230513/s/sqllineage/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-05-13 15:50:30] INFO root fetch - main [MainThread]: End processing [Fletxible]: success
+[2023-05-13 15:50:30] INFO root fetch - main [MainThread]: End processing [nlptoolssna]: success
+[2023-05-13 15:50:33] INFO root fetch - main [MainThread]: End processing [sqllineage]: success
+[2023-05-13 15:50:33] INFO root fetch - main [MainThread]: Store serial: [18090554]
