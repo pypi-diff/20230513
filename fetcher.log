@@ -9024,3 +9024,29 @@
 [2023-05-13 13:46:44] INFO root fetch - main [MainThread]: End processing [soremoji]: success
 [2023-05-13 13:46:44] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
 [2023-05-13 13:46:44] INFO root fetch - main [MainThread]: Store serial: [18089857]
+[2023-05-13 13:51:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089857]
+[2023-05-13 13:51:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 13:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbi-api
+[2023-05-13 13:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: decoratools
+[2023-05-13 13:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MosaBay
+[2023-05-13 13:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lamineml
+[2023-05-13 13:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hapdoc
+[2023-05-13 13:51:53] WARNING root fetch - processPackages [MosaBay]: Skipping, unable to determine old version
+[2023-05-13 13:51:53] INFO root fetch - main [MainThread]: End processing [MosaBay] error
+[2023-05-13 13:51:53] INFO root fetch - processPackages [lamineml]: New version: [0.0.52] Old Version: [0.0.51]
+[2023-05-13 13:51:53] WARNING root fetch - processPackages [decoratools]: Skipping, unable to determine old version
+[2023-05-13 13:51:53] INFO root fetch - main [MainThread]: End processing [decoratools] error
+[2023-05-13 13:51:53] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 13:51:53] INFO root fetch - processPackages [fbi-api]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-13 13:51:53] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 13:51:53] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 13:51:53] INFO root fetch - processPackages [lamineml]: Downloading https://files.pythonhosted.org/packages/a5/da/6275f741b8b110c2c94a0201ccf3f1fb0f8a9fc51fe5ec0f60c247fe36b3/lamineml-0.0.52.tar.gz
+[2023-05-13 13:51:53] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-05-13 13:51:53] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.0.51.tar.gz tmp/lamineml-0.0.52.tar.gz --markdown 20230513/l/lamineml/0.0.51-0.0.52/diff.md --exclude *.pyd
+[2023-05-13 13:51:53] INFO root fetch - processPackages [fbi-api]: Downloading https://files.pythonhosted.org/packages/af/fb/6e55e078d902c8e713fac78a8786810e815e7e59209331548226ab3eac9c/fbi-api-1.2.0.tar.gz
+[2023-05-13 13:51:53] INFO root fetch - processPackages [fbi-api]: executing diffoscope
+[2023-05-13 13:51:53] INFO root fetch - processPackages [fbi-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbi-api-1.1.0.tar.gz tmp/fbi-api-1.2.0.tar.gz --markdown 20230513/f/fbi-api/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-13 13:51:54] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 13:51:55] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-05-13 13:51:55] INFO root fetch - main [MainThread]: End processing [fbi-api]: success
+[2023-05-13 13:51:55] INFO root fetch - main [MainThread]: Store serial: [18089881]
