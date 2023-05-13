@@ -5201,3 +5201,36 @@
 [2023-05-13 06:51:41] INFO root fetch - main [MainThread]: End processing [odoo-addon-document-page-approval]: success
 [2023-05-13 06:51:41] INFO root fetch - main [MainThread]: End processing [carefree-drawboard]: success
 [2023-05-13 06:51:41] INFO root fetch - main [MainThread]: Store serial: [18087860]
+[2023-05-13 06:56:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087860]
+[2023-05-13 06:56:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 06:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tybase
+[2023-05-13 06:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrew
+[2023-05-13 06:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pibrary
+[2023-05-13 06:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: always-updates
+[2023-05-13 06:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-l10n-br-account
+[2023-05-13 06:56:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-l10n-br-nfe
+[2023-05-13 06:56:50] INFO root fetch - processPackages [tybase]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-13 06:56:50] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: New version: [14.0.5.8.2.dev1] Old Version: [14.0.5.8.2]
+[2023-05-13 06:56:50] INFO root fetch - processPackages [pyrew]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-13 06:56:50] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-13 06:56:50] WARNING root fetch - processPackages [pibrary]: Skipping, unable to determine old version
+[2023-05-13 06:56:50] INFO root fetch - main [MainThread]: End processing [pibrary] error
+[2023-05-13 06:56:50] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: New version: [14.0.8.0.1.dev1] Old Version: [14.0.8.0.0]
+[2023-05-13 06:56:50] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: executing diffoscope
+[2023-05-13 06:56:50] INFO root fetch - processPackages [odoo14-addon-l10n-br-account]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_account-14.0.5.8.2-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_account-14.0.5.8.2.dev1-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-l10n-br-account/14.0.5.8.2-14.0.5.8.2.dev1/diff.md --exclude *.pyd
+[2023-05-13 06:56:50] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-13 06:56:50] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230513/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-13 06:56:50] INFO root fetch - processPackages [tybase]: Downloading https://files.pythonhosted.org/packages/19/94/924a4a5d5dd722f8d9e1416e48486d826bd19004aaabfa45adb6a4256391/tybase-0.0.7.tar.gz
+[2023-05-13 06:56:51] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-05-13 06:56:51] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.9.2.tar.gz tmp/pyrew-0.9.3.tar.gz --markdown 20230513/p/pyrew/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-13 06:56:51] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: Downloading https://files.pythonhosted.org/packages/68/51/b5aa70dfba70aa47b30831cafed09b989027e22093724a3cf0d8a5f6f190/odoo14_addon_l10n_br_nfe-14.0.8.0.1.dev1-py3-none-any.whl
+[2023-05-13 06:56:51] INFO root fetch - processPackages [tybase]: executing diffoscope
+[2023-05-13 06:56:51] INFO root fetch - processPackages [tybase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tybase-0.0.6.tar.gz tmp/tybase-0.0.7.tar.gz --markdown 20230513/t/tybase/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-13 06:56:51] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: executing diffoscope
+[2023-05-13 06:56:51] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_nfe-14.0.8.0.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_nfe-14.0.8.0.1.dev1-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-l10n-br-nfe/14.0.8.0.0-14.0.8.0.1.dev1/diff.md --exclude *.pyd
+[2023-05-13 06:56:51] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-13 06:56:52] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-05-13 06:56:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-account]: success
+[2023-05-13 06:56:52] INFO root fetch - main [MainThread]: End processing [tybase]: success
+[2023-05-13 06:56:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfe]: success
+[2023-05-13 06:56:52] INFO root fetch - main [MainThread]: Store serial: [18087883]
