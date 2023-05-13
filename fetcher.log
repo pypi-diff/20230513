@@ -10734,3 +10734,35 @@ EOFError: EOF read where object expected
 [2023-05-13 16:38:06] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
 [2023-05-13 16:38:06] INFO root fetch - main [MainThread]: End processing [QuNet]: success
 [2023-05-13 16:38:06] INFO root fetch - main [MainThread]: Store serial: [18090890]
+[2023-05-13 16:43:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090890]
+[2023-05-13 16:43:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 16:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wwsimulator
+[2023-05-13 16:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: circuitpython-displayio-listselect
+[2023-05-13 16:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: megadata
+[2023-05-13 16:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mhn
+[2023-05-13 16:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sazi
+[2023-05-13 16:43:15] INFO root fetch - processPackages [circuitpython-displayio-listselect]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 16:43:15] WARNING root fetch - processPackages [sazi]: Skipping, unable to determine old version
+[2023-05-13 16:43:15] INFO root fetch - processPackages [wwsimulator]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 16:43:15] INFO root fetch - main [MainThread]: End processing [sazi] error
+[2023-05-13 16:43:15] INFO root fetch - processPackages [mhn]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 16:43:15] INFO root fetch - processPackages [megadata]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 16:43:15] INFO root fetch - processPackages [circuitpython-displayio-listselect]: Downloading https://files.pythonhosted.org/packages/6f/0f/feaeb286fc287f9ad6b7e7a2b32385250a38264b52bb06fe74540b9dc21b/circuitpython-displayio-listselect-1.0.1.tar.gz
+[2023-05-13 16:43:15] INFO root fetch - processPackages [wwsimulator]: Downloading https://files.pythonhosted.org/packages/d5/2a/37571773139f9204eafae073d676e431953365c28cceb2e4f945fb776600/wwsimulator-1.0.0.tar.gz
+[2023-05-13 16:43:15] INFO root fetch - processPackages [mhn]: Downloading https://files.pythonhosted.org/packages/3b/a1/0d19b95f39da60af8aa123e0886cb4b578e1b03de64ef2be927c8ea31e01/mhn-0.0.8.tar.gz
+[2023-05-13 16:43:15] INFO root fetch - processPackages [megadata]: executing diffoscope
+[2023-05-13 16:43:15] INFO root fetch - processPackages [megadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/megadata-0.0.8.tar.gz tmp/megadata-0.0.9.tar.gz --markdown 20230513/m/megadata/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 16:43:15] INFO root fetch - processPackages [circuitpython-displayio-listselect]: Downloading https://files.pythonhosted.org/packages/52/25/a6ffb3f7bbce54417cfabdc45f1b812b25e617bc769178c0e4ee34868ff0/circuitpython-displayio-listselect-1.0.2.tar.gz
+[2023-05-13 16:43:15] INFO root fetch - processPackages [circuitpython-displayio-listselect]: executing diffoscope
+[2023-05-13 16:43:15] INFO root fetch - processPackages [circuitpython-displayio-listselect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-displayio-listselect-1.0.1.tar.gz tmp/circuitpython-displayio-listselect-1.0.2.tar.gz --markdown 20230513/c/circuitpython-displayio-listselect/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 16:43:15] INFO root fetch - processPackages [wwsimulator]: Downloading https://files.pythonhosted.org/packages/d7/80/b0d95da50e64e8c602c1c304931c5ae6e66fe11964dd3c5d3f0603e55bce/wwsimulator-1.0.1.tar.gz
+[2023-05-13 16:43:15] INFO root fetch - processPackages [wwsimulator]: executing diffoscope
+[2023-05-13 16:43:15] INFO root fetch - processPackages [wwsimulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwsimulator-1.0.0.tar.gz tmp/wwsimulator-1.0.1.tar.gz --markdown 20230513/w/wwsimulator/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 16:43:15] INFO root fetch - processPackages [mhn]: Downloading https://files.pythonhosted.org/packages/1c/ef/ff4796ee073b5cc45c8393f492654dc7144b79e5348f85cded722984d02e/mhn-0.0.9.tar.gz
+[2023-05-13 16:43:16] INFO root fetch - processPackages [mhn]: executing diffoscope
+[2023-05-13 16:43:16] INFO root fetch - processPackages [mhn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mhn-0.0.8.tar.gz tmp/mhn-0.0.9.tar.gz --markdown 20230513/m/mhn/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 16:43:16] INFO root fetch - main [MainThread]: End processing [megadata]: success
+[2023-05-13 16:43:16] INFO root fetch - main [MainThread]: End processing [wwsimulator]: success
+[2023-05-13 16:43:17] INFO root fetch - main [MainThread]: End processing [circuitpython-displayio-listselect]: success
+[2023-05-13 16:43:17] INFO root fetch - main [MainThread]: End processing [mhn]: success
+[2023-05-13 16:43:17] INFO root fetch - main [MainThread]: Store serial: [18090905]
