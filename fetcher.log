@@ -8210,3 +8210,40 @@
 [2023-05-13 11:59:54] INFO root fetch - processPackages [hitchstory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchstory-0.9.0.tar.gz tmp/hitchstory-0.9.1.tar.gz --markdown 20230513/h/hitchstory/0.9.0-0.9.1/diff.md --exclude *.pyd
 [2023-05-13 11:59:55] INFO root fetch - main [MainThread]: End processing [hitchstory]: success
 [2023-05-13 11:59:55] INFO root fetch - main [MainThread]: Store serial: [18089350]
+[2023-05-13 12:04:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089350]
+[2023-05-13 12:05:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 12:05:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revpimodio2
+[2023-05-13 12:05:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lietorch
+[2023-05-13 12:05:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kolibri-ml
+[2023-05-13 12:05:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: soca
+[2023-05-13 12:05:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sam-cfn-publish
+[2023-05-13 12:05:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyTraffic
+[2023-05-13 12:05:04] WARNING root fetch - processPackages [sam-cfn-publish]: Skipping, unable to determine old version
+[2023-05-13 12:05:04] INFO root fetch - main [MainThread]: End processing [sam-cfn-publish] error
+[2023-05-13 12:05:04] INFO root fetch - processPackages [revpimodio2]: New version: [2.6.0rc5] Old Version: [2.6.0rc4]
+[2023-05-13 12:05:04] INFO root fetch - processPackages [lietorch]: New version: [0.6.1] Old Version: [0.6.0.post2]
+[2023-05-13 12:05:04] INFO root fetch - processPackages [soca]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 12:05:04] INFO root fetch - processPackages [kolibri-ml]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-13 12:05:04] INFO root fetch - processPackages [PyTraffic]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-13 12:05:04] INFO root fetch - processPackages [revpimodio2]: Downloading https://files.pythonhosted.org/packages/44/ac/222f5849735928736d6a5c03b5b2575af13f380bb6135a92619638dc3dcf/revpimodio2-2.6.0rc4.tar.gz
+[2023-05-13 12:05:04] INFO root fetch - processPackages [soca]: Downloading https://files.pythonhosted.org/packages/7d/7c/7fcffc62ec1b964dee676b544bbdd06d6f336681d0014efdf350e84979c7/soca-0.0.1.tar.gz
+[2023-05-13 12:05:04] INFO root fetch - processPackages [lietorch]: Downloading https://files.pythonhosted.org/packages/14/a3/8e6fe864f4a426dd9e0e5372a150dd2271d27d39676dd1c7eb7a3f7b3335/lietorch-0.6.0.post2.tar.gz
+[2023-05-13 12:05:04] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/9e/69/e8e6cca4715cf463f29388ef64b88ea790ddeba5abbd7c7060e2f1b266c9/PyTraffic-1.0.5.tar.gz
+[2023-05-13 12:05:04] INFO root fetch - processPackages [PyTraffic]: executing diffoscope
+[2023-05-13 12:05:04] INFO root fetch - processPackages [PyTraffic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTraffic-1.0.4.tar.gz tmp/PyTraffic-1.0.5.tar.gz --markdown 20230513/P/PyTraffic/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-13 12:05:04] INFO root fetch - processPackages [kolibri-ml]: executing diffoscope
+[2023-05-13 12:05:04] INFO root fetch - processPackages [kolibri-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kolibri_ml-1.1.7-py3-none-any.whl.zip tmp/kolibri_ml-1.1.8-py3-none-any.whl.zip --markdown 20230513/k/kolibri-ml/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-13 12:05:05] INFO root fetch - processPackages [soca]: Downloading https://files.pythonhosted.org/packages/ab/2a/767f04141af072cf7f250fcce69e3c659897b6d7692787eae11c3a4d4cda/soca-0.0.2.tar.gz
+[2023-05-13 12:05:05] INFO root fetch - processPackages [revpimodio2]: Downloading https://files.pythonhosted.org/packages/b5/d9/8762250ade57b43df3bb8b3b900c34f0f522c21195d496ce156b33cd749e/revpimodio2-2.6.0rc5.tar.gz
+[2023-05-13 12:05:05] INFO root fetch - processPackages [soca]: executing diffoscope
+[2023-05-13 12:05:05] INFO root fetch - processPackages [soca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soca-0.0.1.tar.gz tmp/soca-0.0.2.tar.gz --markdown 20230513/s/soca/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 12:05:05] INFO root fetch - processPackages [revpimodio2]: executing diffoscope
+[2023-05-13 12:05:05] INFO root fetch - processPackages [revpimodio2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revpimodio2-2.6.0rc4.tar.gz tmp/revpimodio2-2.6.0rc5.tar.gz --markdown 20230513/r/revpimodio2/2.6.0rc4-2.6.0rc5/diff.md --exclude *.pyd
+[2023-05-13 12:05:06] INFO root fetch - main [MainThread]: End processing [PyTraffic]: success
+[2023-05-13 12:05:06] INFO root fetch - main [MainThread]: End processing [revpimodio2]: success
+[2023-05-13 12:05:07] INFO root fetch - main [MainThread]: End processing [soca]: success
+[2023-05-13 12:05:07] INFO root fetch - processPackages [lietorch]: Downloading https://files.pythonhosted.org/packages/0b/95/cc3884868e8d9529ced6c876488164cfd4e07c7b28a1af23e7aef0f26889/lietorch-0.6.1.tar.gz
+[2023-05-13 12:05:07] WARNING root fetch - processPackages [lietorch]: Skipping package: exceeds size limit 12062660>=10485760
+[2023-05-13 12:05:07] INFO root fetch - main [MainThread]: End processing [lietorch] error
+[2023-05-13 12:05:10] INFO root fetch - main [MainThread]: End processing [kolibri-ml]: success
+[2023-05-13 12:05:10] INFO root fetch - main [MainThread]: Store serial: [18089369]
