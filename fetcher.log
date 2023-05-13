@@ -4554,3 +4554,23 @@
 [2023-05-13 05:33:38] INFO root fetch - main [MainThread]: End processing [RegScale-CLI]: success
 [2023-05-13 05:33:38] INFO root fetch - main [MainThread]: End processing [heaserver]: success
 [2023-05-13 05:33:38] INFO root fetch - main [MainThread]: Store serial: [18087500]
+[2023-05-13 05:38:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087500]
+[2023-05-13 05:38:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 05:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docchain
+[2023-05-13 05:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xhs
+[2023-05-13 05:38:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pandera
+[2023-05-13 05:38:47] INFO root fetch - processPackages [xhs]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-13 05:38:47] INFO root fetch - processPackages [docchain]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-13 05:38:47] INFO root fetch - processPackages [pandera]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-13 05:38:47] INFO root fetch - processPackages [docchain]: Downloading https://files.pythonhosted.org/packages/ce/75/e8f303eab72699fedacdee8b33b407df659bada75909a02984cae988d516/docchain-0.0.7.tar.gz
+[2023-05-13 05:38:47] INFO root fetch - processPackages [xhs]: Downloading https://files.pythonhosted.org/packages/46/33/caaaef31f910a23d169e082b49eb9992718b54420cefd82b88103449adb7/xhs-0.2.1.tar.gz
+[2023-05-13 05:38:47] INFO root fetch - processPackages [xhs]: executing diffoscope
+[2023-05-13 05:38:47] INFO root fetch - processPackages [xhs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhs-0.2.0.tar.gz tmp/xhs-0.2.1.tar.gz --markdown 20230513/x/xhs/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-13 05:38:47] INFO root fetch - processPackages [docchain]: executing diffoscope
+[2023-05-13 05:38:47] INFO root fetch - processPackages [docchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docchain-0.0.6.tar.gz tmp/docchain-0.0.7.tar.gz --markdown 20230513/d/docchain/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-13 05:38:47] INFO root fetch - processPackages [pandera]: executing diffoscope
+[2023-05-13 05:38:47] INFO root fetch - processPackages [pandera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandera-0.8.1.tar.gz tmp/pandera-0.9.0.tar.gz --markdown 20230513/p/pandera/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 05:38:48] INFO root fetch - main [MainThread]: End processing [xhs]: success
+[2023-05-13 05:38:48] INFO root fetch - main [MainThread]: End processing [docchain]: success
+[2023-05-13 05:38:49] INFO root fetch - main [MainThread]: End processing [pandera]: success
+[2023-05-13 05:38:49] INFO root fetch - main [MainThread]: Store serial: [18087509]
