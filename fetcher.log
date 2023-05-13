@@ -5783,3 +5783,42 @@
 [2023-05-13 07:52:44] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-05-13 07:52:44] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
 [2023-05-13 07:52:44] INFO root fetch - main [MainThread]: Store serial: [18088118]
+[2023-05-13 07:57:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088118]
+[2023-05-13 07:57:54] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 07:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-github
+[2023-05-13 07:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: roifile
+[2023-05-13 07:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: johnnydep
+[2023-05-13 07:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: relefpots
+[2023-05-13 07:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: text-chunker
+[2023-05-13 07:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: slashml
+[2023-05-13 07:57:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-datadog
+[2023-05-13 07:57:54] INFO root fetch - processPackages [roifile]: New version: [2023.5.12] Old Version: [2023.2.12]
+[2023-05-13 07:57:54] WARNING root fetch - processPackages [text-chunker]: Skipping, unable to determine old version
+[2023-05-13 07:57:54] INFO root fetch - main [MainThread]: End processing [text-chunker] error
+[2023-05-13 07:57:54] INFO root fetch - processPackages [pulumi-github]: New version: [5.9.0a1683752304] Old Version: [5.9.0a1683610445]
+[2023-05-13 07:57:54] INFO root fetch - processPackages [johnnydep]: New version: [1.9] Old Version: [1.8]
+[2023-05-13 07:57:54] WARNING root fetch - processPackages [relefpots]: Skipping, unable to determine old version
+[2023-05-13 07:57:54] INFO root fetch - main [MainThread]: End processing [relefpots] error
+[2023-05-13 07:57:54] INFO root fetch - processPackages [roifile]: Downloading https://files.pythonhosted.org/packages/41/51/c53d887f31c5447b33433f4d788d9c51a1a00cdedbe0d73fcc4baa54a216/roifile-2023.2.12.tar.gz
+[2023-05-13 07:57:54] INFO root fetch - processPackages [pulumi-datadog]: New version: [4.9.0a1653604828] Old Version: [4.9.0a1650908051]
+[2023-05-13 07:57:54] INFO root fetch - processPackages [slashml]: New version: [0.1.0] Old Version: [0.0.6]
+[2023-05-13 07:57:54] INFO root fetch - processPackages [johnnydep]: Downloading https://files.pythonhosted.org/packages/10/fd/4020817535b39a383373793f922889f1c8d7ba089cfa2a54e4505ec7372d/johnnydep-1.8-py2.py3-none-any.whl
+[2023-05-13 07:57:54] INFO root fetch - processPackages [pulumi-github]: executing diffoscope
+[2023-05-13 07:57:54] INFO root fetch - processPackages [pulumi-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_github-5.9.0a1683610445.tar.gz tmp/pulumi_github-5.9.0a1683752304.tar.gz --markdown 20230513/p/pulumi-github/5.9.0a1683610445-5.9.0a1683752304/diff.md --exclude *.pyd
+[2023-05-13 07:57:54] INFO root fetch - processPackages [roifile]: Downloading https://files.pythonhosted.org/packages/f3/24/949a890d5df952cd94a22c41f1c709805b688368963bbbf30ce2280b93b1/roifile-2023.5.12.tar.gz
+[2023-05-13 07:57:55] INFO root fetch - processPackages [roifile]: executing diffoscope
+[2023-05-13 07:57:55] INFO root fetch - processPackages [roifile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roifile-2023.2.12.tar.gz tmp/roifile-2023.5.12.tar.gz --markdown 20230513/r/roifile/2023.2.12-2023.5.12/diff.md --exclude *.pyd
+[2023-05-13 07:57:55] INFO root fetch - processPackages [pulumi-datadog]: executing diffoscope
+[2023-05-13 07:57:55] INFO root fetch - processPackages [pulumi-datadog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_datadog-4.9.0a1650908051.tar.gz tmp/pulumi_datadog-4.9.0a1653604828.tar.gz --markdown 20230513/p/pulumi-datadog/4.9.0a1650908051-4.9.0a1653604828/diff.md --exclude *.pyd
+[2023-05-13 07:57:55] INFO root fetch - processPackages [slashml]: Downloading https://files.pythonhosted.org/packages/8e/9e/18fab81c7c8a4176685b71be6cab4e406b170f7707992753060727785a23/slashml-0.1.0.tar.gz
+[2023-05-13 07:57:55] INFO root fetch - processPackages [johnnydep]: Downloading https://files.pythonhosted.org/packages/12/2a/bb3fd0b51b29bd625c9e9d718238d89f748bd4ff65656a37f639e03e37a1/johnnydep-1.9.tar.gz
+[2023-05-13 07:57:55] INFO root fetch - processPackages [slashml]: executing diffoscope
+[2023-05-13 07:57:55] INFO root fetch - processPackages [slashml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slashml-0.0.6.tar.gz tmp/slashml-0.1.0.tar.gz --markdown 20230513/s/slashml/0.0.6-0.1.0/diff.md --exclude *.pyd
+[2023-05-13 07:57:55] INFO root fetch - processPackages [johnnydep]: executing diffoscope
+[2023-05-13 07:57:55] INFO root fetch - processPackages [johnnydep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/johnnydep-1.8-py2.py3-none-any.whl.zip tmp/johnnydep-1.9.tar.gz --markdown 20230513/j/johnnydep/1.8-1.9/diff.md --exclude *.pyd
+[2023-05-13 07:57:56] INFO root fetch - main [MainThread]: End processing [roifile]: success
+[2023-05-13 07:57:56] INFO root fetch - main [MainThread]: End processing [slashml]: success
+[2023-05-13 07:57:56] INFO root fetch - main [MainThread]: End processing [johnnydep]: success
+[2023-05-13 07:57:56] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
+[2023-05-13 07:57:59] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
+[2023-05-13 07:57:59] INFO root fetch - main [MainThread]: Store serial: [18088135]
