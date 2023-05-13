@@ -4617,3 +4617,32 @@
 [2023-05-13 05:49:11] WARNING root fetch - processPackages [Sigmath]: Skipping, unable to determine old version
 [2023-05-13 05:49:11] INFO root fetch - main [MainThread]: End processing [Sigmath] error
 [2023-05-13 05:49:11] INFO root fetch - main [MainThread]: Store serial: [18087539]
+[2023-05-13 05:54:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087539]
+[2023-05-13 05:54:20] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 05:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: DGet
+[2023-05-13 05:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver
+[2023-05-13 05:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plib3.stdlib
+[2023-05-13 05:54:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo12-addon-account-financial-risk
+[2023-05-13 05:54:20] INFO root fetch - processPackages [heaserver]: New version: [1.0.0a99] Old Version: [1.0.0a98]
+[2023-05-13 05:54:20] INFO root fetch - processPackages [plib3.stdlib]: New version: [2.3.1] Old Version: [2.3]
+[2023-05-13 05:54:20] INFO root fetch - processPackages [DGet]: New version: [0.8] Old Version: [0.7]
+[2023-05-13 05:54:20] INFO root fetch - processPackages [odoo12-addon-account-financial-risk]: New version: [12.0.3.1.0.99.dev9] Old Version: [12.0.3.1.0.99.dev8]
+[2023-05-13 05:54:20] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2023-05-13 05:54:20] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.0.0a98.tar.gz tmp/heaserver-1.0.0a99.tar.gz --markdown 20230513/h/heaserver/1.0.0a98-1.0.0a99/diff.md --exclude *.pyd
+[2023-05-13 05:54:20] INFO root fetch - processPackages [DGet]: Downloading https://files.pythonhosted.org/packages/28/1d/b79786c2c544f36f836c2b0b92c9a4e95201b761679d883a5d183e3b64b4/DGet-0.7.tar.gz
+[2023-05-13 05:54:20] INFO root fetch - processPackages [odoo12-addon-account-financial-risk]: Downloading https://files.pythonhosted.org/packages/bf/dd/7d9e3f282c0d21afb2e933c35dbc2ca289ba2799959c0d4448c3c9e751c1/odoo12_addon_account_financial_risk-12.0.3.1.0.99.dev8-py3-none-any.whl
+[2023-05-13 05:54:20] INFO root fetch - processPackages [DGet]: Downloading https://files.pythonhosted.org/packages/9d/da/c24dfb2d507cb307cb8aa1a7eb560de93376054f8184bc55124a3834e932/DGet-0.8.tar.gz
+[2023-05-13 05:54:20] INFO root fetch - processPackages [plib3.stdlib]: Downloading https://files.pythonhosted.org/packages/10/b5/2b5df7d515b1e40fb49d245033ed023549809faf59bffa993adde6079739/plib3.stdlib-2.3.tar.gz
+[2023-05-13 05:54:21] INFO root fetch - processPackages [DGet]: executing diffoscope
+[2023-05-13 05:54:21] INFO root fetch - processPackages [DGet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DGet-0.7.tar.gz tmp/DGet-0.8.tar.gz --markdown 20230513/D/DGet/0.7-0.8/diff.md --exclude *.pyd
+[2023-05-13 05:54:21] INFO root fetch - processPackages [odoo12-addon-account-financial-risk]: Downloading https://files.pythonhosted.org/packages/c7/e2/95117104c60e9b77bc889e6243cd6af5f0ba631a6612d7592eec8a7d53ad/odoo12_addon_account_financial_risk-12.0.3.1.0.99.dev9-py3-none-any.whl
+[2023-05-13 05:54:21] INFO root fetch - processPackages [odoo12-addon-account-financial-risk]: executing diffoscope
+[2023-05-13 05:54:21] INFO root fetch - processPackages [odoo12-addon-account-financial-risk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_account_financial_risk-12.0.3.1.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_account_financial_risk-12.0.3.1.0.99.dev9-py3-none-any.whl.zip --markdown 20230513/o/odoo12-addon-account-financial-risk/12.0.3.1.0.99.dev8-12.0.3.1.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-13 05:54:21] INFO root fetch - processPackages [plib3.stdlib]: Downloading https://files.pythonhosted.org/packages/9d/a5/4e22df6868690ba59c85aa10ebf4815dfd7d47d9e25717f36a1a80f0073b/plib3.stdlib-2.3.1.tar.gz
+[2023-05-13 05:54:21] INFO root fetch - processPackages [plib3.stdlib]: executing diffoscope
+[2023-05-13 05:54:21] INFO root fetch - processPackages [plib3.stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plib3.stdlib-2.3.tar.gz tmp/plib3.stdlib-2.3.1.tar.gz --markdown 20230513/p/plib3.stdlib/2.3-2.3.1/diff.md --exclude *.pyd
+[2023-05-13 05:54:22] INFO root fetch - main [MainThread]: End processing [DGet]: success
+[2023-05-13 05:54:22] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2023-05-13 05:54:22] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-financial-risk]: success
+[2023-05-13 05:54:22] INFO root fetch - main [MainThread]: End processing [plib3.stdlib]: success
+[2023-05-13 05:54:22] INFO root fetch - main [MainThread]: Store serial: [18087552]
