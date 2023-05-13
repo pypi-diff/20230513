@@ -6363,3 +6363,61 @@
 [2023-05-13 08:42:36] INFO root fetch - main [MainThread]: End processing [frds]: success
 [2023-05-13 08:43:12] INFO root fetch - main [MainThread]: End processing [hikari-core]: success
 [2023-05-13 08:43:12] INFO root fetch - main [MainThread]: Store serial: [18088409]
+[2023-05-13 08:48:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088409]
+[2023-05-13 08:48:20] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyTraffic
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-purchase-substate
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfirebird
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-purchase-request
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-purchase-stock-secondary-unit
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-rke
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-spark-gpt
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo14-addons-oca-purchase-workflow
+[2023-05-13 08:48:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pulumi-keycloak
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pyfirebird]: New version: [0.0.44] Old Version: [0.0.43]
+[2023-05-13 08:48:21] WARNING root fetch - processPackages [odoo14-addon-purchase-substate]: Skipping, unable to determine old version
+[2023-05-13 08:48:21] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-substate] error
+[2023-05-13 08:48:21] INFO root fetch - processPackages [PyTraffic]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addon-purchase-request]: New version: [14.0.2.1.2.dev7] Old Version: [14.0.2.1.2.dev6]
+[2023-05-13 08:48:21] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo-addon-purchase-stock-secondary-unit]: New version: [15.0.1.0.0.3] Old Version: [15.0.1.0.0.2]
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pulumi-keycloak]: New version: [5.2.0a1683959055] Old Version: [5.2.0a1683784672]
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: New version: [14.0.20230512.0] Old Version: [14.0.20230420.0]
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pulumi-rke]: New version: [3.3.0a1683958167] Old Version: [3.3.0a1683787722]
+[2023-05-13 08:48:21] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/d6/0f/dc5228dfa37a9775b29aa2d348c4eb24c6d739798b937758db809ba86202/PyTraffic-1.0.0.tar.gz
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo-addon-purchase-stock-secondary-unit]: Downloading https://files.pythonhosted.org/packages/3e/ad/5ab43efcc6ac821f665e2317421ff627ec161059a70c734a33b5b901c8d6/odoo_addon_purchase_stock_secondary_unit-15.0.1.0.0.2-py3-none-any.whl
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pyfirebird]: Downloading https://files.pythonhosted.org/packages/c2/1b/69768569291bd455f2b75db37a39d7dd4273aea5eda2d9eaa01be84acd09/pyfirebird-0.0.44.tar.gz
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/cc/c2/0aaba7d0c7b2e03b53457622099e5a157c45be6561e5775d09efa03efd4c/odoo14_addons_oca_purchase_workflow-14.0.20230420.0-py3-none-any.whl
+[2023-05-13 08:48:21] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Downloading https://files.pythonhosted.org/packages/74/e3/efb53e9d5819c237b94165183116b8c2cf61d5e688bf3098fe18aaface5d/nonebot_plugin_spark_gpt-0.1.5.tar.gz
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pulumi-rke]: Downloading https://files.pythonhosted.org/packages/e9/8c/fcd62b44b1c32cff81cf1eaaca8ac89db909ced63740b5b50c823c248f6a/pulumi_rke-3.3.0a1683958167.tar.gz
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pyfirebird]: executing diffoscope
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pyfirebird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfirebird-0.0.43.tar.gz tmp/pyfirebird-0.0.44.tar.gz --markdown 20230513/p/pyfirebird/0.0.43-0.0.44/diff.md --exclude *.pyd
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addon-purchase-request]: Downloading https://files.pythonhosted.org/packages/b7/64/dc2d6e97eecc49ccd8cd7204bf43733756c590bdfbea39786cfb331b1f04/odoo14_addon_purchase_request-14.0.2.1.2.dev7-py3-none-any.whl
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pulumi-keycloak]: Downloading https://files.pythonhosted.org/packages/07/cf/f9443752f8bbfd0e544c857a6fe7851fe0b44b2d0c7f01bf0ab2907f550c/pulumi_keycloak-5.2.0a1683959055.tar.gz
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo-addon-purchase-stock-secondary-unit]: Downloading https://files.pythonhosted.org/packages/08/5d/600082bedb0eefafca78d604e86037a1798bca2fd751391d3255e048e61f/odoo_addon_purchase_stock_secondary_unit-15.0.1.0.0.3-py3-none-any.whl
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pulumi-rke]: executing diffoscope
+[2023-05-13 08:48:21] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/25/51/9e3f248b96b17691306da2481358a8ec63c4902a64d672801251373fe3e6/PyTraffic-1.0.1.tar.gz
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pulumi-rke]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rke-3.3.0a1683787722.tar.gz tmp/pulumi_rke-3.3.0a1683958167.tar.gz --markdown 20230513/p/pulumi-rke/3.3.0a1683787722-3.3.0a1683958167/diff.md --exclude *.pyd
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addon-purchase-request]: executing diffoscope
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addon-purchase-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_purchase_request-14.0.2.1.2.dev6-py3-none-any.whl.zip tmp/odoo14_addon_purchase_request-14.0.2.1.2.dev7-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-purchase-request/14.0.2.1.2.dev6-14.0.2.1.2.dev7/diff.md --exclude *.pyd
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo-addon-purchase-stock-secondary-unit]: executing diffoscope
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo-addon-purchase-stock-secondary-unit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_purchase_stock_secondary_unit-15.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_purchase_stock_secondary_unit-15.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-purchase-stock-secondary-unit/15.0.1.0.0.2-15.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: Downloading https://files.pythonhosted.org/packages/f0/8e/2f17f86dbf6a0445da93c0763f99ce63eaceaee3af10a73fddb9c2c7783c/odoo14_addons_oca_purchase_workflow-14.0.20230512.0-py3-none-any.whl
+[2023-05-13 08:48:21] INFO root fetch - processPackages [PyTraffic]: executing diffoscope
+[2023-05-13 08:48:21] INFO root fetch - processPackages [PyTraffic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTraffic-1.0.0.tar.gz tmp/PyTraffic-1.0.1.tar.gz --markdown 20230513/P/PyTraffic/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pulumi-keycloak]: executing diffoscope
+[2023-05-13 08:48:21] INFO root fetch - processPackages [pulumi-keycloak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_keycloak-5.2.0a1683784672.tar.gz tmp/pulumi_keycloak-5.2.0a1683959055.tar.gz --markdown 20230513/p/pulumi-keycloak/5.2.0a1683784672-5.2.0a1683959055/diff.md --exclude *.pyd
+[2023-05-13 08:48:21] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: Downloading https://files.pythonhosted.org/packages/86/77/924c105d7b7aec3fb3d564ac3c0216162970424cfc02f766f14008c92597/nonebot_plugin_spark_gpt-0.1.6.tar.gz
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: executing diffoscope
+[2023-05-13 08:48:21] INFO root fetch - processPackages [odoo14-addons-oca-purchase-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addons_oca_purchase_workflow-14.0.20230420.0-py3-none-any.whl.zip tmp/odoo14_addons_oca_purchase_workflow-14.0.20230512.0-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addons-oca-purchase-workflow/14.0.20230420.0-14.0.20230512.0/diff.md --exclude *.pyd
+[2023-05-13 08:48:22] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: executing diffoscope
+[2023-05-13 08:48:22] INFO root fetch - processPackages [nonebot-plugin-spark-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_spark_gpt-0.1.5.tar.gz tmp/nonebot_plugin_spark_gpt-0.1.6.tar.gz --markdown 20230513/n/nonebot-plugin-spark-gpt/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-13 08:48:23] INFO root fetch - main [MainThread]: End processing [pulumi-rke]: success
+[2023-05-13 08:48:23] INFO root fetch - main [MainThread]: End processing [PyTraffic]: success
+[2023-05-13 08:48:23] INFO root fetch - main [MainThread]: End processing [odoo14-addons-oca-purchase-workflow]: success
+[2023-05-13 08:48:23] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-stock-secondary-unit]: success
+[2023-05-13 08:48:23] INFO root fetch - main [MainThread]: End processing [odoo14-addon-purchase-request]: success
+[2023-05-13 08:48:25] INFO root fetch - main [MainThread]: End processing [pulumi-keycloak]: success
+[2023-05-13 08:48:25] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-spark-gpt]: success
+[2023-05-13 08:48:25] INFO root fetch - main [MainThread]: End processing [pyfirebird]: success
+[2023-05-13 08:48:25] INFO root fetch - main [MainThread]: Store serial: [18088434]
