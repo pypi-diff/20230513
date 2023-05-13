@@ -10260,3 +10260,66 @@ EOFError: EOF read where object expected
 [2023-05-13 15:55:44] INFO root fetch - main [MainThread]: End processing [spreadsheetbot]: success
 [2023-05-13 15:55:44] INFO root fetch - main [MainThread]: End processing [uc-browser]: success
 [2023-05-13 15:55:44] INFO root fetch - main [MainThread]: Store serial: [18090626]
+[2023-05-13 16:00:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090626]
+[2023-05-13 16:00:53] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Fletxible
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cat-dog-lib
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eos-downloader
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datamultiproc
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emr-sfn-waiter
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipo-india
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: libideeee
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: homoglyphs-testpypi
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: vaillant-plus-cn-api
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: librenv
+[2023-05-13 16:00:53] WARNING root fetch - processPackages [libideeee]: Skipping, unable to determine old version
+[2023-05-13 16:00:53] INFO root fetch - processPackages [libideeee]: Start processing: rum-with-telegram
+[2023-05-13 16:00:53] INFO root fetch - main [MainThread]: End processing [libideeee] error
+[2023-05-13 16:00:53] WARNING root fetch - processPackages [cat-dog-lib]: Skipping, unable to determine old version
+[2023-05-13 16:00:53] INFO root fetch - main [MainThread]: End processing [cat-dog-lib] error
+[2023-05-13 16:00:53] INFO root fetch - processPackages [Fletxible]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-13 16:00:53] INFO root fetch - processPackages [eos-downloader]: New version: [0.8.1.dev1] Old Version: [0.8.1]
+[2023-05-13 16:00:53] ERROR root fetch - processPackages [homoglyphs-testpypi]: Unable to get metadata: No such project 'homoglyphs-testpypi'
+[2023-05-13 16:00:53] INFO root fetch - processPackages [datamultiproc]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 16:00:53] INFO root fetch - main [MainThread]: End processing [homoglyphs-testpypi] error
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ipo-india]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 16:00:53] INFO root fetch - processPackages [librenv]: New version: [0.1.1] Old Version: [0.1]
+[2023-05-13 16:00:53] INFO root fetch - processPackages [vaillant-plus-cn-api]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-13 16:00:53] WARNING root fetch - processPackages [emr-sfn-waiter]: Skipping, unable to determine old version
+[2023-05-13 16:00:53] INFO root fetch - main [MainThread]: End processing [emr-sfn-waiter] error
+[2023-05-13 16:00:53] INFO root fetch - processPackages [rum-with-telegram]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 16:00:53] INFO root fetch - processPackages [datamultiproc]: Downloading https://files.pythonhosted.org/packages/82/fb/b8f15eebe3adebd184811bb53923fe862fdb4001be2cef7fc64608578094/datamultiproc-0.1.0.tar.gz
+[2023-05-13 16:00:53] INFO root fetch - processPackages [eos-downloader]: Downloading https://files.pythonhosted.org/packages/e1/fd/af8c63e84a843f82d04674276be9df7f8f83a2655d6709fc8643a1de6da6/eos_downloader-0.8.1.tar.gz
+[2023-05-13 16:00:53] INFO root fetch - processPackages [ipo-india]: Downloading https://files.pythonhosted.org/packages/98/94/e51fb2c7d1008f89e9a2c19fd3fe18b798e54186ca77f4e7fb64c0086f1f/ipo_india-0.0.1.tar.gz
+[2023-05-13 16:00:53] INFO root fetch - processPackages [librenv]: Downloading https://files.pythonhosted.org/packages/ce/20/6b02d2a1f1e785b6ccd7a098afb67565329e29924ceac38861df747ca4aa/librenv-0.1-py3.11.egg
+[2023-05-13 16:00:53] INFO root fetch - processPackages [vaillant-plus-cn-api]: Downloading https://files.pythonhosted.org/packages/48/08/dc7ee79b174926e14d0a1f7761079cf8227ec312c031c6f77fd0467a5358/vaillant_plus_cn_api-0.3.4.tar.gz
+[2023-05-13 16:00:54] INFO root fetch - processPackages [rum-with-telegram]: Downloading https://files.pythonhosted.org/packages/8e/10/df6f82fd7cd84de395b382d1cc01e2979b23cf60415ef507cf171d54ca93/rum_with_telegram-1.0.1.tar.gz
+[2023-05-13 16:00:54] INFO root fetch - processPackages [Fletxible]: Downloading https://files.pythonhosted.org/packages/cd/3c/86c99a7f2a60cce423d1c0add6ce7fb441c2df678f6adcaa738bb5580f6b/Fletxible-0.4.1.tar.gz
+[2023-05-13 16:00:54] INFO root fetch - processPackages [Fletxible]: executing diffoscope
+[2023-05-13 16:00:54] INFO root fetch - processPackages [Fletxible]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fletxible-0.4.0.tar.gz tmp/Fletxible-0.4.1.tar.gz --markdown 20230513/F/Fletxible/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-13 16:00:54] INFO root fetch - processPackages [datamultiproc]: Downloading https://files.pythonhosted.org/packages/eb/75/c7ad72b98c1d863610e9c1674a1b287db7dd0027d040a3d62f05e7a5e3f5/datamultiproc-0.1.1.tar.gz
+[2023-05-13 16:00:54] INFO root fetch - processPackages [ipo-india]: Downloading https://files.pythonhosted.org/packages/e3/06/197745310926697fabd48a8d3e22daee6822c88fcc6b63edfad66c30a004/ipo_india-0.0.2.tar.gz
+[2023-05-13 16:00:54] INFO root fetch - processPackages [eos-downloader]: Downloading https://files.pythonhosted.org/packages/3e/40/136eb592910e1f0910f3afda993d0db855edbafec8df01b72e3a182811eb/eos_downloader-0.8.1.dev1.tar.gz
+[2023-05-13 16:00:54] INFO root fetch - processPackages [librenv]: Downloading https://files.pythonhosted.org/packages/c6/0b/28aa72e7ede6c8f53bd9a8be71c02dc0cb0572f1c3e2970a039911fb05b3/librenv-0.1.1-py3.11.egg
+[2023-05-13 16:00:54] INFO root fetch - processPackages [ipo-india]: executing diffoscope
+[2023-05-13 16:00:54] INFO root fetch - processPackages [ipo-india]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipo_india-0.0.1.tar.gz tmp/ipo_india-0.0.2.tar.gz --markdown 20230513/i/ipo-india/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 16:00:54] INFO root fetch - processPackages [datamultiproc]: executing diffoscope
+[2023-05-13 16:00:54] INFO root fetch - processPackages [datamultiproc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamultiproc-0.1.0.tar.gz tmp/datamultiproc-0.1.1.tar.gz --markdown 20230513/d/datamultiproc/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 16:00:54] INFO root fetch - processPackages [eos-downloader]: executing diffoscope
+[2023-05-13 16:00:54] INFO root fetch - processPackages [eos-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eos_downloader-0.8.1.tar.gz tmp/eos_downloader-0.8.1.dev1.tar.gz --markdown 20230513/e/eos-downloader/0.8.1-0.8.1.dev1/diff.md --exclude *.pyd
+[2023-05-13 16:00:54] INFO root fetch - processPackages [rum-with-telegram]: Downloading https://files.pythonhosted.org/packages/55/b5/85ff1af8815060706e1afc004862d9e3adffe18e79026387e8ba74ec9d0d/rum_with_telegram-1.0.2.tar.gz
+[2023-05-13 16:00:54] INFO root fetch - processPackages [vaillant-plus-cn-api]: Downloading https://files.pythonhosted.org/packages/12/50/e3e9231225438fe2dbe9c9cfd881d395879a4dae3ea3626f20b74e65a2f0/vaillant_plus_cn_api-0.3.5.tar.gz
+[2023-05-13 16:00:54] INFO root fetch - processPackages [librenv]: executing diffoscope
+[2023-05-13 16:00:54] INFO root fetch - processPackages [librenv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/librenv-0.1-py3.11.egg tmp/librenv-0.1.1-py3.11.egg --markdown 20230513/l/librenv/0.1-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 16:00:54] INFO root fetch - processPackages [vaillant-plus-cn-api]: executing diffoscope
+[2023-05-13 16:00:54] INFO root fetch - processPackages [vaillant-plus-cn-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vaillant_plus_cn_api-0.3.4.tar.gz tmp/vaillant_plus_cn_api-0.3.5.tar.gz --markdown 20230513/v/vaillant-plus-cn-api/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-13 16:00:54] INFO root fetch - processPackages [rum-with-telegram]: executing diffoscope
+[2023-05-13 16:00:54] INFO root fetch - processPackages [rum-with-telegram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rum_with_telegram-1.0.1.tar.gz tmp/rum_with_telegram-1.0.2.tar.gz --markdown 20230513/r/rum-with-telegram/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 16:00:55] INFO root fetch - main [MainThread]: End processing [Fletxible]: success
+[2023-05-13 16:00:55] INFO root fetch - main [MainThread]: End processing [ipo-india]: success
+[2023-05-13 16:00:55] INFO root fetch - main [MainThread]: End processing [datamultiproc]: success
+[2023-05-13 16:00:55] INFO root fetch - main [MainThread]: End processing [rum-with-telegram]: success
+[2023-05-13 16:00:56] INFO root fetch - main [MainThread]: End processing [librenv]: success
+[2023-05-13 16:00:56] INFO root fetch - main [MainThread]: End processing [vaillant-plus-cn-api]: success
+[2023-05-13 16:00:56] INFO root fetch - main [MainThread]: End processing [eos-downloader]: success
+[2023-05-13 16:00:56] INFO root fetch - main [MainThread]: Store serial: [18090672]
