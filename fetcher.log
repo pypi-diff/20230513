@@ -10893,3 +10893,27 @@ EOFError: EOF read where object expected
 [2023-05-13 16:58:54] INFO root fetch - main [MainThread]: End processing [business-profile-yelp-local-python]: success
 [2023-05-13 16:58:54] INFO root fetch - main [MainThread]: End processing [websiteclassificationapi]: success
 [2023-05-13 16:58:54] INFO root fetch - main [MainThread]: Store serial: [18090997]
+[2023-05-13 17:03:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090997]
+[2023-05-13 17:04:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 17:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PatryksAutoAI
+[2023-05-13 17:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-simon
+[2023-05-13 17:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: medical-data
+[2023-05-13 17:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hotspotty-payment-email
+[2023-05-13 17:04:03] INFO root fetch - processPackages [simple-simon]: New version: [0.0.5] Old Version: [0.0.3]
+[2023-05-13 17:04:03] INFO root fetch - processPackages [hotspotty-payment-email]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-13 17:04:03] WARNING root fetch - processPackages [medical-data]: Skipping, unable to determine old version
+[2023-05-13 17:04:03] INFO root fetch - main [MainThread]: End processing [medical-data] error
+[2023-05-13 17:04:03] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-13 17:04:03] INFO root fetch - processPackages [hotspotty-payment-email]: Downloading https://files.pythonhosted.org/packages/cb/0b/7f541748604f5bab10e1c5b651d8f0235e695c7a228752ba3197074f6304/hotspotty_payment_email-0.3.3.tar.gz
+[2023-05-13 17:04:03] INFO root fetch - processPackages [simple-simon]: Downloading https://files.pythonhosted.org/packages/b6/6f/0e3b9061a77e2e74dc21c21f0231b1a0733cc7e6c234d3e5276745b4e364/simple-simon-0.0.5.tar.gz
+[2023-05-13 17:04:03] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/fb/6e/dded1e22bb6afa6d84ca693e2902fea260e4401e1e1d05fe0ecbb1ddabea/PatryksAutoAI-0.4.5.tar.gz
+[2023-05-13 17:04:03] INFO root fetch - processPackages [simple-simon]: executing diffoscope
+[2023-05-13 17:04:03] INFO root fetch - processPackages [simple-simon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-simon-0.0.3.tar.gz tmp/simple-simon-0.0.5.tar.gz --markdown 20230513/s/simple-simon/0.0.3-0.0.5/diff.md --exclude *.pyd
+[2023-05-13 17:04:03] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-13 17:04:03] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.4.4.tar.gz tmp/PatryksAutoAI-0.4.5.tar.gz --markdown 20230513/P/PatryksAutoAI/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-13 17:04:03] INFO root fetch - processPackages [hotspotty-payment-email]: executing diffoscope
+[2023-05-13 17:04:03] INFO root fetch - processPackages [hotspotty-payment-email]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotspotty_payment_email-0.3.2.tar.gz tmp/hotspotty_payment_email-0.3.3.tar.gz --markdown 20230513/h/hotspotty-payment-email/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-13 17:04:04] INFO root fetch - main [MainThread]: End processing [simple-simon]: success
+[2023-05-13 17:04:04] INFO root fetch - main [MainThread]: End processing [hotspotty-payment-email]: success
+[2023-05-13 17:04:04] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-13 17:04:04] INFO root fetch - main [MainThread]: Store serial: [18091012]
