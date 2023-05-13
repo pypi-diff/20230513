@@ -3497,3 +3497,49 @@
 [2023-05-13 03:32:56] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-13 03:32:56] INFO root fetch - main [MainThread]: End processing [pyrgo]: success
 [2023-05-13 03:32:56] INFO root fetch - main [MainThread]: Store serial: [18086930]
+[2023-05-13 03:38:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18086930]
+[2023-05-13 03:38:06] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-stdlib
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: journalyze
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plugnplai
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-numpy
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyqt-color
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bytez
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: thelemic-date
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-pandas
+[2023-05-13 03:38:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: nbdev-pytorch
+[2023-05-13 03:38:06] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 03:38:06] WARNING root fetch - processPackages [pyqt-color]: Skipping, unable to determine old version
+[2023-05-13 03:38:06] INFO root fetch - main [MainThread]: End processing [pyqt-color] error
+[2023-05-13 03:38:07] WARNING root fetch - processPackages [thelemic-date]: Skipping, unable to determine old version
+[2023-05-13 03:38:07] INFO root fetch - processPackages [journalyze]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 03:38:07] INFO root fetch - processPackages [plugnplai]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 03:38:07] INFO root fetch - main [MainThread]: End processing [thelemic-date] error
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 03:38:07] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-13 03:38:07] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230513/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230513/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230513/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230513/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-13 03:38:07] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230513/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 03:38:07] INFO root fetch - processPackages [journalyze]: Downloading https://files.pythonhosted.org/packages/61/fc/9641995c9d31f6b7503f3b90fa49cf25162b4bc80a7d10afa040ad0e403f/journalyze-0.1.0.tar.gz
+[2023-05-13 03:38:07] INFO root fetch - processPackages [plugnplai]: executing diffoscope
+[2023-05-13 03:38:07] INFO root fetch - processPackages [plugnplai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugnplai-0.0.5.tar.gz tmp/plugnplai-0.0.6.tar.gz --markdown 20230513/p/plugnplai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 03:38:07] INFO root fetch - processPackages [journalyze]: Downloading https://files.pythonhosted.org/packages/a6/3a/d81dc24eabf85a68b2e2ec122d4c3fd5cb5fae8214d89c86b5277c8c34db/journalyze-0.1.1.tar.gz
+[2023-05-13 03:38:07] INFO root fetch - processPackages [journalyze]: executing diffoscope
+[2023-05-13 03:38:07] INFO root fetch - processPackages [journalyze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/journalyze-0.1.0.tar.gz tmp/journalyze-0.1.1.tar.gz --markdown 20230513/j/journalyze/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 03:38:08] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-13 03:38:08] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-13 03:38:08] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-13 03:38:08] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-13 03:38:08] INFO root fetch - main [MainThread]: End processing [plugnplai]: success
+[2023-05-13 03:38:09] INFO root fetch - main [MainThread]: End processing [journalyze]: success
+[2023-05-13 03:38:10] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-13 03:38:10] INFO root fetch - main [MainThread]: Store serial: [18086958]
