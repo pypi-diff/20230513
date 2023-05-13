@@ -3781,3 +3781,19 @@
 [2023-05-13 04:14:30] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
 [2023-05-13 04:14:30] INFO root fetch - main [MainThread]: End processing [fmo-cli]: success
 [2023-05-13 04:14:30] INFO root fetch - main [MainThread]: Store serial: [18087132]
+[2023-05-13 04:19:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087132]
+[2023-05-13 04:19:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-13 04:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ucsd-cape
+[2023-05-13 04:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chatglm-llm
+[2023-05-13 04:19:41] INFO root fetch - processPackages [ucsd-cape]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-13 04:19:41] INFO root fetch - processPackages [chatglm-llm]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-13 04:19:41] INFO root fetch - processPackages [chatglm-llm]: Downloading https://files.pythonhosted.org/packages/4f/11/7bff0cc772e20b8817e8ff25eb0e9a3efc42fbcb8ea1f07b1bd1c2fbb499/chatglm-llm-1.3.1.tar.gz
+[2023-05-13 04:19:41] INFO root fetch - processPackages [ucsd-cape]: Downloading https://files.pythonhosted.org/packages/77/50/1e56919272683bd11aefa8aa7664903d4d9fc8422d84836d7a7933720281/ucsd-cape-0.3.0.tar.gz
+[2023-05-13 04:19:41] INFO root fetch - processPackages [ucsd-cape]: executing diffoscope
+[2023-05-13 04:19:41] INFO root fetch - processPackages [ucsd-cape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ucsd-cape-0.2.0.tar.gz tmp/ucsd-cape-0.3.0.tar.gz --markdown 20230513/u/ucsd-cape/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 04:19:41] INFO root fetch - processPackages [chatglm-llm]: Downloading https://files.pythonhosted.org/packages/04/13/37e51cd4fd8225dafbb282f7b74bf76a41c0af6a02a33c5e13e02fbf4f8d/chatglm-llm-1.3.2.tar.gz
+[2023-05-13 04:19:41] INFO root fetch - processPackages [chatglm-llm]: executing diffoscope
+[2023-05-13 04:19:41] INFO root fetch - processPackages [chatglm-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatglm-llm-1.3.1.tar.gz tmp/chatglm-llm-1.3.2.tar.gz --markdown 20230513/c/chatglm-llm/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-13 04:19:42] INFO root fetch - main [MainThread]: End processing [ucsd-cape]: success
+[2023-05-13 04:19:42] INFO root fetch - main [MainThread]: End processing [chatglm-llm]: success
+[2023-05-13 04:19:42] INFO root fetch - main [MainThread]: Store serial: [18087138]
