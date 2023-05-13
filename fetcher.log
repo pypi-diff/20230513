@@ -11614,3 +11614,29 @@ EOFError: EOF read where object expected
 [2023-05-13 18:18:41] INFO root fetch - main [MainThread]: End processing [pct]: success
 [2023-05-13 18:18:41] INFO root fetch - main [MainThread]: End processing [flatgeobuf-pyrust]: success
 [2023-05-13 18:18:41] INFO root fetch - main [MainThread]: Store serial: [18091545]
+[2023-05-13 18:23:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091545]
+[2023-05-13 18:23:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 18:23:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-ckeditor-5
+[2023-05-13 18:23:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prodiapy
+[2023-05-13 18:23:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: absbox
+[2023-05-13 18:23:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sphinxify
+[2023-05-13 18:23:50] INFO root fetch - processPackages [django-ckeditor-5]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-13 18:23:50] WARNING root fetch - processPackages [prodiapy]: Skipping, unable to determine old version
+[2023-05-13 18:23:50] INFO root fetch - main [MainThread]: End processing [prodiapy] error
+[2023-05-13 18:23:50] INFO root fetch - processPackages [absbox]: New version: [0.9.3] Old Version: [0.8.9]
+[2023-05-13 18:23:50] INFO root fetch - processPackages [sphinxify]: New version: [0.9] Old Version: [0.8.3]
+[2023-05-13 18:23:51] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/f2/f5/d913079148fbe1aebd6fc56849f3245eda346886eb6d2488747d9a978493/AbsBox-0.8.9.tar.gz
+[2023-05-13 18:23:51] INFO root fetch - processPackages [sphinxify]: Downloading https://files.pythonhosted.org/packages/b1/22/2e2324f0812614b73fd6e86f31a62cdf774bc660787a2fc62decd5ed53fa/sphinxify-0.8.3.tar.gz
+[2023-05-13 18:23:51] INFO root fetch - processPackages [django-ckeditor-5]: Downloading https://files.pythonhosted.org/packages/2e/eb/8a64cac628a5d37c23c49cdf47fe7bffefae12655ae8f44b036db19ed9fe/django-ckeditor-5-0.2.6.tar.gz
+[2023-05-13 18:23:51] INFO root fetch - processPackages [django-ckeditor-5]: executing diffoscope
+[2023-05-13 18:23:51] INFO root fetch - processPackages [django-ckeditor-5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ckeditor-5-0.2.5.tar.gz tmp/django-ckeditor-5-0.2.6.tar.gz --markdown 20230513/d/django-ckeditor-5/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-13 18:23:51] INFO root fetch - processPackages [absbox]: Downloading https://files.pythonhosted.org/packages/63/df/8bc5a95a40d1cc98f7aa27a8baf79a5df19fa8dc2f6836ff02171d21c08a/AbsBox-0.9.3.tar.gz
+[2023-05-13 18:23:51] INFO root fetch - processPackages [sphinxify]: Downloading https://files.pythonhosted.org/packages/21/76/c6f6cfda03c9542ea65338f2a66b9235cf582d924030e0fc19f90669a4fa/sphinxify-0.9.tar.gz
+[2023-05-13 18:23:51] INFO root fetch - processPackages [absbox]: executing diffoscope
+[2023-05-13 18:23:51] INFO root fetch - processPackages [absbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AbsBox-0.8.9.tar.gz tmp/AbsBox-0.9.3.tar.gz --markdown 20230513/a/absbox/0.8.9-0.9.3/diff.md --exclude *.pyd
+[2023-05-13 18:23:51] INFO root fetch - processPackages [sphinxify]: executing diffoscope
+[2023-05-13 18:23:51] INFO root fetch - processPackages [sphinxify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxify-0.8.3.tar.gz tmp/sphinxify-0.9.tar.gz --markdown 20230513/s/sphinxify/0.8.3-0.9/diff.md --exclude *.pyd
+[2023-05-13 18:23:52] INFO root fetch - main [MainThread]: End processing [sphinxify]: success
+[2023-05-13 18:23:52] INFO root fetch - main [MainThread]: End processing [absbox]: success
+[2023-05-13 18:24:43] INFO root fetch - main [MainThread]: End processing [django-ckeditor-5]: success
+[2023-05-13 18:24:43] INFO root fetch - main [MainThread]: Store serial: [18091559]
