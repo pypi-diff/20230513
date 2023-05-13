@@ -7552,3 +7552,18 @@
 [2023-05-13 10:26:11] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-fatturapa-out]: success
 [2023-05-13 10:26:13] INFO root fetch - main [MainThread]: End processing [overhave]: success
 [2023-05-13 10:26:13] INFO root fetch - main [MainThread]: Store serial: [18088960]
+[2023-05-13 10:31:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088960]
+[2023-05-13 10:31:22] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-13 10:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NlpToolkit-DependencyParser
+[2023-05-13 10:31:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vollseg
+[2023-05-13 10:31:22] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-13 10:31:22] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-05-13 10:31:22] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-05-13 10:31:22] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-05-13 10:31:22] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-05-13 10:31:22] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: Downloading https://files.pythonhosted.org/packages/d3/c1/368266aa7c2818f6889fbc31242dd959873236fb379fe3a5585207f10444/NlpToolkit-DependencyParser-1.0.8.tar.gz
+[2023-05-13 10:31:22] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: Downloading https://files.pythonhosted.org/packages/cf/03/a1cc004cd179c3042327a54ded14d1ea6a9ce64f7db59d7ae8e5a58a1b0d/NlpToolkit-DependencyParser-1.0.9.tar.gz
+[2023-05-13 10:31:22] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: executing diffoscope
+[2023-05-13 10:31:22] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NlpToolkit-DependencyParser-1.0.8.tar.gz tmp/NlpToolkit-DependencyParser-1.0.9.tar.gz --markdown 20230513/N/NlpToolkit-DependencyParser/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-13 10:31:23] INFO root fetch - main [MainThread]: End processing [NlpToolkit-DependencyParser]: success
+[2023-05-13 10:31:23] INFO root fetch - main [MainThread]: Store serial: [18088966]
