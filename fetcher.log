@@ -9264,3 +9264,48 @@
 [2023-05-13 14:12:56] INFO root fetch - main [MainThread]: End processing [testcell]: success
 [2023-05-13 14:12:56] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
 [2023-05-13 14:12:56] INFO root fetch - main [MainThread]: Store serial: [18090002]
+[2023-05-13 14:18:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090002]
+[2023-05-13 14:18:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 14:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: netext
+[2023-05-13 14:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tpfi
+[2023-05-13 14:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hapdoc
+[2023-05-13 14:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snapcast
+[2023-05-13 14:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: D47crunch
+[2023-05-13 14:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sabledocs
+[2023-05-13 14:18:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aioinsta
+[2023-05-13 14:18:05] INFO root fetch - processPackages [tpfi]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-13 14:18:05] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 14:18:05] INFO root fetch - processPackages [snapcast]: New version: [2.3.3] Old Version: [2.3.2]
+[2023-05-13 14:18:05] INFO root fetch - processPackages [sabledocs]: New version: [0.1.96] Old Version: [0.1.91]
+[2023-05-13 14:18:05] INFO root fetch - processPackages [netext]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 14:18:05] INFO root fetch - processPackages [D47crunch]: New version: [2.0.6] Old Version: [2.0.5]
+[2023-05-13 14:18:05] INFO root fetch - processPackages [aioinsta]: New version: [1.6] Old Version: [1.5]
+[2023-05-13 14:18:05] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 14:18:05] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 14:18:05] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-05-13 14:18:05] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.91.tar.gz tmp/sabledocs-0.1.96.tar.gz --markdown 20230513/s/sabledocs/0.1.91-0.1.96/diff.md --exclude *.pyd
+[2023-05-13 14:18:05] INFO root fetch - processPackages [snapcast]: Downloading https://files.pythonhosted.org/packages/6c/37/0b74f85934efd4541a7fc0518dde45832b61dc2a3e24b5af83856daf46c5/snapcast-2.3.2.tar.gz
+[2023-05-13 14:18:05] INFO root fetch - processPackages [netext]: Downloading https://files.pythonhosted.org/packages/4d/96/4031a777fec1f5b23dcc501c9bc44ee626189b30d8508df8b50f52e06901/netext-0.1.0.tar.gz
+[2023-05-13 14:18:05] INFO root fetch - processPackages [tpfi]: Downloading https://files.pythonhosted.org/packages/fd/d0/f11b4a95d2d4fa894cbefec88916a772c6a5a142bc96b9555e636dbccc53/tpfi-1.0.7.tar.gz
+[2023-05-13 14:18:05] INFO root fetch - processPackages [D47crunch]: Downloading https://files.pythonhosted.org/packages/ff/39/243df3c2e8b49dbd7ee0541ec3f8c8d2acfaa35e6a50081673a2ab999d12/D47crunch-2.0.6.tar.gz
+[2023-05-13 14:18:05] INFO root fetch - processPackages [tpfi]: executing diffoscope
+[2023-05-13 14:18:05] INFO root fetch - processPackages [tpfi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tpfi-1.0.6.tar.gz tmp/tpfi-1.0.7.tar.gz --markdown 20230513/t/tpfi/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-13 14:18:05] INFO root fetch - processPackages [aioinsta]: Downloading https://files.pythonhosted.org/packages/31/f1/3b7fbff5d8758199e064576ed31c7d5ef03abc92752abec1856c1eec6f35/aioinsta-1.6.tar.gz
+[2023-05-13 14:18:06] INFO root fetch - processPackages [snapcast]: Downloading https://files.pythonhosted.org/packages/d2/08/3605828cd4bb0570a52c46e44bf24b10fbe5b0a677237e2eb25be43909d0/snapcast-2.3.3.tar.gz
+[2023-05-13 14:18:06] INFO root fetch - processPackages [snapcast]: executing diffoscope
+[2023-05-13 14:18:06] INFO root fetch - processPackages [snapcast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snapcast-2.3.2.tar.gz tmp/snapcast-2.3.3.tar.gz --markdown 20230513/s/snapcast/2.3.2-2.3.3/diff.md --exclude *.pyd
+[2023-05-13 14:18:06] INFO root fetch - processPackages [netext]: Downloading https://files.pythonhosted.org/packages/99/38/f6945d47a81de1ab92bfecaf6abce11248e7e40aae99d167ec3cd32fc5bc/netext-0.1.1.tar.gz
+[2023-05-13 14:18:06] INFO root fetch - processPackages [aioinsta]: executing diffoscope
+[2023-05-13 14:18:06] INFO root fetch - processPackages [aioinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioinsta-1.5.tar.gz tmp/aioinsta-1.6.tar.gz --markdown 20230513/a/aioinsta/1.5-1.6/diff.md --exclude *.pyd
+[2023-05-13 14:18:06] INFO root fetch - processPackages [D47crunch]: executing diffoscope
+[2023-05-13 14:18:06] INFO root fetch - processPackages [D47crunch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/D47crunch-2.0.5.tar.gz tmp/D47crunch-2.0.6.tar.gz --markdown 20230513/D/D47crunch/2.0.5-2.0.6/diff.md --exclude *.pyd
+[2023-05-13 14:18:06] INFO root fetch - processPackages [netext]: executing diffoscope
+[2023-05-13 14:18:06] INFO root fetch - processPackages [netext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netext-0.1.0.tar.gz tmp/netext-0.1.1.tar.gz --markdown 20230513/n/netext/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 14:18:07] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 14:18:07] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-05-13 14:18:07] INFO root fetch - main [MainThread]: End processing [tpfi]: success
+[2023-05-13 14:18:07] INFO root fetch - main [MainThread]: End processing [aioinsta]: success
+[2023-05-13 14:18:07] INFO root fetch - main [MainThread]: End processing [netext]: success
+[2023-05-13 14:18:07] INFO root fetch - main [MainThread]: End processing [snapcast]: success
+[2023-05-13 14:18:08] INFO root fetch - main [MainThread]: End processing [D47crunch]: success
+[2023-05-13 14:18:08] INFO root fetch - main [MainThread]: Store serial: [18090032]
