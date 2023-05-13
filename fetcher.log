@@ -12717,3 +12717,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 20:19:58] INFO root fetch - main [MainThread]: End processing [amazon-ec2-best-instance]: success
 [2023-05-13 20:19:59] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
 [2023-05-13 20:19:59] INFO root fetch - main [MainThread]: Store serial: [18092220]
+[2023-05-13 20:25:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092220]
+[2023-05-13 20:25:08] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 20:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discovery-transition-ds
+[2023-05-13 20:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-simple-backup
+[2023-05-13 20:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyportfolioanalytics
+[2023-05-13 20:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: irene-pro
+[2023-05-13 20:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cipherLV
+[2023-05-13 20:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyvantage
+[2023-05-13 20:25:08] WARNING root fetch - processPackages [cipherLV]: Skipping, unable to determine old version
+[2023-05-13 20:25:08] INFO root fetch - main [MainThread]: End processing [cipherLV] error
+[2023-05-13 20:25:08] INFO root fetch - processPackages [django-simple-backup]: New version: [1.1] Old Version: [1.0]
+[2023-05-13 20:25:08] INFO root fetch - processPackages [pyvantage]: New version: [0.0.43] Old Version: [0.0.42]
+[2023-05-13 20:25:08] WARNING root fetch - processPackages [pyportfolioanalytics]: Skipping, unable to determine old version
+[2023-05-13 20:25:08] INFO root fetch - processPackages [irene-pro]: New version: [0.0.30] Old Version: [0.0.29]
+[2023-05-13 20:25:08] INFO root fetch - main [MainThread]: End processing [pyportfolioanalytics] error
+[2023-05-13 20:25:08] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-13 20:25:08] INFO root fetch - processPackages [django-simple-backup]: Downloading https://files.pythonhosted.org/packages/7a/0f/1d06606ee5807f8685ab13a453add70e455855acc9544425ce99a4c58b62/django-simple-backup-1.0.tar.gz
+[2023-05-13 20:25:08] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/30/a9/d23a3d0febe91fcd014bfa5a6bc6377e03991e0664589b5fe57a0a2991eb/pyvantage-0.0.42.tar.gz
+[2023-05-13 20:25:09] INFO root fetch - processPackages [django-simple-backup]: Downloading https://files.pythonhosted.org/packages/05/55/6ba77bf2a11bbff867255c456aa6c5a6fbabcab84ecba77dd8c67ea81206/django-simple-backup-1.1.tar.gz
+[2023-05-13 20:25:09] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/ab/df/4a3cb234a163c36915493961c1dc44726be7cece1915925e1bdea06e92d6/pyvantage-0.0.43.tar.gz
+[2023-05-13 20:25:09] INFO root fetch - processPackages [irene-pro]: Downloading https://files.pythonhosted.org/packages/ad/be/80d9d4694de13aea149215c5eaf856cf176dfd52e1c7c23d561d4d0c1b52/irene_pro-0.0.30.tar.gz
+[2023-05-13 20:25:09] INFO root fetch - processPackages [django-simple-backup]: executing diffoscope
+[2023-05-13 20:25:09] INFO root fetch - processPackages [django-simple-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-simple-backup-1.0.tar.gz tmp/django-simple-backup-1.1.tar.gz --markdown 20230513/d/django-simple-backup/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-13 20:25:09] INFO root fetch - processPackages [pyvantage]: executing diffoscope
+[2023-05-13 20:25:09] INFO root fetch - processPackages [pyvantage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvantage-0.0.42.tar.gz tmp/pyvantage-0.0.43.tar.gz --markdown 20230513/p/pyvantage/0.0.42-0.0.43/diff.md --exclude *.pyd
+[2023-05-13 20:25:09] INFO root fetch - processPackages [irene-pro]: executing diffoscope
+[2023-05-13 20:25:09] INFO root fetch - processPackages [irene-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irene_pro-0.0.29.tar.gz tmp/irene_pro-0.0.30.tar.gz --markdown 20230513/i/irene-pro/0.0.29-0.0.30/diff.md --exclude *.pyd
+[2023-05-13 20:25:09] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-13 20:25:09] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230513/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-13 20:25:10] INFO root fetch - main [MainThread]: End processing [django-simple-backup]: success
+[2023-05-13 20:25:10] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
+[2023-05-13 20:25:10] INFO root fetch - main [MainThread]: End processing [irene-pro]: success
+[2023-05-13 20:25:13] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-13 20:25:13] INFO root fetch - main [MainThread]: Store serial: [18092243]
