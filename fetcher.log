@@ -13995,3 +13995,18 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:53:20] INFO root fetch - main [MainThread]: End processing [asynczipstream]: success
 [2023-05-13 22:53:21] INFO root fetch - main [MainThread]: End processing [jms-metabolite-services]: success
 [2023-05-13 22:53:21] INFO root fetch - main [MainThread]: Store serial: [18093075]
+[2023-05-13 22:58:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093075]
+[2023-05-13 22:58:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 22:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: midjourney-api
+[2023-05-13 22:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syslog-ng-cfg-helper
+[2023-05-13 22:58:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tnl
+[2023-05-13 22:58:30] WARNING root fetch - processPackages [tnl]: Skipping, unable to determine old version
+[2023-05-13 22:58:30] INFO root fetch - main [MainThread]: End processing [tnl] error
+[2023-05-13 22:58:30] WARNING root fetch - processPackages [midjourney-api]: Skipping, unable to determine old version
+[2023-05-13 22:58:30] INFO root fetch - main [MainThread]: End processing [midjourney-api] error
+[2023-05-13 22:58:30] INFO root fetch - processPackages [syslog-ng-cfg-helper]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-13 22:58:30] INFO root fetch - processPackages [syslog-ng-cfg-helper]: Downloading https://files.pythonhosted.org/packages/75/fc/8c73c3a44ec553da5457d01c127ec8e5607ed88e684ca7e0bab0a53a2335/syslog_ng_cfg_helper-1.0.3.tar.gz
+[2023-05-13 22:58:30] INFO root fetch - processPackages [syslog-ng-cfg-helper]: executing diffoscope
+[2023-05-13 22:58:30] INFO root fetch - processPackages [syslog-ng-cfg-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syslog_ng_cfg_helper-1.0.2.tar.gz tmp/syslog_ng_cfg_helper-1.0.3.tar.gz --markdown 20230513/s/syslog-ng-cfg-helper/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-13 22:58:31] INFO root fetch - main [MainThread]: End processing [syslog-ng-cfg-helper]: success
+[2023-05-13 22:58:31] INFO root fetch - main [MainThread]: Store serial: [18093089]
