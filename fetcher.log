@@ -11811,3 +11811,43 @@ EOFError: EOF read where object expected
 [2023-05-13 18:45:48] INFO root fetch - main [MainThread]: End processing [dpsa4fl-bindings]: success
 [2023-05-13 18:45:48] INFO root fetch - main [MainThread]: End processing [stocktracer]: success
 [2023-05-13 18:45:48] INFO root fetch - main [MainThread]: Store serial: [18091693]
+[2023-05-13 18:50:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091693]
+[2023-05-13 18:50:57] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 18:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autosrt
+[2023-05-13 18:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyportfolioanalytics
+[2023-05-13 18:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: binance-klines
+[2023-05-13 18:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: etm-dgraham
+[2023-05-13 18:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pystatic-language
+[2023-05-13 18:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: typedpy
+[2023-05-13 18:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mapdata
+[2023-05-13 18:50:57] INFO root fetch - processPackages [autosrt]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-13 18:50:57] INFO root fetch - processPackages [typedpy]: New version: [2.9.0] Old Version: [2.8.2]
+[2023-05-13 18:50:57] INFO root fetch - processPackages [pystatic-language]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 18:50:57] WARNING root fetch - processPackages [mapdata]: Skipping, unable to determine old version
+[2023-05-13 18:50:57] INFO root fetch - main [MainThread]: End processing [mapdata] error
+[2023-05-13 18:50:57] INFO root fetch - processPackages [binance-klines]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 18:50:57] INFO root fetch - processPackages [etm-dgraham]: New version: [4.9.7] Old Version: [4.9.6]
+[2023-05-13 18:50:57] WARNING root fetch - processPackages [pyportfolioanalytics]: Skipping, unable to determine old version
+[2023-05-13 18:50:57] INFO root fetch - main [MainThread]: End processing [pyportfolioanalytics] error
+[2023-05-13 18:50:57] INFO root fetch - processPackages [binance-klines]: Downloading https://files.pythonhosted.org/packages/35/e2/741b088d4af2791e2d5698d7d9a1b1063f2b21e72b80b6b58f61d34acfd0/binance_klines-0.1.0.tar.gz
+[2023-05-13 18:50:57] INFO root fetch - processPackages [typedpy]: Downloading https://files.pythonhosted.org/packages/27/f4/f7ae09b3573eaf9438274f873686c75134c5c6d14d9ecbfe0759ef1a6908/typedpy-2.8.2.tar.gz
+[2023-05-13 18:50:57] INFO root fetch - processPackages [pystatic-language]: Downloading https://files.pythonhosted.org/packages/07/ba/34a74415d16aeac9beff6bd540924f9cfe58625cf07c40a2b4f09b64bac6/pystatic-language-1.0.1.tar.gz
+[2023-05-13 18:50:57] INFO root fetch - processPackages [binance-klines]: Downloading https://files.pythonhosted.org/packages/8a/cf/39e2169db30e918a22308b3ce1c2c325739fb5502863d01fe6966498f00e/binance_klines-0.1.1.tar.gz
+[2023-05-13 18:50:57] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-05-13 18:50:57] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.8.tar.gz tmp/autosrt-1.2.9.tar.gz --markdown 20230513/a/autosrt/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-13 18:50:57] INFO root fetch - processPackages [binance-klines]: executing diffoscope
+[2023-05-13 18:50:57] INFO root fetch - processPackages [binance-klines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/binance_klines-0.1.0.tar.gz tmp/binance_klines-0.1.1.tar.gz --markdown 20230513/b/binance-klines/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 18:50:57] INFO root fetch - processPackages [pystatic-language]: Downloading https://files.pythonhosted.org/packages/02/58/2cd10f2d6867bb21c79346466084a761c808073281a8e78d7bdd9971d98e/pystatic-language-1.0.2.tar.gz
+[2023-05-13 18:50:57] INFO root fetch - processPackages [pystatic-language]: executing diffoscope
+[2023-05-13 18:50:57] INFO root fetch - processPackages [pystatic-language]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pystatic-language-1.0.1.tar.gz tmp/pystatic-language-1.0.2.tar.gz --markdown 20230513/p/pystatic-language/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 18:50:58] INFO root fetch - processPackages [typedpy]: Downloading https://files.pythonhosted.org/packages/09/0d/3518f7fd28505046b25ea42ab09a2b7ca99222a917f91ffd54ea61a0e007/typedpy-2.9.0.tar.gz
+[2023-05-13 18:50:58] INFO root fetch - processPackages [etm-dgraham]: executing diffoscope
+[2023-05-13 18:50:58] INFO root fetch - processPackages [etm-dgraham]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/etm-dgraham-4.9.6.tar.gz tmp/etm-dgraham-4.9.7.tar.gz --markdown 20230513/e/etm-dgraham/4.9.6-4.9.7/diff.md --exclude *.pyd
+[2023-05-13 18:50:58] INFO root fetch - processPackages [typedpy]: executing diffoscope
+[2023-05-13 18:50:58] INFO root fetch - processPackages [typedpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typedpy-2.8.2.tar.gz tmp/typedpy-2.9.0.tar.gz --markdown 20230513/t/typedpy/2.8.2-2.9.0/diff.md --exclude *.pyd
+[2023-05-13 18:50:58] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-05-13 18:50:59] INFO root fetch - main [MainThread]: End processing [binance-klines]: success
+[2023-05-13 18:50:59] INFO root fetch - main [MainThread]: End processing [pystatic-language]: success
+[2023-05-13 18:50:59] INFO root fetch - main [MainThread]: End processing [typedpy]: success
+[2023-05-13 18:50:59] INFO root fetch - main [MainThread]: End processing [etm-dgraham]: success
+[2023-05-13 18:50:59] INFO root fetch - main [MainThread]: Store serial: [18091715]
