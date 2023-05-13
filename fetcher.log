@@ -11640,3 +11640,56 @@ EOFError: EOF read where object expected
 [2023-05-13 18:23:52] INFO root fetch - main [MainThread]: End processing [absbox]: success
 [2023-05-13 18:24:43] INFO root fetch - main [MainThread]: End processing [django-ckeditor-5]: success
 [2023-05-13 18:24:43] INFO root fetch - main [MainThread]: Store serial: [18091559]
+[2023-05-13 18:29:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091559]
+[2023-05-13 18:29:53] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zyncify
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cliconfig
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AuthLogin
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mainnet
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-intel
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: biotite
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: feathub-nightly
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: garlandtools-async
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: mdforest
+[2023-05-13 18:29:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: saic-ismart-client
+[2023-05-13 18:29:54] WARNING root fetch - processPackages [zyncify]: Skipping, unable to determine old version
+[2023-05-13 18:29:54] INFO root fetch - main [MainThread]: End processing [zyncify] error
+[2023-05-13 18:29:54] ERROR root fetch - processPackages [AuthLogin]: Unable to get metadata: No such project 'AuthLogin'
+[2023-05-13 18:29:54] INFO root fetch - main [MainThread]: End processing [AuthLogin] error
+[2023-05-13 18:29:54] INFO root fetch - processPackages [cliconfig]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-13 18:29:54] INFO root fetch - processPackages [mainnet]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-13 18:29:54] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230512] Old Version: [0.1.dev20230511]
+[2023-05-13 18:29:54] INFO root fetch - processPackages [biotite]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-13 18:29:54] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.14.0.dev20230512] Old Version: [2.14.0.dev20230511]
+[2023-05-13 18:29:54] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/5e/2c/f6223ea8c116478cf4ce5bc988e126dee4c0c3b1397832a399c5662bb921/feathub_nightly-0.1.dev20230511-py3-none-any.whl
+[2023-05-13 18:29:54] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/02/6a/99ba3639b68a8a462313f410b55714fba6ab743d42f62073f93325dc9566/tf_nightly_intel-2.14.0.dev20230511-cp39-cp39-win_amd64.whl
+[2023-05-13 18:29:54] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/f6/a3/453f9e52f4420641c3e0d3b07d6ee6551395ae473e27d48ff48fe9228976/cliconfig-0.5.4.tar.gz
+[2023-05-13 18:29:54] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 180391119>=10485760
+[2023-05-13 18:29:54] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-05-13 18:29:54] WARNING root fetch - processPackages [feathub-nightly]: Skipping package: exceeds size limit 12039452>=10485760
+[2023-05-13 18:29:54] INFO root fetch - processPackages [biotite]: Downloading https://files.pythonhosted.org/packages/7a/d2/eb25747b1e580436aaa037af1c5af185c3884042d2488df2b3ecce0c5d90/biotite-0.8.1.tar.gz
+[2023-05-13 18:29:54] INFO root fetch - main [MainThread]: End processing [feathub-nightly] error
+[2023-05-13 18:29:54] INFO root fetch - processPackages [mainnet]: executing diffoscope
+[2023-05-13 18:29:54] INFO root fetch - processPackages [mainnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mainnet-1.1.8.tar.gz tmp/mainnet-1.1.9.tar.gz --markdown 20230513/m/mainnet/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-13 18:29:54] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/49/3d/7e6cba3288e3df51140e5aa4d0ae63bba6baeb1eab7b34e5458ef89b176e/cliconfig-0.5.5.tar.gz
+[2023-05-13 18:29:54] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-13 18:29:54] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.5.4.tar.gz tmp/cliconfig-0.5.5.tar.gz --markdown 20230513/c/cliconfig/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-13 18:29:54] INFO root fetch - processPackages [garlandtools-async]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 18:29:54] INFO root fetch - processPackages [saic-ismart-client]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-13 18:29:54] WARNING root fetch - processPackages [mdforest]: Skipping, unable to determine old version
+[2023-05-13 18:29:54] INFO root fetch - main [MainThread]: End processing [mdforest] error
+[2023-05-13 18:29:54] INFO root fetch - processPackages [saic-ismart-client]: Downloading https://files.pythonhosted.org/packages/93/18/baba76a35a75b28f16a2a1e72dcdf1d1a21bee72bc206277d606cf6e2645/saic_ismart_client-1.2.2.tar.gz
+[2023-05-13 18:29:55] INFO root fetch - processPackages [biotite]: Downloading https://files.pythonhosted.org/packages/c8/33/f7a2730dc50ade6af02191072fc639189d5533cd7f2961cbf5d4cc0f3aee/biotite-0.9.0.tar.gz
+[2023-05-13 18:29:55] INFO root fetch - processPackages [biotite]: executing diffoscope
+[2023-05-13 18:29:55] INFO root fetch - processPackages [biotite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biotite-0.8.1.tar.gz tmp/biotite-0.9.0.tar.gz --markdown 20230513/b/biotite/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 18:29:55] INFO root fetch - processPackages [saic-ismart-client]: executing diffoscope
+[2023-05-13 18:29:55] INFO root fetch - processPackages [saic-ismart-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saic_ismart_client-1.2.1.tar.gz tmp/saic_ismart_client-1.2.2.tar.gz --markdown 20230513/s/saic-ismart-client/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-13 18:29:55] INFO root fetch - processPackages [garlandtools-async]: Downloading https://files.pythonhosted.org/packages/95/a4/2408ab2c759760c0f251fcf84ac18bea39140eb7e12f2434d56b490526af/garlandtools_async-0.1.2.tar.gz
+[2023-05-13 18:29:55] INFO root fetch - processPackages [garlandtools-async]: executing diffoscope
+[2023-05-13 18:29:55] INFO root fetch - processPackages [garlandtools-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/garlandtools_async-0.1.1.tar.gz tmp/garlandtools_async-0.1.2.tar.gz --markdown 20230513/g/garlandtools-async/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 18:29:56] INFO root fetch - main [MainThread]: End processing [saic-ismart-client]: success
+[2023-05-13 18:29:56] INFO root fetch - main [MainThread]: End processing [garlandtools-async]: success
+[2023-05-13 18:29:58] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
+[2023-05-13 18:30:00] INFO root fetch - main [MainThread]: End processing [mainnet]: success
+[2023-05-13 18:30:02] INFO root fetch - main [MainThread]: End processing [biotite]: success
+[2023-05-13 18:30:02] INFO root fetch - main [MainThread]: Store serial: [18091604]
