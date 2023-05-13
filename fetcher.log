@@ -12356,3 +12356,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 19:38:11] INFO root fetch - main [MainThread]: End processing [tiivad]: success
 [2023-05-13 19:38:12] INFO root fetch - main [MainThread]: End processing [EllipSect]: success
 [2023-05-13 19:38:12] INFO root fetch - main [MainThread]: Store serial: [18091970]
+[2023-05-13 19:43:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091970]
+[2023-05-13 19:43:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 19:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autosrt
+[2023-05-13 19:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dnsmule
+[2023-05-13 19:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discovery-transition-ds
+[2023-05-13 19:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PatryksAutoAI
+[2023-05-13 19:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dnsmule-plugins
+[2023-05-13 19:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyokx
+[2023-05-13 19:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: simmon
+[2023-05-13 19:43:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gmcapsule
+[2023-05-13 19:43:21] INFO root fetch - processPackages [autosrt]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-13 19:43:21] WARNING root fetch - processPackages [simmon]: Skipping, unable to determine old version
+[2023-05-13 19:43:21] INFO root fetch - main [MainThread]: End processing [simmon] error
+[2023-05-13 19:43:21] INFO root fetch - processPackages [pyokx]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-13 19:43:21] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.4.6] Old Version: [0.4.5]
+[2023-05-13 19:43:21] INFO root fetch - processPackages [gmcapsule]: New version: [0.3.0] Old Version: [0.2.5]
+[2023-05-13 19:43:21] INFO root fetch - processPackages [dnsmule]: New version: [0.5.0] Old Version: [0.1.0.post1]
+[2023-05-13 19:43:21] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-13 19:43:21] INFO root fetch - processPackages [dnsmule-plugins]: New version: [0.5.0] Old Version: [0.1.0.post1]
+[2023-05-13 19:43:21] INFO root fetch - processPackages [autosrt]: executing diffoscope
+[2023-05-13 19:43:21] INFO root fetch - processPackages [autosrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosrt-1.2.8.tar.gz tmp/autosrt-1.2.9.tar.gz --markdown 20230513/a/autosrt/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-13 19:43:21] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-13 19:43:21] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230513/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-13 19:43:21] INFO root fetch - processPackages [pyokx]: Downloading https://files.pythonhosted.org/packages/fa/75/191a6bbe28835d4a2c4cf3896b37d0563c641aab999d7384c48d78a7f8ed/pyokx-0.6.0.tar.gz
+[2023-05-13 19:43:21] INFO root fetch - processPackages [dnsmule]: Downloading https://files.pythonhosted.org/packages/fb/14/dcedf6bfdff84547ca791964fec06a16b3447549cc44dd7e797c0e2578d9/dnsmule-0.1.0.post1.tar.gz
+[2023-05-13 19:43:21] INFO root fetch - processPackages [dnsmule-plugins]: Downloading https://files.pythonhosted.org/packages/cc/5e/f1102dd55c154792bf53965e548d4aa0391a4835ee2519c2cd640248e803/dnsmule-plugins-0.1.0.post1.tar.gz
+[2023-05-13 19:43:21] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/1d/28/8a512f9d69fc1067d83b25d4123a354367edce3a94f7b8e81d65c012fb87/PatryksAutoAI-0.4.6.tar.gz
+[2023-05-13 19:43:21] INFO root fetch - processPackages [gmcapsule]: Downloading https://files.pythonhosted.org/packages/c8/f7/e65496a17d6cddc8a68a1f9af76e5cbcb1ef396f196f16de449788ab9e10/gmcapsule-0.2.5.tar.gz
+[2023-05-13 19:43:21] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-13 19:43:21] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.4.5.tar.gz tmp/PatryksAutoAI-0.4.6.tar.gz --markdown 20230513/P/PatryksAutoAI/0.4.5-0.4.6/diff.md --exclude *.pyd
+[2023-05-13 19:43:21] INFO root fetch - processPackages [dnsmule]: Downloading https://files.pythonhosted.org/packages/50/5d/79f6cc520157be3e8e6bcb9014213fdad266632e354119f19445e79d1e84/dnsmule-0.5.0.tar.gz
+[2023-05-13 19:43:21] INFO root fetch - processPackages [gmcapsule]: Downloading https://files.pythonhosted.org/packages/b7/91/38e7e9c2d1369dbc84e94e9312c3bd24a05d25d2d68692b990c4aa01e4a7/gmcapsule-0.3.0.tar.gz
+[2023-05-13 19:43:22] INFO root fetch - processPackages [dnsmule]: executing diffoscope
+[2023-05-13 19:43:22] INFO root fetch - processPackages [dnsmule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnsmule-0.1.0.post1.tar.gz tmp/dnsmule-0.5.0.tar.gz --markdown 20230513/d/dnsmule/0.1.0.post1-0.5.0/diff.md --exclude *.pyd
+[2023-05-13 19:43:22] INFO root fetch - processPackages [dnsmule-plugins]: Downloading https://files.pythonhosted.org/packages/5b/10/d9c63fa1ee54aa6ea926cad89b7c3427811af67521cb665b7a55c257054f/dnsmule-plugins-0.5.0.tar.gz
+[2023-05-13 19:43:22] INFO root fetch - processPackages [pyokx]: Downloading https://files.pythonhosted.org/packages/48/2d/bc6d7237217dd13ffed3ce881b3b09d5f43174b990ee51b817f1816828ff/pyokx-0.7.0.tar.gz
+[2023-05-13 19:43:22] INFO root fetch - processPackages [dnsmule-plugins]: executing diffoscope
+[2023-05-13 19:43:22] INFO root fetch - processPackages [dnsmule-plugins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnsmule-plugins-0.1.0.post1.tar.gz tmp/dnsmule-plugins-0.5.0.tar.gz --markdown 20230513/d/dnsmule-plugins/0.1.0.post1-0.5.0/diff.md --exclude *.pyd
+[2023-05-13 19:43:22] INFO root fetch - processPackages [pyokx]: executing diffoscope
+[2023-05-13 19:43:22] INFO root fetch - processPackages [pyokx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyokx-0.6.0.tar.gz tmp/pyokx-0.7.0.tar.gz --markdown 20230513/p/pyokx/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-13 19:43:22] INFO root fetch - processPackages [gmcapsule]: executing diffoscope
+[2023-05-13 19:43:22] INFO root fetch - processPackages [gmcapsule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmcapsule-0.2.5.tar.gz tmp/gmcapsule-0.3.0.tar.gz --markdown 20230513/g/gmcapsule/0.2.5-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 19:43:22] INFO root fetch - main [MainThread]: End processing [autosrt]: success
+[2023-05-13 19:43:23] INFO root fetch - main [MainThread]: End processing [dnsmule-plugins]: success
+[2023-05-13 19:43:23] INFO root fetch - main [MainThread]: End processing [gmcapsule]: success
+[2023-05-13 19:43:23] INFO root fetch - main [MainThread]: End processing [pyokx]: success
+[2023-05-13 19:43:23] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-13 19:43:24] INFO root fetch - main [MainThread]: End processing [dnsmule]: success
+[2023-05-13 19:43:27] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-13 19:43:27] INFO root fetch - main [MainThread]: Store serial: [18091997]
