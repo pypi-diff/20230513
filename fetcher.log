@@ -13065,3 +13065,20 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:17:40] INFO root fetch - processPackages [interop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interop-1.2.3-cp39-cp39-win_amd64.whl.zip tmp/interop-1.2.4-cp38-cp38-manylinux1_x86_64.whl.zip --markdown 20230513/i/interop/1.2.3-1.2.4/diff.md --exclude *.pyd
 [2023-05-13 21:17:42] INFO root fetch - main [MainThread]: End processing [interop]: success
 [2023-05-13 21:17:42] INFO root fetch - main [MainThread]: Store serial: [18092434]
+[2023-05-13 21:22:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092434]
+[2023-05-13 21:22:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-13 21:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyThorlabsPM100x
+[2023-05-13 21:22:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: newslinkrss
+[2023-05-13 21:22:52] INFO root fetch - processPackages [newslinkrss]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-13 21:22:52] INFO root fetch - processPackages [pyThorlabsPM100x]: New version: [0.9] Old Version: [0.8]
+[2023-05-13 21:22:52] INFO root fetch - processPackages [pyThorlabsPM100x]: Downloading https://files.pythonhosted.org/packages/71/15/ee0fb9648aa15ea1912a62da5c235b3dd918f7622856ca97cfb845d59dae/pyThorlabsPM100x-0.8.tar.gz
+[2023-05-13 21:22:52] INFO root fetch - processPackages [newslinkrss]: Downloading https://files.pythonhosted.org/packages/30/c1/c4ea53f3d5693c145e6274a3d0428e3aa3ee7de87c1aabd1f086924e6781/newslinkrss-0.8.0.tar.gz
+[2023-05-13 21:22:53] INFO root fetch - processPackages [pyThorlabsPM100x]: Downloading https://files.pythonhosted.org/packages/8e/ab/35ae062bc1ab3ad99453fe73bbebf32d979d922f62c857a203dce7d21490/pyThorlabsPM100x-0.9-py3-none-any.whl
+[2023-05-13 21:22:53] INFO root fetch - processPackages [newslinkrss]: Downloading https://files.pythonhosted.org/packages/fe/b7/f222d20a974915c47fd07cb23536afc3e1a3a926d50805f076378b63b61f/newslinkrss-0.9.0.tar.gz
+[2023-05-13 21:22:53] INFO root fetch - processPackages [pyThorlabsPM100x]: executing diffoscope
+[2023-05-13 21:22:53] INFO root fetch - processPackages [pyThorlabsPM100x]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyThorlabsPM100x-0.8.tar.gz tmp/pyThorlabsPM100x-0.9-py3-none-any.whl.zip --markdown 20230513/p/pyThorlabsPM100x/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-13 21:22:53] INFO root fetch - processPackages [newslinkrss]: executing diffoscope
+[2023-05-13 21:22:53] INFO root fetch - processPackages [newslinkrss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newslinkrss-0.8.0.tar.gz tmp/newslinkrss-0.9.0.tar.gz --markdown 20230513/n/newslinkrss/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 21:22:54] INFO root fetch - main [MainThread]: End processing [pyThorlabsPM100x]: success
+[2023-05-13 21:22:54] INFO root fetch - main [MainThread]: End processing [newslinkrss]: success
+[2023-05-13 21:22:54] INFO root fetch - main [MainThread]: Store serial: [18092444]
