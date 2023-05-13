@@ -10109,3 +10109,46 @@ EOFError: EOF read where object expected
 [2023-05-13 15:34:39] INFO root fetch - main [MainThread]: End processing [django-fragments]: success
 [2023-05-13 15:34:39] INFO root fetch - main [MainThread]: End processing [plone.app.standardtiles]: success
 [2023-05-13 15:34:39] INFO root fetch - main [MainThread]: Store serial: [18090487]
+[2023-05-13 15:39:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090487]
+[2023-05-13 15:39:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 15:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hordelib
+[2023-05-13 15:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: libidee
+[2023-05-13 15:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bose
+[2023-05-13 15:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cxmlinvbot
+[2023-05-13 15:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonstd
+[2023-05-13 15:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lamineml
+[2023-05-13 15:39:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: GridCal
+[2023-05-13 15:39:48] INFO root fetch - processPackages [lamineml]: New version: [0.0.54] Old Version: [0.0.53]
+[2023-05-13 15:39:48] WARNING root fetch - processPackages [libidee]: Skipping, unable to determine old version
+[2023-05-13 15:39:48] INFO root fetch - main [MainThread]: End processing [libidee] error
+[2023-05-13 15:39:48] INFO root fetch - processPackages [cxmlinvbot]: New version: [1.1.0] Old Version: [1.0.5]
+[2023-05-13 15:39:48] INFO root fetch - processPackages [nonstd]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 15:39:48] INFO root fetch - processPackages [GridCal]: New version: [4.7.6] Old Version: [4.7.5]
+[2023-05-13 15:39:48] INFO root fetch - processPackages [bose]: New version: [1.4.1] Old Version: [1.3.1]
+[2023-05-13 15:39:48] INFO root fetch - processPackages [hordelib]: New version: [0.9.5] Old Version: [0.9.2]
+[2023-05-13 15:39:48] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-13 15:39:48] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.9.2.tar.gz tmp/hordelib-0.9.5.tar.gz --markdown 20230513/h/hordelib/0.9.2-0.9.5/diff.md --exclude *.pyd
+[2023-05-13 15:39:48] INFO root fetch - processPackages [nonstd]: Downloading https://files.pythonhosted.org/packages/92/99/10dffaf5c20cc7ec3e8b75f33ae17ced0bab10b2a36af4c62ebea4298e13/nonstd-0.0.5.tar.gz
+[2023-05-13 15:39:48] INFO root fetch - processPackages [lamineml]: Downloading https://files.pythonhosted.org/packages/9a/fa/2195e070e8d1aa5deb78cf7b56d27c46104b824db3f85172f23cc28b1d39/lamineml-0.0.53.tar.gz
+[2023-05-13 15:39:48] INFO root fetch - processPackages [GridCal]: Downloading https://files.pythonhosted.org/packages/7f/aa/69f16f15f0394226e225bbd0800bdac881b75f5cb14be6a47ec80778613d/GridCal-4.7.5.tar.gz
+[2023-05-13 15:39:48] INFO root fetch - processPackages [bose]: Downloading https://files.pythonhosted.org/packages/7e/ec/e7bcc1035fc4b2caf08a5758795b9e19220fd1648b9b8b912bed0f6a0564/bose-1.3.1.tar.gz
+[2023-05-13 15:39:49] WARNING root fetch - processPackages [GridCal]: Skipping package: exceeds size limit 28275609>=10485760
+[2023-05-13 15:39:49] INFO root fetch - main [MainThread]: End processing [GridCal] error
+[2023-05-13 15:39:49] INFO root fetch - processPackages [cxmlinvbot]: Downloading https://files.pythonhosted.org/packages/ee/ec/be38552f4184e6a72076c58eeb5e5366922cedce23e8358c75197299f1a2/cxmlinvbot-1.1.0.tar.gz
+[2023-05-13 15:39:49] INFO root fetch - processPackages [cxmlinvbot]: executing diffoscope
+[2023-05-13 15:39:49] INFO root fetch - processPackages [cxmlinvbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cxmlinvbot-1.0.5.tar.gz tmp/cxmlinvbot-1.1.0.tar.gz --markdown 20230513/c/cxmlinvbot/1.0.5-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 15:39:49] INFO root fetch - processPackages [lamineml]: Downloading https://files.pythonhosted.org/packages/f2/e5/6a205c34d7ae7f2d391f250796b32588d6a050e901fd293d3090821f1748/lamineml-0.0.54.tar.gz
+[2023-05-13 15:39:49] INFO root fetch - processPackages [bose]: Downloading https://files.pythonhosted.org/packages/04/ae/dd37bb43aca234e2c6fd10a370717d8454b72aa36f2317bf05fd391fcfae/bose-1.4.1.tar.gz
+[2023-05-13 15:39:49] INFO root fetch - processPackages [nonstd]: Downloading https://files.pythonhosted.org/packages/4e/23/80f69e79b81464c065c5f1f63f9365425cb9f4007cf388c9502c1eb51f1d/nonstd-0.0.6.tar.gz
+[2023-05-13 15:39:49] INFO root fetch - processPackages [bose]: executing diffoscope
+[2023-05-13 15:39:49] INFO root fetch - processPackages [bose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bose-1.3.1.tar.gz tmp/bose-1.4.1.tar.gz --markdown 20230513/b/bose/1.3.1-1.4.1/diff.md --exclude *.pyd
+[2023-05-13 15:39:49] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-05-13 15:39:49] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.0.53.tar.gz tmp/lamineml-0.0.54.tar.gz --markdown 20230513/l/lamineml/0.0.53-0.0.54/diff.md --exclude *.pyd
+[2023-05-13 15:39:49] INFO root fetch - processPackages [nonstd]: executing diffoscope
+[2023-05-13 15:39:49] INFO root fetch - processPackages [nonstd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonstd-0.0.5.tar.gz tmp/nonstd-0.0.6.tar.gz --markdown 20230513/n/nonstd/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 15:39:50] INFO root fetch - main [MainThread]: End processing [bose]: success
+[2023-05-13 15:39:50] INFO root fetch - main [MainThread]: End processing [cxmlinvbot]: success
+[2023-05-13 15:39:50] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-05-13 15:39:50] INFO root fetch - main [MainThread]: End processing [nonstd]: success
+[2023-05-13 15:39:57] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-13 15:39:57] INFO root fetch - main [MainThread]: Store serial: [18090508]
