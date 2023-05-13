@@ -13082,3 +13082,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:22:54] INFO root fetch - main [MainThread]: End processing [pyThorlabsPM100x]: success
 [2023-05-13 21:22:54] INFO root fetch - main [MainThread]: End processing [newslinkrss]: success
 [2023-05-13 21:22:54] INFO root fetch - main [MainThread]: Store serial: [18092444]
+[2023-05-13 21:27:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092444]
+[2023-05-13 21:28:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 21:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: finite-difference
+[2023-05-13 21:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyOceanopticsSpectrometer
+[2023-05-13 21:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mawk
+[2023-05-13 21:28:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pySRSLockin
+[2023-05-13 21:28:03] INFO root fetch - processPackages [finite-difference]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 21:28:03] INFO root fetch - processPackages [pySRSLockin]: New version: [0.9] Old Version: [0.8]
+[2023-05-13 21:28:03] WARNING root fetch - processPackages [pyOceanopticsSpectrometer]: Skipping, unable to determine old version
+[2023-05-13 21:28:03] INFO root fetch - processPackages [mawk]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 21:28:03] INFO root fetch - main [MainThread]: End processing [pyOceanopticsSpectrometer] error
+[2023-05-13 21:28:03] INFO root fetch - processPackages [mawk]: Downloading https://files.pythonhosted.org/packages/3e/e0/6f364cc6f2358486136d68d5129ae06013ccd61a0d1255ef5f4805c1a28b/mawk-0.1.1.tar.gz
+[2023-05-13 21:28:03] INFO root fetch - processPackages [pySRSLockin]: Downloading https://files.pythonhosted.org/packages/45/81/5ee449bc9f2a61bbae0e0f1b2c04fe5fd10ee4766ff77bec9524b1427b5b/pySRSLockin-0.8.tar.gz
+[2023-05-13 21:28:03] INFO root fetch - processPackages [finite-difference]: Downloading https://files.pythonhosted.org/packages/e4/86/08643f704ce25e47c8c3322cdfbb9b7f4d96b08f30f008fe121454db0792/finite_difference-0.0.1.tar.gz
+[2023-05-13 21:28:03] INFO root fetch - processPackages [mawk]: Downloading https://files.pythonhosted.org/packages/da/2b/47f52997fd1374e349afc3580075de9b182f9607e1c43ad13cb648c90cba/mawk-0.1.2.tar.gz
+[2023-05-13 21:28:04] INFO root fetch - processPackages [mawk]: executing diffoscope
+[2023-05-13 21:28:04] INFO root fetch - processPackages [mawk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mawk-0.1.1.tar.gz tmp/mawk-0.1.2.tar.gz --markdown 20230513/m/mawk/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 21:28:04] INFO root fetch - processPackages [finite-difference]: Downloading https://files.pythonhosted.org/packages/da/86/12f8912f1389d8f609af6feaf3f9ee9a6f160f6dcb01a6aee1215977e750/finite_difference-0.0.2.tar.gz
+[2023-05-13 21:28:04] INFO root fetch - processPackages [finite-difference]: executing diffoscope
+[2023-05-13 21:28:04] INFO root fetch - processPackages [finite-difference]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finite_difference-0.0.1.tar.gz tmp/finite_difference-0.0.2.tar.gz --markdown 20230513/f/finite-difference/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 21:28:04] INFO root fetch - processPackages [pySRSLockin]: Downloading https://files.pythonhosted.org/packages/1b/b0/df6ebc892a3de725dc401392526e7b9df343beefe621abe543f8107c3af3/pySRSLockin-0.9.tar.gz
+[2023-05-13 21:28:04] INFO root fetch - processPackages [pySRSLockin]: executing diffoscope
+[2023-05-13 21:28:04] INFO root fetch - processPackages [pySRSLockin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pySRSLockin-0.8.tar.gz tmp/pySRSLockin-0.9.tar.gz --markdown 20230513/p/pySRSLockin/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-13 21:28:05] INFO root fetch - main [MainThread]: End processing [mawk]: success
+[2023-05-13 21:28:05] INFO root fetch - main [MainThread]: End processing [pySRSLockin]: success
+[2023-05-13 21:28:40] INFO root fetch - main [MainThread]: End processing [finite-difference]: success
+[2023-05-13 21:28:40] INFO root fetch - main [MainThread]: Store serial: [18092458]
