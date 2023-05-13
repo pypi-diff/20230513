@@ -4377,3 +4377,74 @@
 [2023-05-13 05:11:55] INFO root fetch - main [MainThread]: End processing [bisque-metadoc]: success
 [2023-05-13 05:12:30] INFO root fetch - main [MainThread]: End processing [gqylpy-dict]: success
 [2023-05-13 05:12:30] INFO root fetch - main [MainThread]: Store serial: [18087384]
+[2023-05-13 05:17:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087384]
+[2023-05-13 05:17:38] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lifx-cli
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: safeGPT
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo8-addon-account-advanced-reconcile
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo9-addon-account-operation-rule
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo9-addon-account-mass-reconcile-by-purchase-line
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GANDLF
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-nag
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo14-addon-account-mass-reconcile
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: chia-blockchain
+[2023-05-13 05:17:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: heaobject
+[2023-05-13 05:17:38] INFO root fetch - processPackages [odoo9-addon-account-operation-rule]: New version: [9.0.1.0.0.99.dev8] Old Version: [9.0.1.0.0.99.dev7]
+[2023-05-13 05:17:38] INFO root fetch - processPackages [lifx-cli]: New version: [0.67.0] Old Version: [0.66.0]
+[2023-05-13 05:17:38] INFO root fetch - processPackages [GANDLF]: New version: [0.0.16.dev20230513] Old Version: [0.0.16.dev20230512]
+[2023-05-13 05:17:38] INFO root fetch - processPackages [odoo8-addon-account-advanced-reconcile]: New version: [8.0.1.0.0.99.dev9] Old Version: [8.0.1.0.0.99.dev8]
+[2023-05-13 05:17:38] INFO root fetch - processPackages [odoo9-addon-account-mass-reconcile-by-purchase-line]: New version: [9.0.1.0.0.99.dev7] Old Version: [9.0.1.0.0.99.dev63]
+[2023-05-13 05:17:38] INFO root fetch - processPackages [heaobject]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-13 05:17:38] WARNING root fetch - processPackages [safeGPT]: Skipping, unable to determine old version
+[2023-05-13 05:17:38] INFO root fetch - processPackages [safeGPT]: Start processing: cdktf-cdktf-provider-boundary
+[2023-05-13 05:17:38] INFO root fetch - main [MainThread]: End processing [safeGPT] error
+[2023-05-13 05:17:38] INFO root fetch - processPackages [cdk-nag]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-05-13 05:17:39] INFO root fetch - processPackages [heaobject]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [heaobject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaobject-1.0.0a8.tar.gz tmp/heaobject-1.0.0a9.tar.gz --markdown 20230513/h/heaobject/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile]: New version: [14.0.1.1.2.dev5] Old Version: [14.0.1.1.2.dev4]
+[2023-05-13 05:17:39] INFO root fetch - processPackages [chia-blockchain]: New version: [2.0.0b1] Old Version: [1.8.1rc2]
+[2023-05-13 05:17:39] INFO root fetch - processPackages [lifx-cli]: Downloading https://files.pythonhosted.org/packages/90/6b/dd2aa1e0839f6f7d68a0bfe599504a847769762e36ca102974d63858c800/lifx_cli-0.66.0.tar.gz
+[2023-05-13 05:17:39] INFO root fetch - processPackages [cdk-nag]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [cdk-nag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-nag-2.9.6.tar.gz tmp/cdk-nag-2.9.7.tar.gz --markdown 20230513/c/cdk-nag/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo9-addon-account-mass-reconcile-by-purchase-line]: Downloading https://files.pythonhosted.org/packages/ef/b5/54dbaa3d8fcef3a927c1e2b1872a774e09634af5455403ba24c47c295800/odoo9_addon_account_mass_reconcile_by_purchase_line-9.0.1.0.0.99.dev63-py2-none-any.whl
+[2023-05-13 05:17:39] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo9-addon-account-operation-rule]: Downloading https://files.pythonhosted.org/packages/3b/c8/84b68465f9ca184826ba7972efdf01b56f50cf3ac5be20fc3bf3c92cbfa4/odoo9_addon_account_operation_rule-9.0.1.0.0.99.dev7-py2-none-any.whl
+[2023-05-13 05:17:39] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/1c/c9/8d9d754932d4f8824adb82fd54566ad6568f7e0b27200323be36ecbe6f91/GANDLF-0.0.16.dev20230512.tar.gz
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo8-addon-account-advanced-reconcile]: Downloading https://files.pythonhosted.org/packages/0d/22/d8ce78c572aac103609c10edd6d3105bc7c4e7b4387d9ef7ecbdf1ea95d9/odoo8_addon_account_advanced_reconcile-8.0.1.0.0.99.dev8-py2-none-any.whl
+[2023-05-13 05:17:39] INFO root fetch - processPackages [chia-blockchain]: Downloading https://files.pythonhosted.org/packages/3d/0e/cf34e415e5995deea139eacc8c50d3ac225672f68ec2c9530374e20db62d/chia-blockchain-1.8.1rc2.tar.gz
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile]: Downloading https://files.pythonhosted.org/packages/f2/83/6bf4193e579fa51077610054921a5602d1a0be708bbfc3b019a689da001d/odoo14_addon_account_mass_reconcile-14.0.1.1.2.dev4-py3-none-any.whl
+[2023-05-13 05:17:39] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: Downloading https://files.pythonhosted.org/packages/b8/83/3f4dc75ba9ac1d7cf869d1c89255eb8165ffd61128361650cee156607b58/cdktf-cdktf-provider-boundary-4.0.2.tar.gz
+[2023-05-13 05:17:39] INFO root fetch - processPackages [GANDLF]: Downloading https://files.pythonhosted.org/packages/4a/7b/e3b24f649c1589289cf42e7bd25276e8385333096f1489f34e1656fa3f51/GANDLF-0.0.16.dev20230513.tar.gz
+[2023-05-13 05:17:39] INFO root fetch - processPackages [lifx-cli]: Downloading https://files.pythonhosted.org/packages/0a/85/25d3f4478195ec12378968e9edecc7584329bcb1b6ceae11ef1e34c691c9/lifx_cli-0.67.0.tar.gz
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo9-addon-account-mass-reconcile-by-purchase-line]: Downloading https://files.pythonhosted.org/packages/5d/f6/f8abbe2c133aaab8200e2276373d705b160f465b0c4c5ef99747c8c8e925/odoo9_addon_account_mass_reconcile_by_purchase_line-9.0.1.0.0.99.dev7-py2-none-any.whl
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile]: Downloading https://files.pythonhosted.org/packages/d4/61/070b8e5f7f4d532dba89ab32fd0cc31fb16608199464a7892d9e873902b3/odoo14_addon_account_mass_reconcile-14.0.1.1.2.dev5-py3-none-any.whl
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo9-addon-account-operation-rule]: Downloading https://files.pythonhosted.org/packages/4c/e3/86aa6e94f409e71c35d38017a83ebd1a66d79b092616b1c94fef7fb8690d/odoo9_addon_account_operation_rule-9.0.1.0.0.99.dev8-py2-none-any.whl
+[2023-05-13 05:17:39] INFO root fetch - processPackages [lifx-cli]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [lifx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx_cli-0.66.0.tar.gz tmp/lifx_cli-0.67.0.tar.gz --markdown 20230513/l/lifx-cli/0.66.0-0.67.0/diff.md --exclude *.pyd
+[2023-05-13 05:17:39] INFO root fetch - processPackages [GANDLF]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [GANDLF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GANDLF-0.0.16.dev20230512.tar.gz tmp/GANDLF-0.0.16.dev20230513.tar.gz --markdown 20230513/G/GANDLF/0.0.16.dev20230512-0.0.16.dev20230513/diff.md --exclude *.pyd
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo9-addon-account-mass-reconcile-by-purchase-line]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo9-addon-account-mass-reconcile-by-purchase-line]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_account_mass_reconcile_by_purchase_line-9.0.1.0.0.99.dev63-py2-none-any.whl.zip tmp/odoo9_addon_account_mass_reconcile_by_purchase_line-9.0.1.0.0.99.dev7-py2-none-any.whl.zip --markdown 20230513/o/odoo9-addon-account-mass-reconcile-by-purchase-line/9.0.1.0.0.99.dev63-9.0.1.0.0.99.dev7/diff.md --exclude *.pyd
+[2023-05-13 05:17:39] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: Downloading https://files.pythonhosted.org/packages/8e/bb/5b37de04f0dc92dcff89f8c177e8639bda9fdb3b0d6edfeb3f6e23bcc3b7/cdktf-cdktf-provider-boundary-4.0.3.tar.gz
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo9-addon-account-operation-rule]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo9-addon-account-operation-rule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo9_addon_account_operation_rule-9.0.1.0.0.99.dev7-py2-none-any.whl.zip tmp/odoo9_addon_account_operation_rule-9.0.1.0.0.99.dev8-py2-none-any.whl.zip --markdown 20230513/o/odoo9-addon-account-operation-rule/9.0.1.0.0.99.dev7-9.0.1.0.0.99.dev8/diff.md --exclude *.pyd
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo14-addon-account-mass-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_account_mass_reconcile-14.0.1.1.2.dev4-py3-none-any.whl.zip tmp/odoo14_addon_account_mass_reconcile-14.0.1.1.2.dev5-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-account-mass-reconcile/14.0.1.1.2.dev4-14.0.1.1.2.dev5/diff.md --exclude *.pyd
+[2023-05-13 05:17:39] INFO root fetch - processPackages [odoo8-addon-account-advanced-reconcile]: Downloading https://files.pythonhosted.org/packages/7d/d0/e570fb5dc2c2068a82a5366a16b9f8f7f40475e13563f2e476277a461bb5/odoo8_addon_account_advanced_reconcile-8.0.1.0.0.99.dev9-py2-none-any.whl
+[2023-05-13 05:17:39] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [cdktf-cdktf-provider-boundary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-boundary-4.0.2.tar.gz tmp/cdktf-cdktf-provider-boundary-4.0.3.tar.gz --markdown 20230513/c/cdktf-cdktf-provider-boundary/4.0.2-4.0.3/diff.md --exclude *.pyd
+[2023-05-13 05:17:39] INFO root fetch - processPackages [chia-blockchain]: executing diffoscope
+[2023-05-13 05:17:39] INFO root fetch - processPackages [chia-blockchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chia-blockchain-1.8.1rc2.tar.gz tmp/chia-blockchain-2.0.0b1.tar.gz --markdown 20230513/c/chia-blockchain/1.8.1rc2-2.0.0b1/diff.md --exclude *.pyd
+[2023-05-13 05:17:40] INFO root fetch - processPackages [odoo8-addon-account-advanced-reconcile]: executing diffoscope
+[2023-05-13 05:17:40] INFO root fetch - processPackages [odoo8-addon-account-advanced-reconcile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_account_advanced_reconcile-8.0.1.0.0.99.dev8-py2-none-any.whl.zip tmp/odoo8_addon_account_advanced_reconcile-8.0.1.0.0.99.dev9-py2-none-any.whl.zip --markdown 20230513/o/odoo8-addon-account-advanced-reconcile/8.0.1.0.0.99.dev8-8.0.1.0.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-13 05:17:40] INFO root fetch - main [MainThread]: End processing [cdk-nag]: success
+[2023-05-13 05:17:40] INFO root fetch - main [MainThread]: End processing [heaobject]: success
+[2023-05-13 05:17:40] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
+[2023-05-13 05:17:41] INFO root fetch - main [MainThread]: End processing [odoo9-addon-account-operation-rule]: success
+[2023-05-13 05:17:41] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
+[2023-05-13 05:17:42] INFO root fetch - main [MainThread]: End processing [odoo14-addon-account-mass-reconcile]: success
+[2023-05-13 05:17:42] INFO root fetch - main [MainThread]: End processing [odoo9-addon-account-mass-reconcile-by-purchase-line]: success
+[2023-05-13 05:17:42] INFO root fetch - main [MainThread]: End processing [odoo8-addon-account-advanced-reconcile]: success
+[2023-05-13 05:17:42] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-boundary]: success
+[2023-05-13 05:17:57] INFO root fetch - main [MainThread]: End processing [chia-blockchain]: success
+[2023-05-13 05:17:57] INFO root fetch - main [MainThread]: Store serial: [18087452]
