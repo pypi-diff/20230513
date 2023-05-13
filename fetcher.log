@@ -8035,3 +8035,29 @@
 [2023-05-13 11:28:49] INFO root fetch - main [MainThread]: End processing [hyperparameter-tuning]: success
 [2023-05-13 11:28:49] INFO root fetch - main [MainThread]: End processing [irails]: success
 [2023-05-13 11:28:49] INFO root fetch - main [MainThread]: Store serial: [18089245]
+[2023-05-13 11:33:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089245]
+[2023-05-13 11:33:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 11:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyperparameter-tuning
+[2023-05-13 11:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: krx-rigger
+[2023-05-13 11:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: icalstatus
+[2023-05-13 11:33:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyxk
+[2023-05-13 11:33:58] INFO root fetch - processPackages [krx-rigger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 11:33:58] INFO root fetch - processPackages [icalstatus]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 11:33:58] INFO root fetch - processPackages [hyperparameter-tuning]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 11:33:58] INFO root fetch - processPackages [pyxk]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-13 11:33:58] INFO root fetch - processPackages [hyperparameter-tuning]: Downloading https://files.pythonhosted.org/packages/86/34/4dae698fca8f0f243ae804c8c8b1c08d94a877ba4548333ca3b2d31fd3fd/hyperparameter-tuning-0.2.2.tar.gz
+[2023-05-13 11:33:58] INFO root fetch - processPackages [icalstatus]: Downloading https://files.pythonhosted.org/packages/7e/73/6ba9f6e33a40756032b80fe301d1adf3d6f66d8f1d189c11581df82bb156/icalstatus-0.0.6-py3-none-any.whl
+[2023-05-13 11:33:58] INFO root fetch - processPackages [icalstatus]: executing diffoscope
+[2023-05-13 11:33:58] INFO root fetch - processPackages [icalstatus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icalstatus-0.0.5-py3-none-any.whl.zip tmp/icalstatus-0.0.6-py3-none-any.whl.zip --markdown 20230513/i/icalstatus/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 11:33:58] INFO root fetch - processPackages [hyperparameter-tuning]: executing diffoscope
+[2023-05-13 11:33:58] INFO root fetch - processPackages [hyperparameter-tuning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperparameter-tuning-0.2.1.tar.gz tmp/hyperparameter-tuning-0.2.2.tar.gz --markdown 20230513/h/hyperparameter-tuning/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-13 11:33:58] INFO root fetch - processPackages [krx-rigger]: executing diffoscope
+[2023-05-13 11:33:58] INFO root fetch - processPackages [krx-rigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krx_rigger-0.0.8.tar.gz tmp/krx_rigger-0.0.9.tar.gz --markdown 20230513/k/krx-rigger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 11:33:58] INFO root fetch - processPackages [pyxk]: Downloading https://files.pythonhosted.org/packages/98/9a/f7ba02528a8df4216dd18bb5cc67d267089a3f9d7d055108c9acfb52c2e0/pyxk-0.5.5.tar.gz
+[2023-05-13 11:33:59] INFO root fetch - processPackages [pyxk]: executing diffoscope
+[2023-05-13 11:33:59] INFO root fetch - processPackages [pyxk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxk-0.5.4.tar.gz tmp/pyxk-0.5.5.tar.gz --markdown 20230513/p/pyxk/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-13 11:33:59] INFO root fetch - main [MainThread]: End processing [icalstatus]: success
+[2023-05-13 11:33:59] INFO root fetch - main [MainThread]: End processing [krx-rigger]: success
+[2023-05-13 11:33:59] INFO root fetch - main [MainThread]: End processing [hyperparameter-tuning]: success
+[2023-05-13 11:34:00] INFO root fetch - main [MainThread]: End processing [pyxk]: success
+[2023-05-13 11:34:00] INFO root fetch - main [MainThread]: Store serial: [18089262]
