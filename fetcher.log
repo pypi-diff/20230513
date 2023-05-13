@@ -12940,3 +12940,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 20:56:21] INFO root fetch - main [MainThread]: End processing [commandsgpt]: success
 [2023-05-13 20:56:51] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2023-05-13 20:56:51] INFO root fetch - main [MainThread]: Store serial: [18092360]
+[2023-05-13 21:01:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092360]
+[2023-05-13 21:02:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 21:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycoloringextV1
+[2023-05-13 21:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ergastirio
+[2023-05-13 21:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: decoratools
+[2023-05-13 21:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pycoloringextV1
+[2023-05-13 21:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: amazon-ec2-best-instance
+[2023-05-13 21:02:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datazets
+[2023-05-13 21:02:00] WARNING root fetch - processPackages [datazets]: Skipping, unable to determine old version
+[2023-05-13 21:02:00] INFO root fetch - processPackages [pycoloringextV1]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-13 21:02:00] INFO root fetch - main [MainThread]: End processing [datazets] error
+[2023-05-13 21:02:00] INFO root fetch - processPackages [ergastirio]: New version: [0.9] Old Version: [0.8]
+[2023-05-13 21:02:00] INFO root fetch - processPackages [amazon-ec2-best-instance]: New version: [2.4.3] Old Version: [2.4.2]
+[2023-05-13 21:02:00] INFO root fetch - processPackages [pycoloringextV1]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-13 21:02:00] INFO root fetch - processPackages [decoratools]: New version: [0.0.6] Old Version: [0.0.4]
+[2023-05-13 21:02:00] INFO root fetch - processPackages [pycoloringextV1]: Downloading https://files.pythonhosted.org/packages/87/ca/a3d8a4d0d096be005709d0dcdb22589448203a9caf14c6d184157e952f61/pycoloringextV1-1.0.0.tar.gz
+[2023-05-13 21:02:00] INFO root fetch - processPackages [pycoloringextV1]: Downloading https://files.pythonhosted.org/packages/87/ca/a3d8a4d0d096be005709d0dcdb22589448203a9caf14c6d184157e952f61/pycoloringextV1-1.0.0.tar.gz
+[2023-05-13 21:02:00] INFO root fetch - processPackages [ergastirio]: Downloading https://files.pythonhosted.org/packages/61/7d/c683f388b59a46faa64f65a295b23a38a778d5c9d5ca081bd324d89a664f/ergastirio-0.8.tar.gz
+[2023-05-13 21:02:00] INFO root fetch - processPackages [amazon-ec2-best-instance]: Downloading https://files.pythonhosted.org/packages/22/22/b7d5a0a83adaa84f4b45b49dfcff07b1446be406e3dae5a8d726480b72ee/amazon-ec2-best-instance-2.4.3.tar.gz
+[2023-05-13 21:02:00] INFO root fetch - processPackages [decoratools]: Downloading https://files.pythonhosted.org/packages/dc/ad/f582196a9152b809ca4d89c24671498e0aac5a25561d6e25d10b8d127052/decoratools-0.0.6.tar.gz
+[2023-05-13 21:02:01] INFO root fetch - processPackages [decoratools]: executing diffoscope
+[2023-05-13 21:02:01] INFO root fetch - processPackages [decoratools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decoratools-0.0.4.tar.gz tmp/decoratools-0.0.6.tar.gz --markdown 20230513/d/decoratools/0.0.4-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 21:02:01] INFO root fetch - processPackages [amazon-ec2-best-instance]: executing diffoscope
+[2023-05-13 21:02:01] INFO root fetch - processPackages [amazon-ec2-best-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-ec2-best-instance-2.4.2.tar.gz tmp/amazon-ec2-best-instance-2.4.3.tar.gz --markdown 20230513/a/amazon-ec2-best-instance/2.4.2-2.4.3/diff.md --exclude *.pyd
+[2023-05-13 21:02:01] INFO root fetch - processPackages [pycoloringextV1]: Downloading https://files.pythonhosted.org/packages/b9/ed/d754ac076956ee4e58aa1b24be14e68819e8e9d5a65f14d62f7e39ca1a2e/pycoloringextV1-1.1.0.tar.gz
+[2023-05-13 21:02:01] INFO root fetch - processPackages [pycoloringextV1]: Downloading https://files.pythonhosted.org/packages/b9/ed/d754ac076956ee4e58aa1b24be14e68819e8e9d5a65f14d62f7e39ca1a2e/pycoloringextV1-1.1.0.tar.gz
+[2023-05-13 21:02:01] INFO root fetch - processPackages [ergastirio]: Downloading https://files.pythonhosted.org/packages/c2/8d/5916468ebb64b91fb8f309adb235d4c6b724f39cd5a78c2ebd2f6f506007/ergastirio-0.9.tar.gz
+[2023-05-13 21:02:01] INFO root fetch - processPackages [pycoloringextV1]: executing diffoscope
+[2023-05-13 21:02:01] INFO root fetch - processPackages [pycoloringextV1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycoloringextV1-1.0.0.tar.gz tmp/pycoloringextV1-1.1.0.tar.gz --markdown 20230513/p/pycoloringextV1/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 21:02:01] INFO root fetch - processPackages [pycoloringextV1]: executing diffoscope
+[2023-05-13 21:02:01] INFO root fetch - processPackages [pycoloringextV1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycoloringextV1-1.0.0.tar.gz tmp/pycoloringextV1-1.1.0.tar.gz --markdown 20230513/p/pycoloringextV1/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 21:02:01] INFO root fetch - processPackages [ergastirio]: executing diffoscope
+[2023-05-13 21:02:01] INFO root fetch - processPackages [ergastirio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ergastirio-0.8.tar.gz tmp/ergastirio-0.9.tar.gz --markdown 20230513/e/ergastirio/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-13 21:02:02] INFO root fetch - main [MainThread]: End processing [decoratools]: success
+[2023-05-13 21:02:02] INFO root fetch - main [MainThread]: End processing [pycoloringextV1]: success
+[2023-05-13 21:02:02] INFO root fetch - main [MainThread]: End processing [amazon-ec2-best-instance]: success
+[2023-05-13 21:02:02] INFO root fetch - main [MainThread]: End processing [pycoloringextV1]: success
+[2023-05-13 21:02:02] INFO root fetch - main [MainThread]: End processing [ergastirio]: success
+[2023-05-13 21:02:02] INFO root fetch - main [MainThread]: Store serial: [18092381]
