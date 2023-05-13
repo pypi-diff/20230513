@@ -11074,3 +11074,34 @@ EOFError: EOF read where object expected
 [2023-05-13 17:15:23] INFO root fetch - main [MainThread]: End processing [image-augs]: success
 [2023-05-13 17:15:24] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
 [2023-05-13 17:15:24] INFO root fetch - main [MainThread]: Store serial: [18091109]
+[2023-05-13 17:20:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091109]
+[2023-05-13 17:20:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 17:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: azure-recommendations
+[2023-05-13 17:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: certora-cli-alpha-shelly-fixcanonicalid
+[2023-05-13 17:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: casers
+[2023-05-13 17:20:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-htmx-ui
+[2023-05-13 17:20:34] INFO root fetch - processPackages [azure-recommendations]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-13 17:20:34] INFO root fetch - processPackages [certora-cli-alpha-shelly-fixcanonicalid]: New version: [20230513.15.18.205058] Old Version: [20230512.10.39.572079]
+[2023-05-13 17:20:35] INFO root fetch - processPackages [django-htmx-ui]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-13 17:20:35] INFO root fetch - processPackages [casers]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-13 17:20:35] INFO root fetch - processPackages [certora-cli-alpha-shelly-fixcanonicalid]: Downloading https://files.pythonhosted.org/packages/72/a8/f6a40f5f152e9c3d3d857ba2f9b763c845da32f7ec49c615ef4b8cbd9c34/certora-cli-alpha-shelly-fixcanonicalid-20230512.10.39.572079.tar.gz
+[2023-05-13 17:20:35] INFO root fetch - processPackages [azure-recommendations]: Downloading https://files.pythonhosted.org/packages/d9/a6/49fb52c73feee31024d841616c21c680f896d289d7b4826c5c61d0cbe2bb/azure_recommendations-0.3.2.tar.gz
+[2023-05-13 17:20:35] WARNING root fetch - processPackages [certora-cli-alpha-shelly-fixcanonicalid]: Skipping package: exceeds size limit 39431088>=10485760
+[2023-05-13 17:20:35] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-fixcanonicalid] error
+[2023-05-13 17:20:35] INFO root fetch - processPackages [django-htmx-ui]: Downloading https://files.pythonhosted.org/packages/02/ab/06a564a5e16babe0984558ec634bd5eddfbeb845fd023f8aa5d6289e4c43/django_htmx_ui-0.1.6.tar.gz
+[2023-05-13 17:20:35] INFO root fetch - processPackages [casers]: Downloading https://files.pythonhosted.org/packages/5f/27/ae7414c346a8bad1b829bcd85cdb6e11f4c440411a234f35f474b8dff862/casers-0.4.0.tar.gz
+[2023-05-13 17:20:35] INFO root fetch - processPackages [azure-recommendations]: Downloading https://files.pythonhosted.org/packages/e0/3a/7f4cf15f42e848d8e917b8bb7e1bbd31a5988287e68c68351ae87530b668/azure_recommendations-0.3.3.tar.gz
+[2023-05-13 17:20:35] INFO root fetch - processPackages [azure-recommendations]: executing diffoscope
+[2023-05-13 17:20:35] INFO root fetch - processPackages [azure-recommendations]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azure_recommendations-0.3.2.tar.gz tmp/azure_recommendations-0.3.3.tar.gz --markdown 20230513/a/azure-recommendations/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-13 17:20:35] INFO root fetch - processPackages [django-htmx-ui]: Downloading https://files.pythonhosted.org/packages/bc/a2/2c8bbfa702a54195165ce7e6637dad6747fff6ef42158bfec13d36672664/django_htmx_ui-0.1.7.tar.gz
+[2023-05-13 17:20:35] INFO root fetch - processPackages [casers]: Downloading https://files.pythonhosted.org/packages/7c/29/ce8e3eed08266e723e947b32e4cda8ec74c0e8a9d7f017152a38f8740a3c/casers-0.5.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl
+[2023-05-13 17:20:35] INFO root fetch - processPackages [django-htmx-ui]: executing diffoscope
+[2023-05-13 17:20:35] INFO root fetch - processPackages [django-htmx-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_htmx_ui-0.1.6.tar.gz tmp/django_htmx_ui-0.1.7.tar.gz --markdown 20230513/d/django-htmx-ui/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-13 17:20:35] ERROR root fetch - processPackages [django-htmx-ui]: Diffoscope failed: Error: error creating container storage: the container name "festive_tharp" is already in use by "fad25de514e61f0eff9a211d596674fe6a4951c2cfa3014a683ae128324a95e5". You have to remove that container to be able to reuse that name.: that name is already in use
+
+[2023-05-13 17:20:35] INFO root fetch - main [MainThread]: End processing [django-htmx-ui] error
+[2023-05-13 17:20:36] INFO root fetch - processPackages [casers]: executing diffoscope
+[2023-05-13 17:20:36] INFO root fetch - processPackages [casers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/casers-0.4.0.tar.gz tmp/casers-0.5.0-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.zip --markdown 20230513/c/casers/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-13 17:20:36] INFO root fetch - main [MainThread]: End processing [azure-recommendations]: success
+[2023-05-13 17:20:37] INFO root fetch - main [MainThread]: End processing [casers]: success
+[2023-05-13 17:20:37] INFO root fetch - main [MainThread]: Store serial: [18091133]
