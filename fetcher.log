@@ -12047,3 +12047,98 @@ EOFError: EOF read where object expected
 [2023-05-13 19:11:50] INFO root fetch - main [MainThread]: End processing [upk2esphome]: success
 [2023-05-13 19:11:51] INFO root fetch - main [MainThread]: End processing [discord-ext-prometheus]: success
 [2023-05-13 19:11:51] INFO root fetch - main [MainThread]: Store serial: [18091824]
+[2023-05-13 19:16:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091824]
+[2023-05-13 19:17:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hccpy
+[2023-05-13 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pipsqlite3liberyV2
+[2023-05-13 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psychonaut
+[2023-05-13 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gitbetter
+[2023-05-13 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: promptulate
+[2023-05-13 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cocoder
+[2023-05-13 19:17:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pex
+[2023-05-13 19:17:00] INFO root fetch - processPackages [pipsqlite3liberyV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-13 19:17:00] INFO root fetch - processPackages [gitbetter]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-13 19:17:00] INFO root fetch - processPackages [psychonaut]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 19:17:00] INFO root fetch - processPackages [hccpy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 19:17:00] INFO root fetch - processPackages [cocoder]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-13 19:17:00] INFO root fetch - processPackages [pex]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-13 19:17:00] WARNING root fetch - processPackages [promptulate]: Skipping, unable to determine old version
+[2023-05-13 19:17:00] INFO root fetch - main [MainThread]: End processing [promptulate] error
+[2023-05-13 19:17:00] INFO root fetch - processPackages [pipsqlite3liberyV2]: Downloading https://files.pythonhosted.org/packages/34/f8/91daaa275c9f9fc22a5db8c55ce689d55b5c85cccd3f56c7dd22e57ec6d0/pipsqlite3liberyV2-1.0.0.tar.gz
+[2023-05-13 19:17:00] INFO root fetch - processPackages [pex]: Downloading https://files.pythonhosted.org/packages/bc/74/287adfa37d7be93d3183305f3f1e9685ecf1f6dae715b25bef0d69553bfc/pex-2.1.98.tar.gz
+[2023-05-13 19:17:00] INFO root fetch - processPackages [cocoder]: Downloading https://files.pythonhosted.org/packages/53/73/75727064e7aa74e73138430da6a576f40bd6233c636574230cdcead798a5/cocoder-0.1.5.tar.gz
+[2023-05-13 19:17:00] INFO root fetch - processPackages [gitbetter]: Downloading https://files.pythonhosted.org/packages/31/a0/40c786a734de9cab11329351cf010b5f083ce3f7cb83ca5b2301ef0f8551/gitbetter-0.5.1.tar.gz
+[2023-05-13 19:17:00] INFO root fetch - processPackages [hccpy]: Downloading https://files.pythonhosted.org/packages/6b/6c/73313115a26464955479d9debb7c13b5a03a6db58f553e081caa06164ca5/hccpy-0.1.9.tar.gz
+[2023-05-13 19:17:00] INFO root fetch - processPackages [psychonaut]: executing diffoscope
+[2023-05-13 19:17:00] INFO root fetch - processPackages [psychonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychonaut-0.0.8.tar.gz tmp/psychonaut-0.0.9.tar.gz --markdown 20230513/p/psychonaut/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 19:17:00] INFO root fetch - processPackages [cocoder]: executing diffoscope
+[2023-05-13 19:17:00] INFO root fetch - processPackages [cocoder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoder-0.1.4.tar.gz tmp/cocoder-0.1.5.tar.gz --markdown 20230513/c/cocoder/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-13 19:17:00] INFO root fetch - processPackages [pipsqlite3liberyV2]: Downloading https://files.pythonhosted.org/packages/da/ae/317b87d101028998eeb03febb2b0946b09ae3c599b000b40161e16f83c4c/pipsqlite3liberyV2-1.1.0.tar.gz
+[2023-05-13 19:17:00] INFO root fetch - processPackages [hccpy]: executing diffoscope
+[2023-05-13 19:17:00] INFO root fetch - processPackages [hccpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hccpy-0.1.8.tar.gz tmp/hccpy-0.1.9.tar.gz --markdown 20230513/h/hccpy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 19:17:00] INFO root fetch - processPackages [gitbetter]: executing diffoscope
+[2023-05-13 19:17:00] INFO root fetch - processPackages [gitbetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitbetter-0.5.0.tar.gz tmp/gitbetter-0.5.1.tar.gz --markdown 20230513/g/gitbetter/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-13 19:17:00] INFO root fetch - processPackages [pipsqlite3liberyV2]: executing diffoscope
+[2023-05-13 19:17:00] INFO root fetch - processPackages [pipsqlite3liberyV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipsqlite3liberyV2-1.0.0.tar.gz tmp/pipsqlite3liberyV2-1.1.0.tar.gz --markdown 20230513/p/pipsqlite3liberyV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 19:17:01] INFO root fetch - processPackages [pex]: Downloading https://files.pythonhosted.org/packages/f8/76/7e17f82344dd14a5a9cf76391cdf6edeede0e409432a319db98512d11375/pex-2.1.99.tar.gz
+[2023-05-13 19:17:01] INFO root fetch - main [MainThread]: End processing [cocoder]: success
+[2023-05-13 19:17:02] INFO root fetch - main [MainThread]: End processing [pipsqlite3liberyV2]: success
+[2023-05-13 19:17:02] INFO root fetch - processPackages [pex]: executing diffoscope
+[2023-05-13 19:17:02] INFO root fetch - processPackages [pex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pex-2.1.98.tar.gz tmp/pex-2.1.99.tar.gz --markdown 20230513/p/pex/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-13 19:17:02] INFO root fetch - main [MainThread]: End processing [gitbetter]: success
+[2023-05-13 19:17:02] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
+[2023-05-13 19:17:02] ERROR root fetch - processPackages [hccpy]: Diffoscope failed: Traceback (most recent call last):
+  File "/srv/diffoscope/diffoscope/main.py", line 767, in main
+    sys.exit(run_diffoscope(parsed_args))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/main.py", line 718, in run_diffoscope
+    difference = compare_root_paths(path1, path2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 69, in compare_root_paths
+    difference = compare_files(file1, file2)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 450, in _compare_using_details
+    details.extend(
+  File "/srv/diffoscope/diffoscope/comparators/utils/container.py", line 197, in compare_pair
+    difference = compare_files(
+                 ^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/compare.py", line 149, in compare_files
+    return file1.compare(file2, source)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 515, in compare
+    difference = self._compare_using_details(other, source)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/utils/file.py", line 416, in _compare_using_details
+    details.extend(self.compare_details(other, source))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 51, in compare_details
+    describe_pyc(self.path),
+    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 65, in describe_pyc
+    return "\n".join(parse_pyc(f))
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/srv/diffoscope/diffoscope/comparators/python.py", line 81, in parse_pyc
+    code = marshal.load(f)
+           ^^^^^^^^^^^^^^^
+SystemError: ../Objects/codeobject.c:250: bad argument to internal function
+
+[2023-05-13 19:17:02] INFO root fetch - main [MainThread]: End processing [hccpy] error
+[2023-05-13 19:17:13] INFO root fetch - main [MainThread]: End processing [pex]: success
+[2023-05-13 19:17:13] INFO root fetch - main [MainThread]: Store serial: [18091856]
