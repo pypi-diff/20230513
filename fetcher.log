@@ -3634,3 +3634,43 @@
 [2023-05-13 03:48:34] INFO root fetch - main [MainThread]: End processing [math0]: success
 [2023-05-13 03:48:34] INFO root fetch - main [MainThread]: End processing [zensvi]: success
 [2023-05-13 03:48:34] INFO root fetch - main [MainThread]: Store serial: [18087015]
+[2023-05-13 03:53:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087015]
+[2023-05-13 03:53:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 03:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyqtcolor
+[2023-05-13 03:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qecp
+[2023-05-13 03:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ti842py
+[2023-05-13 03:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: geomapdemo
+[2023-05-13 03:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: google-sheet-downloader
+[2023-05-13 03:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: audiolm-pytorch
+[2023-05-13 03:53:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pynuwa
+[2023-05-13 03:53:42] INFO root fetch - processPackages [qecp]: New version: [0.2.3] Old Version: [0.1.9]
+[2023-05-13 03:53:42] WARNING root fetch - processPackages [pyqtcolor]: Skipping, unable to determine old version
+[2023-05-13 03:53:42] INFO root fetch - main [MainThread]: End processing [pyqtcolor] error
+[2023-05-13 03:53:42] WARNING root fetch - processPackages [pynuwa]: Skipping, unable to determine old version
+[2023-05-13 03:53:42] INFO root fetch - main [MainThread]: End processing [pynuwa] error
+[2023-05-13 03:53:42] INFO root fetch - processPackages [google-sheet-downloader]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-13 03:53:42] INFO root fetch - processPackages [audiolm-pytorch]: New version: [0.9.7] Old Version: [0.9.6]
+[2023-05-13 03:53:42] INFO root fetch - processPackages [geomapdemo]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-13 03:53:42] INFO root fetch - processPackages [ti842py]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 03:53:43] INFO root fetch - processPackages [qecp]: Downloading https://files.pythonhosted.org/packages/e9/aa/af657dbc7bbf3a671dad08f13af36112fd74c154881636120e7e89b4d0b6/qecp-0.1.9.tar.gz
+[2023-05-13 03:53:43] INFO root fetch - processPackages [ti842py]: Downloading https://files.pythonhosted.org/packages/2c/aa/7c5c1d2a0478d7203d56e03e3995df49bcb0eac41a271e77f03632383c9c/ti842py-0.9.8.tar.gz
+[2023-05-13 03:53:43] INFO root fetch - processPackages [google-sheet-downloader]: Downloading https://files.pythonhosted.org/packages/df/ac/428d5eabc9ed9ac799286f49945d64b6750da09a985130331a8e0585e732/google-sheet-downloader-1.0.5.tar.gz
+[2023-05-13 03:53:43] INFO root fetch - processPackages [google-sheet-downloader]: executing diffoscope
+[2023-05-13 03:53:43] INFO root fetch - processPackages [google-sheet-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-sheet-downloader-1.0.4.tar.gz tmp/google-sheet-downloader-1.0.5.tar.gz --markdown 20230513/g/google-sheet-downloader/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-13 03:53:43] INFO root fetch - processPackages [geomapdemo]: Downloading https://files.pythonhosted.org/packages/1d/00/77027f7bfb69065c1791544a3ca97ebb4ba51989dc5c88628f571013346b/geomapdemo-0.3.3.tar.gz
+[2023-05-13 03:53:43] INFO root fetch - processPackages [audiolm-pytorch]: executing diffoscope
+[2023-05-13 03:53:43] INFO root fetch - processPackages [audiolm-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/audiolm-pytorch-0.9.6.tar.gz tmp/audiolm-pytorch-0.9.7.tar.gz --markdown 20230513/a/audiolm-pytorch/0.9.6-0.9.7/diff.md --exclude *.pyd
+[2023-05-13 03:53:43] INFO root fetch - processPackages [geomapdemo]: executing diffoscope
+[2023-05-13 03:53:43] INFO root fetch - processPackages [geomapdemo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geomapdemo-0.3.2.tar.gz tmp/geomapdemo-0.3.3.tar.gz --markdown 20230513/g/geomapdemo/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-13 03:53:43] INFO root fetch - processPackages [qecp]: Downloading https://files.pythonhosted.org/packages/3a/d1/9ef81d8174dd214674a86937db99a870632ac29a4702944a746d4a73ea92/qecp-0.2.3-cp37-abi3-win_amd64.whl
+[2023-05-13 03:53:43] INFO root fetch - processPackages [ti842py]: Downloading https://files.pythonhosted.org/packages/76/ee/1acdede3446293c9bbb4cbd0f1cd947a985efb85dc26cf2dffe8aeb269d2/ti842py-0.9.9.tar.gz
+[2023-05-13 03:53:43] INFO root fetch - processPackages [qecp]: executing diffoscope
+[2023-05-13 03:53:43] INFO root fetch - processPackages [qecp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qecp-0.1.9.tar.gz tmp/qecp-0.2.3-cp37-abi3-win_amd64.whl.zip --markdown 20230513/q/qecp/0.1.9-0.2.3/diff.md --exclude *.pyd
+[2023-05-13 03:53:43] INFO root fetch - processPackages [ti842py]: executing diffoscope
+[2023-05-13 03:53:43] INFO root fetch - processPackages [ti842py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ti842py-0.9.8.tar.gz tmp/ti842py-0.9.9.tar.gz --markdown 20230513/t/ti842py/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 03:53:44] INFO root fetch - main [MainThread]: End processing [google-sheet-downloader]: success
+[2023-05-13 03:53:44] INFO root fetch - main [MainThread]: End processing [geomapdemo]: success
+[2023-05-13 03:53:44] INFO root fetch - main [MainThread]: End processing [audiolm-pytorch]: success
+[2023-05-13 03:53:44] INFO root fetch - main [MainThread]: End processing [qecp]: success
+[2023-05-13 03:53:44] INFO root fetch - main [MainThread]: End processing [ti842py]: success
+[2023-05-13 03:53:44] INFO root fetch - main [MainThread]: Store serial: [18087043]
