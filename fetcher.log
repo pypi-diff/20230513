@@ -11390,3 +11390,71 @@ EOFError: EOF read where object expected
 [2023-05-13 17:57:10] INFO root fetch - main [MainThread]: End processing [bilibili-api-python]: success
 [2023-05-13 17:57:10] INFO root fetch - main [MainThread]: End processing [validmind]: success
 [2023-05-13 17:57:10] INFO root fetch - main [MainThread]: Store serial: [18091382]
+[2023-05-13 18:02:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091382]
+[2023-05-13 18:02:19] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hls4ml
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dan-build
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jumpthegun
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybmr
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mwxlib
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: elefantolib
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: neopolitan
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fastapi-integration
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: supriya
+[2023-05-13 18:02:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: wagtail-code-blog
+[2023-05-13 18:02:19] INFO root fetch - processPackages [wagtail-code-blog]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [fastapi-integration]: New version: [0.1.0] Old Version: [0.0.7]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [wagtail-code-blog]: executing diffoscope
+[2023-05-13 18:02:19] INFO root fetch - processPackages [wagtail-code-blog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-code-blog-0.3.3.tar.gz tmp/wagtail_code_blog-0.4.0.tar.gz --markdown 20230513/w/wagtail-code-blog/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-05-13 18:02:19] WARNING root fetch - processPackages [dan-build]: Skipping, unable to determine old version
+[2023-05-13 18:02:19] INFO root fetch - processPackages [dan-build]: Start processing: netilion-api
+[2023-05-13 18:02:19] INFO root fetch - processPackages [jumpthegun]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 18:02:19] INFO root fetch - main [MainThread]: End processing [dan-build] error
+[2023-05-13 18:02:19] INFO root fetch - processPackages [pybmr]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [hls4ml]: New version: [0.7.1] Old Version: [0.7.0rc1]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [mwxlib]: New version: [0.83.0] Old Version: [0.82.9]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [elefantolib]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-13 18:02:19] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230513/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 18:02:19] INFO root fetch - processPackages [fastapi-integration]: executing diffoscope
+[2023-05-13 18:02:19] INFO root fetch - processPackages [fastapi-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-integration-0.0.7.tar.gz tmp/fastapi-integration-0.1.0.tar.gz --markdown 20230513/f/fastapi-integration/0.0.7-0.1.0/diff.md --exclude *.pyd
+[2023-05-13 18:02:19] INFO root fetch - processPackages [supriya]: New version: [23.5b4] Old Version: [23.5b3]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [netilion-api]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-13 18:02:19] INFO root fetch - processPackages [pybmr]: Downloading https://files.pythonhosted.org/packages/32/7d/30e0a5852c15e530e60ba89aae58fc7f20e6a1e50bbd3e047cdaad89904f/pybmr-0.7.1.tar.gz
+[2023-05-13 18:02:19] INFO root fetch - processPackages [hls4ml]: Downloading https://files.pythonhosted.org/packages/eb/5b/bbe4348ed024e77120efebf2f16aae8faddf96447d6c0c747c29d8ff80c0/hls4ml-0.7.0rc1.tar.gz
+[2023-05-13 18:02:19] INFO root fetch - processPackages [elefantolib]: Downloading https://files.pythonhosted.org/packages/f0/58/e21ca55259bbd46c2f688c206d026bc71304fbb156ef25a203851ab2282c/elefantolib-0.9.1.tar.gz
+[2023-05-13 18:02:19] INFO root fetch - processPackages [supriya]: Downloading https://files.pythonhosted.org/packages/43/ac/a67a5a952e61ea0e2863b8fd7df6e95ce3f1b252e2d76306ea5ec9ef647e/supriya-23.5b3.tar.gz
+[2023-05-13 18:02:19] INFO root fetch - processPackages [netilion-api]: Downloading https://files.pythonhosted.org/packages/4c/6c/3772603f48e1242ce43ae29c7b5e476e097152517303a2e74fd33faea01a/netilion_api-1.1.1.tar.gz
+[2023-05-13 18:02:19] INFO root fetch - processPackages [jumpthegun]: Downloading https://files.pythonhosted.org/packages/00/b1/69407324714c0cb2cc5c83605ae373e1939a9c4e72b77c273f2ff4a339fa/jumpthegun-0.0.9.tar.gz
+[2023-05-13 18:02:19] INFO root fetch - processPackages [mwxlib]: Downloading https://files.pythonhosted.org/packages/4e/c3/a20b550653554da8a07719181561313ce1b5818730c4af6dafbac3652c56/mwxlib-0.83.0-py3-none-any.whl
+[2023-05-13 18:02:20] INFO root fetch - processPackages [jumpthegun]: executing diffoscope
+[2023-05-13 18:02:20] INFO root fetch - processPackages [jumpthegun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jumpthegun-0.0.8.tar.gz tmp/jumpthegun-0.0.9.tar.gz --markdown 20230513/j/jumpthegun/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 18:02:20] INFO root fetch - processPackages [mwxlib]: executing diffoscope
+[2023-05-13 18:02:20] INFO root fetch - processPackages [mwxlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwxlib-0.82.9-py3-none-any.whl.zip tmp/mwxlib-0.83.0-py3-none-any.whl.zip --markdown 20230513/m/mwxlib/0.82.9-0.83.0/diff.md --exclude *.pyd
+[2023-05-13 18:02:20] INFO root fetch - processPackages [pybmr]: Downloading https://files.pythonhosted.org/packages/5a/75/b4249e115575df1c779a8b0fb0ed012cc8702323cadc9bfb11e180a151a5/pybmr-0.7.2.tar.gz
+[2023-05-13 18:02:20] INFO root fetch - processPackages [elefantolib]: Downloading https://files.pythonhosted.org/packages/8c/74/507064140bc52fa473adcca0ad736465da0b0d1d8efe51b33a185f4a0329/elefantolib-0.9.2.tar.gz
+[2023-05-13 18:02:20] INFO root fetch - processPackages [netilion-api]: Downloading https://files.pythonhosted.org/packages/52/0f/905ed6bb37816702643efa77e3083f2089d85915de8408e284e84c791516/netilion_api-1.2.0.tar.gz
+[2023-05-13 18:02:20] INFO root fetch - processPackages [pybmr]: executing diffoscope
+[2023-05-13 18:02:20] INFO root fetch - processPackages [pybmr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybmr-0.7.1.tar.gz tmp/pybmr-0.7.2.tar.gz --markdown 20230513/p/pybmr/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-13 18:02:20] INFO root fetch - processPackages [elefantolib]: executing diffoscope
+[2023-05-13 18:02:20] INFO root fetch - processPackages [elefantolib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elefantolib-0.9.1.tar.gz tmp/elefantolib-0.9.2.tar.gz --markdown 20230513/e/elefantolib/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-13 18:02:20] INFO root fetch - processPackages [netilion-api]: executing diffoscope
+[2023-05-13 18:02:20] INFO root fetch - processPackages [netilion-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netilion_api-1.1.1.tar.gz tmp/netilion_api-1.2.0.tar.gz --markdown 20230513/n/netilion-api/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-13 18:02:20] INFO root fetch - processPackages [hls4ml]: Downloading https://files.pythonhosted.org/packages/85/19/a1ad6fba8bf37dc60ff46e2edca72b8f22ad881083c38395b487a504bb02/hls4ml-0.7.1.tar.gz
+[2023-05-13 18:02:20] INFO root fetch - processPackages [supriya]: Downloading https://files.pythonhosted.org/packages/e1/e4/bdc42cce54ab05b2f4ec5c9dddd04950a28aadd50e6918bd0f16dbe412b3/supriya-23.5b4.tar.gz
+[2023-05-13 18:02:21] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-13 18:02:21] INFO root fetch - main [MainThread]: End processing [wagtail-code-blog]: success
+[2023-05-13 18:02:21] INFO root fetch - main [MainThread]: End processing [fastapi-integration]: success
+[2023-05-13 18:02:21] INFO root fetch - main [MainThread]: End processing [jumpthegun]: success
+[2023-05-13 18:02:21] INFO root fetch - main [MainThread]: End processing [mwxlib]: success
+[2023-05-13 18:02:21] INFO root fetch - main [MainThread]: End processing [pybmr]: success
+[2023-05-13 18:02:21] INFO root fetch - processPackages [supriya]: executing diffoscope
+[2023-05-13 18:02:21] INFO root fetch - processPackages [supriya]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supriya-23.5b3.tar.gz tmp/supriya-23.5b4.tar.gz --markdown 20230513/s/supriya/23.5b3-23.5b4/diff.md --exclude *.pyd
+[2023-05-13 18:02:22] INFO root fetch - processPackages [hls4ml]: executing diffoscope
+[2023-05-13 18:02:22] INFO root fetch - processPackages [hls4ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hls4ml-0.7.0rc1.tar.gz tmp/hls4ml-0.7.1.tar.gz --markdown 20230513/h/hls4ml/0.7.0rc1-0.7.1/diff.md --exclude *.pyd
+[2023-05-13 18:02:22] INFO root fetch - main [MainThread]: End processing [elefantolib]: success
+[2023-05-13 18:02:27] INFO root fetch - main [MainThread]: End processing [hls4ml]: success
+[2023-05-13 18:02:30] INFO root fetch - main [MainThread]: End processing [netilion-api]: success
+[2023-05-13 18:03:04] INFO root fetch - main [MainThread]: End processing [supriya]: success
+[2023-05-13 18:03:04] INFO root fetch - main [MainThread]: Store serial: [18091445]
