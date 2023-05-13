@@ -14174,3 +14174,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 23:19:20] INFO root fetch - processPackages [asari-metabolomics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asari-metabolomics-1.9.7.tar.gz tmp/asari-metabolomics-1.9.8.tar.gz --markdown 20230513/a/asari-metabolomics/1.9.7-1.9.8/diff.md --exclude *.pyd
 [2023-05-13 23:19:23] INFO root fetch - main [MainThread]: End processing [asari-metabolomics]: success
 [2023-05-13 23:19:23] INFO root fetch - main [MainThread]: Store serial: [18093169]
+[2023-05-13 23:24:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093169]
+[2023-05-13 23:24:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 23:24:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numba-integrators
+[2023-05-13 23:24:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: starmallow
+[2023-05-13 23:24:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rebuff
+[2023-05-13 23:24:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: markpickle
+[2023-05-13 23:24:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: beewi-smartclim-ble
+[2023-05-13 23:24:33] WARNING root fetch - processPackages [starmallow]: Skipping, unable to determine old version
+[2023-05-13 23:24:33] INFO root fetch - main [MainThread]: End processing [starmallow] error
+[2023-05-13 23:24:33] INFO root fetch - processPackages [markpickle]: New version: [1.2.0] Old Version: [1.1.0]
+[2023-05-13 23:24:33] INFO root fetch - processPackages [numba-integrators]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 23:24:33] INFO root fetch - processPackages [rebuff]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 23:24:33] INFO root fetch - processPackages [beewi-smartclim-ble]: New version: [0.1.0] Old Version: [0.0.5]
+[2023-05-13 23:24:33] INFO root fetch - processPackages [markpickle]: Downloading https://files.pythonhosted.org/packages/bd/7b/836e0ca6d93e515128c96442dd92122fbbcdc0298d68ef80a07d23bcb716/markpickle-1.1.0.tar.gz
+[2023-05-13 23:24:33] INFO root fetch - processPackages [beewi-smartclim-ble]: Downloading https://files.pythonhosted.org/packages/e6/51/3af19183d8d9b7d76027d55f164e92c75c9603032806dff46d1e3903a4cf/beewi_smartclim_ble-0.0.5.tar.gz
+[2023-05-13 23:24:33] INFO root fetch - processPackages [rebuff]: Downloading https://files.pythonhosted.org/packages/94/8a/7d056e25d8cb207d95ca1e40f54ab2a3afaecee7eb9a57a4f313db0f6724/rebuff-0.0.4.tar.gz
+[2023-05-13 23:24:33] INFO root fetch - processPackages [numba-integrators]: executing diffoscope
+[2023-05-13 23:24:33] INFO root fetch - processPackages [numba-integrators]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numba-integrators-0.0.2.tar.gz tmp/numba-integrators-0.0.3.tar.gz --markdown 20230513/n/numba-integrators/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 23:24:33] INFO root fetch - processPackages [rebuff]: executing diffoscope
+[2023-05-13 23:24:33] INFO root fetch - processPackages [rebuff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rebuff-0.0.3.tar.gz tmp/rebuff-0.0.4.tar.gz --markdown 20230513/r/rebuff/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 23:24:34] INFO root fetch - processPackages [markpickle]: Downloading https://files.pythonhosted.org/packages/2a/5f/899e89b6aafdafd3afee610ce81a0fedd76ad6d15d59b39c048f4a3cdccf/markpickle-1.2.0.tar.gz
+[2023-05-13 23:24:34] INFO root fetch - processPackages [beewi-smartclim-ble]: Downloading https://files.pythonhosted.org/packages/63/16/a65b43048646eb5c23fcdf962d5ceeaff691113166a56ac08c030e934324/beewi_smartclim_ble-0.1.0.tar.gz
+[2023-05-13 23:24:34] INFO root fetch - processPackages [beewi-smartclim-ble]: executing diffoscope
+[2023-05-13 23:24:34] INFO root fetch - processPackages [beewi-smartclim-ble]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beewi_smartclim_ble-0.0.5.tar.gz tmp/beewi_smartclim_ble-0.1.0.tar.gz --markdown 20230513/b/beewi-smartclim-ble/0.0.5-0.1.0/diff.md --exclude *.pyd
+[2023-05-13 23:24:34] INFO root fetch - processPackages [markpickle]: executing diffoscope
+[2023-05-13 23:24:34] INFO root fetch - processPackages [markpickle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/markpickle-1.1.0.tar.gz tmp/markpickle-1.2.0.tar.gz --markdown 20230513/m/markpickle/1.1.0-1.2.0/diff.md --exclude *.pyd
+[2023-05-13 23:24:34] INFO root fetch - main [MainThread]: End processing [numba-integrators]: success
+[2023-05-13 23:24:35] INFO root fetch - main [MainThread]: End processing [beewi-smartclim-ble]: success
+[2023-05-13 23:24:35] INFO root fetch - main [MainThread]: End processing [rebuff]: success
+[2023-05-13 23:24:35] INFO root fetch - main [MainThread]: End processing [markpickle]: success
+[2023-05-13 23:24:35] INFO root fetch - main [MainThread]: Store serial: [18093186]
