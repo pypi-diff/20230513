@@ -7778,3 +7778,80 @@
 [2023-05-13 11:02:42] INFO root fetch - processPackages [IMDbTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDbTraktSyncer-1.1.0.tar.gz tmp/IMDbTraktSyncer-1.1.1.tar.gz --markdown 20230513/I/IMDbTraktSyncer/1.1.0-1.1.1/diff.md --exclude *.pyd
 [2023-05-13 11:02:43] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
 [2023-05-13 11:02:43] INFO root fetch - main [MainThread]: Store serial: [18089084]
+[2023-05-13 11:07:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089084]
+[2023-05-13 11:07:51] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.common
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon.core
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autogluon.features
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autogluon.tabular
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autogluon.multimodal
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: autogluon.timeseries
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autogluon
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autogluon.eda
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autogluon.cloud
+[2023-05-13 11:07:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyjnius
+[2023-05-13 11:07:51] INFO root fetch - processPackages [autogluon.cloud]: New version: [0.2.1b20230513] Old Version: [0.2.1b20230512]
+[2023-05-13 11:07:51] INFO root fetch - processPackages [pyjnius]: New version: [1.5.0] Old Version: [1.4.2]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.core]: New version: [0.7.1b20230513] Old Version: [0.7.1b20230511]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.timeseries]: New version: [0.7.1b20230513] Old Version: [0.7.1b20230511]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.eda]: New version: [0.7.1b20230513] Old Version: [0.7.1b20230511]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.common]: New version: [0.7.1b20230513] Old Version: [0.7.1b20230512]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.multimodal]: New version: [0.7.1b20230513] Old Version: [0.7.1b20230511]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.tabular]: New version: [0.7.1b20230513] Old Version: [0.7.1b20230511]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.features]: New version: [0.7.1b20230513] Old Version: [0.7.1b20230511]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon]: New version: [0.7.1b20230513] Old Version: [0.7.1b20230511]
+[2023-05-13 11:07:52] INFO root fetch - processPackages [pyjnius]: Downloading https://files.pythonhosted.org/packages/0a/89/0e6f9927f6108a6b0cbe0147c6dac90e2bb309394d5fd0d6cb0bf4928af8/pyjnius-1.4.2.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/17/b2/576fe5e57b5e9895abec86ee87b86d8e08ac3b2cf6c36638d917977eee08/autogluon.common-0.7.1b20230512-py3-none-any.whl
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/ea/cc/e488a05345b60bbedc2c2ea344be906a6b29b234df6e32c2205f2704ff9b/autogluon-0.7.1b20230511.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/98/4b/bb54498e859b3698a0c6a6cb8773ace1586033e1d10797692196c36d7a35/autogluon.tabular-0.7.1b20230511.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/b0/80/46277cbd9333b076af1ccdc0a5ae5ec05587190c4dbae00c6a7b501cd379/autogluon.multimodal-0.7.1b20230511.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/8c/cf/e7c0a943aa4edc9ebfe4b2a827675f9eea662a12fcf494b7afc2f4df6225/autogluon.timeseries-0.7.1b20230511.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.eda]: Downloading https://files.pythonhosted.org/packages/2b/ca/66c9f2d3baca62b5567896a2a50f91da213a26b79ad8e596b3a6ab524d77/autogluon.eda-0.7.1b20230511.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.cloud]: Downloading https://files.pythonhosted.org/packages/f1/df/756f792e50f3cf0b8518605f8f202d5db0ec9e0ae1e397be1f982b3df3f4/autogluon.cloud-0.2.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.core]: Downloading https://files.pythonhosted.org/packages/f6/48/8d8416fcc6e52798c2b719519fe5b09bcf7bb82db56c9baf6d81e93cfeee/autogluon.core-0.7.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.features]: Downloading https://files.pythonhosted.org/packages/90/e5/0510a3b95530d7904a6d12ee583a1d8574446153a418a684634106cbce72/autogluon.features-0.7.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.cloud]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.cloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.cloud-0.2.1b20230512-py3-none-any.whl.zip tmp/autogluon.cloud-0.2.1b20230513.tar.gz --markdown 20230513/a/autogluon.cloud/0.2.1b20230512-0.2.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [pyjnius]: Downloading https://files.pythonhosted.org/packages/c7/87/5013767e76f8a216934b2ec6bae2abf02793122b981f648d16d9a72ac5c0/pyjnius-1.5.0.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/ea/7c/e27caacd76f9454679927f0032d5c87521df7a547dc484ecd54f69ec7bef/autogluon-0.7.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.common]: Downloading https://files.pythonhosted.org/packages/2f/0e/b1c2095db8232da702dce710ffb412962c19f35e6e54eee7ee58997b46db/autogluon.common-0.7.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.features]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.features-0.7.1b20230511.tar.gz tmp/autogluon.features-0.7.1b20230513.tar.gz --markdown 20230513/a/autogluon.features/0.7.1b20230511-0.7.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/bc/1e/2af778f16e9a556b3a469bc08fe079a67f133d6dc286833aa6f53e75b912/autogluon.timeseries-0.7.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.tabular]: Downloading https://files.pythonhosted.org/packages/fa/2e/4cd42344a7fbbd785f9f7cffb8d703301b463deee4e904c30515a662f313/autogluon.tabular-0.7.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.multimodal]: Downloading https://files.pythonhosted.org/packages/cb/27/a216d0d616dcab547714c65576bb76f8e479eb3b205f6311ad3381e674b1/autogluon.multimodal-0.7.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.eda]: Downloading https://files.pythonhosted.org/packages/f9/e4/65afb11a1185cb10f1b563afa3ea4365df75200c964578eed93579def84a/autogluon.eda-0.7.1b20230513.tar.gz
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-0.7.1b20230511.tar.gz tmp/autogluon-0.7.1b20230513.tar.gz --markdown 20230513/a/autogluon/0.7.1b20230511-0.7.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.core]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.core-0.7.1b20230511.tar.gz tmp/autogluon.core-0.7.1b20230513.tar.gz --markdown 20230513/a/autogluon.core/0.7.1b20230511-0.7.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [pyjnius]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [pyjnius]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjnius-1.4.2.tar.gz tmp/pyjnius-1.5.0.tar.gz --markdown 20230513/p/pyjnius/1.4.2-1.5.0/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-0.7.1b20230511.tar.gz tmp/autogluon.timeseries-0.7.1b20230513.tar.gz --markdown 20230513/a/autogluon.timeseries/0.7.1b20230511-0.7.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.tabular]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.tabular]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.tabular-0.7.1b20230511.tar.gz tmp/autogluon.tabular-0.7.1b20230513.tar.gz --markdown 20230513/a/autogluon.tabular/0.7.1b20230511-0.7.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.eda]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.eda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.eda-0.7.1b20230511.tar.gz tmp/autogluon.eda-0.7.1b20230513.tar.gz --markdown 20230513/a/autogluon.eda/0.7.1b20230511-0.7.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.common]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.common-0.7.1b20230512-py3-none-any.whl.zip tmp/autogluon.common-0.7.1b20230513.tar.gz --markdown 20230513/a/autogluon.common/0.7.1b20230512-0.7.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.multimodal]: executing diffoscope
+[2023-05-13 11:07:52] INFO root fetch - processPackages [autogluon.multimodal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.multimodal-0.7.1b20230511.tar.gz tmp/autogluon.multimodal-0.7.1b20230513.tar.gz --markdown 20230513/a/autogluon.multimodal/0.7.1b20230511-0.7.1b20230513/diff.md --exclude *.pyd
+[2023-05-13 11:07:53] INFO root fetch - processPackages [autogluon.cloud]: Start processing: yproject
+[2023-05-13 11:07:53] INFO root fetch - main [MainThread]: End processing [autogluon.cloud]: success
+[2023-05-13 11:07:53] INFO root fetch - processPackages [yproject]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 11:07:54] INFO root fetch - processPackages [yproject]: Downloading https://files.pythonhosted.org/packages/57/c6/3ca2b444b330bfa0ec8204078c8615a10c3c6bba5bb997d319b9977b75d0/yproject-1.0.0.tar.gz
+[2023-05-13 11:07:54] INFO root fetch - main [MainThread]: End processing [autogluon.features]: success
+[2023-05-13 11:07:54] INFO root fetch - processPackages [yproject]: Downloading https://files.pythonhosted.org/packages/e5/94/4a0457d4003756e535b66bd8f1c8729178c5ae5451d2d78755b647fa4a14/yproject-1.0.1.tar.gz
+[2023-05-13 11:07:54] INFO root fetch - processPackages [yproject]: executing diffoscope
+[2023-05-13 11:07:54] INFO root fetch - processPackages [yproject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yproject-1.0.0.tar.gz tmp/yproject-1.0.1.tar.gz --markdown 20230513/y/yproject/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 11:07:54] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2023-05-13 11:07:54] INFO root fetch - main [MainThread]: End processing [autogluon.common]: success
+[2023-05-13 11:07:54] INFO root fetch - main [MainThread]: End processing [pyjnius]: success
+[2023-05-13 11:07:55] INFO root fetch - main [MainThread]: End processing [yproject]: success
+[2023-05-13 11:07:55] INFO root fetch - main [MainThread]: End processing [autogluon.eda]: success
+[2023-05-13 11:07:55] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2023-05-13 11:07:56] INFO root fetch - main [MainThread]: End processing [autogluon.core]: success
+[2023-05-13 11:07:57] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
+[2023-05-13 11:07:57] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
+[2023-05-13 11:07:57] INFO root fetch - main [MainThread]: Store serial: [18089157]
