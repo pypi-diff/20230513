@@ -4493,3 +4493,36 @@
 [2023-05-13 05:23:09] INFO root fetch - main [MainThread]: End processing [odoo12-addon-account-banking-mandate]: success
 [2023-05-13 05:23:16] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-databricks]: success
 [2023-05-13 05:23:16] INFO root fetch - main [MainThread]: Store serial: [18087465]
+[2023-05-13 05:28:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087465]
+[2023-05-13 05:28:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 05:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proxy-protocol
+[2023-05-13 05:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: konfuzio-sdk
+[2023-05-13 05:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aws-ket
+[2023-05-13 05:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docchain
+[2023-05-13 05:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lifx-cli
+[2023-05-13 05:28:25] INFO root fetch - processPackages [docchain]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 05:28:25] INFO root fetch - processPackages [proxy-protocol]: New version: [0.9.1] Old Version: [0.9.0rc2]
+[2023-05-13 05:28:25] INFO root fetch - processPackages [aws-ket]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-13 05:28:25] INFO root fetch - processPackages [lifx-cli]: New version: [0.67.0] Old Version: [0.66.0]
+[2023-05-13 05:28:25] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-05-13 05:28:25] INFO root fetch - processPackages [aws-ket]: Downloading https://files.pythonhosted.org/packages/57/e7/457933829832dc45298e7caabe40464cb5ab61dfd0b565eb605b2afe88e7/aws-ket-0.1.5.tar.gz
+[2023-05-13 05:28:25] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-05-13 05:28:25] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230513/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-05-13 05:28:25] INFO root fetch - processPackages [lifx-cli]: executing diffoscope
+[2023-05-13 05:28:25] INFO root fetch - processPackages [lifx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx_cli-0.66.0.tar.gz tmp/lifx_cli-0.67.0.tar.gz --markdown 20230513/l/lifx-cli/0.66.0-0.67.0/diff.md --exclude *.pyd
+[2023-05-13 05:28:25] INFO root fetch - processPackages [proxy-protocol]: Downloading https://files.pythonhosted.org/packages/08/43/4775be3e5335421b435e8515c509770916979dafe9a663fe30f49c9baca4/proxy-protocol-0.9.0rc2.tar.gz
+[2023-05-13 05:28:25] INFO root fetch - processPackages [docchain]: Downloading https://files.pythonhosted.org/packages/fd/c3/674823f2f7d0f1c1b50dfb57e222fbc3dd38501e7f74c8655d82e344383b/docchain-0.0.6.tar.gz
+[2023-05-13 05:28:25] INFO root fetch - processPackages [aws-ket]: Downloading https://files.pythonhosted.org/packages/dc/55/fe5d391c32928cf80616e192138d55af85a87d6137438dd427d4821dabe9/aws-ket-0.1.6.tar.gz
+[2023-05-13 05:28:25] INFO root fetch - processPackages [docchain]: executing diffoscope
+[2023-05-13 05:28:25] INFO root fetch - processPackages [docchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docchain-0.0.5.tar.gz tmp/docchain-0.0.6.tar.gz --markdown 20230513/d/docchain/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 05:28:25] INFO root fetch - processPackages [aws-ket]: executing diffoscope
+[2023-05-13 05:28:25] INFO root fetch - processPackages [aws-ket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aws-ket-0.1.5.tar.gz tmp/aws-ket-0.1.6.tar.gz --markdown 20230513/a/aws-ket/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-13 05:28:25] INFO root fetch - processPackages [proxy-protocol]: Downloading https://files.pythonhosted.org/packages/79/10/d039fadca5dfb9370262d5766b082cb4bafdf675935b1fed7b6d42fef532/proxy-protocol-0.9.1.tar.gz
+[2023-05-13 05:28:25] INFO root fetch - processPackages [proxy-protocol]: executing diffoscope
+[2023-05-13 05:28:25] INFO root fetch - processPackages [proxy-protocol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxy-protocol-0.9.0rc2.tar.gz tmp/proxy-protocol-0.9.1.tar.gz --markdown 20230513/p/proxy-protocol/0.9.0rc2-0.9.1/diff.md --exclude *.pyd
+[2023-05-13 05:28:26] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
+[2023-05-13 05:28:26] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-05-13 05:28:27] INFO root fetch - main [MainThread]: End processing [aws-ket]: success
+[2023-05-13 05:28:27] INFO root fetch - main [MainThread]: End processing [docchain]: success
+[2023-05-13 05:28:28] INFO root fetch - main [MainThread]: End processing [proxy-protocol]: success
+[2023-05-13 05:28:28] INFO root fetch - main [MainThread]: Store serial: [18087479]
