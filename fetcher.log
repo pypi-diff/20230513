@@ -11168,3 +11168,74 @@ EOFError: EOF read where object expected
 [2023-05-13 17:25:53] INFO root fetch - main [MainThread]: End processing [imaginAIry]: success
 [2023-05-13 17:25:53] INFO root fetch - main [MainThread]: End processing [flowtask]: success
 [2023-05-13 17:25:53] INFO root fetch - main [MainThread]: Store serial: [18091222]
+[2023-05-13 17:30:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091222]
+[2023-05-13 17:31:02] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: griseo
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hledger-args
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: irails
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: decoratools
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: khaos
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: upk2esphome
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dunamai
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cambridge
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: airoboros
+[2023-05-13 17:31:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nonebot-plugin-picmcstat
+[2023-05-13 17:31:02] INFO root fetch - processPackages [griseo]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-13 17:31:02] INFO root fetch - processPackages [irails]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-13 17:31:02] WARNING root fetch - processPackages [upk2esphome]: Skipping, unable to determine old version
+[2023-05-13 17:31:02] INFO root fetch - processPackages [upk2esphome]: Start processing: website-tool
+[2023-05-13 17:31:02] INFO root fetch - main [MainThread]: End processing [upk2esphome] error
+[2023-05-13 17:31:02] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-13 17:31:02] WARNING root fetch - processPackages [khaos]: Skipping, unable to determine old version
+[2023-05-13 17:31:02] INFO root fetch - processPackages [khaos]: Start processing: bk7231tools
+[2023-05-13 17:31:02] INFO root fetch - processPackages [decoratools]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 17:31:02] INFO root fetch - processPackages [airoboros]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-13 17:31:02] INFO root fetch - main [MainThread]: End processing [khaos] error
+[2023-05-13 17:31:02] INFO root fetch - processPackages [dunamai]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-13 17:31:02] INFO root fetch - processPackages [hledger-args]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 17:31:02] WARNING root fetch - processPackages [website-tool]: Skipping, unable to determine old version
+[2023-05-13 17:31:02] INFO root fetch - processPackages [cambridge]: New version: [3.5.9] Old Version: [3.5.8]
+[2023-05-13 17:31:02] INFO root fetch - main [MainThread]: End processing [website-tool] error
+[2023-05-13 17:31:02] INFO root fetch - processPackages [bk7231tools]: New version: [1.3.5] Old Version: [1.3.4]
+[2023-05-13 17:31:02] INFO root fetch - processPackages [griseo]: Downloading https://files.pythonhosted.org/packages/4b/15/f11c52c8e432ac89ffbe9dc5a7ce8b766721a54032901240baa82b985877/griseo-0.8.0.tar.gz
+[2023-05-13 17:31:02] INFO root fetch - processPackages [dunamai]: Downloading https://files.pythonhosted.org/packages/d5/1c/5771298a326ccae3fbe36c548014a5cb7dd1ab4dba1da7dfeeb10d4606f0/dunamai-1.8.0.tar.gz
+[2023-05-13 17:31:02] INFO root fetch - processPackages [decoratools]: Downloading https://files.pythonhosted.org/packages/98/96/ec4d7c282e6bd3b287194f7a684737178fe919c0a8d6fd84d3acbda0ecad/decoratools-0.0.4.tar.gz
+[2023-05-13 17:31:02] INFO root fetch - processPackages [airoboros]: Downloading https://files.pythonhosted.org/packages/35/aa/e1d948b328dd46eb19e8f45b6891a9d4f09dda3735eff6f18ab43e8bb77e/airoboros-0.2.4.tar.gz
+[2023-05-13 17:31:02] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: Downloading https://files.pythonhosted.org/packages/5e/b6/8a1fbe6e0562c28e2c99bb739bd14150ab99809650315db49c51ff515ba6/nonebot-plugin-picmcstat-0.3.0.tar.gz
+[2023-05-13 17:31:02] INFO root fetch - processPackages [cambridge]: Downloading https://files.pythonhosted.org/packages/82/97/1383d479792981f8ffd3e8a1b23087088d1f6449219c572c4cfe32575464/cambridge-3.5.8.tar.gz
+[2023-05-13 17:31:02] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-13 17:31:02] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.8.tar.gz tmp/irails-1.3.9.tar.gz --markdown 20230513/i/irails/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-13 17:31:02] INFO root fetch - processPackages [bk7231tools]: Downloading https://files.pythonhosted.org/packages/88/7d/6ae7bf85c74030fa131b26e9355dd06f0094210c178f5a516443a062be80/bk7231tools-1.3.4.tar.gz
+[2023-05-13 17:31:02] INFO root fetch - processPackages [hledger-args]: Downloading https://files.pythonhosted.org/packages/bd/7d/77907bd1c0f30dbfe103d4647bfc3945e0024b8db91c43775a5e8ce35baf/hledger_args-0.0.6.tar.gz
+[2023-05-13 17:31:02] INFO root fetch - processPackages [decoratools]: executing diffoscope
+[2023-05-13 17:31:02] INFO root fetch - processPackages [decoratools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decoratools-0.0.3.tar.gz tmp/decoratools-0.0.4.tar.gz --markdown 20230513/d/decoratools/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 17:31:02] INFO root fetch - processPackages [hledger-args]: executing diffoscope
+[2023-05-13 17:31:02] INFO root fetch - processPackages [hledger-args]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hledger_args-0.0.5.tar.gz tmp/hledger_args-0.0.6.tar.gz --markdown 20230513/h/hledger-args/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 17:31:03] INFO root fetch - processPackages [dunamai]: Downloading https://files.pythonhosted.org/packages/0c/cb/0b91e5e7ef6ce73cfaf57867e2dea2c7db8b293fd5fd321b57e6942612d3/dunamai-1.9.0.tar.gz
+[2023-05-13 17:31:03] INFO root fetch - processPackages [airoboros]: Downloading https://files.pythonhosted.org/packages/6e/e1/1b48eb528531ae29b071f1681d726cbb9fa45e7c98d7a1fa4d31b21eb369/airoboros-0.2.5.tar.gz
+[2023-05-13 17:31:03] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: Downloading https://files.pythonhosted.org/packages/bb/c1/746c2f297b83a9bbf945afbd7cc7ed2ebdb16a8c1457244025f9cf02538e/nonebot-plugin-picmcstat-0.3.1.tar.gz
+[2023-05-13 17:31:03] INFO root fetch - processPackages [griseo]: Downloading https://files.pythonhosted.org/packages/0c/4c/8b341707a6a364d57be3d2cd9287385a06f00d6af645eab16d55bbeca4a3/griseo-0.9.0.tar.gz
+[2023-05-13 17:31:03] INFO root fetch - processPackages [bk7231tools]: Downloading https://files.pythonhosted.org/packages/f4/69/46725d892cd665ba223e076cee179dd4c451f958964820108193eb581ed1/bk7231tools-1.3.5.tar.gz
+[2023-05-13 17:31:03] INFO root fetch - processPackages [cambridge]: Downloading https://files.pythonhosted.org/packages/da/8e/3f0a61fc7ccbd6e72bd0b588b91b7d869eeafb4bc5df45e4cc6d5a492074/cambridge-3.5.9.tar.gz
+[2023-05-13 17:31:03] INFO root fetch - processPackages [dunamai]: executing diffoscope
+[2023-05-13 17:31:03] INFO root fetch - processPackages [dunamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dunamai-1.8.0.tar.gz tmp/dunamai-1.9.0.tar.gz --markdown 20230513/d/dunamai/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-13 17:31:03] INFO root fetch - processPackages [griseo]: executing diffoscope
+[2023-05-13 17:31:03] INFO root fetch - processPackages [griseo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griseo-0.8.0.tar.gz tmp/griseo-0.9.0.tar.gz --markdown 20230513/g/griseo/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 17:31:03] INFO root fetch - processPackages [airoboros]: executing diffoscope
+[2023-05-13 17:31:03] INFO root fetch - processPackages [airoboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airoboros-0.2.4.tar.gz tmp/airoboros-0.2.5.tar.gz --markdown 20230513/a/airoboros/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-13 17:31:03] INFO root fetch - processPackages [cambridge]: executing diffoscope
+[2023-05-13 17:31:03] INFO root fetch - processPackages [cambridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cambridge-3.5.8.tar.gz tmp/cambridge-3.5.9.tar.gz --markdown 20230513/c/cambridge/3.5.8-3.5.9/diff.md --exclude *.pyd
+[2023-05-13 17:31:03] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: executing diffoscope
+[2023-05-13 17:31:03] INFO root fetch - processPackages [nonebot-plugin-picmcstat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot-plugin-picmcstat-0.3.0.tar.gz tmp/nonebot-plugin-picmcstat-0.3.1.tar.gz --markdown 20230513/n/nonebot-plugin-picmcstat/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 17:31:03] INFO root fetch - processPackages [bk7231tools]: executing diffoscope
+[2023-05-13 17:31:03] INFO root fetch - processPackages [bk7231tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bk7231tools-1.3.4.tar.gz tmp/bk7231tools-1.3.5.tar.gz --markdown 20230513/b/bk7231tools/1.3.4-1.3.5/diff.md --exclude *.pyd
+[2023-05-13 17:31:04] INFO root fetch - main [MainThread]: End processing [decoratools]: success
+[2023-05-13 17:31:04] INFO root fetch - main [MainThread]: End processing [hledger-args]: success
+[2023-05-13 17:31:04] INFO root fetch - main [MainThread]: End processing [dunamai]: success
+[2023-05-13 17:31:04] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-13 17:31:04] INFO root fetch - main [MainThread]: End processing [griseo]: success
+[2023-05-13 17:31:05] INFO root fetch - main [MainThread]: End processing [airoboros]: success
+[2023-05-13 17:31:05] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-picmcstat]: success
+[2023-05-13 17:31:05] INFO root fetch - main [MainThread]: End processing [cambridge]: success
+[2023-05-13 17:31:05] INFO root fetch - main [MainThread]: End processing [bk7231tools]: success
+[2023-05-13 17:31:05] INFO root fetch - main [MainThread]: Store serial: [18091266]
