@@ -3817,3 +3817,42 @@
 [2023-05-13 04:24:53] INFO root fetch - main [MainThread]: End processing [dingding-sdk]: success
 [2023-05-13 04:24:53] INFO root fetch - main [MainThread]: End processing [sans]: success
 [2023-05-13 04:24:53] INFO root fetch - main [MainThread]: Store serial: [18087148]
+[2023-05-13 04:29:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087148]
+[2023-05-13 04:30:03] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 04:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-plus-24
+[2023-05-13 04:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iam-actions
+[2023-05-13 04:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: didppy
+[2023-05-13 04:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: iga
+[2023-05-13 04:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pymantra
+[2023-05-13 04:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk8s-plus-26
+[2023-05-13 04:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lifx-cli
+[2023-05-13 04:30:03] INFO root fetch - processPackages [iga]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 04:30:03] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230513] Old Version: [1.2.20230512]
+[2023-05-13 04:30:03] INFO root fetch - processPackages [didppy]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-13 04:30:03] INFO root fetch - processPackages [lifx-cli]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-13 04:30:03] WARNING root fetch - processPackages [pymantra]: Skipping, unable to determine old version
+[2023-05-13 04:30:03] INFO root fetch - main [MainThread]: End processing [pymantra] error
+[2023-05-13 04:30:03] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-13 04:30:03] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-13 04:30:03] INFO root fetch - processPackages [lifx-cli]: executing diffoscope
+[2023-05-13 04:30:03] INFO root fetch - processPackages [lifx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx_cli-0.2.0.tar.gz tmp/lifx_cli-0.3.0.tar.gz --markdown 20230513/l/lifx-cli/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 04:30:03] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-05-13 04:30:03] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.7.8.tar.gz tmp/cdk8s-plus-24-2.7.9.tar.gz --markdown 20230513/c/cdk8s-plus-24/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-13 04:30:03] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/5b/b5/1c15f92dcb3eff31c12471ab71bf8015eaa18e6fa3d2e76df4ed3a8bc1dc/iam_actions-1.2.20230513.tar.gz
+[2023-05-13 04:30:03] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-05-13 04:30:03] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.3.8.tar.gz tmp/cdk8s-plus-26-2.3.9.tar.gz --markdown 20230513/c/cdk8s-plus-26/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-13 04:30:03] INFO root fetch - processPackages [didppy]: Downloading https://files.pythonhosted.org/packages/0c/ae/80e543106d8111843481ad7cf4f789aede627da547b3e4943020ee6a6b85/didppy-0.3.3.tar.gz
+[2023-05-13 04:30:03] INFO root fetch - processPackages [iga]: executing diffoscope
+[2023-05-13 04:30:03] INFO root fetch - processPackages [iga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iga-0.0.8.tar.gz tmp/iga-0.0.9.tar.gz --markdown 20230513/i/iga/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 04:30:03] INFO root fetch - processPackages [didppy]: Downloading https://files.pythonhosted.org/packages/9f/46/493f139d1ef67bf098f6dd1b2a9fe1b1451491ec9b430e08880d5627a049/didppy-0.3.4.tar.gz
+[2023-05-13 04:30:03] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-05-13 04:30:03] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230512.tar.gz tmp/iam_actions-1.2.20230513.tar.gz --markdown 20230513/i/iam-actions/1.2.20230512-1.2.20230513/diff.md --exclude *.pyd
+[2023-05-13 04:30:03] INFO root fetch - processPackages [didppy]: executing diffoscope
+[2023-05-13 04:30:03] INFO root fetch - processPackages [didppy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/didppy-0.3.3.tar.gz tmp/didppy-0.3.4.tar.gz --markdown 20230513/d/didppy/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-13 04:30:04] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
+[2023-05-13 04:30:04] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-05-13 04:30:04] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-05-13 04:30:05] INFO root fetch - main [MainThread]: End processing [iga]: success
+[2023-05-13 04:30:06] INFO root fetch - main [MainThread]: End processing [didppy]: success
+[2023-05-13 04:30:10] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-05-13 04:30:10] INFO root fetch - main [MainThread]: Store serial: [18087184]
