@@ -12315,3 +12315,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 19:32:59] INFO root fetch - main [MainThread]: End processing [sampleproject-dhchenx]: success
 [2023-05-13 19:33:00] INFO root fetch - main [MainThread]: End processing [espnet-onnx]: success
 [2023-05-13 19:33:00] INFO root fetch - main [MainThread]: Store serial: [18091947]
+[2023-05-13 19:38:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091947]
+[2023-05-13 19:38:09] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paxdb
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ardilla
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tiivad
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: indecode
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: EllipSect
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-keys
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: longalpha-utils
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ardilla]: New version: [0.0.7a0] Old Version: [0.0.6a0]
+[2023-05-13 19:38:09] INFO root fetch - processPackages [indecode]: New version: [1.3.1] Old Version: [1.3]
+[2023-05-13 19:38:09] WARNING root fetch - processPackages [paxdb]: Skipping, unable to determine old version
+[2023-05-13 19:38:09] INFO root fetch - main [MainThread]: End processing [paxdb] error
+[2023-05-13 19:38:09] INFO root fetch - processPackages [tiivad]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 19:38:09] WARNING root fetch - processPackages [django-keys]: Skipping, unable to determine old version
+[2023-05-13 19:38:09] INFO root fetch - main [MainThread]: End processing [django-keys] error
+[2023-05-13 19:38:09] INFO root fetch - processPackages [EllipSect]: New version: [3.2.1] Old Version: [3.0.1]
+[2023-05-13 19:38:09] INFO root fetch - processPackages [longalpha-utils]: New version: [0.47] Old Version: [0.46]
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ardilla]: Downloading https://files.pythonhosted.org/packages/4a/f5/e4311973f873099996a762aac0a1002fd05ebedd8ca90e4ac85707747ae2/ardilla-0.0.7a0.tar.gz
+[2023-05-13 19:38:09] INFO root fetch - processPackages [EllipSect]: Downloading https://files.pythonhosted.org/packages/9e/1e/e0493c0a63f1ef2c193874c5a3b24c86f5a252d59dd93eddc95b1d22243d/EllipSect-3.0.1.tar.gz
+[2023-05-13 19:38:09] INFO root fetch - processPackages [tiivad]: Downloading https://files.pythonhosted.org/packages/9b/c5/7c923062f30b0ef62e4aae688d62685d4fc67094d2b48e57717dfea4f3ce/tiivad-0.0.8.tar.gz
+[2023-05-13 19:38:09] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/15/21/8ca28ebd2602405833e0431e1988f00b8d5ca4cce243260b3e4b6a8827f4/indecode-1.3.1-py3-none-any.whl
+[2023-05-13 19:38:09] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-13 19:38:09] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.3-py3-none-any.whl.zip tmp/indecode-1.3.1-py3-none-any.whl.zip --markdown 20230513/i/indecode/1.3-1.3.1/diff.md --exclude *.pyd
+[2023-05-13 19:38:09] INFO root fetch - processPackages [longalpha-utils]: Downloading https://files.pythonhosted.org/packages/ed/06/b86a53a02feeff9b883a47aeccc184db72f54ede9d2eb01d6150d2171e1a/longalpha_utils-0.47.tar.gz
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ardilla]: executing diffoscope
+[2023-05-13 19:38:09] INFO root fetch - processPackages [ardilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ardilla-0.0.6a0.tar.gz tmp/ardilla-0.0.7a0.tar.gz --markdown 20230513/a/ardilla/0.0.6a0-0.0.7a0/diff.md --exclude *.pyd
+[2023-05-13 19:38:09] INFO root fetch - processPackages [longalpha-utils]: executing diffoscope
+[2023-05-13 19:38:09] INFO root fetch - processPackages [longalpha-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longalpha_utils-0.46.tar.gz tmp/longalpha_utils-0.47.tar.gz --markdown 20230513/l/longalpha-utils/0.46-0.47/diff.md --exclude *.pyd
+[2023-05-13 19:38:09] INFO root fetch - processPackages [tiivad]: Downloading https://files.pythonhosted.org/packages/80/f6/2b7dc9badfb369c03c85bf8f884c4a4176aed895a7d14b273a44fefedc59/tiivad-0.0.9.tar.gz
+[2023-05-13 19:38:10] INFO root fetch - processPackages [tiivad]: executing diffoscope
+[2023-05-13 19:38:10] INFO root fetch - processPackages [tiivad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiivad-0.0.8.tar.gz tmp/tiivad-0.0.9.tar.gz --markdown 20230513/t/tiivad/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 19:38:10] INFO root fetch - processPackages [EllipSect]: Downloading https://files.pythonhosted.org/packages/32/b5/526fdd95f77548447b752e98c15e9d905e9482df2456a52ea19d73b54278/EllipSect-3.2.1.tar.gz
+[2023-05-13 19:38:10] INFO root fetch - processPackages [EllipSect]: executing diffoscope
+[2023-05-13 19:38:10] INFO root fetch - processPackages [EllipSect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EllipSect-3.0.1.tar.gz tmp/EllipSect-3.2.1.tar.gz --markdown 20230513/E/EllipSect/3.0.1-3.2.1/diff.md --exclude *.pyd
+[2023-05-13 19:38:10] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-13 19:38:10] INFO root fetch - main [MainThread]: End processing [ardilla]: success
+[2023-05-13 19:38:11] INFO root fetch - main [MainThread]: End processing [longalpha-utils]: success
+[2023-05-13 19:38:11] INFO root fetch - main [MainThread]: End processing [tiivad]: success
+[2023-05-13 19:38:12] INFO root fetch - main [MainThread]: End processing [EllipSect]: success
+[2023-05-13 19:38:12] INFO root fetch - main [MainThread]: Store serial: [18091970]
