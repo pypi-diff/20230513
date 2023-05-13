@@ -6016,3 +6016,47 @@
 [2023-05-13 08:15:25] INFO root fetch - main [MainThread]: End processing [pulumi-okta]: success
 [2023-05-13 08:15:26] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
 [2023-05-13 08:15:26] INFO root fetch - main [MainThread]: Store serial: [18088234]
+[2023-05-13 08:20:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088234]
+[2023-05-13 08:20:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 08:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: always-updates
+[2023-05-13 08:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: always-updates
+[2023-05-13 08:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: irails
+[2023-05-13 08:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: similari-trackers-rs
+[2023-05-13 08:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: reasoner-validator
+[2023-05-13 08:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pywencai
+[2023-05-13 08:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: faster-whisper-cli
+[2023-05-13 08:20:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulumi-rabbitmq
+[2023-05-13 08:20:35] INFO root fetch - processPackages [irails]: New version: [1.3.7] Old Version: [1.3.6]
+[2023-05-13 08:20:35] INFO root fetch - processPackages [pywencai]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-05-13 08:20:35] WARNING root fetch - processPackages [similari-trackers-rs]: Skipping, unable to determine old version
+[2023-05-13 08:20:35] INFO root fetch - main [MainThread]: End processing [similari-trackers-rs] error
+[2023-05-13 08:20:35] WARNING root fetch - processPackages [faster-whisper-cli]: Skipping, unable to determine old version
+[2023-05-13 08:20:35] INFO root fetch - main [MainThread]: End processing [faster-whisper-cli] error
+[2023-05-13 08:20:35] INFO root fetch - processPackages [reasoner-validator]: New version: [3.4.9] Old Version: [3.4.8]
+[2023-05-13 08:20:35] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-13 08:20:35] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-13 08:20:35] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-13 08:20:35] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230513/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-13 08:20:35] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-13 08:20:35] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230513/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-13 08:20:35] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/50/62/4d6214310cb01a40bed55748ce18dde7a605a5a4e33aeafb16dea22184e9/irails-1.3.7.tar.gz
+[2023-05-13 08:20:35] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/e2/18/1d6bfebe7d98e167f0aff55c0ee9adde572864c53ab5d209f5e4afdc51bf/reasoner_validator-3.4.8.tar.gz
+[2023-05-13 08:20:35] INFO root fetch - processPackages [pulumi-rabbitmq]: New version: [3.4.0a1683957399] Old Version: [3.4.0a1683786543]
+[2023-05-13 08:20:35] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-13 08:20:35] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.6.tar.gz tmp/irails-1.3.7.tar.gz --markdown 20230513/i/irails/1.3.6-1.3.7/diff.md --exclude *.pyd
+[2023-05-13 08:20:35] INFO root fetch - processPackages [pywencai]: Downloading https://files.pythonhosted.org/packages/f4/26/d1703d858418dc00e0d40a6d53385d83c0a3c32032af46ea214360f6e35f/pywencai-0.8.5.tar.gz
+[2023-05-13 08:20:35] INFO root fetch - processPackages [pywencai]: executing diffoscope
+[2023-05-13 08:20:35] INFO root fetch - processPackages [pywencai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywencai-0.8.4.tar.gz tmp/pywencai-0.8.5.tar.gz --markdown 20230513/p/pywencai/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-05-13 08:20:36] INFO root fetch - processPackages [reasoner-validator]: Downloading https://files.pythonhosted.org/packages/70/85/413af4653fc722df3fb67007e7b979a17ef49d16cb616175b5b999bcb398/reasoner_validator-3.4.9.tar.gz
+[2023-05-13 08:20:36] INFO root fetch - processPackages [pulumi-rabbitmq]: Downloading https://files.pythonhosted.org/packages/9a/56/a4836f192eca1000d581062e5e332d67b8bb437f5fa24d4931b698ac1347/pulumi_rabbitmq-3.4.0a1683957399.tar.gz
+[2023-05-13 08:20:36] INFO root fetch - processPackages [reasoner-validator]: executing diffoscope
+[2023-05-13 08:20:36] INFO root fetch - processPackages [reasoner-validator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasoner_validator-3.4.8.tar.gz tmp/reasoner_validator-3.4.9.tar.gz --markdown 20230513/r/reasoner-validator/3.4.8-3.4.9/diff.md --exclude *.pyd
+[2023-05-13 08:20:36] INFO root fetch - processPackages [pulumi-rabbitmq]: executing diffoscope
+[2023-05-13 08:20:36] INFO root fetch - processPackages [pulumi-rabbitmq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_rabbitmq-3.4.0a1683786543.tar.gz tmp/pulumi_rabbitmq-3.4.0a1683957399.tar.gz --markdown 20230513/p/pulumi-rabbitmq/3.4.0a1683786543-3.4.0a1683957399/diff.md --exclude *.pyd
+[2023-05-13 08:20:36] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-13 08:20:36] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-13 08:20:37] INFO root fetch - main [MainThread]: End processing [pywencai]: success
+[2023-05-13 08:20:37] INFO root fetch - main [MainThread]: End processing [pulumi-rabbitmq]: success
+[2023-05-13 08:20:37] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-13 08:20:37] INFO root fetch - main [MainThread]: End processing [reasoner-validator]: success
+[2023-05-13 08:20:37] INFO root fetch - main [MainThread]: Store serial: [18088289]
