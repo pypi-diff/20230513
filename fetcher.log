@@ -11458,3 +11458,60 @@ EOFError: EOF read where object expected
 [2023-05-13 18:02:30] INFO root fetch - main [MainThread]: End processing [netilion-api]: success
 [2023-05-13 18:03:04] INFO root fetch - main [MainThread]: End processing [supriya]: success
 [2023-05-13 18:03:04] INFO root fetch - main [MainThread]: Store serial: [18091445]
+[2023-05-13 18:08:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091445]
+[2023-05-13 18:08:14] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-hoshino-sign
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastapi-integration
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ampform
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: testcell
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: notification-service-nightly
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ai-flow-nightly
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: obsidianhtml
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: elefantolib-fastapi
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pydivsufsort
+[2023-05-13 18:08:14] INFO root fetch - processPackages [fastapi-integration]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [testcell]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [elefantolib-fastapi]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ampform]: New version: [0.9.4] Old Version: [0.9.3]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [pydivsufsort]: New version: [0.0.8] Old Version: [0.0.6]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [obsidianhtml]: New version: [3.5.1] Old Version: [3.5.0]
+[2023-05-13 18:08:14] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-05-13 18:08:14] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.5.8.tar.gz tmp/notification_service_nightly-2023.5.9.tar.gz --markdown 20230513/n/notification-service-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.5.8.tar.gz tmp/ai_flow_nightly-2023.5.9.tar.gz --markdown 20230513/a/ai-flow-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-13 18:08:14] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: Downloading https://files.pythonhosted.org/packages/44/e7/9923c04b9ade028753f05023b2fff907eec81c17aa6132fde0ddb501a64c/nonebot_plugin_hoshino_sign-2.0.4.tar.gz
+[2023-05-13 18:08:14] INFO root fetch - processPackages [fastapi-integration]: Downloading https://files.pythonhosted.org/packages/6b/7a/ceb373da47298ee38bb79cc5a2268d036174dbc5d04e272d91569ce2340b/fastapi-integration-0.1.1.tar.gz
+[2023-05-13 18:08:14] INFO root fetch - processPackages [testcell]: Downloading https://files.pythonhosted.org/packages/9e/5f/5bb7a58851d8df93cdfb3a4753643f726e7c95a37e6092f913b5b2e209c8/testcell-0.0.4.tar.gz
+[2023-05-13 18:08:14] WARNING root fetch - processPackages [nonebot-plugin-hoshino-sign]: Skipping package: exceeds size limit 40530145>=10485760
+[2023-05-13 18:08:14] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hoshino-sign] error
+[2023-05-13 18:08:14] INFO root fetch - processPackages [obsidianhtml]: Downloading https://files.pythonhosted.org/packages/b9/dd/a9adf1c6a6ed23cbb999426e50c55aec167735025a4e50d883e7ae4237fd/obsidianhtml-3.5.0.tar.gz
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ampform]: Downloading https://files.pythonhosted.org/packages/41/77/cdf42f2270147f1cdf22ecabc6c39a596341e1ee0af8c310b3d6d061d76a/ampform-0.9.3.tar.gz
+[2023-05-13 18:08:14] INFO root fetch - processPackages [testcell]: executing diffoscope
+[2023-05-13 18:08:14] INFO root fetch - processPackages [testcell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testcell-0.0.3.tar.gz tmp/testcell-0.0.4.tar.gz --markdown 20230513/t/testcell/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 18:08:14] INFO root fetch - processPackages [elefantolib-fastapi]: Downloading https://files.pythonhosted.org/packages/37/ee/ea1c9a99a3e8ce16590e06926d4ff9e3aa7f8484ecbccf10b7fad413199f/elefantolib_fastapi-0.2.2.tar.gz
+[2023-05-13 18:08:14] INFO root fetch - processPackages [pydivsufsort]: Downloading https://files.pythonhosted.org/packages/98/a8/a74bb7b6d1c479c6893ccd156edddf66d7986c600481a14bc48684e23649/pydivsufsort-0.0.8-cp39-cp39-win_amd64.whl
+[2023-05-13 18:08:14] INFO root fetch - processPackages [elefantolib-fastapi]: executing diffoscope
+[2023-05-13 18:08:14] INFO root fetch - processPackages [elefantolib-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elefantolib_fastapi-0.2.1.tar.gz tmp/elefantolib_fastapi-0.2.2.tar.gz --markdown 20230513/e/elefantolib-fastapi/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ampform]: Downloading https://files.pythonhosted.org/packages/53/e7/7e2e5f33328f95448d03a77e3a0680997cd6cf2f90970cbed510e1032dd3/ampform-0.9.4.tar.gz
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ampform]: executing diffoscope
+[2023-05-13 18:08:14] INFO root fetch - processPackages [ampform]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ampform-0.9.3.tar.gz tmp/ampform-0.9.4.tar.gz --markdown 20230513/a/ampform/0.9.3-0.9.4/diff.md --exclude *.pyd
+[2023-05-13 18:08:14] INFO root fetch - processPackages [pydivsufsort]: executing diffoscope
+[2023-05-13 18:08:14] INFO root fetch - processPackages [pydivsufsort]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydivsufsort-0.0.6.tar.gz tmp/pydivsufsort-0.0.8-cp39-cp39-win_amd64.whl.zip --markdown 20230513/p/pydivsufsort/0.0.6-0.0.8/diff.md --exclude *.pyd
+[2023-05-13 18:08:14] INFO root fetch - processPackages [fastapi-integration]: Downloading https://files.pythonhosted.org/packages/a3/54/859921b7e8039dbde083f157406b66760bc7a852d33513859cc07f61109d/fastapi-integration-0.1.2.tar.gz
+[2023-05-13 18:08:14] INFO root fetch - processPackages [obsidianhtml]: Downloading https://files.pythonhosted.org/packages/87/9f/3540c56fa8fda5e2fe1257c5e929534d254c9c49d92c216937c4d5d5aa3d/obsidianhtml-3.5.1.tar.gz
+[2023-05-13 18:08:14] INFO root fetch - processPackages [fastapi-integration]: executing diffoscope
+[2023-05-13 18:08:14] INFO root fetch - processPackages [fastapi-integration]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-integration-0.1.1.tar.gz tmp/fastapi-integration-0.1.2.tar.gz --markdown 20230513/f/fastapi-integration/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 18:08:15] INFO root fetch - processPackages [obsidianhtml]: executing diffoscope
+[2023-05-13 18:08:15] INFO root fetch - processPackages [obsidianhtml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/obsidianhtml-3.5.0.tar.gz tmp/obsidianhtml-3.5.1.tar.gz --markdown 20230513/o/obsidianhtml/3.5.0-3.5.1/diff.md --exclude *.pyd
+[2023-05-13 18:08:15] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-05-13 18:08:16] INFO root fetch - main [MainThread]: End processing [testcell]: success
+[2023-05-13 18:08:16] INFO root fetch - main [MainThread]: End processing [pydivsufsort]: success
+[2023-05-13 18:08:16] INFO root fetch - main [MainThread]: End processing [elefantolib-fastapi]: success
+[2023-05-13 18:08:16] INFO root fetch - main [MainThread]: End processing [fastapi-integration]: success
+[2023-05-13 18:08:17] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-05-13 18:08:17] INFO root fetch - main [MainThread]: End processing [ampform]: success
+[2023-05-13 18:08:17] INFO root fetch - main [MainThread]: End processing [obsidianhtml]: success
+[2023-05-13 18:08:17] INFO root fetch - main [MainThread]: Store serial: [18091481]
