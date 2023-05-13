@@ -13029,3 +13029,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:12:25] INFO root fetch - main [MainThread]: End processing [sessypy]: success
 [2023-05-13 21:12:27] INFO root fetch - main [MainThread]: End processing [simpleimageio]: success
 [2023-05-13 21:12:27] INFO root fetch - main [MainThread]: Store serial: [18092402]
+[2023-05-13 21:17:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092402]
+[2023-05-13 21:17:36] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 21:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TransLiter
+[2023-05-13 21:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myfuncs
+[2023-05-13 21:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slap-cli
+[2023-05-13 21:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: datazets
+[2023-05-13 21:17:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: interop
+[2023-05-13 21:17:36] INFO root fetch - processPackages [TransLiter]: New version: [0.3.2] Old Version: [0.2.5]
+[2023-05-13 21:17:36] INFO root fetch - processPackages [myfuncs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 21:17:36] INFO root fetch - processPackages [datazets]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 21:17:36] INFO root fetch - processPackages [interop]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-13 21:17:36] INFO root fetch - processPackages [slap-cli]: New version: [1.8.1] Old Version: [1.8.0]
+[2023-05-13 21:17:37] INFO root fetch - processPackages [datazets]: Downloading https://files.pythonhosted.org/packages/c6/e1/0128b2083c4b270c67ece284deeea053d67b833d7d61b5470ce74e7f2ba1/datazets-0.1.1.tar.gz
+[2023-05-13 21:17:37] INFO root fetch - processPackages [myfuncs]: Downloading https://files.pythonhosted.org/packages/29/24/c526103849f9b67ae70f5cc5533a457446220570f26d626532cf2348e773/myfuncs-0.1.0.tar.gz
+[2023-05-13 21:17:37] INFO root fetch - processPackages [interop]: Downloading https://files.pythonhosted.org/packages/63/1a/a6a0a4935243ee6ea431aa10ea35d1010689e53dd0a35241e6b3e9563c02/interop-1.2.3-cp39-cp39-win_amd64.whl
+[2023-05-13 21:17:37] INFO root fetch - processPackages [TransLiter]: Downloading https://files.pythonhosted.org/packages/af/16/81d75caa0afc97d2d8541accc1c805551f7b38fde57c0069054caf1fe80b/TransLiter-0.3.2.tar.gz
+[2023-05-13 21:17:37] INFO root fetch - processPackages [slap-cli]: Downloading https://files.pythonhosted.org/packages/43/67/02539c17403c97c53addf60b27454aad1a5b2b992cc04c0bf0cca2ddb095/slap_cli-1.8.1.tar.gz
+[2023-05-13 21:17:37] INFO root fetch - processPackages [TransLiter]: executing diffoscope
+[2023-05-13 21:17:37] INFO root fetch - processPackages [TransLiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TransLiter-0.2.5.tar.gz tmp/TransLiter-0.3.2.tar.gz --markdown 20230513/T/TransLiter/0.2.5-0.3.2/diff.md --exclude *.pyd
+[2023-05-13 21:17:37] INFO root fetch - processPackages [slap-cli]: executing diffoscope
+[2023-05-13 21:17:37] INFO root fetch - processPackages [slap-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slap_cli-1.8.0.tar.gz tmp/slap_cli-1.8.1.tar.gz --markdown 20230513/s/slap-cli/1.8.0-1.8.1/diff.md --exclude *.pyd
+[2023-05-13 21:17:37] INFO root fetch - processPackages [datazets]: Downloading https://files.pythonhosted.org/packages/76/8a/2f1369cb995a6e99033c4ad6c06309a67a629a2ef64f04e6c3e1980cee46/datazets-0.1.2.tar.gz
+[2023-05-13 21:17:37] INFO root fetch - processPackages [myfuncs]: Downloading https://files.pythonhosted.org/packages/6c/d6/13c60700af0957717533579db50718defb1519561f7f2fd8bac199c952b0/myfuncs-0.1.1.tar.gz
+[2023-05-13 21:17:37] INFO root fetch - processPackages [myfuncs]: executing diffoscope
+[2023-05-13 21:17:37] INFO root fetch - processPackages [myfuncs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myfuncs-0.1.0.tar.gz tmp/myfuncs-0.1.1.tar.gz --markdown 20230513/m/myfuncs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 21:17:37] INFO root fetch - processPackages [datazets]: executing diffoscope
+[2023-05-13 21:17:37] INFO root fetch - processPackages [datazets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datazets-0.1.1.tar.gz tmp/datazets-0.1.2.tar.gz --markdown 20230513/d/datazets/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 21:17:37] INFO root fetch - processPackages [interop]: Downloading https://files.pythonhosted.org/packages/53/9c/8c5fd82a4755f59c8b85495bc440b86ab7e9e94eaf7442062482cf68dc6c/interop-1.2.4-cp38-cp38-manylinux1_x86_64.whl
+[2023-05-13 21:17:38] INFO root fetch - main [MainThread]: End processing [TransLiter]: success
+[2023-05-13 21:17:38] INFO root fetch - main [MainThread]: End processing [slap-cli]: success
+[2023-05-13 21:17:38] INFO root fetch - main [MainThread]: End processing [datazets]: success
+[2023-05-13 21:17:38] INFO root fetch - main [MainThread]: End processing [myfuncs]: success
+[2023-05-13 21:17:40] INFO root fetch - processPackages [interop]: executing diffoscope
+[2023-05-13 21:17:40] INFO root fetch - processPackages [interop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interop-1.2.3-cp39-cp39-win_amd64.whl.zip tmp/interop-1.2.4-cp38-cp38-manylinux1_x86_64.whl.zip --markdown 20230513/i/interop/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-13 21:17:42] INFO root fetch - main [MainThread]: End processing [interop]: success
+[2023-05-13 21:17:42] INFO root fetch - main [MainThread]: Store serial: [18092434]
