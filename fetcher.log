@@ -12142,3 +12142,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 19:17:02] INFO root fetch - main [MainThread]: End processing [hccpy] error
 [2023-05-13 19:17:13] INFO root fetch - main [MainThread]: End processing [pex]: success
 [2023-05-13 19:17:13] INFO root fetch - main [MainThread]: Store serial: [18091856]
+[2023-05-13 19:22:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091856]
+[2023-05-13 19:22:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 19:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: loadkit
+[2023-05-13 19:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: import-linter
+[2023-05-13 19:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rootutils
+[2023-05-13 19:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: t2c
+[2023-05-13 19:22:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sampleproject-dhchenx
+[2023-05-13 19:22:22] INFO root fetch - processPackages [sampleproject-dhchenx]: New version: [0.0.1a1] Old Version: [0.0.1a0]
+[2023-05-13 19:22:22] INFO root fetch - processPackages [import-linter]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-13 19:22:22] WARNING root fetch - processPackages [loadkit]: Skipping, unable to determine old version
+[2023-05-13 19:22:22] WARNING root fetch - processPackages [rootutils]: Skipping, unable to determine old version
+[2023-05-13 19:22:22] INFO root fetch - main [MainThread]: End processing [loadkit] error
+[2023-05-13 19:22:22] INFO root fetch - main [MainThread]: End processing [rootutils] error
+[2023-05-13 19:22:22] WARNING root fetch - processPackages [t2c]: Skipping, unable to determine old version
+[2023-05-13 19:22:22] INFO root fetch - main [MainThread]: End processing [t2c] error
+[2023-05-13 19:22:22] INFO root fetch - processPackages [sampleproject-dhchenx]: Downloading https://files.pythonhosted.org/packages/f2/69/9d47bd786a9beb34c4780535a706e6544f9a0f57cefadbd1a60adcef5884/sampleproject-dhchenx-0.0.1a0.tar.gz
+[2023-05-13 19:22:22] INFO root fetch - processPackages [import-linter]: Downloading https://files.pythonhosted.org/packages/5b/d9/303de2bf052305eb0f74754946e4f2287f8a5e48bf7b8126d589a820f9ce/import-linter-1.8.0.tar.gz
+[2023-05-13 19:22:22] INFO root fetch - processPackages [import-linter]: Downloading https://files.pythonhosted.org/packages/31/c4/46f500a381a91bcf325177e55355b09b0ef4de766452fee6bab2bcb42dea/import-linter-1.9.0.tar.gz
+[2023-05-13 19:22:22] INFO root fetch - processPackages [sampleproject-dhchenx]: Downloading https://files.pythonhosted.org/packages/6d/e1/e5cbe18c4457bc3bf0624b18382666d9ab90b73c998b68bf41a5ea127a41/sampleproject-dhchenx-0.0.1a1.tar.gz
+[2023-05-13 19:22:22] INFO root fetch - processPackages [import-linter]: executing diffoscope
+[2023-05-13 19:22:22] INFO root fetch - processPackages [import-linter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/import-linter-1.8.0.tar.gz tmp/import-linter-1.9.0.tar.gz --markdown 20230513/i/import-linter/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-13 19:22:22] INFO root fetch - processPackages [sampleproject-dhchenx]: executing diffoscope
+[2023-05-13 19:22:22] INFO root fetch - processPackages [sampleproject-dhchenx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sampleproject-dhchenx-0.0.1a0.tar.gz tmp/sampleproject-dhchenx-0.0.1a1.tar.gz --markdown 20230513/s/sampleproject-dhchenx/0.0.1a0-0.0.1a1/diff.md --exclude *.pyd
+[2023-05-13 19:22:23] INFO root fetch - main [MainThread]: End processing [sampleproject-dhchenx]: success
+[2023-05-13 19:22:24] INFO root fetch - main [MainThread]: End processing [import-linter]: success
+[2023-05-13 19:22:24] INFO root fetch - main [MainThread]: Store serial: [18091877]
