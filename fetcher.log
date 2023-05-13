@@ -7487,3 +7487,68 @@
 [2023-05-13 10:20:58] INFO root fetch - processPackages [IMDbTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDbTraktSyncer-1.0.9.tar.gz tmp/IMDbTraktSyncer-1.1.0.tar.gz --markdown 20230513/I/IMDbTraktSyncer/1.0.9-1.1.0/diff.md --exclude *.pyd
 [2023-05-13 10:21:00] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
 [2023-05-13 10:21:00] INFO root fetch - main [MainThread]: Store serial: [18088930]
+[2023-05-13 10:26:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088930]
+[2023-05-13 10:26:08] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QuickReaderPDF
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BioSAK
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-arkgacha
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: async-pjsekai
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airoboros
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pycodehealth
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PY-PACKAGE-NAME
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: overhave
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dbterd
+[2023-05-13 10:26:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo14-addon-l10n-it-fatturapa-out
+[2023-05-13 10:26:08] WARNING root fetch - processPackages [pycodehealth]: Skipping, unable to determine old version
+[2023-05-13 10:26:08] INFO root fetch - main [MainThread]: End processing [pycodehealth] error
+[2023-05-13 10:26:08] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: New version: [0.2.0] Old Version: [0.1.5]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [dbterd]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [BioSAK]: New version: [1.64.5] Old Version: [1.64.4]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [QuickReaderPDF]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [async-pjsekai]: New version: [0.0.10.dev2] Old Version: [0.0.10.dev1]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [airoboros]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [PY-PACKAGE-NAME]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [overhave]: New version: [3.9.0] Old Version: [3.8.4]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: New version: [14.0.3.3.0] Old Version: [14.0.3.2.1.dev5]
+[2023-05-13 10:26:08] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: Downloading https://files.pythonhosted.org/packages/33/1a/45873c13c7e866c6a73e5642cbe526ab4a7098dac3c6721fe4b59fb3086d/nonebot_plugin_arkgacha-0.1.5.tar.gz
+[2023-05-13 10:26:08] INFO root fetch - processPackages [QuickReaderPDF]: Downloading https://files.pythonhosted.org/packages/ad/f5/6d98358b41c90d547a566e504fba5c61e3328622be2f974e09255f01dd47/QuickReaderPDF-0.3.2.tar.gz
+[2023-05-13 10:26:08] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/9b/c3/2b62fb2442a87fe11d1b658f8c9b9add4007e255b1060c65daac8c5e7f04/BioSAK-1.64.4.tar.gz
+[2023-05-13 10:26:08] INFO root fetch - processPackages [airoboros]: Downloading https://files.pythonhosted.org/packages/c3/62/149042f88323df3403b508dede2815ce6f2beba577f99d74213437e04ef0/airoboros-0.2.3.tar.gz
+[2023-05-13 10:26:08] INFO root fetch - processPackages [PY-PACKAGE-NAME]: Downloading https://files.pythonhosted.org/packages/cd/19/97a3ffc743b347b7c7da0f8ed93fd96be10e5bc253b19474908af5ce0a4f/PY_PACKAGE_NAME-0.0.1.tar.gz
+[2023-05-13 10:26:08] INFO root fetch - processPackages [dbterd]: Downloading https://files.pythonhosted.org/packages/52/ad/8d2a3d036215e2aa61c76613658b7a7bee7d183f84fc76bae2fa55cc9280/dbterd-1.2.3.tar.gz
+[2023-05-13 10:26:09] INFO root fetch - processPackages [async-pjsekai]: Downloading https://files.pythonhosted.org/packages/a6/e4/c1de4e719251f53d96986270e2b19635a9499721a1152efbfb5f77bfaa0f/async_pjsekai-0.0.10.dev1.tar.gz
+[2023-05-13 10:26:09] INFO root fetch - processPackages [overhave]: Downloading https://files.pythonhosted.org/packages/35/d2/ab3a72dd99318a4ecf97364c7c67b8903528d6443e59e69d0e5cb8aa6d76/overhave-3.8.4.tar.gz
+[2023-05-13 10:26:09] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/99/80/8456a9860ca9d988aa820265f003eaa55fdddd68395722a2e74fea85c78f/odoo14_addon_l10n_it_fatturapa_out-14.0.3.2.1.dev5-py3-none-any.whl
+[2023-05-13 10:26:09] INFO root fetch - processPackages [airoboros]: executing diffoscope
+[2023-05-13 10:26:09] INFO root fetch - processPackages [airoboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airoboros-0.2.2.tar.gz tmp/airoboros-0.2.3.tar.gz --markdown 20230513/a/airoboros/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-13 10:26:09] WARNING root fetch - processPackages [BioSAK]: Skipping package: exceeds size limit 20917774>=10485760
+[2023-05-13 10:26:09] INFO root fetch - main [MainThread]: End processing [BioSAK] error
+[2023-05-13 10:26:09] INFO root fetch - processPackages [dbterd]: executing diffoscope
+[2023-05-13 10:26:09] INFO root fetch - processPackages [dbterd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbterd-1.2.2.tar.gz tmp/dbterd-1.2.3.tar.gz --markdown 20230513/d/dbterd/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-13 10:26:09] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: Downloading https://files.pythonhosted.org/packages/28/c5/477c4f1cfef85a75898441ae6032d66dd4e23904c0cdf9543c211fc3d41c/nonebot_plugin_arkgacha-0.2.0.tar.gz
+[2023-05-13 10:26:09] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: executing diffoscope
+[2023-05-13 10:26:09] INFO root fetch - processPackages [nonebot-plugin-arkgacha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_arkgacha-0.1.5.tar.gz tmp/nonebot_plugin_arkgacha-0.2.0.tar.gz --markdown 20230513/n/nonebot-plugin-arkgacha/0.1.5-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 10:26:09] INFO root fetch - processPackages [PY-PACKAGE-NAME]: Downloading https://files.pythonhosted.org/packages/93/c7/e6031ab2f1067348fae1be66d535c11ac381add7dc4936739cd05162ebfa/PY_PACKAGE_NAME-0.0.2.tar.gz
+[2023-05-13 10:26:09] INFO root fetch - processPackages [async-pjsekai]: Downloading https://files.pythonhosted.org/packages/8a/dd/48a46344d8286b5fba68e8dd06092cc59df02c3156bf5fbb9f48e4bbfc23/async_pjsekai-0.0.10.dev2.tar.gz
+[2023-05-13 10:26:09] INFO root fetch - processPackages [QuickReaderPDF]: Downloading https://files.pythonhosted.org/packages/26/db/2b7aa93374da71119946c7c582c767aa0b7ae318bf7c95ed9b03294cd545/QuickReaderPDF-0.3.3.tar.gz
+[2023-05-13 10:26:09] INFO root fetch - processPackages [PY-PACKAGE-NAME]: executing diffoscope
+[2023-05-13 10:26:09] INFO root fetch - processPackages [PY-PACKAGE-NAME]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PY_PACKAGE_NAME-0.0.1.tar.gz tmp/PY_PACKAGE_NAME-0.0.2.tar.gz --markdown 20230513/P/PY-PACKAGE-NAME/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 10:26:09] INFO root fetch - processPackages [QuickReaderPDF]: executing diffoscope
+[2023-05-13 10:26:09] INFO root fetch - processPackages [QuickReaderPDF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuickReaderPDF-0.3.2.tar.gz tmp/QuickReaderPDF-0.3.3.tar.gz --markdown 20230513/Q/QuickReaderPDF/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-13 10:26:09] INFO root fetch - processPackages [async-pjsekai]: executing diffoscope
+[2023-05-13 10:26:09] INFO root fetch - processPackages [async-pjsekai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_pjsekai-0.0.10.dev1.tar.gz tmp/async_pjsekai-0.0.10.dev2.tar.gz --markdown 20230513/a/async-pjsekai/0.0.10.dev1-0.0.10.dev2/diff.md --exclude *.pyd
+[2023-05-13 10:26:09] INFO root fetch - processPackages [overhave]: Downloading https://files.pythonhosted.org/packages/53/af/c768a33320940cbb4d2e9af53d090268fc9eb0b87bed8e10c081c668f698/overhave-3.9.0.tar.gz
+[2023-05-13 10:26:09] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: Downloading https://files.pythonhosted.org/packages/bc/e7/3f304bc8748d49ce4481534710501aec027e203de4ace2fc83b36184217f/odoo14_addon_l10n_it_fatturapa_out-14.0.3.3.0-py3-none-any.whl
+[2023-05-13 10:26:09] INFO root fetch - processPackages [overhave]: executing diffoscope
+[2023-05-13 10:26:09] INFO root fetch - processPackages [overhave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overhave-3.8.4.tar.gz tmp/overhave-3.9.0.tar.gz --markdown 20230513/o/overhave/3.8.4-3.9.0/diff.md --exclude *.pyd
+[2023-05-13 10:26:09] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: executing diffoscope
+[2023-05-13 10:26:09] INFO root fetch - processPackages [odoo14-addon-l10n-it-fatturapa-out]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_it_fatturapa_out-14.0.3.2.1.dev5-py3-none-any.whl.zip tmp/odoo14_addon_l10n_it_fatturapa_out-14.0.3.3.0-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-l10n-it-fatturapa-out/14.0.3.2.1.dev5-14.0.3.3.0/diff.md --exclude *.pyd
+[2023-05-13 10:26:10] INFO root fetch - main [MainThread]: End processing [airoboros]: success
+[2023-05-13 10:26:10] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-arkgacha]: success
+[2023-05-13 10:26:10] INFO root fetch - main [MainThread]: End processing [PY-PACKAGE-NAME]: success
+[2023-05-13 10:26:10] INFO root fetch - main [MainThread]: End processing [QuickReaderPDF]: success
+[2023-05-13 10:26:11] INFO root fetch - main [MainThread]: End processing [async-pjsekai]: success
+[2023-05-13 10:26:11] INFO root fetch - main [MainThread]: End processing [dbterd]: success
+[2023-05-13 10:26:11] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-fatturapa-out]: success
+[2023-05-13 10:26:13] INFO root fetch - main [MainThread]: End processing [overhave]: success
+[2023-05-13 10:26:13] INFO root fetch - main [MainThread]: Store serial: [18088960]
