@@ -4526,3 +4526,31 @@
 [2023-05-13 05:28:27] INFO root fetch - main [MainThread]: End processing [docchain]: success
 [2023-05-13 05:28:28] INFO root fetch - main [MainThread]: End processing [proxy-protocol]: success
 [2023-05-13 05:28:28] INFO root fetch - main [MainThread]: Store serial: [18087479]
+[2023-05-13 05:33:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087479]
+[2023-05-13 05:33:36] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 05:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dexie-rewards
+[2023-05-13 05:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ossfs
+[2023-05-13 05:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: heaserver
+[2023-05-13 05:33:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: RegScale-CLI
+[2023-05-13 05:33:36] INFO root fetch - processPackages [ossfs]: New version: [2023.5.0] Old Version: [2023.4.0]
+[2023-05-13 05:33:36] INFO root fetch - processPackages [dexie-rewards]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-13 05:33:36] INFO root fetch - processPackages [RegScale-CLI]: New version: [5.2.1] Old Version: [5.2.0]
+[2023-05-13 05:33:36] INFO root fetch - processPackages [heaserver]: New version: [1.0.0a99] Old Version: [1.0.0a98]
+[2023-05-13 05:33:36] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2023-05-13 05:33:36] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.0.0a98.tar.gz tmp/heaserver-1.0.0a99.tar.gz --markdown 20230513/h/heaserver/1.0.0a98-1.0.0a99/diff.md --exclude *.pyd
+[2023-05-13 05:33:36] INFO root fetch - processPackages [ossfs]: Downloading https://files.pythonhosted.org/packages/8e/a4/08a1c328d05b2819be7e2847782cc37f7031e188adcbfec15eee39679ad4/ossfs-2023.4.0.tar.gz
+[2023-05-13 05:33:36] INFO root fetch - processPackages [dexie-rewards]: Downloading https://files.pythonhosted.org/packages/44/66/eaa1a8dbc503b61b0d3b06d8eb370974dad446c9db06a8a55038ceadd01d/dexie_rewards-0.0.4.tar.gz
+[2023-05-13 05:33:37] INFO root fetch - processPackages [RegScale-CLI]: Downloading https://files.pythonhosted.org/packages/4f/03/8798d0ae982d365f52347427b117655aa0e7b4b3f2ebe488f8a2f0641208/RegScale_CLI-5.2.1-py3-none-any.whl
+[2023-05-13 05:33:37] INFO root fetch - processPackages [RegScale-CLI]: executing diffoscope
+[2023-05-13 05:33:37] INFO root fetch - processPackages [RegScale-CLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/RegScale_CLI-5.2.0-py3-none-any.whl.zip tmp/RegScale_CLI-5.2.1-py3-none-any.whl.zip --markdown 20230513/R/RegScale-CLI/5.2.0-5.2.1/diff.md --exclude *.pyd
+[2023-05-13 05:33:37] INFO root fetch - processPackages [ossfs]: Downloading https://files.pythonhosted.org/packages/d1/be/378b7beef20f2e72241ce90f1002c65292568b9ce9cb9931422e196a006a/ossfs-2023.5.0.tar.gz
+[2023-05-13 05:33:37] INFO root fetch - processPackages [dexie-rewards]: Downloading https://files.pythonhosted.org/packages/42/21/08628be72f9666c07177fe79477c3580edf162483251471182b4fb9a94b4/dexie_rewards-0.0.5.tar.gz
+[2023-05-13 05:33:37] INFO root fetch - processPackages [ossfs]: executing diffoscope
+[2023-05-13 05:33:37] INFO root fetch - processPackages [ossfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ossfs-2023.4.0.tar.gz tmp/ossfs-2023.5.0.tar.gz --markdown 20230513/o/ossfs/2023.4.0-2023.5.0/diff.md --exclude *.pyd
+[2023-05-13 05:33:37] INFO root fetch - processPackages [dexie-rewards]: executing diffoscope
+[2023-05-13 05:33:37] INFO root fetch - processPackages [dexie-rewards]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dexie_rewards-0.0.4.tar.gz tmp/dexie_rewards-0.0.5.tar.gz --markdown 20230513/d/dexie-rewards/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-13 05:33:38] INFO root fetch - main [MainThread]: End processing [dexie-rewards]: success
+[2023-05-13 05:33:38] INFO root fetch - main [MainThread]: End processing [ossfs]: success
+[2023-05-13 05:33:38] INFO root fetch - main [MainThread]: End processing [RegScale-CLI]: success
+[2023-05-13 05:33:38] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2023-05-13 05:33:38] INFO root fetch - main [MainThread]: Store serial: [18087500]
