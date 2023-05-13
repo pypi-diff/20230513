@@ -8146,3 +8146,43 @@
 [2023-05-13 11:49:33] INFO root fetch - main [MainThread]: End processing [deskaone-sdk-scrypt-2023]: success
 [2023-05-13 11:49:33] INFO root fetch - main [MainThread]: End processing [kodi-addon-checker]: success
 [2023-05-13 11:49:33] INFO root fetch - main [MainThread]: Store serial: [18089309]
+[2023-05-13 11:54:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089309]
+[2023-05-13 11:54:42] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 11:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: limeutils
+[2023-05-13 11:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdx-tf
+[2023-05-13 11:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PyTraffic
+[2023-05-13 11:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Outlyzer
+[2023-05-13 11:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: imow-webapi
+[2023-05-13 11:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: latestinfoearthquakeindonesia
+[2023-05-13 11:54:42] INFO root fetch - processPackages [limeutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-13 11:54:42] INFO root fetch - processPackages [Outlyzer]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 11:54:42] INFO root fetch - processPackages [imow-webapi]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-13 11:54:42] INFO root fetch - processPackages [cdx-tf]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 11:54:42] INFO root fetch - processPackages [PyTraffic]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-13 11:54:42] WARNING root fetch - processPackages [latestinfoearthquakeindonesia]: Skipping, unable to determine old version
+[2023-05-13 11:54:42] INFO root fetch - main [MainThread]: End processing [latestinfoearthquakeindonesia] error
+[2023-05-13 11:54:42] INFO root fetch - processPackages [limeutils]: Downloading https://files.pythonhosted.org/packages/65/cc/4a1595891c809ee04a180174c0dffb51f67648bbb9c342e008e1b42bef56/limeutils-0.2.8.tar.gz
+[2023-05-13 11:54:42] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/bb/08/0fd15ee58d1d004c49e9ac1d46eec6e9c078a71f172046f8c31c0d056b8a/PyTraffic-1.0.4.tar.gz
+[2023-05-13 11:54:42] INFO root fetch - processPackages [Outlyzer]: Downloading https://files.pythonhosted.org/packages/ed/e4/bef27184854c99f4575cfe4a788fbfd9d7a126e4e3f6909c0582e161b681/Outlyzer-0.0.3.tar.gz
+[2023-05-13 11:54:42] INFO root fetch - processPackages [imow-webapi]: Downloading https://files.pythonhosted.org/packages/b7/da/a79efe0814d202c6136d1829e62c6ffe500dafd5b42643e65f0b95ebd7f8/imow-webapi-0.7.8.tar.gz
+[2023-05-13 11:54:42] INFO root fetch - processPackages [cdx-tf]: Downloading https://files.pythonhosted.org/packages/fb/5a/20953f66b9aa8e04c049c04eb255e842f3872dbf1acc693986086adad4d4/cdx_tf-0.1.1.tar.gz
+[2023-05-13 11:54:42] INFO root fetch - processPackages [PyTraffic]: executing diffoscope
+[2023-05-13 11:54:42] INFO root fetch - processPackages [PyTraffic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTraffic-1.0.3.tar.gz tmp/PyTraffic-1.0.4.tar.gz --markdown 20230513/P/PyTraffic/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-13 11:54:42] INFO root fetch - processPackages [Outlyzer]: Downloading https://files.pythonhosted.org/packages/af/5e/03bd34edf150d4f9a8793d46079391829edff7c11fdf34b3a8a7efbeaa75/Outlyzer-0.0.4.tar.gz
+[2023-05-13 11:54:42] INFO root fetch - processPackages [cdx-tf]: Downloading https://files.pythonhosted.org/packages/f5/d6/429066c8d5282ea12171dfc7cf59010b3289d166f463493f510af3ec3dfb/cdx_tf-0.1.2.tar.gz
+[2023-05-13 11:54:43] INFO root fetch - processPackages [cdx-tf]: executing diffoscope
+[2023-05-13 11:54:43] INFO root fetch - processPackages [cdx-tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdx_tf-0.1.1.tar.gz tmp/cdx_tf-0.1.2.tar.gz --markdown 20230513/c/cdx-tf/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 11:54:43] INFO root fetch - processPackages [imow-webapi]: Downloading https://files.pythonhosted.org/packages/72/35/33cb2b82eaca92b8dc6eb213f3e0e70b227a237a0a924ae45f16a25f41e2/imow-webapi-0.7.9.tar.gz
+[2023-05-13 11:54:43] INFO root fetch - processPackages [limeutils]: Downloading https://files.pythonhosted.org/packages/98/c2/7ff94a2a9a6cf75af8237f31a295bea3f113301179e6bf1789e2c17810a4/limeutils-0.2.9.tar.gz
+[2023-05-13 11:54:43] INFO root fetch - processPackages [Outlyzer]: executing diffoscope
+[2023-05-13 11:54:43] INFO root fetch - processPackages [Outlyzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Outlyzer-0.0.3.tar.gz tmp/Outlyzer-0.0.4.tar.gz --markdown 20230513/O/Outlyzer/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 11:54:43] INFO root fetch - processPackages [imow-webapi]: executing diffoscope
+[2023-05-13 11:54:43] INFO root fetch - processPackages [imow-webapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imow-webapi-0.7.8.tar.gz tmp/imow-webapi-0.7.9.tar.gz --markdown 20230513/i/imow-webapi/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-13 11:54:43] INFO root fetch - processPackages [limeutils]: executing diffoscope
+[2023-05-13 11:54:43] INFO root fetch - processPackages [limeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limeutils-0.2.8.tar.gz tmp/limeutils-0.2.9.tar.gz --markdown 20230513/l/limeutils/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-13 11:54:44] INFO root fetch - main [MainThread]: End processing [cdx-tf]: success
+[2023-05-13 11:54:44] INFO root fetch - main [MainThread]: End processing [PyTraffic]: success
+[2023-05-13 11:54:44] INFO root fetch - main [MainThread]: End processing [imow-webapi]: success
+[2023-05-13 11:54:44] INFO root fetch - main [MainThread]: End processing [Outlyzer]: success
+[2023-05-13 11:54:44] INFO root fetch - main [MainThread]: End processing [limeutils]: success
+[2023-05-13 11:54:44] INFO root fetch - main [MainThread]: Store serial: [18089329]
