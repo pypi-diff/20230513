@@ -11323,3 +11323,49 @@ EOFError: EOF read where object expected
 [2023-05-13 17:46:38] INFO root fetch - main [MainThread]: End processing [aa-freight]: success
 [2023-05-13 17:46:40] INFO root fetch - main [MainThread]: End processing [affine-transform]: success
 [2023-05-13 17:46:40] INFO root fetch - main [MainThread]: Store serial: [18091343]
+[2023-05-13 17:51:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091343]
+[2023-05-13 17:51:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: seunggabi-core-python
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-webapp-skeleton
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vegas
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mktrader
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cc-py-commons
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: secretmessage
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ouilookup
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: applyx
+[2023-05-13 17:51:49] WARNING root fetch - processPackages [seunggabi-core-python]: Skipping, unable to determine old version
+[2023-05-13 17:51:49] INFO root fetch - main [MainThread]: End processing [seunggabi-core-python] error
+[2023-05-13 17:51:49] INFO root fetch - processPackages [cdk-webapp-skeleton]: New version: [0.4.0] Old Version: [0.3.dev9]
+[2023-05-13 17:51:49] INFO root fetch - processPackages [applyx]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-13 17:51:49] INFO root fetch - processPackages [secretmessage]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 17:51:49] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2023-05-13 17:51:49] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.4-py3-none-any.whl.zip tmp/applyx-0.2.5-py3-none-any.whl.zip --markdown 20230513/a/applyx/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-13 17:51:49] INFO root fetch - processPackages [mktrader]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 17:51:49] INFO root fetch - processPackages [cdk-webapp-skeleton]: executing diffoscope
+[2023-05-13 17:51:49] INFO root fetch - processPackages [cdk-webapp-skeleton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_webapp_skeleton-0.3.dev9.tar.gz tmp/cdk_webapp_skeleton-0.4.0.tar.gz --markdown 20230513/c/cdk-webapp-skeleton/0.3.dev9-0.4.0/diff.md --exclude *.pyd
+[2023-05-13 17:51:49] INFO root fetch - processPackages [cc-py-commons]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-13 17:51:49] INFO root fetch - processPackages [ouilookup]: New version: [0.3.1] Old Version: [0.2.4]
+[2023-05-13 17:51:49] INFO root fetch - processPackages [vegas]: New version: [5.4.1] Old Version: [5.4]
+[2023-05-13 17:51:49] INFO root fetch - processPackages [secretmessage]: executing diffoscope
+[2023-05-13 17:51:49] INFO root fetch - processPackages [secretmessage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secretmessage-0.0.1.tar.gz tmp/secretmessage-0.0.2.tar.gz --markdown 20230513/s/secretmessage/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 17:51:50] INFO root fetch - processPackages [ouilookup]: Downloading https://files.pythonhosted.org/packages/6b/0d/5de26a88c7300214eec5a12bdee78962806ebe45465187f125662d7561fa/ouilookup-0.2.4.tar.gz
+[2023-05-13 17:51:50] INFO root fetch - processPackages [vegas]: Downloading https://files.pythonhosted.org/packages/48/82/8bb458b5ea052e997f6f0b4cf90d02b6653ec7316d1b1e6c7eb158ea36c9/vegas-5.4.tar.gz
+[2023-05-13 17:51:50] INFO root fetch - processPackages [mktrader]: Downloading https://files.pythonhosted.org/packages/36/4e/66c2fffe292c680e5ea51dadd003532ea02869e36e65278dd59dbe6043c3/mktrader-0.0.4.tar.gz
+[2023-05-13 17:51:50] INFO root fetch - processPackages [cc-py-commons]: executing diffoscope
+[2023-05-13 17:51:50] INFO root fetch - processPackages [cc-py-commons]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cc_py_commons-0.3.8.tar.gz tmp/cc_py_commons-0.3.9.tar.gz --markdown 20230513/c/cc-py-commons/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-13 17:51:50] INFO root fetch - processPackages [mktrader]: executing diffoscope
+[2023-05-13 17:51:50] INFO root fetch - processPackages [mktrader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mktrader-0.0.3.tar.gz tmp/mktrader-0.0.4.tar.gz --markdown 20230513/m/mktrader/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 17:51:50] INFO root fetch - processPackages [vegas]: Downloading https://files.pythonhosted.org/packages/b1/de/0a760f56485e2ea8ad648b1aa6c198f0c7d25da8caa176669edfd2f7a477/vegas-5.4.1.tar.gz
+[2023-05-13 17:51:50] INFO root fetch - processPackages [ouilookup]: Downloading https://files.pythonhosted.org/packages/ce/7f/1d8ceacbe04d5f369d15fd3221884509edf23593a6c29ade81e83f2bc43b/ouilookup-0.3.1.tar.gz
+[2023-05-13 17:51:50] INFO root fetch - processPackages [vegas]: executing diffoscope
+[2023-05-13 17:51:50] INFO root fetch - processPackages [vegas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegas-5.4.tar.gz tmp/vegas-5.4.1.tar.gz --markdown 20230513/v/vegas/5.4-5.4.1/diff.md --exclude *.pyd
+[2023-05-13 17:51:50] INFO root fetch - processPackages [ouilookup]: executing diffoscope
+[2023-05-13 17:51:50] INFO root fetch - processPackages [ouilookup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ouilookup-0.2.4.tar.gz tmp/ouilookup-0.3.1.tar.gz --markdown 20230513/o/ouilookup/0.2.4-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 17:51:51] INFO root fetch - main [MainThread]: End processing [secretmessage]: success
+[2023-05-13 17:51:51] INFO root fetch - main [MainThread]: End processing [cdk-webapp-skeleton]: success
+[2023-05-13 17:51:51] INFO root fetch - main [MainThread]: End processing [mktrader]: success
+[2023-05-13 17:51:51] INFO root fetch - main [MainThread]: End processing [applyx]: success
+[2023-05-13 17:51:52] INFO root fetch - main [MainThread]: End processing [ouilookup]: success
+[2023-05-13 17:51:52] INFO root fetch - main [MainThread]: End processing [cc-py-commons]: success
+[2023-05-13 17:51:56] INFO root fetch - main [MainThread]: End processing [vegas]: success
+[2023-05-13 17:51:56] INFO root fetch - main [MainThread]: Store serial: [18091372]
