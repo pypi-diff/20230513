@@ -9512,3 +9512,74 @@
 [2023-05-13 14:46:28] INFO root fetch - main [MainThread]: End processing [autobean]: success
 [2023-05-13 14:46:29] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
 [2023-05-13 14:46:29] INFO root fetch - main [MainThread]: Store serial: [18090151]
+[2023-05-13 14:51:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090151]
+[2023-05-13 14:51:39] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: constvars
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unihan-etl
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hiyobot
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: manticore
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: example-robot-data
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mwbzcl
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hapdoc
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cv2geojson
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: private-lecture-automation
+[2023-05-13 14:51:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pypredictor
+[2023-05-13 14:51:39] INFO root fetch - processPackages [example-robot-data]: New version: [4.0.6] Old Version: [4.0.5]
+[2023-05-13 14:51:39] INFO root fetch - processPackages [mwbzcl]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-13 14:51:39] INFO root fetch - processPackages [cv2geojson]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-13 14:51:39] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 14:51:39] INFO root fetch - processPackages [hiyobot]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 14:51:39] INFO root fetch - processPackages [manticore]: New version: [0.3.8.dev230513] Old Version: [0.3.8.dev230512]
+[2023-05-13 14:51:39] WARNING root fetch - processPackages [constvars]: Skipping, unable to determine old version
+[2023-05-13 14:51:39] INFO root fetch - processPackages [constvars]: Start processing: gridworks-atn
+[2023-05-13 14:51:39] INFO root fetch - main [MainThread]: End processing [constvars] error
+[2023-05-13 14:51:39] INFO root fetch - processPackages [unihan-etl]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-13 14:51:39] INFO root fetch - processPackages [gridworks-atn]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-13 14:51:39] INFO root fetch - processPackages [mwbzcl]: Downloading https://files.pythonhosted.org/packages/f6/19/dd4e86381c76d2a6989fb414d9eac87f34740e6194b43cb541815dc84eb3/mwbzcl-1.0.5.tar.gz
+[2023-05-13 14:51:39] INFO root fetch - processPackages [example-robot-data]: Downloading https://files.pythonhosted.org/packages/bb/53/fb418fe9248114f01ab66da7708d60ee608b0f848937bda66668f252d04c/example_robot_data-4.0.5-4-py39-none-any.whl
+[2023-05-13 14:51:39] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 14:51:39] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 14:51:39] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/1a/c5/7a3d63b504a0afb5e149e01b8c3006cf9344e85fd6bd6e16b13873fc2a53/hiyobot-0.1.8.tar.gz
+[2023-05-13 14:51:39] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/9d/48/d87d0b31a965a21004b498b929d987f8ad50e83a8f8d72d1caecab229462/manticore-0.3.8.dev230512.tar.gz
+[2023-05-13 14:51:39] INFO root fetch - processPackages [cv2geojson]: Downloading https://files.pythonhosted.org/packages/c0/4d/8a7a04bf3f2acb141e37c7cf3b82f2465aeed60932efdc26799ad571b375/cv2geojson-0.0.7.tar.gz
+[2023-05-13 14:51:39] INFO root fetch - processPackages [unihan-etl]: Downloading https://files.pythonhosted.org/packages/e6/f2/ad475612c1951852fbf186e9c2ffac59296b278605657be60b58b4699358/unihan-etl-0.9.4.tar.gz
+[2023-05-13 14:51:39] WARNING root fetch - processPackages [example-robot-data]: Skipping package: exceeds size limit 99634221>=10485760
+[2023-05-13 14:51:39] INFO root fetch - processPackages [example-robot-data]: Start processing: qiskit-symbolic
+[2023-05-13 14:51:39] INFO root fetch - main [MainThread]: End processing [example-robot-data] error
+[2023-05-13 14:51:39] INFO root fetch - processPackages [gridworks-atn]: Downloading https://files.pythonhosted.org/packages/ea/7e/8e3136a0046cd492392b8750b0904da77bb6910923e9eb51a5e474a27e60/gridworks_atn-0.3.3.tar.gz
+[2023-05-13 14:51:39] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/f1/d9/cd087817529a65af5eb9dae535867e10adcbe7715cf86da4603f741cdb5f/hiyobot-0.1.9.tar.gz
+[2023-05-13 14:51:39] INFO root fetch - processPackages [cv2geojson]: executing diffoscope
+[2023-05-13 14:51:39] INFO root fetch - processPackages [cv2geojson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv2geojson-0.0.6.tar.gz tmp/cv2geojson-0.0.7.tar.gz --markdown 20230513/c/cv2geojson/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-13 14:51:39] ERROR root fetch - processPackages [qiskit-symbolic]: Unable to get metadata: No such project 'qiskit-symbolic'
+[2023-05-13 14:51:39] INFO root fetch - processPackages [qiskit-symbolic]: Start processing: python-roborock
+[2023-05-13 14:51:39] INFO root fetch - main [MainThread]: End processing [qiskit-symbolic] error
+[2023-05-13 14:51:39] INFO root fetch - processPackages [mwbzcl]: Downloading https://files.pythonhosted.org/packages/90/91/9befef9366b98d15ac47da56e1e0c04fb0c22a4c1db3a87a646d3cd54e86/mwbzcl-1.0.6.tar.gz
+[2023-05-13 14:51:39] INFO root fetch - processPackages [python-roborock]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-13 14:51:40] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-13 14:51:40] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.1.8.tar.gz tmp/hiyobot-0.1.9.tar.gz --markdown 20230513/h/hiyobot/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 14:51:40] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-05-13 14:51:40] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.9.0.tar.gz tmp/python_roborock-0.9.0rc0.tar.gz --markdown 20230513/p/python-roborock/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-13 14:51:40] INFO root fetch - processPackages [mwbzcl]: executing diffoscope
+[2023-05-13 14:51:40] INFO root fetch - processPackages [mwbzcl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mwbzcl-1.0.5.tar.gz tmp/mwbzcl-1.0.6.tar.gz --markdown 20230513/m/mwbzcl/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-13 14:51:40] INFO root fetch - processPackages [manticore]: Downloading https://files.pythonhosted.org/packages/4f/93/18fddad5edf5f5f5f552c4ebe05265b620aa8f8928dc8cd69f8bb3596637/manticore-0.3.8.dev230513.tar.gz
+[2023-05-13 14:51:40] INFO root fetch - processPackages [gridworks-atn]: Downloading https://files.pythonhosted.org/packages/e3/5e/5afd2895b4eb146deba7f32c921c240895fcb01b5944854970f9d74b084c/gridworks_atn-0.3.4.tar.gz
+[2023-05-13 14:51:40] INFO root fetch - processPackages [unihan-etl]: Downloading https://files.pythonhosted.org/packages/d8/de/3d9897770b4f0eafb171ba960ce769fa5034edcb5ffc2b3c0538635c5b63/unihan-etl-0.9.5.tar.gz
+[2023-05-13 14:51:40] WARNING root fetch - processPackages [private-lecture-automation]: Skipping, unable to determine old version
+[2023-05-13 14:51:40] INFO root fetch - main [MainThread]: End processing [private-lecture-automation] error
+[2023-05-13 14:51:40] WARNING root fetch - processPackages [pypredictor]: Skipping, unable to determine old version
+[2023-05-13 14:51:40] INFO root fetch - main [MainThread]: End processing [pypredictor] error
+[2023-05-13 14:51:40] INFO root fetch - processPackages [gridworks-atn]: executing diffoscope
+[2023-05-13 14:51:40] INFO root fetch - processPackages [gridworks-atn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gridworks_atn-0.3.3.tar.gz tmp/gridworks_atn-0.3.4.tar.gz --markdown 20230513/g/gridworks-atn/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-13 14:51:40] INFO root fetch - processPackages [manticore]: executing diffoscope
+[2023-05-13 14:51:40] INFO root fetch - processPackages [manticore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manticore-0.3.8.dev230512.tar.gz tmp/manticore-0.3.8.dev230513.tar.gz --markdown 20230513/m/manticore/0.3.8.dev230512-0.3.8.dev230513/diff.md --exclude *.pyd
+[2023-05-13 14:51:40] INFO root fetch - processPackages [unihan-etl]: executing diffoscope
+[2023-05-13 14:51:40] INFO root fetch - processPackages [unihan-etl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unihan-etl-0.9.4.tar.gz tmp/unihan-etl-0.9.5.tar.gz --markdown 20230513/u/unihan-etl/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-13 14:51:41] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 14:51:41] INFO root fetch - main [MainThread]: End processing [cv2geojson]: success
+[2023-05-13 14:51:41] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-13 14:51:41] INFO root fetch - main [MainThread]: End processing [mwbzcl]: success
+[2023-05-13 14:51:41] INFO root fetch - main [MainThread]: End processing [unihan-etl]: success
+[2023-05-13 14:51:42] INFO root fetch - main [MainThread]: End processing [gridworks-atn]: success
+[2023-05-13 14:51:42] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-05-13 14:51:42] INFO root fetch - main [MainThread]: End processing [manticore]: success
+[2023-05-13 14:51:42] INFO root fetch - main [MainThread]: Store serial: [18090200]
