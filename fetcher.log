@@ -13844,3 +13844,25 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:37:07] INFO root fetch - processPackages [pymultiastar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymultiastar-0.0.6.tar.gz tmp/pymultiastar-0.0.7.tar.gz --markdown 20230513/p/pymultiastar/0.0.6-0.0.7/diff.md --exclude *.pyd
 [2023-05-13 22:37:15] INFO root fetch - main [MainThread]: End processing [pymultiastar]: success
 [2023-05-13 22:37:15] INFO root fetch - main [MainThread]: Store serial: [18092971]
+[2023-05-13 22:42:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092971]
+[2023-05-13 22:42:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 22:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rockphypy
+[2023-05-13 22:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: frostaura
+[2023-05-13 22:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: saic-ismart-client
+[2023-05-13 22:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: load-const
+[2023-05-13 22:42:24] WARNING root fetch - processPackages [rockphypy]: Skipping, unable to determine old version
+[2023-05-13 22:42:24] INFO root fetch - main [MainThread]: End processing [rockphypy] error
+[2023-05-13 22:42:24] WARNING root fetch - processPackages [load-const]: Skipping, unable to determine old version
+[2023-05-13 22:42:24] INFO root fetch - processPackages [frostaura]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-13 22:42:24] INFO root fetch - main [MainThread]: End processing [load-const] error
+[2023-05-13 22:42:24] INFO root fetch - processPackages [saic-ismart-client]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-13 22:42:24] INFO root fetch - processPackages [frostaura]: Downloading https://files.pythonhosted.org/packages/0d/cf/808d505febc96f722581a6649380eee75cec881d42a5aea4a379349c4c3e/frostaura-1.0.8.tar.gz
+[2023-05-13 22:42:24] INFO root fetch - processPackages [saic-ismart-client]: Downloading https://files.pythonhosted.org/packages/9f/70/61bffeb6b20a640a99585d24a198e62da2e46a2048c7434ab408956a96cf/saic_ismart_client-1.2.3.tar.gz
+[2023-05-13 22:42:25] INFO root fetch - processPackages [saic-ismart-client]: executing diffoscope
+[2023-05-13 22:42:25] INFO root fetch - processPackages [saic-ismart-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saic_ismart_client-1.2.2.tar.gz tmp/saic_ismart_client-1.2.3.tar.gz --markdown 20230513/s/saic-ismart-client/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-13 22:42:25] INFO root fetch - processPackages [frostaura]: Downloading https://files.pythonhosted.org/packages/4f/39/c61e198758c9b0a77fb0da9d6af0785bdb7fbabfab9909ba41cb2b7bd749/frostaura-1.0.9.tar.gz
+[2023-05-13 22:42:25] INFO root fetch - processPackages [frostaura]: executing diffoscope
+[2023-05-13 22:42:25] INFO root fetch - processPackages [frostaura]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frostaura-1.0.8.tar.gz tmp/frostaura-1.0.9.tar.gz --markdown 20230513/f/frostaura/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-13 22:42:26] INFO root fetch - main [MainThread]: End processing [saic-ismart-client]: success
+[2023-05-13 22:42:26] INFO root fetch - main [MainThread]: End processing [frostaura]: success
+[2023-05-13 22:42:26] INFO root fetch - main [MainThread]: Store serial: [18092988]
