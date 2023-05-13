@@ -6987,3 +6987,51 @@
 [2023-05-13 09:44:18] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-warehouse]: success
 [2023-05-13 09:44:19] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-request]: success
 [2023-05-13 09:44:19] INFO root fetch - main [MainThread]: Store serial: [18088704]
+[2023-05-13 09:49:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088704]
+[2023-05-13 09:49:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 09:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: numpy-illustrated
+[2023-05-13 09:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-stock-return-request
+[2023-05-13 09:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo13-addon-stock-picking-group-by-partner-by-carrier
+[2023-05-13 09:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lamineml
+[2023-05-13 09:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keras-nightly
+[2023-05-13 09:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onnx2tf
+[2023-05-13 09:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bambooai
+[2023-05-13 09:49:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: PyLTSpice
+[2023-05-13 09:49:28] INFO root fetch - processPackages [PyLTSpice]: New version: [4.0.1] Old Version: [4.0]
+[2023-05-13 09:49:28] INFO root fetch - processPackages [lamineml]: New version: [0.0.47] Old Version: [0.0.45]
+[2023-05-13 09:49:28] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-13 09:49:28] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-05-13 09:49:28] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.0.45.tar.gz tmp/lamineml-0.0.47.tar.gz --markdown 20230513/l/lamineml/0.0.45-0.0.47/diff.md --exclude *.pyd
+[2023-05-13 09:49:28] INFO root fetch - processPackages [odoo13-addon-stock-picking-group-by-partner-by-carrier]: New version: [13.0.1.9.0] Old Version: [13.0.1.8.1.dev1]
+[2023-05-13 09:49:28] INFO root fetch - processPackages [PyLTSpice]: executing diffoscope
+[2023-05-13 09:49:28] INFO root fetch - processPackages [PyLTSpice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyLTSpice-4.0.tar.gz tmp/PyLTSpice-4.0.1.tar.gz --markdown 20230513/P/PyLTSpice/4.0-4.0.1/diff.md --exclude *.pyd
+[2023-05-13 09:49:28] INFO root fetch - processPackages [bambooai]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-13 09:49:28] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: New version: [12.0.1.0.2.99.dev9] Old Version: [12.0.1.0.2.99.dev8]
+[2023-05-13 09:49:28] INFO root fetch - processPackages [numpy-illustrated]: New version: [0.3] Old Version: [0.1]
+[2023-05-13 09:49:28] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-13 09:49:28] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-13 09:49:28] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230513/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 09:49:29] INFO root fetch - processPackages [odoo13-addon-stock-picking-group-by-partner-by-carrier]: Downloading https://files.pythonhosted.org/packages/96/c9/02b727e233dab320c99bcd2759b200d51a0852cefa72d06122bc936e35ad/odoo13_addon_stock_picking_group_by_partner_by_carrier-13.0.1.8.1.dev1-py3-none-any.whl
+[2023-05-13 09:49:29] INFO root fetch - processPackages [numpy-illustrated]: Downloading https://files.pythonhosted.org/packages/0f/3d/cbe42a9f5dce4fe3ea97565ac1435254ad9d68aaf180ffc8f45e48f18919/numpy-illustrated-0.1.tar.gz
+[2023-05-13 09:49:29] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/60/ec/db8a80cdfeae5331acc147fd4fc75562f067f22fd680d6995f56520bd96e/bambooai-0.1.5.tar.gz
+[2023-05-13 09:49:29] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-13 09:49:29] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230513/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-13 09:49:29] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: executing diffoscope
+[2023-05-13 09:49:29] INFO root fetch - processPackages [odoo12-addon-stock-return-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_return_request-12.0.1.0.2.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_stock_return_request-12.0.1.0.2.99.dev9-py3-none-any.whl.zip --markdown 20230513/o/odoo12-addon-stock-return-request/12.0.1.0.2.99.dev8-12.0.1.0.2.99.dev9/diff.md --exclude *.pyd
+[2023-05-13 09:49:29] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-13 09:49:29] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.1.4.tar.gz tmp/bambooai-0.1.5.tar.gz --markdown 20230513/b/bambooai/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-13 09:49:29] INFO root fetch - processPackages [numpy-illustrated]: Downloading https://files.pythonhosted.org/packages/6d/8b/c5f4cd1ddd197f4f59d02930f0a9968b022499d4523da2490beb04ee7a2c/numpy-illustrated-0.3.tar.gz
+[2023-05-13 09:49:29] INFO root fetch - processPackages [numpy-illustrated]: executing diffoscope
+[2023-05-13 09:49:29] INFO root fetch - processPackages [numpy-illustrated]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/numpy-illustrated-0.1.tar.gz tmp/numpy-illustrated-0.3.tar.gz --markdown 20230513/n/numpy-illustrated/0.1-0.3/diff.md --exclude *.pyd
+[2023-05-13 09:49:29] INFO root fetch - processPackages [odoo13-addon-stock-picking-group-by-partner-by-carrier]: Downloading https://files.pythonhosted.org/packages/bf/d7/0d0c059f82f749acf482ba22ed0c7538449ddc2cca3002ea44ef25db146a/odoo13_addon_stock_picking_group_by_partner_by_carrier-13.0.1.9.0-py3-none-any.whl
+[2023-05-13 09:49:29] INFO root fetch - processPackages [odoo13-addon-stock-picking-group-by-partner-by-carrier]: executing diffoscope
+[2023-05-13 09:49:29] INFO root fetch - processPackages [odoo13-addon-stock-picking-group-by-partner-by-carrier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_stock_picking_group_by_partner_by_carrier-13.0.1.8.1.dev1-py3-none-any.whl.zip tmp/odoo13_addon_stock_picking_group_by_partner_by_carrier-13.0.1.9.0-py3-none-any.whl.zip --markdown 20230513/o/odoo13-addon-stock-picking-group-by-partner-by-carrier/13.0.1.8.1.dev1-13.0.1.9.0/diff.md --exclude *.pyd
+[2023-05-13 09:49:30] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-05-13 09:49:30] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-13 09:49:30] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-return-request]: success
+[2023-05-13 09:49:30] INFO root fetch - main [MainThread]: End processing [numpy-illustrated]: success
+[2023-05-13 09:49:31] INFO root fetch - main [MainThread]: End processing [odoo13-addon-stock-picking-group-by-partner-by-carrier]: success
+[2023-05-13 09:49:31] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-13 09:49:31] INFO root fetch - main [MainThread]: End processing [PyLTSpice]: success
+[2023-05-13 09:49:39] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-13 09:49:39] INFO root fetch - main [MainThread]: Store serial: [18088726]
