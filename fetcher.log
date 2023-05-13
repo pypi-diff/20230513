@@ -7426,3 +7426,42 @@
 [2023-05-13 10:10:36] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2023-05-13 10:10:38] INFO root fetch - main [MainThread]: End processing [eegsynth]: success
 [2023-05-13 10:10:38] INFO root fetch - main [MainThread]: Store serial: [18088890]
+[2023-05-13 10:15:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088890]
+[2023-05-13 10:15:47] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 10:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry-poet
+[2023-05-13 10:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: copytool
+[2023-05-13 10:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prr
+[2023-05-13 10:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fastapi-listing
+[2023-05-13 10:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vollseg
+[2023-05-13 10:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-record
+[2023-05-13 10:15:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: py-sc-kpm
+[2023-05-13 10:15:47] INFO root fetch - processPackages [poetry-poet]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 10:15:47] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-05-13 10:15:47] WARNING root fetch - processPackages [py-sc-kpm]: Skipping, unable to determine old version
+[2023-05-13 10:15:47] INFO root fetch - main [MainThread]: End processing [py-sc-kpm] error
+[2023-05-13 10:15:47] INFO root fetch - processPackages [fastapi-listing]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-13 10:15:47] WARNING root fetch - processPackages [copytool]: Skipping, unable to determine old version
+[2023-05-13 10:15:47] INFO root fetch - main [MainThread]: End processing [copytool] error
+[2023-05-13 10:15:47] INFO root fetch - processPackages [nonebot-plugin-record]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-13 10:15:47] INFO root fetch - processPackages [prr]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 10:15:47] INFO root fetch - processPackages [poetry-poet]: Downloading https://files.pythonhosted.org/packages/8a/e2/db608408a6ca3d302643945dd54f0f38c8c7c002150bcf45174c04dcd2d7/poetry_poet-0.1.9.tar.gz
+[2023-05-13 10:15:47] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-05-13 10:15:47] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-05-13 10:15:47] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-05-13 10:15:47] INFO root fetch - processPackages [nonebot-plugin-record]: Downloading https://files.pythonhosted.org/packages/64/32/6462ab170e3f15f2c21fc8e1a78ae7d8dc7ada0ff00013b7688d02d6b028/nonebot_plugin_record-1.0.3.tar.gz
+[2023-05-13 10:15:47] INFO root fetch - processPackages [poetry-poet]: executing diffoscope
+[2023-05-13 10:15:47] INFO root fetch - processPackages [poetry-poet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_poet-0.1.8.tar.gz tmp/poetry_poet-0.1.9.tar.gz --markdown 20230513/p/poetry-poet/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 10:15:47] INFO root fetch - processPackages [fastapi-listing]: Downloading https://files.pythonhosted.org/packages/3d/6e/2d6fc78456ef84bf22400fce4178a006e1c39877340c26e51fdb49395f12/fastapi-listing-0.0.8.tar.gz
+[2023-05-13 10:15:47] INFO root fetch - processPackages [prr]: Downloading https://files.pythonhosted.org/packages/10/9c/bb155f4736b876d6ac73317d2abf2ec12e6688fa1b394a339f60850a1914/prr-0.2.2.tar.gz
+[2023-05-13 10:15:48] INFO root fetch - processPackages [fastapi-listing]: executing diffoscope
+[2023-05-13 10:15:48] INFO root fetch - processPackages [fastapi-listing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-listing-0.0.7.tar.gz tmp/fastapi-listing-0.0.8.tar.gz --markdown 20230513/f/fastapi-listing/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-13 10:15:48] INFO root fetch - processPackages [prr]: executing diffoscope
+[2023-05-13 10:15:48] INFO root fetch - processPackages [prr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prr-0.2.1.tar.gz tmp/prr-0.2.2.tar.gz --markdown 20230513/p/prr/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-13 10:15:48] INFO root fetch - processPackages [nonebot-plugin-record]: Downloading https://files.pythonhosted.org/packages/ce/dc/44a45f8a945cbcf08b10268abb021fc7bd8019815ed2afe994c5442c7b83/nonebot_plugin_record-1.0.4.tar.gz
+[2023-05-13 10:15:48] INFO root fetch - processPackages [nonebot-plugin-record]: executing diffoscope
+[2023-05-13 10:15:48] INFO root fetch - processPackages [nonebot-plugin-record]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_record-1.0.3.tar.gz tmp/nonebot_plugin_record-1.0.4.tar.gz --markdown 20230513/n/nonebot-plugin-record/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-13 10:15:48] INFO root fetch - main [MainThread]: End processing [poetry-poet]: success
+[2023-05-13 10:15:49] INFO root fetch - main [MainThread]: End processing [prr]: success
+[2023-05-13 10:15:49] INFO root fetch - main [MainThread]: End processing [fastapi-listing]: success
+[2023-05-13 10:15:49] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-record]: success
+[2023-05-13 10:15:49] INFO root fetch - main [MainThread]: Store serial: [18088915]
