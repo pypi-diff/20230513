@@ -8335,3 +8335,55 @@
 [2023-05-13 12:16:24] INFO root fetch - main [MainThread]: End processing [maestral-qt]: success
 [2023-05-13 12:16:27] INFO root fetch - main [MainThread]: End processing [kolibri-ml]: success
 [2023-05-13 12:16:27] INFO root fetch - main [MainThread]: Store serial: [18089418]
+[2023-05-13 12:21:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089418]
+[2023-05-13 12:21:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 12:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bose
+[2023-05-13 12:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: secretmessage
+[2023-05-13 12:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: secretmessage
+[2023-05-13 12:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sabledocs
+[2023-05-13 12:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: faster-whisper-cli
+[2023-05-13 12:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-unfold
+[2023-05-13 12:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sabledocs
+[2023-05-13 12:21:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gato-toolkit
+[2023-05-13 12:21:36] INFO root fetch - processPackages [bose]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-13 12:21:36] INFO root fetch - processPackages [secretmessage]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 12:21:37] INFO root fetch - processPackages [sabledocs]: New version: [0.1.96] Old Version: [0.1.91]
+[2023-05-13 12:21:37] INFO root fetch - processPackages [faster-whisper-cli]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 12:21:37] INFO root fetch - processPackages [gato-toolkit]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-13 12:21:37] INFO root fetch - processPackages [sabledocs]: New version: [0.1.96] Old Version: [0.1.91]
+[2023-05-13 12:21:37] INFO root fetch - processPackages [django-unfold]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: Downloading https://files.pythonhosted.org/packages/f4/f3/c5273371b37c0aed6061fbe66cc7816fd67ed8d44eb795b87f5c0fbd2b3c/secretmessage-0.0.1.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: Downloading https://files.pythonhosted.org/packages/f4/f3/c5273371b37c0aed6061fbe66cc7816fd67ed8d44eb795b87f5c0fbd2b3c/secretmessage-0.0.1.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [bose]: Downloading https://files.pythonhosted.org/packages/3d/83/e407f14be9960de461cd476fb641ba63f84dc3c5337a25ed2229ebacc2d5/bose-1.2.1.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [gato-toolkit]: Downloading https://files.pythonhosted.org/packages/8a/bb/8fdfcfadcbdee3af79712ddb3d74edc7eca1884a81c98ede8994dc3fc637/gato-toolkit-0.3.0.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [faster-whisper-cli]: Downloading https://files.pythonhosted.org/packages/7f/38/3f74fefd76803f881c54f43354769d23f294251ee514c22d9d399fe8f9e0/faster_whisper_cli-1.0.1.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [django-unfold]: Downloading https://files.pythonhosted.org/packages/00/ee/6c4941f8b264378566afe5bc447ec027ba67542ec531d398005446298e9a/django_unfold-0.6.1.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: Downloading https://files.pythonhosted.org/packages/39/70/a607be170494edc1ae9dd62a48d8a2be034cb7c7198df55564de0390e650/secretmessage-0.0.2.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [bose]: executing diffoscope
+[2023-05-13 12:21:37] INFO root fetch - processPackages [bose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bose-1.2.0.tar.gz tmp/bose-1.2.1.tar.gz --markdown 20230513/b/bose/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-13 12:21:37] INFO root fetch - processPackages [faster-whisper-cli]: executing diffoscope
+[2023-05-13 12:21:37] INFO root fetch - processPackages [faster-whisper-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/faster_whisper_cli-1.0.0.tar.gz tmp/faster_whisper_cli-1.0.1.tar.gz --markdown 20230513/f/faster-whisper-cli/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 12:21:37] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-05-13 12:21:37] INFO root fetch - processPackages [sabledocs]: executing diffoscope
+[2023-05-13 12:21:37] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.91.tar.gz tmp/sabledocs-0.1.96.tar.gz --markdown 20230513/s/sabledocs/0.1.91-0.1.96/diff.md --exclude *.pyd
+[2023-05-13 12:21:37] INFO root fetch - processPackages [sabledocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sabledocs-0.1.91.tar.gz tmp/sabledocs-0.1.96.tar.gz --markdown 20230513/s/sabledocs/0.1.91-0.1.96/diff.md --exclude *.pyd
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: Downloading https://files.pythonhosted.org/packages/39/70/a607be170494edc1ae9dd62a48d8a2be034cb7c7198df55564de0390e650/secretmessage-0.0.2.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [gato-toolkit]: Downloading https://files.pythonhosted.org/packages/35/b8/ee6270bd4dac058933b93e5b84965c04bbc889a23bc13f4517428912e38e/gato-toolkit-0.3.1.tar.gz
+[2023-05-13 12:21:37] INFO root fetch - processPackages [django-unfold]: executing diffoscope
+[2023-05-13 12:21:37] INFO root fetch - processPackages [django-unfold]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_unfold-0.6.0.tar.gz tmp/django_unfold-0.6.1.tar.gz --markdown 20230513/d/django-unfold/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: executing diffoscope
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secretmessage-0.0.1.tar.gz tmp/secretmessage-0.0.2.tar.gz --markdown 20230513/s/secretmessage/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: executing diffoscope
+[2023-05-13 12:21:37] INFO root fetch - processPackages [secretmessage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secretmessage-0.0.1.tar.gz tmp/secretmessage-0.0.2.tar.gz --markdown 20230513/s/secretmessage/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 12:21:37] INFO root fetch - processPackages [gato-toolkit]: executing diffoscope
+[2023-05-13 12:21:37] INFO root fetch - processPackages [gato-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gato-toolkit-0.3.0.tar.gz tmp/gato-toolkit-0.3.1.tar.gz --markdown 20230513/g/gato-toolkit/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 12:21:38] INFO root fetch - main [MainThread]: End processing [faster-whisper-cli]: success
+[2023-05-13 12:21:39] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-05-13 12:21:39] INFO root fetch - main [MainThread]: End processing [bose]: success
+[2023-05-13 12:21:39] INFO root fetch - main [MainThread]: End processing [secretmessage]: success
+[2023-05-13 12:21:39] INFO root fetch - main [MainThread]: End processing [secretmessage]: success
+[2023-05-13 12:21:39] INFO root fetch - main [MainThread]: End processing [gato-toolkit]: success
+[2023-05-13 12:21:39] INFO root fetch - main [MainThread]: End processing [sabledocs]: success
+[2023-05-13 12:21:41] INFO root fetch - main [MainThread]: End processing [django-unfold]: success
+[2023-05-13 12:21:41] INFO root fetch - main [MainThread]: Store serial: [18089444]
