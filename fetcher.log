@@ -12535,3 +12535,77 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 19:59:03] INFO root fetch - main [MainThread]: End processing [django-ckeditor-5]: success
 [2023-05-13 19:59:08] INFO root fetch - main [MainThread]: End processing [gdsfactory]: success
 [2023-05-13 19:59:08] INFO root fetch - main [MainThread]: Store serial: [18092063]
+[2023-05-13 20:04:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092063]
+[2023-05-13 20:04:18] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: irene-pro
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ethicml
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tg-botting
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pywool
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: structlog-gcp
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pc-initializer
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: qsolve
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: lv-cipher
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fieldedge-utilities
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: oslex
+[2023-05-13 20:04:18] INFO root fetch - processPackages [irene-pro]: New version: [0.0.29] Old Version: [0.0.28]
+[2023-05-13 20:04:18] INFO root fetch - processPackages [structlog-gcp]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ethicml]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-13 20:04:18] INFO root fetch - processPackages [pywool]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 20:04:18] INFO root fetch - processPackages [tg-botting]: New version: [1.6.2] Old Version: [1.6.1.1]
+[2023-05-13 20:04:18] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-13 20:04:18] WARNING root fetch - processPackages [pc-initializer]: Skipping, unable to determine old version
+[2023-05-13 20:04:18] INFO root fetch - processPackages [pc-initializer]: Start processing: hyt-gpt
+[2023-05-13 20:04:18] INFO root fetch - main [MainThread]: End processing [pc-initializer] error
+[2023-05-13 20:04:18] WARNING root fetch - processPackages [oslex]: Skipping, unable to determine old version
+[2023-05-13 20:04:18] INFO root fetch - processPackages [oslex]: Start processing: hassle
+[2023-05-13 20:04:18] INFO root fetch - main [MainThread]: End processing [oslex] error
+[2023-05-13 20:04:18] INFO root fetch - processPackages [hyt-gpt]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-13 20:04:18] WARNING root fetch - processPackages [lv-cipher]: Skipping, unable to determine old version
+[2023-05-13 20:04:18] INFO root fetch - processPackages [lv-cipher]: Start processing: oakscript
+[2023-05-13 20:04:18] INFO root fetch - main [MainThread]: End processing [lv-cipher] error
+[2023-05-13 20:04:18] INFO root fetch - processPackages [qsolve]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-13 20:04:18] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-13 20:04:18] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230513/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-13 20:04:18] INFO root fetch - processPackages [structlog-gcp]: Downloading https://files.pythonhosted.org/packages/81/5d/c9fbbb2c1c68dc4101837552cb0bc40b73ebae7d74d163ea5239e5d7b534/structlog_gcp-0.0.3.tar.gz
+[2023-05-13 20:04:18] INFO root fetch - processPackages [pywool]: Downloading https://files.pythonhosted.org/packages/84/29/8e39c324ab969766a66121ded1442c88660bbf0fbc29997a88395b5c8646/pywool-1.0.0.tar.gz
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ethicml]: Downloading https://files.pythonhosted.org/packages/bd/18/3f61fbcc58d7cea22276f27f17ec67ba75766eb72e076e94be4d6fb3bd6d/ethicml-1.2.0.tar.gz
+[2023-05-13 20:04:18] INFO root fetch - processPackages [hyt-gpt]: executing diffoscope
+[2023-05-13 20:04:18] INFO root fetch - processPackages [hyt-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyt-gpt-0.3.8.tar.gz tmp/hyt-gpt-0.3.9.tar.gz --markdown 20230513/h/hyt-gpt/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-13 20:04:18] INFO root fetch - processPackages [hassle]: New version: [2.8.5] Old Version: [2.8.4]
+[2023-05-13 20:04:18] WARNING root fetch - processPackages [ethicml]: Skipping package: exceeds size limit 37559258>=10485760
+[2023-05-13 20:04:18] INFO root fetch - processPackages [ethicml]: Start processing: ephraim-finitediff
+[2023-05-13 20:04:18] INFO root fetch - main [MainThread]: End processing [ethicml] error
+[2023-05-13 20:04:18] WARNING root fetch - processPackages [oakscript]: Skipping, unable to determine old version
+[2023-05-13 20:04:18] INFO root fetch - processPackages [oakscript]: Start processing: lofter
+[2023-05-13 20:04:18] INFO root fetch - main [MainThread]: End processing [oakscript] error
+[2023-05-13 20:04:18] INFO root fetch - processPackages [tg-botting]: Downloading https://files.pythonhosted.org/packages/a6/31/3b99fff987fccbc9a88c9ba44e97dfb9039d49733825a3a7cfd8e038ce2d/tg-botting-1.6.2.tar.gz
+[2023-05-13 20:04:18] INFO root fetch - processPackages [irene-pro]: Downloading https://files.pythonhosted.org/packages/7b/fe/e2a22816d3150bd8ff9d4029cd72157de98a7744a3eb9749558bb51597fc/irene_pro-0.0.29.tar.gz
+[2023-05-13 20:04:18] WARNING root fetch - processPackages [ephraim-finitediff]: Skipping, unable to determine old version
+[2023-05-13 20:04:18] INFO root fetch - main [MainThread]: End processing [ephraim-finitediff] error
+[2023-05-13 20:04:19] WARNING root fetch - processPackages [lofter]: Skipping, unable to determine old version
+[2023-05-13 20:04:19] INFO root fetch - main [MainThread]: End processing [lofter] error
+[2023-05-13 20:04:19] INFO root fetch - processPackages [tg-botting]: executing diffoscope
+[2023-05-13 20:04:19] INFO root fetch - processPackages [tg-botting]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tg-botting-1.6.1.1.tar.gz tmp/tg-botting-1.6.2.tar.gz --markdown 20230513/t/tg-botting/1.6.1.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-13 20:04:19] INFO root fetch - processPackages [qsolve]: Downloading https://files.pythonhosted.org/packages/83/44/c718bbb2822ea096884bf4dd32cd09f84280120dc14d1eb8b758f783bf26/qsolve-0.3.1.tar.gz
+[2023-05-13 20:04:19] INFO root fetch - processPackages [pywool]: Downloading https://files.pythonhosted.org/packages/fb/80/8549228a04081063f396dc9821aebc0e9ad4de8dd6817c1cd5fd67a9045a/pywool-1.0.1.tar.gz
+[2023-05-13 20:04:19] INFO root fetch - processPackages [structlog-gcp]: Downloading https://files.pythonhosted.org/packages/7c/fc/90a33176ad915606abc7ba5f89ec9e4bd3e42f0bf59efe24183d320b8cfa/structlog_gcp-0.1.0.tar.gz
+[2023-05-13 20:04:19] INFO root fetch - processPackages [irene-pro]: executing diffoscope
+[2023-05-13 20:04:19] INFO root fetch - processPackages [irene-pro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irene_pro-0.0.28.tar.gz tmp/irene_pro-0.0.29.tar.gz --markdown 20230513/i/irene-pro/0.0.28-0.0.29/diff.md --exclude *.pyd
+[2023-05-13 20:04:19] INFO root fetch - processPackages [pywool]: executing diffoscope
+[2023-05-13 20:04:19] INFO root fetch - processPackages [pywool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywool-1.0.0.tar.gz tmp/pywool-1.0.1.tar.gz --markdown 20230513/p/pywool/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 20:04:19] INFO root fetch - processPackages [hassle]: Downloading https://files.pythonhosted.org/packages/86/fe/a374d0bbedc5b3037088374892183e8b396166bc41d0103a109b7bb1f068/hassle-2.8.5.tar.gz
+[2023-05-13 20:04:19] INFO root fetch - processPackages [structlog-gcp]: executing diffoscope
+[2023-05-13 20:04:19] INFO root fetch - processPackages [structlog-gcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/structlog_gcp-0.0.3.tar.gz tmp/structlog_gcp-0.1.0.tar.gz --markdown 20230513/s/structlog-gcp/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-05-13 20:04:19] INFO root fetch - processPackages [hassle]: executing diffoscope
+[2023-05-13 20:04:19] INFO root fetch - processPackages [hassle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hassle-2.8.4.tar.gz tmp/hassle-2.8.5.tar.gz --markdown 20230513/h/hassle/2.8.4-2.8.5/diff.md --exclude *.pyd
+[2023-05-13 20:04:19] INFO root fetch - processPackages [qsolve]: executing diffoscope
+[2023-05-13 20:04:19] INFO root fetch - processPackages [qsolve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qsolve-0.3.0.tar.gz tmp/qsolve-0.3.1.tar.gz --markdown 20230513/q/qsolve/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 20:04:19] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-13 20:04:20] INFO root fetch - main [MainThread]: End processing [hyt-gpt]: success
+[2023-05-13 20:04:20] INFO root fetch - main [MainThread]: End processing [pywool]: success
+[2023-05-13 20:04:20] INFO root fetch - main [MainThread]: End processing [tg-botting]: success
+[2023-05-13 20:04:20] INFO root fetch - main [MainThread]: End processing [irene-pro]: success
+[2023-05-13 20:04:20] INFO root fetch - main [MainThread]: End processing [hassle]: success
+[2023-05-13 20:04:21] INFO root fetch - main [MainThread]: End processing [qsolve]: success
+[2023-05-13 20:04:23] INFO root fetch - main [MainThread]: End processing [structlog-gcp]: success
+[2023-05-13 20:04:23] INFO root fetch - main [MainThread]: Store serial: [18092117]
