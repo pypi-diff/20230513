@@ -6722,3 +6722,78 @@
 [2023-05-13 09:11:09] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-starrail-calendar]: success
 [2023-05-13 09:11:18] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-05-13 09:11:18] INFO root fetch - main [MainThread]: Store serial: [18088570]
+[2023-05-13 09:16:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088570]
+[2023-05-13 09:16:28] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-oci
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-auth-totp
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipyflow-core
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poetry-poet
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ipyflow
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bmp280-spi-RPi
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: slashml
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tfq-nightly
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: poetry-poet
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: always-updates
+[2023-05-13 09:16:28] INFO root fetch - processPackages [pulumi-oci]: New version: [0.9.1a1677791364] Old Version: [0.9.0]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ipyflow-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [slashml]: New version: [0.1.3] Old Version: [0.1.0]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [odoo12-addon-auth-totp]: New version: [12.0.1.1.0.99.dev4] Old Version: [12.0.1.1.0.99.dev3]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-13 09:16:28] WARNING root fetch - processPackages [bmp280-spi-RPi]: Skipping, unable to determine old version
+[2023-05-13 09:16:28] INFO root fetch - processPackages [bmp280-spi-RPi]: Start processing: organelle-segmenter-plugin
+[2023-05-13 09:16:28] INFO root fetch - main [MainThread]: End processing [bmp280-spi-RPi] error
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ipyflow]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230512] Old Version: [0.7.3.dev20230511]
+[2023-05-13 09:16:28] WARNING root fetch - processPackages [organelle-segmenter-plugin]: Skipping, unable to determine old version
+[2023-05-13 09:16:28] INFO root fetch - processPackages [organelle-segmenter-plugin]: Start processing: telemulator3
+[2023-05-13 09:16:28] INFO root fetch - main [MainThread]: End processing [organelle-segmenter-plugin] error
+[2023-05-13 09:16:28] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: Downloading https://files.pythonhosted.org/packages/1e/0d/b3bf4a92d39c54d45ac126e544f09342d009763972aa8cdcd691579599d8/poetry_poet-0.1.6.tar.gz
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: Downloading https://files.pythonhosted.org/packages/1e/0d/b3bf4a92d39c54d45ac126e544f09342d009763972aa8cdcd691579599d8/poetry_poet-0.1.6.tar.gz
+[2023-05-13 09:16:28] INFO root fetch - processPackages [odoo12-addon-auth-totp]: Downloading https://files.pythonhosted.org/packages/ea/de/05a9cd29274a3939efdd6cdb0cd1ff61635c225ed07486a23264e72ffa24/odoo12_addon_auth_totp-12.0.1.1.0.99.dev3-py3-none-any.whl
+[2023-05-13 09:16:28] INFO root fetch - processPackages [telemulator3]: New version: [1.2] Old Version: [1.1]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/33/d4/a2cb7e344453e513181798a67dc3a970a903d7821b7c4926661bddec441b/tfq_nightly-0.7.3.dev20230511-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-13 09:16:28] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819848>=10485760
+[2023-05-13 09:16:28] INFO root fetch - processPackages [tfq-nightly]: Start processing: odoo8-addon-password-security
+[2023-05-13 09:16:28] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ipyflow-core]: executing diffoscope
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ipyflow-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyflow-core-0.0.98.tar.gz tmp/ipyflow-core-0.0.99.tar.gz --markdown 20230513/i/ipyflow-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 09:16:28] INFO root fetch - processPackages [telemulator3]: Downloading https://files.pythonhosted.org/packages/23/97/563b244e2d5ea5f0c52b1366864ca8a7afb6bb937007d437d89b72e58d38/telemulator3-1.1.tar.gz
+[2023-05-13 09:16:28] INFO root fetch - processPackages [odoo8-addon-password-security]: New version: [8.0.1.1.2.99.dev4] Old Version: [8.0.1.1.2.99.dev3]
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: Downloading https://files.pythonhosted.org/packages/1d/d4/2ca2f60210dbaeb52bbd0f7edc4255a30d0fa09193be5792a507f373c9af/poetry_poet-0.1.7.tar.gz
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ipyflow]: executing diffoscope
+[2023-05-13 09:16:28] INFO root fetch - processPackages [ipyflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipyflow-0.0.98.tar.gz tmp/ipyflow-0.0.99.tar.gz --markdown 20230513/i/ipyflow/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 09:16:28] INFO root fetch - processPackages [slashml]: Downloading https://files.pythonhosted.org/packages/8d/fd/8f5fd68836746686d6b6133654e3f3dcc11d3d5fa1e6504ca2294f376a8d/slashml-0.1.3.tar.gz
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: Downloading https://files.pythonhosted.org/packages/1d/d4/2ca2f60210dbaeb52bbd0f7edc4255a30d0fa09193be5792a507f373c9af/poetry_poet-0.1.7.tar.gz
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: executing diffoscope
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_poet-0.1.6.tar.gz tmp/poetry_poet-0.1.7.tar.gz --markdown 20230513/p/poetry-poet/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-13 09:16:28] INFO root fetch - processPackages [odoo12-addon-auth-totp]: Downloading https://files.pythonhosted.org/packages/ce/b3/fb6e3f8a27a14c6fe478dffb44fda74a1ed4828e21f31beab6d57eabd34d/odoo12_addon_auth_totp-12.0.1.1.0.99.dev4-py3-none-any.whl
+[2023-05-13 09:16:28] INFO root fetch - processPackages [pulumi-oci]: executing diffoscope
+[2023-05-13 09:16:28] INFO root fetch - processPackages [pulumi-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_oci-0.9.0.tar.gz tmp/pulumi_oci-0.9.1a1677791364.tar.gz --markdown 20230513/p/pulumi-oci/0.9.0-0.9.1a1677791364/diff.md --exclude *.pyd
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: executing diffoscope
+[2023-05-13 09:16:28] INFO root fetch - processPackages [poetry-poet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_poet-0.1.6.tar.gz tmp/poetry_poet-0.1.7.tar.gz --markdown 20230513/p/poetry-poet/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-13 09:16:29] INFO root fetch - processPackages [odoo8-addon-password-security]: Downloading https://files.pythonhosted.org/packages/af/fa/16071888a15ab6dd126c9ee87056af21a3a4ca7cccdc0d9eedb7020d8108/odoo8_addon_password_security-8.0.1.1.2.99.dev3-py2-none-any.whl
+[2023-05-13 09:16:29] INFO root fetch - processPackages [telemulator3]: Downloading https://files.pythonhosted.org/packages/7a/d2/e98b569ff37fc74a0958fd2ba0351f93991eb688622804e7cba4508c2af9/telemulator3-1.2.tar.gz
+[2023-05-13 09:16:29] INFO root fetch - processPackages [slashml]: executing diffoscope
+[2023-05-13 09:16:29] INFO root fetch - processPackages [slashml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slashml-0.1.0.tar.gz tmp/slashml-0.1.3.tar.gz --markdown 20230513/s/slashml/0.1.0-0.1.3/diff.md --exclude *.pyd
+[2023-05-13 09:16:29] INFO root fetch - processPackages [odoo12-addon-auth-totp]: executing diffoscope
+[2023-05-13 09:16:29] INFO root fetch - processPackages [odoo12-addon-auth-totp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_auth_totp-12.0.1.1.0.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_auth_totp-12.0.1.1.0.99.dev4-py3-none-any.whl.zip --markdown 20230513/o/odoo12-addon-auth-totp/12.0.1.1.0.99.dev3-12.0.1.1.0.99.dev4/diff.md --exclude *.pyd
+[2023-05-13 09:16:29] INFO root fetch - processPackages [telemulator3]: executing diffoscope
+[2023-05-13 09:16:29] INFO root fetch - processPackages [telemulator3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telemulator3-1.1.tar.gz tmp/telemulator3-1.2.tar.gz --markdown 20230513/t/telemulator3/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-13 09:16:29] INFO root fetch - processPackages [odoo8-addon-password-security]: Downloading https://files.pythonhosted.org/packages/2f/93/a8afdd50306186fdccdf40f449195b0c196161107f6eb8673b9f4d4f0842/odoo8_addon_password_security-8.0.1.1.2.99.dev4-py2-none-any.whl
+[2023-05-13 09:16:29] INFO root fetch - processPackages [odoo8-addon-password-security]: executing diffoscope
+[2023-05-13 09:16:29] INFO root fetch - processPackages [odoo8-addon-password-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_password_security-8.0.1.1.2.99.dev3-py2-none-any.whl.zip tmp/odoo8_addon_password_security-8.0.1.1.2.99.dev4-py2-none-any.whl.zip --markdown 20230513/o/odoo8-addon-password-security/8.0.1.1.2.99.dev3-8.0.1.1.2.99.dev4/diff.md --exclude *.pyd
+[2023-05-13 09:16:29] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-13 09:16:29] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230513/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-13 09:16:30] INFO root fetch - main [MainThread]: End processing [poetry-poet]: success
+[2023-05-13 09:16:30] INFO root fetch - main [MainThread]: End processing [poetry-poet]: success
+[2023-05-13 09:16:30] INFO root fetch - main [MainThread]: End processing [ipyflow-core]: success
+[2023-05-13 09:16:30] INFO root fetch - main [MainThread]: End processing [slashml]: success
+[2023-05-13 09:16:31] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-13 09:16:31] INFO root fetch - main [MainThread]: End processing [telemulator3]: success
+[2023-05-13 09:16:31] INFO root fetch - main [MainThread]: End processing [ipyflow]: success
+[2023-05-13 09:16:31] INFO root fetch - main [MainThread]: End processing [odoo8-addon-password-security]: success
+[2023-05-13 09:16:32] INFO root fetch - main [MainThread]: End processing [odoo12-addon-auth-totp]: success
+[2023-05-13 09:17:17] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
+[2023-05-13 09:17:17] INFO root fetch - main [MainThread]: Store serial: [18088612]
