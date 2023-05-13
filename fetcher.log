@@ -1601,3 +1601,22 @@
 [2023-05-13 03:03:22] INFO root fetch - processPackages [data-science-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-science-toolkit-0.0.999.tar.gz tmp/data-science-toolkit-0.1.0.tar.gz --markdown 20230513/d/data-science-toolkit/0.0.999-0.1.0/diff.md --exclude *.pyd
 [2023-05-13 03:03:24] INFO root fetch - main [MainThread]: End processing [data-science-toolkit]: success
 [2023-05-13 03:03:24] INFO root fetch - main [MainThread]: Store serial: [18085747]
+[2023-05-13 03:08:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085747]
+[2023-05-13 03:08:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 03:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thelemic-date
+[2023-05-13 03:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: adamr
+[2023-05-13 03:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: giup
+[2023-05-13 03:08:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: autora-experiment-runner-firebase-prolific
+[2023-05-13 03:08:33] INFO root fetch - processPackages [giup]: New version: [1.1.0] Old Version: [1.0.0rc0]
+[2023-05-13 03:08:33] WARNING root fetch - processPackages [autora-experiment-runner-firebase-prolific]: Skipping, unable to determine old version
+[2023-05-13 03:08:33] INFO root fetch - main [MainThread]: End processing [autora-experiment-runner-firebase-prolific] error
+[2023-05-13 03:08:33] WARNING root fetch - processPackages [thelemic-date]: Skipping, unable to determine old version
+[2023-05-13 03:08:33] WARNING root fetch - processPackages [adamr]: Skipping, unable to determine old version
+[2023-05-13 03:08:33] INFO root fetch - main [MainThread]: End processing [thelemic-date] error
+[2023-05-13 03:08:33] INFO root fetch - main [MainThread]: End processing [adamr] error
+[2023-05-13 03:08:33] INFO root fetch - processPackages [giup]: Downloading https://files.pythonhosted.org/packages/eb/d7/5104ee822b3d0a63622a5ca86f8b432a24bf4350396c5df3a371cf3fffa5/GIUP-1.0.0rc0.tar.gz
+[2023-05-13 03:08:34] INFO root fetch - processPackages [giup]: Downloading https://files.pythonhosted.org/packages/75/eb/78578e9da61f4a373375ad420d199dd6b711338773ff30b6b3098e3845c9/giup-1.1.0.tar.gz
+[2023-05-13 03:08:34] INFO root fetch - processPackages [giup]: executing diffoscope
+[2023-05-13 03:08:34] INFO root fetch - processPackages [giup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GIUP-1.0.0rc0.tar.gz tmp/giup-1.1.0.tar.gz --markdown 20230513/g/giup/1.0.0rc0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 03:08:35] INFO root fetch - main [MainThread]: End processing [giup]: success
+[2023-05-13 03:08:35] INFO root fetch - main [MainThread]: Store serial: [18085767]
