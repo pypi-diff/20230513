@@ -9050,3 +9050,22 @@
 [2023-05-13 13:51:55] INFO root fetch - main [MainThread]: End processing [lamineml]: success
 [2023-05-13 13:51:55] INFO root fetch - main [MainThread]: End processing [fbi-api]: success
 [2023-05-13 13:51:55] INFO root fetch - main [MainThread]: Store serial: [18089881]
+[2023-05-13 13:56:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089881]
+[2023-05-13 13:57:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 13:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fastfft
+[2023-05-13 13:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: survey
+[2023-05-13 13:57:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lamineml
+[2023-05-13 13:57:03] INFO root fetch - processPackages [survey]: New version: [4.1.0a0] Old Version: [4.0.0a0]
+[2023-05-13 13:57:03] INFO root fetch - processPackages [fastfft]: New version: [0.2.0] Old Version: [0.1.8]
+[2023-05-13 13:57:03] INFO root fetch - processPackages [lamineml]: New version: [0.0.52] Old Version: [0.0.51]
+[2023-05-13 13:57:04] INFO root fetch - processPackages [survey]: executing diffoscope
+[2023-05-13 13:57:04] INFO root fetch - processPackages [survey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/survey-4.0.0a0.tar.gz tmp/survey-4.1.0a0.tar.gz --markdown 20230513/s/survey/4.0.0a0-4.1.0a0/diff.md --exclude *.pyd
+[2023-05-13 13:57:04] INFO root fetch - processPackages [lamineml]: executing diffoscope
+[2023-05-13 13:57:04] INFO root fetch - processPackages [lamineml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamineml-0.0.51.tar.gz tmp/lamineml-0.0.52.tar.gz --markdown 20230513/l/lamineml/0.0.51-0.0.52/diff.md --exclude *.pyd
+[2023-05-13 13:57:04] INFO root fetch - processPackages [fastfft]: Downloading https://files.pythonhosted.org/packages/aa/36/9a1c9a85b4f1b21f2512d726b0871a30711f39b25d4301b1b00250cf99d0/fastfft-0.2.0.tar.gz
+[2023-05-13 13:57:04] INFO root fetch - processPackages [fastfft]: executing diffoscope
+[2023-05-13 13:57:04] INFO root fetch - processPackages [fastfft]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastfft-0.1.8.tar.gz tmp/fastfft-0.2.0.tar.gz --markdown 20230513/f/fastfft/0.1.8-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 13:57:05] INFO root fetch - main [MainThread]: End processing [lamineml]: success
+[2023-05-13 13:57:05] INFO root fetch - main [MainThread]: End processing [fastfft]: success
+[2023-05-13 13:57:06] INFO root fetch - main [MainThread]: End processing [survey]: success
+[2023-05-13 13:57:06] INFO root fetch - main [MainThread]: Store serial: [18089894]
