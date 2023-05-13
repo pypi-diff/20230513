@@ -12979,3 +12979,30 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:02:02] INFO root fetch - main [MainThread]: End processing [pycoloringextV1]: success
 [2023-05-13 21:02:02] INFO root fetch - main [MainThread]: End processing [ergastirio]: success
 [2023-05-13 21:02:02] INFO root fetch - main [MainThread]: Store serial: [18092381]
+[2023-05-13 21:07:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092381]
+[2023-05-13 21:07:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 21:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ergastirio
+[2023-05-13 21:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: np-gui
+[2023-05-13 21:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abstract-instrument-interface
+[2023-05-13 21:07:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: psychonaut
+[2023-05-13 21:07:12] INFO root fetch - processPackages [abstract-instrument-interface]: New version: [0.9] Old Version: [0.8]
+[2023-05-13 21:07:12] INFO root fetch - processPackages [np-gui]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-13 21:07:12] INFO root fetch - processPackages [psychonaut]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 21:07:12] INFO root fetch - processPackages [ergastirio]: New version: [0.9] Old Version: [0.8]
+[2023-05-13 21:07:12] INFO root fetch - processPackages [ergastirio]: executing diffoscope
+[2023-05-13 21:07:12] INFO root fetch - processPackages [ergastirio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ergastirio-0.8.tar.gz tmp/ergastirio-0.9.tar.gz --markdown 20230513/e/ergastirio/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-13 21:07:12] INFO root fetch - processPackages [psychonaut]: executing diffoscope
+[2023-05-13 21:07:12] INFO root fetch - processPackages [psychonaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/psychonaut-0.0.8.tar.gz tmp/psychonaut-0.0.9.tar.gz --markdown 20230513/p/psychonaut/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 21:07:12] INFO root fetch - processPackages [np-gui]: Downloading https://files.pythonhosted.org/packages/b2/27/4fb214c4dd786e804520eb87b6cf6ec7e6a6bb9c6580820ec0622f7f58d3/np_gui-0.0.4.tar.gz
+[2023-05-13 21:07:12] INFO root fetch - processPackages [abstract-instrument-interface]: Downloading https://files.pythonhosted.org/packages/94/de/e876bca2e94567a59722f7cb278d71c8de6db060777667173e7e4be9f842/abstract_instrument_interface-0.8.tar.gz
+[2023-05-13 21:07:12] INFO root fetch - processPackages [abstract-instrument-interface]: Downloading https://files.pythonhosted.org/packages/76/08/3408a819d91269a2b1ca04c56759e61b96ae03b49b4dcc605132679fdd2d/abstract_instrument_interface-0.9.tar.gz
+[2023-05-13 21:07:12] INFO root fetch - processPackages [np-gui]: Downloading https://files.pythonhosted.org/packages/67/2a/404c95c75bf47b9a9b778b23bdcf642c7cf678369c88197a09597f2ac84e/np_gui-0.0.5.tar.gz
+[2023-05-13 21:07:12] INFO root fetch - processPackages [abstract-instrument-interface]: executing diffoscope
+[2023-05-13 21:07:12] INFO root fetch - processPackages [abstract-instrument-interface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abstract_instrument_interface-0.8.tar.gz tmp/abstract_instrument_interface-0.9.tar.gz --markdown 20230513/a/abstract-instrument-interface/0.8-0.9/diff.md --exclude *.pyd
+[2023-05-13 21:07:12] INFO root fetch - processPackages [np-gui]: executing diffoscope
+[2023-05-13 21:07:12] INFO root fetch - processPackages [np-gui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/np_gui-0.0.4.tar.gz tmp/np_gui-0.0.5.tar.gz --markdown 20230513/n/np-gui/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-13 21:07:13] INFO root fetch - main [MainThread]: End processing [ergastirio]: success
+[2023-05-13 21:07:13] INFO root fetch - main [MainThread]: End processing [abstract-instrument-interface]: success
+[2023-05-13 21:07:13] INFO root fetch - main [MainThread]: End processing [psychonaut]: success
+[2023-05-13 21:07:14] INFO root fetch - main [MainThread]: End processing [np-gui]: success
+[2023-05-13 21:07:14] INFO root fetch - main [MainThread]: Store serial: [18092393]
