@@ -7363,3 +7363,28 @@
 [2023-05-13 10:00:12] INFO root fetch - main [MainThread]: End processing [odoo14-addon-hotel-reservation]: success
 [2023-05-13 10:00:12] INFO root fetch - main [MainThread]: End processing [hikari-core]: success
 [2023-05-13 10:00:12] INFO root fetch - main [MainThread]: Store serial: [18088840]
+[2023-05-13 10:05:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088840]
+[2023-05-13 10:05:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 10:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BioSAK
+[2023-05-13 10:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiofauna
+[2023-05-13 10:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: masonite-servicing
+[2023-05-13 10:05:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-fragments
+[2023-05-13 10:05:22] INFO root fetch - processPackages [aiofauna]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 10:05:22] INFO root fetch - processPackages [masonite-servicing]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 10:05:22] INFO root fetch - processPackages [django-fragments]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-13 10:05:22] INFO root fetch - processPackages [BioSAK]: New version: [1.64.3] Old Version: [1.64.2]
+[2023-05-13 10:05:23] INFO root fetch - processPackages [django-fragments]: executing diffoscope
+[2023-05-13 10:05:23] INFO root fetch - processPackages [django-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_fragments-0.1.4.tar.gz tmp/django_fragments-0.1.5.tar.gz --markdown 20230513/d/django-fragments/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-13 10:05:23] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/5d/83/33525899898597b0e7a8f7c043e36287cd0723af55274e08e20aa371582e/BioSAK-1.64.2.tar.gz
+[2023-05-13 10:05:23] INFO root fetch - processPackages [aiofauna]: Downloading https://files.pythonhosted.org/packages/d7/d5/ea2895300374337f982c6e19ce7049fb1c99fa3489038d2ff524d477a522/aiofauna-0.1.9.tar.gz
+[2023-05-13 10:05:23] INFO root fetch - processPackages [masonite-servicing]: Downloading https://files.pythonhosted.org/packages/1e/c8/a3853a0ea6941f87025f8420de941735f4173551eb8d939d4e9a5ff4fe63/masonite-servicing-0.0.9.tar.gz
+[2023-05-13 10:05:23] WARNING root fetch - processPackages [BioSAK]: Skipping package: exceeds size limit 20917879>=10485760
+[2023-05-13 10:05:23] INFO root fetch - main [MainThread]: End processing [BioSAK] error
+[2023-05-13 10:05:23] INFO root fetch - processPackages [masonite-servicing]: executing diffoscope
+[2023-05-13 10:05:23] INFO root fetch - processPackages [masonite-servicing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/masonite-servicing-0.0.8.tar.gz tmp/masonite-servicing-0.0.9.tar.gz --markdown 20230513/m/masonite-servicing/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 10:05:23] INFO root fetch - processPackages [aiofauna]: executing diffoscope
+[2023-05-13 10:05:23] INFO root fetch - processPackages [aiofauna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiofauna-0.1.8.tar.gz tmp/aiofauna-0.1.9.tar.gz --markdown 20230513/a/aiofauna/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 10:05:24] INFO root fetch - main [MainThread]: End processing [masonite-servicing]: success
+[2023-05-13 10:05:24] INFO root fetch - main [MainThread]: End processing [django-fragments]: success
+[2023-05-13 10:05:24] INFO root fetch - main [MainThread]: End processing [aiofauna]: success
+[2023-05-13 10:05:24] INFO root fetch - main [MainThread]: Store serial: [18088872]
