@@ -8186,3 +8186,27 @@
 [2023-05-13 11:54:44] INFO root fetch - main [MainThread]: End processing [Outlyzer]: success
 [2023-05-13 11:54:44] INFO root fetch - main [MainThread]: End processing [limeutils]: success
 [2023-05-13 11:54:44] INFO root fetch - main [MainThread]: Store serial: [18089329]
+[2023-05-13 11:59:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089329]
+[2023-05-13 11:59:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 11:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: librenv
+[2023-05-13 11:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flapgui
+[2023-05-13 11:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-assaf-VerifyTACDump
+[2023-05-13 11:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hitchstory
+[2023-05-13 11:59:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vollseg
+[2023-05-13 11:59:53] WARNING root fetch - processPackages [flapgui]: Skipping, unable to determine old version
+[2023-05-13 11:59:53] INFO root fetch - main [MainThread]: End processing [flapgui] error
+[2023-05-13 11:59:53] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-05-13 11:59:53] WARNING root fetch - processPackages [certora-cli-alpha-assaf-VerifyTACDump]: Skipping, unable to determine old version
+[2023-05-13 11:59:53] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-assaf-VerifyTACDump] error
+[2023-05-13 11:59:53] WARNING root fetch - processPackages [librenv]: Skipping, unable to determine old version
+[2023-05-13 11:59:53] INFO root fetch - main [MainThread]: End processing [librenv] error
+[2023-05-13 11:59:53] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-05-13 11:59:53] INFO root fetch - processPackages [hitchstory]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-13 11:59:53] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-05-13 11:59:53] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-05-13 11:59:53] INFO root fetch - processPackages [hitchstory]: Downloading https://files.pythonhosted.org/packages/11/1d/52b18e89f2a99b571eba49a6214c5dbac1e7c1fffb228b2d41deee3d8b64/hitchstory-0.9.0.tar.gz
+[2023-05-13 11:59:53] INFO root fetch - processPackages [hitchstory]: Downloading https://files.pythonhosted.org/packages/30/26/45b9d9b30fe461c6b7e29402af44c5ce1e347d823b622649392152f60de8/hitchstory-0.9.1.tar.gz
+[2023-05-13 11:59:54] INFO root fetch - processPackages [hitchstory]: executing diffoscope
+[2023-05-13 11:59:54] INFO root fetch - processPackages [hitchstory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hitchstory-0.9.0.tar.gz tmp/hitchstory-0.9.1.tar.gz --markdown 20230513/h/hitchstory/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-13 11:59:55] INFO root fetch - main [MainThread]: End processing [hitchstory]: success
+[2023-05-13 11:59:55] INFO root fetch - main [MainThread]: Store serial: [18089350]
