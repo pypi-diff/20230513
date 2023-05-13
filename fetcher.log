@@ -6307,3 +6307,59 @@
 [2023-05-13 08:37:23] INFO root fetch - main [MainThread]: End processing [odoo-addon-project-role]: success
 [2023-05-13 08:37:24] INFO root fetch - main [MainThread]: End processing [pulumi-spotinst]: success
 [2023-05-13 08:37:24] INFO root fetch - main [MainThread]: Store serial: [18088374]
+[2023-05-13 08:42:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088374]
+[2023-05-13 08:42:33] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-ec
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bmp280-spi-RPi
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo10-addon-purchase-request-to-rfq
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysbapi
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo10-addon-purchase-request-to-procurement
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo10-addon-purchase-cancel-reason
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: plurk.py
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: frds
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hikari-core
+[2023-05-13 08:42:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: quickpanda-aidroid
+[2023-05-13 08:42:33] INFO root fetch - processPackages [bmp280-spi-RPi]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 08:42:33] INFO root fetch - processPackages [pulumi-ec]: New version: [0.5.2a1683958309] Old Version: [0.5.2a1683784024]
+[2023-05-13 08:42:33] WARNING root fetch - processPackages [quickpanda-aidroid]: Skipping, unable to determine old version
+[2023-05-13 08:42:33] INFO root fetch - main [MainThread]: End processing [quickpanda-aidroid] error
+[2023-05-13 08:42:33] INFO root fetch - processPackages [hikari-core]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-request-to-rfq]: New version: [10.0.1.1.3.99.dev7] Old Version: [10.0.1.1.3.99.dev6]
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-request-to-procurement]: New version: [10.0.1.0.0.99.dev7] Old Version: [10.0.1.0.0.99.dev6]
+[2023-05-13 08:42:33] INFO root fetch - processPackages [frds]: New version: [1.0.1] Old Version: [1.0.0rc2]
+[2023-05-13 08:42:33] WARNING root fetch - processPackages [plurk.py]: Skipping, unable to determine old version
+[2023-05-13 08:42:33] INFO root fetch - main [MainThread]: End processing [plurk.py] error
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-cancel-reason]: New version: [10.0.1.0.0.99.dev7] Old Version: [10.0.1.0.0.99.dev6]
+[2023-05-13 08:42:33] WARNING root fetch - processPackages [pysbapi]: Skipping, unable to determine old version
+[2023-05-13 08:42:33] INFO root fetch - main [MainThread]: End processing [pysbapi] error
+[2023-05-13 08:42:33] INFO root fetch - processPackages [bmp280-spi-RPi]: Downloading https://files.pythonhosted.org/packages/80/8b/36dc8ca7ff1012267e7c81efe9214c324e707ad1c96ea75eb861f614c38f/bmp280-spi-RPi-0.0.1.tar.gz
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-request-to-rfq]: Downloading https://files.pythonhosted.org/packages/88/e1/45c118c8583c25e7a89544ba4bdd350ebb4fda5be3d6dc9522667b1d55a4/odoo10_addon_purchase_request_to_rfq-10.0.1.1.3.99.dev6-py2-none-any.whl
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-cancel-reason]: Downloading https://files.pythonhosted.org/packages/81/52/a03138d91f46db878422a962767de3ac87fc40114151a1ce8e83a9ee375d/odoo10_addon_purchase_cancel_reason-10.0.1.0.0.99.dev6-py2-none-any.whl
+[2023-05-13 08:42:33] INFO root fetch - processPackages [hikari-core]: Downloading https://files.pythonhosted.org/packages/a2/cc/c73e91aa0875e25e05bd6f794ec4a5d00a02775d68311877c3bb94c1f139/hikari_core-0.1.3.tar.gz
+[2023-05-13 08:42:33] INFO root fetch - processPackages [frds]: Downloading https://files.pythonhosted.org/packages/1f/3f/28ad49e66353e06e1d4b0fe5938ca26ee782ac907122c105ba4614e66282/frds-1.0.1.tar.gz
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-request-to-procurement]: executing diffoscope
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-request-to-procurement]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_purchase_request_to_procurement-10.0.1.0.0.99.dev6-py2-none-any.whl.zip tmp/odoo10_addon_purchase_request_to_procurement-10.0.1.0.0.99.dev7-py2-none-any.whl.zip --markdown 20230513/o/odoo10-addon-purchase-request-to-procurement/10.0.1.0.0.99.dev6-10.0.1.0.0.99.dev7/diff.md --exclude *.pyd
+[2023-05-13 08:42:33] INFO root fetch - processPackages [pulumi-ec]: Downloading https://files.pythonhosted.org/packages/12/7a/39270b26837c81a1dd133805ec206778ca28e84972f6293f3bbd5b77248f/pulumi_ec-0.5.2a1683958309.tar.gz
+[2023-05-13 08:42:33] INFO root fetch - processPackages [bmp280-spi-RPi]: Downloading https://files.pythonhosted.org/packages/0f/49/2133ad5aeb3633c455ffe42ed19b0d1730791f30610d6c050ba68d06e135/bmp280-spi-RPi-0.0.2.tar.gz
+[2023-05-13 08:42:33] INFO root fetch - processPackages [bmp280-spi-RPi]: executing diffoscope
+[2023-05-13 08:42:33] INFO root fetch - processPackages [bmp280-spi-RPi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bmp280-spi-RPi-0.0.1.tar.gz tmp/bmp280-spi-RPi-0.0.2.tar.gz --markdown 20230513/b/bmp280-spi-RPi/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-request-to-rfq]: Downloading https://files.pythonhosted.org/packages/85/b9/cf63d848f38dbbcaf635c4b6e0816898c023f22969fa4dad02fead0421a2/odoo10_addon_purchase_request_to_rfq-10.0.1.1.3.99.dev7-py2-none-any.whl
+[2023-05-13 08:42:33] INFO root fetch - processPackages [pulumi-ec]: executing diffoscope
+[2023-05-13 08:42:33] INFO root fetch - processPackages [pulumi-ec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ec-0.5.2a1683784024.tar.gz tmp/pulumi_ec-0.5.2a1683958309.tar.gz --markdown 20230513/p/pulumi-ec/0.5.2a1683784024-0.5.2a1683958309/diff.md --exclude *.pyd
+[2023-05-13 08:42:33] INFO root fetch - processPackages [hikari-core]: executing diffoscope
+[2023-05-13 08:42:33] INFO root fetch - processPackages [hikari-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari_core-0.1.2.tar.gz tmp/hikari_core-0.1.3.tar.gz --markdown 20230513/h/hikari-core/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-13 08:42:33] INFO root fetch - processPackages [frds]: executing diffoscope
+[2023-05-13 08:42:33] INFO root fetch - processPackages [frds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frds-1.0.0rc2.tar.gz tmp/frds-1.0.1.tar.gz --markdown 20230513/f/frds/1.0.0rc2-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-request-to-rfq]: executing diffoscope
+[2023-05-13 08:42:33] INFO root fetch - processPackages [odoo10-addon-purchase-request-to-rfq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_purchase_request_to_rfq-10.0.1.1.3.99.dev6-py2-none-any.whl.zip tmp/odoo10_addon_purchase_request_to_rfq-10.0.1.1.3.99.dev7-py2-none-any.whl.zip --markdown 20230513/o/odoo10-addon-purchase-request-to-rfq/10.0.1.1.3.99.dev6-10.0.1.1.3.99.dev7/diff.md --exclude *.pyd
+[2023-05-13 08:42:34] INFO root fetch - processPackages [odoo10-addon-purchase-cancel-reason]: Downloading https://files.pythonhosted.org/packages/a4/3c/5347432b7393582da53f3877bbf7c249e9700b52d522572cf2d6a6b737da/odoo10_addon_purchase_cancel_reason-10.0.1.0.0.99.dev7-py2-none-any.whl
+[2023-05-13 08:42:34] INFO root fetch - processPackages [odoo10-addon-purchase-cancel-reason]: executing diffoscope
+[2023-05-13 08:42:34] INFO root fetch - processPackages [odoo10-addon-purchase-cancel-reason]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_purchase_cancel_reason-10.0.1.0.0.99.dev6-py2-none-any.whl.zip tmp/odoo10_addon_purchase_cancel_reason-10.0.1.0.0.99.dev7-py2-none-any.whl.zip --markdown 20230513/o/odoo10-addon-purchase-cancel-reason/10.0.1.0.0.99.dev6-10.0.1.0.0.99.dev7/diff.md --exclude *.pyd
+[2023-05-13 08:42:35] INFO root fetch - main [MainThread]: End processing [bmp280-spi-RPi]: success
+[2023-05-13 08:42:35] INFO root fetch - main [MainThread]: End processing [odoo10-addon-purchase-request-to-procurement]: success
+[2023-05-13 08:42:35] INFO root fetch - main [MainThread]: End processing [pulumi-ec]: success
+[2023-05-13 08:42:35] INFO root fetch - main [MainThread]: End processing [odoo10-addon-purchase-request-to-rfq]: success
+[2023-05-13 08:42:36] INFO root fetch - main [MainThread]: End processing [odoo10-addon-purchase-cancel-reason]: success
+[2023-05-13 08:42:36] INFO root fetch - main [MainThread]: End processing [frds]: success
+[2023-05-13 08:43:12] INFO root fetch - main [MainThread]: End processing [hikari-core]: success
+[2023-05-13 08:43:12] INFO root fetch - main [MainThread]: Store serial: [18088409]
