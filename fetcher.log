@@ -5440,3 +5440,26 @@
 [2023-05-13 07:13:09] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-fatturapa]: success
 [2023-05-13 07:13:15] INFO root fetch - main [MainThread]: End processing [AsyncPywhatKit]: success
 [2023-05-13 07:13:15] INFO root fetch - main [MainThread]: Store serial: [18087978]
+[2023-05-13 07:18:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087978]
+[2023-05-13 07:18:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 07:18:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-it-delivery-note
+[2023-05-13 07:18:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-l10n-it-delivery-note
+[2023-05-13 07:18:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapidpe-rift-pipe
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: New version: [16.0.1.0.2.5] Old Version: [16.0.1.0.2.4]
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: New version: [14.0.1.1.2.dev9] Old Version: [14.0.1.1.2.dev7]
+[2023-05-13 07:18:25] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.2.3.dev20230513] Old Version: [0.2.3.dev20230512]
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: Downloading https://files.pythonhosted.org/packages/7e/45/7fc4d6b52d0340f56ccca3f20dbe8c97a0677a09d1fa9d1f45f82b14a320/odoo_addon_l10n_it_delivery_note-16.0.1.0.2.4-py3-none-any.whl
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: Downloading https://files.pythonhosted.org/packages/10/60/d894f96928199a06e3b2e2cf66665fe4ca64f812748df39f03724f373f34/odoo14_addon_l10n_it_delivery_note-14.0.1.1.2.dev7-py3-none-any.whl
+[2023-05-13 07:18:25] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/82/35/d27fe06e3c538a3b104b686f0447f368d72292e4a2d2e1fef4d3bc5d57d8/rapidpe_rift_pipe-0.2.3.dev20230513.tar.gz
+[2023-05-13 07:18:25] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2023-05-13 07:18:25] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.2.3.dev20230512.tar.gz tmp/rapidpe_rift_pipe-0.2.3.dev20230513.tar.gz --markdown 20230513/r/rapidpe-rift-pipe/0.2.3.dev20230512-0.2.3.dev20230513/diff.md --exclude *.pyd
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: Downloading https://files.pythonhosted.org/packages/78/bf/c9ac76e2d90362153a2766fd11d2824c93f7ea16712ecea321127a1fa37c/odoo_addon_l10n_it_delivery_note-16.0.1.0.2.5-py3-none-any.whl
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: Downloading https://files.pythonhosted.org/packages/8f/b0/ca889c083f36c490760cc7a649e7951d742d3ccc3b0a24fed9c4ce1bc560/odoo14_addon_l10n_it_delivery_note-14.0.1.1.2.dev9-py3-none-any.whl
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: executing diffoscope
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo-addon-l10n-it-delivery-note]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_it_delivery_note-16.0.1.0.2.4-py3-none-any.whl.zip tmp/odoo_addon_l10n_it_delivery_note-16.0.1.0.2.5-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-l10n-it-delivery-note/16.0.1.0.2.4-16.0.1.0.2.5/diff.md --exclude *.pyd
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: executing diffoscope
+[2023-05-13 07:18:25] INFO root fetch - processPackages [odoo14-addon-l10n-it-delivery-note]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_it_delivery_note-14.0.1.1.2.dev7-py3-none-any.whl.zip tmp/odoo14_addon_l10n_it_delivery_note-14.0.1.1.2.dev9-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-l10n-it-delivery-note/14.0.1.1.2.dev7-14.0.1.1.2.dev9/diff.md --exclude *.pyd
+[2023-05-13 07:18:26] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2023-05-13 07:18:27] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-it-delivery-note]: success
+[2023-05-13 07:18:27] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-it-delivery-note]: success
+[2023-05-13 07:18:27] INFO root fetch - main [MainThread]: Store serial: [18087986]
