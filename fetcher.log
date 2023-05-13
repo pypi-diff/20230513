@@ -5891,3 +5891,55 @@
 [2023-05-13 08:03:13] INFO root fetch - main [MainThread]: End processing [pulumi-datadog]: success
 [2023-05-13 08:03:13] INFO root fetch - main [MainThread]: End processing [pulumi-gitlab]: success
 [2023-05-13 08:03:13] INFO root fetch - main [MainThread]: Store serial: [18088165]
+[2023-05-13 08:08:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088165]
+[2023-05-13 08:08:22] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-openupgrade-scripts
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bettersleepy
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cornac
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyg-nightly
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aioconnectors
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PyTraffic
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-ns1
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: Scrapinger
+[2023-05-13 08:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: torch-hrp
+[2023-05-13 08:08:22] INFO root fetch - processPackages [bettersleepy]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 08:08:22] WARNING root fetch - processPackages [torch-hrp]: Skipping, unable to determine old version
+[2023-05-13 08:08:22] INFO root fetch - main [MainThread]: End processing [torch-hrp] error
+[2023-05-13 08:08:22] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: New version: [16.0.1.0.0.7] Old Version: [16.0.1.0.0.6]
+[2023-05-13 08:08:22] INFO root fetch - processPackages [cornac]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-13 08:08:22] INFO root fetch - processPackages [pyg-nightly]: New version: [2.4.0.dev20230512] Old Version: [2.4.0.dev20230511]
+[2023-05-13 08:08:22] WARNING root fetch - processPackages [PyTraffic]: Skipping, unable to determine old version
+[2023-05-13 08:08:22] INFO root fetch - main [MainThread]: End processing [PyTraffic] error
+[2023-05-13 08:08:22] INFO root fetch - processPackages [pulumi-ns1]: New version: [3.1.0a1683956569] Old Version: [3.1.0a1683785537]
+[2023-05-13 08:08:22] INFO root fetch - processPackages [Scrapinger]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-13 08:08:22] INFO root fetch - processPackages [aioconnectors]: New version: [1.6.2] Old Version: [1.6.1]
+[2023-05-13 08:08:22] INFO root fetch - processPackages [cornac]: executing diffoscope
+[2023-05-13 08:08:22] INFO root fetch - processPackages [cornac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cornac-1.8.0.tar.gz tmp/cornac-1.9.0.tar.gz --markdown 20230513/c/cornac/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-13 08:08:22] INFO root fetch - processPackages [bettersleepy]: Downloading https://files.pythonhosted.org/packages/95/3f/d6e62f70cc46606bee63adcedf1a8bbf1324e820e84214d5c0f800f09699/bettersleepy-0.1.2-py3.11.egg
+[2023-05-13 08:08:22] INFO root fetch - processPackages [pyg-nightly]: executing diffoscope
+[2023-05-13 08:08:22] INFO root fetch - processPackages [pyg-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyg-nightly-2.4.0.dev20230511.tar.gz tmp/pyg-nightly-2.4.0.dev20230512.tar.gz --markdown 20230513/p/pyg-nightly/2.4.0.dev20230511-2.4.0.dev20230512/diff.md --exclude *.pyd
+[2023-05-13 08:08:22] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/f4/b8/c4ded879ba5c4e996b787b0811f2047cd9955619a3e9cb7e2b844942fc14/odoo_addon_openupgrade_scripts-16.0.1.0.0.6-py3-none-any.whl
+[2023-05-13 08:08:22] INFO root fetch - processPackages [Scrapinger]: Downloading https://files.pythonhosted.org/packages/fd/39/c069fd7edbe965709c1b9d2ba29faac8aacfc1825e1690b00bde63f3b9a8/Scrapinger-1.0.8.tar.gz
+[2023-05-13 08:08:22] INFO root fetch - processPackages [aioconnectors]: Downloading https://files.pythonhosted.org/packages/9f/cc/328cd0b7d165b03d46bee6b0dfa638e7057448f7df153eea311572ee9132/aioconnectors-1.6.1.tar.gz
+[2023-05-13 08:08:22] INFO root fetch - processPackages [bettersleepy]: executing diffoscope
+[2023-05-13 08:08:22] INFO root fetch - processPackages [bettersleepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bettersleepy-0.1.1-py3.11.egg tmp/bettersleepy-0.1.2-py3.11.egg --markdown 20230513/b/bettersleepy/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 08:08:22] INFO root fetch - processPackages [pulumi-ns1]: Downloading https://files.pythonhosted.org/packages/19/7e/cf6b6deeb56c3502c5f88060dd74865869e29e1191ee11eb71b3f18ba673/pulumi_ns1-3.1.0a1683956569.tar.gz
+[2023-05-13 08:08:22] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: Downloading https://files.pythonhosted.org/packages/5c/a8/85ee714599c3fab831e0904acba84ae7b5c49175973d58d479f00a8d6d5b/odoo_addon_openupgrade_scripts-16.0.1.0.0.7-py3-none-any.whl
+[2023-05-13 08:08:22] INFO root fetch - processPackages [pulumi-ns1]: executing diffoscope
+[2023-05-13 08:08:22] INFO root fetch - processPackages [pulumi-ns1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_ns1-3.1.0a1683785537.tar.gz tmp/pulumi_ns1-3.1.0a1683956569.tar.gz --markdown 20230513/p/pulumi-ns1/3.1.0a1683785537-3.1.0a1683956569/diff.md --exclude *.pyd
+[2023-05-13 08:08:23] INFO root fetch - processPackages [aioconnectors]: Downloading https://files.pythonhosted.org/packages/2d/54/4c3353ea96fc8756b3b25f26c04e311c3e63c3ffafe59b68797c60f942a5/aioconnectors-1.6.2.tar.gz
+[2023-05-13 08:08:23] INFO root fetch - processPackages [Scrapinger]: Downloading https://files.pythonhosted.org/packages/8c/d3/592f5bb26906ef3c9283288e7a7d335890e6400ec4fc3b47f75756309228/Scrapinger-1.0.9.tar.gz
+[2023-05-13 08:08:23] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: executing diffoscope
+[2023-05-13 08:08:23] INFO root fetch - processPackages [odoo-addon-openupgrade-scripts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_openupgrade_scripts-16.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_openupgrade_scripts-16.0.1.0.0.7-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-openupgrade-scripts/16.0.1.0.0.6-16.0.1.0.0.7/diff.md --exclude *.pyd
+[2023-05-13 08:08:23] INFO root fetch - processPackages [Scrapinger]: executing diffoscope
+[2023-05-13 08:08:23] INFO root fetch - processPackages [Scrapinger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Scrapinger-1.0.8.tar.gz tmp/Scrapinger-1.0.9.tar.gz --markdown 20230513/S/Scrapinger/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-13 08:08:23] INFO root fetch - processPackages [aioconnectors]: executing diffoscope
+[2023-05-13 08:08:23] INFO root fetch - processPackages [aioconnectors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioconnectors-1.6.1.tar.gz tmp/aioconnectors-1.6.2.tar.gz --markdown 20230513/a/aioconnectors/1.6.1-1.6.2/diff.md --exclude *.pyd
+[2023-05-13 08:08:24] INFO root fetch - main [MainThread]: End processing [bettersleepy]: success
+[2023-05-13 08:08:24] INFO root fetch - main [MainThread]: End processing [pulumi-ns1]: success
+[2023-05-13 08:08:24] INFO root fetch - main [MainThread]: End processing [Scrapinger]: success
+[2023-05-13 08:08:24] INFO root fetch - main [MainThread]: End processing [aioconnectors]: success
+[2023-05-13 08:08:27] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
+[2023-05-13 08:08:28] INFO root fetch - main [MainThread]: End processing [odoo-addon-openupgrade-scripts]: success
+[2023-05-13 08:10:11] INFO root fetch - main [MainThread]: End processing [cornac]: success
+[2023-05-13 08:10:11] INFO root fetch - main [MainThread]: Store serial: [18088200]
