@@ -7660,3 +7660,46 @@
 [2023-05-13 10:41:45] INFO root fetch - main [MainThread]: End processing [applyx]: success
 [2023-05-13 10:41:47] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-13 10:41:47] INFO root fetch - main [MainThread]: Store serial: [18089004]
+[2023-05-13 10:46:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089004]
+[2023-05-13 10:46:56] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ut-date
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BioSAK
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fbi-api
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: prr
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: validmind
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-sale-order-line-price-history
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tfp-nightly
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: timec
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ut-date]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-13 10:46:56] WARNING root fetch - processPackages [fbi-api]: Skipping, unable to determine old version
+[2023-05-13 10:46:56] INFO root fetch - main [MainThread]: End processing [fbi-api] error
+[2023-05-13 10:46:56] INFO root fetch - processPackages [prr]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-13 10:46:56] WARNING root fetch - processPackages [timec]: Skipping, unable to determine old version
+[2023-05-13 10:46:56] INFO root fetch - main [MainThread]: End processing [timec] error
+[2023-05-13 10:46:56] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: New version: [16.0.1.0.0.2] Old Version: [15.0.1.0.0.7]
+[2023-05-13 10:46:56] INFO root fetch - processPackages [validmind]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-13 10:46:56] INFO root fetch - processPackages [BioSAK]: New version: [1.64.6] Old Version: [1.64.5]
+[2023-05-13 10:46:56] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-13 10:46:56] INFO root fetch - processPackages [ut-date]: Downloading https://files.pythonhosted.org/packages/e4/9e/b34070cd2c5aacb0329435c2c663b47ab61a51965b7be1a4be1b43142f69/ut-date-1.4.1.tar.gz
+[2023-05-13 10:46:56] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: Downloading https://files.pythonhosted.org/packages/6f/8e/642eb8557d6ec5a97ea968ca48ea219509f84ec0134e7c0cc5a55782822e/odoo_addon_sale_order_line_price_history-15.0.1.0.0.7-py3-none-any.whl
+[2023-05-13 10:46:56] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-13 10:46:56] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230513/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-13 10:46:56] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/13/1a/bb87754aecaa449eec4885752b28fb6e55989a10c7caa4af19eac4311ef1/BioSAK-1.64.5.tar.gz
+[2023-05-13 10:46:56] WARNING root fetch - processPackages [ut-date]: Skipping package: exceeds size limit 12768065>=10485760
+[2023-05-13 10:46:56] INFO root fetch - main [MainThread]: End processing [ut-date] error
+[2023-05-13 10:46:56] INFO root fetch - processPackages [prr]: Downloading https://files.pythonhosted.org/packages/80/69/4bfc3d74b1b8c0ba23ee12dab6847e8d287194fa4cfba71c0ae4434a31ac/prr-0.2.3.tar.gz
+[2023-05-13 10:46:56] INFO root fetch - processPackages [validmind]: Downloading https://files.pythonhosted.org/packages/bb/d8/4c51af0c42d2776abd40cac7e5f441d96d14e49531fce0164e3c9838622b/validmind-1.9.2.tar.gz
+[2023-05-13 10:46:56] WARNING root fetch - processPackages [BioSAK]: Skipping package: exceeds size limit 20917805>=10485760
+[2023-05-13 10:46:56] INFO root fetch - main [MainThread]: End processing [BioSAK] error
+[2023-05-13 10:46:56] INFO root fetch - processPackages [prr]: executing diffoscope
+[2023-05-13 10:46:56] INFO root fetch - processPackages [prr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prr-0.2.2.tar.gz tmp/prr-0.2.3.tar.gz --markdown 20230513/p/prr/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-13 10:46:56] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: Downloading https://files.pythonhosted.org/packages/e8/d2/86e31199d0599e2644a098bb099b2096ce18e16e3778be991f68e4e380d0/odoo_addon_sale_order_line_price_history-16.0.1.0.0.2-py3-none-any.whl
+[2023-05-13 10:46:57] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: executing diffoscope
+[2023-05-13 10:46:57] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_order_line_price_history-15.0.1.0.0.7-py3-none-any.whl.zip tmp/odoo_addon_sale_order_line_price_history-16.0.1.0.0.2-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-sale-order-line-price-history/15.0.1.0.0.7-16.0.1.0.0.2/diff.md --exclude *.pyd
+[2023-05-13 10:46:57] INFO root fetch - processPackages [validmind]: executing diffoscope
+[2023-05-13 10:46:57] INFO root fetch - processPackages [validmind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validmind-1.9.1.tar.gz tmp/validmind-1.9.2.tar.gz --markdown 20230513/v/validmind/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-13 10:46:58] INFO root fetch - main [MainThread]: End processing [prr]: success
+[2023-05-13 10:46:58] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-line-price-history]: success
+[2023-05-13 10:46:58] INFO root fetch - main [MainThread]: End processing [validmind]: success
+[2023-05-13 10:47:11] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-13 10:47:11] INFO root fetch - main [MainThread]: Store serial: [18089029]
