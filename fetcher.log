@@ -11105,3 +11105,66 @@ EOFError: EOF read where object expected
 [2023-05-13 17:20:36] INFO root fetch - main [MainThread]: End processing [azure-recommendations]: success
 [2023-05-13 17:20:37] INFO root fetch - main [MainThread]: End processing [casers]: success
 [2023-05-13 17:20:37] INFO root fetch - main [MainThread]: Store serial: [18091133]
+[2023-05-13 17:25:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091133]
+[2023-05-13 17:25:47] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rcp-colors
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otpcheck
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: saic-ismart-client
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: supervisely
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysml
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xerparser
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: core-python
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: simple-simon
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: flowtask
+[2023-05-13 17:25:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: imaginAIry
+[2023-05-13 17:25:47] INFO root fetch - processPackages [rcp-colors]: New version: [0.113] Old Version: [0.112]
+[2023-05-13 17:25:47] WARNING root fetch - processPackages [otpcheck]: Skipping, unable to determine old version
+[2023-05-13 17:25:47] INFO root fetch - processPackages [pysml]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 17:25:47] INFO root fetch - main [MainThread]: End processing [otpcheck] error
+[2023-05-13 17:25:47] INFO root fetch - processPackages [simple-simon]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 17:25:47] INFO root fetch - processPackages [core-python]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 17:25:47] INFO root fetch - processPackages [xerparser]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-13 17:25:47] INFO root fetch - processPackages [saic-ismart-client]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-13 17:25:47] INFO root fetch - processPackages [flowtask]: New version: [4.3.9] Old Version: [4.3.8]
+[2023-05-13 17:25:47] INFO root fetch - processPackages [imaginAIry]: New version: [9.0.2] Old Version: [9.0.1]
+[2023-05-13 17:25:47] INFO root fetch - processPackages [supervisely]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-13 17:25:47] INFO root fetch - processPackages [rcp-colors]: Downloading https://files.pythonhosted.org/packages/79/dd/6337ee4884fb18bfd41f00d3a9d0c3a48f4992d2fecb7d1efb89d81f1504/rcp-colors-0.112.tar.gz
+[2023-05-13 17:25:47] INFO root fetch - processPackages [flowtask]: executing diffoscope
+[2023-05-13 17:25:47] INFO root fetch - processPackages [flowtask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowtask-4.3.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/flowtask-4.3.9-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230513/f/flowtask/4.3.8-4.3.9/diff.md --exclude *.pyd
+[2023-05-13 17:25:48] INFO root fetch - processPackages [core-python]: Downloading https://files.pythonhosted.org/packages/9b/91/b28662f473735784c7b7be5cf8466b8f53388da1e8b7f437593c6cd21824/core-python-0.0.1.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [xerparser]: Downloading https://files.pythonhosted.org/packages/f6/f2/3abc764cb59c88556ad34e5887ba41e2795d49f2f5532b55db946e8fbf98/xerparser-0.9.4.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [saic-ismart-client]: Downloading https://files.pythonhosted.org/packages/76/d2/71de894c1d438b2649884719b25cd91de30b6eea17dcc97a7c820ead0407/saic_ismart_client-1.2.1.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [imaginAIry]: Downloading https://files.pythonhosted.org/packages/9d/a1/ab3022cd84ebb1e643f069eb4e924453bf3c5b73555b73cc2d9003a2f48e/imaginAIry-9.0.1-py3-none-win_amd64.whl
+[2023-05-13 17:25:48] INFO root fetch - processPackages [pysml]: Downloading https://files.pythonhosted.org/packages/81/68/bdc13e5f3a215cc4b9bc9eedf3033b38bd1188e0acefecbfeb4aa622f043/pysml-0.0.8.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [saic-ismart-client]: executing diffoscope
+[2023-05-13 17:25:48] INFO root fetch - processPackages [saic-ismart-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/saic_ismart_client-1.2.0.tar.gz tmp/saic_ismart_client-1.2.1.tar.gz --markdown 20230513/s/saic-ismart-client/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-13 17:25:48] INFO root fetch - processPackages [rcp-colors]: Downloading https://files.pythonhosted.org/packages/2b/c3/deb050dff3a354689d812a7a5035b0892ae5d825ac7a81182e3d24b1a761/rcp-colors-0.113.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [core-python]: Downloading https://files.pythonhosted.org/packages/ee/bc/c726dd02198ef33a92d0cf562bea23c6f3cc7b0ee2e871f3ea0d51001f7e/core-python-0.0.2.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [supervisely]: executing diffoscope
+[2023-05-13 17:25:48] INFO root fetch - processPackages [supervisely]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisely-6.9.1.tar.gz tmp/supervisely-6.9.2.tar.gz --markdown 20230513/s/supervisely/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-13 17:25:48] INFO root fetch - processPackages [xerparser]: Downloading https://files.pythonhosted.org/packages/a2/10/109dc0df162085868d009b0b7692cf9c95bf8bfa149c626b842354563d53/xerparser-0.9.5.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [core-python]: executing diffoscope
+[2023-05-13 17:25:48] INFO root fetch - processPackages [core-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/core-python-0.0.1.tar.gz tmp/core-python-0.0.2.tar.gz --markdown 20230513/c/core-python/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 17:25:48] INFO root fetch - processPackages [simple-simon]: Downloading https://files.pythonhosted.org/packages/3d/b9/e46f8d479f7de0d8238f3c6c66cd6fe414bd6223b59c693dd0986da4fdd3/simple-simon-0.0.6.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [xerparser]: executing diffoscope
+[2023-05-13 17:25:48] INFO root fetch - processPackages [xerparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xerparser-0.9.4.tar.gz tmp/xerparser-0.9.5.tar.gz --markdown 20230513/x/xerparser/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-13 17:25:48] INFO root fetch - processPackages [rcp-colors]: executing diffoscope
+[2023-05-13 17:25:48] INFO root fetch - processPackages [rcp-colors]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rcp-colors-0.112.tar.gz tmp/rcp-colors-0.113.tar.gz --markdown 20230513/r/rcp-colors/0.112-0.113/diff.md --exclude *.pyd
+[2023-05-13 17:25:48] INFO root fetch - processPackages [pysml]: Downloading https://files.pythonhosted.org/packages/0a/ca/f05e12c18129794bb7659844be5f17524f3c2c3ca3a58ab3669d4574828d/pysml-0.0.9.tar.gz
+[2023-05-13 17:25:48] INFO root fetch - processPackages [simple-simon]: executing diffoscope
+[2023-05-13 17:25:48] INFO root fetch - processPackages [simple-simon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple-simon-0.0.5.tar.gz tmp/simple-simon-0.0.6.tar.gz --markdown 20230513/s/simple-simon/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 17:25:48] INFO root fetch - processPackages [pysml]: executing diffoscope
+[2023-05-13 17:25:48] INFO root fetch - processPackages [pysml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysml-0.0.8.tar.gz tmp/pysml-0.0.9.tar.gz --markdown 20230513/p/pysml/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 17:25:49] INFO root fetch - processPackages [imaginAIry]: Downloading https://files.pythonhosted.org/packages/6e/20/bda9ce57edb66d0957c09818edabe0068a93d42e6aba1ac1313ee29b3e48/imaginAIry-9.0.2-py3-none-win_amd64.whl
+[2023-05-13 17:25:49] INFO root fetch - main [MainThread]: End processing [core-python]: success
+[2023-05-13 17:25:49] INFO root fetch - main [MainThread]: End processing [rcp-colors]: success
+[2023-05-13 17:25:50] INFO root fetch - main [MainThread]: End processing [simple-simon]: success
+[2023-05-13 17:25:50] INFO root fetch - main [MainThread]: End processing [xerparser]: success
+[2023-05-13 17:25:50] INFO root fetch - main [MainThread]: End processing [pysml]: success
+[2023-05-13 17:25:50] INFO root fetch - processPackages [imaginAIry]: executing diffoscope
+[2023-05-13 17:25:50] INFO root fetch - processPackages [imaginAIry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imaginAIry-9.0.1-py3-none-win_amd64.whl.zip tmp/imaginAIry-9.0.2-py3-none-win_amd64.whl.zip --markdown 20230513/i/imaginAIry/9.0.1-9.0.2/diff.md --exclude *.pyd
+[2023-05-13 17:25:50] INFO root fetch - main [MainThread]: End processing [saic-ismart-client]: success
+[2023-05-13 17:25:52] INFO root fetch - main [MainThread]: End processing [supervisely]: success
+[2023-05-13 17:25:53] INFO root fetch - main [MainThread]: End processing [imaginAIry]: success
+[2023-05-13 17:25:53] INFO root fetch - main [MainThread]: End processing [flowtask]: success
+[2023-05-13 17:25:53] INFO root fetch - main [MainThread]: Store serial: [18091222]
