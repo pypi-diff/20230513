@@ -4608,3 +4608,12 @@
 [2023-05-13 05:44:01] INFO root fetch - main [MainThread]: End processing [heaobject]: success
 [2023-05-13 05:44:02] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
 [2023-05-13 05:44:02] INFO root fetch - main [MainThread]: Store serial: [18087527]
+[2023-05-13 05:49:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087527]
+[2023-05-13 05:49:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-13 05:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decoupledLionW
+[2023-05-13 05:49:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Sigmath
+[2023-05-13 05:49:11] WARNING root fetch - processPackages [decoupledLionW]: Skipping, unable to determine old version
+[2023-05-13 05:49:11] INFO root fetch - main [MainThread]: End processing [decoupledLionW] error
+[2023-05-13 05:49:11] WARNING root fetch - processPackages [Sigmath]: Skipping, unable to determine old version
+[2023-05-13 05:49:11] INFO root fetch - main [MainThread]: End processing [Sigmath] error
+[2023-05-13 05:49:11] INFO root fetch - main [MainThread]: Store serial: [18087539]
