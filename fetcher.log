@@ -8524,3 +8524,23 @@
 [2023-05-13 12:52:46] INFO root fetch - main [MainThread]: End processing [py-tailwind-utils]: success
 [2023-05-13 12:52:46] INFO root fetch - main [MainThread]: End processing [jinsi]: success
 [2023-05-13 12:52:46] INFO root fetch - main [MainThread]: Store serial: [18089556]
+[2023-05-13 12:57:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089556]
+[2023-05-13 12:57:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 12:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pydantic-db-backend
+[2023-05-13 12:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: krx-rigger
+[2023-05-13 12:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioregistry
+[2023-05-13 12:57:55] INFO root fetch - processPackages [krx-rigger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 12:57:55] INFO root fetch - processPackages [pydantic-db-backend]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-13 12:57:55] INFO root fetch - processPackages [bioregistry]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-13 12:57:55] INFO root fetch - processPackages [krx-rigger]: executing diffoscope
+[2023-05-13 12:57:55] INFO root fetch - processPackages [krx-rigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krx_rigger-0.0.8.tar.gz tmp/krx_rigger-0.0.9.tar.gz --markdown 20230513/k/krx-rigger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 12:57:55] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-05-13 12:57:55] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.8.tar.gz tmp/bioregistry-0.9.9.tar.gz --markdown 20230513/b/bioregistry/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-13 12:57:55] INFO root fetch - processPackages [pydantic-db-backend]: Downloading https://files.pythonhosted.org/packages/a7/01/028f9ccc83760be8859859ce1f80000fc8d9cabea87c01348f5d695f26eb/pydantic_db_backend-0.1.0.tar.gz
+[2023-05-13 12:57:56] INFO root fetch - processPackages [pydantic-db-backend]: Downloading https://files.pythonhosted.org/packages/d5/ef/cf3c7c52f7bb2c8a6b0ad96425c55b301eba04b3652357849fba43cb667e/pydantic_db_backend-0.2.0.tar.gz
+[2023-05-13 12:57:56] INFO root fetch - processPackages [pydantic-db-backend]: executing diffoscope
+[2023-05-13 12:57:56] INFO root fetch - processPackages [pydantic-db-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_db_backend-0.1.0.tar.gz tmp/pydantic_db_backend-0.2.0.tar.gz --markdown 20230513/p/pydantic-db-backend/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 12:57:56] INFO root fetch - main [MainThread]: End processing [krx-rigger]: success
+[2023-05-13 12:57:57] INFO root fetch - main [MainThread]: End processing [pydantic-db-backend]: success
+[2023-05-13 12:59:55] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-05-13 12:59:55] INFO root fetch - main [MainThread]: Store serial: [18089566]
