@@ -1391,3 +1391,30 @@
 [2023-05-13 02:31:37] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
 [2023-05-13 02:31:38] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
 [2023-05-13 02:31:38] INFO root fetch - main [MainThread]: Store serial: [18085634]
+[2023-05-13 02:36:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085634]
+[2023-05-13 02:36:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 02:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-agents
+[2023-05-13 02:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: state-machine-semaphore
+[2023-05-13 02:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: copyparty
+[2023-05-13 02:36:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kektris
+[2023-05-13 02:36:46] INFO root fetch - processPackages [copyparty]: New version: [1.7.1] Old Version: [1.7.0]
+[2023-05-13 02:36:47] INFO root fetch - processPackages [tf-agents]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-13 02:36:47] INFO root fetch - processPackages [kektris]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 02:36:47] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-13 02:36:47] INFO root fetch - processPackages [kektris]: Downloading https://files.pythonhosted.org/packages/48/f5/dd56623be1e19c12812a4b92d1d6440153b4a35bf8331e5c83c704658b5d/kektris-0.0.1.tar.gz
+[2023-05-13 02:36:47] INFO root fetch - processPackages [tf-agents]: Downloading https://files.pythonhosted.org/packages/78/7e/1fdb01c0e5b884eeb20328a007db6fb9171a934181fc1dce4eb1ac9ea159/tf_agents-0.9.0-py3-none-any.whl
+[2023-05-13 02:36:47] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-05-13 02:36:47] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230513/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-13 02:36:47] INFO root fetch - processPackages [copyparty]: executing diffoscope
+[2023-05-13 02:36:47] INFO root fetch - processPackages [copyparty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copyparty-1.7.0.tar.gz tmp/copyparty-1.7.1.tar.gz --markdown 20230513/c/copyparty/1.7.0-1.7.1/diff.md --exclude *.pyd
+[2023-05-13 02:36:47] INFO root fetch - processPackages [kektris]: Downloading https://files.pythonhosted.org/packages/11/c0/bcc5822e91ccc5a2178d0e32c576935bdc2771adbb54863edc93ba684791/kektris-0.0.2.tar.gz
+[2023-05-13 02:36:47] INFO root fetch - processPackages [tf-agents]: Downloading https://files.pythonhosted.org/packages/10/22/5703b623fd4ae0cac2ed6aa33332206690bf069be28146bc7615b1ef6124/tf_agents-0.9.0rc0-py3-none-any.whl
+[2023-05-13 02:36:47] INFO root fetch - processPackages [kektris]: executing diffoscope
+[2023-05-13 02:36:47] INFO root fetch - processPackages [kektris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kektris-0.0.1.tar.gz tmp/kektris-0.0.2.tar.gz --markdown 20230513/k/kektris/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 02:36:47] INFO root fetch - processPackages [tf-agents]: executing diffoscope
+[2023-05-13 02:36:47] INFO root fetch - processPackages [tf-agents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents-0.9.0-py3-none-any.whl.zip tmp/tf_agents-0.9.0rc0-py3-none-any.whl.zip --markdown 20230513/t/tf-agents/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-13 02:36:48] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-05-13 02:36:48] INFO root fetch - main [MainThread]: End processing [kektris]: success
+[2023-05-13 02:36:51] INFO root fetch - main [MainThread]: End processing [copyparty]: success
+[2023-05-13 02:36:56] INFO root fetch - main [MainThread]: End processing [tf-agents]: success
+[2023-05-13 02:36:56] INFO root fetch - main [MainThread]: Store serial: [18085647]
