@@ -10152,3 +10152,38 @@ EOFError: EOF read where object expected
 [2023-05-13 15:39:50] INFO root fetch - main [MainThread]: End processing [nonstd]: success
 [2023-05-13 15:39:57] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-13 15:39:57] INFO root fetch - main [MainThread]: Store serial: [18090508]
+[2023-05-13 15:45:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090508]
+[2023-05-13 15:45:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 15:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chunked-uploads-attentive
+[2023-05-13 15:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clean-folder-by-MK
+[2023-05-13 15:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scikit-rf
+[2023-05-13 15:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: reprotest
+[2023-05-13 15:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-watermarker
+[2023-05-13 15:45:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ccxt
+[2023-05-13 15:45:06] WARNING root fetch - processPackages [clean-folder-by-MK]: Skipping, unable to determine old version
+[2023-05-13 15:45:06] INFO root fetch - main [MainThread]: End processing [clean-folder-by-MK] error
+[2023-05-13 15:45:06] INFO root fetch - processPackages [chunked-uploads-attentive]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-13 15:45:06] INFO root fetch - processPackages [nonebot-plugin-watermarker]: New version: [0.1.5.1] Old Version: [0.1.5]
+[2023-05-13 15:45:06] INFO root fetch - processPackages [scikit-rf]: New version: [0.27.0] Old Version: [0.26.0]
+[2023-05-13 15:45:06] INFO root fetch - processPackages [reprotest]: New version: [0.7.8] Old Version: [0.7.25]
+[2023-05-13 15:45:06] INFO root fetch - processPackages [ccxt]: New version: [3.0.99] Old Version: [3.0.98]
+[2023-05-13 15:45:06] INFO root fetch - processPackages [chunked-uploads-attentive]: Downloading https://files.pythonhosted.org/packages/9b/c5/91f48c026e165418dd326e264dc75fef5cad50f7cf1f1b0e9f93afa23129/chunked-uploads-attentive-0.0.4.tar.gz
+[2023-05-13 15:45:06] INFO root fetch - processPackages [scikit-rf]: Downloading https://files.pythonhosted.org/packages/79/4b/e574261dcccef514733a5af9d0981f194dd859f3447aae8534c13e8b18b0/scikit-rf-0.26.0.tar.gz
+[2023-05-13 15:45:06] INFO root fetch - processPackages [reprotest]: Downloading https://files.pythonhosted.org/packages/00/11/893484a29f232dd362ae0ad1d8b8d0ac11501a2a1ac427c1be9e7a20002e/reprotest-0.7.25.tar.gz
+[2023-05-13 15:45:06] INFO root fetch - processPackages [nonebot-plugin-watermarker]: Downloading https://files.pythonhosted.org/packages/72/1f/6b0f96981d1e2011ebb3be1d7b5e1bf0bb373a4fe34c1c1c1e08529c442f/nonebot_plugin_watermarker-0.1.5.1.tar.gz
+[2023-05-13 15:45:06] WARNING root fetch - processPackages [scikit-rf]: Skipping package: exceeds size limit 31202245>=10485760
+[2023-05-13 15:45:06] INFO root fetch - main [MainThread]: End processing [scikit-rf] error
+[2023-05-13 15:45:06] INFO root fetch - processPackages [nonebot-plugin-watermarker]: executing diffoscope
+[2023-05-13 15:45:06] INFO root fetch - processPackages [nonebot-plugin-watermarker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_watermarker-0.1.5.tar.gz tmp/nonebot_plugin_watermarker-0.1.5.1.tar.gz --markdown 20230513/n/nonebot-plugin-watermarker/0.1.5-0.1.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:45:06] INFO root fetch - processPackages [chunked-uploads-attentive]: Downloading https://files.pythonhosted.org/packages/b0/e6/34fea22054cdbbfe2d59816f15875d95ed233eec133115485124d3438a4b/chunked-uploads-attentive-0.0.5.tar.gz
+[2023-05-13 15:45:07] INFO root fetch - processPackages [reprotest]: executing diffoscope
+[2023-05-13 15:45:07] INFO root fetch - processPackages [reprotest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reprotest-0.7.25.tar.gz tmp/reprotest-0.7.8.tar.gz --markdown 20230513/r/reprotest/0.7.25-0.7.8/diff.md --exclude *.pyd
+[2023-05-13 15:45:07] INFO root fetch - processPackages [chunked-uploads-attentive]: executing diffoscope
+[2023-05-13 15:45:07] INFO root fetch - processPackages [chunked-uploads-attentive]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chunked-uploads-attentive-0.0.4.tar.gz tmp/chunked-uploads-attentive-0.0.5.tar.gz --markdown 20230513/c/chunked-uploads-attentive/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-13 15:45:07] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-13 15:45:07] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.98.tar.gz tmp/ccxt-3.0.99.tar.gz --markdown 20230513/c/ccxt/3.0.98-3.0.99/diff.md --exclude *.pyd
+[2023-05-13 15:45:07] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-watermarker]: success
+[2023-05-13 15:45:08] INFO root fetch - main [MainThread]: End processing [chunked-uploads-attentive]: success
+[2023-05-13 15:45:08] INFO root fetch - main [MainThread]: End processing [reprotest]: success
+[2023-05-13 15:45:17] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-13 15:45:17] INFO root fetch - main [MainThread]: Store serial: [18090527]
