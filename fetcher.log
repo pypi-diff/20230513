@@ -6464,3 +6464,43 @@
 [2023-05-13 08:53:37] INFO root fetch - main [MainThread]: End processing [kboxx]: success
 [2023-05-13 08:53:38] INFO root fetch - main [MainThread]: End processing [badi-users]: success
 [2023-05-13 08:53:38] INFO root fetch - main [MainThread]: Store serial: [18088455]
+[2023-05-13 08:58:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088455]
+[2023-05-13 08:58:46] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-segbuilder
+[2023-05-13 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bigsansar
+[2023-05-13 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onnx2tf
+[2023-05-13 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo12-addon-rma
+[2023-05-13 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo-addon-rma
+[2023-05-13 08:58:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-rma
+[2023-05-13 08:58:46] INFO root fetch - processPackages [odoo14-addon-rma]: New version: [14.0.3.2.7.dev3] Old Version: [14.0.3.2.7.dev2]
+[2023-05-13 08:58:46] INFO root fetch - processPackages [odoo12-addon-rma]: New version: [12.0.2.6.0.99.dev9] Old Version: [12.0.2.6.0.99.dev8]
+[2023-05-13 08:58:46] INFO root fetch - processPackages [nonebot-plugin-segbuilder]: New version: [0.2.0] Old Version: [0.1.1]
+[2023-05-13 08:58:46] INFO root fetch - processPackages [odoo-addon-rma]: New version: [15.0.1.1.3.3] Old Version: [15.0.1.1.3.2]
+[2023-05-13 08:58:46] INFO root fetch - processPackages [Bigsansar]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-13 08:58:46] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-13 08:58:46] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-13 08:58:46] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230513/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo12-addon-rma]: Downloading https://files.pythonhosted.org/packages/fa/e8/85f798f4ad4c605d500e23bcbd84d35e21e0886b828f0f2d73b2718b0286/odoo12_addon_rma-12.0.2.6.0.99.dev8-py3-none-any.whl
+[2023-05-13 08:58:47] INFO root fetch - processPackages [nonebot-plugin-segbuilder]: Downloading https://files.pythonhosted.org/packages/39/dd/e0f68db6b007d42d8777243124e4b1215a53636bf8cb5d0f6297fdefe222/nonebot_plugin_segbuilder-0.1.1.tar.gz
+[2023-05-13 08:58:47] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/cf/7c/c7ce484b7c5259dfe668f91a9755c35e4dbd78ab829ad3c541f13eb251e6/Bigsansar-1.4.3.tar.gz
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo14-addon-rma]: Downloading https://files.pythonhosted.org/packages/08/5b/79941fb6c9ad5d490bd8cd2c5eb33ff1fbe2ebdfd329f90ce6aa7ab647f1/odoo14_addon_rma-14.0.3.2.7.dev3-py3-none-any.whl
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo-addon-rma]: Downloading https://files.pythonhosted.org/packages/81/00/ad550f2116da3bd9f3d2ff92ee43197f11153823415fa70a676ae721f39e/odoo_addon_rma-15.0.1.1.3.3-py3-none-any.whl
+[2023-05-13 08:58:47] INFO root fetch - processPackages [nonebot-plugin-segbuilder]: Downloading https://files.pythonhosted.org/packages/01/e2/5246736d5fe3580a5d5020b89ca969722a1e0e8a0c72b347ea4a2d91aabd/nonebot_plugin_segbuilder-0.2.0.tar.gz
+[2023-05-13 08:58:47] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-13 08:58:47] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.4.2.tar.gz tmp/Bigsansar-1.4.3.tar.gz --markdown 20230513/B/Bigsansar/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo14-addon-rma]: executing diffoscope
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo14-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_rma-14.0.3.2.7.dev2-py3-none-any.whl.zip tmp/odoo14_addon_rma-14.0.3.2.7.dev3-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-rma/14.0.3.2.7.dev2-14.0.3.2.7.dev3/diff.md --exclude *.pyd
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo-addon-rma]: executing diffoscope
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_rma-15.0.1.1.3.2-py3-none-any.whl.zip tmp/odoo_addon_rma-15.0.1.1.3.3-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-rma/15.0.1.1.3.2-15.0.1.1.3.3/diff.md --exclude *.pyd
+[2023-05-13 08:58:47] INFO root fetch - processPackages [nonebot-plugin-segbuilder]: executing diffoscope
+[2023-05-13 08:58:47] INFO root fetch - processPackages [nonebot-plugin-segbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_segbuilder-0.1.1.tar.gz tmp/nonebot_plugin_segbuilder-0.2.0.tar.gz --markdown 20230513/n/nonebot-plugin-segbuilder/0.1.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo12-addon-rma]: Downloading https://files.pythonhosted.org/packages/ff/6b/807cd5cc8b55054db429d0cca4c01ba905e18261081cd6df7b9cfc2c8981/odoo12_addon_rma-12.0.2.6.0.99.dev9-py3-none-any.whl
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo12-addon-rma]: executing diffoscope
+[2023-05-13 08:58:47] INFO root fetch - processPackages [odoo12-addon-rma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_rma-12.0.2.6.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_rma-12.0.2.6.0.99.dev9-py3-none-any.whl.zip --markdown 20230513/o/odoo12-addon-rma/12.0.2.6.0.99.dev8-12.0.2.6.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-13 08:58:48] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-segbuilder]: success
+[2023-05-13 08:58:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-rma]: success
+[2023-05-13 08:58:49] INFO root fetch - main [MainThread]: End processing [odoo12-addon-rma]: success
+[2023-05-13 08:58:49] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-13 08:58:49] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-13 08:58:50] INFO root fetch - main [MainThread]: End processing [odoo-addon-rma]: success
+[2023-05-13 08:58:50] INFO root fetch - main [MainThread]: Store serial: [18088474]
