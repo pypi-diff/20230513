@@ -9231,3 +9231,36 @@
 [2023-05-13 14:07:43] INFO root fetch - main [MainThread]: End processing [bibx]: success
 [2023-05-13 14:07:45] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
 [2023-05-13 14:07:45] INFO root fetch - main [MainThread]: Store serial: [18089988]
+[2023-05-13 14:12:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089988]
+[2023-05-13 14:12:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 14:12:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-force-execute
+[2023-05-13 14:12:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hapdoc
+[2023-05-13 14:12:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: limeutils
+[2023-05-13 14:12:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: urllib3-ext-hface
+[2023-05-13 14:12:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: testcell
+[2023-05-13 14:12:54] INFO root fetch - processPackages [pg-force-execute]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 14:12:54] INFO root fetch - processPackages [urllib3-ext-hface]: New version: [0.2.2] Old Version: [0.2.0]
+[2023-05-13 14:12:54] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 14:12:54] INFO root fetch - processPackages [limeutils]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-13 14:12:54] INFO root fetch - processPackages [testcell]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 14:12:54] INFO root fetch - processPackages [limeutils]: executing diffoscope
+[2023-05-13 14:12:54] INFO root fetch - processPackages [limeutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/limeutils-0.2.8.tar.gz tmp/limeutils-0.2.9.tar.gz --markdown 20230513/l/limeutils/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-13 14:12:54] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 14:12:54] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 14:12:54] INFO root fetch - processPackages [urllib3-ext-hface]: Downloading https://files.pythonhosted.org/packages/6f/3e/7b09858b5305933f7aa25d2ad340d7dd33093b82d96c8c09f56749b3ff31/urllib3_ext_hface-0.2.0.tar.gz
+[2023-05-13 14:12:54] INFO root fetch - processPackages [testcell]: Downloading https://files.pythonhosted.org/packages/ce/53/ea94b8adb6a767325a39cd20b35ab115c297a9554675945099a9997a6859/testcell-0.0.1.tar.gz
+[2023-05-13 14:12:54] INFO root fetch - processPackages [pg-force-execute]: Downloading https://files.pythonhosted.org/packages/33/fe/7d3153892dd777f7a86180126c8afcc32a7c1de14299b3c0bef74fee91af/pg_force_execute-0.0.9.tar.gz
+[2023-05-13 14:12:54] INFO root fetch - processPackages [urllib3-ext-hface]: Downloading https://files.pythonhosted.org/packages/70/ff/a14d440c96273d4973822832b5d213a49e456a5fc827217ee3ea08c9163a/urllib3_ext_hface-0.2.2.tar.gz
+[2023-05-13 14:12:54] INFO root fetch - processPackages [pg-force-execute]: executing diffoscope
+[2023-05-13 14:12:54] INFO root fetch - processPackages [pg-force-execute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_force_execute-0.0.8.tar.gz tmp/pg_force_execute-0.0.9.tar.gz --markdown 20230513/p/pg-force-execute/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 14:12:54] INFO root fetch - processPackages [testcell]: Downloading https://files.pythonhosted.org/packages/79/52/20ebebebc4797e1ad37430c83b0448697b8624d92ba0d1c9f72dd5152a27/testcell-0.0.2.tar.gz
+[2023-05-13 14:12:55] INFO root fetch - processPackages [urllib3-ext-hface]: executing diffoscope
+[2023-05-13 14:12:55] INFO root fetch - processPackages [urllib3-ext-hface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_ext_hface-0.2.0.tar.gz tmp/urllib3_ext_hface-0.2.2.tar.gz --markdown 20230513/u/urllib3-ext-hface/0.2.0-0.2.2/diff.md --exclude *.pyd
+[2023-05-13 14:12:55] INFO root fetch - processPackages [testcell]: executing diffoscope
+[2023-05-13 14:12:55] INFO root fetch - processPackages [testcell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testcell-0.0.1.tar.gz tmp/testcell-0.0.2.tar.gz --markdown 20230513/t/testcell/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 14:12:55] INFO root fetch - main [MainThread]: End processing [limeutils]: success
+[2023-05-13 14:12:55] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 14:12:56] INFO root fetch - main [MainThread]: End processing [pg-force-execute]: success
+[2023-05-13 14:12:56] INFO root fetch - main [MainThread]: End processing [testcell]: success
+[2023-05-13 14:12:56] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
+[2023-05-13 14:12:56] INFO root fetch - main [MainThread]: Store serial: [18090002]
