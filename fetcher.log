@@ -5234,3 +5234,32 @@
 [2023-05-13 06:56:52] INFO root fetch - main [MainThread]: End processing [tybase]: success
 [2023-05-13 06:56:52] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfe]: success
 [2023-05-13 06:56:52] INFO root fetch - main [MainThread]: Store serial: [18087883]
+[2023-05-13 07:01:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087883]
+[2023-05-13 07:02:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 07:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo14-addon-l10n-br-nfe-spec
+[2023-05-13 07:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrew
+[2023-05-13 07:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metpx-sr3
+[2023-05-13 07:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-assets-manager
+[2023-05-13 07:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-webapp-skeleton
+[2023-05-13 07:02:01] INFO root fetch - processPackages [pyrew]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-13 07:02:01] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe-spec]: New version: [14.0.3.0.1.dev1] Old Version: [14.0.3.0.0]
+[2023-05-13 07:02:01] INFO root fetch - processPackages [metpx-sr3]: New version: [3.0.9] Old Version: [3.0.8]
+[2023-05-13 07:02:01] INFO root fetch - processPackages [cdk-webapp-skeleton]: New version: [0.3.dev9] Old Version: [0.3.dev8]
+[2023-05-13 07:02:01] WARNING root fetch - processPackages [django-assets-manager]: Skipping, unable to determine old version
+[2023-05-13 07:02:01] INFO root fetch - main [MainThread]: End processing [django-assets-manager] error
+[2023-05-13 07:02:01] INFO root fetch - processPackages [pyrew]: executing diffoscope
+[2023-05-13 07:02:01] INFO root fetch - processPackages [pyrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrew-0.9.2.tar.gz tmp/pyrew-0.9.3.tar.gz --markdown 20230513/p/pyrew/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-13 07:02:01] INFO root fetch - processPackages [cdk-webapp-skeleton]: executing diffoscope
+[2023-05-13 07:02:01] INFO root fetch - processPackages [cdk-webapp-skeleton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_webapp_skeleton-0.3.dev8.tar.gz tmp/cdk_webapp_skeleton-0.3.dev9.tar.gz --markdown 20230513/c/cdk-webapp-skeleton/0.3.dev8-0.3.dev9/diff.md --exclude *.pyd
+[2023-05-13 07:02:01] INFO root fetch - processPackages [metpx-sr3]: Downloading https://files.pythonhosted.org/packages/89/06/0f745164c2089adef9236ac31fbe46f4158d18631576d682cf9658757694/metpx_sr3-3.0.8-py3-none-any.whl
+[2023-05-13 07:02:01] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe-spec]: Downloading https://files.pythonhosted.org/packages/ca/fa/f6ffea7e6ca7c347a8b0435fab15f9e3a7087ad1aa1b3674088920e0ba17/odoo14_addon_l10n_br_nfe_spec-14.0.3.0.1.dev1-py3-none-any.whl
+[2023-05-13 07:02:01] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe-spec]: executing diffoscope
+[2023-05-13 07:02:01] INFO root fetch - processPackages [odoo14-addon-l10n-br-nfe-spec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_l10n_br_nfe_spec-14.0.3.0.0-py3-none-any.whl.zip tmp/odoo14_addon_l10n_br_nfe_spec-14.0.3.0.1.dev1-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-l10n-br-nfe-spec/14.0.3.0.0-14.0.3.0.1.dev1/diff.md --exclude *.pyd
+[2023-05-13 07:02:02] INFO root fetch - processPackages [metpx-sr3]: Downloading https://files.pythonhosted.org/packages/a4/8a/64230448bcafc80a1f9a2c5805a6cf7fb4956c1fea5a9c7439c01449480c/metpx_sr3-3.0.9-py3-none-any.whl
+[2023-05-13 07:02:02] INFO root fetch - processPackages [metpx-sr3]: executing diffoscope
+[2023-05-13 07:02:02] INFO root fetch - processPackages [metpx-sr3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metpx_sr3-3.0.8-py3-none-any.whl.zip tmp/metpx_sr3-3.0.9-py3-none-any.whl.zip --markdown 20230513/m/metpx-sr3/3.0.8-3.0.9/diff.md --exclude *.pyd
+[2023-05-13 07:02:02] INFO root fetch - main [MainThread]: End processing [pyrew]: success
+[2023-05-13 07:02:02] INFO root fetch - main [MainThread]: End processing [cdk-webapp-skeleton]: success
+[2023-05-13 07:02:02] INFO root fetch - main [MainThread]: End processing [odoo14-addon-l10n-br-nfe-spec]: success
+[2023-05-13 07:02:05] INFO root fetch - main [MainThread]: End processing [metpx-sr3]: success
+[2023-05-13 07:02:05] INFO root fetch - main [MainThread]: Store serial: [18087902]
