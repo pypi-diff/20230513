@@ -5106,3 +5106,30 @@
 [2023-05-13 06:36:06] INFO root fetch - main [MainThread]: End processing [duckdb]: success
 [2023-05-13 06:36:06] INFO root fetch - main [MainThread]: End processing [snowflake-connector-python-nightly]: success
 [2023-05-13 06:36:06] INFO root fetch - main [MainThread]: Store serial: [18087813]
+[2023-05-13 06:41:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087813]
+[2023-05-13 06:41:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 06:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lotrpy
+[2023-05-13 06:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xpcs-viewer
+[2023-05-13 06:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: frds
+[2023-05-13 06:41:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pipe21
+[2023-05-13 06:41:16] INFO root fetch - processPackages [frds]: New version: [1.0.0rc2] Old Version: [0.8.0]
+[2023-05-13 06:41:16] INFO root fetch - processPackages [xpcs-viewer]: New version: [0.258] Old Version: [0.257]
+[2023-05-13 06:41:16] WARNING root fetch - processPackages [lotrpy]: Skipping, unable to determine old version
+[2023-05-13 06:41:16] INFO root fetch - main [MainThread]: End processing [lotrpy] error
+[2023-05-13 06:41:16] INFO root fetch - processPackages [pipe21]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-13 06:41:16] INFO root fetch - processPackages [frds]: Downloading https://files.pythonhosted.org/packages/7a/83/462e01e7eec6a14ab6479f040356df1187657a799df6d02d3836f018ab5d/frds-0.8.0.tar.gz
+[2023-05-13 06:41:16] INFO root fetch - processPackages [xpcs-viewer]: Downloading https://files.pythonhosted.org/packages/14/fa/ca6b75fe6e0d83b2335d904b7c6fa1c6c54104123e76c9e1e34cdc6feb56/xpcs_viewer-0.257.tar.gz
+[2023-05-13 06:41:16] INFO root fetch - processPackages [pipe21]: Downloading https://files.pythonhosted.org/packages/51/39/24c442c6db5e924109871bfd746531a14c6069a8f9b3e456e72c8efa05cd/pipe21-1.8.0.tar.gz
+[2023-05-13 06:41:16] INFO root fetch - processPackages [pipe21]: Downloading https://files.pythonhosted.org/packages/06/d2/ce18067a3e0d49128faaaa14a4a4c575a2c94bb1d4faf3fdbfec1625ee96/pipe21-1.9.0.tar.gz
+[2023-05-13 06:41:16] INFO root fetch - processPackages [frds]: Downloading https://files.pythonhosted.org/packages/1f/5f/0db888f3544a7fe6abdb9177feb89737e6654cd9c1f963eccd3867c261db/frds-1.0.0rc2.tar.gz
+[2023-05-13 06:41:17] INFO root fetch - processPackages [pipe21]: executing diffoscope
+[2023-05-13 06:41:17] INFO root fetch - processPackages [pipe21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipe21-1.8.0.tar.gz tmp/pipe21-1.9.0.tar.gz --markdown 20230513/p/pipe21/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-13 06:41:17] INFO root fetch - processPackages [xpcs-viewer]: Downloading https://files.pythonhosted.org/packages/db/b5/0394cd67d5bd0f2f8ee3529637b7b792119a37fe76a58908f312f0e7f98d/xpcs_viewer-0.258.tar.gz
+[2023-05-13 06:41:17] INFO root fetch - processPackages [frds]: executing diffoscope
+[2023-05-13 06:41:17] INFO root fetch - processPackages [frds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/frds-0.8.0.tar.gz tmp/frds-1.0.0rc2.tar.gz --markdown 20230513/f/frds/0.8.0-1.0.0rc2/diff.md --exclude *.pyd
+[2023-05-13 06:41:17] INFO root fetch - processPackages [xpcs-viewer]: executing diffoscope
+[2023-05-13 06:41:17] INFO root fetch - processPackages [xpcs-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpcs_viewer-0.257.tar.gz tmp/xpcs_viewer-0.258.tar.gz --markdown 20230513/x/xpcs-viewer/0.257-0.258/diff.md --exclude *.pyd
+[2023-05-13 06:41:18] INFO root fetch - main [MainThread]: End processing [pipe21]: success
+[2023-05-13 06:41:18] INFO root fetch - main [MainThread]: End processing [frds]: success
+[2023-05-13 06:41:18] INFO root fetch - main [MainThread]: End processing [xpcs-viewer]: success
+[2023-05-13 06:41:18] INFO root fetch - main [MainThread]: Store serial: [18087831]
