@@ -10917,3 +10917,79 @@ EOFError: EOF read where object expected
 [2023-05-13 17:04:04] INFO root fetch - main [MainThread]: End processing [hotspotty-payment-email]: success
 [2023-05-13 17:04:04] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
 [2023-05-13 17:04:04] INFO root fetch - main [MainThread]: Store serial: [18091012]
+[2023-05-13 17:09:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091012]
+[2023-05-13 17:09:24] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: image-augs
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wwsimulator
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: decoratools
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensorflow-text-nightly
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: irails
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: z4d-certified-devices
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: shimi
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pandas-llm
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: uuyoupinapi
+[2023-05-13 17:09:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sqlalchemy-mock
+[2023-05-13 17:09:24] INFO root fetch - processPackages [decoratools]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-13 17:09:24] INFO root fetch - processPackages [image-augs]: New version: [2.4.15] Old Version: [2.3.15]
+[2023-05-13 17:09:24] INFO root fetch - processPackages [irails]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-13 17:09:24] INFO root fetch - processPackages [uuyoupinapi]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 17:09:24] INFO root fetch - processPackages [pandas-llm]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 17:09:24] WARNING root fetch - processPackages [sqlalchemy-mock]: Skipping, unable to determine old version
+[2023-05-13 17:09:24] INFO root fetch - processPackages [sqlalchemy-mock]: Start processing: datamultiproc
+[2023-05-13 17:09:24] INFO root fetch - processPackages [wwsimulator]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 17:09:24] INFO root fetch - main [MainThread]: End processing [sqlalchemy-mock] error
+[2023-05-13 17:09:24] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.60] Old Version: [2.59]
+[2023-05-13 17:09:24] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.14.0.dev20230512] Old Version: [2.14.0.dev20230511]
+[2023-05-13 17:09:24] WARNING root fetch - processPackages [shimi]: Skipping, unable to determine old version
+[2023-05-13 17:09:24] INFO root fetch - processPackages [shimi]: Start processing: atsky
+[2023-05-13 17:09:24] INFO root fetch - main [MainThread]: End processing [shimi] error
+[2023-05-13 17:09:24] INFO root fetch - processPackages [datamultiproc]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 17:09:24] WARNING root fetch - processPackages [atsky]: Skipping, unable to determine old version
+[2023-05-13 17:09:24] INFO root fetch - processPackages [atsky]: Start processing: polylang
+[2023-05-13 17:09:24] INFO root fetch - main [MainThread]: End processing [atsky] error
+[2023-05-13 17:09:25] WARNING root fetch - processPackages [polylang]: Skipping, unable to determine old version
+[2023-05-13 17:09:25] INFO root fetch - processPackages [polylang]: Start processing: aind-data-schema
+[2023-05-13 17:09:25] INFO root fetch - main [MainThread]: End processing [polylang] error
+[2023-05-13 17:09:25] INFO root fetch - processPackages [uuyoupinapi]: Downloading https://files.pythonhosted.org/packages/14/4a/1c9b37289a4c97f198de59d591fb9a3459ce4cf6ebdbe70b67dc933f8c80/uuyoupinapi-0.0.2.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/66/2e/4ef8b32b9bc182f10fed33e8e7b291aae9bc81b5d15478129ce9e2d0fb21/irails-1.3.8.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [image-augs]: Downloading https://files.pythonhosted.org/packages/16/b4/24dee7623fa67eda51c16e6c928d43186dc3bd48be4782948acdd5961987/image_augs-2.4.15.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [wwsimulator]: Downloading https://files.pythonhosted.org/packages/a2/f0/35cef67ce3b2f684308ad167ecd223ae93085d5c0881b9fbcf8269322655/wwsimulator-1.0.2.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [decoratools]: Downloading https://files.pythonhosted.org/packages/e1/1d/8121d599aa6a249bdf68aaaa238a3311026ba3156c356be2b2d50df9ce84/decoratools-0.0.3.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [datamultiproc]: Downloading https://files.pythonhosted.org/packages/7d/1d/22114c36125ca4c12327501085735c6ddb5ed55f45ecdad9bb23c1862344/datamultiproc-0.1.2.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [aind-data-schema]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-13 17:09:25] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/7b/d6/52df436f6509138a33df4491fb76a89b4acc1bee9e9534f34a5e7693d574/z4d-certified-devices-2.60.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [datamultiproc]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [datamultiproc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamultiproc-0.1.1.tar.gz tmp/datamultiproc-0.1.2.tar.gz --markdown 20230513/d/datamultiproc/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 17:09:25] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.59.tar.gz tmp/z4d-certified-devices-2.60.tar.gz --markdown 20230513/z/z4d-certified-devices/2.59-2.60/diff.md --exclude *.pyd
+[2023-05-13 17:09:25] INFO root fetch - processPackages [wwsimulator]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [wwsimulator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwsimulator-1.0.1.tar.gz tmp/wwsimulator-1.0.2.tar.gz --markdown 20230513/w/wwsimulator/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 17:09:25] INFO root fetch - processPackages [image-augs]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [image-augs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_augs-2.3.15.tar.gz tmp/image_augs-2.4.15.tar.gz --markdown 20230513/i/image-augs/2.3.15-2.4.15/diff.md --exclude *.pyd
+[2023-05-13 17:09:25] INFO root fetch - processPackages [pandas-llm]: Downloading https://files.pythonhosted.org/packages/42/b3/7f82912ffcd4d01cd266fb4ff43b94925835ebc97338dac5b977c68b9a52/pandas_llm-0.0.4.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [decoratools]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [decoratools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decoratools-0.0.1.tar.gz tmp/decoratools-0.0.3.tar.gz --markdown 20230513/d/decoratools/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 17:09:25] INFO root fetch - processPackages [pandas-llm]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [pandas-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pandas_llm-0.0.3.tar.gz tmp/pandas_llm-0.0.4.tar.gz --markdown 20230513/p/pandas-llm/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 17:09:25] INFO root fetch - processPackages [irails]: Downloading https://files.pythonhosted.org/packages/43/d0/9c8da198dcf08b5d94ad258bc643dc31c21593b581d6b2ed0a8250f364c5/irails-1.3.9.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.8.tar.gz tmp/irails-1.3.9.tar.gz --markdown 20230513/i/irails/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-13 17:09:25] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/37/fe/7fcc66ab9f064ab99106dbfb1a362eb1a9089143e8ccd059821fa6fecb03/tensorflow_text_nightly-2.14.0.dev20230512-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-13 17:09:25] INFO root fetch - processPackages [uuyoupinapi]: Downloading https://files.pythonhosted.org/packages/9d/ae/856add99bcb346eafd29c83cb2e68dcf618edac5cc246ed18b759577e889/uuyoupinapi-0.0.3.tar.gz
+[2023-05-13 17:09:25] INFO root fetch - processPackages [uuyoupinapi]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [uuyoupinapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uuyoupinapi-0.0.2.tar.gz tmp/uuyoupinapi-0.0.3.tar.gz --markdown 20230513/u/uuyoupinapi/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 17:09:25] INFO root fetch - processPackages [aind-data-schema]: executing diffoscope
+[2023-05-13 17:09:25] INFO root fetch - processPackages [aind-data-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind-data-schema-0.9.5.tar.gz tmp/aind-data-schema-0.9.6.tar.gz --markdown 20230513/a/aind-data-schema/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-13 17:09:26] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-05-13 17:09:26] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.14.0.dev20230511-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.14.0.dev20230512-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230513/t/tensorflow-text-nightly/2.14.0.dev20230511-2.14.0.dev20230512/diff.md --exclude *.pyd
+[2023-05-13 17:09:26] INFO root fetch - main [MainThread]: End processing [datamultiproc]: success
+[2023-05-13 17:09:26] INFO root fetch - main [MainThread]: End processing [wwsimulator]: success
+[2023-05-13 17:09:27] INFO root fetch - main [MainThread]: End processing [uuyoupinapi]: success
+[2023-05-13 17:09:27] INFO root fetch - main [MainThread]: End processing [pandas-llm]: success
+[2023-05-13 17:09:27] INFO root fetch - main [MainThread]: End processing [decoratools]: success
+[2023-05-13 17:09:27] INFO root fetch - main [MainThread]: End processing [image-augs]: success
+[2023-05-13 17:09:27] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-13 17:09:29] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-05-13 17:09:29] INFO root fetch - main [MainThread]: End processing [aind-data-schema]: success
+[2023-05-13 17:10:06] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-05-13 17:10:06] INFO root fetch - main [MainThread]: Store serial: [18091060]
