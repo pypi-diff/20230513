@@ -11239,3 +11239,32 @@ EOFError: EOF read where object expected
 [2023-05-13 17:31:05] INFO root fetch - main [MainThread]: End processing [cambridge]: success
 [2023-05-13 17:31:05] INFO root fetch - main [MainThread]: End processing [bk7231tools]: success
 [2023-05-13 17:31:05] INFO root fetch - main [MainThread]: Store serial: [18091266]
+[2023-05-13 17:36:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091266]
+[2023-05-13 17:36:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 17:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pepid
+[2023-05-13 17:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dartpy
+[2023-05-13 17:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pwman-python
+[2023-05-13 17:36:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ltchiptool
+[2023-05-13 17:36:14] INFO root fetch - processPackages [pepid]: New version: [1.1.0] Old Version: [1.0.0.post2]
+[2023-05-13 17:36:14] INFO root fetch - processPackages [dartpy]: New version: [0.1.0.post86] Old Version: [0.1.0.post85]
+[2023-05-13 17:36:14] INFO root fetch - processPackages [pwman-python]: New version: [2.9] Old Version: [2.8]
+[2023-05-13 17:36:14] INFO root fetch - processPackages [ltchiptool]: New version: [4.1.0] Old Version: [4.0.1]
+[2023-05-13 17:36:14] INFO root fetch - processPackages [pepid]: Downloading https://files.pythonhosted.org/packages/ff/ff/694df6d6ace401a9d9bfa1aef981adfb891873d83217b7cb62403a84ef0c/pepid-1.0.0.post2.tar.gz
+[2023-05-13 17:36:14] INFO root fetch - processPackages [dartpy]: Downloading https://files.pythonhosted.org/packages/7a/0f/4a3ae144d50f79aa67c9b214b15373f233fb222d82569d8d1708cf1f65ff/dartpy-0.1.0.post85-cp39-cp39-win_amd64.whl
+[2023-05-13 17:36:14] INFO root fetch - processPackages [pwman-python]: Downloading https://files.pythonhosted.org/packages/f9/1b/205ab81811348f2d8c1d11c38493cb5e911382ff53ac5ebedfe4f2dac2df/pwman-python-2.8.tar.gz
+[2023-05-13 17:36:14] INFO root fetch - processPackages [ltchiptool]: Downloading https://files.pythonhosted.org/packages/2e/29/095c780d88ed6fb358fdee256aa088f4c51cd39f5938ededa90bc95e08ca/ltchiptool-4.0.1.tar.gz
+[2023-05-13 17:36:14] WARNING root fetch - processPackages [dartpy]: Skipping package: exceeds size limit 20010417>=10485760
+[2023-05-13 17:36:14] INFO root fetch - main [MainThread]: End processing [dartpy] error
+[2023-05-13 17:36:14] INFO root fetch - processPackages [pepid]: Downloading https://files.pythonhosted.org/packages/2c/b7/2b8fb441204931f9e94af339ccb816d755a289b8b6e0dd2be2cf8f27c528/pepid-1.1.0.tar.gz
+[2023-05-13 17:36:15] INFO root fetch - processPackages [pwman-python]: Downloading https://files.pythonhosted.org/packages/0b/6b/731ca439570cc604b00ec79a61cb843ee5ed6b0a3937f5259aa5446689e1/pwman-python-2.9.tar.gz
+[2023-05-13 17:36:15] INFO root fetch - processPackages [ltchiptool]: Downloading https://files.pythonhosted.org/packages/57/0a/b3367773a978303487268a3a2e69af310acd767e4c56eddbffba4e526b4a/ltchiptool-4.1.0.tar.gz
+[2023-05-13 17:36:15] INFO root fetch - processPackages [pepid]: executing diffoscope
+[2023-05-13 17:36:15] INFO root fetch - processPackages [pepid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepid-1.0.0.post2.tar.gz tmp/pepid-1.1.0.tar.gz --markdown 20230513/p/pepid/1.0.0.post2-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 17:36:15] INFO root fetch - processPackages [pwman-python]: executing diffoscope
+[2023-05-13 17:36:15] INFO root fetch - processPackages [pwman-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pwman-python-2.8.tar.gz tmp/pwman-python-2.9.tar.gz --markdown 20230513/p/pwman-python/2.8-2.9/diff.md --exclude *.pyd
+[2023-05-13 17:36:15] INFO root fetch - processPackages [ltchiptool]: executing diffoscope
+[2023-05-13 17:36:15] INFO root fetch - processPackages [ltchiptool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ltchiptool-4.0.1.tar.gz tmp/ltchiptool-4.1.0.tar.gz --markdown 20230513/l/ltchiptool/4.0.1-4.1.0/diff.md --exclude *.pyd
+[2023-05-13 17:36:16] INFO root fetch - main [MainThread]: End processing [pepid]: success
+[2023-05-13 17:36:16] INFO root fetch - main [MainThread]: End processing [ltchiptool]: success
+[2023-05-13 17:36:17] INFO root fetch - main [MainThread]: End processing [pwman-python]: success
+[2023-05-13 17:36:17] INFO root fetch - main [MainThread]: Store serial: [18091290]
