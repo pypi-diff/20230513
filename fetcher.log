@@ -14284,3 +14284,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 23:34:59] INFO root fetch - main [MainThread]: End processing [berserk]: success
 [2023-05-13 23:35:00] INFO root fetch - main [MainThread]: End processing [cognite-gql-pygen]: success
 [2023-05-13 23:35:00] INFO root fetch - main [MainThread]: Store serial: [18093238]
+[2023-05-13 23:40:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093238]
+[2023-05-13 23:40:10] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 23:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cshelph
+[2023-05-13 23:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: postmaniac
+[2023-05-13 23:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qiskit-symbolic
+[2023-05-13 23:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: submerger
+[2023-05-13 23:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pipsqlitedbext
+[2023-05-13 23:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: midjourney-api
+[2023-05-13 23:40:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pipsqlitedbext
+[2023-05-13 23:40:10] INFO root fetch - processPackages [midjourney-api]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-13 23:40:10] INFO root fetch - processPackages [cshelph]: New version: [2.6.0] Old Version: [2.5.0]
+[2023-05-13 23:40:10] WARNING root fetch - processPackages [qiskit-symbolic]: Skipping, unable to determine old version
+[2023-05-13 23:40:10] INFO root fetch - processPackages [pipsqlitedbext]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-13 23:40:10] INFO root fetch - main [MainThread]: End processing [qiskit-symbolic] error
+[2023-05-13 23:40:10] INFO root fetch - processPackages [pipsqlitedbext]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-13 23:40:10] WARNING root fetch - processPackages [postmaniac]: Skipping, unable to determine old version
+[2023-05-13 23:40:10] INFO root fetch - processPackages [submerger]: New version: [2023.5.13] Old Version: [1.0.4]
+[2023-05-13 23:40:10] INFO root fetch - main [MainThread]: End processing [postmaniac] error
+[2023-05-13 23:40:10] INFO root fetch - processPackages [midjourney-api]: Downloading https://files.pythonhosted.org/packages/03/1a/5572d58b579f7f4bb396679fc9980a4be2fe0006ce1dc9a015fad931438a/midjourney_api-1.0.3.tar.gz
+[2023-05-13 23:40:10] INFO root fetch - processPackages [cshelph]: Downloading https://files.pythonhosted.org/packages/15/ab/ab0e508bac63ed1e841e30d42be5c27e0f5750beed6d9dd86f2beb42354f/cshelph-2.5.0.tar.gz
+[2023-05-13 23:40:10] INFO root fetch - processPackages [pipsqlitedbext]: Downloading https://files.pythonhosted.org/packages/75/40/c2070b9d0f19096e8d16f6a2493290a542cf36b8d1e67f6a3f9a4de10161/pipsqlitedbext-1.0.0.tar.gz
+[2023-05-13 23:40:10] INFO root fetch - processPackages [pipsqlitedbext]: Downloading https://files.pythonhosted.org/packages/75/40/c2070b9d0f19096e8d16f6a2493290a542cf36b8d1e67f6a3f9a4de10161/pipsqlitedbext-1.0.0.tar.gz
+[2023-05-13 23:40:10] INFO root fetch - processPackages [submerger]: Downloading https://files.pythonhosted.org/packages/08/01/2b31ff585c9cf6d9d040a44486c74c6a6dc425ad3b55c05c5615ba132606/submerger-1.0.4.tar.gz
+[2023-05-13 23:40:10] INFO root fetch - processPackages [midjourney-api]: executing diffoscope
+[2023-05-13 23:40:10] INFO root fetch - processPackages [midjourney-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midjourney_api-1.0.2.tar.gz tmp/midjourney_api-1.0.3.tar.gz --markdown 20230513/m/midjourney-api/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-13 23:40:10] INFO root fetch - processPackages [cshelph]: Downloading https://files.pythonhosted.org/packages/56/89/6b825ddea53ab7da89fc2eafa1e28b96866dff70cf0ec90f9eac33a3e345/cshelph-2.6.0.tar.gz
+[2023-05-13 23:40:11] INFO root fetch - processPackages [submerger]: Downloading https://files.pythonhosted.org/packages/9b/3a/6ad7500e2d7e29e285108d1db12bf33d4673530ea2f94c075415736a5613/submerger-2023.5.13.tar.gz
+[2023-05-13 23:40:11] INFO root fetch - processPackages [pipsqlitedbext]: Downloading https://files.pythonhosted.org/packages/84/52/140f4f6614ce59e8856386f845a357e88ea4614ed42c19c72f31d68ecd96/pipsqlitedbext-1.1.0.tar.gz
+[2023-05-13 23:40:11] INFO root fetch - processPackages [pipsqlitedbext]: Downloading https://files.pythonhosted.org/packages/84/52/140f4f6614ce59e8856386f845a357e88ea4614ed42c19c72f31d68ecd96/pipsqlitedbext-1.1.0.tar.gz
+[2023-05-13 23:40:11] INFO root fetch - processPackages [cshelph]: executing diffoscope
+[2023-05-13 23:40:11] INFO root fetch - processPackages [cshelph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshelph-2.5.0.tar.gz tmp/cshelph-2.6.0.tar.gz --markdown 20230513/c/cshelph/2.5.0-2.6.0/diff.md --exclude *.pyd
+[2023-05-13 23:40:11] INFO root fetch - processPackages [submerger]: executing diffoscope
+[2023-05-13 23:40:11] INFO root fetch - processPackages [submerger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/submerger-1.0.4.tar.gz tmp/submerger-2023.5.13.tar.gz --markdown 20230513/s/submerger/1.0.4-2023.5.13/diff.md --exclude *.pyd
+[2023-05-13 23:40:11] INFO root fetch - processPackages [pipsqlitedbext]: executing diffoscope
+[2023-05-13 23:40:11] INFO root fetch - processPackages [pipsqlitedbext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipsqlitedbext-1.0.0.tar.gz tmp/pipsqlitedbext-1.1.0.tar.gz --markdown 20230513/p/pipsqlitedbext/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 23:40:11] INFO root fetch - processPackages [pipsqlitedbext]: executing diffoscope
+[2023-05-13 23:40:11] INFO root fetch - processPackages [pipsqlitedbext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipsqlitedbext-1.0.0.tar.gz tmp/pipsqlitedbext-1.1.0.tar.gz --markdown 20230513/p/pipsqlitedbext/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 23:40:11] INFO root fetch - main [MainThread]: End processing [midjourney-api]: success
+[2023-05-13 23:40:12] INFO root fetch - main [MainThread]: End processing [cshelph]: success
+[2023-05-13 23:40:12] INFO root fetch - main [MainThread]: End processing [submerger]: success
+[2023-05-13 23:40:12] INFO root fetch - main [MainThread]: End processing [pipsqlitedbext]: success
+[2023-05-13 23:40:12] INFO root fetch - main [MainThread]: End processing [pipsqlitedbext]: success
+[2023-05-13 23:40:12] INFO root fetch - main [MainThread]: Store serial: [18093264]
