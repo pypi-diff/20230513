@@ -8083,3 +8083,30 @@
 [2023-05-13 11:39:11] INFO root fetch - main [MainThread]: End processing [hyperparameter-tuning]: success
 [2023-05-13 11:39:11] INFO root fetch - main [MainThread]: End processing [PyTraffic]: success
 [2023-05-13 11:39:11] INFO root fetch - main [MainThread]: Store serial: [18089273]
+[2023-05-13 11:44:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089273]
+[2023-05-13 11:44:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 11:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dagster-toolbox
+[2023-05-13 11:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redo-pdf
+[2023-05-13 11:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymathematics
+[2023-05-13 11:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: projen
+[2023-05-13 11:44:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bambooai
+[2023-05-13 11:44:20] INFO root fetch - processPackages [pymathematics]: New version: [2023.5.6] Old Version: [2023.5.3.1]
+[2023-05-13 11:44:20] WARNING root fetch - processPackages [redo-pdf]: Skipping, unable to determine old version
+[2023-05-13 11:44:20] INFO root fetch - main [MainThread]: End processing [redo-pdf] error
+[2023-05-13 11:44:20] INFO root fetch - processPackages [bambooai]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-13 11:44:20] INFO root fetch - processPackages [dagster-toolbox]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-13 11:44:20] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-13 11:44:20] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-13 11:44:20] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.1.5.tar.gz tmp/bambooai-0.1.6.tar.gz --markdown 20230513/b/bambooai/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-13 11:44:21] INFO root fetch - processPackages [dagster-toolbox]: Downloading https://files.pythonhosted.org/packages/96/f6/1150c05616beb25323e7718f21dd294e8b69bcdb117da48dd55f8f1ebf4e/dagster-toolbox-0.0.5.tar.gz
+[2023-05-13 11:44:21] INFO root fetch - processPackages [pymathematics]: executing diffoscope
+[2023-05-13 11:44:21] INFO root fetch - processPackages [pymathematics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymathematics-2023.5.3.1.tar.gz tmp/pymathematics-2023.5.6.tar.gz --markdown 20230513/p/pymathematics/2023.5.3.1-2023.5.6/diff.md --exclude *.pyd
+[2023-05-13 11:44:21] INFO root fetch - processPackages [dagster-toolbox]: executing diffoscope
+[2023-05-13 11:44:21] INFO root fetch - processPackages [dagster-toolbox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dagster-toolbox-0.0.4.tar.gz tmp/dagster-toolbox-0.0.5.tar.gz --markdown 20230513/d/dagster-toolbox/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-13 11:44:21] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-13 11:44:21] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230513/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-13 11:44:22] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-13 11:44:22] INFO root fetch - main [MainThread]: End processing [pymathematics]: success
+[2023-05-13 11:44:22] INFO root fetch - main [MainThread]: End processing [dagster-toolbox]: success
+[2023-05-13 11:44:23] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-13 11:44:23] INFO root fetch - main [MainThread]: Store serial: [18089290]
