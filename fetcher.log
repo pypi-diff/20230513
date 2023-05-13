@@ -8408,3 +8408,38 @@
 [2023-05-13 12:26:52] INFO root fetch - main [MainThread]: End processing [cos-uploader]: success
 [2023-05-13 12:26:52] INFO root fetch - main [MainThread]: End processing [efficiency]: success
 [2023-05-13 12:26:52] INFO root fetch - main [MainThread]: Store serial: [18089454]
+[2023-05-13 12:31:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089454]
+[2023-05-13 12:32:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 12:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: krx-rigger
+[2023-05-13 12:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lana
+[2023-05-13 12:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wagtailmenus
+[2023-05-13 12:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: a-pandas-ex-html-view
+[2023-05-13 12:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: longitudinal-trends
+[2023-05-13 12:32:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nazo-image-utils
+[2023-05-13 12:32:01] INFO root fetch - processPackages [longitudinal-trends]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-13 12:32:01] INFO root fetch - processPackages [a-pandas-ex-html-view]: New version: [0.11] Old Version: [0.1]
+[2023-05-13 12:32:01] INFO root fetch - processPackages [krx-rigger]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 12:32:01] INFO root fetch - processPackages [wagtailmenus]: New version: [3.1.8] Old Version: [3.1.7]
+[2023-05-13 12:32:01] WARNING root fetch - processPackages [nazo-image-utils]: Skipping, unable to determine old version
+[2023-05-13 12:32:01] INFO root fetch - main [MainThread]: End processing [nazo-image-utils] error
+[2023-05-13 12:32:01] WARNING root fetch - processPackages [lana]: Skipping, unable to determine old version
+[2023-05-13 12:32:01] INFO root fetch - main [MainThread]: End processing [lana] error
+[2023-05-13 12:32:01] INFO root fetch - processPackages [krx-rigger]: executing diffoscope
+[2023-05-13 12:32:01] INFO root fetch - processPackages [krx-rigger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/krx_rigger-0.0.8.tar.gz tmp/krx_rigger-0.0.9.tar.gz --markdown 20230513/k/krx-rigger/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 12:32:01] INFO root fetch - processPackages [longitudinal-trends]: Downloading https://files.pythonhosted.org/packages/1e/9c/392b1da9eec136f7625088b7b6876588077781f5404be833a909d60f5fdc/longitudinal_trends-0.1.5.tar.gz
+[2023-05-13 12:32:01] INFO root fetch - processPackages [a-pandas-ex-html-view]: Downloading https://files.pythonhosted.org/packages/16/f6/d051efa6820e25fd58be6a874eaab1492be39d4ccbd925f05a20dfb038c6/a_pandas_ex_html_view-0.1.tar.gz
+[2023-05-13 12:32:01] INFO root fetch - processPackages [wagtailmenus]: Downloading https://files.pythonhosted.org/packages/22/f3/4134b965ffdd5cf05921a630622cd7d4ff155da02ca90d16d81b895019ba/wagtailmenus-3.1.7.tar.gz
+[2023-05-13 12:32:01] INFO root fetch - processPackages [longitudinal-trends]: Downloading https://files.pythonhosted.org/packages/79/80/b0ba667d571b158c51e8d08c6a478108ad04386295ace92a030f319ae370/longitudinal_trends-0.1.6.tar.gz
+[2023-05-13 12:32:01] INFO root fetch - processPackages [a-pandas-ex-html-view]: Downloading https://files.pythonhosted.org/packages/56/91/9f67638f8de594a6c4f671450884df0fcf7c92b9fd3bcd94a4efec4d3d66/a_pandas_ex_html_view-0.11.tar.gz
+[2023-05-13 12:32:01] INFO root fetch - processPackages [wagtailmenus]: Downloading https://files.pythonhosted.org/packages/b2/bc/67c8e8f2efc5e35f242d353b870d233f919323c0565b50adcb63679dd871/wagtailmenus-3.1.8.tar.gz
+[2023-05-13 12:32:01] INFO root fetch - processPackages [longitudinal-trends]: executing diffoscope
+[2023-05-13 12:32:01] INFO root fetch - processPackages [longitudinal-trends]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/longitudinal_trends-0.1.5.tar.gz tmp/longitudinal_trends-0.1.6.tar.gz --markdown 20230513/l/longitudinal-trends/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-13 12:32:02] INFO root fetch - processPackages [a-pandas-ex-html-view]: executing diffoscope
+[2023-05-13 12:32:02] INFO root fetch - processPackages [a-pandas-ex-html-view]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a_pandas_ex_html_view-0.1.tar.gz tmp/a_pandas_ex_html_view-0.11.tar.gz --markdown 20230513/a/a-pandas-ex-html-view/0.1-0.11/diff.md --exclude *.pyd
+[2023-05-13 12:32:02] INFO root fetch - processPackages [wagtailmenus]: executing diffoscope
+[2023-05-13 12:32:02] INFO root fetch - processPackages [wagtailmenus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtailmenus-3.1.7.tar.gz tmp/wagtailmenus-3.1.8.tar.gz --markdown 20230513/w/wagtailmenus/3.1.7-3.1.8/diff.md --exclude *.pyd
+[2023-05-13 12:32:02] INFO root fetch - main [MainThread]: End processing [krx-rigger]: success
+[2023-05-13 12:32:02] INFO root fetch - main [MainThread]: End processing [longitudinal-trends]: success
+[2023-05-13 12:32:03] INFO root fetch - main [MainThread]: End processing [a-pandas-ex-html-view]: success
+[2023-05-13 12:32:03] INFO root fetch - main [MainThread]: End processing [wagtailmenus]: success
+[2023-05-13 12:32:03] INFO root fetch - main [MainThread]: Store serial: [18089489]
