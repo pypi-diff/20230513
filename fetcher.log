@@ -12238,3 +12238,80 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 19:27:37] INFO root fetch - main [MainThread]: End processing [alacorder]: success
 [2023-05-13 19:27:45] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-13 19:27:45] INFO root fetch - main [MainThread]: Store serial: [18091907]
+[2023-05-13 19:32:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091907]
+[2023-05-13 19:32:56] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: local-recruitment-employer-python-backend
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aniwrap
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chat2plot
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kfish
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flapgui
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: acids-msprior
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: crazy-thursday
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: espnet-onnx
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: piccolo-api
+[2023-05-13 19:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: topopyscale
+[2023-05-13 19:32:56] INFO root fetch - processPackages [chat2plot]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-13 19:32:56] WARNING root fetch - processPackages [aniwrap]: Skipping, unable to determine old version
+[2023-05-13 19:32:56] INFO root fetch - processPackages [aniwrap]: Start processing: dsp-ml
+[2023-05-13 19:32:56] INFO root fetch - main [MainThread]: End processing [aniwrap] error
+[2023-05-13 19:32:56] INFO root fetch - processPackages [kfish]: New version: [99.0.202305131729] Old Version: [99.0.202305041148]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [espnet-onnx]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [flapgui]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [acids-msprior]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [topopyscale]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [piccolo-api]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [dsp-ml]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-13 19:32:56] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-13 19:32:56] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230513/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-13 19:32:56] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/de/4f/3939c5272a77f9a393a2d3f23fdad229692bfc0eab8b4164c165dfb91d7b/kfish-99.0.202305041148-py3-none-any.whl
+[2023-05-13 19:32:56] INFO root fetch - processPackages [espnet-onnx]: Downloading https://files.pythonhosted.org/packages/07/a3/fef18f7254d98968c41cadefa3b05e3bed006f237d110032277872c1e27c/espnet_onnx-0.1.8.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: Downloading https://files.pythonhosted.org/packages/8c/e0/f23eb042a4eec2344e6ce4be1811560f4eb440e99d51f480306354b3750c/local-recruitment-employer-python-backend-0.0.6.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [chat2plot]: Downloading https://files.pythonhosted.org/packages/97/13/e5b7789211016b2316b9de579a5a31eb7c0bc2a390ff2af1288ae6012417/chat2plot-0.0.7.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [piccolo-api]: Downloading https://files.pythonhosted.org/packages/90/17/64f8f2fd90000c9003d57597b33972054b81f64a5d2941d5239790831409/piccolo_api-0.9.1.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [dsp-ml]: Downloading https://files.pythonhosted.org/packages/a2/24/99296a3ddae783e82f0df76cbf1c01bc16e3664d1c8c8b6025a5d9bad0d4/dsp-ml-0.1.4.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [topopyscale]: Downloading https://files.pythonhosted.org/packages/ce/2b/798836e9ba8a30d9b40493c1b8eef29531750fa29ea1e8bdd6db853083e7/topopyscale-0.2.1.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [flapgui]: Downloading https://files.pythonhosted.org/packages/83/59/9d3aaf9f8755b5fcd656e08a88917f8894dad4cc999c29f4366b41ba0e6a/flapgui-0.3.0.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [flapgui]: executing diffoscope
+[2023-05-13 19:32:56] INFO root fetch - processPackages [flapgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flapgui-0.2.1.tar.gz tmp/flapgui-0.3.0.tar.gz --markdown 20230513/f/flapgui/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 19:32:56] INFO root fetch - processPackages [acids-msprior]: Downloading https://files.pythonhosted.org/packages/87/57/65597dc13117ff2a150af3ad28266022d29bcaa979c04fee6589f9b0a54d/acids-msprior-1.0.4.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: Downloading https://files.pythonhosted.org/packages/f1/a8/ede92a65645335ac730775b842111ab430fdb9c8d1cb58d1ad7288362e95/local-recruitment-employer-python-backend-0.0.7.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [dsp-ml]: Downloading https://files.pythonhosted.org/packages/34/8e/f7d5c1d04afc537f4c454a9f5340c042bc429dbf65b295b6e5a5c078d3c3/dsp-ml-0.1.5.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [chat2plot]: Downloading https://files.pythonhosted.org/packages/7c/38/9e73889cd36ea82b13ea089308b1c2d73a6fe94d77bac5a6d42daf66407e/chat2plot-0.0.8.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [acids-msprior]: executing diffoscope
+[2023-05-13 19:32:56] INFO root fetch - processPackages [acids-msprior]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acids-msprior-1.0.3.tar.gz tmp/acids-msprior-1.0.4.tar.gz --markdown 20230513/a/acids-msprior/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-13 19:32:56] INFO root fetch - processPackages [espnet-onnx]: Downloading https://files.pythonhosted.org/packages/d9/c7/46a62fede9f26c28fd881099666ea7361aebd3282a32d123c5484c1ae3ca/espnet_onnx-0.1.9.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-13 19:32:56] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.6.tar.gz tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz --markdown 20230513/l/local-recruitment-employer-python-backend/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-13 19:32:56] INFO root fetch - processPackages [kfish]: Downloading https://files.pythonhosted.org/packages/09/26/6e53b2eb2ff30adc74c1a0ed8c43a42f43dbc5628781e42a8ede9224c0c9/kfish-99.0.202305131729-py3-none-any.whl
+[2023-05-13 19:32:56] INFO root fetch - processPackages [piccolo-api]: Downloading https://files.pythonhosted.org/packages/02/37/e0ef16b31c7dbbbe996c850edc9916c5a51bbda00880d8b16fb33baa2a9a/piccolo_api-0.9.2.tar.gz
+[2023-05-13 19:32:56] INFO root fetch - processPackages [espnet-onnx]: executing diffoscope
+[2023-05-13 19:32:56] INFO root fetch - processPackages [espnet-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/espnet_onnx-0.1.8.tar.gz tmp/espnet_onnx-0.1.9.tar.gz --markdown 20230513/e/espnet-onnx/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 19:32:56] INFO root fetch - processPackages [kfish]: executing diffoscope
+[2023-05-13 19:32:56] INFO root fetch - processPackages [kfish]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfish-99.0.202305041148-py3-none-any.whl.zip tmp/kfish-99.0.202305131729-py3-none-any.whl.zip --markdown 20230513/k/kfish/99.0.202305041148-99.0.202305131729/diff.md --exclude *.pyd
+[2023-05-13 19:32:56] INFO root fetch - processPackages [chat2plot]: executing diffoscope
+[2023-05-13 19:32:56] INFO root fetch - processPackages [chat2plot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chat2plot-0.0.7.tar.gz tmp/chat2plot-0.0.8.tar.gz --markdown 20230513/c/chat2plot/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-13 19:32:56] INFO root fetch - processPackages [dsp-ml]: executing diffoscope
+[2023-05-13 19:32:56] INFO root fetch - processPackages [dsp-ml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dsp-ml-0.1.4.tar.gz tmp/dsp-ml-0.1.5.tar.gz --markdown 20230513/d/dsp-ml/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-13 19:32:57] INFO root fetch - processPackages [piccolo-api]: executing diffoscope
+[2023-05-13 19:32:57] INFO root fetch - processPackages [piccolo-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piccolo_api-0.9.1.tar.gz tmp/piccolo_api-0.9.2.tar.gz --markdown 20230513/p/piccolo-api/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-13 19:32:57] INFO root fetch - processPackages [topopyscale]: Downloading https://files.pythonhosted.org/packages/cd/8f/0e0d983fdd201fe091c14348546145193fde5d2f29652a179197f14d6f77/topopyscale-0.2.2.tar.gz
+[2023-05-13 19:32:57] INFO root fetch - processPackages [topopyscale]: executing diffoscope
+[2023-05-13 19:32:57] INFO root fetch - processPackages [topopyscale]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/topopyscale-0.2.1.tar.gz tmp/topopyscale-0.2.2.tar.gz --markdown 20230513/t/topopyscale/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-13 19:32:57] INFO root fetch - processPackages [crazy-thursday]: Start processing: sampleproject-dhchenx
+[2023-05-13 19:32:57] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-13 19:32:57] INFO root fetch - processPackages [sampleproject-dhchenx]: New version: [0.0.1a1] Old Version: [0.0.1a0]
+[2023-05-13 19:32:57] INFO root fetch - processPackages [sampleproject-dhchenx]: executing diffoscope
+[2023-05-13 19:32:57] INFO root fetch - processPackages [sampleproject-dhchenx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sampleproject-dhchenx-0.0.1a0.tar.gz tmp/sampleproject-dhchenx-0.0.1a1.tar.gz --markdown 20230513/s/sampleproject-dhchenx/0.0.1a0-0.0.1a1/diff.md --exclude *.pyd
+[2023-05-13 19:32:58] INFO root fetch - main [MainThread]: End processing [flapgui]: success
+[2023-05-13 19:32:58] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-13 19:32:58] INFO root fetch - main [MainThread]: End processing [kfish]: success
+[2023-05-13 19:32:58] INFO root fetch - main [MainThread]: End processing [acids-msprior]: success
+[2023-05-13 19:32:59] INFO root fetch - main [MainThread]: End processing [chat2plot]: success
+[2023-05-13 19:32:59] INFO root fetch - main [MainThread]: End processing [dsp-ml]: success
+[2023-05-13 19:32:59] INFO root fetch - main [MainThread]: End processing [piccolo-api]: success
+[2023-05-13 19:32:59] INFO root fetch - main [MainThread]: End processing [topopyscale]: success
+[2023-05-13 19:32:59] INFO root fetch - main [MainThread]: End processing [sampleproject-dhchenx]: success
+[2023-05-13 19:33:00] INFO root fetch - main [MainThread]: End processing [espnet-onnx]: success
+[2023-05-13 19:33:00] INFO root fetch - main [MainThread]: Store serial: [18091947]
