@@ -13866,3 +13866,76 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:42:26] INFO root fetch - main [MainThread]: End processing [saic-ismart-client]: success
 [2023-05-13 22:42:26] INFO root fetch - main [MainThread]: End processing [frostaura]: success
 [2023-05-13 22:42:26] INFO root fetch - main [MainThread]: Store serial: [18092988]
+[2023-05-13 22:47:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092988]
+[2023-05-13 22:47:35] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatcmd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PatryksAutoAI
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mleko
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tigerblog
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chatcmd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: patas
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: asynczipstream
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: eth-monitor
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pybart-nlp
+[2023-05-13 22:47:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hearthstone-lab10
+[2023-05-13 22:47:35] INFO root fetch - processPackages [mleko]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-13 22:47:35] INFO root fetch - processPackages [patas]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 22:47:35] WARNING root fetch - processPackages [asynczipstream]: Skipping, unable to determine old version
+[2023-05-13 22:47:35] INFO root fetch - processPackages [asynczipstream]: Start processing: django-simple-backup
+[2023-05-13 22:47:35] INFO root fetch - main [MainThread]: End processing [asynczipstream] error
+[2023-05-13 22:47:35] INFO root fetch - processPackages [eth-monitor]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-13 22:47:35] WARNING root fetch - processPackages [hearthstone-lab10]: Skipping, unable to determine old version
+[2023-05-13 22:47:35] INFO root fetch - processPackages [hearthstone-lab10]: Start processing: chatcmd
+[2023-05-13 22:47:35] INFO root fetch - main [MainThread]: End processing [hearthstone-lab10] error
+[2023-05-13 22:47:35] INFO root fetch - processPackages [django-simple-backup]: New version: [2.0] Old Version: [1.2]
+[2023-05-13 22:47:35] INFO root fetch - processPackages [tigerblog]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 22:47:35] INFO root fetch - processPackages [pybart-nlp]: New version: [3.4.4] Old Version: [3.4.2]
+[2023-05-13 22:47:35] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/27/0b/00c02528a4534fbc610ba801f6bacc4353eaf5ca27aa94663a5682ffdfa8/chatcmd-1.0.0.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/27/0b/00c02528a4534fbc610ba801f6bacc4353eaf5ca27aa94663a5682ffdfa8/chatcmd-1.0.0.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/27/0b/00c02528a4534fbc610ba801f6bacc4353eaf5ca27aa94663a5682ffdfa8/chatcmd-1.0.0.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [tigerblog]: Downloading https://files.pythonhosted.org/packages/62/e0/f0f88d292eeb5ab04fc298f107b2a1a5ffb10e3b8d9df5bdcfcc8bd98ac3/tigerblog-0.1.2.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/e5/a7/6e1196927ed7748998885cd1b0fdb5a0e55b18d5cf1eaeefcab86e06dc6b/PatryksAutoAI-0.5.5.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [eth-monitor]: Downloading https://files.pythonhosted.org/packages/03/1d/e19d35d9e98a8e279eeb031ea51968fa4b8151090b2c6e7550f83ace4f7b/eth-monitor-0.7.5.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [mleko]: Downloading https://files.pythonhosted.org/packages/3e/59/b5a9f2444b4c4086f6ed7ddafbae975da110440c53cf8ba0528712761ebc/mleko-0.1.3.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [django-simple-backup]: Downloading https://files.pythonhosted.org/packages/20/79/526efb6cb5c212d1268160d8f1529793b8f38b80f595e0179fbb8cc1620a/django-simple-backup-2.0.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [patas]: Downloading https://files.pythonhosted.org/packages/50/41/7460b33bf91a8319f68b76765af82abd2ec7963aceae0d249f16da34ee1f/patas-2.0.4.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [eth-monitor]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [eth-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eth-monitor-0.7.4.tar.gz tmp/eth-monitor-0.7.5.tar.gz --markdown 20230513/e/eth-monitor/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [mleko]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [mleko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mleko-0.1.2.tar.gz tmp/mleko-0.1.3.tar.gz --markdown 20230513/m/mleko/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [django-simple-backup]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [django-simple-backup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-simple-backup-1.2.tar.gz tmp/django-simple-backup-2.0.tar.gz --markdown 20230513/d/django-simple-backup/1.2-2.0/diff.md --exclude *.pyd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [tigerblog]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [tigerblog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tigerblog-0.1.1.tar.gz tmp/tigerblog-0.1.2.tar.gz --markdown 20230513/t/tigerblog/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [pybart-nlp]: Downloading https://files.pythonhosted.org/packages/9e/0d/03882419ed29b7926938014ebd5d1033c6eb24ddae71d84d2d400cf5c7ad/pybart-nlp-3.4.4.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/a8/82/aa5e7ccb13f01a2fbbe6bd768be6e47a5cd3295da035e701aea9b7abaed4/chatcmd-1.0.1.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/a8/82/aa5e7ccb13f01a2fbbe6bd768be6e47a5cd3295da035e701aea9b7abaed4/chatcmd-1.0.1.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/a8/82/aa5e7ccb13f01a2fbbe6bd768be6e47a5cd3295da035e701aea9b7abaed4/chatcmd-1.0.1.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [patas]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [patas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patas-2.0.3-py3-none-any.whl.zip tmp/patas-2.0.4.tar.gz --markdown 20230513/p/patas/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/1d/69/dc19cf98ff1b3f724d7845a1acd2993205142b6180240a006be64ffad5c4/PatryksAutoAI-0.5.6.tar.gz
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.0.tar.gz tmp/chatcmd-1.0.1.tar.gz --markdown 20230513/c/chatcmd/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.0.tar.gz tmp/chatcmd-1.0.1.tar.gz --markdown 20230513/c/chatcmd/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.0.tar.gz tmp/chatcmd-1.0.1.tar.gz --markdown 20230513/c/chatcmd/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 22:47:35] INFO root fetch - processPackages [pybart-nlp]: executing diffoscope
+[2023-05-13 22:47:35] INFO root fetch - processPackages [pybart-nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybart-nlp-3.4.2.tar.gz tmp/pybart-nlp-3.4.4.tar.gz --markdown 20230513/p/pybart-nlp/3.4.2-3.4.4/diff.md --exclude *.pyd
+[2023-05-13 22:47:36] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-13 22:47:36] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.5.5.tar.gz tmp/PatryksAutoAI-0.5.6.tar.gz --markdown 20230513/P/PatryksAutoAI/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-13 22:47:37] INFO root fetch - main [MainThread]: End processing [patas]: success
+[2023-05-13 22:47:37] INFO root fetch - main [MainThread]: End processing [eth-monitor]: success
+[2023-05-13 22:47:37] INFO root fetch - main [MainThread]: End processing [django-simple-backup]: success
+[2023-05-13 22:47:37] INFO root fetch - main [MainThread]: End processing [mleko]: success
+[2023-05-13 22:47:37] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-13 22:47:37] INFO root fetch - main [MainThread]: End processing [pybart-nlp]: success
+[2023-05-13 22:47:37] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-13 22:47:38] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-13 22:47:39] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-13 22:48:09] INFO root fetch - main [MainThread]: End processing [tigerblog]: success
+[2023-05-13 22:48:09] INFO root fetch - main [MainThread]: Store serial: [18093034]
