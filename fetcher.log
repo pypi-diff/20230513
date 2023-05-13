@@ -11369,3 +11369,24 @@ EOFError: EOF read where object expected
 [2023-05-13 17:51:52] INFO root fetch - main [MainThread]: End processing [cc-py-commons]: success
 [2023-05-13 17:51:56] INFO root fetch - main [MainThread]: End processing [vegas]: success
 [2023-05-13 17:51:56] INFO root fetch - main [MainThread]: Store serial: [18091372]
+[2023-05-13 17:57:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091372]
+[2023-05-13 17:57:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 17:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bilibili-api-python
+[2023-05-13 17:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: validmind
+[2023-05-13 17:57:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dxsp
+[2023-05-13 17:57:07] INFO root fetch - processPackages [dxsp]: New version: [2.2.5] Old Version: [2.2.4]
+[2023-05-13 17:57:07] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-13 17:57:07] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.2.4.tar.gz tmp/dxsp-2.2.5.tar.gz --markdown 20230513/d/dxsp/2.2.4-2.2.5/diff.md --exclude *.pyd
+[2023-05-13 17:57:07] INFO root fetch - processPackages [validmind]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-05-13 17:57:07] INFO root fetch - processPackages [bilibili-api-python]: New version: [9.3.1] Old Version: [9.3.0]
+[2023-05-13 17:57:08] INFO root fetch - processPackages [validmind]: Downloading https://files.pythonhosted.org/packages/28/0e/c72b84557a9a977fa910bea261a7a410ace3f5299e5b37bd4609222c03df/validmind-1.9.3.tar.gz
+[2023-05-13 17:57:08] INFO root fetch - processPackages [bilibili-api-python]: Downloading https://files.pythonhosted.org/packages/9b/6f/75134e680907dfeb54d18a424acea23668915105b48d0818cd2ea3a871c4/bilibili-api-python-9.3.0.tar.gz
+[2023-05-13 17:57:08] INFO root fetch - processPackages [bilibili-api-python]: Downloading https://files.pythonhosted.org/packages/f7/75/9cefa953040943e97416ee886cdcf25f91aaf4cd46c2beb8648b84e60415/bilibili-api-python-9.3.1.tar.gz
+[2023-05-13 17:57:08] INFO root fetch - processPackages [validmind]: executing diffoscope
+[2023-05-13 17:57:08] INFO root fetch - processPackages [validmind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validmind-1.9.2.tar.gz tmp/validmind-1.9.3.tar.gz --markdown 20230513/v/validmind/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-05-13 17:57:08] INFO root fetch - processPackages [bilibili-api-python]: executing diffoscope
+[2023-05-13 17:57:08] INFO root fetch - processPackages [bilibili-api-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bilibili-api-python-9.3.0.tar.gz tmp/bilibili-api-python-9.3.1.tar.gz --markdown 20230513/b/bilibili-api-python/9.3.0-9.3.1/diff.md --exclude *.pyd
+[2023-05-13 17:57:09] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-13 17:57:10] INFO root fetch - main [MainThread]: End processing [bilibili-api-python]: success
+[2023-05-13 17:57:10] INFO root fetch - main [MainThread]: End processing [validmind]: success
+[2023-05-13 17:57:10] INFO root fetch - main [MainThread]: Store serial: [18091382]
