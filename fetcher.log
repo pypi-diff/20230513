@@ -1327,3 +1327,67 @@
 [2023-05-13 02:26:23] INFO root fetch - main [MainThread]: End processing [cdk8s]: success
 [2023-05-13 02:26:24] INFO root fetch - main [MainThread]: End processing [simfire]: success
 [2023-05-13 02:26:24] INFO root fetch - main [MainThread]: Store serial: [18085599]
+[2023-05-13 02:31:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085599]
+[2023-05-13 02:31:34] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kraken-core
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-aurora-globaldatabase
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alacorder
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdktf-github-actions
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk8s-operator
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-gitlab-runner
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-ecs-service-extensions
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: everdrop-aws-cdk-constructs
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aeppl-nightly
+[2023-05-13 02:31:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdktf-proxmox
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk8s-operator]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a9] Old Version: [2.0.1a8]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [kraken-core]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdktf-github-actions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.4.dev20230513] Old Version: [0.1.4.dev20230511]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdktf-proxmox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.1.98.tar.gz tmp/cdk-gitlab-runner-2.1.99.tar.gz --markdown 20230513/c/cdk-gitlab-runner/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk8s-operator]: executing diffoscope
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk8s-operator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-operator-0.1.98.tar.gz tmp/cdk8s-operator-0.1.99.tar.gz --markdown 20230513/c/cdk8s-operator/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [alacorder]: New version: [80.4.5] Old Version: [80.4.4]
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a8.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a9.tar.gz --markdown 20230513/c/cdk-ecs-service-extensions/2.0.1a8-2.0.1a9/diff.md --exclude *.pyd
+[2023-05-13 02:31:34] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/ac/b3/418db70f028edd85b3d6b3f742b111081c611aebcc19988cc906d57b1454/aeppl-nightly-0.1.4.dev20230511.tar.gz
+[2023-05-13 02:31:34] INFO root fetch - processPackages [kraken-core]: executing diffoscope
+[2023-05-13 02:31:34] INFO root fetch - processPackages [kraken-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kraken-core-0.9.5.tar.gz tmp/kraken-core-0.9.6.tar.gz --markdown 20230513/k/kraken-core/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdktf-github-actions]: executing diffoscope
+[2023-05-13 02:31:34] INFO root fetch - processPackages [cdktf-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-github-actions-0.0.98.tar.gz tmp/cdktf-github-actions-0.0.99.tar.gz --markdown 20230513/c/cdktf-github-actions/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 02:31:34] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-05-13 02:31:34] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230513/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 02:31:35] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/b9/ba/50a6fe79c08945fcca28b0295069ead408d922234473f70bbfa245485266/alacorder-80.4.5.tar.gz
+[2023-05-13 02:31:35] INFO root fetch - processPackages [cdktf-proxmox]: executing diffoscope
+[2023-05-13 02:31:35] INFO root fetch - processPackages [cdktf-proxmox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-proxmox-0.0.8.tar.gz tmp/cdktf-proxmox-0.0.9.tar.gz --markdown 20230513/c/cdktf-proxmox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 02:31:35] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-05-13 02:31:35] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230513/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-13 02:31:35] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/9f/1f/750db8aaadc151d928df191dd176c3e690d01976da9ec97aeeaf2bf887c8/aeppl-nightly-0.1.4.dev20230513.tar.gz
+[2023-05-13 02:31:35] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-13 02:31:35] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.4.4.tar.gz tmp/alacorder-80.4.5.tar.gz --markdown 20230513/a/alacorder/80.4.4-80.4.5/diff.md --exclude *.pyd
+[2023-05-13 02:31:35] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-05-13 02:31:35] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.4.dev20230511.tar.gz tmp/aeppl-nightly-0.1.4.dev20230513.tar.gz --markdown 20230513/a/aeppl-nightly/0.1.4.dev20230511-0.1.4.dev20230513/diff.md --exclude *.pyd
+[2023-05-13 02:31:36] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Start processing: infer-subc
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2023-05-13 02:31:36] WARNING root fetch - processPackages [infer-subc]: Skipping, unable to determine old version
+[2023-05-13 02:31:36] INFO root fetch - processPackages [infer-subc]: Start processing: vip-hci
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [infer-subc] error
+[2023-05-13 02:31:36] INFO root fetch - processPackages [vip-hci]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [cdk8s-operator]: success
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2023-05-13 02:31:36] INFO root fetch - processPackages [vip-hci]: Downloading https://files.pythonhosted.org/packages/b4/c1/bd808d2e653e0205bed4fa4383b32b6fed316000a9a8697a60faaa72146b/vip_hci-1.4.1.tar.gz
+[2023-05-13 02:31:36] WARNING root fetch - processPackages [vip-hci]: Skipping package: exceeds size limit 71678634>=10485760
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [vip-hci] error
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [kraken-core]: success
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-13 02:31:36] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-05-13 02:31:37] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
+[2023-05-13 02:31:38] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
+[2023-05-13 02:31:38] INFO root fetch - main [MainThread]: Store serial: [18085634]
