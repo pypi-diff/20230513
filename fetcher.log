@@ -3735,3 +3735,26 @@
 [2023-05-13 04:04:08] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
 [2023-05-13 04:04:08] INFO root fetch - main [MainThread]: End processing [pyserde]: success
 [2023-05-13 04:04:08] INFO root fetch - main [MainThread]: Store serial: [18087078]
+[2023-05-13 04:09:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087078]
+[2023-05-13 04:09:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 04:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chatsnack
+[2023-05-13 04:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xhs-2-album
+[2023-05-13 04:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyllms
+[2023-05-13 04:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crystal-toolkit
+[2023-05-13 04:09:18] INFO root fetch - processPackages [chatsnack]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-13 04:09:18] WARNING root fetch - processPackages [xhs-2-album]: Skipping, unable to determine old version
+[2023-05-13 04:09:18] INFO root fetch - processPackages [pyllms]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-13 04:09:18] INFO root fetch - main [MainThread]: End processing [xhs-2-album] error
+[2023-05-13 04:09:18] INFO root fetch - processPackages [crystal-toolkit]: New version: [2023.5.13] Old Version: [2023.4.6]
+[2023-05-13 04:09:18] INFO root fetch - processPackages [crystal-toolkit]: Downloading https://files.pythonhosted.org/packages/ec/e0/0e548f88f96b100d504cb21fdec43d06ac591842ccbafcf3e6c1fcb17abc/crystal_toolkit-2023.4.6.tar.gz
+[2023-05-13 04:09:18] INFO root fetch - processPackages [chatsnack]: Downloading https://files.pythonhosted.org/packages/f6/bc/aae9fc80318921de16f7d570b6e44edce2932294ec943fc0d44f509b8a0f/chatsnack-0.1.5.tar.gz
+[2023-05-13 04:09:18] INFO root fetch - processPackages [pyllms]: Downloading https://files.pythonhosted.org/packages/5c/b1/2edd517ee997bf46a2023e70f643e213dba89d7e5219895a11ed9a168a2d/pyllms-0.2.2.tar.gz
+[2023-05-13 04:09:18] INFO root fetch - processPackages [pyllms]: executing diffoscope
+[2023-05-13 04:09:18] INFO root fetch - processPackages [pyllms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyllms-0.2.1.tar.gz tmp/pyllms-0.2.2.tar.gz --markdown 20230513/p/pyllms/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-13 04:09:18] INFO root fetch - processPackages [chatsnack]: executing diffoscope
+[2023-05-13 04:09:18] INFO root fetch - processPackages [chatsnack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatsnack-0.1.4.tar.gz tmp/chatsnack-0.1.5.tar.gz --markdown 20230513/c/chatsnack/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-13 04:09:19] WARNING root fetch - processPackages [crystal-toolkit]: Skipping package: exceeds size limit 15512257>=10485760
+[2023-05-13 04:09:19] INFO root fetch - main [MainThread]: End processing [crystal-toolkit] error
+[2023-05-13 04:09:20] INFO root fetch - main [MainThread]: End processing [pyllms]: success
+[2023-05-13 04:09:20] INFO root fetch - main [MainThread]: End processing [chatsnack]: success
+[2023-05-13 04:09:20] INFO root fetch - main [MainThread]: Store serial: [18087116]
