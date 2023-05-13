@@ -7567,3 +7567,47 @@
 [2023-05-13 10:31:22] INFO root fetch - processPackages [NlpToolkit-DependencyParser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NlpToolkit-DependencyParser-1.0.8.tar.gz tmp/NlpToolkit-DependencyParser-1.0.9.tar.gz --markdown 20230513/N/NlpToolkit-DependencyParser/1.0.8-1.0.9/diff.md --exclude *.pyd
 [2023-05-13 10:31:23] INFO root fetch - main [MainThread]: End processing [NlpToolkit-DependencyParser]: success
 [2023-05-13 10:31:23] INFO root fetch - main [MainThread]: Store serial: [18088966]
+[2023-05-13 10:36:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088966]
+[2023-05-13 10:36:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 10:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: railguns
+[2023-05-13 10:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: barbell2-xnat
+[2023-05-13 10:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AICreatorPack
+[2023-05-13 10:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BDXConverter
+[2023-05-13 10:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-amazon-ad-api
+[2023-05-13 10:36:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py-sc-kpm
+[2023-05-13 10:36:32] INFO root fetch - processPackages [barbell2-xnat]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-13 10:36:32] INFO root fetch - processPackages [railguns]: New version: [0.68] Old Version: [0.67]
+[2023-05-13 10:36:32] INFO root fetch - processPackages [BDXConverter]: New version: [1.1.0] Old Version: [1.0.16]
+[2023-05-13 10:36:32] INFO root fetch - processPackages [AICreatorPack]: New version: [0.0.3] Old Version: [0.0.1]
+[2023-05-13 10:36:32] INFO root fetch - processPackages [py-sc-kpm]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-13 10:36:32] INFO root fetch - processPackages [python-amazon-ad-api]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-13 10:36:32] INFO root fetch - processPackages [barbell2-xnat]: Downloading https://files.pythonhosted.org/packages/08/93/fad37622dccf8b94b82502fcdc08c7a062d2be4168c0ef17be16291bbdbc/barbell2_xnat-0.1.0.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [AICreatorPack]: Downloading https://files.pythonhosted.org/packages/ba/7a/04a9fa1735a4bcd3c5568562b5c24ce4183ee2d14a4a4c20be659912eda7/AICreatorPack-0.0.1.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [railguns]: Downloading https://files.pythonhosted.org/packages/99/1d/4e1c4e2903c64398295c9a69097fbd99e2b577a8f205a3efa2540981a801/railguns-0.67.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [py-sc-kpm]: Downloading https://files.pythonhosted.org/packages/e4/e9/0217bb05eaf8af4275e1c85c695f1423f677faa2fbec3f934bf2bcbb7efa/py-sc-kpm-0.0.1.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [BDXConverter]: Downloading https://files.pythonhosted.org/packages/00/55/0f1f8646426d2d721fe527653cd48d19a8e07ca672613d9369e9b5a22fa8/BDXConverter-1.1.0.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [python-amazon-ad-api]: Downloading https://files.pythonhosted.org/packages/2a/b2/8f337ed613699a62d96c925cab8ed5e2e4067c9b1a600a312278cba56c10/python-amazon-ad-api-0.4.4.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [barbell2-xnat]: Downloading https://files.pythonhosted.org/packages/73/1d/a74218e4b7c7c1b4a3933c3573c51e82f7e05cb39f3572b2973e469b1580/barbell2_xnat-0.2.0.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [py-sc-kpm]: Downloading https://files.pythonhosted.org/packages/35/c5/20490ce08b839f7b325467e0560faea73e96dc31c41eecc2a8444fab92ce/py-sc-kpm-0.0.2.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [railguns]: Downloading https://files.pythonhosted.org/packages/91/af/472e196b22324e4131c0c7303fc1dcadd37009ecf48a44a70b84df61d31a/railguns-0.68.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [AICreatorPack]: Downloading https://files.pythonhosted.org/packages/03/40/9c78884c296ed4798ba28ba48c6e7861bf7951918bdc87a07c9c0fbc6e96/AICreatorPack-0.0.3.tar.gz
+[2023-05-13 10:36:32] INFO root fetch - processPackages [BDXConverter]: executing diffoscope
+[2023-05-13 10:36:32] INFO root fetch - processPackages [BDXConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDXConverter-1.0.16.tar.gz tmp/BDXConverter-1.1.0.tar.gz --markdown 20230513/B/BDXConverter/1.0.16-1.1.0/diff.md --exclude *.pyd
+[2023-05-13 10:36:32] INFO root fetch - processPackages [barbell2-xnat]: executing diffoscope
+[2023-05-13 10:36:32] INFO root fetch - processPackages [barbell2-xnat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/barbell2_xnat-0.1.0.tar.gz tmp/barbell2_xnat-0.2.0.tar.gz --markdown 20230513/b/barbell2-xnat/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 10:36:32] INFO root fetch - processPackages [railguns]: executing diffoscope
+[2023-05-13 10:36:32] INFO root fetch - processPackages [railguns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/railguns-0.67.tar.gz tmp/railguns-0.68.tar.gz --markdown 20230513/r/railguns/0.67-0.68/diff.md --exclude *.pyd
+[2023-05-13 10:36:32] INFO root fetch - processPackages [py-sc-kpm]: executing diffoscope
+[2023-05-13 10:36:32] INFO root fetch - processPackages [py-sc-kpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-sc-kpm-0.0.1.tar.gz tmp/py-sc-kpm-0.0.2.tar.gz --markdown 20230513/p/py-sc-kpm/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-13 10:36:32] INFO root fetch - processPackages [AICreatorPack]: executing diffoscope
+[2023-05-13 10:36:32] INFO root fetch - processPackages [AICreatorPack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AICreatorPack-0.0.1.tar.gz tmp/AICreatorPack-0.0.3.tar.gz --markdown 20230513/A/AICreatorPack/0.0.1-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 10:36:32] INFO root fetch - processPackages [python-amazon-ad-api]: Downloading https://files.pythonhosted.org/packages/2b/ac/f05a782b19be4a768b67c0e554e6c7db088df62b9986fc413f048835b95d/python-amazon-ad-api-0.4.5.tar.gz
+[2023-05-13 10:36:33] INFO root fetch - processPackages [python-amazon-ad-api]: executing diffoscope
+[2023-05-13 10:36:33] INFO root fetch - processPackages [python-amazon-ad-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-amazon-ad-api-0.4.4.tar.gz tmp/python-amazon-ad-api-0.4.5.tar.gz --markdown 20230513/p/python-amazon-ad-api/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-13 10:36:34] INFO root fetch - main [MainThread]: End processing [barbell2-xnat]: success
+[2023-05-13 10:36:34] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
+[2023-05-13 10:36:34] INFO root fetch - main [MainThread]: End processing [py-sc-kpm]: success
+[2023-05-13 10:36:34] INFO root fetch - main [MainThread]: End processing [railguns]: success
+[2023-05-13 10:36:34] INFO root fetch - main [MainThread]: End processing [AICreatorPack]: success
+[2023-05-13 10:36:34] INFO root fetch - main [MainThread]: End processing [python-amazon-ad-api]: success
+[2023-05-13 10:36:34] INFO root fetch - main [MainThread]: Store serial: [18088984]
