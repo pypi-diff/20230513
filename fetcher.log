@@ -1592,3 +1592,12 @@
 [2023-05-13 02:58:12] INFO root fetch - main [MainThread]: End processing [django-utilitas]: success
 [2023-05-13 02:58:13] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-05-13 02:58:13] INFO root fetch - main [MainThread]: Store serial: [18085742]
+[2023-05-13 03:03:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085742]
+[2023-05-13 03:03:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-13 03:03:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: data-science-toolkit
+[2023-05-13 03:03:22] INFO root fetch - processPackages [data-science-toolkit]: New version: [0.1.0] Old Version: [0.0.999]
+[2023-05-13 03:03:22] INFO root fetch - processPackages [data-science-toolkit]: Downloading https://files.pythonhosted.org/packages/f7/1c/46a1f36de32faa00bbe67d3ca10c114ecc225e8ebaf9d83a23571148f5c1/data-science-toolkit-0.1.0.tar.gz
+[2023-05-13 03:03:22] INFO root fetch - processPackages [data-science-toolkit]: executing diffoscope
+[2023-05-13 03:03:22] INFO root fetch - processPackages [data-science-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-science-toolkit-0.0.999.tar.gz tmp/data-science-toolkit-0.1.0.tar.gz --markdown 20230513/d/data-science-toolkit/0.0.999-0.1.0/diff.md --exclude *.pyd
+[2023-05-13 03:03:24] INFO root fetch - main [MainThread]: End processing [data-science-toolkit]: success
+[2023-05-13 03:03:24] INFO root fetch - main [MainThread]: Store serial: [18085747]
