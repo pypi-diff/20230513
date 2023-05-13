@@ -14401,3 +14401,19 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 23:50:33] INFO root fetch - main [MainThread]: End processing [cognite-gql-pygen]: success
 [2023-05-13 23:52:02] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-05-13 23:52:02] INFO root fetch - main [MainThread]: Store serial: [18093309]
+[2023-05-13 23:57:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093309]
+[2023-05-13 23:57:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 23:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rsync-time-machine.py
+[2023-05-13 23:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aioxlsxstream
+[2023-05-13 23:57:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: midjourney-api
+[2023-05-13 23:57:12] WARNING root fetch - processPackages [rsync-time-machine.py]: Skipping, unable to determine old version
+[2023-05-13 23:57:12] INFO root fetch - main [MainThread]: End processing [rsync-time-machine.py] error
+[2023-05-13 23:57:12] WARNING root fetch - processPackages [aioxlsxstream]: Skipping, unable to determine old version
+[2023-05-13 23:57:12] INFO root fetch - main [MainThread]: End processing [aioxlsxstream] error
+[2023-05-13 23:57:12] INFO root fetch - processPackages [midjourney-api]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-13 23:57:12] INFO root fetch - processPackages [midjourney-api]: Downloading https://files.pythonhosted.org/packages/7b/90/3676a097bff5ee53b0597421789a663dc499471cf6df88af4e0cfaea0f8d/midjourney_api-1.0.4.tar.gz
+[2023-05-13 23:57:12] INFO root fetch - processPackages [midjourney-api]: Downloading https://files.pythonhosted.org/packages/41/ce/cfe4eb21c1f787217cc547e66cccdcea51350b44443192ba1e4f89164177/midjourney_api-1.0.5.tar.gz
+[2023-05-13 23:57:12] INFO root fetch - processPackages [midjourney-api]: executing diffoscope
+[2023-05-13 23:57:12] INFO root fetch - processPackages [midjourney-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/midjourney_api-1.0.4.tar.gz tmp/midjourney_api-1.0.5.tar.gz --markdown 20230513/m/midjourney-api/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-13 23:57:13] INFO root fetch - main [MainThread]: End processing [midjourney-api]: success
+[2023-05-13 23:57:13] INFO root fetch - main [MainThread]: Store serial: [18093321]
