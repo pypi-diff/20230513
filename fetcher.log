@@ -5741,3 +5741,45 @@
 [2023-05-13 07:47:30] INFO root fetch - main [MainThread]: End processing [odoo14-addon-quality-control-oca]: success
 [2023-05-13 07:47:30] INFO root fetch - main [MainThread]: End processing [odoo-addon-quality-control-oca]: success
 [2023-05-13 07:47:30] INFO root fetch - main [MainThread]: Store serial: [18088102]
+[2023-05-13 07:52:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088102]
+[2023-05-13 07:52:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 07:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gpt-hero-core
+[2023-05-13 07:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-akamai
+[2023-05-13 07:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hikari-core
+[2023-05-13 07:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Bigsansar
+[2023-05-13 07:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spotify-playlist-exporter
+[2023-05-13 07:52:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-databricks
+[2023-05-13 07:52:41] INFO root fetch - processPackages [gpt-hero-core]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 07:52:41] INFO root fetch - processPackages [hikari-core]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 07:52:41] INFO root fetch - processPackages [pulumi-akamai]: New version: [4.6.0a1683955130] Old Version: [4.6.0a1683782330]
+[2023-05-13 07:52:41] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2023-05-13 07:52:41] INFO root fetch - processPackages [Bigsansar]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-13 07:52:41] INFO root fetch - processPackages [spotify-playlist-exporter]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 07:52:41] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2023-05-13 07:52:41] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20230513/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/diff.md --exclude *.pyd
+[2023-05-13 07:52:41] INFO root fetch - processPackages [hikari-core]: Downloading https://files.pythonhosted.org/packages/05/8e/f4e41317d70817d2260536a3058814d84be58e6ebd544091f404adaff903/hikari_core-0.1.1.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [gpt-hero-core]: Downloading https://files.pythonhosted.org/packages/8b/f2/5003895e08dc60934e1dca76c002ec51103d83da2915edd85113ff63f434/gpt_hero_core-0.0.3.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/c0/72/94be46423674a784d15b2cfcf985f30ca12733964b829be03ec123cb52fb/Bigsansar-1.4.1.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [spotify-playlist-exporter]: Downloading https://files.pythonhosted.org/packages/0c/85/28bea44d29239809e767eb833d8160c29f98218b032b85cccc37c09369ea/spotify-playlist-exporter-0.0.2.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [pulumi-akamai]: Downloading https://files.pythonhosted.org/packages/10/96/bed0f309349899dcbd90c51dcbc58bea45f189ce552e086a40b2f9983942/pulumi_akamai-4.6.0a1683955130.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [gpt-hero-core]: Downloading https://files.pythonhosted.org/packages/ba/68/647a0a635ea768ccf1826612e49bb02ddbcd2516683c2f2b35d51b2af331/gpt_hero_core-0.0.4.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [pulumi-akamai]: executing diffoscope
+[2023-05-13 07:52:41] INFO root fetch - processPackages [pulumi-akamai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_akamai-4.6.0a1683782330.tar.gz tmp/pulumi_akamai-4.6.0a1683955130.tar.gz --markdown 20230513/p/pulumi-akamai/4.6.0a1683782330-4.6.0a1683955130/diff.md --exclude *.pyd
+[2023-05-13 07:52:41] INFO root fetch - processPackages [spotify-playlist-exporter]: Downloading https://files.pythonhosted.org/packages/3a/35/3c25924f3572f757e8a52ad9f5060e6fd3b7873035deeece72d716b3514a/spotify-playlist-exporter-0.0.3.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/13/8d/55fc44c19d5bb2583c401d3e13aa3f66f744ff4adf4509e2b1f1ae23ad2b/Bigsansar-1.4.2.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [hikari-core]: Downloading https://files.pythonhosted.org/packages/5c/18/ee6f9974320cc62e46510fcb777f949cb585853e351691979a970195240f/hikari_core-0.1.2.tar.gz
+[2023-05-13 07:52:41] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2023-05-13 07:52:41] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-1.4.1.tar.gz tmp/Bigsansar-1.4.2.tar.gz --markdown 20230513/B/Bigsansar/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-13 07:52:41] INFO root fetch - processPackages [gpt-hero-core]: executing diffoscope
+[2023-05-13 07:52:41] INFO root fetch - processPackages [gpt-hero-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_hero_core-0.0.3.tar.gz tmp/gpt_hero_core-0.0.4.tar.gz --markdown 20230513/g/gpt-hero-core/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 07:52:41] INFO root fetch - processPackages [spotify-playlist-exporter]: executing diffoscope
+[2023-05-13 07:52:41] INFO root fetch - processPackages [spotify-playlist-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotify-playlist-exporter-0.0.2.tar.gz tmp/spotify-playlist-exporter-0.0.3.tar.gz --markdown 20230513/s/spotify-playlist-exporter/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 07:52:42] INFO root fetch - processPackages [hikari-core]: executing diffoscope
+[2023-05-13 07:52:42] INFO root fetch - processPackages [hikari-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari_core-0.1.1.tar.gz tmp/hikari_core-0.1.2.tar.gz --markdown 20230513/h/hikari-core/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 07:52:43] INFO root fetch - main [MainThread]: End processing [spotify-playlist-exporter]: success
+[2023-05-13 07:52:43] INFO root fetch - main [MainThread]: End processing [gpt-hero-core]: success
+[2023-05-13 07:52:43] INFO root fetch - main [MainThread]: End processing [hikari-core]: success
+[2023-05-13 07:52:43] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2023-05-13 07:52:44] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2023-05-13 07:52:44] INFO root fetch - main [MainThread]: End processing [pulumi-akamai]: success
+[2023-05-13 07:52:44] INFO root fetch - main [MainThread]: Store serial: [18088118]
