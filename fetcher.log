@@ -8502,3 +8502,25 @@
 [2023-05-13 12:47:35] INFO root fetch - main [MainThread]: End processing [django-fragments]: success
 [2023-05-13 12:47:35] INFO root fetch - main [MainThread]: End processing [streaming-form-data]: success
 [2023-05-13 12:47:35] INFO root fetch - main [MainThread]: Store serial: [18089547]
+[2023-05-13 12:52:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089547]
+[2023-05-13 12:52:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 12:52:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ebbe
+[2023-05-13 12:52:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jinsi
+[2023-05-13 12:52:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: py-tailwind-utils
+[2023-05-13 12:52:44] INFO root fetch - processPackages [py-tailwind-utils]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-13 12:52:44] INFO root fetch - processPackages [ebbe]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-13 12:52:44] INFO root fetch - processPackages [jinsi]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-13 12:52:44] INFO root fetch - processPackages [ebbe]: executing diffoscope
+[2023-05-13 12:52:44] INFO root fetch - processPackages [ebbe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebbe-1.8.0.tar.gz tmp/ebbe-1.9.0.tar.gz --markdown 20230513/e/ebbe/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-13 12:52:44] INFO root fetch - processPackages [py-tailwind-utils]: Downloading https://files.pythonhosted.org/packages/74/61/cdba3e75ba12906a6d33e18d31e277f49c20bc4802fa7dec5d17727b6e25/py-tailwind-utils-1.0.0.tar.gz
+[2023-05-13 12:52:44] INFO root fetch - processPackages [jinsi]: Downloading https://files.pythonhosted.org/packages/c6/f9/9b908232d3048bba958366eeb718ff35cc73d89a717302c5a9cfbc493ebb/jinsi-0.8.0.tar.gz
+[2023-05-13 12:52:45] INFO root fetch - processPackages [py-tailwind-utils]: Downloading https://files.pythonhosted.org/packages/a9/89/d2ff10b8013932ce426218781eb07d3fa6ba52a2bd713d09346b452946e7/py-tailwind-utils-1.0.1.tar.gz
+[2023-05-13 12:52:45] INFO root fetch - processPackages [py-tailwind-utils]: executing diffoscope
+[2023-05-13 12:52:45] INFO root fetch - processPackages [py-tailwind-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py-tailwind-utils-1.0.0.tar.gz tmp/py-tailwind-utils-1.0.1.tar.gz --markdown 20230513/p/py-tailwind-utils/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-13 12:52:45] INFO root fetch - processPackages [jinsi]: Downloading https://files.pythonhosted.org/packages/ea/53/0234845dc6084e3fcab587d4c676fccad714f4f1c31fb112cd5f7cd291e7/jinsi-0.9.0.tar.gz
+[2023-05-13 12:52:45] INFO root fetch - processPackages [jinsi]: executing diffoscope
+[2023-05-13 12:52:45] INFO root fetch - processPackages [jinsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinsi-0.8.0.tar.gz tmp/jinsi-0.9.0.tar.gz --markdown 20230513/j/jinsi/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 12:52:46] INFO root fetch - main [MainThread]: End processing [ebbe]: success
+[2023-05-13 12:52:46] INFO root fetch - main [MainThread]: End processing [py-tailwind-utils]: success
+[2023-05-13 12:52:46] INFO root fetch - main [MainThread]: End processing [jinsi]: success
+[2023-05-13 12:52:46] INFO root fetch - main [MainThread]: Store serial: [18089556]
