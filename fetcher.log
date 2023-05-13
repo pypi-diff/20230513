@@ -6940,3 +6940,25 @@
 [2023-05-13 09:33:32] INFO root fetch - main [MainThread]: End processing [infer-subc]: success
 [2023-05-13 09:33:56] INFO root fetch - main [MainThread]: End processing [pulumi-alicloud]: success
 [2023-05-13 09:33:56] INFO root fetch - main [MainThread]: Store serial: [18088670]
+[2023-05-13 09:39:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088670]
+[2023-05-13 09:39:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 09:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hcgf
+[2023-05-13 09:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lalsuite
+[2023-05-13 09:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo10-addon-business-product-location
+[2023-05-13 09:39:05] INFO root fetch - processPackages [hcgf]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-13 09:39:06] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-13 09:39:06] INFO root fetch - processPackages [odoo10-addon-business-product-location]: New version: [10.0.1.0.1.99.dev2] Old Version: [10.0.1.0.1.99.dev1]
+[2023-05-13 09:39:06] INFO root fetch - processPackages [hcgf]: Downloading https://files.pythonhosted.org/packages/19/b0/f7ff29f7575ca78b0c9cc13c4258d724364a85413bdb046add93f4bebb91/hcgf-0.1.0.tar.gz
+[2023-05-13 09:39:06] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-13 09:39:06] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-13 09:39:06] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-13 09:39:06] INFO root fetch - processPackages [odoo10-addon-business-product-location]: Downloading https://files.pythonhosted.org/packages/52/0a/e5f372b784e76c653c2e1f8f34c2e721573381077fd0520cb1536263112a/odoo10_addon_business_product_location-10.0.1.0.1.99.dev1-py2-none-any.whl
+[2023-05-13 09:39:06] INFO root fetch - processPackages [hcgf]: Downloading https://files.pythonhosted.org/packages/2e/ce/09fe88bec75377f072ee1ef093f7e0385023bef8766edca4a6bb64c78d99/hcgf-0.2.0.tar.gz
+[2023-05-13 09:39:06] INFO root fetch - processPackages [hcgf]: executing diffoscope
+[2023-05-13 09:39:06] INFO root fetch - processPackages [hcgf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hcgf-0.1.0.tar.gz tmp/hcgf-0.2.0.tar.gz --markdown 20230513/h/hcgf/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 09:39:06] INFO root fetch - processPackages [odoo10-addon-business-product-location]: Downloading https://files.pythonhosted.org/packages/0c/01/7931c5bce66fd70844ab642baec090951063ebf95f8a5e93795639654fb1/odoo10_addon_business_product_location-10.0.1.0.1.99.dev2-py2-none-any.whl
+[2023-05-13 09:39:06] INFO root fetch - processPackages [odoo10-addon-business-product-location]: executing diffoscope
+[2023-05-13 09:39:06] INFO root fetch - processPackages [odoo10-addon-business-product-location]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_business_product_location-10.0.1.0.1.99.dev1-py2-none-any.whl.zip tmp/odoo10_addon_business_product_location-10.0.1.0.1.99.dev2-py2-none-any.whl.zip --markdown 20230513/o/odoo10-addon-business-product-location/10.0.1.0.1.99.dev1-10.0.1.0.1.99.dev2/diff.md --exclude *.pyd
+[2023-05-13 09:39:07] INFO root fetch - main [MainThread]: End processing [hcgf]: success
+[2023-05-13 09:39:08] INFO root fetch - main [MainThread]: End processing [odoo10-addon-business-product-location]: success
+[2023-05-13 09:39:08] INFO root fetch - main [MainThread]: Store serial: [18088692]
