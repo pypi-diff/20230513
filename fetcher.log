@@ -9165,3 +9165,69 @@
 [2023-05-13 14:02:19] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark2]: success
 [2023-05-13 14:02:30] INFO root fetch - main [MainThread]: End processing [pyinstaller]: success
 [2023-05-13 14:02:30] INFO root fetch - main [MainThread]: Store serial: [18089950]
+[2023-05-13 14:07:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089950]
+[2023-05-13 14:07:39] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: giup
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: power-grid-model
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: v4xyz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hiyobot
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cytotable
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bibx
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: airoboros
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: message-ix-models
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: hapdoc
+[2023-05-13 14:07:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bambooai
+[2023-05-13 14:07:39] INFO root fetch - processPackages [airoboros]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [v4xyz]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [power-grid-model]: New version: [1.5.0rc9171103440397] Old Version: [1.5.0rc9166510100968]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [bibx]: New version: [0.0.1a5] Old Version: [0.0.1a4]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [giup]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-13 14:07:39] WARNING root fetch - processPackages [cytotable]: Skipping, unable to determine old version
+[2023-05-13 14:07:39] INFO root fetch - processPackages [v4xyz]: executing diffoscope
+[2023-05-13 14:07:39] INFO root fetch - processPackages [airoboros]: executing diffoscope
+[2023-05-13 14:07:39] INFO root fetch - processPackages [hiyobot]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [cytotable]: Start processing: tf-agents-nightly
+[2023-05-13 14:07:39] INFO root fetch - main [MainThread]: End processing [cytotable] error
+[2023-05-13 14:07:39] INFO root fetch - processPackages [v4xyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v4xyz-0.0.2.tar.gz tmp/v4xyz-0.0.3.tar.gz --markdown 20230513/v/v4xyz/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 14:07:39] INFO root fetch - processPackages [airoboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airoboros-0.2.2.tar.gz tmp/airoboros-0.2.3.tar.gz --markdown 20230513/a/airoboros/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-13 14:07:39] INFO root fetch - processPackages [message-ix-models]: New version: [2023.5.13] Old Version: [2023.4.2]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [bambooai]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [power-grid-model]: executing diffoscope
+[2023-05-13 14:07:39] INFO root fetch - processPackages [power-grid-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/power_grid_model-1.5.0rc9166510100968-py3-none-win_amd64.whl.zip tmp/power_grid_model-1.5.0rc9171103440397-py3-none-macosx_10_9_x86_64.whl.zip --markdown 20230513/p/power-grid-model/1.5.0rc9166510100968-1.5.0rc9171103440397/diff.md --exclude *.pyd
+[2023-05-13 14:07:39] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 14:07:39] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 14:07:39] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-05-13 14:07:39] INFO root fetch - processPackages [bibx]: Downloading https://files.pythonhosted.org/packages/ec/a9/13cfb7732158c43754dc211909fafb551b297107e8fcd3586878b3761e25/bibx-0.0.1a4.tar.gz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [giup]: Downloading https://files.pythonhosted.org/packages/4b/03/e001e2050b0b5311311aee256662676f4a8b91b36caf51cb29155588ac91/giup-1.1.2.tar.gz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-05-13 14:07:39] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230513/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-05-13 14:07:39] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/29/5e/58aa39a379bc2fcd02c03574cfe71d308fe069682edda9c9722e1d6f8b65/hiyobot-0.1.5.tar.gz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [message-ix-models]: Downloading https://files.pythonhosted.org/packages/52/91/109c57acfb6ec60c8a0a656cbc5ac131a7ae24bdbcfa2ccc7ecf70e367af/message-ix-models-2023.4.2.tar.gz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/69/7e/cc79c1e73f6481305df5841c15384c8da904837e1161a8ebef70793d697e/bambooai-0.1.8.tar.gz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [giup]: Downloading https://files.pythonhosted.org/packages/9c/c7/85320e982eea3321f2b89e922852fda24fb5094fd5b955db32ad83dd406e/giup-1.1.3.tar.gz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [bambooai]: Downloading https://files.pythonhosted.org/packages/26/33/60049e1a21a8f400d69b83f73a235102af9fd854e89ea438463544dd084f/bambooai-0.1.9.tar.gz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/5b/c3/285a4f3bd7c084d28d539f083e9c750d4685369a66f556047c59fed07aed/hiyobot-0.1.6.tar.gz
+[2023-05-13 14:07:39] INFO root fetch - processPackages [giup]: executing diffoscope
+[2023-05-13 14:07:39] INFO root fetch - processPackages [giup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/giup-1.1.2.tar.gz tmp/giup-1.1.3.tar.gz --markdown 20230513/g/giup/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-13 14:07:40] INFO root fetch - processPackages [message-ix-models]: Downloading https://files.pythonhosted.org/packages/af/4b/53ab837e0adb5d9e8d90b669857ba7b9935700a23d840144cbb34530a068/message-ix-models-2023.5.13.tar.gz
+[2023-05-13 14:07:40] INFO root fetch - processPackages [bambooai]: executing diffoscope
+[2023-05-13 14:07:40] INFO root fetch - processPackages [bambooai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bambooai-0.1.8.tar.gz tmp/bambooai-0.1.9.tar.gz --markdown 20230513/b/bambooai/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 14:07:40] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-13 14:07:40] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.1.5.tar.gz tmp/hiyobot-0.1.6.tar.gz --markdown 20230513/h/hiyobot/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-13 14:07:40] INFO root fetch - processPackages [message-ix-models]: executing diffoscope
+[2023-05-13 14:07:40] INFO root fetch - processPackages [message-ix-models]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/message-ix-models-2023.4.2.tar.gz tmp/message-ix-models-2023.5.13.tar.gz --markdown 20230513/m/message-ix-models/2023.4.2-2023.5.13/diff.md --exclude *.pyd
+[2023-05-13 14:07:40] INFO root fetch - processPackages [bibx]: Downloading https://files.pythonhosted.org/packages/fa/64/45331f7b90e0331efa41d1e49f15eeb1fd17e148e848b05cb8056a6dfa56/bibx-0.0.1a5.tar.gz
+[2023-05-13 14:07:40] INFO root fetch - main [MainThread]: End processing [v4xyz]: success
+[2023-05-13 14:07:41] INFO root fetch - main [MainThread]: End processing [airoboros]: success
+[2023-05-13 14:07:41] INFO root fetch - processPackages [bibx]: executing diffoscope
+[2023-05-13 14:07:41] INFO root fetch - processPackages [bibx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bibx-0.0.1a4.tar.gz tmp/bibx-0.0.1a5.tar.gz --markdown 20230513/b/bibx/0.0.1a4-0.0.1a5/diff.md --exclude *.pyd
+[2023-05-13 14:07:41] INFO root fetch - main [MainThread]: End processing [power-grid-model]: success
+[2023-05-13 14:07:41] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 14:07:41] INFO root fetch - main [MainThread]: End processing [bambooai]: success
+[2023-05-13 14:07:42] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-13 14:07:42] INFO root fetch - main [MainThread]: End processing [giup]: success
+[2023-05-13 14:07:43] INFO root fetch - main [MainThread]: End processing [message-ix-models]: success
+[2023-05-13 14:07:43] INFO root fetch - main [MainThread]: End processing [bibx]: success
+[2023-05-13 14:07:45] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-05-13 14:07:45] INFO root fetch - main [MainThread]: Store serial: [18089988]
