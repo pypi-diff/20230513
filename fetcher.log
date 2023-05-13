@@ -6060,3 +6060,49 @@
 [2023-05-13 08:20:37] INFO root fetch - main [MainThread]: End processing [irails]: success
 [2023-05-13 08:20:37] INFO root fetch - main [MainThread]: End processing [reasoner-validator]: success
 [2023-05-13 08:20:37] INFO root fetch - main [MainThread]: Store serial: [18088289]
+[2023-05-13 08:25:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088289]
+[2023-05-13 08:25:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-13 08:25:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-slack
+[2023-05-13 08:25:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-pos-payment-change
+[2023-05-13 08:25:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-pos-payment-change
+[2023-05-13 08:25:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-pos-payment-change
+[2023-05-13 08:25:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xcpcio-board-spider
+[2023-05-13 08:25:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pulumi-signalfx
+[2023-05-13 08:25:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vcorelib
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo12-addon-pos-payment-change]: New version: [12.0.1.1.1.99.dev4] Old Version: [12.0.1.1.1.99.dev3]
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo14-addon-pos-payment-change]: New version: [14.0.1.0.2.dev3] Old Version: [14.0.1.0.2.dev2]
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: New version: [15.0.1.0.0.7] Old Version: [15.0.1.0.0.6]
+[2023-05-13 08:25:46] INFO root fetch - processPackages [vcorelib]: New version: [1.6.4] Old Version: [1.6.3]
+[2023-05-13 08:25:46] INFO root fetch - processPackages [pulumi-signalfx]: New version: [5.9.0a1678179334] Old Version: [5.9.0a1678129624]
+[2023-05-13 08:25:46] INFO root fetch - processPackages [xcpcio-board-spider]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 08:25:46] INFO root fetch - processPackages [pulumi-slack]: New version: [0.4.3a1683957555] Old Version: [0.4.3a1683787560]
+[2023-05-13 08:25:46] INFO root fetch - processPackages [xcpcio-board-spider]: executing diffoscope
+[2023-05-13 08:25:46] INFO root fetch - processPackages [xcpcio-board-spider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcpcio_board_spider-0.0.8.tar.gz tmp/xcpcio_board_spider-0.0.9.tar.gz --markdown 20230513/x/xcpcio-board-spider/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 08:25:46] INFO root fetch - processPackages [pulumi-signalfx]: executing diffoscope
+[2023-05-13 08:25:46] INFO root fetch - processPackages [pulumi-signalfx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_signalfx-5.9.0a1678129624.tar.gz tmp/pulumi_signalfx-5.9.0a1678179334.tar.gz --markdown 20230513/p/pulumi-signalfx/5.9.0a1678129624-5.9.0a1678179334/diff.md --exclude *.pyd
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo14-addon-pos-payment-change]: Downloading https://files.pythonhosted.org/packages/31/ba/d45b106bafc8ba1afec80065bc46509877012e1c94a1d60ebcb6337451f6/odoo14_addon_pos_payment_change-14.0.1.0.2.dev2-py3-none-any.whl
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo12-addon-pos-payment-change]: Downloading https://files.pythonhosted.org/packages/9e/d8/b9431c459d6bf0faf40c61a81ddf43edbdd94ab730d5821a938ee424ad5e/odoo12_addon_pos_payment_change-12.0.1.1.1.99.dev3-py3-none-any.whl
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: Downloading https://files.pythonhosted.org/packages/f5/de/2e248a9a5f73f8307a20f4711b31c983ec4c92349cfd7f3e4f1aeca968bd/odoo_addon_pos_payment_change-15.0.1.0.0.6-py3-none-any.whl
+[2023-05-13 08:25:46] INFO root fetch - processPackages [vcorelib]: Downloading https://files.pythonhosted.org/packages/b7/4b/d57abae1cf5b69804ee3c8a837a4ec9273378857ea12f986dd55cecc207e/vcorelib-1.6.4.tar.gz
+[2023-05-13 08:25:46] INFO root fetch - processPackages [pulumi-slack]: Downloading https://files.pythonhosted.org/packages/f1/b9/a1b64ac5f1a617da3b10d90c6fa2551e4d07d0cfeaae0801a650db51c711/pulumi_slack-0.4.3a1683957555.tar.gz
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo12-addon-pos-payment-change]: Downloading https://files.pythonhosted.org/packages/3d/3b/c81cf1b72416b201674d1ebfa5ede70fefa6b548ca68c42c432fb4fed217/odoo12_addon_pos_payment_change-12.0.1.1.1.99.dev4-py3-none-any.whl
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: Downloading https://files.pythonhosted.org/packages/bb/cc/976518b3181b1ce6eaf35e80167cd9b80d9770c4a3e23214eeb8fc0fb24a/odoo_addon_pos_payment_change-15.0.1.0.0.7-py3-none-any.whl
+[2023-05-13 08:25:46] INFO root fetch - processPackages [odoo14-addon-pos-payment-change]: Downloading https://files.pythonhosted.org/packages/80/a1/b12826079c0e03586ae52b0adb403e002e4f84f38f184d24d47b5254a2df/odoo14_addon_pos_payment_change-14.0.1.0.2.dev3-py3-none-any.whl
+[2023-05-13 08:25:46] INFO root fetch - processPackages [vcorelib]: executing diffoscope
+[2023-05-13 08:25:46] INFO root fetch - processPackages [vcorelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcorelib-1.6.3.tar.gz tmp/vcorelib-1.6.4.tar.gz --markdown 20230513/v/vcorelib/1.6.3-1.6.4/diff.md --exclude *.pyd
+[2023-05-13 08:25:47] INFO root fetch - processPackages [odoo14-addon-pos-payment-change]: executing diffoscope
+[2023-05-13 08:25:47] INFO root fetch - processPackages [odoo14-addon-pos-payment-change]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_pos_payment_change-14.0.1.0.2.dev2-py3-none-any.whl.zip tmp/odoo14_addon_pos_payment_change-14.0.1.0.2.dev3-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-pos-payment-change/14.0.1.0.2.dev2-14.0.1.0.2.dev3/diff.md --exclude *.pyd
+[2023-05-13 08:25:47] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: executing diffoscope
+[2023-05-13 08:25:47] INFO root fetch - processPackages [odoo-addon-pos-payment-change]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_pos_payment_change-15.0.1.0.0.6-py3-none-any.whl.zip tmp/odoo_addon_pos_payment_change-15.0.1.0.0.7-py3-none-any.whl.zip --markdown 20230513/o/odoo-addon-pos-payment-change/15.0.1.0.0.6-15.0.1.0.0.7/diff.md --exclude *.pyd
+[2023-05-13 08:25:47] INFO root fetch - processPackages [pulumi-slack]: executing diffoscope
+[2023-05-13 08:25:47] INFO root fetch - processPackages [pulumi-slack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_slack-0.4.3a1683787560.tar.gz tmp/pulumi_slack-0.4.3a1683957555.tar.gz --markdown 20230513/p/pulumi-slack/0.4.3a1683787560-0.4.3a1683957555/diff.md --exclude *.pyd
+[2023-05-13 08:25:47] INFO root fetch - processPackages [odoo12-addon-pos-payment-change]: executing diffoscope
+[2023-05-13 08:25:47] INFO root fetch - processPackages [odoo12-addon-pos-payment-change]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_pos_payment_change-12.0.1.1.1.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_pos_payment_change-12.0.1.1.1.99.dev4-py3-none-any.whl.zip --markdown 20230513/o/odoo12-addon-pos-payment-change/12.0.1.1.1.99.dev3-12.0.1.1.1.99.dev4/diff.md --exclude *.pyd
+[2023-05-13 08:25:47] INFO root fetch - main [MainThread]: End processing [xcpcio-board-spider]: success
+[2023-05-13 08:25:48] INFO root fetch - main [MainThread]: End processing [pulumi-signalfx]: success
+[2023-05-13 08:25:48] INFO root fetch - main [MainThread]: End processing [odoo14-addon-pos-payment-change]: success
+[2023-05-13 08:25:48] INFO root fetch - main [MainThread]: End processing [odoo12-addon-pos-payment-change]: success
+[2023-05-13 08:25:48] INFO root fetch - main [MainThread]: End processing [odoo-addon-pos-payment-change]: success
+[2023-05-13 08:25:49] INFO root fetch - main [MainThread]: End processing [vcorelib]: success
+[2023-05-13 08:26:23] INFO root fetch - main [MainThread]: End processing [pulumi-slack]: success
+[2023-05-13 08:26:23] INFO root fetch - main [MainThread]: Store serial: [18088307]
