@@ -6962,3 +6962,28 @@
 [2023-05-13 09:39:07] INFO root fetch - main [MainThread]: End processing [hcgf]: success
 [2023-05-13 09:39:08] INFO root fetch - main [MainThread]: End processing [odoo10-addon-business-product-location]: success
 [2023-05-13 09:39:08] INFO root fetch - main [MainThread]: Store serial: [18088692]
+[2023-05-13 09:44:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088692]
+[2023-05-13 09:44:17] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 09:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo12-addon-stock-request
+[2023-05-13 09:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-python-crud-tool
+[2023-05-13 09:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: BioSAK
+[2023-05-13 09:44:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addons-oca-stock-logistics-warehouse
+[2023-05-13 09:44:17] INFO root fetch - processPackages [BioSAK]: New version: [1.64.0] Old Version: [1.63.9]
+[2023-05-13 09:44:17] INFO root fetch - processPackages [BioSAK]: Downloading https://files.pythonhosted.org/packages/6e/4c/86f95a262b3aac797dc913ea8d44cea95695bd03cf1e62a29c03272c3b22/BioSAK-1.63.9.tar.gz
+[2023-05-13 09:44:17] WARNING root fetch - processPackages [simple-python-crud-tool]: Skipping, unable to determine old version
+[2023-05-13 09:44:17] INFO root fetch - main [MainThread]: End processing [simple-python-crud-tool] error
+[2023-05-13 09:44:17] INFO root fetch - processPackages [odoo12-addon-stock-request]: New version: [12.0.1.5.0.99.dev9] Old Version: [12.0.1.5.0.99.dev8]
+[2023-05-13 09:44:17] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: New version: [16.0.20230512.0] Old Version: [16.0.20230428.0]
+[2023-05-13 09:44:17] WARNING root fetch - processPackages [BioSAK]: Skipping package: exceeds size limit 16294799>=10485760
+[2023-05-13 09:44:17] INFO root fetch - main [MainThread]: End processing [BioSAK] error
+[2023-05-13 09:44:17] INFO root fetch - processPackages [odoo12-addon-stock-request]: Downloading https://files.pythonhosted.org/packages/3a/dc/bc42f5c4c46cdaa7720386252d0f19d321794211e108148c3930ace4cd32/odoo12_addon_stock_request-12.0.1.5.0.99.dev8-py3-none-any.whl
+[2023-05-13 09:44:17] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/b3/1b/6cceb1cdf57fad6a577bec3d9aa2bb04d0d06eb5dbcfc385cc4a869decfd/odoo_addons_oca_stock_logistics_warehouse-16.0.20230428.0-py3-none-any.whl
+[2023-05-13 09:44:17] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: Downloading https://files.pythonhosted.org/packages/35/ef/4f5c71c536b370d2af89c1854773b34d6721c7adc6dbd926515f567b28c9/odoo_addons_oca_stock_logistics_warehouse-16.0.20230512.0-py3-none-any.whl
+[2023-05-13 09:44:17] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: executing diffoscope
+[2023-05-13 09:44:17] INFO root fetch - processPackages [odoo-addons-oca-stock-logistics-warehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20230428.0-py3-none-any.whl.zip tmp/odoo_addons_oca_stock_logistics_warehouse-16.0.20230512.0-py3-none-any.whl.zip --markdown 20230513/o/odoo-addons-oca-stock-logistics-warehouse/16.0.20230428.0-16.0.20230512.0/diff.md --exclude *.pyd
+[2023-05-13 09:44:17] INFO root fetch - processPackages [odoo12-addon-stock-request]: Downloading https://files.pythonhosted.org/packages/ac/b2/a9bece9f7386e26cb70f57438f2ad264677d4ce0c0eaec498fc9fb40d7d2/odoo12_addon_stock_request-12.0.1.5.0.99.dev9-py3-none-any.whl
+[2023-05-13 09:44:18] INFO root fetch - processPackages [odoo12-addon-stock-request]: executing diffoscope
+[2023-05-13 09:44:18] INFO root fetch - processPackages [odoo12-addon-stock-request]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_stock_request-12.0.1.5.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_stock_request-12.0.1.5.0.99.dev9-py3-none-any.whl.zip --markdown 20230513/o/odoo12-addon-stock-request/12.0.1.5.0.99.dev8-12.0.1.5.0.99.dev9/diff.md --exclude *.pyd
+[2023-05-13 09:44:18] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-stock-logistics-warehouse]: success
+[2023-05-13 09:44:19] INFO root fetch - main [MainThread]: End processing [odoo12-addon-stock-request]: success
+[2023-05-13 09:44:19] INFO root fetch - main [MainThread]: Store serial: [18088704]
