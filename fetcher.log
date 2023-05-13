@@ -7855,3 +7855,41 @@
 [2023-05-13 11:07:57] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
 [2023-05-13 11:07:57] INFO root fetch - main [MainThread]: End processing [autogluon.tabular]: success
 [2023-05-13 11:07:57] INFO root fetch - main [MainThread]: Store serial: [18089157]
+[2023-05-13 11:13:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089157]
+[2023-05-13 11:13:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ebbe
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglowmarkt
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sparta-auth0
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: icalstatus
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mttf
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ebbe]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-13 11:13:07] INFO root fetch - processPackages [pyglowmarkt]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-13 11:13:07] INFO root fetch - processPackages [mttf]: New version: [0.9.202209080909] Old Version: [0.9.202209080905]
+[2023-05-13 11:13:07] INFO root fetch - processPackages [sparta-auth0]: New version: [1.0.0] Old Version: [0.4.3]
+[2023-05-13 11:13:07] INFO root fetch - processPackages [icalstatus]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ebbe]: Downloading https://files.pythonhosted.org/packages/62/e3/2fd509a85b795096ee4bc9db6f335a3c41abe8b10288d05fc114c1fc699e/ebbe-1.8.0.tar.gz
+[2023-05-13 11:13:07] INFO root fetch - processPackages [pyglowmarkt]: Downloading https://files.pythonhosted.org/packages/22/4b/8c3adec75c7ce3ccc5d6f1854cf269469a945574c2f26737485195a92496/pyglowmarkt-0.5.5.tar.gz
+[2023-05-13 11:13:07] INFO root fetch - processPackages [mttf]: Downloading https://files.pythonhosted.org/packages/46/76/a3f3cca5ba9d0c3c9dc77aa83159d75cd4087c9f02eafc456281b40187d2/mttf-0.9.202209080905-py3-none-any.whl
+[2023-05-13 11:13:07] INFO root fetch - processPackages [icalstatus]: Downloading https://files.pythonhosted.org/packages/67/bf/04fe5df327c5a8bbb696a931806de77ebcc6c8b025918bed7cfd6b2bd137/icalstatus-0.0.4-py3-none-any.whl
+[2023-05-13 11:13:07] INFO root fetch - processPackages [sparta-auth0]: Downloading https://files.pythonhosted.org/packages/74/b5/35d588090e937297959e90d6f5d5d039025edb4562c18468a9353bb4afb0/sparta-auth0-0.4.3.tar.gz
+[2023-05-13 11:13:07] INFO root fetch - processPackages [pyglowmarkt]: Downloading https://files.pythonhosted.org/packages/f8/03/dea0943d5edd687e61b17ef31c4cf2735274092b7c9eb5e10ba073a9c38b/pyglowmarkt-0.5.6.tar.gz
+[2023-05-13 11:13:07] INFO root fetch - processPackages [pyglowmarkt]: executing diffoscope
+[2023-05-13 11:13:07] INFO root fetch - processPackages [pyglowmarkt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglowmarkt-0.5.5.tar.gz tmp/pyglowmarkt-0.5.6.tar.gz --markdown 20230513/p/pyglowmarkt/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ebbe]: Downloading https://files.pythonhosted.org/packages/d7/45/6cd4270962fc840707b2cae8746e98562e37c875417ec218cc09a41e33b5/ebbe-1.9.0.tar.gz
+[2023-05-13 11:13:07] INFO root fetch - processPackages [icalstatus]: Downloading https://files.pythonhosted.org/packages/39/87/e2eb3f73536fc37cc19de643ab465234234676c44840dee94c4462f55a96/icalstatus-0.0.5-py3-none-any.whl
+[2023-05-13 11:13:07] INFO root fetch - processPackages [mttf]: Downloading https://files.pythonhosted.org/packages/4e/1f/febde16f6cd22109dd73e3b250fb39d4192f526fdd62dd802a839a67b695/mttf-0.9.202209080909-py3-none-any.whl
+[2023-05-13 11:13:07] INFO root fetch - processPackages [sparta-auth0]: Downloading https://files.pythonhosted.org/packages/f7/82/74994d596146f02b358c416fcf749b068afcbf8952ee281e383db4102929/sparta-auth0-1.0.0.tar.gz
+[2023-05-13 11:13:07] INFO root fetch - processPackages [sparta-auth0]: executing diffoscope
+[2023-05-13 11:13:07] INFO root fetch - processPackages [sparta-auth0]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sparta-auth0-0.4.3.tar.gz tmp/sparta-auth0-1.0.0.tar.gz --markdown 20230513/s/sparta-auth0/0.4.3-1.0.0/diff.md --exclude *.pyd
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ebbe]: executing diffoscope
+[2023-05-13 11:13:07] INFO root fetch - processPackages [ebbe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebbe-1.8.0.tar.gz tmp/ebbe-1.9.0.tar.gz --markdown 20230513/e/ebbe/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-13 11:13:07] INFO root fetch - processPackages [icalstatus]: executing diffoscope
+[2023-05-13 11:13:07] INFO root fetch - processPackages [icalstatus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/icalstatus-0.0.4-py3-none-any.whl.zip tmp/icalstatus-0.0.5-py3-none-any.whl.zip --markdown 20230513/i/icalstatus/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-13 11:13:07] INFO root fetch - processPackages [mttf]: executing diffoscope
+[2023-05-13 11:13:07] INFO root fetch - processPackages [mttf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mttf-0.9.202209080905-py3-none-any.whl.zip tmp/mttf-0.9.202209080909-py3-none-any.whl.zip --markdown 20230513/m/mttf/0.9.202209080905-0.9.202209080909/diff.md --exclude *.pyd
+[2023-05-13 11:13:08] INFO root fetch - main [MainThread]: End processing [pyglowmarkt]: success
+[2023-05-13 11:13:09] INFO root fetch - main [MainThread]: End processing [sparta-auth0]: success
+[2023-05-13 11:13:09] INFO root fetch - main [MainThread]: End processing [icalstatus]: success
+[2023-05-13 11:13:09] INFO root fetch - main [MainThread]: End processing [mttf]: success
+[2023-05-13 11:13:09] INFO root fetch - main [MainThread]: End processing [ebbe]: success
+[2023-05-13 11:13:09] INFO root fetch - main [MainThread]: Store serial: [18089169]
