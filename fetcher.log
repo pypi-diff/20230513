@@ -9439,3 +9439,26 @@
 [2023-05-13 14:35:31] INFO root fetch - main [MainThread]: End processing [cat-win]: success
 [2023-05-13 14:36:05] INFO root fetch - main [MainThread]: End processing [chyp]: success
 [2023-05-13 14:36:05] INFO root fetch - main [MainThread]: Store serial: [18090112]
+[2023-05-13 14:41:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090112]
+[2023-05-13 14:41:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 14:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hapdoc
+[2023-05-13 14:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cv2geojson
+[2023-05-13 14:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hapdoc
+[2023-05-13 14:41:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: LordTemplate
+[2023-05-13 14:41:14] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 14:41:14] INFO root fetch - processPackages [hapdoc]: New version: [1.9.9] Old Version: [1.9.6]
+[2023-05-13 14:41:14] INFO root fetch - processPackages [cv2geojson]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-13 14:41:14] WARNING root fetch - processPackages [LordTemplate]: Skipping, unable to determine old version
+[2023-05-13 14:41:14] INFO root fetch - main [MainThread]: End processing [LordTemplate] error
+[2023-05-13 14:41:14] INFO root fetch - processPackages [cv2geojson]: Downloading https://files.pythonhosted.org/packages/fe/f3/09fcad4550d1094c264aebe04966f6379a53c179e121e8ba2fa115d7a144/cv2geojson-0.0.5.tar.gz
+[2023-05-13 14:41:15] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 14:41:15] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 14:41:15] INFO root fetch - processPackages [hapdoc]: executing diffoscope
+[2023-05-13 14:41:15] INFO root fetch - processPackages [hapdoc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapdoc-1.9.6.tar.gz tmp/hapdoc-1.9.9.tar.gz --markdown 20230513/h/hapdoc/1.9.6-1.9.9/diff.md --exclude *.pyd
+[2023-05-13 14:41:15] INFO root fetch - processPackages [cv2geojson]: Downloading https://files.pythonhosted.org/packages/b7/72/f0a325d9db45d03c48c3420d5b5901f6180297b3ca643f2b063da311ab93/cv2geojson-0.0.6.tar.gz
+[2023-05-13 14:41:15] INFO root fetch - processPackages [cv2geojson]: executing diffoscope
+[2023-05-13 14:41:15] INFO root fetch - processPackages [cv2geojson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv2geojson-0.0.5.tar.gz tmp/cv2geojson-0.0.6.tar.gz --markdown 20230513/c/cv2geojson/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-13 14:41:16] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 14:41:16] INFO root fetch - main [MainThread]: End processing [hapdoc]: success
+[2023-05-13 14:41:16] INFO root fetch - main [MainThread]: End processing [cv2geojson]: success
+[2023-05-13 14:41:16] INFO root fetch - main [MainThread]: Store serial: [18090125]
