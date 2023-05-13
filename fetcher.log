@@ -3461,3 +3461,39 @@
 [2023-05-13 03:27:35] INFO root fetch - main [MainThread]: End processing [itzma-lint]: success
 [2023-05-13 03:27:45] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte]: success
 [2023-05-13 03:27:45] INFO root fetch - main [MainThread]: Store serial: [18086684]
+[2023-05-13 03:32:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18086684]
+[2023-05-13 03:32:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 03:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-wordpress
+[2023-05-13 03:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrgo
+[2023-05-13 03:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bytez
+[2023-05-13 03:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bytez
+[2023-05-13 03:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: thelemic-date
+[2023-05-13 03:32:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-lambda-layer-wget
+[2023-05-13 03:32:54] INFO root fetch - processPackages [pyrgo]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-13 03:32:54] WARNING root fetch - processPackages [thelemic-date]: Skipping, unable to determine old version
+[2023-05-13 03:32:54] INFO root fetch - main [MainThread]: End processing [thelemic-date] error
+[2023-05-13 03:32:54] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 03:32:54] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 03:32:54] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 03:32:54] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-13 03:32:55] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/c6/5d/aeca89516ac349afff38eb9b72391270a156b5f6e0da7077f7a70b697167/bytez-0.1.8.tar.gz
+[2023-05-13 03:32:55] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/c6/5d/aeca89516ac349afff38eb9b72391270a156b5f6e0da7077f7a70b697167/bytez-0.1.8.tar.gz
+[2023-05-13 03:32:55] INFO root fetch - processPackages [pyrgo]: Downloading https://files.pythonhosted.org/packages/43/74/586a7ebb1cb06ca82235cd0ef373bb10abdd92cff2556969e8f5e8496f22/pyrgo-0.2.1.tar.gz
+[2023-05-13 03:32:55] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-05-13 03:32:55] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230513/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 03:32:55] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-13 03:32:55] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230513/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-13 03:32:55] INFO root fetch - processPackages [pyrgo]: executing diffoscope
+[2023-05-13 03:32:55] INFO root fetch - processPackages [pyrgo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrgo-0.2.0.tar.gz tmp/pyrgo-0.2.1.tar.gz --markdown 20230513/p/pyrgo/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-13 03:32:55] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/8c/e1/fe6d5a1a4501545e96696aaf1bd70163fa5bd5827f6c25755c7cfecb1af7/bytez-0.1.9.tar.gz
+[2023-05-13 03:32:55] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/8c/e1/fe6d5a1a4501545e96696aaf1bd70163fa5bd5827f6c25755c7cfecb1af7/bytez-0.1.9.tar.gz
+[2023-05-13 03:32:55] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-13 03:32:55] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230513/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 03:32:55] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-13 03:32:55] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230513/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 03:32:56] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-05-13 03:32:56] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-13 03:32:56] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-13 03:32:56] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-13 03:32:56] INFO root fetch - main [MainThread]: End processing [pyrgo]: success
+[2023-05-13 03:32:56] INFO root fetch - main [MainThread]: Store serial: [18086930]
