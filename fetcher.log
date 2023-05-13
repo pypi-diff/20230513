@@ -12406,3 +12406,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 19:43:24] INFO root fetch - main [MainThread]: End processing [dnsmule]: success
 [2023-05-13 19:43:27] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
 [2023-05-13 19:43:27] INFO root fetch - main [MainThread]: Store serial: [18091997]
+[2023-05-13 19:48:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18091997]
+[2023-05-13 19:48:35] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 19:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-webapp-skeleton
+[2023-05-13 19:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: discovery-transition-ds
+[2023-05-13 19:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DariasSerializer153501
+[2023-05-13 19:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: griddle
+[2023-05-13 19:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pythonsqlite2additionV1
+[2023-05-13 19:48:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dpsa4flower
+[2023-05-13 19:48:36] INFO root fetch - processPackages [cdk-webapp-skeleton]: New version: [0.4.1.dev3] Old Version: [0.4.1.dev2]
+[2023-05-13 19:48:36] WARNING root fetch - processPackages [DariasSerializer153501]: Skipping, unable to determine old version
+[2023-05-13 19:48:36] INFO root fetch - processPackages [griddle]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-13 19:48:36] INFO root fetch - main [MainThread]: End processing [DariasSerializer153501] error
+[2023-05-13 19:48:36] WARNING root fetch - processPackages [dpsa4flower]: Skipping, unable to determine old version
+[2023-05-13 19:48:36] INFO root fetch - main [MainThread]: End processing [dpsa4flower] error
+[2023-05-13 19:48:36] INFO root fetch - processPackages [discovery-transition-ds]: New version: [4.9.9] Old Version: [4.9.8]
+[2023-05-13 19:48:36] ERROR root fetch - processPackages [pythonsqlite2additionV1]: Unable to get metadata: No such project 'pythonsqlite2additionV1'
+[2023-05-13 19:48:36] INFO root fetch - main [MainThread]: End processing [pythonsqlite2additionV1] error
+[2023-05-13 19:48:36] INFO root fetch - processPackages [discovery-transition-ds]: executing diffoscope
+[2023-05-13 19:48:36] INFO root fetch - processPackages [discovery-transition-ds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discovery-transition-ds-4.9.8.tar.gz tmp/discovery-transition-ds-4.9.9.tar.gz --markdown 20230513/d/discovery-transition-ds/4.9.8-4.9.9/diff.md --exclude *.pyd
+[2023-05-13 19:48:36] INFO root fetch - processPackages [cdk-webapp-skeleton]: Downloading https://files.pythonhosted.org/packages/cf/ff/55d15cc878539ff11078027b391acc54d90e5afdeca571f68fca9bd8b6f9/cdk_webapp_skeleton-0.4.1.dev2.tar.gz
+[2023-05-13 19:48:36] INFO root fetch - processPackages [griddle]: Downloading https://files.pythonhosted.org/packages/00/fe/d4fbdf86740065515d212e7a7e350216bbeabb89944954c89de8ac068747/griddle-0.0.0.tar.gz
+[2023-05-13 19:48:36] INFO root fetch - processPackages [griddle]: Downloading https://files.pythonhosted.org/packages/e9/1e/f3ffacaad2322d51bfae6892803d8cb8830aa1fde6cafc21ab4265764611/griddle-0.0.1.tar.gz
+[2023-05-13 19:48:36] INFO root fetch - processPackages [cdk-webapp-skeleton]: Downloading https://files.pythonhosted.org/packages/3b/b8/2d3d754d0954194d2d6c09c703e28e3f074627a471d169c4a95d28268ca6/cdk_webapp_skeleton-0.4.1.dev3.tar.gz
+[2023-05-13 19:48:36] INFO root fetch - processPackages [griddle]: executing diffoscope
+[2023-05-13 19:48:36] INFO root fetch - processPackages [griddle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/griddle-0.0.0.tar.gz tmp/griddle-0.0.1.tar.gz --markdown 20230513/g/griddle/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-13 19:48:36] INFO root fetch - processPackages [cdk-webapp-skeleton]: executing diffoscope
+[2023-05-13 19:48:36] INFO root fetch - processPackages [cdk-webapp-skeleton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_webapp_skeleton-0.4.1.dev2.tar.gz tmp/cdk_webapp_skeleton-0.4.1.dev3.tar.gz --markdown 20230513/c/cdk-webapp-skeleton/0.4.1.dev2-0.4.1.dev3/diff.md --exclude *.pyd
+[2023-05-13 19:48:37] INFO root fetch - main [MainThread]: End processing [cdk-webapp-skeleton]: success
+[2023-05-13 19:48:38] INFO root fetch - main [MainThread]: End processing [griddle]: success
+[2023-05-13 19:48:40] INFO root fetch - main [MainThread]: End processing [discovery-transition-ds]: success
+[2023-05-13 19:48:40] INFO root fetch - main [MainThread]: Store serial: [18092019]
