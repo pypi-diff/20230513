@@ -8061,3 +8061,25 @@
 [2023-05-13 11:33:59] INFO root fetch - main [MainThread]: End processing [hyperparameter-tuning]: success
 [2023-05-13 11:34:00] INFO root fetch - main [MainThread]: End processing [pyxk]: success
 [2023-05-13 11:34:00] INFO root fetch - main [MainThread]: Store serial: [18089262]
+[2023-05-13 11:39:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089262]
+[2023-05-13 11:39:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-13 11:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hyperparameter-tuning
+[2023-05-13 11:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyTraffic
+[2023-05-13 11:39:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyxk
+[2023-05-13 11:39:09] INFO root fetch - processPackages [PyTraffic]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-13 11:39:09] INFO root fetch - processPackages [hyperparameter-tuning]: New version: [0.2.3] Old Version: [0.2.1]
+[2023-05-13 11:39:09] INFO root fetch - processPackages [pyxk]: New version: [0.5.6] Old Version: [0.5.5]
+[2023-05-13 11:39:09] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/ef/e8/857c64946d03b34676b67f285c96933dfb9e65ca7c1f85e416775fe0bd91/PyTraffic-1.0.2.tar.gz
+[2023-05-13 11:39:09] INFO root fetch - processPackages [hyperparameter-tuning]: Downloading https://files.pythonhosted.org/packages/cf/cd/6fc27afd42097e96c47c37255a6c9e895af96d71600a392a1ba6e3179228/hyperparameter-tuning-0.2.3.tar.gz
+[2023-05-13 11:39:09] INFO root fetch - processPackages [pyxk]: Downloading https://files.pythonhosted.org/packages/a4/3b/c656e3c030e4ce6afe4f0b5b398e92607486fbef6c53578f6f46a76632e7/pyxk-0.5.6.tar.gz
+[2023-05-13 11:39:09] INFO root fetch - processPackages [hyperparameter-tuning]: executing diffoscope
+[2023-05-13 11:39:09] INFO root fetch - processPackages [hyperparameter-tuning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperparameter-tuning-0.2.1.tar.gz tmp/hyperparameter-tuning-0.2.3.tar.gz --markdown 20230513/h/hyperparameter-tuning/0.2.1-0.2.3/diff.md --exclude *.pyd
+[2023-05-13 11:39:09] INFO root fetch - processPackages [pyxk]: executing diffoscope
+[2023-05-13 11:39:09] INFO root fetch - processPackages [pyxk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxk-0.5.5.tar.gz tmp/pyxk-0.5.6.tar.gz --markdown 20230513/p/pyxk/0.5.5-0.5.6/diff.md --exclude *.pyd
+[2023-05-13 11:39:09] INFO root fetch - processPackages [PyTraffic]: Downloading https://files.pythonhosted.org/packages/64/e1/5123de3b5e130163b3bb065238a15950b837d8ffb66fd63e891578f8115c/PyTraffic-1.0.3.tar.gz
+[2023-05-13 11:39:10] INFO root fetch - processPackages [PyTraffic]: executing diffoscope
+[2023-05-13 11:39:10] INFO root fetch - processPackages [PyTraffic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTraffic-1.0.2.tar.gz tmp/PyTraffic-1.0.3.tar.gz --markdown 20230513/P/PyTraffic/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-13 11:39:10] INFO root fetch - main [MainThread]: End processing [pyxk]: success
+[2023-05-13 11:39:11] INFO root fetch - main [MainThread]: End processing [hyperparameter-tuning]: success
+[2023-05-13 11:39:11] INFO root fetch - main [MainThread]: End processing [PyTraffic]: success
+[2023-05-13 11:39:11] INFO root fetch - main [MainThread]: Store serial: [18089273]
