@@ -10645,3 +10645,92 @@ EOFError: EOF read where object expected
 [2023-05-13 16:32:51] INFO root fetch - main [MainThread]: End processing [simple-simon]: success
 [2023-05-13 16:32:53] INFO root fetch - main [MainThread]: End processing [zibanu-django]: success
 [2023-05-13 16:32:53] INFO root fetch - main [MainThread]: Store serial: [18090852]
+[2023-05-13 16:37:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090852]
+[2023-05-13 16:38:01] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2023-05-13 16:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rico
+[2023-05-13 16:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flapgui
+[2023-05-13 16:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dictfunc
+[2023-05-13 16:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: domino-py
+[2023-05-13 16:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: image-augs
+[2023-05-13 16:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: git-version-info
+[2023-05-13 16:38:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: radvis
+[2023-05-13 16:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nonebot-plugin-hoshino-sign
+[2023-05-13 16:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyjaws
+[2023-05-13 16:38:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: BDXConverter
+[2023-05-13 16:38:02] INFO root fetch - processPackages [rico]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [flapgui]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [git-version-info]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [image-augs]: New version: [2.3.13] Old Version: [2.3.12]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [BDXConverter]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: New version: [2.0.3] Old Version: [2.0.2]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [domino-py]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [pyjaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [radvis]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: Downloading https://files.pythonhosted.org/packages/15/f0/f5885dc7a3e3d0d8acd12cc3487b3771c4cc5c9be46be6b19b326ea55087/dictfunc-1.0.1.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [rico]: Downloading https://files.pythonhosted.org/packages/c9/4c/1fcefcff1591f0051561d2810d0b71425fb3adcb04439a90d2c21990f7d5/rico-0.0.3.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [radvis]: Downloading https://files.pythonhosted.org/packages/ca/81/33620766b23eb933a60d6f8e02dc9fda6ceee181e52ee5e3d9f6d81f8b44/radvis-0.1.0.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [BDXConverter]: Downloading https://files.pythonhosted.org/packages/8c/c6/f4ca671fd807d226baa0721538a5fa7b899baac35360c603b5f0c88b9eb9/BDXConverter-1.1.5.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [pyjaws]: Downloading https://files.pythonhosted.org/packages/f1/b3/d731c2dab99ab5a49510acaafb2857ef11028a588bf4881572b4fa4fc087/pyjaws-0.0.8.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: Downloading https://files.pythonhosted.org/packages/5f/e5/50ac57577c80a061e694a8a1fd23c6a0ea51d64bf9181d6eadc0f88d6204/nonebot_plugin_hoshino_sign-2.0.3.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [image-augs]: Downloading https://files.pythonhosted.org/packages/96/fb/ef61f0ef8f563a7c77f9e74ed402d4a7c489896d5fb761d67b5f16680dd8/image_augs-2.3.13.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [git-version-info]: Downloading https://files.pythonhosted.org/packages/f1/bb/f1b3c4e971bb6d395f5a5322417e25f133dbb8c55456f81cc02ea0f21ef8/git_version_info-0.7.1.tar.gz
+[2023-05-13 16:38:02] WARNING root fetch - processPackages [nonebot-plugin-hoshino-sign]: Skipping package: exceeds size limit 40530107>=10485760
+[2023-05-13 16:38:02] INFO root fetch - processPackages [nonebot-plugin-hoshino-sign]: Start processing: dictfunc
+[2023-05-13 16:38:02] INFO root fetch - processPackages [flapgui]: Downloading https://files.pythonhosted.org/packages/2d/0c/3277b7544a5b2e367487554cc4e352e87dcb23308930252306e2aea0cf84/flapgui-0.2.1.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-hoshino-sign] error
+[2023-05-13 16:38:02] INFO root fetch - processPackages [BDXConverter]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [BDXConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDXConverter-1.1.4.tar.gz tmp/BDXConverter-1.1.5.tar.gz --markdown 20230513/B/BDXConverter/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 16:38:02] INFO root fetch - processPackages [image-augs]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [image-augs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_augs-2.3.12.tar.gz tmp/image_augs-2.3.13.tar.gz --markdown 20230513/i/image-augs/2.3.12-2.3.13/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [git-version-info]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [git-version-info]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git_version_info-0.7.0.tar.gz tmp/git_version_info-0.7.1.tar.gz --markdown 20230513/g/git-version-info/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [flapgui]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [flapgui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flapgui-0.2.0.tar.gz tmp/flapgui-0.2.1.tar.gz --markdown 20230513/f/flapgui/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [domino-py]: Downloading https://files.pythonhosted.org/packages/3b/f6/f8addf9caf6efd4e087c0d1e24aa13b8f696b24984c0eccc9ca6b5a3d4b3/domino-py-0.2.5.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [radvis]: Downloading https://files.pythonhosted.org/packages/60/2e/523ce12e474949f8ec9501b4a2f2aff18b9ab138e3a8df21f3b465f15854/radvis-0.1.1.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [rico]: Downloading https://files.pythonhosted.org/packages/09/b1/24f4dce6e75687b96874bbcb2187357c8d43b4ecc990ce5a27e4db9f4175/rico-0.0.4.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: Downloading https://files.pythonhosted.org/packages/33/c2/cbf6ce7aae0b6cde5b75456cbbb3b989338e45936697552855593066f73a/dictfunc-1.0.2.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: Downloading https://files.pythonhosted.org/packages/33/c2/cbf6ce7aae0b6cde5b75456cbbb3b989338e45936697552855593066f73a/dictfunc-1.0.2.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [pyjaws]: Downloading https://files.pythonhosted.org/packages/bc/1b/9e3548541e303881f6f15bc4a7a7a28577cfd0406237fdbf3471c24c4517/pyjaws-0.0.9.tar.gz
+[2023-05-13 16:38:02] INFO root fetch - processPackages [domino-py]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [domino-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/domino-py-0.2.4.tar.gz tmp/domino-py-0.2.5.tar.gz --markdown 20230513/d/domino-py/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [radvis]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [rico]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [radvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radvis-0.1.0.tar.gz tmp/radvis-0.1.1.tar.gz --markdown 20230513/r/radvis/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [rico]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rico-0.0.3.tar.gz tmp/rico-0.0.4.tar.gz --markdown 20230513/r/rico/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dictfunc-1.0.1.tar.gz tmp/dictfunc-1.0.2.tar.gz --markdown 20230513/d/dictfunc/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [dictfunc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dictfunc-1.0.1.tar.gz tmp/dictfunc-1.0.2.tar.gz --markdown 20230513/d/dictfunc/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 16:38:02] INFO root fetch - processPackages [pyjaws]: executing diffoscope
+[2023-05-13 16:38:02] INFO root fetch - processPackages [pyjaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyjaws-0.0.8.tar.gz tmp/pyjaws-0.0.9.tar.gz --markdown 20230513/p/pyjaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 16:38:04] INFO root fetch - processPackages [flapgui]: Start processing: ScriptCollection
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [flapgui]: success
+[2023-05-13 16:38:04] INFO root fetch - processPackages [ScriptCollection]: New version: [3.3.9] Old Version: [3.3.81]
+[2023-05-13 16:38:04] INFO root fetch - processPackages [git-version-info]: Start processing: scikit-rf
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [git-version-info]: success
+[2023-05-13 16:38:04] INFO root fetch - processPackages [scikit-rf]: New version: [0.27.1] Old Version: [0.27.0]
+[2023-05-13 16:38:04] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/46/0a/716186af34fcb8084e628f556b3fd7443362f7b4c77e45793a05e95fae2a/ScriptCollection-3.3.81-py3-none-any.whl
+[2023-05-13 16:38:04] INFO root fetch - processPackages [BDXConverter]: Start processing: QuNet
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
+[2023-05-13 16:38:04] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 16:38:04] INFO root fetch - processPackages [scikit-rf]: Downloading https://files.pythonhosted.org/packages/af/56/6b04825ee7e9b2a2795fe005b3b3f43393a0b423a0c0324eb8fb54c77e74/scikit-rf-0.27.0.tar.gz
+[2023-05-13 16:38:04] WARNING root fetch - processPackages [scikit-rf]: Skipping package: exceeds size limit 20196237>=10485760
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [scikit-rf] error
+[2023-05-13 16:38:04] INFO root fetch - processPackages [ScriptCollection]: Downloading https://files.pythonhosted.org/packages/b0/d6/aab96f139cd6323196a9a6fc2050e7486d49b151321f8c6b155fc2441e9b/ScriptCollection-3.3.9-py3-none-any.whl
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [dictfunc]: success
+[2023-05-13 16:38:04] INFO root fetch - processPackages [ScriptCollection]: executing diffoscope
+[2023-05-13 16:38:04] INFO root fetch - processPackages [ScriptCollection]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ScriptCollection-3.3.81-py3-none-any.whl.zip tmp/ScriptCollection-3.3.9-py3-none-any.whl.zip --markdown 20230513/S/ScriptCollection/3.3.81-3.3.9/diff.md --exclude *.pyd
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [dictfunc]: success
+[2023-05-13 16:38:04] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-05-13 16:38:04] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230513/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [rico]: success
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [pyjaws]: success
+[2023-05-13 16:38:04] INFO root fetch - main [MainThread]: End processing [image-augs]: success
+[2023-05-13 16:38:05] INFO root fetch - main [MainThread]: End processing [radvis]: success
+[2023-05-13 16:38:05] INFO root fetch - main [MainThread]: End processing [domino-py]: success
+[2023-05-13 16:38:06] INFO root fetch - main [MainThread]: End processing [ScriptCollection]: success
+[2023-05-13 16:38:06] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-05-13 16:38:06] INFO root fetch - main [MainThread]: Store serial: [18090890]
