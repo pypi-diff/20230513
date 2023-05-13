@@ -13172,3 +13172,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 21:33:52] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
 [2023-05-13 21:33:55] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
 [2023-05-13 21:33:55] INFO root fetch - main [MainThread]: Store serial: [18092500]
+[2023-05-13 21:38:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092500]
+[2023-05-13 21:39:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-13 21:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opsvis
+[2023-05-13 21:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hangman-package
+[2023-05-13 21:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cracker
+[2023-05-13 21:39:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sesg
+[2023-05-13 21:39:05] WARNING root fetch - processPackages [hangman-package]: Skipping, unable to determine old version
+[2023-05-13 21:39:05] INFO root fetch - main [MainThread]: End processing [hangman-package] error
+[2023-05-13 21:39:05] INFO root fetch - processPackages [cracker]: New version: [0.7.0] Old Version: [0.6.0]
+[2023-05-13 21:39:05] INFO root fetch - processPackages [opsvis]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-13 21:39:05] INFO root fetch - processPackages [sesg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 21:39:05] INFO root fetch - processPackages [cracker]: Downloading https://files.pythonhosted.org/packages/e6/53/3d7a24406f4221a2577ef9706fb805ce815f6e74e43b9694567bad35ea3b/cracker-0.6.0.tar.gz
+[2023-05-13 21:39:05] INFO root fetch - processPackages [opsvis]: Downloading https://files.pythonhosted.org/packages/4d/5e/9e7a3bfb3915de70419416263d32bbd4f85a1367224f11a08fd1195127a5/opsvis-1.0.8.tar.gz
+[2023-05-13 21:39:06] INFO root fetch - processPackages [sesg]: executing diffoscope
+[2023-05-13 21:39:06] INFO root fetch - processPackages [sesg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sesg-0.0.8.tar.gz tmp/sesg-0.0.9.tar.gz --markdown 20230513/s/sesg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 21:39:06] INFO root fetch - processPackages [opsvis]: Downloading https://files.pythonhosted.org/packages/a3/ed/6e1cea15fa3d0154159d00ea110acc3d1d0befb3dddad1b109e97befc3e2/opsvis-1.0.9.tar.gz
+[2023-05-13 21:39:06] INFO root fetch - processPackages [cracker]: Downloading https://files.pythonhosted.org/packages/ad/3b/2f5f21f111d77416ba92e9d337718209c6faf8c4167e6a133128f416d052/cracker-0.7.0.tar.gz
+[2023-05-13 21:39:06] INFO root fetch - processPackages [cracker]: executing diffoscope
+[2023-05-13 21:39:06] INFO root fetch - processPackages [cracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cracker-0.6.0.tar.gz tmp/cracker-0.7.0.tar.gz --markdown 20230513/c/cracker/0.6.0-0.7.0/diff.md --exclude *.pyd
+[2023-05-13 21:39:06] INFO root fetch - processPackages [opsvis]: executing diffoscope
+[2023-05-13 21:39:06] INFO root fetch - processPackages [opsvis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opsvis-1.0.8.tar.gz tmp/opsvis-1.0.9.tar.gz --markdown 20230513/o/opsvis/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-13 21:39:07] INFO root fetch - main [MainThread]: End processing [sesg]: success
+[2023-05-13 21:39:07] INFO root fetch - main [MainThread]: End processing [opsvis]: success
+[2023-05-13 21:39:07] INFO root fetch - main [MainThread]: End processing [cracker]: success
+[2023-05-13 21:39:07] INFO root fetch - main [MainThread]: Store serial: [18092514]
