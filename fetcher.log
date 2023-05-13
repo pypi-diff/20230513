@@ -5041,3 +5041,68 @@
 [2023-05-13 06:30:49] INFO root fetch - main [MainThread]: End processing [odoo14-addon-fleet-vehicle-service-kanban]: success
 [2023-05-13 06:30:49] INFO root fetch - main [MainThread]: End processing [odoo14-addon-fleet-vehicle-log-fuel]: success
 [2023-05-13 06:30:49] INFO root fetch - main [MainThread]: Store serial: [18087751]
+[2023-05-13 06:35:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087751]
+[2023-05-13 06:36:01] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-codeartifact
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TransLiter
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-helpdesk-mgmt
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commandsgpt
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spacetraders
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ardilla
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: test1000
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: duckdb
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: snowflake-connector-python-nightly
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: odoo8-addon-hr-employee-identification
+[2023-05-13 06:36:01] INFO root fetch - processPackages [TransLiter]: New version: [0.3.0] Old Version: [0.2.5]
+[2023-05-13 06:36:01] INFO root fetch - processPackages [commandsgpt]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-05-13 06:36:01] INFO root fetch - processPackages [spacetraders]: New version: [0.3.0] Old Version: [0.2.4]
+[2023-05-13 06:36:01] INFO root fetch - processPackages [cdk-codeartifact]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-13 06:36:01] WARNING root fetch - processPackages [test1000]: Skipping, unable to determine old version
+[2023-05-13 06:36:01] INFO root fetch - main [MainThread]: End processing [test1000] error
+[2023-05-13 06:36:01] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: New version: [14.0.2.9.1.dev1] Old Version: [14.0.2.9.0]
+[2023-05-13 06:36:01] INFO root fetch - processPackages [odoo8-addon-hr-employee-identification]: New version: [8.0.1.0.0.99.dev8] Old Version: [8.0.1.0.0.99.dev7]
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ardilla]: New version: [0.0.6a0] Old Version: [0.0.5a0]
+[2023-05-13 06:36:01] INFO root fetch - processPackages [duckdb]: New version: [0.7.2.dev3515] Old Version: [0.7.2.dev3441]
+[2023-05-13 06:36:01] INFO root fetch - processPackages [snowflake-connector-python-nightly]: New version: [2023.5.3] Old Version: [2023.5.13]
+[2023-05-13 06:36:01] INFO root fetch - processPackages [spacetraders]: Downloading https://files.pythonhosted.org/packages/80/56/257ec9c7da8161fcb0cb53f5eda42d652fef1c405f8be6133069d25a8b4c/spacetraders-0.2.4.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ardilla]: Downloading https://files.pythonhosted.org/packages/e4/99/64255a3d045838b3d6a61fc58c32b352895da0c71221630a16a08bb99e16/ardilla-0.0.5a0.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: Downloading https://files.pythonhosted.org/packages/0e/9f/528a1f13e1e92822ead7815ccc9ee850fb617ba136b640a142364310d267/odoo14_addon_helpdesk_mgmt-14.0.2.9.1.dev1-py3-none-any.whl
+[2023-05-13 06:36:01] INFO root fetch - processPackages [TransLiter]: Downloading https://files.pythonhosted.org/packages/2f/67/117852bb3c44211ea5e4f3686ad5948bd0661b3ae8f4d05964f6778cf10b/TransLiter-0.2.5.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [odoo8-addon-hr-employee-identification]: Downloading https://files.pythonhosted.org/packages/40/b6/56f6ea3deac18d238dfbb797ec00d0d9b31fff0495e40ccf3391331d0569/odoo8_addon_hr_employee_identification-8.0.1.0.0.99.dev7-py2-none-any.whl
+[2023-05-13 06:36:01] INFO root fetch - processPackages [snowflake-connector-python-nightly]: Downloading https://files.pythonhosted.org/packages/a6/20/fa0c2bee123d5d308593c9fa84e69a13064c5c1c42ba977897e68078ca19/snowflake-connector-python-nightly-2023.5.13.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/6a/5f/868e6d3cc12244d821a04837c6e8021cbe9088bcaeb186782b81f7ed1933/duckdb-0.7.2.dev3441.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [cdk-codeartifact]: Downloading https://files.pythonhosted.org/packages/8b/3a/89cb64cb5f0efc825d150f05bdb8832a76be68ce1d4c9f13b9e24d29bfc4/cdk-codeartifact-1.0.4.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [commandsgpt]: Downloading https://files.pythonhosted.org/packages/29/30/06e4e376ca92cac9aecc7c2c01e9469da267709a926ffd6820bdc3d23303/commandsgpt-1.2.0.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: executing diffoscope
+[2023-05-13 06:36:01] INFO root fetch - processPackages [odoo14-addon-helpdesk-mgmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_helpdesk_mgmt-14.0.2.9.0-py3-none-any.whl.zip tmp/odoo14_addon_helpdesk_mgmt-14.0.2.9.1.dev1-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-helpdesk-mgmt/14.0.2.9.0-14.0.2.9.1.dev1/diff.md --exclude *.pyd
+[2023-05-13 06:36:01] INFO root fetch - processPackages [spacetraders]: Downloading https://files.pythonhosted.org/packages/2a/7f/88295a235cbb2a2d4bc2e302f450cecb09599b991912b95cc4579fdfe4ac/spacetraders-0.3.0.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [cdk-codeartifact]: executing diffoscope
+[2023-05-13 06:36:01] INFO root fetch - processPackages [cdk-codeartifact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-codeartifact-1.0.3.tar.gz tmp/cdk-codeartifact-1.0.4.tar.gz --markdown 20230513/c/cdk-codeartifact/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-13 06:36:01] INFO root fetch - processPackages [TransLiter]: Downloading https://files.pythonhosted.org/packages/27/30/90752065facd8160bc8c59629a4cc5b3e22b063480cab71d04f154b05a38/TransLiter-0.3.0.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ardilla]: Downloading https://files.pythonhosted.org/packages/f8/ed/8948f91712c11adb38cbfef4661725865219a6c82f14c9b1f527b9e279ce/ardilla-0.0.6a0.tar.gz
+[2023-05-13 06:36:01] INFO root fetch - processPackages [odoo8-addon-hr-employee-identification]: Downloading https://files.pythonhosted.org/packages/5e/fb/ac2d56f58126e0f27eb30081ed13f7c44f2fc9780a26b9449765df951504/odoo8_addon_hr_employee_identification-8.0.1.0.0.99.dev8-py2-none-any.whl
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ardilla]: executing diffoscope
+[2023-05-13 06:36:01] INFO root fetch - processPackages [ardilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ardilla-0.0.5a0.tar.gz tmp/ardilla-0.0.6a0.tar.gz --markdown 20230513/a/ardilla/0.0.5a0-0.0.6a0/diff.md --exclude *.pyd
+[2023-05-13 06:36:01] INFO root fetch - processPackages [spacetraders]: executing diffoscope
+[2023-05-13 06:36:01] INFO root fetch - processPackages [spacetraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spacetraders-0.2.4.tar.gz tmp/spacetraders-0.3.0.tar.gz --markdown 20230513/s/spacetraders/0.2.4-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 06:36:01] INFO root fetch - processPackages [commandsgpt]: executing diffoscope
+[2023-05-13 06:36:01] INFO root fetch - processPackages [commandsgpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/commandsgpt-1.1.3.tar.gz tmp/commandsgpt-1.2.0.tar.gz --markdown 20230513/c/commandsgpt/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-05-13 06:36:01] INFO root fetch - processPackages [TransLiter]: executing diffoscope
+[2023-05-13 06:36:01] INFO root fetch - processPackages [TransLiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TransLiter-0.2.5.tar.gz tmp/TransLiter-0.3.0.tar.gz --markdown 20230513/T/TransLiter/0.2.5-0.3.0/diff.md --exclude *.pyd
+[2023-05-13 06:36:01] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/6b/21/f27333a5c5c6907088cad2bc1b1fe355a8be255fad404ff03249bbcc2621/duckdb-0.7.2.dev3515-cp38-cp38-win_amd64.whl
+[2023-05-13 06:36:02] INFO root fetch - processPackages [odoo8-addon-hr-employee-identification]: executing diffoscope
+[2023-05-13 06:36:02] INFO root fetch - processPackages [odoo8-addon-hr-employee-identification]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_hr_employee_identification-8.0.1.0.0.99.dev7-py2-none-any.whl.zip tmp/odoo8_addon_hr_employee_identification-8.0.1.0.0.99.dev8-py2-none-any.whl.zip --markdown 20230513/o/odoo8-addon-hr-employee-identification/8.0.1.0.0.99.dev7-8.0.1.0.0.99.dev8/diff.md --exclude *.pyd
+[2023-05-13 06:36:02] INFO root fetch - processPackages [snowflake-connector-python-nightly]: executing diffoscope
+[2023-05-13 06:36:02] INFO root fetch - processPackages [snowflake-connector-python-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowflake-connector-python-nightly-2023.5.13.tar.gz tmp/snowflake-connector-python-nightly-2023.5.3.tar.gz --markdown 20230513/s/snowflake-connector-python-nightly/2023.5.13-2023.5.3/diff.md --exclude *.pyd
+[2023-05-13 06:36:03] INFO root fetch - main [MainThread]: End processing [cdk-codeartifact]: success
+[2023-05-13 06:36:03] INFO root fetch - main [MainThread]: End processing [ardilla]: success
+[2023-05-13 06:36:03] INFO root fetch - main [MainThread]: End processing [commandsgpt]: success
+[2023-05-13 06:36:03] INFO root fetch - processPackages [duckdb]: executing diffoscope
+[2023-05-13 06:36:03] INFO root fetch - processPackages [duckdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duckdb-0.7.2.dev3441.tar.gz tmp/duckdb-0.7.2.dev3515-cp38-cp38-win_amd64.whl.zip --markdown 20230513/d/duckdb/0.7.2.dev3441-0.7.2.dev3515/diff.md --exclude *.pyd
+[2023-05-13 06:36:03] INFO root fetch - main [MainThread]: End processing [TransLiter]: success
+[2023-05-13 06:36:03] INFO root fetch - main [MainThread]: End processing [odoo14-addon-helpdesk-mgmt]: success
+[2023-05-13 06:36:04] INFO root fetch - main [MainThread]: End processing [odoo8-addon-hr-employee-identification]: success
+[2023-05-13 06:36:05] INFO root fetch - main [MainThread]: End processing [spacetraders]: success
+[2023-05-13 06:36:06] INFO root fetch - main [MainThread]: End processing [duckdb]: success
+[2023-05-13 06:36:06] INFO root fetch - main [MainThread]: End processing [snowflake-connector-python-nightly]: success
+[2023-05-13 06:36:06] INFO root fetch - main [MainThread]: Store serial: [18087813]
