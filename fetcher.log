@@ -9583,3 +9583,54 @@
 [2023-05-13 14:51:42] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
 [2023-05-13 14:51:42] INFO root fetch - main [MainThread]: End processing [manticore]: success
 [2023-05-13 14:51:42] INFO root fetch - main [MainThread]: Store serial: [18090200]
+[2023-05-13 14:56:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090200]
+[2023-05-13 14:56:51] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-roborock
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: private-lecture-automation
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-formtools
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unihan-db
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LordTemplate
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: EdgeGPT
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyjaws
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sourcelib
+[2023-05-13 14:56:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pypredictor
+[2023-05-13 14:56:51] WARNING root fetch - processPackages [LordTemplate]: Skipping, unable to determine old version
+[2023-05-13 14:56:51] INFO root fetch - main [MainThread]: End processing [LordTemplate] error
+[2023-05-13 14:56:51] WARNING root fetch - processPackages [private-lecture-automation]: Skipping, unable to determine old version
+[2023-05-13 14:56:51] INFO root fetch - main [MainThread]: End processing [private-lecture-automation] error
+[2023-05-13 14:56:51] INFO root fetch - processPackages [python-roborock]: New version: [0.9.0rc0] Old Version: [0.9.0]
+[2023-05-13 14:56:51] INFO root fetch - processPackages [EdgeGPT]: New version: [0.3.8.1] Old Version: [0.3.8]
+[2023-05-13 14:56:51] INFO root fetch - processPackages [pypredictor]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 14:56:51] INFO root fetch - processPackages [unihan-db]: New version: [0.7.2] Old Version: [0.7.1a0]
+[2023-05-13 14:56:51] INFO root fetch - processPackages [sourcelib]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-13 14:56:51] WARNING root fetch - processPackages [pyjaws]: Skipping, unable to determine old version
+[2023-05-13 14:56:51] INFO root fetch - main [MainThread]: End processing [pyjaws] error
+[2023-05-13 14:56:51] INFO root fetch - processPackages [django-formtools]: New version: [2.4.1] Old Version: [2.4]
+[2023-05-13 14:56:51] INFO root fetch - processPackages [unihan-db]: Downloading https://files.pythonhosted.org/packages/90/43/888d83fb26a4ebcfdd675ceaeac5ac24ff8bd8c183d4df059cfb949d3953/unihan_db-0.7.1a0.tar.gz
+[2023-05-13 14:56:51] INFO root fetch - processPackages [pypredictor]: Downloading https://files.pythonhosted.org/packages/4a/54/8d46199ac487374664e4a639600516d2dd68a7cafbaa4312fdda4b575628/pypredictor-0.1.0.tar.gz
+[2023-05-13 14:56:51] INFO root fetch - processPackages [sourcelib]: Downloading https://files.pythonhosted.org/packages/e9/86/b981942e511a16928b067e0b162a205eec0c979a833b47e6430415f925fc/sourcelib-0.0.3.tar.gz
+[2023-05-13 14:56:51] INFO root fetch - processPackages [django-formtools]: Downloading https://files.pythonhosted.org/packages/53/9f/297d3ae05a56a0b6da56fafa88ec14d222750ddf5b9a84752f54ce6db75b/django-formtools-2.4.tar.gz
+[2023-05-13 14:56:51] INFO root fetch - processPackages [EdgeGPT]: Downloading https://files.pythonhosted.org/packages/20/de/9832ffd07807d7f6b5a3b06c25dd3a7d5e57c4a0b699d66ea40e295dd263/EdgeGPT-0.3.8.1.tar.gz
+[2023-05-13 14:56:51] INFO root fetch - processPackages [pypredictor]: Downloading https://files.pythonhosted.org/packages/17/4e/cd67ac6a1a18c0e5ba3f639c27b4622dfcf649250031fca225a3353db8fb/pypredictor-0.1.1.tar.gz
+[2023-05-13 14:56:51] INFO root fetch - processPackages [python-roborock]: executing diffoscope
+[2023-05-13 14:56:51] INFO root fetch - processPackages [python-roborock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_roborock-0.9.0.tar.gz tmp/python_roborock-0.9.0rc0.tar.gz --markdown 20230513/p/python-roborock/0.9.0-0.9.0rc0/diff.md --exclude *.pyd
+[2023-05-13 14:56:51] INFO root fetch - processPackages [sourcelib]: Downloading https://files.pythonhosted.org/packages/5e/c6/ad2b8f8ed66f5a8a00e5869ca97b7fe80f725f18b50bb23ebc3149d58f3c/sourcelib-0.0.4.tar.gz
+[2023-05-13 14:56:51] INFO root fetch - processPackages [EdgeGPT]: executing diffoscope
+[2023-05-13 14:56:51] INFO root fetch - processPackages [EdgeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EdgeGPT-0.3.8.tar.gz tmp/EdgeGPT-0.3.8.1.tar.gz --markdown 20230513/E/EdgeGPT/0.3.8-0.3.8.1/diff.md --exclude *.pyd
+[2023-05-13 14:56:52] INFO root fetch - processPackages [unihan-db]: Downloading https://files.pythonhosted.org/packages/37/e3/6ccb3f51a1f62fac6fd9f931f5ba7841ff9a9ef16c620710bf889544b538/unihan_db-0.7.2.tar.gz
+[2023-05-13 14:56:52] INFO root fetch - processPackages [unihan-db]: executing diffoscope
+[2023-05-13 14:56:52] INFO root fetch - processPackages [unihan-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unihan_db-0.7.1a0.tar.gz tmp/unihan_db-0.7.2.tar.gz --markdown 20230513/u/unihan-db/0.7.1a0-0.7.2/diff.md --exclude *.pyd
+[2023-05-13 14:56:52] INFO root fetch - processPackages [django-formtools]: Downloading https://files.pythonhosted.org/packages/d7/1a/dc1ddbe15175c31d0740c59b4f6e4236f31f03c8f6b11a2aaa23cb53c4cf/django-formtools-2.4.1.tar.gz
+[2023-05-13 14:56:52] INFO root fetch - processPackages [pypredictor]: executing diffoscope
+[2023-05-13 14:56:52] INFO root fetch - processPackages [pypredictor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypredictor-0.1.0.tar.gz tmp/pypredictor-0.1.1.tar.gz --markdown 20230513/p/pypredictor/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 14:56:52] INFO root fetch - processPackages [sourcelib]: executing diffoscope
+[2023-05-13 14:56:52] INFO root fetch - processPackages [sourcelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcelib-0.0.3.tar.gz tmp/sourcelib-0.0.4.tar.gz --markdown 20230513/s/sourcelib/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-13 14:56:52] INFO root fetch - processPackages [django-formtools]: executing diffoscope
+[2023-05-13 14:56:52] INFO root fetch - processPackages [django-formtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-formtools-2.4.tar.gz tmp/django-formtools-2.4.1.tar.gz --markdown 20230513/d/django-formtools/2.4-2.4.1/diff.md --exclude *.pyd
+[2023-05-13 14:56:53] INFO root fetch - main [MainThread]: End processing [EdgeGPT]: success
+[2023-05-13 14:56:53] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
+[2023-05-13 14:56:53] INFO root fetch - main [MainThread]: End processing [sourcelib]: success
+[2023-05-13 14:56:53] INFO root fetch - main [MainThread]: End processing [pypredictor]: success
+[2023-05-13 14:56:53] INFO root fetch - main [MainThread]: End processing [unihan-db]: success
+[2023-05-13 14:56:54] INFO root fetch - main [MainThread]: End processing [django-formtools]: success
+[2023-05-13 14:56:54] INFO root fetch - main [MainThread]: Store serial: [18090234]
