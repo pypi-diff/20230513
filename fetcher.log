@@ -1443,3 +1443,54 @@
 [2023-05-13 02:42:06] INFO root fetch - main [MainThread]: End processing [openai-chat-thread]: success
 [2023-05-13 02:42:07] INFO root fetch - main [MainThread]: End processing [civics-cdf-validator]: success
 [2023-05-13 02:42:07] INFO root fetch - main [MainThread]: Store serial: [18085659]
+[2023-05-13 02:47:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18085659]
+[2023-05-13 02:47:17] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stackdiac
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ndss
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astrotraders
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: realtouch
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-slack-chatbot
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tfds-nightly
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: airbyte
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: data-science-toolkit
+[2023-05-13 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kubric-nightly
+[2023-05-13 02:47:17] INFO root fetch - processPackages [stackdiac]: New version: [0.0.1.dev24] Old Version: [0.0.1.dev23]
+[2023-05-13 02:47:17] WARNING root fetch - processPackages [ndss]: Skipping, unable to determine old version
+[2023-05-13 02:47:17] INFO root fetch - main [MainThread]: End processing [ndss] error
+[2023-05-13 02:47:17] INFO root fetch - processPackages [realtouch]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 02:47:17] INFO root fetch - processPackages [cdk-slack-chatbot]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-13 02:47:17] INFO root fetch - processPackages [data-science-toolkit]: New version: [0.0.999] Old Version: [0.0.998]
+[2023-05-13 02:47:17] INFO root fetch - processPackages [airbyte]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-05-13 02:47:17] WARNING root fetch - processPackages [astrotraders]: Skipping, unable to determine old version
+[2023-05-13 02:47:17] INFO root fetch - main [MainThread]: End processing [astrotraders] error
+[2023-05-13 02:47:17] INFO root fetch - processPackages [stackdiac]: Downloading https://files.pythonhosted.org/packages/ca/cc/ef1d98b55600f75cd7d90c9402addbeeee4a68367bdcbb0ab3cee28c8eb4/stackdiac-0.0.1.dev23.tar.gz
+[2023-05-13 02:47:17] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202305130044] Old Version: [4.9.2.dev202305110044]
+[2023-05-13 02:47:17] INFO root fetch - processPackages [realtouch]: Downloading https://files.pythonhosted.org/packages/b0/13/bab46bd98eab5cec1b3d6e12c4f8ba9d4173297a2c3db90a615925068030/realtouch-0.1.0.tar.gz
+[2023-05-13 02:47:17] INFO root fetch - processPackages [data-science-toolkit]: Downloading https://files.pythonhosted.org/packages/39/ee/0b680e7426270d19d8e08fb6a422ecb877bf71fd239b4ecf4bc7b70a8383/data-science-toolkit-0.0.999.tar.gz
+[2023-05-13 02:47:17] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/b3/f5/0c8781d78756733087fffb9cb7b6436d616b54b823b4f1fd9108bd805055/tfds-nightly-4.9.2.dev202305110044.tar.gz
+[2023-05-13 02:47:17] INFO root fetch - processPackages [cdk-slack-chatbot]: executing diffoscope
+[2023-05-13 02:47:17] INFO root fetch - processPackages [cdk-slack-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-slack-chatbot-1.0.98.tar.gz tmp/cdk-slack-chatbot-1.0.99.tar.gz --markdown 20230513/c/cdk-slack-chatbot/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-13 02:47:17] INFO root fetch - processPackages [data-science-toolkit]: executing diffoscope
+[2023-05-13 02:47:17] INFO root fetch - processPackages [data-science-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data-science-toolkit-0.0.998.tar.gz tmp/data-science-toolkit-0.0.999.tar.gz --markdown 20230513/d/data-science-toolkit/0.0.998-0.0.999/diff.md --exclude *.pyd
+[2023-05-13 02:47:17] INFO root fetch - processPackages [airbyte]: executing diffoscope
+[2023-05-13 02:47:17] INFO root fetch - processPackages [airbyte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airbyte-1.9.2.tar.gz tmp/airbyte-1.9.3.tar.gz --markdown 20230513/a/airbyte/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-05-13 02:47:17] INFO root fetch - processPackages [realtouch]: Downloading https://files.pythonhosted.org/packages/11/d7/1046a169c6bef7151688ae21651ec07531d869dbfcb7bd12d7ba5e618574/realtouch-0.1.1.tar.gz
+[2023-05-13 02:47:17] INFO root fetch - processPackages [stackdiac]: Downloading https://files.pythonhosted.org/packages/a3/89/7ddc88830e8a7c4128f64c0392d8206ab9f13766f9b9e09032dc1437a5e9/stackdiac-0.0.1.dev24.tar.gz
+[2023-05-13 02:47:17] INFO root fetch - processPackages [realtouch]: executing diffoscope
+[2023-05-13 02:47:17] INFO root fetch - processPackages [realtouch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/realtouch-0.1.0.tar.gz tmp/realtouch-0.1.1.tar.gz --markdown 20230513/r/realtouch/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 02:47:17] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-13 02:47:17] INFO root fetch - processPackages [stackdiac]: executing diffoscope
+[2023-05-13 02:47:17] INFO root fetch - processPackages [stackdiac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stackdiac-0.0.1.dev23.tar.gz tmp/stackdiac-0.0.1.dev24.tar.gz --markdown 20230513/s/stackdiac/0.0.1.dev23-0.0.1.dev24/diff.md --exclude *.pyd
+[2023-05-13 02:47:17] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/21/c4/7266c337570d63c2e6accbb9ec85dc625c4a96e1997f1006471845d4f250/tfds-nightly-4.9.2.dev202305130044.tar.gz
+[2023-05-13 02:47:18] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-05-13 02:47:18] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202305110044.tar.gz tmp/tfds-nightly-4.9.2.dev202305130044.tar.gz --markdown 20230513/t/tfds-nightly/4.9.2.dev202305110044-4.9.2.dev202305130044/diff.md --exclude *.pyd
+[2023-05-13 02:47:18] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-05-13 02:47:18] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.5.8.tar.gz tmp/kubric-nightly-2023.5.9.tar.gz --markdown 20230513/k/kubric-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-13 02:47:18] INFO root fetch - main [MainThread]: End processing [cdk-slack-chatbot]: success
+[2023-05-13 02:47:19] INFO root fetch - main [MainThread]: End processing [data-science-toolkit]: success
+[2023-05-13 02:47:19] INFO root fetch - main [MainThread]: End processing [realtouch]: success
+[2023-05-13 02:47:19] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-05-13 02:47:21] INFO root fetch - main [MainThread]: End processing [airbyte]: success
+[2023-05-13 02:47:25] INFO root fetch - main [MainThread]: End processing [stackdiac]: success
+[2023-05-13 02:47:30] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-05-13 02:47:30] INFO root fetch - main [MainThread]: Store serial: [18085693]
