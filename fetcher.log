@@ -3856,3 +3856,55 @@
 [2023-05-13 04:30:06] INFO root fetch - main [MainThread]: End processing [didppy]: success
 [2023-05-13 04:30:10] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-05-13 04:30:10] INFO root fetch - main [MainThread]: Store serial: [18087184]
+[2023-05-13 04:35:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18087184]
+[2023-05-13 04:35:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 04:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-plus-25
+[2023-05-13 04:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lifx-cli
+[2023-05-13 04:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2023-05-13 04:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: similarity-ranker
+[2023-05-13 04:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odc-geo
+[2023-05-13 04:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mmkit-features
+[2023-05-13 04:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: systempath
+[2023-05-13 04:35:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: google-sheet-downloader
+[2023-05-13 04:35:19] INFO root fetch - processPackages [odc-geo]: New version: [0.4.0rc1] Old Version: [0.4.0a3]
+[2023-05-13 04:35:19] INFO root fetch - processPackages [lifx-cli]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-13 04:35:19] INFO root fetch - processPackages [google-sheet-downloader]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-13 04:35:19] INFO root fetch - processPackages [similarity-ranker]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-13 04:35:19] INFO root fetch - processPackages [systempath]: New version: [1.0a8] Old Version: [1.0.9]
+[2023-05-13 04:35:19] INFO root fetch - processPackages [mmkit-features]: New version: [0.0.1a4] Old Version: [0.0.1a3]
+[2023-05-13 04:35:19] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-13 04:35:19] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.21] Old Version: [4.2.19]
+[2023-05-13 04:35:19] INFO root fetch - processPackages [lifx-cli]: Downloading https://files.pythonhosted.org/packages/23/03/96f68677b1e361b70b91416824773bb5bc8e6a87d590556f3d1b7020e565/lifx_cli-0.4.0.tar.gz
+[2023-05-13 04:35:19] INFO root fetch - processPackages [odc-geo]: Downloading https://files.pythonhosted.org/packages/c7/32/98733fbc2da92417e1c78ceab9b99457e4275e4893f05c65eff6757834c0/odc-geo-0.4.0a3.tar.gz
+[2023-05-13 04:35:19] INFO root fetch - processPackages [google-sheet-downloader]: Downloading https://files.pythonhosted.org/packages/60/67/6f45c18c79a2c5c06b0b1fa77e4d54ee4145d42bff10ee2db4fa1bb22c95/google-sheet-downloader-1.0.6.tar.gz
+[2023-05-13 04:35:19] INFO root fetch - processPackages [similarity-ranker]: Downloading https://files.pythonhosted.org/packages/8d/8a/ce4671ce2e472b6e90da73a98ffc6498d66b0647e2828b36c4c142586de1/similarity-ranker-1.0.2.tar.gz
+[2023-05-13 04:35:19] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/0a/e9/fef5c2ca1cc61bef7d301bb89ea332425cd5f4bc499541c1a7425e1d5ea7/cyberdrop-dl-4.2.21.tar.gz
+[2023-05-13 04:35:19] INFO root fetch - processPackages [mmkit-features]: Downloading https://files.pythonhosted.org/packages/7f/9f/c71bd07d420815fbc6d142b69e8bd790bbfdabdc5f06b8dbb2b442d90fc4/mmkit_features-0.0.1a3-py3-none-any.whl
+[2023-05-13 04:35:19] INFO root fetch - processPackages [google-sheet-downloader]: executing diffoscope
+[2023-05-13 04:35:19] INFO root fetch - processPackages [google-sheet-downloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-sheet-downloader-1.0.5.tar.gz tmp/google-sheet-downloader-1.0.6.tar.gz --markdown 20230513/g/google-sheet-downloader/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-13 04:35:19] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-05-13 04:35:19] INFO root fetch - processPackages [systempath]: executing diffoscope
+[2023-05-13 04:35:19] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.7.8.tar.gz tmp/cdk8s-plus-25-2.7.9.tar.gz --markdown 20230513/c/cdk8s-plus-25/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-13 04:35:19] INFO root fetch - processPackages [similarity-ranker]: executing diffoscope
+[2023-05-13 04:35:19] INFO root fetch - processPackages [systempath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/systempath-1.0.9-py3-none-any.whl.zip tmp/systempath-1.0a8-py3-none-any.whl.zip --markdown 20230513/s/systempath/1.0.9-1.0a8/diff.md --exclude *.pyd
+[2023-05-13 04:35:19] INFO root fetch - processPackages [similarity-ranker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/similarity-ranker-1.0.1.tar.gz tmp/similarity-ranker-1.0.2.tar.gz --markdown 20230513/s/similarity-ranker/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-13 04:35:19] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-13 04:35:19] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.19.tar.gz tmp/cyberdrop-dl-4.2.21.tar.gz --markdown 20230513/c/cyberdrop-dl/4.2.19-4.2.21/diff.md --exclude *.pyd
+[2023-05-13 04:35:19] INFO root fetch - processPackages [lifx-cli]: Downloading https://files.pythonhosted.org/packages/54/6c/d0902cc331d8125ae542fefcfa5f668570a62c23b8d8e06d4ef5486c50a8/lifx_cli-0.5.0.tar.gz
+[2023-05-13 04:35:19] INFO root fetch - processPackages [odc-geo]: Downloading https://files.pythonhosted.org/packages/35/34/ac720601c582270bd5404be0b212b7e53c96d15dc21f9e557f3ba7cd6078/odc-geo-0.4.0rc1.tar.gz
+[2023-05-13 04:35:19] INFO root fetch - processPackages [mmkit-features]: Downloading https://files.pythonhosted.org/packages/2e/3f/67a9ac82cf3d09643f2d82151c1fb2e4ae66b70914dcaf4c469dc712b17f/mmkit-features-0.0.1a4.tar.gz
+[2023-05-13 04:35:19] INFO root fetch - processPackages [lifx-cli]: executing diffoscope
+[2023-05-13 04:35:19] INFO root fetch - processPackages [lifx-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lifx_cli-0.4.0.tar.gz tmp/lifx_cli-0.5.0.tar.gz --markdown 20230513/l/lifx-cli/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-13 04:35:19] INFO root fetch - processPackages [odc-geo]: executing diffoscope
+[2023-05-13 04:35:19] INFO root fetch - processPackages [odc-geo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odc-geo-0.4.0a3.tar.gz tmp/odc-geo-0.4.0rc1.tar.gz --markdown 20230513/o/odc-geo/0.4.0a3-0.4.0rc1/diff.md --exclude *.pyd
+[2023-05-13 04:35:19] INFO root fetch - processPackages [mmkit-features]: executing diffoscope
+[2023-05-13 04:35:19] INFO root fetch - processPackages [mmkit-features]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mmkit_features-0.0.1a3-py3-none-any.whl.zip tmp/mmkit-features-0.0.1a4.tar.gz --markdown 20230513/m/mmkit-features/0.0.1a3-0.0.1a4/diff.md --exclude *.pyd
+[2023-05-13 04:35:20] INFO root fetch - main [MainThread]: End processing [google-sheet-downloader]: success
+[2023-05-13 04:35:21] INFO root fetch - main [MainThread]: End processing [similarity-ranker]: success
+[2023-05-13 04:35:21] INFO root fetch - main [MainThread]: End processing [systempath]: success
+[2023-05-13 04:35:21] INFO root fetch - main [MainThread]: End processing [lifx-cli]: success
+[2023-05-13 04:35:21] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-13 04:35:21] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-05-13 04:35:21] INFO root fetch - main [MainThread]: End processing [mmkit-features]: success
+[2023-05-13 04:35:22] INFO root fetch - main [MainThread]: End processing [odc-geo]: success
+[2023-05-13 04:35:22] INFO root fetch - main [MainThread]: Store serial: [18087207]
