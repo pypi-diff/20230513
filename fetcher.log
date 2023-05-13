@@ -6858,3 +6858,34 @@
 [2023-05-13 09:22:32] INFO root fetch - main [MainThread]: End processing [codecarbon]: success
 [2023-05-13 09:22:33] INFO root fetch - main [MainThread]: End processing [anylearn]: success
 [2023-05-13 09:22:33] INFO root fetch - main [MainThread]: Store serial: [18088636]
+[2023-05-13 09:27:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088636]
+[2023-05-13 09:27:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 09:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo13-addon-base-tier-validation-forward
+[2023-05-13 09:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-date-range
+[2023-05-13 09:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: khundmeerpdf
+[2023-05-13 09:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo13-addon-date-range
+[2023-05-13 09:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-date-range
+[2023-05-13 09:27:42] WARNING root fetch - processPackages [khundmeerpdf]: Skipping, unable to determine old version
+[2023-05-13 09:27:42] INFO root fetch - main [MainThread]: End processing [khundmeerpdf] error
+[2023-05-13 09:27:42] INFO root fetch - processPackages [odoo13-addon-base-tier-validation-forward]: New version: [13.0.1.1.2.dev2] Old Version: [13.0.1.1.2.dev1]
+[2023-05-13 09:27:42] INFO root fetch - processPackages [odoo13-addon-date-range]: New version: [13.0.1.0.3.dev5] Old Version: [13.0.1.0.3.dev4]
+[2023-05-13 09:27:42] INFO root fetch - processPackages [odoo12-addon-date-range]: New version: [12.0.2.0.2.99.dev5] Old Version: [12.0.2.0.2.99.dev4]
+[2023-05-13 09:27:42] INFO root fetch - processPackages [odoo14-addon-date-range]: New version: [14.0.2.1.2.dev5] Old Version: [14.0.2.1.2.dev4]
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo13-addon-base-tier-validation-forward]: Downloading https://files.pythonhosted.org/packages/67/f6/f062d012a47b3d4756dd923e507f1808f23a9e3ca9b97019921a1b0ff82e/odoo13_addon_base_tier_validation_forward-13.0.1.1.2.dev1-py3-none-any.whl
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo14-addon-date-range]: Downloading https://files.pythonhosted.org/packages/57/1b/ebf37725cb8080036cc74db1b9a5bf39061f47e4a8b58ff431227fdf6de4/odoo14_addon_date_range-14.0.2.1.2.dev5-py3-none-any.whl
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo13-addon-date-range]: Downloading https://files.pythonhosted.org/packages/7a/85/005ae8aae4c4b9d9ba172485478ae7ff6225dabaea36d467475a8e4b66ca/odoo13_addon_date_range-13.0.1.0.3.dev5-py3-none-any.whl
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo12-addon-date-range]: Downloading https://files.pythonhosted.org/packages/0b/5e/e5a401d1b71535010c3e2c9eb5ac17abb5050deb13cc0e883863d01b3029/odoo12_addon_date_range-12.0.2.0.2.99.dev5-py3-none-any.whl
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo13-addon-base-tier-validation-forward]: Downloading https://files.pythonhosted.org/packages/70/f7/411d7f4ce7268f5ce48f3bec78ef9f28e016b0c9bbb32e9bc473b7c75f69/odoo13_addon_base_tier_validation_forward-13.0.1.1.2.dev2-py3-none-any.whl
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo14-addon-date-range]: executing diffoscope
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo14-addon-date-range]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_date_range-14.0.2.1.2.dev4-py3-none-any.whl.zip tmp/odoo14_addon_date_range-14.0.2.1.2.dev5-py3-none-any.whl.zip --markdown 20230513/o/odoo14-addon-date-range/14.0.2.1.2.dev4-14.0.2.1.2.dev5/diff.md --exclude *.pyd
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo13-addon-date-range]: executing diffoscope
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo13-addon-date-range]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_date_range-13.0.1.0.3.dev4-py3-none-any.whl.zip tmp/odoo13_addon_date_range-13.0.1.0.3.dev5-py3-none-any.whl.zip --markdown 20230513/o/odoo13-addon-date-range/13.0.1.0.3.dev4-13.0.1.0.3.dev5/diff.md --exclude *.pyd
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo12-addon-date-range]: executing diffoscope
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo12-addon-date-range]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_date_range-12.0.2.0.2.99.dev4-py3-none-any.whl.zip tmp/odoo12_addon_date_range-12.0.2.0.2.99.dev5-py3-none-any.whl.zip --markdown 20230513/o/odoo12-addon-date-range/12.0.2.0.2.99.dev4-12.0.2.0.2.99.dev5/diff.md --exclude *.pyd
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo13-addon-base-tier-validation-forward]: executing diffoscope
+[2023-05-13 09:27:43] INFO root fetch - processPackages [odoo13-addon-base-tier-validation-forward]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo13_addon_base_tier_validation_forward-13.0.1.1.2.dev1-py3-none-any.whl.zip tmp/odoo13_addon_base_tier_validation_forward-13.0.1.1.2.dev2-py3-none-any.whl.zip --markdown 20230513/o/odoo13-addon-base-tier-validation-forward/13.0.1.1.2.dev1-13.0.1.1.2.dev2/diff.md --exclude *.pyd
+[2023-05-13 09:27:44] INFO root fetch - main [MainThread]: End processing [odoo13-addon-base-tier-validation-forward]: success
+[2023-05-13 09:27:45] INFO root fetch - main [MainThread]: End processing [odoo13-addon-date-range]: success
+[2023-05-13 09:27:45] INFO root fetch - main [MainThread]: End processing [odoo12-addon-date-range]: success
+[2023-05-13 09:28:20] INFO root fetch - main [MainThread]: End processing [odoo14-addon-date-range]: success
+[2023-05-13 09:28:20] INFO root fetch - main [MainThread]: Store serial: [18088650]
