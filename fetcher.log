@@ -7741,3 +7741,17 @@
 [2023-05-13 10:52:22] INFO root fetch - main [MainThread]: End processing [py-sc-kpm]: success
 [2023-05-13 10:52:22] INFO root fetch - main [MainThread]: End processing [erscipcard]: success
 [2023-05-13 10:52:22] INFO root fetch - main [MainThread]: Store serial: [18089059]
+[2023-05-13 10:57:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089059]
+[2023-05-13 10:57:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-13 10:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jinjamator
+[2023-05-13 10:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BDXConverter
+[2023-05-13 10:57:31] INFO root fetch - processPackages [jinjamator]: New version: [0.9.91] Old Version: [0.9.90]
+[2023-05-13 10:57:31] INFO root fetch - processPackages [BDXConverter]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-13 10:57:31] INFO root fetch - processPackages [jinjamator]: Downloading https://files.pythonhosted.org/packages/76/aa/d5f5fa61d93f4a522b9019d377e70751106adf3ecca0255892a4a9b891ca/jinjamator-0.9.90-py3-none-any.whl
+[2023-05-13 10:57:31] WARNING root fetch - processPackages [jinjamator]: Skipping package: exceeds size limit 10808456>=10485760
+[2023-05-13 10:57:31] INFO root fetch - main [MainThread]: End processing [jinjamator] error
+[2023-05-13 10:57:31] INFO root fetch - processPackages [BDXConverter]: Downloading https://files.pythonhosted.org/packages/35/c5/d5716c96a4eaf67ced731d0692ee699a8ea6f97656008d96c97111c27c1c/BDXConverter-1.1.1.tar.gz
+[2023-05-13 10:57:31] INFO root fetch - processPackages [BDXConverter]: executing diffoscope
+[2023-05-13 10:57:31] INFO root fetch - processPackages [BDXConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDXConverter-1.1.0.tar.gz tmp/BDXConverter-1.1.1.tar.gz --markdown 20230513/B/BDXConverter/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-13 10:57:33] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
+[2023-05-13 10:57:33] INFO root fetch - main [MainThread]: Store serial: [18089064]
