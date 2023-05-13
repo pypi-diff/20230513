@@ -9836,3 +9836,110 @@ EOFError: EOF read where object expected
 [2023-05-13 15:08:35] INFO root fetch - main [MainThread]: End processing [abqpy]: success
 [2023-05-13 15:08:35] INFO root fetch - main [MainThread]: End processing [abqpy]: success
 [2023-05-13 15:08:35] INFO root fetch - main [MainThread]: Store serial: [18090315]
+[2023-05-13 15:13:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090315]
+[2023-05-13 15:13:46] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: always-updates
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-numpy
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jinsi
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TransLiter
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: atenpdu
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nbdev-pandas
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: always-updates
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-pytorch
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: eegsynth
+[2023-05-13 15:13:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-scipy
+[2023-05-13 15:13:46] INFO root fetch - processPackages [TransLiter]: New version: [0.3.1] Old Version: [0.2.5]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [jinsi]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [atenpdu]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [eegsynth]: New version: [0.7.3] Old Version: [0.7.2]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-13 15:13:46] INFO root fetch - processPackages [atenpdu]: Downloading https://files.pythonhosted.org/packages/57/64/60af76f0a7c228f58210269dec48b2c243e00ed0f845f18fca0b00f0e731/atenpdu-0.6.0.tar.gz
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230513/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230513/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [jinsi]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [jinsi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinsi-0.8.0.tar.gz tmp/jinsi-0.9.0.tar.gz --markdown 20230513/j/jinsi/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230513/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [eegsynth]: Downloading https://files.pythonhosted.org/packages/30/3d/ae4ea9360866344ea944479e826d32dd4b3f563ac237fcf29c87007d4508/eegsynth-0.7.3.tar.gz
+[2023-05-13 15:13:46] INFO root fetch - processPackages [TransLiter]: Downloading https://files.pythonhosted.org/packages/5a/16/80bbff1e0c7e8ae1844e379fb663185c23cc8ad33110e3409765058f045d/TransLiter-0.3.1.tar.gz
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230513/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [atenpdu]: Downloading https://files.pythonhosted.org/packages/36/7a/f2bc4792cb6d0118000e7b4e6046759bac41a1916d2ad84bf367f961e47a/atenpdu-0.6.1.tar.gz
+[2023-05-13 15:13:46] INFO root fetch - processPackages [TransLiter]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [TransLiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TransLiter-0.2.5.tar.gz tmp/TransLiter-0.3.1.tar.gz --markdown 20230513/T/TransLiter/0.2.5-0.3.1/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230513/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [eegsynth]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [eegsynth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eegsynth-0.7.2.tar.gz tmp/eegsynth-0.7.3.tar.gz --markdown 20230513/e/eegsynth/0.7.2-0.7.3/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230513/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-13 15:13:46] INFO root fetch - processPackages [atenpdu]: executing diffoscope
+[2023-05-13 15:13:46] INFO root fetch - processPackages [atenpdu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/atenpdu-0.6.0.tar.gz tmp/atenpdu-0.6.1.tar.gz --markdown 20230513/a/atenpdu/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-13 15:13:47] INFO root fetch - processPackages [nbdev-pytorch]: Start processing: params-proto
+[2023-05-13 15:13:47] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-13 15:13:47] INFO root fetch - processPackages [params-proto]: New version: [2.9.7] Old Version: [2.9.6]
+[2023-05-13 15:13:48] INFO root fetch - processPackages [params-proto]: executing diffoscope
+[2023-05-13 15:13:48] INFO root fetch - processPackages [params-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/params_proto-2.9.6-py3-none-any.whl.zip tmp/params_proto-2.9.7-py3-none-any.whl.zip --markdown 20230513/p/params-proto/2.9.6-2.9.7/diff.md --exclude *.pyd
+[2023-05-13 15:13:48] INFO root fetch - processPackages [jinsi]: Start processing: nbdev-sphinx
+[2023-05-13 15:13:48] INFO root fetch - main [MainThread]: End processing [jinsi]: success
+[2023-05-13 15:13:48] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 15:13:48] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-13 15:13:48] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230513/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 15:13:48] INFO root fetch - processPackages [nbdev-pandas]: Start processing: scandir-rs
+[2023-05-13 15:13:48] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-13 15:13:48] INFO root fetch - processPackages [scandir-rs]: New version: [2.4.0] Old Version: [2.3.5]
+[2023-05-13 15:13:48] INFO root fetch - processPackages [scandir-rs]: Downloading https://files.pythonhosted.org/packages/4e/3f/f914fe69d2533e734434f2401259222a895ad3d8f8225372d1d1c1ccbb76/scandir_rs-2.3.5.tar.gz
+[2023-05-13 15:13:48] INFO root fetch - processPackages [always-updates]: Start processing: conjure-python-client
+[2023-05-13 15:13:48] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-13 15:13:48] INFO root fetch - processPackages [conjure-python-client]: New version: [2.8.0] Old Version: [2.7.0]
+[2023-05-13 15:13:48] INFO root fetch - processPackages [nbdev-numpy]: Start processing: cv2geojson
+[2023-05-13 15:13:48] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-13 15:13:48] INFO root fetch - processPackages [cv2geojson]: New version: [0.0.8] Old Version: [0.0.7]
+[2023-05-13 15:13:48] INFO root fetch - processPackages [always-updates]: Start processing: nbdev-django
+[2023-05-13 15:13:48] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-13 15:13:48] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 15:13:48] INFO root fetch - processPackages [conjure-python-client]: Downloading https://files.pythonhosted.org/packages/8d/eb/4f3cf12b69bb5f24f8dc1df428ba67e27ccb8d85b0fed97a9f3677250320/conjure-python-client-2.7.0.tar.gz
+[2023-05-13 15:13:49] INFO root fetch - processPackages [scandir-rs]: Downloading https://files.pythonhosted.org/packages/e4/e7/bb4605f0e355f6c7a9c930d6f5792cc7a622dfaaa13b8ce2f2a82e093642/scandir_rs-2.4.0-cp39-cp39-manylinux_2_34_x86_64.whl
+[2023-05-13 15:13:49] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-13 15:13:49] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230513/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 15:13:49] INFO root fetch - processPackages [cv2geojson]: Downloading https://files.pythonhosted.org/packages/a3/b3/73726bc2ab624fe48d1ef7f86121c75aeec2ecbf34d3748d6c6d6a531831/cv2geojson-0.0.8.tar.gz
+[2023-05-13 15:13:49] INFO root fetch - processPackages [TransLiter]: Start processing: pywool
+[2023-05-13 15:13:49] INFO root fetch - main [MainThread]: End processing [TransLiter]: success
+[2023-05-13 15:13:49] INFO root fetch - processPackages [atenpdu]: Start processing: aioinsta
+[2023-05-13 15:13:49] INFO root fetch - main [MainThread]: End processing [atenpdu]: success
+[2023-05-13 15:13:49] WARNING root fetch - processPackages [pywool]: Skipping, unable to determine old version
+[2023-05-13 15:13:49] INFO root fetch - processPackages [pywool]: Start processing: hiyobot
+[2023-05-13 15:13:49] INFO root fetch - main [MainThread]: End processing [pywool] error
+[2023-05-13 15:13:49] INFO root fetch - processPackages [aioinsta]: New version: [1.7] Old Version: [1.6]
+[2023-05-13 15:13:49] INFO root fetch - processPackages [hiyobot]: New version: [0.2.0] Old Version: [0.1.9]
+[2023-05-13 15:13:49] INFO root fetch - processPackages [scandir-rs]: executing diffoscope
+[2023-05-13 15:13:49] INFO root fetch - processPackages [scandir-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scandir_rs-2.3.5.tar.gz tmp/scandir_rs-2.4.0-cp39-cp39-manylinux_2_34_x86_64.whl.zip --markdown 20230513/s/scandir-rs/2.3.5-2.4.0/diff.md --exclude *.pyd
+[2023-05-13 15:13:49] INFO root fetch - processPackages [conjure-python-client]: Downloading https://files.pythonhosted.org/packages/c7/29/aa5c3ef393f6bf8cfe91d12c959e3c1e700ce50a5dd718f9fd1e04c44943/conjure-python-client-2.8.0.tar.gz
+[2023-05-13 15:13:49] INFO root fetch - processPackages [cv2geojson]: executing diffoscope
+[2023-05-13 15:13:49] INFO root fetch - processPackages [cv2geojson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cv2geojson-0.0.7.tar.gz tmp/cv2geojson-0.0.8.tar.gz --markdown 20230513/c/cv2geojson/0.0.7-0.0.8/diff.md --exclude *.pyd
+[2023-05-13 15:13:49] INFO root fetch - processPackages [aioinsta]: Downloading https://files.pythonhosted.org/packages/29/8e/d4d3ccf2d553538eb97fa21963de0d9b94fd0e7f422edb882827729d6496/aioinsta-1.7.tar.gz
+[2023-05-13 15:13:49] INFO root fetch - processPackages [hiyobot]: Downloading https://files.pythonhosted.org/packages/16/b1/5c40c57108d1fb24852af04e302736d482da9bef2fa7d179327fe8d61944/hiyobot-0.2.0.tar.gz
+[2023-05-13 15:13:49] INFO root fetch - processPackages [conjure-python-client]: executing diffoscope
+[2023-05-13 15:13:49] INFO root fetch - processPackages [conjure-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/conjure-python-client-2.7.0.tar.gz tmp/conjure-python-client-2.8.0.tar.gz --markdown 20230513/c/conjure-python-client/2.7.0-2.8.0/diff.md --exclude *.pyd
+[2023-05-13 15:13:49] INFO root fetch - processPackages [hiyobot]: executing diffoscope
+[2023-05-13 15:13:49] INFO root fetch - processPackages [hiyobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hiyobot-0.1.9.tar.gz tmp/hiyobot-0.2.0.tar.gz --markdown 20230513/h/hiyobot/0.1.9-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 15:13:49] INFO root fetch - main [MainThread]: End processing [params-proto]: success
+[2023-05-13 15:13:49] INFO root fetch - processPackages [aioinsta]: executing diffoscope
+[2023-05-13 15:13:49] INFO root fetch - processPackages [aioinsta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioinsta-1.6.tar.gz tmp/aioinsta-1.7.tar.gz --markdown 20230513/a/aioinsta/1.6-1.7/diff.md --exclude *.pyd
+[2023-05-13 15:13:49] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-13 15:13:50] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-13 15:13:50] INFO root fetch - main [MainThread]: End processing [scandir-rs]: success
+[2023-05-13 15:13:50] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-13 15:13:50] INFO root fetch - main [MainThread]: End processing [cv2geojson]: success
+[2023-05-13 15:13:50] INFO root fetch - main [MainThread]: End processing [hiyobot]: success
+[2023-05-13 15:13:51] INFO root fetch - main [MainThread]: End processing [aioinsta]: success
+[2023-05-13 15:13:51] INFO root fetch - main [MainThread]: End processing [conjure-python-client]: success
+[2023-05-13 15:13:52] INFO root fetch - main [MainThread]: End processing [eegsynth]: success
+[2023-05-13 15:13:52] INFO root fetch - main [MainThread]: Store serial: [18090382]
