@@ -6797,3 +6797,64 @@
 [2023-05-13 09:16:32] INFO root fetch - main [MainThread]: End processing [odoo12-addon-auth-totp]: success
 [2023-05-13 09:17:17] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2023-05-13 09:17:17] INFO root fetch - main [MainThread]: Store serial: [18088612]
+[2023-05-13 09:22:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18088612]
+[2023-05-13 09:22:29] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo8-addon-base-module-doc-rst
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bilichat
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo8-addon-base-report-auto-create-qweb
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codecarbon
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anylearn
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo10-addon-mass-editing
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lesscode-tool
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: uc-sgsim
+[2023-05-13 09:22:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: dart-tools
+[2023-05-13 09:22:29] INFO root fetch - processPackages [codecarbon]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [lesscode-tool]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [nonebot-plugin-bilichat]: New version: [2.0.1] Old Version: [2.0.0]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo10-addon-mass-editing]: New version: [10.0.2.1.0.99.dev5] Old Version: [10.0.2.1.0.99.dev4]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-module-doc-rst]: New version: [8.0.1.0.0.99.dev37] Old Version: [8.0.1.0.0.99.dev36]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-report-auto-create-qweb]: New version: [8.0.1.0.0.99.dev32] Old Version: [8.0.1.0.0.99.dev31]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [anylearn]: New version: [0.17.6a1] Old Version: [0.17.5rc1]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [dart-tools]: New version: [0.2.0] Old Version: [0.1.4]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [uc-sgsim]: New version: [1.2.0rc0] Old Version: [1.1.1]
+[2023-05-13 09:22:29] INFO root fetch - processPackages [lesscode-tool]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [lesscode-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lesscode_tool-0.0.8.tar.gz tmp/lesscode_tool-0.0.9.tar.gz --markdown 20230513/l/lesscode-tool/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-report-auto-create-qweb]: Downloading https://files.pythonhosted.org/packages/71/14/700b780c65f88ab346bdb3a573fefbe9d988a088562f3b1a2f6a39ddb3ef/odoo8_addon_base_report_auto_create_qweb-8.0.1.0.0.99.dev31-py2-none-any.whl
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-module-doc-rst]: Downloading https://files.pythonhosted.org/packages/24/0d/b0c023a22e74c6c10efd5129c525d757d343bbf97070b84f929124ad2541/odoo8_addon_base_module_doc_rst-8.0.1.0.0.99.dev36-py2-none-any.whl
+[2023-05-13 09:22:29] INFO root fetch - processPackages [anylearn]: Downloading https://files.pythonhosted.org/packages/75/83/1a89c230f5208b05e1cecc581f1c5370768cd88aaa8c3b6c53fe9c0c7313/anylearn-0.17.5rc1.tar.gz
+[2023-05-13 09:22:29] INFO root fetch - processPackages [uc-sgsim]: Downloading https://files.pythonhosted.org/packages/94/40/e1f8e932d50481629276e3a579c7ef93b5c91cd522c1785db2cab89840f0/uc_sgsim-1.1.1.tar.gz
+[2023-05-13 09:22:29] INFO root fetch - processPackages [dart-tools]: Downloading https://files.pythonhosted.org/packages/4b/88/98fa844cb3a5fa79bf4569a81de84688fde96550f546fd8fdd9512870f4b/dart-tools-0.1.4.tar.gz
+[2023-05-13 09:22:29] INFO root fetch - processPackages [codecarbon]: Downloading https://files.pythonhosted.org/packages/9a/70/03a5e12f75320d158b4524f158470492e1e584e84fc524f6b51051f2f693/codecarbon-2.2.1.tar.gz
+[2023-05-13 09:22:29] INFO root fetch - processPackages [nonebot-plugin-bilichat]: Downloading https://files.pythonhosted.org/packages/e8/a0/1dfb404418abfee6ff686f88e6d4ad9c0844a155baf3a8cb51548f48a52d/nonebot_plugin_bilichat-2.0.1.tar.gz
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo10-addon-mass-editing]: Downloading https://files.pythonhosted.org/packages/08/1d/a2bf03689e9caf91cea769b8cae4cae6caffbb8836d2473d711bdb43754f/odoo10_addon_mass_editing-10.0.2.1.0.99.dev5-py2-none-any.whl
+[2023-05-13 09:22:29] INFO root fetch - processPackages [codecarbon]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [codecarbon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codecarbon-2.2.0.tar.gz tmp/codecarbon-2.2.1.tar.gz --markdown 20230513/c/codecarbon/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-report-auto-create-qweb]: Downloading https://files.pythonhosted.org/packages/80/a2/f6841e5d233a7e38c22c5d2daf6f21b96d16dbfcca8b58b9dfabcb27812e/odoo8_addon_base_report_auto_create_qweb-8.0.1.0.0.99.dev32-py2-none-any.whl
+[2023-05-13 09:22:29] INFO root fetch - processPackages [nonebot-plugin-bilichat]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [nonebot-plugin-bilichat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilichat-2.0.0.tar.gz tmp/nonebot_plugin_bilichat-2.0.1.tar.gz --markdown 20230513/n/nonebot-plugin-bilichat/2.0.0-2.0.1/diff.md --exclude *.pyd
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-module-doc-rst]: Downloading https://files.pythonhosted.org/packages/ef/b9/92f5cb6af3fc9195e50b7651dd141c9df622d71b32cbacc9a5a4b7f32b7c/odoo8_addon_base_module_doc_rst-8.0.1.0.0.99.dev37-py2-none-any.whl
+[2023-05-13 09:22:29] INFO root fetch - processPackages [anylearn]: Downloading https://files.pythonhosted.org/packages/ca/87/6a812c5399d5848e9a3b2541f7c405ed35dbcdf7879d4c7f6bd88b175ec0/anylearn-0.17.6a1.tar.gz
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo10-addon-mass-editing]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo10-addon-mass-editing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo10_addon_mass_editing-10.0.2.1.0.99.dev4-py2-none-any.whl.zip tmp/odoo10_addon_mass_editing-10.0.2.1.0.99.dev5-py2-none-any.whl.zip --markdown 20230513/o/odoo10-addon-mass-editing/10.0.2.1.0.99.dev4-10.0.2.1.0.99.dev5/diff.md --exclude *.pyd
+[2023-05-13 09:22:29] INFO root fetch - processPackages [dart-tools]: Downloading https://files.pythonhosted.org/packages/2b/96/64ea2b72fb70b5280933a4d2739f0cb598b64816ae90a689b5bb91cc8ce0/dart-tools-0.2.0.tar.gz
+[2023-05-13 09:22:29] INFO root fetch - processPackages [uc-sgsim]: Downloading https://files.pythonhosted.org/packages/12/b1/158790cb4052382d0742bde7758eb58a868bde8c188c8ebb77140fc1476c/uc_sgsim-1.2.0rc0.tar.gz
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-report-auto-create-qweb]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-report-auto-create-qweb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_base_report_auto_create_qweb-8.0.1.0.0.99.dev31-py2-none-any.whl.zip tmp/odoo8_addon_base_report_auto_create_qweb-8.0.1.0.0.99.dev32-py2-none-any.whl.zip --markdown 20230513/o/odoo8-addon-base-report-auto-create-qweb/8.0.1.0.0.99.dev31-8.0.1.0.0.99.dev32/diff.md --exclude *.pyd
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-module-doc-rst]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [odoo8-addon-base-module-doc-rst]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo8_addon_base_module_doc_rst-8.0.1.0.0.99.dev36-py2-none-any.whl.zip tmp/odoo8_addon_base_module_doc_rst-8.0.1.0.0.99.dev37-py2-none-any.whl.zip --markdown 20230513/o/odoo8-addon-base-module-doc-rst/8.0.1.0.0.99.dev36-8.0.1.0.0.99.dev37/diff.md --exclude *.pyd
+[2023-05-13 09:22:29] INFO root fetch - processPackages [anylearn]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [anylearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anylearn-0.17.5rc1.tar.gz tmp/anylearn-0.17.6a1.tar.gz --markdown 20230513/a/anylearn/0.17.5rc1-0.17.6a1/diff.md --exclude *.pyd
+[2023-05-13 09:22:29] INFO root fetch - processPackages [dart-tools]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [dart-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dart-tools-0.1.4.tar.gz tmp/dart-tools-0.2.0.tar.gz --markdown 20230513/d/dart-tools/0.1.4-0.2.0/diff.md --exclude *.pyd
+[2023-05-13 09:22:29] INFO root fetch - processPackages [uc-sgsim]: executing diffoscope
+[2023-05-13 09:22:29] INFO root fetch - processPackages [uc-sgsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uc_sgsim-1.1.1.tar.gz tmp/uc_sgsim-1.2.0rc0.tar.gz --markdown 20230513/u/uc-sgsim/1.1.1-1.2.0rc0/diff.md --exclude *.pyd
+[2023-05-13 09:22:30] INFO root fetch - main [MainThread]: End processing [lesscode-tool]: success
+[2023-05-13 09:22:31] INFO root fetch - main [MainThread]: End processing [odoo10-addon-mass-editing]: success
+[2023-05-13 09:22:31] INFO root fetch - main [MainThread]: End processing [dart-tools]: success
+[2023-05-13 09:22:31] INFO root fetch - main [MainThread]: End processing [odoo8-addon-base-report-auto-create-qweb]: success
+[2023-05-13 09:22:31] INFO root fetch - main [MainThread]: End processing [odoo8-addon-base-module-doc-rst]: success
+[2023-05-13 09:22:32] INFO root fetch - main [MainThread]: End processing [uc-sgsim]: success
+[2023-05-13 09:22:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilichat]: success
+[2023-05-13 09:22:32] INFO root fetch - main [MainThread]: End processing [codecarbon]: success
+[2023-05-13 09:22:33] INFO root fetch - main [MainThread]: End processing [anylearn]: success
+[2023-05-13 09:22:33] INFO root fetch - main [MainThread]: Store serial: [18088636]
