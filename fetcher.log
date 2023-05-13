@@ -9943,3 +9943,37 @@ EOFError: EOF read where object expected
 [2023-05-13 15:13:51] INFO root fetch - main [MainThread]: End processing [conjure-python-client]: success
 [2023-05-13 15:13:52] INFO root fetch - main [MainThread]: End processing [eegsynth]: success
 [2023-05-13 15:13:52] INFO root fetch - main [MainThread]: Store serial: [18090382]
+[2023-05-13 15:18:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090382]
+[2023-05-13 15:19:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-13 15:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-apl
+[2023-05-13 15:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edamame
+[2023-05-13 15:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ponder
+[2023-05-13 15:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: indecode
+[2023-05-13 15:19:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: raga-cli
+[2023-05-13 15:19:01] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.770] Old Version: [0.0.769]
+[2023-05-13 15:19:01] INFO root fetch - processPackages [ponder]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-13 15:19:01] INFO root fetch - processPackages [edamame]: New version: [0.52] Old Version: [0.51]
+[2023-05-13 15:19:01] INFO root fetch - processPackages [raga-cli]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-13 15:19:01] INFO root fetch - processPackages [indecode]: New version: [1.3] Old Version: [1.2.1]
+[2023-05-13 15:19:01] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/01/44/293a0c07ac67602e2d6ef041e11f38404ddff1847dec7e3de5dcb4ee8bdd/nbdev-apl-0.0.770.tar.gz
+[2023-05-13 15:19:01] INFO root fetch - processPackages [ponder]: Downloading https://files.pythonhosted.org/packages/19/02/26d793af80db7ed351deb400e05d3cf866c4d206788f25466d53503f2e32/ponder-0.1.1-cp39-cp39-win_amd64.whl
+[2023-05-13 15:19:01] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-13 15:19:01] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.769.tar.gz tmp/nbdev-apl-0.0.770.tar.gz --markdown 20230513/n/nbdev-apl/0.0.769-0.0.770/diff.md --exclude *.pyd
+[2023-05-13 15:19:01] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/9e/e9/ecf7eaba9f89670048749e2c879b298b3178f6d88d8b8fcba7204234a673/indecode-1.2.1-py3-none-any.whl
+[2023-05-13 15:19:01] INFO root fetch - processPackages [edamame]: Downloading https://files.pythonhosted.org/packages/0d/6d/86ab3d1079e81775d6983252c3c6d5c33ba65b9188c757385e89ff438b0a/edamame-0.52.tar.gz
+[2023-05-13 15:19:01] INFO root fetch - processPackages [edamame]: executing diffoscope
+[2023-05-13 15:19:01] INFO root fetch - processPackages [edamame]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edamame-0.51.tar.gz tmp/edamame-0.52.tar.gz --markdown 20230513/e/edamame/0.51-0.52/diff.md --exclude *.pyd
+[2023-05-13 15:19:01] INFO root fetch - processPackages [raga-cli]: executing diffoscope
+[2023-05-13 15:19:01] INFO root fetch - processPackages [raga-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/raga-cli-0.1.8.tar.gz tmp/raga-cli-0.1.9.tar.gz --markdown 20230513/r/raga-cli/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-13 15:19:01] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/14/a0/addf3062a441fde054406718eec0b56799fe01f9db14ef01995ebc7e71f4/indecode-1.3-py3-none-any.whl
+[2023-05-13 15:19:01] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-13 15:19:01] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.2.1-py3-none-any.whl.zip tmp/indecode-1.3-py3-none-any.whl.zip --markdown 20230513/i/indecode/1.2.1-1.3/diff.md --exclude *.pyd
+[2023-05-13 15:19:01] INFO root fetch - processPackages [ponder]: Downloading https://files.pythonhosted.org/packages/e6/aa/09646eda588425840e5713bb51d07f7d8db38d38295468159a0eef16ef47/ponder-0.1.2-cp39-cp39-win_amd64.whl
+[2023-05-13 15:19:02] INFO root fetch - processPackages [ponder]: executing diffoscope
+[2023-05-13 15:19:02] INFO root fetch - processPackages [ponder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ponder-0.1.1-cp39-cp39-win_amd64.whl.zip tmp/ponder-0.1.2-cp39-cp39-win_amd64.whl.zip --markdown 20230513/p/ponder/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-13 15:19:02] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-13 15:19:02] INFO root fetch - main [MainThread]: End processing [edamame]: success
+[2023-05-13 15:19:02] INFO root fetch - main [MainThread]: End processing [raga-cli]: success
+[2023-05-13 15:19:02] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-13 15:19:03] INFO root fetch - main [MainThread]: End processing [ponder]: success
+[2023-05-13 15:19:03] INFO root fetch - main [MainThread]: Store serial: [18090412]
