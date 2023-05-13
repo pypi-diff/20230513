@@ -13372,3 +13372,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-13 22:05:10] INFO root fetch - main [MainThread]: End processing [logmaster]: success
 [2023-05-13 22:05:10] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
 [2023-05-13 22:05:10] INFO root fetch - main [MainThread]: Store serial: [18092668]
+[2023-05-13 22:10:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18092668]
+[2023-05-13 22:10:19] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-13 22:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tigerblog
+[2023-05-13 22:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eth-monitor
+[2023-05-13 22:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mojap-metadata
+[2023-05-13 22:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qcontext
+[2023-05-13 22:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: balrogo
+[2023-05-13 22:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-cms-info
+[2023-05-13 22:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: heaserver
+[2023-05-13 22:10:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: chainlib-eth
+[2023-05-13 22:10:19] INFO root fetch - processPackages [qcontext]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-13 22:10:19] INFO root fetch - processPackages [heaserver]: New version: [1.0.0a99] Old Version: [1.0.0a98]
+[2023-05-13 22:10:19] INFO root fetch - processPackages [eth-monitor]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-05-13 22:10:19] INFO root fetch - processPackages [chainlib-eth]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-13 22:10:19] WARNING root fetch - processPackages [tigerblog]: Skipping, unable to determine old version
+[2023-05-13 22:10:19] INFO root fetch - processPackages [balrogo]: New version: [1.6.5] Old Version: [1.6.4]
+[2023-05-13 22:10:19] WARNING root fetch - processPackages [odoo-addon-cms-info]: Skipping, unable to determine old version
+[2023-05-13 22:10:19] INFO root fetch - main [MainThread]: End processing [tigerblog] error
+[2023-05-13 22:10:19] INFO root fetch - processPackages [mojap-metadata]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-05-13 22:10:19] INFO root fetch - main [MainThread]: End processing [odoo-addon-cms-info] error
+[2023-05-13 22:10:19] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2023-05-13 22:10:19] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.0.0a98.tar.gz tmp/heaserver-1.0.0a99.tar.gz --markdown 20230513/h/heaserver/1.0.0a98-1.0.0a99/diff.md --exclude *.pyd
+[2023-05-13 22:10:19] INFO root fetch - processPackages [qcontext]: Downloading https://files.pythonhosted.org/packages/46/b4/af8f2f419b829cf1ff29cc45a3ee1fedadf0c9f44827f5c3f2b9db247403/qcontext-1.0.9.tar.gz
+[2023-05-13 22:10:19] INFO root fetch - processPackages [eth-monitor]: Downloading https://files.pythonhosted.org/packages/28/e7/0d00217a3928d6702beab7b52b9a128dbbdb36dd159ceb557946c50e585a/eth-monitor-0.7.3.tar.gz
+[2023-05-13 22:10:19] INFO root fetch - processPackages [balrogo]: Downloading https://files.pythonhosted.org/packages/d0/77/81ba47c57104dabb92a50f941da0c033d12b1d6b157ab1b7df928fefa62c/balrogo-1.6.4.tar.gz
+[2023-05-13 22:10:19] INFO root fetch - processPackages [qcontext]: executing diffoscope
+[2023-05-13 22:10:19] INFO root fetch - processPackages [qcontext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcontext-1.0.8.tar.gz tmp/qcontext-1.0.9.tar.gz --markdown 20230513/q/qcontext/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-13 22:10:19] INFO root fetch - processPackages [mojap-metadata]: Downloading https://files.pythonhosted.org/packages/72/95/519a8cade6244014acda01056d7b5c2895290b648207852067f88f8af7c5/mojap-metadata-1.9.3.tar.gz
+[2023-05-13 22:10:19] INFO root fetch - processPackages [chainlib-eth]: executing diffoscope
+[2023-05-13 22:10:19] INFO root fetch - processPackages [chainlib-eth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlib-eth-0.4.8.tar.gz tmp/chainlib-eth-0.4.9.tar.gz --markdown 20230513/c/chainlib-eth/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-13 22:10:19] INFO root fetch - processPackages [balrogo]: Downloading https://files.pythonhosted.org/packages/29/1b/f949c6353172371469bca64a6f38965713e83f2662f41927f7b37486f6d6/balrogo-1.6.5.tar.gz
+[2023-05-13 22:10:19] INFO root fetch - processPackages [eth-monitor]: Downloading https://files.pythonhosted.org/packages/8b/b8/5fb99812a4188b50c79c3d4d2b14c8decbb6288365e8a03cb9b3e8865eca/eth-monitor-0.7.4.tar.gz
+[2023-05-13 22:10:19] INFO root fetch - processPackages [balrogo]: executing diffoscope
+[2023-05-13 22:10:19] INFO root fetch - processPackages [balrogo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/balrogo-1.6.4.tar.gz tmp/balrogo-1.6.5.tar.gz --markdown 20230513/b/balrogo/1.6.4-1.6.5/diff.md --exclude *.pyd
+[2023-05-13 22:10:19] INFO root fetch - processPackages [eth-monitor]: executing diffoscope
+[2023-05-13 22:10:19] INFO root fetch - processPackages [eth-monitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eth-monitor-0.7.3.tar.gz tmp/eth-monitor-0.7.4.tar.gz --markdown 20230513/e/eth-monitor/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-05-13 22:10:19] INFO root fetch - processPackages [mojap-metadata]: Downloading https://files.pythonhosted.org/packages/b1/ee/f7fa30f32fa6a38b8c363840ca5a8fee26113256a497d2cb031e95cacb00/mojap-metadata-1.9.4.tar.gz
+[2023-05-13 22:10:20] INFO root fetch - processPackages [mojap-metadata]: executing diffoscope
+[2023-05-13 22:10:20] INFO root fetch - processPackages [mojap-metadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojap-metadata-1.9.3.tar.gz tmp/mojap-metadata-1.9.4.tar.gz --markdown 20230513/m/mojap-metadata/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-05-13 22:10:21] INFO root fetch - main [MainThread]: End processing [chainlib-eth]: success
+[2023-05-13 22:10:21] INFO root fetch - main [MainThread]: End processing [eth-monitor]: success
+[2023-05-13 22:10:21] INFO root fetch - main [MainThread]: End processing [balrogo]: success
+[2023-05-13 22:10:21] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2023-05-13 22:10:21] INFO root fetch - main [MainThread]: End processing [mojap-metadata]: success
+[2023-05-13 22:10:21] INFO root fetch - main [MainThread]: End processing [qcontext]: success
+[2023-05-13 22:10:21] INFO root fetch - main [MainThread]: Store serial: [18092693]
