@@ -8939,3 +8939,37 @@
 [2023-05-13 13:36:21] INFO root fetch - main [MainThread]: End processing [hahomematic]: success
 [2023-05-13 13:36:21] INFO root fetch - main [MainThread]: End processing [lusid-notifications-sdk-preview]: success
 [2023-05-13 13:36:21] INFO root fetch - main [MainThread]: Store serial: [18089809]
+[2023-05-13 13:41:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18089809]
+[2023-05-13 13:41:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-13 13:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lusid-notifications-sdk-preview
+[2023-05-13 13:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strongtyping
+[2023-05-13 13:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: imsholcal
+[2023-05-13 13:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: v4xyz
+[2023-05-13 13:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-database-gilaxy04
+[2023-05-13 13:41:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GoogleTensor
+[2023-05-13 13:41:30] INFO root fetch - processPackages [imsholcal]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-13 13:41:30] WARNING root fetch - processPackages [GoogleTensor]: Skipping, unable to determine old version
+[2023-05-13 13:41:30] INFO root fetch - main [MainThread]: End processing [GoogleTensor] error
+[2023-05-13 13:41:30] WARNING root fetch - processPackages [py-database-gilaxy04]: Skipping, unable to determine old version
+[2023-05-13 13:41:30] INFO root fetch - main [MainThread]: End processing [py-database-gilaxy04] error
+[2023-05-13 13:41:30] INFO root fetch - processPackages [strongtyping]: New version: [3.9.2] Old Version: [3.9.1]
+[2023-05-13 13:41:30] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: New version: [0.1.683.post2] Old Version: [0.1.683]
+[2023-05-13 13:41:30] INFO root fetch - processPackages [imsholcal]: executing diffoscope
+[2023-05-13 13:41:30] INFO root fetch - processPackages [imsholcal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imsholcal-1.0.7.tar.gz tmp/imsholcal-1.0.8.tar.gz --markdown 20230513/i/imsholcal/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-13 13:41:30] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Downloading https://files.pythonhosted.org/packages/6e/89/34f069fcf4b6f4905708a25a04262cc2a128bb3863920405fab1570a7787/lusid-notifications-sdk-preview-0.1.683.tar.gz
+[2023-05-13 13:41:30] INFO root fetch - processPackages [v4xyz]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-13 13:41:31] INFO root fetch - processPackages [strongtyping]: Downloading https://files.pythonhosted.org/packages/3b/40/2fb2800dcdfda0186dc016dd6fc43911f4a5f52697ee3acfcf65bd56716d/strongtyping-3.9.1.tar.gz
+[2023-05-13 13:41:31] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: Downloading https://files.pythonhosted.org/packages/b3/b0/46bfe7cb8ba9ec84c4af024409253c2529a1dad42ffd78974a123abd99ca/lusid-notifications-sdk-preview-0.1.683.post2.tar.gz
+[2023-05-13 13:41:31] INFO root fetch - processPackages [strongtyping]: Downloading https://files.pythonhosted.org/packages/34/cf/a48ff403350c9feda02516414e0533857a4ce34d2749e01505da1f284504/strongtyping-3.9.2.tar.gz
+[2023-05-13 13:41:31] INFO root fetch - processPackages [v4xyz]: Downloading https://files.pythonhosted.org/packages/2b/d3/962af07f8da6e87ea41bb22a5d66941fb956a524048a0f0d26d1f133f635/v4xyz-0.0.3.tar.gz
+[2023-05-13 13:41:31] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: executing diffoscope
+[2023-05-13 13:41:31] INFO root fetch - processPackages [lusid-notifications-sdk-preview]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid-notifications-sdk-preview-0.1.683.tar.gz tmp/lusid-notifications-sdk-preview-0.1.683.post2.tar.gz --markdown 20230513/l/lusid-notifications-sdk-preview/0.1.683-0.1.683.post2/diff.md --exclude *.pyd
+[2023-05-13 13:41:31] INFO root fetch - processPackages [strongtyping]: executing diffoscope
+[2023-05-13 13:41:31] INFO root fetch - processPackages [strongtyping]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strongtyping-3.9.1.tar.gz tmp/strongtyping-3.9.2.tar.gz --markdown 20230513/s/strongtyping/3.9.1-3.9.2/diff.md --exclude *.pyd
+[2023-05-13 13:41:31] INFO root fetch - processPackages [v4xyz]: executing diffoscope
+[2023-05-13 13:41:31] INFO root fetch - processPackages [v4xyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v4xyz-0.0.2.tar.gz tmp/v4xyz-0.0.3.tar.gz --markdown 20230513/v/v4xyz/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-13 13:41:31] INFO root fetch - main [MainThread]: End processing [imsholcal]: success
+[2023-05-13 13:41:32] INFO root fetch - main [MainThread]: End processing [v4xyz]: success
+[2023-05-13 13:41:32] INFO root fetch - main [MainThread]: End processing [strongtyping]: success
+[2023-05-13 13:41:33] INFO root fetch - main [MainThread]: End processing [lusid-notifications-sdk-preview]: success
+[2023-05-13 13:41:33] INFO root fetch - main [MainThread]: Store serial: [18089830]
