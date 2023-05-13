@@ -9729,3 +9729,110 @@ EOFError: EOF read where object expected
 [2023-05-13 15:02:06] INFO root fetch - main [MainThread]: End processing [cihai] error
 [2023-05-13 15:02:06] INFO root fetch - main [MainThread]: End processing [params-proto]: success
 [2023-05-13 15:02:06] INFO root fetch - main [MainThread]: Store serial: [18090261]
+[2023-05-13 15:07:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18090261]
+[2023-05-13 15:07:17] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thermite
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rebasin
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-ckeditor-5
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: always-updates
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: abqpy
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: spotON_sdk
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: abqpy
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: abqpy
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: thermite
+[2023-05-13 15:07:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-stdlib
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [django-ckeditor-5]: New version: [0.2.5] Old Version: [0.2.4]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [spotON_sdk]: New version: [0.0.4.0] Old Version: [0.0.3.8]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [rebasin]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: Downloading https://files.pythonhosted.org/packages/01/4c/889695acd290a97b348b45eee6d8af217676bad434473c2cb3c14d23e9d3/thermite-0.1.0.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-13 15:07:17] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230513/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: Downloading https://files.pythonhosted.org/packages/01/4c/889695acd290a97b348b45eee6d8af217676bad434473c2cb3c14d23e9d3/thermite-0.1.0.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/28/54/b1da741bd7c8efc29b8352abe15573f5187fda6c52f52875fe48cbdc4c6b/spotON_sdk-0.0.3.8.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [django-ckeditor-5]: Downloading https://files.pythonhosted.org/packages/5f/d8/44be7a731c221adfdf80c42aa33af58ed04cba5ca4bd90b3cf7f7eeb8f5f/django-ckeditor-5-0.2.4.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-13 15:07:17] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230513/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/87/29/66e88565d3c8004509ac3092034a02fe648b495d4e2041f65a068278b6ff/abqpy-2023.5.0.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/87/29/66e88565d3c8004509ac3092034a02fe648b495d4e2041f65a068278b6ff/abqpy-2023.5.0.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/87/29/66e88565d3c8004509ac3092034a02fe648b495d4e2041f65a068278b6ff/abqpy-2023.5.0.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: Downloading https://files.pythonhosted.org/packages/54/b6/ddaf4cf098cce0c5fd99a686713fa3a10f038bd4c15dac19af445ed5d16b/thermite-0.1.1.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: Downloading https://files.pythonhosted.org/packages/54/b6/ddaf4cf098cce0c5fd99a686713fa3a10f038bd4c15dac19af445ed5d16b/thermite-0.1.1.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [spotON_sdk]: Downloading https://files.pythonhosted.org/packages/aa/28/c51a49565ce8d6ef00d8c8793d8013695ef35142fcb1c33515e859f18aa2/spotON_sdk-0.0.4.0.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [rebasin]: executing diffoscope
+[2023-05-13 15:07:17] INFO root fetch - processPackages [rebasin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rebasin-0.0.8.tar.gz tmp/rebasin-0.0.9.tar.gz --markdown 20230513/r/rebasin/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-13 15:07:17] INFO root fetch - processPackages [spotON_sdk]: executing diffoscope
+[2023-05-13 15:07:17] INFO root fetch - processPackages [spotON_sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotON_sdk-0.0.3.8.tar.gz tmp/spotON_sdk-0.0.4.0.tar.gz --markdown 20230513/s/spotON_sdk/0.0.3.8-0.0.4.0/diff.md --exclude *.pyd
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: executing diffoscope
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: executing diffoscope
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thermite-0.1.0.tar.gz tmp/thermite-0.1.1.tar.gz --markdown 20230513/t/thermite/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:17] INFO root fetch - processPackages [thermite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thermite-0.1.0.tar.gz tmp/thermite-0.1.1.tar.gz --markdown 20230513/t/thermite/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:17] INFO root fetch - processPackages [django-ckeditor-5]: Downloading https://files.pythonhosted.org/packages/95/cb/f29e5e2bc535bb52df8de8e530ea89429ad0ae08e2ab07fb8f3709a8be6a/django-ckeditor-5-0.2.5.tar.gz
+[2023-05-13 15:07:17] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-13 15:07:18] INFO root fetch - processPackages [django-ckeditor-5]: executing diffoscope
+[2023-05-13 15:07:18] INFO root fetch - processPackages [django-ckeditor-5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-ckeditor-5-0.2.4.tar.gz tmp/django-ckeditor-5-0.2.5.tar.gz --markdown 20230513/d/django-ckeditor-5/0.2.4-0.2.5/diff.md --exclude *.pyd
+[2023-05-13 15:07:18] INFO root fetch - processPackages [always-updates]: Start processing: abqpy
+[2023-05-13 15:07:18] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-13 15:07:18] INFO root fetch - processPackages [abqpy]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 15:07:18] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-13 15:07:18] INFO root fetch - processPackages [nbdev-stdlib]: Start processing: abqpy
+[2023-05-13 15:07:18] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-13 15:07:18] INFO root fetch - processPackages [abqpy]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 15:07:18] INFO root fetch - processPackages [abqpy]: Downloading https://files.pythonhosted.org/packages/38/ba/886553dbb82d284f711159e5a6d6ddea99d66513d01d4c9a29f9cf39461b/abqpy-2023.5.1.tar.gz
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.0.tar.gz tmp/abqpy-2023.5.1.tar.gz --markdown 20230513/a/abqpy/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.0.tar.gz tmp/abqpy-2023.5.1.tar.gz --markdown 20230513/a/abqpy/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.0.tar.gz tmp/abqpy-2023.5.1.tar.gz --markdown 20230513/a/abqpy/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.0.tar.gz tmp/abqpy-2023.5.1.tar.gz --markdown 20230513/a/abqpy/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:19] INFO root fetch - processPackages [rebasin]: Start processing: eegsynth
+[2023-05-13 15:07:19] INFO root fetch - main [MainThread]: End processing [rebasin]: success
+[2023-05-13 15:07:19] INFO root fetch - processPackages [eegsynth]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.0.tar.gz tmp/abqpy-2023.5.1.tar.gz --markdown 20230513/a/abqpy/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:19] INFO root fetch - processPackages [eegsynth]: Downloading https://files.pythonhosted.org/packages/92/d5/0fbc584df3c503910c5752f5627c751bda0876974d602313ab76053e9115/eegsynth-0.7.2.tar.gz
+[2023-05-13 15:07:19] INFO root fetch - processPackages [spotON_sdk]: Start processing: abqpy
+[2023-05-13 15:07:19] INFO root fetch - main [MainThread]: End processing [spotON_sdk]: success
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.0.tar.gz tmp/abqpy-2023.5.1.tar.gz --markdown 20230513/a/abqpy/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:19] INFO root fetch - processPackages [eegsynth]: executing diffoscope
+[2023-05-13 15:07:19] INFO root fetch - processPackages [eegsynth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eegsynth-0.7.1.tar.gz tmp/eegsynth-0.7.2.tar.gz --markdown 20230513/e/eegsynth/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-13 15:07:19] INFO root fetch - processPackages [thermite]: Start processing: abqpy
+[2023-05-13 15:07:19] INFO root fetch - main [MainThread]: End processing [thermite]: success
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-13 15:07:19] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.0.tar.gz tmp/abqpy-2023.5.1.tar.gz --markdown 20230513/a/abqpy/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:21] INFO root fetch - processPackages [thermite]: Start processing: abqpy
+[2023-05-13 15:07:21] INFO root fetch - main [MainThread]: End processing [thermite]: success
+[2023-05-13 15:07:21] INFO root fetch - processPackages [abqpy]: New version: [2023.5.1] Old Version: [2023.5.0]
+[2023-05-13 15:07:21] INFO root fetch - processPackages [abqpy]: executing diffoscope
+[2023-05-13 15:07:21] INFO root fetch - processPackages [abqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abqpy-2023.5.0.tar.gz tmp/abqpy-2023.5.1.tar.gz --markdown 20230513/a/abqpy/2023.5.0-2023.5.1/diff.md --exclude *.pyd
+[2023-05-13 15:07:24] INFO root fetch - processPackages [eegsynth]: Start processing: cihai-cli
+[2023-05-13 15:07:24] INFO root fetch - main [MainThread]: End processing [eegsynth]: success
+[2023-05-13 15:07:24] INFO root fetch - processPackages [cihai-cli]: New version: [0.9.0a1] Old Version: [0.9.0a0]
+[2023-05-13 15:07:24] INFO root fetch - processPackages [cihai-cli]: Downloading https://files.pythonhosted.org/packages/d2/4c/75ccfa9c6b8fb30de3cba09cf54a8c9f6f9f2f38a9cea4b854a81c25cc79/cihai-cli-0.9.0a0.tar.gz
+[2023-05-13 15:07:24] INFO root fetch - processPackages [cihai-cli]: Downloading https://files.pythonhosted.org/packages/0b/b5/e89b0b6924ecd0d5a3cb77abed8ec4b18fefbae25d67658b915c13d1bf35/cihai-cli-0.9.0a1.tar.gz
+[2023-05-13 15:07:24] INFO root fetch - processPackages [cihai-cli]: executing diffoscope
+[2023-05-13 15:07:24] INFO root fetch - processPackages [cihai-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230513:/home/abi/fetcher/20230513:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cihai-cli-0.9.0a0.tar.gz tmp/cihai-cli-0.9.0a1.tar.gz --markdown 20230513/c/cihai-cli/0.9.0a0-0.9.0a1/diff.md --exclude *.pyd
+[2023-05-13 15:07:27] INFO root fetch - main [MainThread]: End processing [cihai-cli]: success
+[2023-05-13 15:08:25] INFO root fetch - main [MainThread]: End processing [django-ckeditor-5]: success
+[2023-05-13 15:08:33] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-13 15:08:34] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-13 15:08:34] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-13 15:08:34] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-13 15:08:34] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-13 15:08:34] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-13 15:08:35] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-13 15:08:35] INFO root fetch - main [MainThread]: End processing [abqpy]: success
+[2023-05-13 15:08:35] INFO root fetch - main [MainThread]: Store serial: [18090315]
